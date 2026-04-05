@@ -1,0 +1,130 @@
+[
+  {
+    "chunk_id": "53f7f102f7ca_0",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/sales-operations/go-to-market/chorus",
+    "title": "Learn How to Use Chorus.ai",
+    "source": "handbook",
+    "headings": [
+      "Learn How to Use Chorus.ai",
+      "What is Chorus?",
+      "Logging into Chorus",
+      "Chorus Training & Enablement",
+      "Chorus Scheduler"
+    ],
+    "text": "Learn How to Use Chorus.ai\n\nConfused about how to use Chorus? Check out the instructions and links below for more information on how to get the most out of this important sales tool.\n\nChorus is a call and demo recording software for customer-facing team members. This tool tracks keywords, provides analytics, and transcribes calls into both Salesforce and Outreach. Chorus is used to onboard new team members, provide ongoing training and development for existing team members, provide non-sales employees with access to sales calls, and allow customer-facing team members to recall certain points of a call or demo.\n\nLog into Chorus by clicking on the Chorus SSO tile in your Okta dashboard . If you are not able to login, please post in the #chorus-users Slack channel for further assistance.\n\nChorus Training & Enablement\n\nPlease familiarize yourself with GitLab’s SAFE Framework before utilizing Chorus.\n\nPlease familiarize yourself with GitLab’s SAFE Framework before utilizing Chorus.\n\nAll ROW team members are required to complete the Chorus GDPR Training in order to be granted Recorder access. SalesOps will provide team members with the link to the EdCast Chorus training once their Baseline Role-Based Entitlement is submitted by their manager. Once the team member has completed training, they will notify SalesOps to have their license updated to a Recorder license in Chorus. SalesOps will verify course completion via an EdCast report .",
+    "chunk_index": 0,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "53f7f102f7ca_1",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/sales-operations/go-to-market/chorus",
+    "title": "Learn How to Use Chorus.ai",
+    "source": "handbook",
+    "headings": [
+      "Learn How to Use Chorus.ai",
+      "What is Chorus?",
+      "Logging into Chorus",
+      "Chorus Training & Enablement",
+      "Chorus Scheduler"
+    ],
+    "text": "embers with the link to the EdCast Chorus training once their Baseline Role-Based Entitlement is submitted by their manager. Once the team member has completed training, they will notify SalesOps to have their license updated to a Recorder license in Chorus. SalesOps will verify course completion via an EdCast report .\n\nAll ROW team members are required to complete the Chorus GDPR Training in order to be granted Recorder access. SalesOps will provide team members with the link to the EdCast Chorus training once their Baseline Role-Based Entitlement is submitted by their manager.\n\nOnce the team member has completed training, they will notify SalesOps to have their license updated to a Recorder license in Chorus.\n\nSalesOps will verify course completion via an EdCast report .\n\nTo comply with GDPR and similar privacy laws, all team members with a Recorder license in Chorus are required to use a feature called Chorus Scheduler when organizing meetings with customers. Chorus Scheduler creates a Go-Link, which routes attendees to a designated landing page for location-based compliance capture so that a meeting host can obtain explicit consent from the participants to record meetings. If meeting hosts do not use Chorus Scheduler for customer meetings, Chorus will not record the meeting. For step-by-step instructions on using Chorus Scheduler, please watch this 3-minute demo and refer to the Call Compliance with Chorus Schedulers deck for additional information.",
+    "chunk_index": 1,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "53f7f102f7ca_2",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/sales-operations/go-to-market/chorus",
+    "title": "Learn How to Use Chorus.ai",
+    "source": "handbook",
+    "headings": [
+      "Learn How to Use Chorus.ai",
+      "What is Chorus?",
+      "Logging into Chorus",
+      "Chorus Training & Enablement",
+      "Chorus Scheduler"
+    ],
+    "text": "m the participants to record meetings. If meeting hosts do not use Chorus Scheduler for customer meetings, Chorus will not record the meeting. For step-by-step instructions on using Chorus Scheduler, please watch this 3-minute demo and refer to the Call Compliance with Chorus Schedulers deck for additional information.\n\nIf you are required by a customer to use a different conference platform than Zoom or Google Meet, please follow the instructions on the Static Link Flow slide of the Call Compliance with Chorus Schedulers deck .\n\nIf you are required by a customer to use a different conference platform than Zoom or Google Meet, please follow the instructions on the Static Link Flow slide of the Call Compliance with Chorus Schedulers deck .\n\nFor situations where you are a participant in a meeting and are seeking to record, you may download the Chorus App for Zoom . This app allows you to add Chorus to a live call to record the meeting and take notes without leaving Zoom. In order to comply with local privacy laws, you will need to verbally obtain consent from your customer to record before doing so. If the customer does not consent to recording, you may not record the meeting. For troubleshooting regarding the Chorus App for Zoom, please follow the steps below: Open Zoom SSO via Okta Click on Settings then Zoom Apps Make sure “Zoom Apps Quick Launch Button” is turned on Open a Zoom meeting on your desktop app You should now be able to see Chorus App and utilize the tool",
+    "chunk_index": 2,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "53f7f102f7ca_3",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/sales-operations/go-to-market/chorus",
+    "title": "Learn How to Use Chorus.ai",
+    "source": "handbook",
+    "headings": [
+      "Learn How to Use Chorus.ai",
+      "What is Chorus?",
+      "Logging into Chorus",
+      "Chorus Training & Enablement",
+      "Chorus Scheduler"
+    ],
+    "text": "t record the meeting. For troubleshooting regarding the Chorus App for Zoom, please follow the steps below: Open Zoom SSO via Okta Click on Settings then Zoom Apps Make sure “Zoom Apps Quick Launch Button” is turned on Open a Zoom meeting on your desktop app You should now be able to see Chorus App and utilize the tool\n\nFor situations where you are a participant in a meeting and are seeking to record, you may download the Chorus App for Zoom . This app allows you to add Chorus to a live call to record the meeting and take notes without leaving Zoom. In order to comply with local privacy laws, you will need to verbally obtain consent from your customer to record before doing so. If the customer does not consent to recording, you may not record the meeting.\n\nFor troubleshooting regarding the Chorus App for Zoom, please follow the steps below:\n\nOpen Zoom SSO via Okta\n\nClick on Settings then Zoom Apps\n\nMake sure “Zoom Apps Quick Launch Button” is turned on\n\nOpen a Zoom meeting on your desktop app\n\nYou should now be able to see Chorus App and utilize the tool\n\nSecurity & Privacy Controls\n\nThe data retention policy for recorded calls in Chorus is 365 days as of September 27, 2022.\n\nAny action that would result in bypassing the 365 day data retention policy will need to be approved by GitLab’s Legal team, including, but not limited to:\n\nPreserving snippets of recordings in LevelUp indefinitely\n\nDownloading recordings\n\nRetaining recordings past the 365 day data retention period",
+    "chunk_index": 3,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "53f7f102f7ca_4",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/sales-operations/go-to-market/chorus",
+    "title": "Learn How to Use Chorus.ai",
+    "source": "handbook",
+    "headings": [
+      "Learn How to Use Chorus.ai",
+      "What is Chorus?",
+      "Logging into Chorus",
+      "Chorus Training & Enablement",
+      "Chorus Scheduler"
+    ],
+    "text": "September 27, 2022.\n\nAny action that would result in bypassing the 365 day data retention policy will need to be approved by GitLab’s Legal team, including, but not limited to:\n\nPreserving snippets of recordings in LevelUp indefinitely\n\nDownloading recordings\n\nRetaining recordings past the 365 day data retention period\n\nIf you have a unique circumstance that will require you to preserve a recording past 365-days, please submit a Legal Issue - Chorus_Approval template and follow the instructions.  You will not receive automatic reminders regarding calls that will be purged after 365 days so it would be a best practice to submit a Legal Issue for preservation at your earliest convenience.\n\nWhen requesting approval, please note the following:\n\nA request to retain a recording must be received by Legal no later than 15-days prior to the end of the 365-day retention window . For example, the request to retain a recording created on May 1st that will automatically be deleted 365-days later must be received by Legal no later than April 15th. Please note that any request submitted within 14-days of the end of the retention window may not be reviewed in time or approved.\n\nSnippets saved to any playlists will be preserved\n\nSnippets saved on the call itself will be deleted according to the retention policy\n\nAny time a Chorus link is shared, a password should be required or the link should be set to expire. Each user must complete this action individually.",
+    "chunk_index": 4,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "53f7f102f7ca_5",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/sales-operations/go-to-market/chorus",
+    "title": "Learn How to Use Chorus.ai",
+    "source": "handbook",
+    "headings": [
+      "Learn How to Use Chorus.ai",
+      "What is Chorus?",
+      "Logging into Chorus",
+      "Chorus Training & Enablement",
+      "Chorus Scheduler"
+    ],
+    "text": "be reviewed in time or approved.\n\nSnippets saved to any playlists will be preserved\n\nSnippets saved on the call itself will be deleted according to the retention policy\n\nAny time a Chorus link is shared, a password should be required or the link should be set to expire. Each user must complete this action individually.\n\nAs a best practice, if you need to include a Chorus recording or any type of customer information in an issue, please first mark the issue as Confidential . For additional details, please see this issue .\n\nFor additional details, please see this issue .\n\nChorus Compliance Resources\n\nWhat is a Chorus Tracker and How do I Create One?\n\nTrackers can be keywords or phrases that you are interested in highlighting across sales conversations. These can be used to track competitor mentions or client feedback, for example.\n\nManagers can submit an issue in the Sales Operations project using the Chorus Tracker Request template to have a Chorus Tracker created. Individual contributors who would like a Chorus Tracker created can sync with their manager and have them submit the request.\n\nROW SAEs, AEs, CSM, and SAs upon completion of Chorus GDPR Training\n\nAll SDR/BDR team members\n\nAll Public Sector team members\n\nAll GitLab team members in non-customer facing roles including, but not limited to, those in Operations roles and all Managers regardless of their org\n\nGitLab team members may request Listener access through an Access Request which may be granted on a case by case basis\n\nWhy is My Meeting “Livestreamed”?",
+    "chunk_index": 5,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "53f7f102f7ca_6",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/sales-operations/go-to-market/chorus",
+    "title": "Learn How to Use Chorus.ai",
+    "source": "handbook",
+    "headings": [
+      "Learn How to Use Chorus.ai",
+      "What is Chorus?",
+      "Logging into Chorus",
+      "Chorus Training & Enablement",
+      "Chorus Scheduler"
+    ],
+    "text": "team members\n\nAll GitLab team members in non-customer facing roles including, but not limited to, those in Operations roles and all Managers regardless of their org\n\nGitLab team members may request Listener access through an Access Request which may be granted on a case by case basis\n\nWhy is My Meeting “Livestreamed”?\n\nThe banner “Live on Zoom with Chorus.ai” is controlled and set by Zoom, therefore neither Chorus nor GitLab can make changes to the text.\n\nThis banner means that your meeting is being actively recorded by Chorus.ai and will be stored within the Chorus.ai platform for a period of 90 days, in accordance with GitLab’s data retention policy for Chorus.ai.\n\nTo stop recording your meeting at any point, click on the dropdown next to “Live on Zoom with Chorus.ai” and choose “Stop Live Stream”. Then click on the square stop symbol to completely stop recording.\n\nRecording with Breakout Rooms\n\nChorus will not capture the breakout rooms, only the main Zoom meeting will be captured.\n\nPlease note: By default Chorus has rules around silence on a call. If participants are put into breakout rooms for longer than 5 minutes in the middle of the call, Chorus will drop out of the call due to silence thinking the meeting is over.\n\nUpdate Email Communication Preferences in your Chorus Personal Settings\n\nGetting Started with Chorus\n\nChorus Set Up Made Easy\n\nChorus Best Practices: Deals & Momentum\n\nHow to Remove Chorus From a Meeting\n\nLivestream & Recording Notifications How to explain why Chorus is there and why it is recording",
+    "chunk_index": 6,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "53f7f102f7ca_7",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/sales-operations/go-to-market/chorus",
+    "title": "Learn How to Use Chorus.ai",
+    "source": "handbook",
+    "headings": [
+      "Learn How to Use Chorus.ai",
+      "What is Chorus?",
+      "Logging into Chorus",
+      "Chorus Training & Enablement",
+      "Chorus Scheduler"
+    ],
+    "text": "e meeting is over.\n\nUpdate Email Communication Preferences in your Chorus Personal Settings\n\nGetting Started with Chorus\n\nChorus Set Up Made Easy\n\nChorus Best Practices: Deals & Momentum\n\nHow to Remove Chorus From a Meeting\n\nLivestream & Recording Notifications How to explain why Chorus is there and why it is recording\n\nHow to explain why Chorus is there and why it is recording\n\nSecurity & Compliance Share this with customers as needed\n\nShare this with customers as needed\n\nChorus YouTube Channel\n\nChorus.ai Advanced Usage\n\nChorus Release Notes (no longer available)\n\nFor additional assistance regarding Chorus, please reach out in the #chorus-users Slack channel.",
+    "chunk_index": 7,
+    "total_chunks": 8
+  }
+]

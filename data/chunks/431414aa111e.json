@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "431414aa111e_0",
+    "url": "https://handbook.gitlab.com/handbook/support/support-pods/ci-cd",
+    "title": "CI/CD Support Pod",
+    "source": "handbook",
+    "headings": [
+      "CI/CD Support Pod",
+      "Purpose",
+      "Scope",
+      "Current objectives",
+      "Support Pod members"
+    ],
+    "text": "Discuss CI/CD related tickets/issues, learn about CI/CD features and improve related documentation.\n\nTopics in this pod will ideally align with these product groups:\n\nIn the context of “CI/CD” it can be hard to pinpoint where exactly a problem fits in. This list is not meant to discourage anyone from seeking help in the pod – when in doubt, ask away! The worst that could happen is that someone suggest a better place for the question.\n\nKeep regular meetings going\n\nStay updated on all things CI/CD\n\nHelp each other with CI/CD tickets!\n\nCleveland Bledsoe Jr ( @cleveland )\n\nRyan Kelly ( @rkelly )\n\nElif Munn ( @e_munn )\n\nEdward Hilgendorf IV ( @edwardhilgendorf )\n\nDuncan Harris ( @duncan_harris )\n\nAlejandro Guerrero de Alba ( @alejguer )\n\nSegolene Bouly ( @sbouly )\n\nCharl Marais ( @cmarais )\n\nSarah Crowle ( @sacrowle )\n\nTalk with your manager.\n\nAdd CI to your knowledge areas in the Support Team data . If it already exists, adjust your level accordingly.\n\nLet your teammates and groupmates know about your new focus area.\n\nJoin the #spt_pod_cicd Slack channel.\n\nAdd yourself to this page.\n\nAttend CI/CD pairing sessions if we can ever figure out how to work a calendar. See Regular meetings and check the GitLab Support calendar for up to date meeting times\n\nCI/CD Pod pairing session: Mondays, 11:00 CET (09:00 / 10:00 UTC depending on DST, check the GitLab Support calendar) Thursdays, 15:30 CET (13:30 / 14:30 UTC depending on DST, check the GitLab Support calendar)\n\nMondays, 11:00 CET (09:00 / 10:00 UTC depending on DST, check the GitLab Support calendar)",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "431414aa111e_1",
+    "url": "https://handbook.gitlab.com/handbook/support/support-pods/ci-cd",
+    "title": "CI/CD Support Pod",
+    "source": "handbook",
+    "headings": [
+      "CI/CD Support Pod",
+      "Purpose",
+      "Scope",
+      "Current objectives",
+      "Support Pod members"
+    ],
+    "text": "te meeting times\n\nCI/CD Pod pairing session: Mondays, 11:00 CET (09:00 / 10:00 UTC depending on DST, check the GitLab Support calendar) Thursdays, 15:30 CET (13:30 / 14:30 UTC depending on DST, check the GitLab Support calendar)\n\nMondays, 11:00 CET (09:00 / 10:00 UTC depending on DST, check the GitLab Support calendar)\n\nThursdays, 15:30 CET (13:30 / 14:30 UTC depending on DST, check the GitLab Support calendar)\n\nCollaboration channels\n\nSlack channel: #spt_pod_cicd\n\nSet up a CI/CD View in Zendesk\n\nIt’s recommended to set up a personal view for all CI/CD related tickets.\n\nSet up a view with the following parameters: Title : CI/CD Pod Conditions : Tickets must meet all of these conditions to appear in the view: Status is not Closed Status is not Solved Status is not pending Tickets can meet any of these conditions to appear in the view: Tags contains at least one of the following: Add all support_cicd_* tags Add support_category_cicd Columns (Recommended but you can choose what you’d like): Next SLA breach Subject Requester Request date Assignee Priority Organization Order by : Next SLA breach - Ascending\n\nConditions : Tickets must meet all of these conditions to appear in the view: Status is not Closed Status is not Solved Status is not pending Tickets can meet any of these conditions to appear in the view: Tags contains at least one of the following: Add all support_cicd_* tags Add support_category_cicd\n\nTickets must meet all of these conditions to appear in the view: Status is not Closed Status is not Solved Status is not pending\n\nStatus is not pending",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "431414aa111e_2",
+    "url": "https://handbook.gitlab.com/handbook/support/support-pods/ci-cd",
+    "title": "CI/CD Support Pod",
+    "source": "handbook",
+    "headings": [
+      "CI/CD Support Pod",
+      "Purpose",
+      "Scope",
+      "Current objectives",
+      "Support Pod members"
+    ],
+    "text": "ding Tickets can meet any of these conditions to appear in the view: Tags contains at least one of the following: Add all support_cicd_* tags Add support_category_cicd\n\nTickets must meet all of these conditions to appear in the view: Status is not Closed Status is not Solved Status is not pending\n\nStatus is not pending\n\nTickets can meet any of these conditions to appear in the view: Tags contains at least one of the following: Add all support_cicd_* tags Add support_category_cicd\n\nTags contains at least one of the following: Add all support_cicd_* tags Add support_category_cicd\n\nAdd all support_cicd_* tags\n\nAdd support_category_cicd\n\nColumns (Recommended but you can choose what you’d like): Next SLA breach Subject Requester Request date Assignee Priority Organization\n\nOrder by : Next SLA breach - Ascending\n\nNext SLA breach - Ascending",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "chunk_id": "c833ab937cf4_0",
+    "url": "https://handbook.gitlab.com/handbook/support/knowledge-base/kb-faq",
+    "title": "FAQ & Best Practices",
+    "source": "handbook",
+    "headings": [
+      "FAQ & Best Practices",
+      "Questions & Answers"
+    ],
+    "text": "This section is provided to help guide you through Knowledge article best practices, and address frequently asked questions.\n\nThink about who the intended audience is, for the information. What is the purpose of the information? Can it be easily accessible to a customer? How often is it updated?\n\nAs a Best practice: Knowledge articles are more concise, easy to read, targeted for quick answers, solutions to common questions. Create knowledge articles that can help customers solve issues / problems. Create knowledge articles that are FAQs. Common questions that can be addressed/answered. Create knowledge articles that are frequently updated Create knowledge articles that can be easily accessed by customers (Searchable)\n\nUse GitLab Terminology Consistently (Naming Structure).\n\nUse GitLab Terminology Consistently (Naming Structure).\n\nUse Proper Templates and Structure when creating articles\n\nUse Proper Templates and Structure when creating articles\n\nSearch articles before creating a new article to avoid having duplicates\n\nSearch articles before creating a new article to avoid having duplicates\n\nKeep articles clear, and focused.\n\nKeep articles clear, and focused.\n\nWrite for Localization (Keep it simple, Write Clearly, and in terms customers can understand/use)\n\nWrite for Localization (Keep it simple, Write Clearly, and in terms customers can understand/use)\n\nMaintain Versions (use a label where appropriate)\n\nMaintain Versions (use a label where appropriate)",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "c833ab937cf4_1",
+    "url": "https://handbook.gitlab.com/handbook/support/knowledge-base/kb-faq",
+    "title": "FAQ & Best Practices",
+    "source": "handbook",
+    "headings": [
+      "FAQ & Best Practices",
+      "Questions & Answers"
+    ],
+    "text": "clear, and focused.\n\nWrite for Localization (Keep it simple, Write Clearly, and in terms customers can understand/use)\n\nWrite for Localization (Keep it simple, Write Clearly, and in terms customers can understand/use)\n\nMaintain Versions (use a label where appropriate)\n\nMaintain Versions (use a label where appropriate)\n\nLink to other Resources Note : If customer facing, make sure they can access any links that are within the article. If they cannot, do not add it.\n\nLink to other Resources\n\nNote : If customer facing, make sure they can access any links that are within the article. If they cannot, do not add it.\n\nCategorize articles appropriately. This helps with search!\n\nCategorize articles appropriately. This helps with search!\n\nKeep articles updated (review). If you find an article that could use more information, updates… do it! We all can contribute to knowledge!\n\nKeep articles updated (review). If you find an article that could use more information, updates… do it! We all can contribute to knowledge!\n\nTitles of articles need to be Specific (Using key words to help be descriptive). Titles should not be long.\n\nTitles of articles need to be Specific (Using key words to help be descriptive). Titles should not be long.\n\nHave a Summary of what the article is about to give an overview of the article.\n\nHave a Summary of what the article is about to give an overview of the article.\n\nHave a Problem statement to help the user understand if it applies to them.\n\nHave a Problem statement to help the user understand if it applies to them.",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "c833ab937cf4_2",
+    "url": "https://handbook.gitlab.com/handbook/support/knowledge-base/kb-faq",
+    "title": "FAQ & Best Practices",
+    "source": "handbook",
+    "headings": [
+      "FAQ & Best Practices",
+      "Questions & Answers"
+    ],
+    "text": "ong.\n\nHave a Summary of what the article is about to give an overview of the article.\n\nHave a Summary of what the article is about to give an overview of the article.\n\nHave a Problem statement to help the user understand if it applies to them.\n\nHave a Problem statement to help the user understand if it applies to them.\n\nHave Clear instructions (Bullet Points, Pictures, Details)\n\nHave Clear instructions (Bullet Points, Pictures, Details)\n\nCreate the article based on the user context.\n\nCreate the article based on the user context.\n\nWrite for Audience. How will they read it (their words).\n\nWrite for Audience. How will they read it (their words).\n\nUse Keywords (Content tags) for Search. Search terms pull from Content Tags, Titles and Description of Knowledge articles\n\nUse Keywords (Content tags) for Search. Search terms pull from Content Tags, Titles and Description of Knowledge articles\n\nInclude Steps for work around, and troubleshooting.\n\nInclude Steps for work around, and troubleshooting.\n\nInclude Support information for further help if needed.\n\nInclude Support information for further help if needed.\n\nKnowledge Base Style Guide\n\nWho do I contact if I need help with knowledge?\n\nUse the Slack Channel #spt_Knowledge-base\n\nIs there Training for knowledge creation, modifying and Publishing?\n\nYes! A list of available training resources is available on the Knowledge Base training page](./knowledge-base-training)\n\nHow do I know if I am a Support Engineer or Knowledge Champion?\n\nView the permission in the Roles and Permissions section .",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "c833ab937cf4_3",
+    "url": "https://handbook.gitlab.com/handbook/support/knowledge-base/kb-faq",
+    "title": "FAQ & Best Practices",
+    "source": "handbook",
+    "headings": [
+      "FAQ & Best Practices",
+      "Questions & Answers"
+    ],
+    "text": "base\n\nIs there Training for knowledge creation, modifying and Publishing?\n\nYes! A list of available training resources is available on the Knowledge Base training page](./knowledge-base-training)\n\nHow do I know if I am a Support Engineer or Knowledge Champion?\n\nView the permission in the Roles and Permissions section .\n\nWho can approve and Publish a knoweldge article I created?\n\nTechnical Reviewers will approve and publish articles.",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

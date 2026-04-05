@@ -1,0 +1,258 @@
+[
+  {
+    "chunk_id": "d27ad95a8346_0",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "The handbook site uses Hugo for static page generation\nfrom Markdown.\n\nThe handbook uses a base theme called Docsy . A custom theme override\nis located in the Docsy GitLab Theme project and automatically included in the handbook setup.\n\nArchitecture Information\n\nPlease see the handbook architecture page .\n\nFor the public Handbook, the top level menu (top navigation bar) uses Hugo’s menu settings to define menu entries. Edits to menu items can be made in the default /config/_default/config.yaml file in the main: menu parameters in the handbook repo. These config settings take presedence over docsy config settings.\n\nDocsy builds upon Hugo’s menu system and offers additional features, such as the ability to add top level menu items directly from a page’s frontmatter. For example, the Job Families section landing page was added to the main menu by adding main: menu parameters in the frontmatter.\n\nFor help and support with the development environment, please reach out in the public #handbook Slack channel.\n\nIf you encounter a problem or bug, please open an issue or MR in the respective handbook projects.\n\nEdit the handbook in your browser\n\nFollow the editing the handbook documentation.\n\nRun the handbook locally for edits\n\nDocker or compatible runtime (all software preinstalled in a container image)\n\nLocal installation (experienced users, more software dependencies, can break)\n\nCommand line: git , wget (for syncing data). Additional requirements for local installation, see below.",
+    "chunk_index": 0,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_1",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "ndbook documentation.\n\nRun the handbook locally for edits\n\nDocker or compatible runtime (all software preinstalled in a container image)\n\nLocal installation (experienced users, more software dependencies, can break)\n\nCommand line: git , wget (for syncing data). Additional requirements for local installation, see below.\n\nDocker or compatible runtime (for running the Hugo environment in a container) On macOS : Docker Desktop, Rancher Desktop, etc. On Linux : Docker engine, Podman, etc.\n\nOn macOS : Docker Desktop, Rancher Desktop, etc.\n\nOn Linux : Docker engine, Podman, etc.\n\nClone the handbook Git repository\n\nCloning the repository allows you to manually edit the handbook locally. If you prefer to use the Web IDE, please continue reading the editing the handbook documentation.\n\nWe recommend using git to clone the repository and then editing the handbook with a text editor such\nas Visual Studio Code , Typora , Nova or Sublime to name a few.\n\nClone the repository:\n\nSet up the repository\n\nAfter cloning the repository, sync the required data files from the\ndata file location (currently the www-gitlab-com repository).  Without this\nstep, the handbook cannot be run locally.\n\nOpen a terminal, navigate into the cloned handbook repository path, and run the sync-data.sh script.\n\nExample for the public handbook:\n\nHugo needs to be run to generate the static files from the handbook markdown content.\n\nWhen installing Hugo, review the CI file of the relevant handbook repository for the version of Hugo in use. The latest version may or may not work.\n\nThere are two ways to run Hugo:",
+    "chunk_index": 1,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_2",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "-data.sh script.\n\nExample for the public handbook:\n\nHugo needs to be run to generate the static files from the handbook markdown content.\n\nWhen installing Hugo, review the CI file of the relevant handbook repository for the version of Hugo in use. The latest version may or may not work.\n\nThere are two ways to run Hugo:\n\nRunning the Handbook in Docker\n\nRunning the Handbook in Workspace\n\nRunning the Handbook Locally\n\nThe handbook is huge, and by default, the hugo server command loads everything to memory.\n\nThe following options for the hugo command can be helpful for debugging or otherwise running locally:\n\n--environment=production : generate a production build (asset minification, checksums, etc) Note: hugo v0.x.x+extended version must be installed, use hugo version to check Note: npm i must be run as a prerequisite to install postcss and autoprefixer dependencies\n\nNote: hugo v0.x.x+extended version must be installed, use hugo version to check\n\nNote: npm i must be run as a prerequisite to install postcss and autoprefixer dependencies\n\n--renderToDisk : slower but requires less memory to run. Useful if you have less than 16GB allocated to docker machine\n\n--verbose : enables verbose logging output\n\n--templateMetrics and --templateMetricsHints : prints metrics related to how frequently templates are invoked and how much time is being spent evaluating them\n\n--printMemoryUsage : periodically prints memory usage while the site is building\n\nTo render the entire site to disk (and inspect the output in ${PWD}/public ),\npurge the generated files first, and then run Hugo.",
+    "chunk_index": 2,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_3",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "ts metrics related to how frequently templates are invoked and how much time is being spent evaluating them\n\n--printMemoryUsage : periodically prints memory usage while the site is building\n\nTo render the entire site to disk (and inspect the output in ${PWD}/public ),\npurge the generated files first, and then run Hugo.\n\nFor some pages to render you may need a personal access token .\nGenerate one and export it as an environment variable prior to running hugo commands:\n\nIf you need to make changes to the underlying theme you’ll need to make changes in the Gitlab-Docsy module .\n\nTo enforce rules and guidelines, we use:\n\nOnce an error is encountered, the relevant job fails and a comment is added to the merge request with a list of errors, with guidance for the suggested fix.\nWarnings and suggestions are not reported in the comment, but are in the code quality report.\n\nCurrently, all configuration and script files exist in each repository. See configuration file sync issue .\n\nThe custom handbook lint script ( handbook version ) is used to verify a number of the guidelines we have, including:\n\nMedia files Image location for new images. Image size for images in the MR. Video location for new videos.\n\nImage location for new images.\n\nImage size for images in the MR.\n\nVideo location for new videos.",
+    "chunk_index": 3,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_4",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "custom handbook lint script ( handbook version ) is used to verify a number of the guidelines we have, including:\n\nMedia files Image location for new images. Image size for images in the MR. Video location for new videos.\n\nImage location for new images.\n\nImage size for images in the MR.\n\nVideo location for new videos.\n\nCodeowners Folder or file exists. A controlled document is listed in the [Controlled documents] section, and vice versa. A required approval includes the specified groups, such as e-group . Warns if a listed user is not in the team.yml . Note: If a user exists, but the job says they’re not a team member, check the relevant data/team-member.yml file to see if the GitLab username matches.\n\nFolder or file exists.\n\nA controlled document is listed in the [Controlled documents] section, and vice versa.\n\nA required approval includes the specified groups, such as e-group .\n\nWarns if a listed user is not in the team.yml .\n\nNote: If a user exists, but the job says they’re not a team member, check the relevant data/team-member.yml file to see if the GitLab username matches.\n\nWe use Hugo lint to check for the validity of internal links. It supports relative linking to the markdown file, and the production path.\n\nEach job also outputs the top 30 incorrect links to assist in fixing them.\n\nSee the ReadMe for more information about how Hugo lint works.\n\nRefer to the markdown guide for style guide information, and guidance on rules.",
+    "chunk_index": 4,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_5",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "dity of internal links. It supports relative linking to the markdown file, and the production path.\n\nEach job also outputs the top 30 incorrect links to assist in fixing them.\n\nSee the ReadMe for more information about how Hugo lint works.\n\nRefer to the markdown guide for style guide information, and guidance on rules.\n\nWe use markdownlint-cli2 in our pipelines with a slightly customized set of rules.\nBefore pushing any changes, you can run markdownlint-cli2 and fix any suggested changes to avoid pipeline failures.\n\nTo run markdownlint-cli2 using Docker, run:\n\nIf you have markdownlint-cli2 installed locally , you can run the command in the relevant repository.\nThis method is recommended when editing the config file (look for the markdownlint file), and testing the changes. To have markdownlint automatically fix some errors,\nadd the fix option:\n\nRules are configured to be close to the GitLab documentation markdownlint , without some of the stricter styling rules.\nThe relevant rules are also noted in the markdown guide .\n\nWe use Vale to verify some of the rules in the Handbook Markdown Guide .\n\nVale errors will fail the pipeline and are included in the MR comment.\nWarnings are included in the job log, code quality, and MR diff.\n\nTo run Vale using Docker, run:\n\nIf you have vale installed locally, you can test the changes. To limit the results, add the minAlertLevel option, such as:",
+    "chunk_index": 5,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_6",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "e Handbook Markdown Guide .\n\nVale errors will fail the pipeline and are included in the MR comment.\nWarnings are included in the job log, code quality, and MR diff.\n\nTo run Vale using Docker, run:\n\nIf you have vale installed locally, you can test the changes. To limit the results, add the minAlertLevel option, such as:\n\nRules are configured to be close to the GitLab documentation vale rules .\nWhen the gitlab_base rules are exactly the same, they are included in the gitlab_base folder in the content sites repositories.\nWhen the rules differ, they are stored in the handbook folder.\n\nDocsy GitLab Theme Development\n\nDocsy is used as a base for the internal and public handbooks. Modifications\nand extensions have been added on top to ensure efficient handbook usage.\n\nAll Hugo partials and shortcodes should be added to this repository, instead\nof duplicating them locally into the handbook projects.\n\nThe Docsy GitLab theme is integrated into the public/internal handbook repositories using a Go module in go.mod .\n\nTo develop on the Docsy GitLab theme locally build the handbook (or internal-handbook) project with the updated local copy of the docsy-gitlab theme following the steps below:\n\nAdd the following line to the bottom of the go.mod file in the handbook project: replace gitlab . com / gitlab - com / content - sites / docsy - gitlab => / YOUR / LOCAL / PATH / TO / docsy - gitlab\n\nAdd the following line to the bottom of the go.mod file in the handbook project:\n\nRun the Hugo server: hugo server\n\nLoad the site locally: open http://localhost:1313/\n\nLoad the site locally:",
+    "chunk_index": 6,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_7",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "k project: replace gitlab . com / gitlab - com / content - sites / docsy - gitlab => / YOUR / LOCAL / PATH / TO / docsy - gitlab\n\nAdd the following line to the bottom of the go.mod file in the handbook project:\n\nRun the Hugo server: hugo server\n\nLoad the site locally: open http://localhost:1313/\n\nLoad the site locally:\n\nAny changes made to files in local docsy-gitlab project will be rendered in the local instance.\n\nWhen making changes that may have a user impact (not content only changes):\n\nTest the changes locally first by performing the upgrades to gitlab-docsy , handbook , and internal-handbook and running the builds locally. Manual testing locally will make it easy to spot any major issues.\n\nIf there are no concerns, create a MR in the Docsy project with the changes, and have a maintainer review. Ensure that only the relevant changes you’re testing are in the MR. Note: At the moment, there is no review app for the docsy project. When relevant, include local testing notes in the MR.\n\nNote: At the moment, there is no review app for the docsy project. When relevant, include local testing notes in the MR.\n\nWith the new version of the theme available, create new MRs in handbook and internal-handbook with the changes and upgrade to the theme if needed. Use review apps for both MRs to test the dependency changes in a production-like environment.\n\nApply the changes to the internal handbook first, and ensure changes are okay.\n\nNext, apply the changes to the public handbook.\n\nIf there are any issues, revert the changes to the handbook projects.",
+    "chunk_index": 7,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_8",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "de to the theme if needed. Use review apps for both MRs to test the dependency changes in a production-like environment.\n\nApply the changes to the internal handbook first, and ensure changes are okay.\n\nNext, apply the changes to the public handbook.\n\nIf there are any issues, revert the changes to the handbook projects.\n\nIn some cases, a page or shortcode may pull data directly from the www-gitlab-com project. ( Example ). In these cases, you can test the change by exporting a variable with the branch name of a www-gitlab-com MR before running hugo locally.\n\nYou make a change to ux_department.yml .\n\nYou push your change in a git branch named ux-dept-yml-update and create an MR.\n\nThe www-gitlab-com MR review app can’t show your change, because the data is rendered in the handbook project.\n\nBefore running the hugo server locally, execute export PUBLIC_HANDBOOK_REF=ux-dept-yml-update\n\nRun the hugo server locally: hugo server\n\nTest your changes - the version of the files from your branch should now be used.\n\nChanges made to docsy-gitlab will be made available to the handbook and internal-handbook after the version is bumped and deployed to each project. This includes all theme updates with partials, shortcodes, and any changes to /docs . Much of this process has been automated, but a few manual steps are still required. To release a docsy-gitlab change follow these steps:",
+    "chunk_index": 8,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_9",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "e to the handbook and internal-handbook after the version is bumped and deployed to each project. This includes all theme updates with partials, shortcodes, and any changes to /docs . Much of this process has been automated, but a few manual steps are still required. To release a docsy-gitlab change follow these steps:\n\nAfter the merge request is merged, a pipeline on the main brach will kick off. After the pipeline succeeds, the release job can be triggered manually. For example: https://gitlab.com/gitlab-com/content-sites/docsy-gitlab/-/pipelines/1304430830\n\nThe release job will do three things: Create a release in the docsy-gitlab project. Example: https://gitlab.com/gitlab-com/content-sites/docsy-gitlab/-/releases/v0.3.25 Create a merge request to handbook . Example: https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/6086 Create a merge request to internal-handbook . Example: https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests/4771\n\nCreate a release in the docsy-gitlab project. Example: https://gitlab.com/gitlab-com/content-sites/docsy-gitlab/-/releases/v0.3.25\n\nCreate a merge request to handbook . Example: https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/6086\n\nCreate a merge request to internal-handbook . Example: https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests/4771\n\nAssign a handbook backend maintainer or codeowner to each MR for review.\n\nOnce the merge request to handbook and internal-handbook have been merged, the theme changes will be deployed to the sites.",
+    "chunk_index": 9,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_10",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "quest to internal-handbook . Example: https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests/4771\n\nAssign a handbook backend maintainer or codeowner to each MR for review.\n\nOnce the merge request to handbook and internal-handbook have been merged, the theme changes will be deployed to the sites.\n\nFor more information on the release process, see the release script .\n\nUpdating dependencies\n\nNote: Before updating dependencies, review the go.mod file in the target\nproject for additional notes and requirements.\n\nNote: Before updating dependencies, review the go.mod file in the target\nproject for additional notes and requirements.\n\nAlways update dependencies individually to isolate potential bugs and regressions. Never pull latest but pin the dependencies to a specific released version.\n\nDo not bump Docsy versions without testing them extensively in MR review apps.\n\nDo not bump Docsy versions without testing them extensively in MR review apps.\n\nYou can add redirects to the layouts/index.redirects file in the relevant repository.\nRefer to the GitLab Pages redirect documentation for how these are formatted.\n\nPlease add your redirect in chronological order with a removal date of:\n\n3 months for within a single handbook, from one relative path to another relative path,\n\n3-6 months when linking from one handbook to another (such as linking from handbook.gitlab.com to internal.gitlab.com ), or\n\n3-12 months for external links, meaning not part of the handbook.gitlab.com or internal.gitlab.com domains.\n\nHandbook & Internal Handbook",
+    "chunk_index": 10,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_11",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "ndbook, from one relative path to another relative path,\n\n3-6 months when linking from one handbook to another (such as linking from handbook.gitlab.com to internal.gitlab.com ), or\n\n3-12 months for external links, meaning not part of the handbook.gitlab.com or internal.gitlab.com domains.\n\nHandbook & Internal Handbook\n\nThe CI/CD pipelines for the handbook and internal-handbook projects are roughly the same, and should remain that way.\n\nThe build stage performs a few linter and security jobs ( handbooklint , hugolint , markdownlint , and secret_detection ), and a build job which builds the whole site and saves it as CI artifacts.\n\nThe deploy stage uses the artifacts generated in the build stage to deploy the production site for changes to the main branch or review apps which can be deployed for MRs.\n\nThe notify stage has two jobs that are triggered on specific events:\n\npost_comment_on_failure posts a comment to the MR when the markdownlint or handbooklint jobs fail.\n\nnotify_slack_on_build_failures post a message to the #handbook-escalation Slack channel when there is a build failure on the main branch. This type of failure would indicate a broken CI pipeline.\n\n$BUILD_AND_TEST_ONLY mode\n\nThe pipelines can be triggered to run in $BUILD_AND_TEST_ONLY mode which means they will run all the test and build jobs, but none of the deploy or notify jobs. A pipeline can be triggered in $BUILD_AND_TEST_ONLY mode by setting the $BUILD_AND_TEST_ONLY CI variable to true . This is used primarily by the downstream pipelines triggered from the www-gitlab-com project.",
+    "chunk_index": 11,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_12",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "ND_TEST_ONLY mode which means they will run all the test and build jobs, but none of the deploy or notify jobs. A pipeline can be triggered in $BUILD_AND_TEST_ONLY mode by setting the $BUILD_AND_TEST_ONLY CI variable to true . This is used primarily by the downstream pipelines triggered from the www-gitlab-com project.\n\nTools or scripts that need to interact with the repositories to perform handbook tasks should use the GITLAB_TOKEN CI variable. This is group level access token called Docsy GitLab Release with a developer role and has api and write_repository scopes. This token will expire after a year and will need to be refreshed. Follow the steps below to refresh the token:\n\nCreate a new developer group level access token in <https://gitlab.com/groups/gitlab-com/content-sites/-/settings/access_tokens with api> and write_repository scopes. Give it the name GITLAB_TOKEN_YYYY_MM_DD (replace the YYYY_MM_DD portion with the current date).\n\nUpdate the value of GITLAB_TOKEN in docsy-gitlab , handbook , and internal-handbook with the new token value.\n\nCreate a new release of the Docsy GitLab Theme and ensure the pipeline works correctly.\n\nDelete the old token.\n\nFor more information, see the general management of access tokens section .\n\nGitLab Pages Deployment\n\nThe deploy and review apps are configured in the pages job in the .gitlab-ci.yml configuration file.\n\nReview app deploys can be run for merge requests by running the manual pages job, or by adding the ~\"deploy-review-app-always\" label to the MR.",
+    "chunk_index": 12,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_13",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "he general management of access tokens section .\n\nGitLab Pages Deployment\n\nThe deploy and review apps are configured in the pages job in the .gitlab-ci.yml configuration file.\n\nReview app deploys can be run for merge requests by running the manual pages job, or by adding the ~\"deploy-review-app-always\" label to the MR.\n\nReview app deploys can be run for merge requests by running the manual pages job, or by adding the ~\"deploy-review-app-always\" label to the MR.\n\nProduction deploys are only run from the main branch.\n\nProduction deploys are only run from the main branch.\n\nConditional CI variables are used to configure the environment for review apps using GitLab Pages Multiple Deployments . variables : PAGES_PREFIX : 'mr$CI_MERGE_REQUEST_IID' ENVIRONMENT : 'mr$CI_MERGE_REQUEST_IID' HUGO_BASEURL : \"${CI_PAGES_URL}/${PAGES_PREFIX}\"\n\nConditional CI variables are used to configure the environment for review apps using GitLab Pages Multiple Deployments .\n\nThe route map is configured in the .gitlab/route-map.yml .\n\nThe CI/CD pipeline for docsy-gitlab is responsible for building, testing, and releasing the Docsy GitLab theme used by both handbook and internal-handbook .\n\nThe test stage performs the markdownlint , and secret_detection jobs.\n\nThe build stage performs runs the hugo command to ensure the theme builds successfully.\n\nThe release stage performs one manual job to create a new release of the theme and merge requests to both handbook and internal-handbook . See the Releases section for more details.",
+    "chunk_index": 13,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_14",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "ms the markdownlint , and secret_detection jobs.\n\nThe build stage performs runs the hugo command to ensure the theme builds successfully.\n\nThe release stage performs one manual job to create a new release of the theme and merge requests to both handbook and internal-handbook . See the Releases section for more details.\n\nThe CI/CD pipeline for www-gitlab-com is responsible for triggering downstream builds of both handbook and internal-handbook in $BUILD_AND_TEST_ONLY mode. This ensures that any changes to dependent data files in www-gitlab-com will build successfully for both handbook and internal-handbook .\n\nDanger review and reviewer roulette\n\nRight now the handbook projects doesn’t use the Reviewer Roulette feature of the danger-review CI/CD component . See issue .\n\nWe use the architecture plugin to provide guidance on how to review MRs that contain changes to architecture evolution design documents .\n\nIn order to make Danger post message to MRs we need to setup a project token ( api scope with Developer role) and\na CI/CD variable called DANGER_GITLAB_API_TOKEN to contain this project token ( Masked but not Protected ).\nFor more information, see the general management of access tokens section .\n\nFor more details, follow the Danger documentation and inspect the MR adding the reviewer roulette to the public handbook .\n\nCode quality report MR commenter",
+    "chunk_index": 14,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "d27ad95a8346_15",
+    "url": "https://handbook.gitlab.com/docs/development",
+    "title": "Handbook Development",
+    "source": "handbook",
+    "headings": [
+      "Handbook Development",
+      "Architecture Information",
+      "Navigation and Menus",
+      "Support",
+      "Edit the handbook in your browser"
+    ],
+    "text": "ed DANGER_GITLAB_API_TOKEN to contain this project token ( Masked but not Protected ).\nFor more information, see the general management of access tokens section .\n\nFor more details, follow the Danger documentation and inspect the MR adding the reviewer roulette to the public handbook .\n\nCode quality report MR commenter\n\nThe CI/CD linting jobs generate code quality report artifacts for MR widget integration. If there are errors detected,\na custom CI/CD job posts a Markdown table summary as MR comment, linking to helpful handbook editing resources.\n\nThe parse-codequality-report.sh script in the handbook and internal-handbook generates the code quality report posted in the MR. Changes to these reports need to be applied to both projects.\n\nThe code quality report relies on the GITLAB_TOKEN to perform the reporting actions on any MRs.\n\nCI/CD maintenance tasks\n\nSee maintenance tasks .\n\nThe triage-bot project is meant to help triage issues in the handbook, internal-handbook, and docsy-theme projects.\nIt has two main goals:\n\nEnsure issues are triaged.\n\nClose stale issues and merge requests.\n\nPlease see the .triage-policies.yml for rules.\nYou can find more about how to create policies in the GitLab triage gem project readme .\n\nThe triage bot is scheduled to run 3 times a week. See the project’s pipeline schedule for details.\n\nTriage uses the TRIAGE_BOT access token to perform tasks. This must have the Developer role to take actions on merge requests.\nFor more information, see the general management of access tokens section .",
+    "chunk_index": 15,
+    "total_chunks": 16
+  }
+]

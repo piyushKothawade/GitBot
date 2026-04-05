@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "a3660933d4b9_0",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/data-security",
+    "title": "Data Security",
+    "source": "handbook",
+    "headings": [
+      "Data Security",
+      "Team Identity",
+      "Team Members",
+      "Working With Us",
+      "Know about something scary and weird?"
+    ],
+    "text": "GitLab’s Data Security team is responsible for investigating and remediating issues in data security and privacy across our product. We supplement the already excellent work being done by our colleagues in Product Security as well as all of Engineering by taking (often broad and vague) concerns, investigating them to find what (if anything) needs to be remediated, and then working to assist in cleanup. To put it another way, we dot i’s and cross t’s across GitLab.\n\nThe Data Security Team’s remit includes (but isn’t sharply limited to):\n\nData stored out of compliance with our data classification standard or our associated infrastructure standards\n\nSecrets and encryption keys stored outside KMS or HSM systems\n\nCopies of RED data outside official production systems\n\nExcessive permission grants in production systems that give the power to a single person to rm -rf gitlab.com (or similar)\n\nSome high-priority initiatives for the team are:\n\nWe’re brand new (we began in August 2024)\n\nSo we’re working on these.\n\nSenior Manager, Infrastructure Security\n\nStaff Security Engineer, Data Security\n\nStaff Security Engineer, Data Security\n\nKnow about something scary and weird?\n\nTo ask us to look into an area of potential scariness , please create an issue using our something weird template .",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "a3660933d4b9_1",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/data-security",
+    "title": "Data Security",
+    "source": "handbook",
+    "headings": [
+      "Data Security",
+      "Team Identity",
+      "Team Members",
+      "Working With Us",
+      "Know about something scary and weird?"
+    ],
+    "text": "in August 2024)\n\nSo we’re working on these.\n\nSenior Manager, Infrastructure Security\n\nStaff Security Engineer, Data Security\n\nStaff Security Engineer, Data Security\n\nKnow about something scary and weird?\n\nTo ask us to look into an area of potential scariness , please create an issue using our something weird template .\n\nWe will look at every issue as it comes in. We may not respond to every issue immediately. We will investigate to the best of our abilities (including partnering with other teams to understand systems better). We’ll try to get to the bottom of what’s happening and work with the teams who are best-placed to fix the issue if there is one.\n\nAs our processes develop, we’ll add more status labels and the like to our issues so it’s easier for other teams to see what we’re working on.\n\nIn keeping with our value of Transparency , this issue tracker is open to everyone at GitLab. If you feel a need to ask us to look into an issue in a way that will not be tagged with your identity, please DM someone on the team and have them create the issue for you.\n\nCreate an issue in our tracker .\n\nTag us on an issue (anywhere) using @gitlab-com/gl-security/product-security/data-security to mention the whole team.\n\nCome say hello in Slack in our #security-datasec channel. Feel free to share an amusing meme!\n\nWe’ll add this once we know more.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

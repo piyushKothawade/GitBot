@@ -1,0 +1,15 @@
+[
+  {
+    "chunk_id": "443a86bd3dbe_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure",
+    "title": "Infrastructure",
+    "source": "handbook",
+    "headings": [
+      "Infrastructure",
+      "Infrastructure Platforms department"
+    ],
+    "text": "Infrastructure Platforms department\n\nThe organization responsible for the availability, reliability, performance, and scalability of GitLab.com and other supporting services is Infrastructure Platforms .",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

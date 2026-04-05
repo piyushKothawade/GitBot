@@ -1,0 +1,146 @@
+[
+  {
+    "chunk_id": "f7e1a512081b_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/workflow",
+    "title": "Distribution Team Workflow",
+    "source": "handbook",
+    "headings": [
+      "Distribution Team Workflow",
+      "Common links",
+      "Summary",
+      "Groups",
+      "Distribution Build tasks"
+    ],
+    "text": "Distribution Team Workflow\n\nEngineering Team Workflow\n\nDistribution team members are expected to:\n\nBe kind in their interaction with the rest of the community and other teams\n\nEnsure that fixing red main branch in projects takes the highest priority\n\nPick items to work on from the project scheduled queues\n\nDefine test plans for changes not covered by integration tests\n\nLabel issues and merge requests to track engineering metrics\n\nThe distribution team is comprised of two groups, Distribution:Build and Distribution:Deploy.\n\nDistribution Build tasks\n\nMaintain all team pipelines for all Distribution projects\n\nResearch for the support of new clouds, platforms, architecture, and components\n\nAccess controls, permissions, and CVE patches\n\nTeam infrastructure/resource management\n\nSubmissions to Partners for validations/certifications\n\nDistribution Deploy tasks\n\nInitial installation and composability\n\nUpgrades / Downgrades\n\nMigration between platforms or providers\n\nData lifecycle management\n\nSecure configuration & communication\n\nResearch of clouds and platforms for integration to existing tools\n\nWork to be completed by the Distribution team members who are not currently\nacting as the Distribution DRI is prioritized as follows:\n\nUnblock in-review ~priority::1 Merge Requests\n\nPick up ~priority::1 Merge Requests for review\n\nWork on in-progress ~priority::1 Deliverable Issues\n\nPick up available ~priority::1 Deliverable Issues\n\nUnblock remaining in-review Merge Requests\n\nWork on in-progress ~priority::2 Deliverable Issues\n\nPick up SLO-breaching Merge Requests for review",
+    "chunk_index": 0,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "f7e1a512081b_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/workflow",
+    "title": "Distribution Team Workflow",
+    "source": "handbook",
+    "headings": [
+      "Distribution Team Workflow",
+      "Common links",
+      "Summary",
+      "Groups",
+      "Distribution Build tasks"
+    ],
+    "text": "rity::1 Merge Requests\n\nPick up ~priority::1 Merge Requests for review\n\nWork on in-progress ~priority::1 Deliverable Issues\n\nPick up available ~priority::1 Deliverable Issues\n\nUnblock remaining in-review Merge Requests\n\nWork on in-progress ~priority::2 Deliverable Issues\n\nPick up SLO-breaching Merge Requests for review\n\nPick up SLO-near-breaching Merge Requests for review\n\nPick up available ~priority::2 Deliverable Issues\n\nWork on in-progress ~priority::3 Deliverable Issues\n\nPick up available ~priority::3 Deliverable Issues\n\nPick up SLO-non-breaching Merge Requests for review\n\nWork on in-progress ~priority::4 Deliverable Issues\n\nPick up available ~priority::4 Deliverable Issues\n\nUse this prioritization outline as a general guide when determining what to do each day. This list helps direct\nwork toward overall team priorities and goals laid out by the team managers.\n\nDistribution groups use the GitLab product development flow and labels in principle, we usually skip below phases due to the nature of our work:\n\nValidation phase 4: Design\n\nValidation phase 5: Solution Validation\n\nAll the planning dashboards are bookmarked on the #g_distribution Issue dashboards folder.\n\nOn the 3rd month of the quarter:\n\nPM & EM & Staff Engineer : By 1st week, they draft OKRs for the upcoming quarter.\n\nOKR DRI : From 2nd week, they pick up a OKR and start scoping with other team members or stakeholders.\n\nAll Engineers : From 2nd week, they start contributing to any OKR scoping they are interested in.",
+    "chunk_index": 1,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "f7e1a512081b_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/workflow",
+    "title": "Distribution Team Workflow",
+    "source": "handbook",
+    "headings": [
+      "Distribution Team Workflow",
+      "Common links",
+      "Summary",
+      "Groups",
+      "Distribution Build tasks"
+    ],
+    "text": "On the 3rd month of the quarter:\n\nPM & EM & Staff Engineer : By 1st week, they draft OKRs for the upcoming quarter.\n\nOKR DRI : From 2nd week, they pick up a OKR and start scoping with other team members or stakeholders.\n\nAll Engineers : From 2nd week, they start contributing to any OKR scoping they are interested in.\n\nEM : By the end of 2nd week, they decide whether any reserved planning days require per the current status of scoping.\n\nEveryone : At the end of the month, the OKRs and their scoping should be finalized.\n\nAt the end of the current milestone , every engineer is\nexpected to update their assigned issues and roll over uncompleted ones to the next milestone for review.\n\nEngineering manager and Product manager are responsible for scheduling work that is a direct responsibility\nof the Distribution team.\n\nAny unassigned issue is available for anyone to work on. You can show your interest in working on a specific task by leaving a comment in the issue.\nTo do so, comment must contain the date on which you will commence the work. If the comment does not contain the date, or the date has passed, the item is free to be picked up by anyone again.\n\nSometimes, there are works that were not originally planned but require urgent attention, anyone could pick up and work on the reasonable ones. A typical workflow is:\n\nAssesses the work’s urgency with your best judgement, the urgency usually could be determined by active incident, internal and external customer impact, SLA and polices, and deadline.",
+    "chunk_index": 2,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "f7e1a512081b_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/workflow",
+    "title": "Distribution Team Workflow",
+    "source": "handbook",
+    "headings": [
+      "Distribution Team Workflow",
+      "Common links",
+      "Summary",
+      "Groups",
+      "Distribution Build tasks"
+    ],
+    "text": "were not originally planned but require urgent attention, anyone could pick up and work on the reasonable ones. A typical workflow is:\n\nAssesses the work’s urgency with your best judgement, the urgency usually could be determined by active incident, internal and external customer impact, SLA and polices, and deadline.\n\nIf it is a reasonable request, assigns Unplanned and all other required labels, and works on it per the work prioritization .\n\nIf it is not, explains the reason to the requestor and provides possible alternatives, escalates to EM&PM when necessary.\n\nIf not sure, asks for clarification from the requestor, and seeks advice from EM&PM when necessary.\n\nBesides the GitLab product development flow labels, there are a number of additional required labels applied at any time to Epics, issues and merge requests (items):\n\ngroup::distribution - Items specific to, or authored by Distribution team. It is a scoped label to be applied to all Distribution subgroups items until further guidance.\n\ngroup::distribution::* - Items specific to, or authored by one of Distribution subgroups. They are nested scope labels , and mutually exclusive, but can be used with group::distribution scoped label together. group::distribution::build - Items specific to, or authored by build group. group::distribution::deploy - Items specific to, or authored by deployment group.\n\ngroup::distribution::build - Items specific to, or authored by build group.\n\ngroup::distribution::deploy - Items specific to, or authored by deployment group.",
+    "chunk_index": 3,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "f7e1a512081b_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/workflow",
+    "title": "Distribution Team Workflow",
+    "source": "handbook",
+    "headings": [
+      "Distribution Team Workflow",
+      "Common links",
+      "Summary",
+      "Groups",
+      "Distribution Build tasks"
+    ],
+    "text": "r. group::distribution::build - Items specific to, or authored by build group. group::distribution::deploy - Items specific to, or authored by deployment group.\n\ngroup::distribution::build - Items specific to, or authored by build group.\n\ngroup::distribution::deploy - Items specific to, or authored by deployment group.\n\nFY(Year in two digitals)::* (1-4) - scoped label to indicate efforts targeted for release within a quarter. i.e., FY24::Q2 .\n\nThere are also a number of additional required labels under certain scenarios:\n\nUnplanned - Urgent requests that were not originally planned for the current milestone. Work on these items is\nusually event driven - another team requires help, regression affecting users, or technical debt that is causing inefficiency in the team.\n\nspike - Issues which primarily involve research to understand options and the breakdown of future deliverables. Spikes are often the first issue in a new Epic where the output defines additional issues and order of serial/parallel work.\n\nIn addition to the labels outlined above, see also workflow labels used during merge request review and labels used during issue triage .\n\nIn order to minimize disruption and context switching for team members, Distribution designates one engineer on a weekly rotation basis (DRI, Directly Responsible Individual), who will be responsible for the following duties during their normal office hours. For urgent requests outside of those hours, it will be handled via the on call process .",
+    "chunk_index": 4,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "f7e1a512081b_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/workflow",
+    "title": "Distribution Team Workflow",
+    "source": "handbook",
+    "headings": [
+      "Distribution Team Workflow",
+      "Common links",
+      "Summary",
+      "Groups",
+      "Distribution Build tasks"
+    ],
+    "text": "tion and context switching for team members, Distribution designates one engineer on a weekly rotation basis (DRI, Directly Responsible Individual), who will be responsible for the following duties during their normal office hours. For urgent requests outside of those hours, it will be handled via the on call process .\n\nThe DRI is not solely responsible for a resolution of any requests; they should\nengage any subject matter expert (SME) and escalate to the engineering manager\nand/or product manager as needed. In addition, there is no expectation that the\nDRI can complete the same amount of Deliverable work during the week. For\nescalations requiring specialized expertise, refer to\nthe Tier 2 On-Call Program .\n\nThe Distribution DRI works on the following areas per the order of the list.\n\nSupport incidents escalated from production.\n\nSupport customer requests Support help requests for Build and Operate\n\nSupport help requests for Build and Operate\n\nAnswer or redirect questions in #g_distribution Slack channel.\n\nPerform issue triage .\n\nRespond to @gitlab-org/distribution group mentions in GitLab.\n\nOptional: Work on deliverables for the current milestone or other Distribution related tasks.\n\nClose the assigned DRI issue.\n\nRotate your name to the end of the shift assignment list .\n\nCreate a new issue for the next shift and assign it to the next team member on the list. The issue title should be Distribution DRI rotation week of <starting date> . Use the Distribution-DRI template to fill in the description.",
+    "chunk_index": 5,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "f7e1a512081b_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/workflow",
+    "title": "Distribution Team Workflow",
+    "source": "handbook",
+    "headings": [
+      "Distribution Team Workflow",
+      "Common links",
+      "Summary",
+      "Groups",
+      "Distribution Build tasks"
+    ],
+    "text": "Close the assigned DRI issue.\n\nRotate your name to the end of the shift assignment list .\n\nCreate a new issue for the next shift and assign it to the next team member on the list. The issue title should be Distribution DRI rotation week of <starting date> . Use the Distribution-DRI template to fill in the description.\n\nFor requests still active at the time of handoff, the DRI should use best judgement and consider one or several options: Close the request with a documented mitigation and open a follow-up issue. Add a comment that hands off the request to the next week’s DRI. Continue to act as SME, though handoff to the next DRI with clear documentation to share knowledge is strongly preferred. Pass information to the next DRI in a synchronous conversation.\n\nClose the request with a documented mitigation and open a follow-up issue.\n\nAdd a comment that hands off the request to the next week’s DRI.\n\nContinue to act as SME, though handoff to the next DRI with clear documentation to share knowledge is strongly preferred.\n\nPass information to the next DRI in a synchronous conversation.\n\nWhen you are not on DRI duty, please consider the following when the request is not Stuff that should Just Work :\n\nRedirect any active incident and deployment blocker request to the Distribution DRI during their normal office hours, or take the request if you are the first available team member\n\nRedirect any Slack DM to the channel #g_distribution\n\nRedirect any GitLab direct mention to @gitlab-org/distribution group\n\nRedirect any other requests to How to work with Distribution",
+    "chunk_index": 6,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "f7e1a512081b_7",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/workflow",
+    "title": "Distribution Team Workflow",
+    "source": "handbook",
+    "headings": [
+      "Distribution Team Workflow",
+      "Common links",
+      "Summary",
+      "Groups",
+      "Distribution Build tasks"
+    ],
+    "text": "ocker request to the Distribution DRI during their normal office hours, or take the request if you are the first available team member\n\nRedirect any Slack DM to the channel #g_distribution\n\nRedirect any GitLab direct mention to @gitlab-org/distribution group\n\nRedirect any other requests to How to work with Distribution\n\nUse iteration to better control scope and deliver measurable value in each release. A timebox measurement process would ensure that if expected progress isn’t achieved, there’s a procedure to follow.\n\nIf a project goes more than 2 milestones without delivering on the success criteria within the defined MVC/issue, a detailed evaluation/retrospective should be performed.\n\nIf the project goes 3 milestones without meeting success criteria, then a larger evaluation should be performed with the section leaders.\n\nThe goal is to catch scope creep, ensure we are iterating in ways that deliver measurable value, and establish circuit breakers to address earlier as needed.\n\nDistribution dependency maintenance policy\n\nDistribution team follows below dependency maintenance policy in order to achieve our technology vision .\n\nDistribution aims to add support to newer release of Distribution managed dependencies within 3 to 5 milestones after their original release unless specified below otherwise.\n\nKubernetes release support policy\n\nDistribution team follows kubernetes release support policy for supporting Kubernetes releases.\n\nDistribution aims to add support for newer releases of Kubernetes within 3 months of their release.",
+    "chunk_index": 7,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "f7e1a512081b_8",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/workflow",
+    "title": "Distribution Team Workflow",
+    "source": "handbook",
+    "headings": [
+      "Distribution Team Workflow",
+      "Common links",
+      "Summary",
+      "Groups",
+      "Distribution Build tasks"
+    ],
+    "text": "within 3 to 5 milestones after their original release unless specified below otherwise.\n\nKubernetes release support policy\n\nDistribution team follows kubernetes release support policy for supporting Kubernetes releases.\n\nDistribution aims to add support for newer releases of Kubernetes within 3 months of their release.\n\nAll the operating systems supported by GitLab and their EOL policy are listed in the Supported OS doc page and installation page .\n\nFor new OS release, Distribution team aims to provide Linux package support per the below timeline:\n\nExpected to be supported by\n\nwithin 2 milestones after OS release date\n\nRHEL(& RHEL Clones) major and minor release\n\nwithin 3 milestones after OS release date\n\nDebian LTS and minor release\n\nwithin 3 milestones after OS release date\n\nAll others minor release\n\nwithin 3 milestones after OS release date\n\nAll others major release\n\nwithin 4 milestones after OS release date\n\nSee the hiring-process project for information on conducting interviews for positions on the Distribution team.",
+    "chunk_index": 8,
+    "total_chunks": 9
+  }
+]

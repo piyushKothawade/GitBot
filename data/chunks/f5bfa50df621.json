@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "f5bfa50df621_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/monitoring/staging-monitoring",
+    "title": "Staging Monitoring",
+    "source": "handbook",
+    "headings": [
+      "Staging Monitoring",
+      "Load emulation",
+      "Crawler configuration on Staging",
+      "Staging Service Monitoring",
+      "Ongoing Work"
+    ],
+    "text": "Staging environment has the same service-level monitoring rules as Production :\n\nA service is considered available when: The Apdex score of the service is above its Service Level Objective ( SLO ), AND The Error rate is below its Service Level Objective ( SLO ).\n\nA service is considered available when:\n\nThe Apdex score of the service is above its Service Level Objective ( SLO ),\n\nAND The Error rate is below its Service Level Objective ( SLO ).\n\nThe goal of Staging Monitoring is to have SLO alerts that can be used to halt an ongoing deployment. This would allow failing fast and catching bad deployments before they reach Production. To enable this we need to ensure that the environment has enough base-load traffic and the signal of an SLO failure is strong.\n\nStaging environment doesn’t have as much user activity as Production since it doesn’t have the same amount of real users. The environment is mostly used by test automation like GitLab QA pipelines and engineers who may test their code manually. These activities don’t generate enough traffic so a custom load emulation tool was designed to create artificial traffic to compensate for the lack of signal from real users.\n\nCMBR is a web-crawler that generates traffic on a target GitLab instance. It can generate traffic for these services: Web, API, Git, Registry and Pages.\n\nCrawler only runs GET requests and doesn’t create data. However, this problem is not as critical as existing E2E tests that are being run against Staging cover GitLab basic functionality.",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "f5bfa50df621_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/monitoring/staging-monitoring",
+    "title": "Staging Monitoring",
+    "source": "handbook",
+    "headings": [
+      "Staging Monitoring",
+      "Load emulation",
+      "Crawler configuration on Staging",
+      "Staging Service Monitoring",
+      "Ongoing Work"
+    ],
+    "text": "that generates traffic on a target GitLab instance. It can generate traffic for these services: Web, API, Git, Registry and Pages.\n\nCrawler only runs GET requests and doesn’t create data. However, this problem is not as critical as existing E2E tests that are being run against Staging cover GitLab basic functionality.\n\nThe load is synthetic and doesn’t cover all use cases, especially the edge cases that rely on specific data.\n\nExisting Staging test data is different from Production.\n\nRate limits such as IP or user rate limits may affect traffic generation.\n\nStaging environment has low specs in comparison to Production. Load needs to be tuned so that it doesn’t break the environment.\n\nGit traffic is HTTP-only at the moment .\n\nCrawler configuration on Staging\n\nCMBR generates traffic for Staging using scheduled pipelines for gstg and cny-gstg . The tool uses a dedicated user with auditor role to generate load and bypass rate limits ( Credentials for Staging Crawler stored in 1Password Engineering vault).\n\nThroughput is controlled by environment variables and tuned differently for each service. It’s worth noting that if load needs to be increased, Staging environment’s performance should be considered and verified that it doesn’t affect existing GitLab QA pipelines . Otherwise, it may bring intermittent errors in the test runs and affect the deployment.\n\nStaging Service Monitoring\n\nAlertmanager sends SLO alerts to #feed_alerts_staging Slack channel if the Apdex score or Error rate is violated for specific service. Then Infrastructure team investigates the alert further.",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "f5bfa50df621_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/monitoring/staging-monitoring",
+    "title": "Staging Monitoring",
+    "source": "handbook",
+    "headings": [
+      "Staging Monitoring",
+      "Load emulation",
+      "Crawler configuration on Staging",
+      "Staging Service Monitoring",
+      "Ongoing Work"
+    ],
+    "text": "pipelines . Otherwise, it may bring intermittent errors in the test runs and affect the deployment.\n\nStaging Service Monitoring\n\nAlertmanager sends SLO alerts to #feed_alerts_staging Slack channel if the Apdex score or Error rate is violated for specific service. Then Infrastructure team investigates the alert further.\n\nTo view specific service health the below dashboards can be used:\n\nGitLab Registry overview\n\nGitLab Pages overview\n\nMore detailed information about service monitoring can be found on Monitoring of GitLab.com page.\n\nIf you have any questions about the current setup, please reach out to #f_staging_service_level_monitoring Slack channel.\n\nImproving the quality of Staging SLO alerts - epic#668\n\nHalt deployment to Production if Staging SLI degrades - epic#771\n\nGenerate SSH traffic using CMBR - issue#5",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

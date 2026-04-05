@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "f76ca7c4f7ce_0",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo",
+    "title": "DEPRECATED-Demos",
+    "source": "handbook",
+    "headings": [
+      "DEPRECATED-Demos",
+      "About Demos",
+      "The new version of this page is athttps://university.gitlab.com/",
+      "Videos",
+      "Foster Collaboration with GitOps (GitLab 13.2) (July 2020)"
+    ],
+    "text": "The new version of this page is at https://university.gitlab.com/\n\nThere are 3 basic demos types:\n\nVision - designed to show where we are going (this might include forward looking ideas not yet developed)\n\nUse Case Based - designed to show how GitLab solves a particular use case (how we should be selling)\n\nFeature - designed to enable a deeper dive into details of product features (on prospect request)\n\nThese demos come in different formats:\n\nVideos - good for everyone to self-demo by passively watching\n\nSim demos - good for disconnected situations (like conferences) and for interactive self demos\n\nLive (instructions for how to set up and run demos live) - enables everyone (especially GitLab sales) to set up and run through the demo live on their own system resources. Allows for spontaneous deep diving - not always a good thing).\n\nFoster Collaboration with GitOps (GitLab 13.2) (July 2020)\n\nVersion Control and Collaboration - Control Changes to Product Development Assets (April 2020)\n\nVersion Control and Collaboration - Manage, Track and Maintain Access (April 2020)\n\nVersion Control and Collaboration - Foster Collaboration (April 2020)\n\nGitLab CI - Visibility and Collaboration (April 2020)\n\nDevSecOps - Managing Security Vulnerabilities with the Security Dashboard (April 2020)\n\nDevSecOps - Adding Security to the CICD pipeline (April 2020)\n\nDevSecOps - Dependency Scanning (April 2020)\n\nDevSecOps - Container Scanning (April 2020)\n\nDevSecOps - License Compliance (April 2020)\n\nGetting started with GitLab (12.9) (April 2020)\n\nEase of CI configuration (12.9) (April 2020)",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "f76ca7c4f7ce_1",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo",
+    "title": "DEPRECATED-Demos",
+    "source": "handbook",
+    "headings": [
+      "DEPRECATED-Demos",
+      "About Demos",
+      "The new version of this page is athttps://university.gitlab.com/",
+      "Videos",
+      "Foster Collaboration with GitOps (GitLab 13.2) (July 2020)"
+    ],
+    "text": "ity Dashboard (April 2020)\n\nDevSecOps - Adding Security to the CICD pipeline (April 2020)\n\nDevSecOps - Dependency Scanning (April 2020)\n\nDevSecOps - Container Scanning (April 2020)\n\nDevSecOps - License Compliance (April 2020)\n\nGetting started with GitLab (12.9) (April 2020)\n\nEase of CI configuration (12.9) (April 2020)\n\nBuild and test automation (12.8) (March 2020)\n\nDevSecOps Use Case Overview (12.7) (Feb 2020)\n\nBenefits of a Single App (12.1) (Aug 2019)\n\nGitLab in 3 minutes (12.1) (Aug 2019)\n\nGitLab Overview - Planning to Monitoring (11.3) (Oct 2018) (18 mins)\n\nSet up groups and projects to run multiple Agile teams with microservices (11.7) (Jan 2019)\n\nSAFe and Agile Planning with GitLab (11.7) (Jan 2019)\n\n2018 Vision Prototype (Feb 2018)\n\nAuto DevOps in GitLab 11.0 (June 2018)\n\nGitLab VSM - Issue Boards for Mapping (June 2018)\n\nGitLab VSM - Business Value Monitoring (June 2018)\n\nGitLab for the Enterprise (Feb 2018)\n\nClick-through demos can be run in multiple ways:\n\nRun them off-line (for conferences, practice on the airplane, etc)\n\nRun them while online, from the files , same as running a presentation\n\nOr run them online from the web, using the links bellow:\n\nGitLab Planning to Monitoring (Aug 2019 - 12.0)\n\nCreate Kubernetes cluster (Aug 2019 - 12.0)\n\nMerge Request Approval API (July 2019 - 12.0)\n\nAgile Project Management (June 2019 - 12.0)\n\nCross-project Pipeline Triggering and Visualization (May 2019 - 11.10)\n\nSecure Capabilities (March 2019 - 11.8)\n\nG-slides file Sales enablement recording (of shorter version)\n\nSecure Capabilities (short, guided) (March 2019 - 11.8)",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "f76ca7c4f7ce_2",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo",
+    "title": "DEPRECATED-Demos",
+    "source": "handbook",
+    "headings": [
+      "DEPRECATED-Demos",
+      "About Demos",
+      "The new version of this page is athttps://university.gitlab.com/",
+      "Videos",
+      "Foster Collaboration with GitOps (GitLab 13.2) (July 2020)"
+    ],
+    "text": "ge Request Approval API (July 2019 - 12.0)\n\nAgile Project Management (June 2019 - 12.0)\n\nCross-project Pipeline Triggering and Visualization (May 2019 - 11.10)\n\nSecure Capabilities (March 2019 - 11.8)\n\nG-slides file Sales enablement recording (of shorter version)\n\nSecure Capabilities (short, guided) (March 2019 - 11.8)\n\nAuto DevOps (Oct 2018 - 11.3)\n\nAuto DevOps (short, guided) (July 2018 - 11.0)\n\nAuto DevOps - Setup (GKE) (Oct 2018 - 11.3)\n\nAuto DevOps - Setup (EKS) (Oct 2018 - 11.3)\n\nPlanning to Monitoring (formerly i2p)\n\nPlanning to Monitoring (formerly i2p)\n\nHighlights GitLab’s single platform for the complete DevOps lifecycle, from idea to production, through issues, planning, merge request, CI/CD, and monitoring.\n\nProvides a more in-depth look at GitLab CI/CD pipelines.\n\nDemonstrations which highlight integrations between GitLab and common tools such as Jira issues and Jenkins pipelines.\n\nConference Booth Setup\n\nWe’ve started using iPad’s to run click-through demos at conferences, and also we now have a main screen video to loop that shows our key slides and product clips. You can find details about both of these on the conference booth setup page .",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

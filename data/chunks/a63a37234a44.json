@@ -1,0 +1,482 @@
+[
+  {
+    "chunk_id": "a63a37234a44_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "Customer Success Escalations Process\n\nView the CSM Handbook homepage for additional CSM-related handbook pages.\n\nEscalations can take at least two different forms:\n\nAccount Escalation.  This occurs when the customer expresses or a GitLab team member identifies that a customer is facing a challenging situation that may or may not relate to a specific support ticket. Anyone in GitLab can open an account escalation and circulate it to the leadership of the appropriate group to find a DRI .\n\nSupport Ticket Attention Requests (STAR).  This occurs when an open support ticket is deemed moving too slowly or needs to be raised in priority.\n\nThe purpose of this handbook entry is to describe the process for account escalations .  If a support case needs attention or needs to be raised in severity, please follow the STAR process rather than using account escalations. Please see the Support Ticket Attention Requests for details on how to request a support ticket escalation.\n\nSupport account escalations should be focused on delays across multiple support tickets, customer satisfaction with support response in a ticket, systemic support experience concerns, or other account related issues. Please do not open an account escalation to raise the priority of a Support ticket.\n\nFor a detailed walkthrough of the process, please login to GitLab Unfiltered and view this video .\n\nDefine the process for managing account escalations and define a framework for communications, activities, and expectations for customer escalations.",
+    "chunk_index": 0,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_1",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "open an account escalation to raise the priority of a Support ticket.\n\nFor a detailed walkthrough of the process, please login to GitLab Unfiltered and view this video .\n\nDefine the process for managing account escalations and define a framework for communications, activities, and expectations for customer escalations.\n\nThis process addresses escalations for CS-assigned customers. This process can also apply to other segments if a strategic partnership or relationship exists. Any GitLab team member can escalate an account on behalf of the customer.\n\nDefinitions of Severity Levels\n\nLevels of Involvement\n\nMajor issue(s) significantly impact customers’ ability to deploy or use a solution, risk loss of or use of a solution, high risk loss of a customer or significant contraction, or significant risk to the relationship and brand.\n\nVP of Sales, Product, CRO, CEO, VP of Customer Success, Global/PubSec CSM Leader\n\nMajor issue(s) significantly impact a customer’s ability to deploy or use a solution, risking current adoption, risk of loss of customer or contraction, future growth on the account, and damage to the relationship.\n\nMultiple times per week\n\nVP of Sales, Product, CRO, CEO, VP of Customer Success, Global/PubSec CSM Leader\n\nIssue(s) impact a customer’s ability to deploy or use the product, risking current adoption and renewal.\n\nGlobal/PubSec CSM Leader\n\nIssue(s) impacting a customer’s ability to deploy or use the product, risking customer value realization, timeline, customer satisfaction, and adoption levels.\n\nStandard Communication\n\nRegional CSM Manager, Account Manager",
+    "chunk_index": 1,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_2",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "ty to deploy or use the product, risking current adoption and renewal.\n\nGlobal/PubSec CSM Leader\n\nIssue(s) impacting a customer’s ability to deploy or use the product, risking customer value realization, timeline, customer satisfaction, and adoption levels.\n\nStandard Communication\n\nRegional CSM Manager, Account Manager\n\nCadence refers to the cadence of internal and external meetings and communications to the customer.\n\nLevel of involvement defines scope of internal communication and awareness. Others can be included based on the type of issues involved.\n\nThe DRI for the escalation is determined by evaluating these options in order:\n\nIf the escalation is related to an ongoing Professional Services project, the Professional Services Project Manager will be the DRI of the escalation.\n\nIf the escalation is NOT related to an ongoing Professional Services project and there is a CSM assigned to the account, the CSM will be the DRI.\n\nIf the customer does not have an assigned CSM but is assigned to TAM Scale (Customer Success Engineering), then the regional CSE leader will be DRI, with CSEs providing technical support as needed.\n\nAt the beginning of the escalation, the DRI must be determined - the DRI owns the following responsibilities and key steps:\n\nOverall articulation of the approach to resolution, including ensuring the plan and approach is understood\n\nCoordination of internal GitLab and customer resources to drive troubleshooting and resolution of the issue\n\nManagement of customer and internal communications, both async and synchronous",
+    "chunk_index": 2,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_3",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "bilities and key steps:\n\nOverall articulation of the approach to resolution, including ensuring the plan and approach is understood\n\nCoordination of internal GitLab and customer resources to drive troubleshooting and resolution of the issue\n\nManagement of customer and internal communications, both async and synchronous\n\nOwnership of next steps, ensuring these are determined, communicated clearly with appropriate timelines to meet the level of urgency\n\nEscalation (For Non Professional Services Projects)\n\nThe DRI is responsible for managing the account engagement (not the ticket), including: Management of internal team and customer meetings for follow-up activities Note: To ensure the DRI does not slow the resolution of issues, the DRI doesn’t need to be in all meetings (for example, technical troubleshooting with the customer and support/development) Driving and coordinating the escalation process internally and with the customer, including associated communications and executive-level meetings Opening or reviewing the CS Help - Escalation Support case in Salesforce Managing all assigned escalation tasks in Gainsight Acting as an escalation point for customer-related issues (for example, delayed response, open actions, non-compliance installation or product use, etc.) Developing the business case justification and escalation to Product for escalations related to enhancement requests Posting updates to Gainsight timeline, which will trigger notifications to both the temporary Slack channel and the #escalated_customers slack channel",
+    "chunk_index": 3,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_4",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "s, non-compliance installation or product use, etc.) Developing the business case justification and escalation to Product for escalations related to enhancement requests Posting updates to Gainsight timeline, which will trigger notifications to both the temporary Slack channel and the #escalated_customers slack channel\n\nThe DRI is responsible for managing the account engagement (not the ticket), including:\n\nManagement of internal team and customer meetings for follow-up activities Note: To ensure the DRI does not slow the resolution of issues, the DRI doesn’t need to be in all meetings (for example, technical troubleshooting with the customer and support/development)\n\nNote: To ensure the DRI does not slow the resolution of issues, the DRI doesn’t need to be in all meetings (for example, technical troubleshooting with the customer and support/development)\n\nDriving and coordinating the escalation process internally and with the customer, including associated communications and executive-level meetings\n\nOpening or reviewing the CS Help - Escalation Support case in Salesforce\n\nManaging all assigned escalation tasks in Gainsight\n\nActing as an escalation point for customer-related issues (for example, delayed response, open actions, non-compliance installation or product use, etc.)\n\nDeveloping the business case justification and escalation to Product for escalations related to enhancement requests\n\nPosting updates to Gainsight timeline, which will trigger notifications to both the temporary Slack channel and the #escalated_customers slack channel",
+    "chunk_index": 4,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_5",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "non-compliance installation or product use, etc.)\n\nDeveloping the business case justification and escalation to Product for escalations related to enhancement requests\n\nPosting updates to Gainsight timeline, which will trigger notifications to both the temporary Slack channel and the #escalated_customers slack channel\n\nSupport Engineering is responsible for: Collaborating with technical resources (for example, Development, Quality Assurance, SREs, and Support Engineering staff) to drive resolution of the technical issues Managing the 24x7 incident resolution and escalation process (Support Engineering, SRE, Development) Supporting executive and customer calls (as needed)\n\nSupport Engineering is responsible for:\n\nCollaborating with technical resources (for example, Development, Quality Assurance, SREs, and Support Engineering staff) to drive resolution of the technical issues\n\nManaging the 24x7 incident resolution and escalation process (Support Engineering, SRE, Development)\n\nSupporting executive and customer calls (as needed)\n\nIf an escalation is opened as high or critical, and the escalation is product related, a Product DRI is required. Please assign the applicable Product DRI from this list .\n\nWhat’s the difference between an account escalation or an incident escalation?\n\nThis page describes the account level risk meaning the customer impacting issues could be a single incident or an aggregation of issues. The assessment considers impact to the customer, risk to future business with that customer, and GitLab brand.",
+    "chunk_index": 5,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_6",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "the difference between an account escalation or an incident escalation?\n\nThis page describes the account level risk meaning the customer impacting issues could be a single incident or an aggregation of issues. The assessment considers impact to the customer, risk to future business with that customer, and GitLab brand.\n\nThis page describes the account level risk meaning the customer impacting issues could be a single incident or an aggregation of issues. The assessment considers impact to the customer, risk to future business with that customer, and GitLab brand.\n\nTechnical Support is ultimately accountable for driving resolution to the support case, including escalation to Engineering, Security, and/or Infrastructure teams.  Incident escalation processes should be leveraged for a single incident / support case.\n\nTechnical Support is ultimately accountable for driving resolution to the support case, including escalation to Engineering, Security, and/or Infrastructure teams.  Incident escalation processes should be leveraged for a single incident / support case.\n\nDeclare a GitLab.com Incident if you suspect a widespread issue on GitLab.com\n\nDeclare a GitLab.com Incident if you suspect a widespread issue on GitLab.com\n\nEscalate an individual support ticket to Support Management for cases with context that necessitate they should be handled outside of standard priority order.\n\nEscalate an individual support ticket to Support Management for cases with context that necessitate they should be handled outside of standard priority order.",
+    "chunk_index": 6,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_7",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "Escalate an individual support ticket to Support Management for cases with context that necessitate they should be handled outside of standard priority order.\n\nEscalate an individual support ticket to Support Management for cases with context that necessitate they should be handled outside of standard priority order.\n\nHave the customer trigger Emergency Support for S1/instance down issues to connect directly with the Support Engineer on-call. You can also page the on-call support manager in cases where you’ve received word that a customer attempted to raise an emergency, but the on-call engineer was not paged.\n\nHave the customer trigger Emergency Support for S1/instance down issues to connect directly with the Support Engineer on-call.\n\nYou can also page the on-call support manager in cases where you’ve received word that a customer attempted to raise an emergency, but the on-call engineer was not paged.\n\nThis page outlines the additional support and operational procedures for the varying levels of account escalation.\n\nThis page outlines the additional support and operational procedures for the varying levels of account escalation.\n\nInitiating, Managing and Closing an Escalation\n\nThe following steps are to be taken by the escalation DRI:\n\nOpening the Escalation\n\nOpen or review the CS Help request If a CSM is the DRI, open the CS Help - Escalation Support case If a regional CSE leader is the DRI, review the CS Help - Escalation Support case that was opened by an AE, RM, SA, or other GitLab employee who identified the escalation.",
+    "chunk_index": 7,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_8",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "n by the escalation DRI:\n\nOpening the Escalation\n\nOpen or review the CS Help request If a CSM is the DRI, open the CS Help - Escalation Support case If a regional CSE leader is the DRI, review the CS Help - Escalation Support case that was opened by an AE, RM, SA, or other GitLab employee who identified the escalation.\n\nIf a CSM is the DRI, open the CS Help - Escalation Support case\n\nIf a regional CSE leader is the DRI, review the CS Help - Escalation Support case that was opened by an AE, RM, SA, or other GitLab employee who identified the escalation.\n\nCreate a slack channel to facilitate communication internally at GitLab during the escalation.\n\nIdentify Escalation DRI and immediate asks\n\nWatch for the auto escalation declaration in #escalated_customers .\n\nSet up and document an internal standup cadence series while the escalation is running and put the details in the escalation case.\n\nPost updates in the Gainsight case CTA according to the cadence described in the definitions of severity levels .\n\nKeep exit criteria and DRIs up to date in the CS Help request\n\nTemporary Slack Channel\n\nThis channel will remain open until the escalation is closed and should be listed in the escalation case. Name the channel #esc_customername (must start with #esc_ to be included in our data retention policy) and ensure it is a public channel so that relevant internal GitLab parties can be easily added/find the channel. Some more tips & tricks for opening and managing the temporary slack channel can be found below:",
+    "chunk_index": 8,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_9",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "n case. Name the channel #esc_customername (must start with #esc_ to be included in our data retention policy) and ensure it is a public channel so that relevant internal GitLab parties can be easily added/find the channel. Some more tips & tricks for opening and managing the temporary slack channel can be found below:\n\na. Create an opening message in the escalation channel which should include the link to the escalation case + the initial ask. Also link to the customer notes doc. Example for a potential opening message to get things going: “ Welcome! This is the channel for the <CUSTOMER_NAME> escalation regarding ongoing performance problems which are impacting the whole user base. ” The escalation case is ready and available at “< LINK >” The initial ask/need from DRI (CSM) to GitLab management is defined in the escalation case - Quote: “ We need a GitLab team (member) who can engage with the customer on a daily basis to further analyze the performance issues root cause(s) and identify potential changes to reduce the performance problems for the  users. ” “ Once the root causes are identified, we need a team working with the customer to implement required changes, which may range from configuration updates to changing the architecture of the GitLab platform or involving cloud vendor support for changes in underlying infrastructure. ” “Whats next?” “Our next sync with the customer team is scheduled for Monday at 10:30am CEST where we would like to have the team (member) defined internally, who can then be introduced to the customer (can be a separate call at afternoon time) to engage in the following days.”",
+    "chunk_index": 9,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_10",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "or changes in underlying infrastructure. ” “Whats next?” “Our next sync with the customer team is scheduled for Monday at 10:30am CEST where we would like to have the team (member) defined internally, who can then be introduced to the customer (can be a separate call at afternoon time) to engage in the following days.”\n\na. Create an opening message in the escalation channel which should include the link to the escalation case + the initial ask. Also link to the customer notes doc.",
+    "chunk_index": 10,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_11",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "e team (member) defined internally, who can then be introduced to the customer (can be a separate call at afternoon time) to engage in the following days.”\n\na. Create an opening message in the escalation channel which should include the link to the escalation case + the initial ask. Also link to the customer notes doc.\n\nExample for a potential opening message to get things going: “ Welcome! This is the channel for the <CUSTOMER_NAME> escalation regarding ongoing performance problems which are impacting the whole user base. ” The escalation case is ready and available at “< LINK >” The initial ask/need from DRI (CSM) to GitLab management is defined in the escalation case - Quote: “ We need a GitLab team (member) who can engage with the customer on a daily basis to further analyze the performance issues root cause(s) and identify potential changes to reduce the performance problems for the  users. ” “ Once the root causes are identified, we need a team working with the customer to implement required changes, which may range from configuration updates to changing the architecture of the GitLab platform or involving cloud vendor support for changes in underlying infrastructure. ” “Whats next?” “Our next sync with the customer team is scheduled for Monday at 10:30am CEST where we would like to have the team (member) defined internally, who can then be introduced to the customer (can be a separate call at afternoon time) to engage in the following days.”",
+    "chunk_index": 11,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_12",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "or changes in underlying infrastructure. ” “Whats next?” “Our next sync with the customer team is scheduled for Monday at 10:30am CEST where we would like to have the team (member) defined internally, who can then be introduced to the customer (can be a separate call at afternoon time) to engage in the following days.”\n\n“ Welcome! This is the channel for the <CUSTOMER_NAME> escalation regarding ongoing performance problems which are impacting the whole user base. ” The escalation case is ready and available at “< LINK >” The initial ask/need from DRI (CSM) to GitLab management is defined in the escalation case - Quote: “ We need a GitLab team (member) who can engage with the customer on a daily basis to further analyze the performance issues root cause(s) and identify potential changes to reduce the performance problems for the  users. ” “ Once the root causes are identified, we need a team working with the customer to implement required changes, which may range from configuration updates to changing the architecture of the GitLab platform or involving cloud vendor support for changes in underlying infrastructure. ”\n\nThe escalation case is ready and available at “< LINK >”",
+    "chunk_index": 12,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_13",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "s are identified, we need a team working with the customer to implement required changes, which may range from configuration updates to changing the architecture of the GitLab platform or involving cloud vendor support for changes in underlying infrastructure. ”\n\nThe escalation case is ready and available at “< LINK >”\n\nThe initial ask/need from DRI (CSM) to GitLab management is defined in the escalation case - Quote: “ We need a GitLab team (member) who can engage with the customer on a daily basis to further analyze the performance issues root cause(s) and identify potential changes to reduce the performance problems for the  users. ” “ Once the root causes are identified, we need a team working with the customer to implement required changes, which may range from configuration updates to changing the architecture of the GitLab platform or involving cloud vendor support for changes in underlying infrastructure. ”\n\n“ We need a GitLab team (member) who can engage with the customer on a daily basis to further analyze the performance issues root cause(s) and identify potential changes to reduce the performance problems for the  users. ”\n\n“ Once the root causes are identified, we need a team working with the customer to implement required changes, which may range from configuration updates to changing the architecture of the GitLab platform or involving cloud vendor support for changes in underlying infrastructure. ”",
+    "chunk_index": 13,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_14",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "formance problems for the  users. ”\n\n“ Once the root causes are identified, we need a team working with the customer to implement required changes, which may range from configuration updates to changing the architecture of the GitLab platform or involving cloud vendor support for changes in underlying infrastructure. ”\n\n“Whats next?” “Our next sync with the customer team is scheduled for Monday at 10:30am CEST where we would like to have the team (member) defined internally, who can then be introduced to the customer (can be a separate call at afternoon time) to engage in the following days.”\n\n“Our next sync with the customer team is scheduled for Monday at 10:30am CEST where we would like to have the team (member) defined internally, who can then be introduced to the customer (can be a separate call at afternoon time) to engage in the following days.”\n\nb. If posted, pin the opening message to the channel, so that it is easily available for everyone. Also add the escalation case link as a SLACK channel bookmark.\n\nb. If posted, pin the opening message to the channel, so that it is easily available for everyone. Also add the escalation case link as a SLACK channel bookmark.\n\nIf an Escalation (For Non Professional Services Projects) has been identified, create an escalation case in Salesforce. Steps for opening the case:\n\nNavigate to the account page in Salesforce",
+    "chunk_index": 14,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_15",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "age to the channel, so that it is easily available for everyone. Also add the escalation case link as a SLACK channel bookmark.\n\nIf an Escalation (For Non Professional Services Projects) has been identified, create an escalation case in Salesforce. Steps for opening the case:\n\nNavigate to the account page in Salesforce\n\nNavigate to the next open renewal opportunity under “Opportunities”. It helps to sort the list of opportunities by “Close Date” descending. (Note: if you’re having trouble finding the opportunity, you may need to change the Salesforce App. Click the 9-dotted box in the upper left corner and change the Salesforce App to “Sales”)\n\nIn the top right corner, click on “Request Support” and then in the drop down field on “CS Help”\n\nSelect the case type: Escalations (CSM/CSE Accounts)\n\nFill out the required fields in the Escalation Case, including the link to the Internal Customer Escalation Slack Channel that was previously created.\n\nFor the required field “Internal Customer Escalation Slack Channel” paste the Slack channel link (not just the channel name). To get this link, hover over the #esc_customername channel in Slack and right-click, then go to Copy > Copy Link. Paste this link in the required field in Salesforce.\n\nComplete other fields in the opened case: Customer Collaboration project, Customer meeting notes, Escalation Exit criteria. At this time, you can also edit any of the fields initially filled out when opening the case.",
+    "chunk_index": 15,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_16",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "ck and right-click, then go to Copy > Copy Link. Paste this link in the required field in Salesforce.\n\nComplete other fields in the opened case: Customer Collaboration project, Customer meeting notes, Escalation Exit criteria. At this time, you can also edit any of the fields initially filled out when opening the case.\n\nFor a CSM Managed account, the Case Owner will be the assigned CSM. For a CSE account, the Case Owner will be the regional CSE leader.\n\nThe Salesforce case will create a Gainsight CTA for that particular customer, which can be found in the Gainsight Cockpit. A sync between Salesforce and Gainsight happens every 2 hours. Once the Gainsight CTA is created, the Case Owner will receive Gainsight notifications to complete required tasks. Data is bidirectional between Salesforce and Gainsight, so changes can be made in either tool. However, all escalation updates must be made in the Gainsight CTA by adding Timeline entries of type “Health Update” (which is the same Timeline entry type used for Red Accounts management).\n\nInternal Standup Cadence\n\nSet up and document an internal standup cadence series while the escalation is running and put the details in the escalation case.\n\nMajor stakeholders from each team involved in the escalation should be invited directly to any calendar invite.\n\nPost about the internal standup in the temporary slack channel.\n\nPost the escalation case URL in the temporary slack channel and pin the message so it’s easy to find.",
+    "chunk_index": 16,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_17",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "put the details in the escalation case.\n\nMajor stakeholders from each team involved in the escalation should be invited directly to any calendar invite.\n\nPost about the internal standup in the temporary slack channel.\n\nPost the escalation case URL in the temporary slack channel and pin the message so it’s easy to find.\n\nTip: 10min before each standup, post the link to the escalation case and customer notes doc with a note that the standup will happen at the scheduled time. You can also schedule & automate the message in SLACK.\n\nDuring the internal cadence, be sure to note any changes in exit criteria or DRI and make those changes in the escalation case.\n\nIdentify Escalation DRI and immediate asks\n\nMake sure you write down the initial ask & needs (to initially make progress) in this escalation, as clearly as possible and add a bookmark to it. You can link to it in the initial message within the escalation slack channel channel. As mentioned, be as specific as possible, as the GitLab exec / management team needs to understand the escalation exit criteria.\n\nRequired skills (Remote EMEA Timezone)\n\nAbility to analyze production logs\n\nFamiliarity with large-scale production architecture for GitLab\n\nAbility to understand SQL queries\n\nFamiliarity with PostgreSQL, Patroni, PGBouncer\n\nDeclare the escalation",
+    "chunk_index": 17,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_18",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "xec / management team needs to understand the escalation exit criteria.\n\nRequired skills (Remote EMEA Timezone)\n\nAbility to analyze production logs\n\nFamiliarity with large-scale production architecture for GitLab\n\nAbility to understand SQL queries\n\nFamiliarity with PostgreSQL, Patroni, PGBouncer\n\nDeclare the escalation\n\nAfter the escalation case is opened in Salesforce, a post will be automatically added to the #escalated_customers channel to declare the escalation. This process is followed for all except PubSec customers, where you will need to manually post the escalation using the following template:\n\nCustomer : “<customer_name>”\n\nSlack Channel : “#<esc_customername>”\n\nMeeting Notes : “<LINK: customer meeting notes>”\n\nSFDC Escalation case URL : “<LINK: escalation case>\n\nProduct DRI : “ Assigned Product DRI ”\n\nSupport DRI : “If support involvement is necessary use the @support-manager-oncall slack handle. Please ensure a support ticket is opened with a description of the issue. Support will engage with Engineering by following their RFH process .”\n\nDescription : “<Example platform is impacted by performance problems since several weeks and users are affected on a daily base which is driving the customer into a critical state. The performance problems are also risking their our license expansion.>”\n\nFYI : “<TAG_YOUR_MANAGER_HERE>”",
+    "chunk_index": 18,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_19",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "y following their RFH process .”\n\nDescription : “<Example platform is impacted by performance problems since several weeks and users are affected on a daily base which is driving the customer into a critical state. The performance problems are also risking their our license expansion.>”\n\nFYI : “<TAG_YOUR_MANAGER_HERE>”\n\nIf the escalation is product related, a Product DRI is required. Please assign the applicable Product DRI from this list . The Product DRI should be added to the #esc_customername channel and will drive any product related items throughout the escalation.\n\nManaging the Escalation\n\nThe DRI owns the functions as outlined here:\n\nIf an escalation status changes significantly, ensure that updates are captured in the Gainsight Escalation CTA > Timeline > Activity Type = “Health Update”.\n\nSelect “Update” in the “Post to Slack” field dropdown, which will be used to trigger an automated notification to be sent to the #escalated_ customers channel. This hourly process is followed for all except PubSec customers, where you will need to post the update manually.\n\nApply the “Escalation Update” Timeline template (selectable from top right hand corner of the “Notes” box in Timeline) to ensure consistency of the information presented in escalation updates.\n\nThe Gainsight Escalation Update Timeline template questions are :\n\nWhat is the current status of the escalation?\n\nWhat are the next steps in moving the escalation case forward?\n\nWho is the owner of the next steps?\n\nHas the exit criteria for this escalation changed? If so, what is the new exit criteria?",
+    "chunk_index": 19,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_20",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "lation updates.\n\nThe Gainsight Escalation Update Timeline template questions are :\n\nWhat is the current status of the escalation?\n\nWhat are the next steps in moving the escalation case forward?\n\nWho is the owner of the next steps?\n\nHas the exit criteria for this escalation changed? If so, what is the new exit criteria?\n\nBe sure to also post in the temporary customer slack channel, pinging all DRIs involved in the escalation as needed.\n\nUpdate the temporary escalation slack channel daily, at minimum\n\nThe escalation progress should also be communicated to the customer on a regular basis - expectation is 3 or more times a week depending on the situation.\n\nCreate a daily reminder (at afternoon before you leave, for example) in your Google calendar just for yourself to update the escalation case + temporary slack channel with latest status/next steps. This ensures everyone is kept informed.\n\nDepending on the state of the escalation, also think about setting up an internal cadence meeting and include all necessary team members. CSM, AE, SA, CSM & Sales leadership, and potentially other involved stakeholders.\n\nCSM, AE, SA, CSM & Sales leadership, and potentially other involved stakeholders.\n\nMultiple escalations for one customer",
+    "chunk_index": 20,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_21",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "e of the escalation, also think about setting up an internal cadence meeting and include all necessary team members. CSM, AE, SA, CSM & Sales leadership, and potentially other involved stakeholders.\n\nCSM, AE, SA, CSM & Sales leadership, and potentially other involved stakeholders.\n\nMultiple escalations for one customer\n\nIn rare instances, there may be multiple reasons for a customer to be escalated at one time. In order to keep the reasons for escalation and the steps to resolve them focused, there should be an escalation for each situation. Each escalation should be declared and separate Slack channels opened with the relevant stakeholders involved. The reason for the escalation should be included the channel name to reduce confusion (e.g. if one customer is escalated for both a DAST issue and a performance issue, there should be two channels, one called esc_customername_dast and one called esc_customername_perf). Each escalation should follow the defined escalation process separately, but the account team and leadership should stay aligned on where the overall account health is throughout and if there should be any action that relates to both escalations. Including additional leadership such as the e-group may be warranted if there is significant risk to the overall sentiment of the account.\n\nTracking Escalation Engagements",
+    "chunk_index": 21,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_22",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "leadership should stay aligned on where the overall account health is throughout and if there should be any action that relates to both escalations. Including additional leadership such as the e-group may be warranted if there is significant risk to the overall sentiment of the account.\n\nTracking Escalation Engagements\n\nEscalation management is critical work that directly impacts customer renewals and satisfaction. To ensure this work is visible and measurable, CSMs must track their escalation engagement activities in Gainsight. This allows leadership to understand the time investment required for escalations and recognize this work in performance reviews.\n\nWhy Track Escalation Engagements?\n\nVisibility : Make escalation work visible to leadership and in performance metrics\n\nAccountability : Document the time and effort CSMs invest in managing escalations\n\nReporting : Enable dashboards and reports showing escalation volume, time spent, and outcomes\n\nRecognition : Ensure escalation management is recognized as high-value customer advocacy work\n\nHow to Log Escalation Activities\n\nCSMs should log all escalation-related activities (calls, emails, internal coordination, updates, etc.) in the Timeline tab of the Escalation CTA in Gainsight. This is different from posting status updates to the customer timeline.\n\nStep-by-step process:\n\nOpen Gainsight and navigate to the Cockpit view This is where you manage all CTAs for your accounts\n\nOpen Gainsight and navigate to the Cockpit view\n\nThis is where you manage all CTAs for your accounts",
+    "chunk_index": 22,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_23",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "tion CTA in Gainsight. This is different from posting status updates to the customer timeline.\n\nStep-by-step process:\n\nOpen Gainsight and navigate to the Cockpit view This is where you manage all CTAs for your accounts\n\nOpen Gainsight and navigate to the Cockpit view\n\nThis is where you manage all CTAs for your accounts\n\nSelect the specific Escalation CTA Find the escalation CTA that was auto-created from the Salesforce escalation case The CTA will be named based on the escalation case\n\nSelect the specific Escalation CTA\n\nFind the escalation CTA that was auto-created from the Salesforce escalation case\n\nThe CTA will be named based on the escalation case\n\nNavigate to the Timeline tab within the CTA Once inside the CTA, click on the Timeline tab\n\nNavigate to the Timeline tab within the CTA\n\nOnce inside the CTA, click on the Timeline tab\n\nLog your escalation activities Add timeline entries for all escalation-related work: Customer calls and meetings Internal coordination calls with engineering, support, product, or leadership Email communications with the customer Status updates and progress notes Any other actions taken to drive escalation resolution\n\nLog your escalation activities\n\nAdd timeline entries for all escalation-related work: Customer calls and meetings Internal coordination calls with engineering, support, product, or leadership Email communications with the customer Status updates and progress notes Any other actions taken to drive escalation resolution\n\nCustomer calls and meetings\n\nInternal coordination calls with engineering, support, product, or leadership",
+    "chunk_index": 23,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_24",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "etings Internal coordination calls with engineering, support, product, or leadership Email communications with the customer Status updates and progress notes Any other actions taken to drive escalation resolution\n\nCustomer calls and meetings\n\nInternal coordination calls with engineering, support, product, or leadership\n\nEmail communications with the customer\n\nStatus updates and progress notes\n\nAny other actions taken to drive escalation resolution\n\nVisualization of the Escalation Engagement Tracking Flow\n\nStart immediately : Begin logging activities as soon as the escalation is opened, so all coordination work is captured from the start\n\nBe specific : Include details about what was discussed, decisions made, and next steps in each timeline entry\n\nCurrent limitation : Gainsight timeline entries do not currently track actual time spent (hours/minutes). Timeline entries only capture a start date/time. Once Gainsight adds time-tracking capabilities, CSMs will be able to log hours spent on escalation activities\n\nDistinction from Health Updates : Health Updates (status updates about escalation progress) are separate from engagement activities. Both should be logged in the CTA Timeline, but engagement activities provide granular tracking of CSM work\n\nClosing the Escalation\n\nTo close an escalation, a clear alignment between GitLab stakeholders and the customer (including documentation in an issue or email) is required. Both parties need to agree the situation is resolved.",
+    "chunk_index": 24,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_25",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "be logged in the CTA Timeline, but engagement activities provide granular tracking of CSM work\n\nClosing the Escalation\n\nTo close an escalation, a clear alignment between GitLab stakeholders and the customer (including documentation in an issue or email) is required. Both parties need to agree the situation is resolved.\n\nTo close an escalation, a clear alignment between GitLab stakeholders and the customer (including documentation in an issue or email) is required. Both parties need to agree the situation is resolved.\n\nIf the customer requests an RCA and the escalation was platform-related, GitLab engineering will lead the RCA and will provide it in writing to the corresponding GitLab DRI, who is managing & closing the escalation.\n\nIf the customer requests an RCA and the escalation was platform-related, GitLab engineering will lead the RCA and will provide it in writing to the corresponding GitLab DRI, who is managing & closing the escalation.",
+    "chunk_index": 25,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_26",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "d will provide it in writing to the corresponding GitLab DRI, who is managing & closing the escalation.\n\nIf the customer requests an RCA and the escalation was platform-related, GitLab engineering will lead the RCA and will provide it in writing to the corresponding GitLab DRI, who is managing & closing the escalation.\n\nWhen the issue(s) related to the escalation are resolved or move into a non-escalated state: Post an Escalation Closure Timeline entry in the Gainsight CTA with the status and resolution. Be sure to use the “Escalation Closure” Timeline template in the update (selectable from top right hand corner of the “Notes” box in Timeline). Select “Closure” in the “Post to Slack” field dropdown, which will be used to trigger an automated notification to be sent to the #escalated_ customers channel. This hourly process is followed for all except PubSec customers, where you will need to post the escalation closure update manually. Archive the temporary Slack channel Update the customer’s CSM Sentiment in Gainsight to reflect the new state of the account.\n\nWhen the issue(s) related to the escalation are resolved or move into a non-escalated state:\n\nPost an Escalation Closure Timeline entry in the Gainsight CTA with the status and resolution. Be sure to use the “Escalation Closure” Timeline template in the update (selectable from top right hand corner of the “Notes” box in Timeline).",
+    "chunk_index": 26,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_27",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "ue(s) related to the escalation are resolved or move into a non-escalated state:\n\nPost an Escalation Closure Timeline entry in the Gainsight CTA with the status and resolution. Be sure to use the “Escalation Closure” Timeline template in the update (selectable from top right hand corner of the “Notes” box in Timeline).\n\nSelect “Closure” in the “Post to Slack” field dropdown, which will be used to trigger an automated notification to be sent to the #escalated_ customers channel. This hourly process is followed for all except PubSec customers, where you will need to post the escalation closure update manually.\n\nArchive the temporary Slack channel\n\nUpdate the customer’s CSM Sentiment in Gainsight to reflect the new state of the account.\n\nGainsight Escalation Closure Timeline template questions:\n\nGainsight Escalation Closure Timeline template questions:\n\nPlease provide a closure update answering the following questions:\n\nPlease provide a closure update answering the following questions:\n\nDid the escalation situation end with a positive outcome, negative outcome, or no outcome?\n\nWere the defined exit criteria met?\n\nGive a brief summary of the actions of the team that helped close out this escalation ticket\n\nCSM Manager’s role in Escalations\n\nThe CSM Manager’s responsibility is to ensure that the CSM is familiar with the above process and is actively managing the escalation, including the Slack Channel updates and the management of the escalation doc.",
+    "chunk_index": 27,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_28",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "of the actions of the team that helped close out this escalation ticket\n\nCSM Manager’s role in Escalations\n\nThe CSM Manager’s responsibility is to ensure that the CSM is familiar with the above process and is actively managing the escalation, including the Slack Channel updates and the management of the escalation doc.\n\nWhen a customer is in an escalated state, the path to resolution must continue to move forward, with both the internal stakeholders and the customer clear on current actions and next steps. The CSM manager is responsible for ensuring that this forward-motion and clear alignment is present and for stepping in and driving action or alignment where necessary.\n\nEngineering’s role in Escalations\n\nEngineering support will usually come through Support Engineering, however it’s worth noting that under some conditions Engineering / Product may prioritize bug fixes and feature requests related to an escalation.\n\nProduct’s role in Escalations\n\nAt times Product may be needed to support an escalation. This could be due to uncovering a flaw or issue or surfacing feedback to help influence prioritization or workarounds to address the escalations. In most cases CSM and Support will work directly with a PM responsible for the area.\n\nOccasionally, customers will require a product leader to act as a stable counterpart to support an escalation. This will ensure customers don’t need to understand how we’re organized, or need to get bounced around between PMs during an escalation. To achieve this we will follow this process:",
+    "chunk_index": 28,
+    "total_chunks": 30
+  },
+  {
+    "chunk_id": "a63a37234a44_29",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/escalations",
+    "title": "Customer Success Escalations Process",
+    "source": "handbook",
+    "headings": [
+      "Customer Success Escalations Process",
+      "Background",
+      "Objective",
+      "Scope",
+      "Definitions of Severity Levels"
+    ],
+    "text": "responsible for the area.\n\nOccasionally, customers will require a product leader to act as a stable counterpart to support an escalation. This will ensure customers don’t need to understand how we’re organized, or need to get bounced around between PMs during an escalation. To achieve this we will follow this process:\n\nCSMs will evaluate each account that reaches a high or critical escalated state, and determine if a Product member is needed.\n\nFrom there, if the escalation reaches a High state a Group Product Manager or Product Director will be assigned. If it reaches a critical state a PLT member will be assigned.\n\nDuring the escalation the GMP+ Product leader will stick with the customer and escalation and operate as a stable counterpart. They will bring in additional PMs as needed to help address the concerns, but will remain engaged in Slack, and on calls with the customer to be a consistent face and representative of the Product division.\n\nIndividual PMs may roll in and out of the escalation but the assigned GMP+ product counterpart will remain attached until the escalation is resolved.\n\nCSE’s role in Escalations\n\nIf necessary, a regional CSE leader will request a CSE to support on an escalation. The CSE should work with the regional CSE leader to determine next steps.\n\nSupport Engineering Page and Support Engineering Escalation Procedures\n\nProduct Escalation Issue Template to request Product Team support for roadmap / future needs, prioritization of enhancements and/or issues and troubleshooting of customer issues.\n\nCustomer Health Assessment and Account Triaging",
+    "chunk_index": 29,
+    "total_chunks": 30
+  }
+]

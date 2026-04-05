@@ -1,0 +1,14 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/support/license-and-renewals/workflows/lr_request_automation",
+  "title": "Automation Request",
+  "content": "Any request that requires repetitive manual work should be simplified or automated.\nThis workflow covers the steps to request an automation for any L&R related tasks.\n\nAs per our efficiency value:\n\nWe care about working on the right things, not doing more than needed, and not duplicating work. This enables us to achieve more progress, which makes our work more fulfilling\n\nWe care about working on the right things, not doing more than needed, and not duplicating work. This enables us to achieve more progress, which makes our work more fulfilling\n\nThis process covers requests related to L&R and the GitLab Customers Portal .\n\nCheck to see if there’s an existing feature request.  You can check for this on the Customers Portal Issues tracker.\n\nIf the functionality you would like to see added to the Customers Portal exists, you can add to the issue. If not, create a new issue using the Feature Proposal template .\n\nWe are no longer adding functionality to Mechanizer. Any changes made to Mechanizer are strictly for the purpose of maintaining existing functionality and ensuring Mechanizer continues to work until the features found there are incorporated into the existing GitLab tooling such as the Customers Portal.",
+  "source": "handbook",
+  "headings": [
+    "Automation Request",
+    "Overview",
+    "Why ?",
+    "Scope",
+    "Workflow",
+    "Note:"
+  ]
+}

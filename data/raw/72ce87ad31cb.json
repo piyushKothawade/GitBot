@@ -1,0 +1,9 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/support/workflows/handling_upgrade_renewal_requests",
+  "title": "Handling Licensing & Subscription Requests",
+  "content": "Handling Licensing & Subscription Requests\n\nUse this workflow when there’s a query about upgrading or renewing a GitLab\nlicense or GitLab.com subscription.\n\nMake sure that there aren’t any other types of queries that would need the Support team’s attention\n\nUse the General::Forms::Incorrect form used macro to transfer the ticket\n\nIn some cases, a renewal may be of particularly high priority and needs urgent attention (e.g. the license\nwill expire within a few days). In these cases, please:\n\nDetermine who the account owner is in SFDC\n\nPing them on Slack with the appropriate ticket number and context",
+  "source": "handbook",
+  "headings": [
+    "Handling Licensing & Subscription Requests"
+  ]
+}

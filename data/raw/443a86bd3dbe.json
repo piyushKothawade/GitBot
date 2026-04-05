@@ -1,0 +1,10 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure",
+  "title": "Infrastructure",
+  "content": "Infrastructure Platforms department\n\nThe organization responsible for the availability, reliability, performance, and scalability of GitLab.com and other supporting services is Infrastructure Platforms .",
+  "source": "handbook",
+  "headings": [
+    "Infrastructure",
+    "Infrastructure Platforms department"
+  ]
+}

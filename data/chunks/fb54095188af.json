@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "fb54095188af_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/source-code/ai-prompts",
+    "title": "Create:Source Code AI prompts",
+    "source": "handbook",
+    "headings": [
+      "Create:Source Code AI prompts",
+      "From GitLab Discussion to Action",
+      "Use Case / Impact",
+      "Prompt",
+      "Security vulnerability detection in MRs"
+    ],
+    "text": "Create:Source Code AI prompts\n\nFrom GitLab Discussion to Action\n\nGenerating a detailed issue from a thread/discussion.\n\nImpact: summarizing detailed discussions and capturing them in follow-up issues favour the iteration and time to merge of each individual step.\n\n(See demo on levelup)\n\nIdentify the discussion you want to use as source and copy the URL to the top comment of the thread (right-click on the timestamp and copy link).\n\nSecurity vulnerability detection in MRs\n\nWhen you’re working on an MR and want to check if you missed any security vulnerability, you can use this prompt to identify them.\n\nImpact: This can lead to faster review times and decrease vulnerabilities shipped in our code.\n\n(See demo on levelup)\n\nWhile on the Merge Request page, drop this prompt in the Agentic Duo Chat:\n\nDecoding Complex MR Feedback\n\nSometimes you might get feedback that you don’t immediately and fully understand. This prompt can help decode and\ndeconstruct that feedback to make it easier to understand and react to.\n\nImpact: This can decrease review time by speeding up the discussion between author (you) and reviewer.\n\n(See demo on levelup)\n\nGrab the link to the comment you want to check.\n\nWrite down your interpretation on what it means.\n\nUse this information to compose a prompt such as:\n\nDebugging legacy code",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "fb54095188af_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/source-code/ai-prompts",
+    "title": "Create:Source Code AI prompts",
+    "source": "handbook",
+    "headings": [
+      "Create:Source Code AI prompts",
+      "From GitLab Discussion to Action",
+      "Use Case / Impact",
+      "Prompt",
+      "Security vulnerability detection in MRs"
+    ],
+    "text": "rstand and react to.\n\nImpact: This can decrease review time by speeding up the discussion between author (you) and reviewer.\n\n(See demo on levelup)\n\nGrab the link to the comment you want to check.\n\nWrite down your interpretation on what it means.\n\nUse this information to compose a prompt such as:\n\nDebugging legacy code\n\nOne of the most challenging things for our group (group::source code) is we work with legacy code that might be drifted quite apart from our current coding standards. More often than not, fixing something involves touching utils that are shared across the codebase. This broader reach means it takes a lot longer to verify a fix to avoid a regression.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

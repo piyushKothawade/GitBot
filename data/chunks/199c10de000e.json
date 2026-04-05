@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "199c10de000e_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-detection-validity-check-troubleshooting",
+    "title": "Secret Detection Validity Checks Troubleshooting",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Validity Checks Troubleshooting",
+      "When to use this runbook?",
+      "Monitoring",
+      "Partner API high error rate",
+      "Symptom"
+    ],
+    "text": "Secret Detection Validity Checks Troubleshooting\n\nWhen to use this runbook?\n\nUse this runbook for troubleshooting production issues related to the validity checks feature.\n\nValidity checks monitoring is the preferred\ndashboard for identifying reliability issues. Sidekiq dashboard can supplement, follow runbook .\n\nPartner API high error rate\n\nError rate exceeds 10% on dashboard (alert: SecretDetectionPartnerAPIHighErrorRate ).\n\nIdentify affected partner(s) in dashboard breakdown.\n\nIdentify affected partner(s) in dashboard breakdown.\n\nCheck error type: network_error : Connectivity issues rate_limit : Rate limit exceeded response_error : Invalid/unparseable response\n\nnetwork_error : Connectivity issues\n\nrate_limit : Rate limit exceeded\n\nresponse_error : Invalid/unparseable response\n\nReview partner status pages: AWS GCP Postman\n\nReview partner status pages:\n\nCheck recent deployments: git log --oneline -10 ee/lib/security/secret_detection/partner_tokens/\n\nCheck recent deployments:\n\nIf partner has known incident (< 1 hour): Wait for recovery\n\nIf network error (multiple partners): Coordinate with SRE in #production\n\nIf response error: Likely API contract change - file issue in #g_ast-secret-detection\n\nIf persistent (> 6 hours): Disable partner\n\nPartner API high latency\n\nP95 latency exceeds 5 seconds on the dashboard (alert: SecretDetectionPartnerAPIHighLatency ).\n\nCheck if systemic (all partners) or partner-specific.\n\nCheck if systemic (all partners) or partner-specific.\n\nReview partner status pages for degraded performance.\n\nReview partner status pages for degraded performance.",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "199c10de000e_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-detection-validity-check-troubleshooting",
+    "title": "Secret Detection Validity Checks Troubleshooting",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Validity Checks Troubleshooting",
+      "When to use this runbook?",
+      "Monitoring",
+      "Partner API high error rate",
+      "Symptom"
+    ],
+    "text": "ency\n\nP95 latency exceeds 5 seconds on the dashboard (alert: SecretDetectionPartnerAPIHighLatency ).\n\nCheck if systemic (all partners) or partner-specific.\n\nCheck if systemic (all partners) or partner-specific.\n\nReview partner status pages for degraded performance.\n\nReview partner status pages for degraded performance.\n\nTest partner API from teleport Rails console: uri = URI ( 'https://sts.amazonaws.com/' ) start = Time . now Net :: HTTP . start ( uri . host , uri . port , use_ssl : true ) do | http | http . request ( Net :: HTTP :: Get . new ( uri . path )) end puts \"Latency: #{ Time . now - start } s\"\n\nTest partner API from teleport Rails console:\n\nP95 less than 10 seconds and improving: Monitor—issue resolves itself\n\nP95 exceeds 10 seconds sustained (more than 24 hours): Disable partner\n\nRate limits hit frequently\n\nExceeds 0.1 req/sec sustained for 5 or more minutes on the dashboard (alert: SecretDetectionPartnerAPIRateLimitHit ).\n\nIdentify partner(s) hitting limits.\n\nIdentify partner(s) hitting limits.\n\nCheck current limits in ee/lib/gitlab/application_rate_limiter.rb : partner_aws_api : { threshold : -> { 400 }, interval : 1 . second } partner_gcp_api : { threshold : -> { 500 }, interval : 1 . second } partner_postman_api : { threshold : -> { 4 }, interval : 1 . second }\n\nCheck current limits in ee/lib/gitlab/application_rate_limiter.rb :\n\nCheck Sidekiq queue depth using teleport: Sidekiq :: Queue . new ( 'security_secret_detection_partner_token_verification' ) . size\n\nCheck Sidekiq queue depth using teleport:",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "199c10de000e_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-detection-validity-check-troubleshooting",
+    "title": "Secret Detection Validity Checks Troubleshooting",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Validity Checks Troubleshooting",
+      "When to use this runbook?",
+      "Monitoring",
+      "Partner API high error rate",
+      "Symptom"
+    ],
+    "text": "cond } partner_postman_api : { threshold : -> { 4 }, interval : 1 . second }\n\nCheck current limits in ee/lib/gitlab/application_rate_limiter.rb :\n\nCheck Sidekiq queue depth using teleport: Sidekiq :: Queue . new ( 'security_secret_detection_partner_token_verification' ) . size\n\nCheck Sidekiq queue depth using teleport:\n\nCheck for burst patterns: Large pipeline or multiple projects scanning.\n\nCheck for burst patterns: Large pipeline or multiple projects scanning.\n\nQueue less than 1k jobs: Normal, will clear within 1 hour\n\nQueue 1k–10k jobs: Monitor queue size—rate limiter auto-throttles processing\n\nQueue exceeds 50k jobs: Temporarily disable partner\n\nPersistent throttling (more than 24h): Update rate limits or disable partner\n\nNetwork errors to partner APIs\n\nExceeds 0.5 errors/sec for 5 or more minutes on the dashboard (alert: SecretDetectionPartnerAPINetworkErrors ).\n\nCheck which partner(s) affected.\n\nCheck which partner(s) affected.\n\nVerify connectivity from Rails console using teleport: # Test AWS uri = URI ( 'https://sts.amazonaws.com/' ) begin Net :: HTTP . get_response ( uri ) puts \"✓ AWS reachable\" rescue => e puts \"✗ AWS unreachable: #{ e . message } \" end # Test GCP uri = URI ( 'https://www.googleapis.com/oauth2/v1/tokeninfo' ) begin Net :: HTTP . get_response ( uri ) puts \"✓ GCP reachable\" rescue => e puts \"✗ GCP unreachable: #{ e . message } \" end\n\nVerify connectivity from Rails console using teleport:\n\nCheck DNS: dig sts.amazonaws.com\n\nCheck for firewall changes in #infrastructure .\n\nCheck for firewall changes in #infrastructure .",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "199c10de000e_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-detection-validity-check-troubleshooting",
+    "title": "Secret Detection Validity Checks Troubleshooting",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Validity Checks Troubleshooting",
+      "When to use this runbook?",
+      "Monitoring",
+      "Partner API high error rate",
+      "Symptom"
+    ],
+    "text": "ninfo' ) begin Net :: HTTP . get_response ( uri ) puts \"✓ GCP reachable\" rescue => e puts \"✗ GCP unreachable: #{ e . message } \" end\n\nVerify connectivity from Rails console using teleport:\n\nCheck DNS: dig sts.amazonaws.com\n\nCheck for firewall changes in #infrastructure .\n\nCheck for firewall changes in #infrastructure .\n\nCheck logs for SSL errors using data view pubsub-sidekiq-inf-gprd* : json.class:PartnerTokenVerificationWorker AND \"SSL\"\n\nCheck logs for SSL errors using data view pubsub-sidekiq-inf-gprd* :\n\nSingle partner affected: Likely partner-side disabled partner, monitor status page.\n\nMultiple partners affected: Likely GitLab network issue, coordinate with SRE.\n\nSSL/TLS errors: Check certificate validity, might need CA bundle update.\n\nEmergency disable (GitLab.com)\n\nEdit ee/lib/security/secret_detection/partner_tokens/registry.rb :\n\nRe-enable after incident\n\nVerify issue is resolved: Partner status is operational, network OK, error rate down.\n\nMake code change to re-enable partner.\n\nMonitor the dashboard for 10 minutes: Error rate less than 2%, queue depth less than 1k, P95 less than 5 seconds.\n\nManual token verification\n\nTo verify a token without waiting for the background job, use the Rails console (teleport):\n\nTeam: Secret Detection (@gitlab-org/secure/secret-detection)\n\nSlack : #g_ast-secret-detection\n\nOn-call: Check #production for SRE availability\n\nQuick checklist: Issue confirmed on the dashboard Checked partner status pages Reviewed recent code deployments Checked logs for errors Tried turning off partner (for emergency situations)",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "199c10de000e_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-detection-validity-check-troubleshooting",
+    "title": "Secret Detection Validity Checks Troubleshooting",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Validity Checks Troubleshooting",
+      "When to use this runbook?",
+      "Monitoring",
+      "Partner API high error rate",
+      "Symptom"
+    ],
+    "text": "Detection (@gitlab-org/secure/secret-detection)\n\nSlack : #g_ast-secret-detection\n\nOn-call: Check #production for SRE availability\n\nQuick checklist: Issue confirmed on the dashboard Checked partner status pages Reviewed recent code deployments Checked logs for errors Tried turning off partner (for emergency situations)\n\nIssue confirmed on the dashboard\n\nChecked partner status pages\n\nReviewed recent code deployments\n\nChecked logs for errors\n\nTried turning off partner (for emergency situations)",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

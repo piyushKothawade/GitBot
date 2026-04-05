@@ -1,0 +1,14 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-chrome-device-trust",
+  "title": "Okta Device Posture Checks - Chrome Device Trust",
+  "content": "Okta Device Posture Checks - Chrome Device Trust\n\nWhat is Chrome Device Trust?\n\nChrome Device Trust is a Google Chrome security features that verifies the security posture of a device via the Chrome browser before granting access to protected applications. GitLab uses it as an additional layer of assurance on top of standard Okta device posture checks — rather than relying solely on device enrollment or OS-level signals, Chrome Device Trust collects real-time security signals directly from the Chrome browser at the point of authentication.\n\nWhen you sign in to a Okta-protected apps through Chrome, Okta requests device signals from the Chrome browser. Chrome collects and transmits signals back to Okta. Okta evaluates these signals against GitLab’s device assurance policies and either grants access, requires additional authentication, or blocks access if the device does not meet requirements.\n\nThis happens transparently during the normal sign-in flow. There is no user action required if your device is compliant.\n\nChrome Device Trust is only enforced on corporate-managed devices. Personal devices are not in scope.\n\nIncognito mode and embedded browsers\n\nChrome Device Trust does not support incognito (private browsing) mode. If you attempt to sign in to a app in an incognito window, you may see a remediation warning. You can dismiss this warning and continue — it is expected behavior and not a sign that your device is non-compliant. You must authenticate through a non-incognito window before the remediation deadline is reached.\n\nThe same is true for apps which use embedded browsers. If you attempt to sign in to a app in an incognito window, you may see a remediation warning. You can dismiss this warning and continue — it is expected behavior and not a sign that your device is non-compliant.\n\nAccess from non-Chrome browsers\n\nAccessing GitLab resources from a non-Chrome browser (such as Safari or Firefox) is still possible, but Chrome Device Trust signals cannot be collected from these browsers. You will receive a remediation warning during sign-in when accessing from a non-Chrome browser.\n\nTo avoid being blocked, you must authenticate at least once through a managed Chrome browser before your remediation deadline has passed. Failure to do so will result in access being restricted until Chrome Device Trust can be verified.",
+  "source": "handbook",
+  "headings": [
+    "Okta Device Posture Checks - Chrome Device Trust",
+    "What is Chrome Device Trust?",
+    "How it works",
+    "Where it is enforced",
+    "Incognito mode and embedded browsers",
+    "Access from non-Chrome browsers"
+  ]
+}

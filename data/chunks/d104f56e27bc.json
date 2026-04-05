@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "d104f56e27bc_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/ai-prompts",
+    "title": "Create:Code Review AI prompts",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review AI prompts",
+      "Responding to requests for help (RFH)",
+      "Use Case / Impact",
+      "Prompt",
+      "Triaging ToDos"
+    ],
+    "text": "Create:Code Review AI prompts\n\nResponding to requests for help (RFH)\n\nWhen responding to a request for help (RFH) issue,\nwe need to generate ideas based on knowledge of the product (features and implementation) to determine a root cause.\n\nTo triage and respond to RFH issues faster, Duo Chat can help identify potential root causes,\nquestions to ask the customer/Support to narrow down the problem, or find relevant past issues.\n\nOpen the RFH issue and use these prompts:\n\nGitLab ToDos can quickly accumulate, especially when returning from PTO.\nWhen facing 30+ ToDos, it’s hard to know at a glance what’s the most important one to address first.\n\nDuo Chat can help categorize and prioritize open ToDos.\n\nRun a graphlQL query in https://gitlab.com/-/graphql-explorer to get your todos in JSON format (see below, replace francoisrose with your GitLab username).\n\nGo to Duo Chat and use this prompt:",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

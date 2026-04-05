@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "971b22adbf65_0",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/field-security/trust_center_guide",
+    "title": "Trust Center Guide",
+    "source": "handbook",
+    "headings": [
+      "Trust Center Guide",
+      "Do you have 120 seconds to learn more about the Trust Center?",
+      "GitLab offers Trust Centers tailored to customer needs",
+      "Two types of Trust Center documentation",
+      "Requesting new collateral for the Trust Center"
+    ],
+    "text": "Are you looking for GitLab’s Trust Center?\n\nDo you have 120 seconds to learn more about the Trust Center?\n\nGitLab offers Trust Centers tailored to customer needs\n\nGitLab.com page :\nThis page provides detailed security information to prospective and existing GitLab.com SaaS and self-managed customers for completing vendor security assessments.\n\nGitLab.com page :\nThis page provides detailed security information to prospective and existing GitLab.com SaaS and self-managed customers for completing vendor security assessments.\n\nGitLab Dedicated page :\nThis page provides detailed security information to prospective and existing GitLab Dedicated customers for completing vendor security assessments.\n\nGitLab Dedicated page :\nThis page provides detailed security information to prospective and existing GitLab Dedicated customers for completing vendor security assessments.\n\nTwo types of Trust Center documentation\n\nReadily available information : The first step on the trust journey, these documents are publicly available and are designed to introduce GitLab’s approach to security. Directly available from the Trust Center .\n\nReadily available information : The first step on the trust journey, these documents are publicly available and are designed to introduce GitLab’s approach to security. Directly available from the Trust Center .",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "971b22adbf65_1",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/field-security/trust_center_guide",
+    "title": "Trust Center Guide",
+    "source": "handbook",
+    "headings": [
+      "Trust Center Guide",
+      "Do you have 120 seconds to learn more about the Trust Center?",
+      "GitLab offers Trust Centers tailored to customer needs",
+      "Two types of Trust Center documentation",
+      "Requesting new collateral for the Trust Center"
+    ],
+    "text": "ble and are designed to introduce GitLab’s approach to security. Directly available from the Trust Center .\n\nReadily available information : The first step on the trust journey, these documents are publicly available and are designed to introduce GitLab’s approach to security. Directly available from the Trust Center .\n\nInformation under NDA : These documents provide detailed security information to prospective and existing customers for completing vendor security assessments. Due to the sensitive nature of the documentation, an NDA is required to be in place prior to viewing specific documents (such as SOC 2 Type 2). The NDA signing process will happened directly through the Trust Center.\n\nInformation under NDA : These documents provide detailed security information to prospective and existing customers for completing vendor security assessments. Due to the sensitive nature of the documentation, an NDA is required to be in place prior to viewing specific documents (such as SOC 2 Type 2). The NDA signing process will happened directly through the Trust Center.\n\nDue to the nature of some of GitLab’s security reports, certain documents on the Trust Center are only available once an NDA has been signed through the clickwrap process on the Trust Center.\n\nRequesting new collateral for the Trust Center\n\nTo request new or updated Trust Center collateral, click the button below:",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "971b22adbf65_2",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/field-security/trust_center_guide",
+    "title": "Trust Center Guide",
+    "source": "handbook",
+    "headings": [
+      "Trust Center Guide",
+      "Do you have 120 seconds to learn more about the Trust Center?",
+      "GitLab offers Trust Centers tailored to customer needs",
+      "Two types of Trust Center documentation",
+      "Requesting new collateral for the Trust Center"
+    ],
+    "text": "er.\n\nDue to the nature of some of GitLab’s security reports, certain documents on the Trust Center are only available once an NDA has been signed through the clickwrap process on the Trust Center.\n\nRequesting new collateral for the Trust Center\n\nTo request new or updated Trust Center collateral, click the button below:\n\nFor collateral owned by SMEs outside of Field Security, we perform an annual review and maintenance session. SMEs are notified via a GitLab issue and assigned relevant collateral pieces for review and maintenance. Upon completion, the updated collateral pieces are added to the appropriate CAP and prepared for publishing.\n\nIf you have any further questions, please follow the below steps:\n\nProspective Customers: Please fill out a request and a representative will reach out to you.\n\nCurrent Customers: Please contact your Account Owner at GitLab. If you don’t know who that is, please reach out to sales and ask to be connected to your Account Owner.\n\nGitLab Team Members: Contact the Field Security team using the Customer Assurance workflow in the #sec-fieldsecurity slack channel.",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "2c18a66f7042_0",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/task-groups/vue3-router4-tests",
+    "title": "Vue 3 Router 4 Test Compatibility Task Group",
+    "source": "handbook",
+    "headings": [
+      "Vue 3 Router 4 Test Compatibility Task Group",
+      "Attributes",
+      "Context",
+      "Goal",
+      "Non-goals"
+    ],
+    "text": "Vue 3 Router 4 Test Compatibility Task Group\n\n#tg_vue3_router4_tests\n\nA major effort is underway to ensure that the GitLab unit tests are passing and compatible with Vue compat.\nA major cause of the current failures is a compatibility issue in how tests are written when incorporating Vue Router.\n\nVue 2’s router version is Vue router 3 , whereas Vue 3’s router version is Vue router 4 . There are several differences between the two, explained in the migration guide .\n\nThese differences between Vue Router 3 and 4 require that unit tests are re-written based on the findings of the initial investigation .\n\nFix all tests that are currently failing due to Vue Router incompatibility.\n\nThe list of tests suites that need be fixed will be maintained in this section of the original issue . A script that fetches the router errors is available to keep this up to date.\n\nOnce these tests are fully addressed, it will be necessary to take another look at the jest speed reporter to make sure that no other tests are failing due to router compatibility. The above investigation has assumed that tests failing due to compatibility issues are exposed by the string “Vue router” in the failure message.\n\nThe strategy for fixing these tests has been documented in the Testing Vue router section of the Vue 3 testing handbook.\n\nTests that are not directly related to the compatibility of Vue Router 3 and 4 won’t be considered, as they are not covered by the migration strategy.\n\nTests issuing any router compatibility errors fixed (where applicable, see non-goals above).",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "2c18a66f7042_1",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/task-groups/vue3-router4-tests",
+    "title": "Vue 3 Router 4 Test Compatibility Task Group",
+    "source": "handbook",
+    "headings": [
+      "Vue 3 Router 4 Test Compatibility Task Group",
+      "Attributes",
+      "Context",
+      "Goal",
+      "Non-goals"
+    ],
+    "text": "ocumented in the Testing Vue router section of the Vue 3 testing handbook.\n\nTests that are not directly related to the compatibility of Vue Router 3 and 4 won’t be considered, as they are not covered by the migration strategy.\n\nTests issuing any router compatibility errors fixed (where applicable, see non-goals above).\n\nAs of 2025-03-07 the above criteria has been met.\n\nNo tests related to router compatibility are pending correction, and Vue router 4 testing documentation has been created.\n\nRoles and Responsibilities\n\nSr. Frontend Engineer, Switchboard",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

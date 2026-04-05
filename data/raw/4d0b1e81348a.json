@@ -1,0 +1,20 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/migration-acceleration-team",
+  "title": "Migration Acceleration Team",
+  "content": "Migration Acceleration Team\n\nPartner with customers and engineering to deliver seamless, fast, and reliable migrations. The team executes and improves processes to eliminate uncertainty and ensures readiness for cutover in Geo-based Dedicated migrations.\n\nDeliver a Delivery Kit that includes the documentation, templates, talk-tracks and tooling to enable customers to self-serve Geo Dedicated migrations\n\nOwn the piloting and execution of this Delivery Kit on upcoming Geo migrations\n\nContinue to refine the process\n\nIntegrate with the OneSuccess initiative\n\nContinue lights-on operations for currently owned projects\n\nSenior Technical Architect\n\nRoles & Responsibilities\n\nWorks with PreSales, Sales, CSM and Support to ensure customer interface and expectations are aligned\n\nWorks directly with customers to produce automated solutions for technical discovery, validation of data, and capacity planning of their target instance\n\nProvides consultancy to help customer align with upgrades and procedures needed for a smooth migration\n\nOwns communications during migration, providing internal and external alignment of plans, status, and timings\n\nOwns Project Management alignment with the customer Project Planning Office for clear synchronization of activities, comms, timelines, and responsibilities\n\nEnables confident production switchovers with minimal risk and maximum speed\n\nInputs requirements for Environment Automation and Switchboard to enable self-service capabilities and backend automation of instance operation and configuration\n\nBuilds and maintains tools to streamline customer data gathering; instance data sizes, network topology, synchronization status\n\nCustomer-Centric Excellence\n\nClear Expectations First : Every engagement begins with explicit alignment on migration cadence, platform capabilities, and service model boundaries\n\nConsultative Partnership : We act as trusted advisors, not order-takers, providing honest guidance even when difficult\n\nTransparent Communication : Regular, structured updates with no surprises - customers always know where they stand\n\nDiscovery Before Design : Comprehensive technical and business discovery drives all solution approaches\n\nValidation at Every Step : Multi-layered validation ensures accuracy before any production changes\n\nAutomation Where Possible : Standardized, repeatable processes reduce risk and improve consistency\n\nMilestone-Driven Progress : Clear checkpoints with customer sign-off prevent scope creep and misalignment\n\nRisk-First Planning : Identify and mitigate risks early rather than hope for the best\n\nDocumentation as Code : Every process, decision, and artifact is documented for repeatability and knowledge transfer\n\nContinuous Improvement\n\nLearning Organization : Every project contributes to improved processes, tools, and methodologies\n\nCross-Functional Collaboration : Regular feedback loops with Engineering, Product, and Customer Success teams\n\nScalable Solutions : Build capabilities that enable future self-service and automation\n\nOne Team Approach : Clear role definitions with flexible collaboration across disciplines\n\nShared Accountability : Success is measured at the team level, not individual contribution\n\nProactive Communication : Internal stakeholders are informed and aligned before customer commitments\n\nTo be aligned with larger team metrics in progress",
+  "source": "handbook",
+  "headings": [
+    "Migration Acceleration Team",
+    "Team Mission",
+    "Priorities",
+    "Team Members",
+    "Roles & Responsibilities",
+    "Operating Principles",
+    "Customer-Centric Excellence",
+    "Technical Rigor",
+    "Structured Delivery",
+    "Continuous Improvement",
+    "Internal Alignment",
+    "Success Metrics"
+  ]
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "chunk_id": "aa3e363d5b38_0",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "Doing UX research in the AI space\n\nAs more teams are taking part in rapid prototyping activities to innovate within the Artificial Intelligence (AI) space, it’s natural to pause and ask yourself: What’s the problem this aims to solve?\n\nIt’s common that exciting break-through technologies lead to product innovations. However, this can result in teams presenting a technical solution that is looking for a user problem - instead of the other way around.\n\nWe need to make sure to keep users’ needs (and unmet needs) in mind while innovating. If we don’t do this, the risk is that we end up building powerful AI solutions that may not address identified user problems.\n\nThis page guides you on how to do UX research in the AI space , by including the user’s perspective throughout the design and development of AI solutions.\n\nFor how you should use AI in your UX research work , see AI usage in UX .\n\nUX Researcher support\n\nIf you have an assigned UX Researcher in your stage: If you need UX Research support, connect with your assigned stage UX Researcher following the research prioritization process . Your AI-specific research topic will be prioritized against the other research projects already identified within their stage.\n\nIf you DON’T have an assigned UX Researcher in your stage: For those working in a stage group that doesn’t have a UX Researcher assigned, Nick Hertz is managing those research requests. The research prioritization process still applies and you can add your topic to this AI research-specific prioritization calculator after you have opened a research issue.",
+    "chunk_index": 0,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "aa3e363d5b38_1",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "archer in your stage: For those working in a stage group that doesn’t have a UX Researcher assigned, Nick Hertz is managing those research requests. The research prioritization process still applies and you can add your topic to this AI research-specific prioritization calculator after you have opened a research issue.\n\nGuideline 1: Start with identifying and understanding user needs\n\nAI solutions themselves won’t reveal the user problem they are meant to solve. To identify and understand user needs (and to determine if the AI solution is addressing a real user problem), there are different approaches you can take:\n\nReview existing research\n\nUnderstand what research knowledge already exists. Dovetail and the UX Research Drive are good places to start as well as asking your assigned stage researcher. Reviewing what research exists outside of GitLab is valuable, too.\n\nIf your review results in a medium or low level of confidence regarding users’ needs, the following options help with collecting additional data.\n\nUse case definition (recommended option for medium level confidence)",
+    "chunk_index": 1,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "aa3e363d5b38_2",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "king your assigned stage researcher. Reviewing what research exists outside of GitLab is valuable, too.\n\nIf your review results in a medium or low level of confidence regarding users’ needs, the following options help with collecting additional data.\n\nUse case definition (recommended option for medium level confidence)\n\nUse existing research and your domain expertise to formulate assumptions on the user problem you believe is being addressed with the AI solution. Use the following format to phrase the problem statement, which is aligned to how we write Jobs to be Done (JTBD): “When [circumstance a person is in when they want to accomplish something], I want to [something the person wants to accomplish].” Example: When I am on triage rotation and prioritizing business-critical risks, I want to review the most recent risk detected in my assets.\n\n“When [circumstance a person is in when they want to accomplish something], I want to [something the person wants to accomplish].”\n\nExample: When I am on triage rotation and prioritizing business-critical risks, I want to review the most recent risk detected in my assets.\n\nThen, validate your problem statements through a quantitative online survey to understand: The frequency of users encountering this problem The importance of addressing the problem\n\nThe frequency of users encountering this problem\n\nThe importance of addressing the problem\n\nThere are other parameters you can include in your survey, such as: How users currently solve the problem The difficulty of solving this problem today\n\nHow users currently solve the problem",
+    "chunk_index": 2,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "aa3e363d5b38_3",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "importance of addressing the problem\n\nThe frequency of users encountering this problem\n\nThe importance of addressing the problem\n\nThere are other parameters you can include in your survey, such as: How users currently solve the problem The difficulty of solving this problem today\n\nHow users currently solve the problem\n\nThe difficulty of solving this problem today\n\nSee this template for example questions. More example studies coming soon.\n\nExtended solution validation\n\nUse solution validation-type studies to learn more about the users’ needs before they engage with the prototype or feature. To do so, add a few questions about their job tasks, workflows, tools, expectations, pain points etc. before participants start their tasks with the prototype (see this example ). Moderated sessions are more suitable than unmoderated ones and are recommended.\n\nGenerative research (recommended option for low confidence)\n\nIf you don’t have a high level of confidence or understanding of the problem statement or user needs, you will want to take the time to conduct generative research to learn more about a user group and their needs. While this approach takes more time, it provides deep insights into users’ needs, goals, and pain points that can be used to ideate on new solutions.\n\nIt’s recommended to do this if you have the time. The output will provide a solid justification as to why the AI feature is important for users.\n\nGuideline 2: Collect user feedback on your idea before building anything",
+    "chunk_index": 3,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "aa3e363d5b38_4",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "deep insights into users’ needs, goals, and pain points that can be used to ideate on new solutions.\n\nIt’s recommended to do this if you have the time. The output will provide a solid justification as to why the AI feature is important for users.\n\nGuideline 2: Collect user feedback on your idea before building anything\n\nDid you know that you can validate your future AI powered feature in parallel to the engineering team building it by using Wizard of Oz prototyping ? Validating before the AI solution is available is a great way to capture users’ expectations and requirements early on. They can inform engineering efforts in training the AI.\n\nHere are a few things to keep in mind when preparing the prototype:\n\nIf your solution includes personalization, you should collect relevant user data for a more realistic experience in the prototype before the session takes place. Make sure users are informed about how their data is being used.\n\nInclude “wrong” recommendations, too, as AI technology is probabilistic and won’t be accurate all the time (see Guideline 4 ). For example, let’s say you are evaluating a chatbot and participants want to ask questions about UX Research methods. Besides relevant responses to that topic, include some that are not connected to UX Research. You could vary how many “wrong” responses are given to understand what is still acceptable versus where users get frustrated and stop using it.",
+    "chunk_index": 4,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "aa3e363d5b38_5",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "uating a chatbot and participants want to ask questions about UX Research methods. Besides relevant responses to that topic, include some that are not connected to UX Research. You could vary how many “wrong” responses are given to understand what is still acceptable versus where users get frustrated and stop using it.\n\nIt may be tempting, but don’t ask users if they would use this AI feature. People are poor predictors of future behavior, so their answers won’t be accurate or useful for you. To get closer to understanding if people may use a solution, it’s best to understand:\n\ntheir problem or need, and\n\nhow helpful the solution is with addressing those. In other words, does it provide value?\n\nGuideline 3: Collect more than just usability feedback during AI prototype validation\n\nOnce an AI powered solution is available for validation, make sure to not only collect feedback on its usability, but also:\n\nBaseline data - on how users currently solve this problem. This allows us to assess the impact the AI solution may have and how helpful it is.\n\nOn trust - If people trust the information provided by AI. If they don’t trust it, they won’t use it. Here are some example questions to consider: How much do you trust the [feature name, e.g. code suggestions] provided? Do you trust [feature name, e.g. code suggestions] with [task, e.g. providing correct code]? Why/Why not?\n\nHow much do you trust the [feature name, e.g. code suggestions] provided?\n\nDo you trust [feature name, e.g. code suggestions] with [task, e.g. providing correct code]? Why/Why not?",
+    "chunk_index": 5,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "aa3e363d5b38_6",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "e.g. code suggestions] provided? Do you trust [feature name, e.g. code suggestions] with [task, e.g. providing correct code]? Why/Why not?\n\nHow much do you trust the [feature name, e.g. code suggestions] provided?\n\nDo you trust [feature name, e.g. code suggestions] with [task, e.g. providing correct code]? Why/Why not?\n\nOn giving feedback - If they feel comfortable giving system feedback, e.g. when a code suggestion is not helpful. The AI improves based on user feedback, so it’s important they can do it. You can do this by including a task that focuses on giving feedback on a “wrong” recommendation and measure if they were successful doing it and how they felt about it.\n\nOn attitudes towards third-party AI services - If your AI solution is powered by a third party (e.g. OpenAI), it’s important to understand if users are aware of the use of a third-party and their attitude towards it. This provides insights into users’ mental model (see Guideline 5 ) and impact on GitLab as a brand.\n\nWe are piloting a set of AI metrics and recommend including them in your solution validation.\n\nTo get robust feedback during solution validation, it’s recommended to collect at least three data points. As AI output varies, it’s not sufficient to rely on the first output only. You can do this by having three similar tasks to see how participants react to the AI’s responses in these three different scenarios.\n\nTip: Avoid asking the tempting “Would you use this?” question.",
+    "chunk_index": 6,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "aa3e363d5b38_7",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "ommended to collect at least three data points. As AI output varies, it’s not sufficient to rely on the first output only. You can do this by having three similar tasks to see how participants react to the AI’s responses in these three different scenarios.\n\nTip: Avoid asking the tempting “Would you use this?” question.\n\nIf you are maturing your AI feature towards Generally Available , take a look at the UX maturity requirements for further guidance on metrics and success criteria.\n\nGuideline 4: Learn about the cost of errors that AI will make\n\nAI will make mistakes due to their probabilistic nature. It’s important to understand how AI mistakes may affect users. Will certain mistakes result in turning users away from using it? Or using GitLab? Here’s what you can do:\n\nPlan for research activities to assess what mistakes are ok to do versus those that cause harm and need to be avoided at all cost.\n\nThere may also be opportunities to include questions related to AI mistakes when conducting solution validation, e.g. When evaluating early prototypes (see Guidelines 2 and 3 ).\n\nSet up your prototype in a way that it includes “wrong” recommendations to capture how people react to AI mistakes.\n\nGuideline 5: Plan ahead for longitudinal research",
+    "chunk_index": 7,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "aa3e363d5b38_8",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "nities to include questions related to AI mistakes when conducting solution validation, e.g. When evaluating early prototypes (see Guidelines 2 and 3 ).\n\nSet up your prototype in a way that it includes “wrong” recommendations to capture how people react to AI mistakes.\n\nGuideline 5: Plan ahead for longitudinal research\n\nAI evolves as users engage with it over time. As a result, users’ mental models about how it works as they engage with it over time may change (it’s a continuous loop). To ensure we’re continuing to offer AI solutions of value, it’s important to understand how mental models change over time and evaluate the performance of AI solutions as use cases and users increase.\n\nWe are piloting a set of AI metrics that allow you to evaluate and track user’s experience with AI powered features over time.\n\nAI User Experience Survey (Pilot)\n\nWe developed, and are currently piloting, a survey that contains a set of questions to evaluate AI powered features in terms of how well they are meeting user needs (not usability). This survey can be used to track a user’s experience with an AI powered feature over time.\n\nThe survey focuses on the following 8 constructs that we observed in a literature review and are captured in 11 survey questions .\n\nAccuracy: How accurate do users find our AI? How much effort is needed to get a meaningful response?\n\nTrustability/Fallibility: Do users trust GitLab’s AI?\n\nValue: Are we helping users to be faster and more productive? Are we helping users to learn new things? Do users perceive a benefit from using the AI powered feature?",
+    "chunk_index": 8,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "aa3e363d5b38_9",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "uracy: How accurate do users find our AI? How much effort is needed to get a meaningful response?\n\nTrustability/Fallibility: Do users trust GitLab’s AI?\n\nValue: Are we helping users to be faster and more productive? Are we helping users to learn new things? Do users perceive a benefit from using the AI powered feature?\n\nControl: Do users feel like they have control over how AI recommendations or actions are employed?\n\nError handling: Are we enabling users to deal with the errors that AI produces?\n\nGuardrails: Have we built-in enough mindful friction into user iteractions with AI such that they are able to think critically about what AI is doing for them?\n\nLearnability: Are users able to quickly understand the AI powered feature?\n\nAI limits: Do users feel like they understand what the AI powered feature can and can’t do?\n\nThis survey is available for you to send to your participants who are working with AI features. If you want to use this survey, ask Anne Lasch or Erika Feldman for access to the Qualtrics project.\n\nTo effectively evaluate the usability of our AI capabilities and track progress over time, please follow the instructions below:\n\nWe have focused on 3 pieces of data to be measured for AI capabilities:\n\nEffectiveness (pass/fail)\n\nEfficiency (Single Ease Question)\n\nSatisfaction of the experience\n\nThese measures are lightweight, focusing on both the mechanics and the usability of the experience, and can be applied in either moderated or unmoderated tests.\n\nAll AI / Duo capabilities should be assessed in any of the following scenarios:",
+    "chunk_index": 9,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "aa3e363d5b38_10",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "pass/fail)\n\nEfficiency (Single Ease Question)\n\nSatisfaction of the experience\n\nThese measures are lightweight, focusing on both the mechanics and the usability of the experience, and can be applied in either moderated or unmoderated tests.\n\nAll AI / Duo capabilities should be assessed in any of the following scenarios:\n\nBefore they become Generally Available (GA);\n\nWhen a significant change to the experience is introduced.\n\nIt’s at the designer and the product team’s discretion to regard a change as significant or not. And here are some examples to help you decide:\n\nInsignificant changes might be minor tweaks that enhance the interface but do not fundamentally change the user’s experience or the way they perform tasks / interact with the product. An example could be changing the colour of a button.\n\nSignificant changes may significantly alter user behavior, and require users to adapt to a new way of interaction. An example could be an change to the information architecture of the product.\n\nThe full description of GA Scope and Definition of Done for Duo capabilities is here (internal access only).\n\nHow to measure and the acceptance criteria\n\nFollow the steps for running a rapid validation for both concepts and designs.\n\nFocus on user tasks that provide value to the user. JTBD may not exist yet in the space you’re working in. That’s ok; it shouldn’t be a blocker for AI usability testing.\n\nIf you have 1 task failure, the failure (pass/fail) is documented, but their ratings aren’t documented; find a replacement participant to meet the minimum of 5 participants.",
+    "chunk_index": 10,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "aa3e363d5b38_11",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/research-in-the-ai-space",
+    "title": "Doing UX research in the AI space",
+    "source": "handbook",
+    "headings": [
+      "Doing UX research in the AI space",
+      "UX Researcher support",
+      "The guidelines",
+      "Guideline 1: Start with identifying and understanding user needs",
+      "Guideline 2: Collect user feedback on your idea before building anything"
+    ],
+    "text": "provide value to the user. JTBD may not exist yet in the space you’re working in. That’s ok; it shouldn’t be a blocker for AI usability testing.\n\nIf you have 1 task failure, the failure (pass/fail) is documented, but their ratings aren’t documented; find a replacement participant to meet the minimum of 5 participants.\n\nIf you have 2 task failures on the same task, stop testing that task. Understand what needs to be addressed, make adjustments, then start testing that task again.\n\nIf the adjustments introduce significant changes to user experience, weigh confidence vs. risk to decide whether you should start afresh with 5 new participants.\n\nTesting AI experiences introduces new challenges to consider. For example, it’s important to be clear and accurate on the capabilities of what’s being shown to participants. This is to set the right kind of expectations. More details on this topic can be found in the Challenges of Testing AI Products section of this article .\n\nPeople + AI playbook by Google\n\nUser research for machine learning systems - a case study\n\nTesting AI concepts in user research\n\nHuman centered machine learning\n\nHow to use AI in UX research at GitLab",
+    "chunk_index": 11,
+    "total_chunks": 12
+  }
+]

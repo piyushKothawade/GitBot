@@ -1,0 +1,30 @@
+[
+  {
+    "chunk_id": "b212b9f79417_0",
+    "url": "https://handbook.gitlab.com/handbook/tools-and-tips/onepassword-cli",
+    "title": "1Password and Environment Variables",
+    "source": "handbook",
+    "headings": [
+      "1Password and Environment Variables",
+      "Standard command settings with aliases",
+      "Multi-environment usage with .bashrc"
+    ],
+    "text": "1Password and Environment Variables\n\nSecrets used on laptops need to be stored and used securely. The reasons for\nthis and basic concepts are discussed\non the 1Password page .\nIt’s recommended to read that first if you haven’t done so yet.\nThis page covers user-friendly ways to integrate these basic principles into your workflow.\n\nStandard command settings with aliases\n\nUsing an alias works well where a single, specific command should always use a\nsingle, specific set of secrets.\n\nFor example, you can define an alias in your shell profile to invoke glab with your PAT:\n\nTo verify the configuration, run glab api version . This should print\nthe version of gitlab.com if the configuration succeeded.\n\nMulti-environment usage with .bashrc\n\nIf you have a number of environments that you use frequently you can create functions to easily load secrets for the correct environment.\n\nOne example of this is below. It adds a ’loadenv’ command to bash which automatically starts a subshell containing all the relevant environment variables,\nassuming the current directory is a git repository and an environment variable with a matching name is available in $HOME/devenv/envfiles.\nThe modified $PS1 checks for the presence of the ‘ENVFILE’ variable, and if it exists displays it in the shell prompt to show what environment file is loaded in this shell.\n\nWhen added to .bashrc and sourced, it can then be used to run commands like this:\n\nThen, once the secrets are no longer needed, you can exit the subshell and this\nwill be visible in the prompt.",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "b212b9f79417_1",
+    "url": "https://handbook.gitlab.com/handbook/tools-and-tips/onepassword-cli",
+    "title": "1Password and Environment Variables",
+    "source": "handbook",
+    "headings": [
+      "1Password and Environment Variables",
+      "Standard command settings with aliases",
+      "Multi-environment usage with .bashrc"
+    ],
+    "text": "e ‘ENVFILE’ variable, and if it exists displays it in the shell prompt to show what environment file is loaded in this shell.\n\nWhen added to .bashrc and sourced, it can then be used to run commands like this:\n\nThen, once the secrets are no longer needed, you can exit the subshell and this\nwill be visible in the prompt.\n\nThis allows maintaining a set of standard variables for a given git repository, regardless of the exact command(s) being run.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

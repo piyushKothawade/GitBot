@@ -1,0 +1,162 @@
+[
+  {
+    "chunk_id": "e1a012f41e3d_0",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/maintainership",
+    "title": "Maintainership",
+    "source": "handbook",
+    "headings": [
+      "Maintainership",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (100% completed)"
+    ],
+    "text": "We have seen overall inconsistent results with maintainership in the last quarter. Examples: A subset of maintainers are taking the burden of reviews which can lead to serious problems in job satisfaction issues and burnout. We are growing (both in headcount as well as community contributions), but the number of maintainers has stabilized. The number of repos which need maintainer support is increasing while coverage of them has decreased. We want transparency that seniors who are maintainers are having a positive impact in the multiple areas listed here, which leads to more career opportunities for them than it does non-maintainers.\n\nOur objective is to change our processes and culture to have an organization which we know can sustain maintainership for the next 5 years that meets the demand of both the company and the open core project. This includes, but is not limited to:\n\nIncreasing current maintainers and having a forecasting to know we will increase in the future.\n\nAvailability measures which demonstrate maintainers are able to meet demands of code reviews\n\nLoad balancing measures to distribute MR reviews evenly among maintainers\n\nImprovements in code review features and CI/tooling to support the maintainers and reduce work needed for reviews\n\nCoverage/monitoring measures to know when a part of the code base is adequately supported or needs help\n\nImprovements in onboarding maintainers at our new scale\n\nProgress will be tracked on the Working Group issue board using the following labels:",
+    "chunk_index": 0,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "e1a012f41e3d_1",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/maintainership",
+    "title": "Maintainership",
+    "source": "handbook",
+    "headings": [
+      "Maintainership",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (100% completed)"
+    ],
+    "text": "I/tooling to support the maintainers and reduce work needed for reviews\n\nCoverage/monitoring measures to know when a part of the code base is adequately supported or needs help\n\nImprovements in onboarding maintainers at our new scale\n\nProgress will be tracked on the Working Group issue board using the following labels:\n\n~“workflow::In dev” The issue is currently in progress and actively being worked on\n\nThe issue is currently in progress and actively being worked on\n\n~“workflow::In review” The issue is currently being reviewed by broader Engineering Team\n\nThe issue is currently being reviewed by broader Engineering Team\n\n~“workflow::blocked” The issue is blocked by another issue.  Please refer to the blocking issue.\n\nThe issue is blocked by another issue.  Please refer to the blocking issue.\n\n~“workflow::production” The issue has been completed and should be closed.\n\nThe issue has been completed and should be closed.\n\nExit Criteria (100% completed)\n\nExit criteria for this working group has been completed, however monthly follow up meetings are still active until February 2, 2023.\n\nMaintainership Process\n\nThe maintainership process is described on this page .\n\nExit Criteria (100% completed)\n\nTarget Completion Date\n\nCreate an implementation plan to remedy gaps in Maintainership coverage\n\nDevelop metrics to provide more transparency into the health of the Maintainership program\n\nUpdate expected behaviors and responsibilities for Engineers and Maintainers\n\nImprove the Trainee Maintainer process to make the process more efficient",
+    "chunk_index": 1,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "e1a012f41e3d_2",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/maintainership",
+    "title": "Maintainership",
+    "source": "handbook",
+    "headings": [
+      "Maintainership",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (100% completed)"
+    ],
+    "text": "te\n\nCreate an implementation plan to remedy gaps in Maintainership coverage\n\nDevelop metrics to provide more transparency into the health of the Maintainership program\n\nUpdate expected behaviors and responsibilities for Engineers and Maintainers\n\nImprove the Trainee Maintainer process to make the process more efficient\n\nDevelop and implement a communication plan for Maintainership changes\n\nReviewer/Maintainer availability and capacity - Shows the maintainer/reviewer availability rate over time and incoming/forecasted review requests\n\nMaintainers and Trainees\n\nMaintainership Demand\n\nRoles and Responsibilities\n\nChristopher Lefelhocz\n\nSenior Engineering Manager, Manage\n\nFunctional Lead (Enablement)\n\nEngineering Manager, Database\n\nFunctional Lead (Fulfillment)\n\nSenior Manager of Fulfillment\n\nFunctional Lead (Ops)\n\nFunctional Lead (Dev)\n\nSenior Backend Engineer, Govern:Compliance\n\nFunctional Lead (Sec, Data Science, Growth)\n\nSr. Engineering Manager, Secure Analyzers\n\nFunctional Lead (Maintainer - Frontend)\n\nStaff Frontend Engineer\n\nFunctional Lead (Non-Maintainer - Backend)\n\nSenior Backend Engineer\n\nFunctional Lead (Trainee - Registry DB)\n\nIntermediate Backend Engineer\n\nFunctional Lead (Maintainer - Workhorse, Shell)\n\nSenior Backend Engineer\n\nFunctional Lead (Maintainer - Frontend)\n\nSenior Frontend Engineer\n\nFunctional Lead (Maintainer - Omnibus)\n\nSenior Backend Engineer\n\nFunctional Lead (Maintainer - CNG, Operator)\n\nSenior Backend Engineer\n\nDouglas Barbosa Alexandre\n\nPaul Gascou-Vaillancourt\n\nEngineering Manager, Govern:Compliance\n\nSenior Engineering Manager, Datastores",
+    "chunk_index": 2,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "e1a012f41e3d_3",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/maintainership",
+    "title": "Maintainership",
+    "source": "handbook",
+    "headings": [
+      "Maintainership",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (100% completed)"
+    ],
+    "text": "d (Maintainer - Frontend)\n\nSenior Frontend Engineer\n\nFunctional Lead (Maintainer - Omnibus)\n\nSenior Backend Engineer\n\nFunctional Lead (Maintainer - CNG, Operator)\n\nSenior Backend Engineer\n\nDouglas Barbosa Alexandre\n\nPaul Gascou-Vaillancourt\n\nEngineering Manager, Govern:Compliance\n\nSenior Engineering Manager, Datastores\n\nSenior Engineering Manager, Create / Ecosystem Stage\n\nSenior Frontend Engineer, Govern:Compliance\n\nStaff Backend Engineer, Contributor Success\n\nCommunicating changes\n\nWe have two sets of labels to help facilitate communications:\n\nType of changes and their impact\n\nUse these labels to identify the type of change being made:\n\n~\"Maintainership WG::process change\" - This update changes an existing process or workflow\n\n~\"Maintainership WG::new process\" - This update introduces a new process or workflow\n\n~\"Maintainership WG::responsibility change\" - This update changes or introduces a responsibility\n\n~\"Maintainership WG::other change\" - This is an update that may warrant an announcement but does not fit in the above categories\n\nUse these labels to identify if a change is ready to be communicated or if it has been communicated:\n\n~\"Maintainership WG Comms::ToDo\" - This update is ready to be communicated\n\n~\"Maintainership WG Comms::Needs Support\" - This update needs something additional to support it when it is announced. This could be things like handbook updates, an FAQ, or an AMA.\n\n~\"Maintainership WG Comms::Done\" - This update has been communicated\n\nLevels of announcements\n\nThere are generally three types of announcements that could apply to any update:",
+    "chunk_index": 3,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "e1a012f41e3d_4",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/maintainership",
+    "title": "Maintainership",
+    "source": "handbook",
+    "headings": [
+      "Maintainership",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (100% completed)"
+    ],
+    "text": "rt\" - This update needs something additional to support it when it is announced. This could be things like handbook updates, an FAQ, or an AMA.\n\n~\"Maintainership WG Comms::Done\" - This update has been communicated\n\nLevels of announcements\n\nThere are generally three types of announcements that could apply to any update:\n\nAlert - Something certain individuals might want to be aware of .\n\nExample: letting trainees and maintainers know that the program is meant to last one year, at which time it should be evaluated.\n\nAlerts are the lowest priority type of announcement. If some people miss it, that is not a problem. Alerts can usually be announced one time.\n\nChange - Something certain individuals need to be aware of .\n\nExample: changing the number of approvals necessary to become a maintainer.\n\nChanges usually require adoption, which is not something that happens after a single announcement. So it is important to not only communicate to the effected individuals, but also those who can endorse and promote the changes such as engineering managers or higher levels of management.\n\nSome announcements may gain a wider audience if they come from someone in senior management. If the subject matter is high enough in priority, consider reaching out to your sub-department director for guidance or asking in an engineering staff meeting for help with the announcement.\n\nAction - Something that requires certain individuals to take action within a given time period of the announcment.",
+    "chunk_index": 4,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "e1a012f41e3d_5",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/maintainership",
+    "title": "Maintainership",
+    "source": "handbook",
+    "headings": [
+      "Maintainership",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (100% completed)"
+    ],
+    "text": "r management. If the subject matter is high enough in priority, consider reaching out to your sub-department director for guidance or asking in an engineering staff meeting for help with the announcement.\n\nAction - Something that requires certain individuals to take action within a given time period of the announcment.\n\nExample: requesting survey feedback or communicating a behavior change that needs to be adopted within a certain time frame.\n\nDepending on the priority and urgency of the action needed, additional reminders are appropriate. For surveys, reposting a few times within the time frame before the survey closes is appropriate.\n\nMaking an announcement\n\nConsider the following questions when making an announcement:\n\nAre there any other areas of the docs or handbook that should be updated? Ensure there is no conflicting information that could cause confusion.\n\nAre there any other areas of the docs or handbook that should be updated? Ensure there is no conflicting information that could cause confusion.\n\nDo you have links to the handbook or docs to accompany the announcement? Ensure more information is available for those who need it.\n\nDo you have links to the handbook or docs to accompany the announcement? Ensure more information is available for those who need it.\n\nDo you have a place where people can go with more questions or clarifications? Provide an issue/doc/slack channel/AMA if it is expected that people may want further details.",
+    "chunk_index": 5,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "e1a012f41e3d_6",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/maintainership",
+    "title": "Maintainership",
+    "source": "handbook",
+    "headings": [
+      "Maintainership",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (100% completed)"
+    ],
+    "text": "ho need it.\n\nDo you have links to the handbook or docs to accompany the announcement? Ensure more information is available for those who need it.\n\nDo you have a place where people can go with more questions or clarifications? Provide an issue/doc/slack channel/AMA if it is expected that people may want further details.\n\nDo you have a place where people can go with more questions or clarifications? Provide an issue/doc/slack channel/AMA if it is expected that people may want further details.\n\nDoes this change disrupt an established process? If so, it may make sense to prompt managers to take action to raise awareness and adoption of the process.\n\nDoes this change disrupt an established process? If so, it may make sense to prompt managers to take action to raise awareness and adoption of the process.\n\nIs the change large enough that we may have a large number of questions? Consider opening an FAQ file or scheduling an AMA ( @sabrams can also facilitate these items).\n\nIs the change large enough that we may have a large number of questions? Consider opening an FAQ file or scheduling an AMA ( @sabrams can also facilitate these items).\n\nInclude links to the most relevant piece of information. Do not overcrowd the announcement with non-primary links.\n\nInclude links to the most relevant piece of information. Do not overcrowd the announcement with non-primary links.\n\nIf the announcement is for awareness : Communicate it to the most relevant slack channel and cross-post to other relevant channels Add it to eng-week-in-review\n\nIf the announcement is for awareness :",
+    "chunk_index": 6,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "e1a012f41e3d_7",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/maintainership",
+    "title": "Maintainership",
+    "source": "handbook",
+    "headings": [
+      "Maintainership",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (100% completed)"
+    ],
+    "text": "ks.\n\nInclude links to the most relevant piece of information. Do not overcrowd the announcement with non-primary links.\n\nIf the announcement is for awareness : Communicate it to the most relevant slack channel and cross-post to other relevant channels Add it to eng-week-in-review\n\nIf the announcement is for awareness :\n\nCommunicate it to the most relevant slack channel and cross-post to other relevant channels\n\nAdd it to eng-week-in-review\n\nIf the announcement is for action Communicate as above and consider adding it to management staff meetings.\n\nIf the announcement is for action\n\nCommunicate as above and consider adding it to management staff meetings.\n\nIf you are seeking feedback as a result, provide a link to where feedback can be given\n\nIf you are seeking feedback as a result, provide a link to where feedback can be given\n\nSometimes changes are controversial or involve subjects where people might have deep opinions. It is important that when such changes occur, everyone has access to resources and information to help them understand:\n\nHow they are affected\n\nWhy the change was made\n\nWhere they can give feedback\n\nAn FAQ or AMA can be helpful in supplying much of this information.\n\nIdeally, we want people to embrace a change, but at the least, we need to start with adoption. To help guide embracement, the “why” behind the change has to be strongly defined, optimally with strong data backing it.\n\nEstablish the goal of the survey\n\nShare in the most relevant slack channel and cross-post to other relevant channels\n\nCommunicate the end date or due date for the survey",
+    "chunk_index": 7,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "e1a012f41e3d_8",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/maintainership",
+    "title": "Maintainership",
+    "source": "handbook",
+    "headings": [
+      "Maintainership",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (100% completed)"
+    ],
+    "text": "eed to start with adoption. To help guide embracement, the “why” behind the change has to be strongly defined, optimally with strong data backing it.\n\nEstablish the goal of the survey\n\nShare in the most relevant slack channel and cross-post to other relevant channels\n\nCommunicate the end date or due date for the survey\n\nDefine a minimum number of responses to make the results representative/useful\n\nAdd a question to distinguish between different subgroups if applicable (frontend/backend, reviewer/trainee/maintainer) for pivoting the results.\n\nCommunication channels\n\nIt is appropriate for almost any changes to be communicated in:\n\nCommunicating in #whats-happening-at-gitlab is also a good idea for changes that effect large groups of people.\n\nHere are a few different categorizations of changes that can help you decide which channels to consider communicating to.\n\nCreate an implementation plan to remedy gaps in Maintainership coverage\n\nChannels for the projects directly effected by the changes.\n\nDevelop metrics to provide more transparency into the health of the Maintainership program\n\n#eng_managers Engineering staff meetings\n\nUpdate expected behaviors and responsibilities for Engineers and Maintainers\n\n#trainee_maintainers #backend_maintainers #frontend_maintainers #database_maintainers #eng_managers Engineering staff meetings\n\nImprove the Trainee Maintainer process to make the process more efficient\n\n#trainee_maintainers #backend_maintainers #frontend_maintainers #database_maintainers #eng_managers Engineering staff meetings\n\n#backend #backend_maintainers",
+    "chunk_index": 8,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "e1a012f41e3d_9",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/maintainership",
+    "title": "Maintainership",
+    "source": "handbook",
+    "headings": [
+      "Maintainership",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (100% completed)"
+    ],
+    "text": "s #frontend_maintainers #database_maintainers #eng_managers Engineering staff meetings\n\nImprove the Trainee Maintainer process to make the process more efficient\n\n#trainee_maintainers #backend_maintainers #frontend_maintainers #database_maintainers #eng_managers Engineering staff meetings\n\n#backend #backend_maintainers\n\n#frontend #frontend_maintainers\n\n#database #database_maintainers\n\n#backend_maintainers #frontend_maintainers #trainee_maintainers\n\nResponsibility/process updates\n\nAny of the above channels and #eng_managers\n\nFor changes concerning a specific project, try to notify the group that owns the project in addition to specific channels for that project. For example, workhorse changes should be communicated to #workhorse and #g_create_source_code as the owners of that project.\n\nThe product category page and the projects page may be helpful for determining which groups and stages own specific projects. If it is not apparent, another way to determine ownership include filtering the project members by direct membership and asking the owners or maintainers directly who owns the project.",
+    "chunk_index": 9,
+    "total_chunks": 10
+  }
+]

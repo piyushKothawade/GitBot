@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "6412a836d317_0",
+    "url": "https://handbook.gitlab.com/handbook",
+    "title": "The Handbook",
+    "source": "handbook",
+    "headings": [
+      "The Handbook",
+      "Introduction",
+      "Handbook Contents",
+      "Company",
+      "People Group"
+    ],
+    "text": "The GitLab team handbook is the central repository for how we run the company. Printed, it consists of over 2,000 pages of text . As part of our value of being\ntransparent the handbook is open to the world , and we welcome\nfeedback. Please make a merge request to suggest\nimprovements or add clarifications. Please use issues to\nask questions.\n\nFor a very specific set of internal information we also maintain an Internal Handbook\n\nLearning & Development\n\nCustomer Support Department\n\nDevelopment Department\n\nInfrastructure Platforms Department\n\nEnterprise Technology & AI\n\nEnterprise Technology & AI\n\nBrand and Product Marketing\n\nMarketing Operations and Analytics\n\nCorporate Communications\n\nCustomer Success Management\n\nSolutions Architecture\n\nFinancial Planning & Analysis\n\nLegal & Corporate Affairs\n\nLegal & Corporate Affairs\n\nCorporate Development\n\nEnvironment, Social, and Governance (ESG)\n\nRisk Management and Dispute Resolution\n\nTake GitLab for a spin\n\nSee what your team could do with The DevSecOps Platform.\n\nHave a question? We're here to help.",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

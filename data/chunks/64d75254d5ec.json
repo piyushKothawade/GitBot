@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "64d75254d5ec_0",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/continuous-scanning",
+    "title": "Continuous Scanning Working Group",
+    "source": "handbook",
+    "headings": [
+      "Continuous Scanning Working Group",
+      "Attributes",
+      "Goals",
+      "Exit Criteria",
+      "Outcome"
+    ],
+    "text": "Continuous Scanning Working Group\n\n#wg_continuous_vuln_scans (only accessible from within the company)\n\nEvent Stream Working Group Agenda (only accessible from within the company)\n\n~WorkingGroup::ContinuousScanning\n\nThe goal for this working group is to complete the work described in this Epic .\n\nOur exit criteria maps to the proposal found in this Epic :\n\nSBOM information is ingested and stored in the database\n\nAdvisory DB information is ingested and stored the database\n\nScans are triggered automatically when any changes are detected for either the SBOM information or the Advisory DB information\n\nWhen the group was started, the target features were in categories spread across different stages and groups. With the creation of the Govern Stage the remaining two items are wholly within the responsibilities of the Composition Analysis group in the Secure stage, and as such they’re best completed as business-as-usual features in the owner group.\n\nRoles and Responsibilities\n\nDirector of Product Management, Sec & Data Science\n\nBackend Engineering Manager, Govern:Threat Insights, Govern:Security Policies\n\nSenior Product Manager, Govern\n\nSenior Backend Engineer, Secure:Composition Analysis\n\nSenior Backend Engineer\n\nStaff Backend Engineer, Govern:Threat Insights",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

@@ -1,0 +1,514 @@
+[
+  {
+    "chunk_id": "fed8a620881e_0",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "Selecting the Right Testing Environment\n\nSupport Engineers need testing environments to learn how to support GitLab and also to replicate customer issues.\n\nThis page explains the main choices available to you. Some guidelines:\n\nYou should choose a way to spin up a specific version of GitLab quickly so that you can replicate customer issues. The current recommended way to do this is to use GitLab Sandbox Cloud . Each specific module that you’ll be using has its own README.md in the deployment projects, so make sure to give that a read as well.\n\nTesting locally is also recommended - configuring Docker Engine / VM based system (details below) to your taste will let you quickly spin up a specific GitLab version.\n\nYou will need licenses for all self-managed tiers so you can match the features available with your customer’s features - see the next section.\n\nFor most testing, a single box Omnibus installation will be fine.\n\nIf you need a more complex environment, the following tools can help: GitLab Environment Toolkit GitLab Support Setups via local (Virtualbox, VMWare, libvirt) VMs\n\nGitLab Environment Toolkit\n\nGitLab Support Setups via local (Virtualbox, VMWare, libvirt) VMs\n\nFor K8s Helm installations, we recommend using GKE .\n\nIf you need to replicate specific cloud provider environments (e.g. for a scaled architecture), see the sections on GCP, AWS and Azure below.\n\nConsider joining the #spt_testing Slack Channel to share your own tips and tricks for testing environments.\n\nTesting Environment License\n\nIf you require a license for testing:",
+    "chunk_index": 0,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_1",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "If you need to replicate specific cloud provider environments (e.g. for a scaled architecture), see the sections on GCP, AWS and Azure below.\n\nConsider joining the #spt_testing Slack Channel to share your own tips and tricks for testing environments.\n\nTesting Environment License\n\nIf you require a license for testing:\n\nFor a self-managed instance , see GitLab plan or license for team members .\n\nFor GitLab.com , individual test namespaces with licenses pre-applied have been provisioned as part of your onboarding.\n\nPlease keep in mind you can’t generate licenses for customers , only for your own testing purposes.\n\nAWS Marketplace Resources\n\nNote that when using some AWS Marketplace resources, free trials (including GitLab Ultimate) may automatically renew. You should always prefer using test licenses, but ensure that you cancel any AWS Marketplace subscriptions if you trial anything for testing purposes.\n\nTesting on GitLab.com\n\nAs noted in Testing Environment License , you will have received licensed namespaces for testing on GitLab.com as part of your onboarding.\n\nYou will be added as Owner in these groups and can make changes at-will, including inviting customers to specific projects as you collaborate with them.\n\nAvoid making the namespace public. Instead create a subgroup or project within your test namespace or a namespace unique to the customer case and assign them sufficient permissions to invite collaboration.\n\nAvoid making the namespace public.",
+    "chunk_index": 1,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_2",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "cluding inviting customers to specific projects as you collaborate with them.\n\nAvoid making the namespace public. Instead create a subgroup or project within your test namespace or a namespace unique to the customer case and assign them sufficient permissions to invite collaboration.\n\nAvoid making the namespace public.\n\nInstead create a subgroup or project within your test namespace or a namespace unique to the customer case and assign them sufficient permissions to invite collaboration.\n\nAvoid granting a customer permanent access. Instead set an access expiration date when you invite a customer.\n\nAvoid granting a customer permanent access.\n\nInstead set an access expiration date when you invite a customer.\n\nAvoid using access tokens for your main GitLab account: a leak in a test project may not be automatically detected and can be used to traverse sensitive company namespaces. Instead try to use Project Access Tokens or Group Access tokens . Otherwise, create a test account and use personal access tokens for it (If you do this, make sure the token is set to a expire within a maximum of 2 days).\n\nAvoid using access tokens for your main GitLab account: a leak in a test project may not be automatically detected and can be used to traverse sensitive company namespaces.\n\nInstead try to use Project Access Tokens or Group Access tokens . Otherwise, create a test account and use personal access tokens for it (If you do this, make sure the token is set to a expire within a maximum of 2 days).",
+    "chunk_index": 2,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_3",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "oject may not be automatically detected and can be used to traverse sensitive company namespaces.\n\nInstead try to use Project Access Tokens or Group Access tokens . Otherwise, create a test account and use personal access tokens for it (If you do this, make sure the token is set to a expire within a maximum of 2 days).\n\nThe testing namespaces have 400 compute minutes per month. Use ChatOps to add additional compute minutes if you need more.\n\nCloud Testing Environments\n\nYou can create (ephemeral) testing environments. We recommend using the Sandbox Cloud Realm at gitlabsandbox.cloud for doing so.\n\nYou’re free to create any testing environments that you need in order to perform your role, however be advised that:\n\nCloud resources are not free: please delete or shutdown any instances you aren’t using.\n\nMulti-node reference architectures are very expensive to run, so be particularly mindful of not leaving them active longer than you need to.\n\nYou shouldn’t expose your instances to the public Internet or run without TLS. Instances vulnerable to known RCEs or other exploits detected through automated scans will be shut down without warning. Please review Securing Cloud Testing Environments before you create your first instance.\n\nGCP resources can belong to different GCP projects . There is a number of GCP projects available to you to create your resources in.\n\nGitLab Sandbox Cloud for GCP (preferred)",
+    "chunk_index": 3,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_4",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "ough automated scans will be shut down without warning. Please review Securing Cloud Testing Environments before you create your first instance.\n\nGCP resources can belong to different GCP projects . There is a number of GCP projects available to you to create your resources in.\n\nGitLab Sandbox Cloud for GCP (preferred)\n\nIf you need flexibility for creating test environments, the GitLab Sandbox Cloud allows for creating a personally-owned GCP projects. You can create test resources using the GCP console , or gcloud command line tool . If you need to replicate any of the Reference Architectures , it’s recommended that you use the GitLab Environment Toolkit .\n\nNote: Please remember to shut down resources that you are no longer using.\nWe are now using automation scripts to shutdown resources over the weekend. To exclude your resources from being shutdown you’ll need to add the instance-ttl-bot-ignore label to those resources.\n\nYou can use Terraform Environments to automatically manage GCP resources in your personally-owned GCP projects. If you are after a simple Omnibus machine with a runner, select support-resources-template-v2-######## template. Feel free to also explore other available Project templates to deploy GitLab Environment Toolkit or create a GKE cluster that already has GitLab installed through Helm chart.\n\nNote that these environments are ephemeral.\n\nCheck out a this demo video for details walk-through.",
+    "chunk_index": 4,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_5",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "port-resources-template-v2-######## template. Feel free to also explore other available Project templates to deploy GitLab Environment Toolkit or create a GKE cluster that already has GitLab installed through Helm chart.\n\nNote that these environments are ephemeral.\n\nCheck out a this demo video for details walk-through.\n\nWarning: You may also have access to the gitlab-internal and gitlab-support GCP projects. You should use GitLab Sandbox Cloud instead of creating resources in these projects.\n\nNote: Please remember to shut down or delete any resources that you are no longer using.\n\nGCP GKE Kubernetes Cluster\n\nPlease use your GitLab Sandbox Cloud GCP project to create a GCP Kubernetes (GKE) cluster. You can create a GKE cluster manually from the console or you can use the Support GKE cluster template (for an empty GKE cluster) or Support GitLab GKE cluster template (for a GKE cluster with a GitLab helm deployment) from your GitLab Sandbox account . Click here for more information on spinning up resources with terraform in the GitLab Sandbox.\n\nNote: If you are using GKE to test GitLab Runners, note that GitLab Runners require the use of RBAC roles in GCP . The support-resources GCP project  does not allow the user enough permission to create the required roles, but you can do it with your personal GitLab Sandbox Cloud GCP project\n\nEnsure you have selected your own project at the top of GCC .\n\nOpen the navigation menu at the top of GCP\n\nSelect Kubernetes Engine > Create Cluster from the dashboard.",
+    "chunk_index": 5,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_6",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "project  does not allow the user enough permission to create the required roles, but you can do it with your personal GitLab Sandbox Cloud GCP project\n\nEnsure you have selected your own project at the top of GCC .\n\nOpen the navigation menu at the top of GCP\n\nSelect Kubernetes Engine > Create Cluster from the dashboard.\n\nEnter a name, select a zone, and choose the default static master version unless you have a specific reason to use an alternative version.  It’s important to use a server version that will match your kubectl client version .\n\nAll of the remaining options can be left as their default settings unless you have a need to add customization to your cluster.  Of note, the Maximum Pods per Node option directly correlates with the CIDR assignment of your node(s).\n\nConnecting to, and configuring, your cluster can be done locally using gcloud and kubectl . Or you can use the Google Cloud Shell.  Clicking Connect in GCP will provide the command to run locally for you to copy and paste, or let you open Cloud Shell immediately. Using docker images is also an option for a quick deployment of all tools locally.\n\nAWS Testing Environment\n\nPlease use Sandbox Cloud to create credentials for AWS.\n\nEKS testing Environment with Helm\n\nThe following guide is designed to help you quickly deploy a Kubernetes environment using EKS and Helm for testing purposes on this environment.\n\nA GitLab Sandbox Cloud account\n\nInstall the following programs on your local computer:\n\nHelm v3 (3.3.1 or higher)\n\nCertbot (If you are using other OS than OSX please look for your specific OS.)",
+    "chunk_index": 6,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_7",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "is designed to help you quickly deploy a Kubernetes environment using EKS and Helm for testing purposes on this environment.\n\nA GitLab Sandbox Cloud account\n\nInstall the following programs on your local computer:\n\nHelm v3 (3.3.1 or higher)\n\nCertbot (If you are using other OS than OSX please look for your specific OS.)\n\nFor OS X, you can install all of the programs above by running:\n\nLog in to your Sandbox Cloud\n\nLog into your AWS individual account in Sandbox Cloud\n\nCreate an IAM Access key\n\nWhen they key has been created successfully, you’ll get an Access key ID and a Secret key .\n\nGo to your terminal to configure the AWS CLI to use the IAM Access Key:\n\nEnter the Access key ID and Secret key when prompted\n\nOptionally, set a region\n\nChoose the output format (This controls what format the AWS CLI will use when printing out data. Options include json , yaml and text .)\n\nA bootstrap script has been created to setup an easier and automated cluster creation using Cloud Formation.\nClone this project locally and navigate to gitlab/scripts and execute ./eks_bootstrap_script up . This script will use a CloudFormation stack to deploy all the required resources for your cluster so it will take a while to complete. After successful completion you will see something similar this output:\n\nNOTE: If the Kubernetes cluster version is >= 1.23 , you must run ./eks_bootstrap_script add_ebs_csi_driver prior to deploying GitLab to the cluster.\n\nOnce your cluster is ready create a certificate for your domain using Certbot by running:",
+    "chunk_index": 7,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_8",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "plete. After successful completion you will see something similar this output:\n\nNOTE: If the Kubernetes cluster version is >= 1.23 , you must run ./eks_bootstrap_script add_ebs_csi_driver prior to deploying GitLab to the cluster.\n\nOnce your cluster is ready create a certificate for your domain using Certbot by running:\n\nCertbot will create a TXT DNS record that you need to add on your DNS Registrar so that your domain will have a valid HTTPS certificate to be used by your GitLab instance.\n\nAfter your record had been added to your registrar create a secret for your cluster to use the certificate by running:\n\n(Optional) If you also want to have GitLab Pages in your cluster then you will need to create another certificate for your domain and another secret for your cluster\n\nAdd the GitLab repository charts to your Helm environment\n\nUpdate your repository to the latest version\n\nCreate a values.yml file with the desired values you wish to deploy your instance. (A sample file can be found here )\n\nTo get the loadbalancer hostname of your GitLab deployment run\n\nCreate a CNAME record with the name gitlab pointing to your loadbalancer hostname to access your instance on HTTPS.\n\n(Optional) If you want to setup GitLab Pages create another CNAME record using *.pages pointing to the same loadbalancer hostname.\n\nGet your initial root password by executing\n\n🎉 Your GitLab instance is up and running!\n\nOnce these steps are completed you can visit your GitLab instance using gitlab.<DOMAIN NAME> .",
+    "chunk_index": 8,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_9",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "TPS.\n\n(Optional) If you want to setup GitLab Pages create another CNAME record using *.pages pointing to the same loadbalancer hostname.\n\nGet your initial root password by executing\n\n🎉 Your GitLab instance is up and running!\n\nOnce these steps are completed you can visit your GitLab instance using gitlab.<DOMAIN NAME> .\n\nOnce you’re done using your EKS instance run ./eks_bootstrap_script down to destroy all resources used.\n\nWhen creating a new cluster you will need to run:\n\n./eks_bootstrap_script up .\n\nCreate Kubernetes secrets as before.\n\nDeploy your Helm chart.\n\nUpdate your CNAME with the new loadbalancer in your registrar.\n\nNote : You might need to wait for your TTL to reset after you updated your loadbalancer in your registrar before accessing the instance.\n\nOpenShift Testing Environment using ROSA\n\nOne option for creating an OpenShift cluster to run the GitLab and GitLab Runner Operators is to use the Red Hat OpenShift Service on AWS (ROSA) .\n\nInstallation is performed from your laptop using the rosa utility which collects cluster configuration details and then runs a scripted deployment of an OpenShift cluster in AWS. The installation typically takes 30-45 minutes.\n\nThe key steps are as follows:\n\nLocal AWS command line access is configured on your laptop by setting the AWS_REGION , AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables to access your AWS sandbox account.",
+    "chunk_index": 9,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_10",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "scripted deployment of an OpenShift cluster in AWS. The installation typically takes 30-45 minutes.\n\nThe key steps are as follows:\n\nLocal AWS command line access is configured on your laptop by setting the AWS_REGION , AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables to access your AWS sandbox account.\n\nThe AWS ROSA prerequisites are met - in the AWS Console, search for the Red Hat OpenShift Service on AWS service, click on Get started and ensure ROSA is enabled and the Service Quotas and ELB service-linked role requirements are met.\n\nA personal Red Hat account - register a new personal account at https://www.redhat.com/wapps/ugc/register.html .\n\nBrowse to https://console.redhat.com/openshift/create/rosa/getstarted .\n\nBrowse to https://console.redhat.com/openshift/create/rosa/getstarted .\n\nLog in using your Red Hat account. This will take you to the Hybrid Cloud Console.\n\nLog in using your Red Hat account. This will take you to the Hybrid Cloud Console.\n\nDownload and install the ROSA CLI tool for your local OS (step 1).\n\nDownload and install the ROSA CLI tool for your local OS (step 1).\n\nLogin to the ROSA CLI with your Red Hat account token and create AWS account roles and policies as described on the setup page (step 2).\n\nLogin to the ROSA CLI with your Red Hat account token and create AWS account roles and policies as described on the setup page (step 2).",
+    "chunk_index": 10,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_11",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "he ROSA CLI tool for your local OS (step 1).\n\nLogin to the ROSA CLI with your Red Hat account token and create AWS account roles and policies as described on the setup page (step 2).\n\nLogin to the ROSA CLI with your Red Hat account token and create AWS account roles and policies as described on the setup page (step 2).\n\nFrom your laptop, run rosa create cluster to start the installation. You will be prompted for quite a few settings - accept the\noffered defaults for all except the following: Cluster name - choose a name for your cluster Create cluster admin user - select Yes Openshift version - enter desired OpenShift version AWS region - enter desired AWS region\n\nFrom your laptop, run rosa create cluster to start the installation. You will be prompted for quite a few settings - accept the\noffered defaults for all except the following:\n\nCluster name - choose a name for your cluster\n\nCreate cluster admin user - select Yes\n\nOpenshift version - enter desired OpenShift version\n\nAWS region - enter desired AWS region\n\nThe installation process will start, and a message will appear prompting you to run commands to create the operator-roles and oidc-provider in order for the installation to continue. You need to run these now or the installation will pause indefinitely.\nAccept the default options when prompted.",
+    "chunk_index": 11,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_12",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "nter desired AWS region\n\nThe installation process will start, and a message will appear prompting you to run commands to create the operator-roles and oidc-provider in order for the installation to continue. You need to run these now or the installation will pause indefinitely.\nAccept the default options when prompted.\n\nThe installation process will start, and a message will appear prompting you to run commands to create the operator-roles and oidc-provider in order for the installation to continue. You need to run these now or the installation will pause indefinitely.\nAccept the default options when prompted.\n\nRecord the admin user name and password that were displayed during the setup step.\n\nRecord the admin user name and password that were displayed during the setup step.\n\nYou can monitor the progress of the installation and the installation log from the Hybrid Cloud Console Cluster List page. Note\nthat multiple connection errors will be logged while services are being provisioned - these are expected.\n\nYou can monitor the progress of the installation and the installation log from the Hybrid Cloud Console Cluster List page. Note\nthat multiple connection errors will be logged while services are being provisioned - these are expected.\n\nWhile the cluster is installing you can download the OpenShift CLI tool ( oc ) from the link provided on the cluster status page,\nif required.\n\nWhile the cluster is installing you can download the OpenShift CLI tool ( oc ) from the link provided on the cluster status page,\nif required.\n\nLogging in to the OpenShift cluster",
+    "chunk_index": 12,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_13",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "le the cluster is installing you can download the OpenShift CLI tool ( oc ) from the link provided on the cluster status page,\nif required.\n\nWhile the cluster is installing you can download the OpenShift CLI tool ( oc ) from the link provided on the cluster status page,\nif required.\n\nLogging in to the OpenShift cluster\n\nOnce the cluster state is ready you can log into the cluster console from the Hybrid Cloud Console by selecting the cluster from Cluster List and clicking on the Open Console button.\n\nHowever you will need to wait an additional 5-10 minutes for the setup of the default identify provider and TLS certificates to complete\nand the cluster-admin identify provider button to appear first on the login page. If you are only presented with username and\npassword fields to fill in wait a few more minutes and try browsing to the console login page again.\n\nOnce you see the cluster-admin button click on it and you will be prompted for the admin user and password you recorded earlier. You\nare now logged into the cluster.\n\nAccessing the OpenShift cluster from the command line\n\nTo access the cluster from the command line you first need to log into it using the oc command. From the cluster console, click on\nthe cluster-admin drop down at the top right and then on Copy login command . You will be prompted to log in as the cluster\nadmin again, and then shown a Display token link. Click on the link and copy the oc login command that is displayed.",
+    "chunk_index": 13,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_14",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "st need to log into it using the oc command. From the cluster console, click on\nthe cluster-admin drop down at the top right and then on Copy login command . You will be prompted to log in as the cluster\nadmin again, and then shown a Display token link. Click on the link and copy the oc login command that is displayed.\n\nRun the oc login command on your laptop with the supplied token - you should then be able to run other commands such as oc get pods -A .\n\nDestroying the cluster\n\nROSA clusters aren’t cheap to run and so to reduce AWS costs the OpenShift cluster should be destroyed as soon as it is no longer\nneeded (even if that means building a new one in a couple of days) - this is done from the command line by running rosa delete cluster --cluster=mycluster .\n\nAzure Testing Environment\n\nFor Group SAML/SCIM (GitLab.com) testing, shared account credentials can be located within the 1password entry Azure Active Directory Sandbox (SAML Testing) . This level of access should be sufficient for the majority of test cases.\n\nIf you need access to the shared infrastructure team’s Azure account for testing AKS and similar features, please create an access request and tag your manager.\n\nFor features not available in either instance, please create your own trial for Azure.\n\nOkta Testing Environment",
+    "chunk_index": 14,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_15",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "e sufficient for the majority of test cases.\n\nIf you need access to the shared infrastructure team’s Azure account for testing AKS and similar features, please create an access request and tag your manager.\n\nFor features not available in either instance, please create your own trial for Azure.\n\nOkta Testing Environment\n\nIf you need an Okta sandbox environment to test SAML and SCIM, please go to https://developer.okta.com/signup/ and enter your credentials for a free developer instance where you can perform all your tests. This is a full featured environment so you should be able to add and remove applications, and perform all tests as if you were in a regular production instance.\n\nGoogle Workspace Testing Environment\n\nThe IT team has a Google Workspace test environment which the Support team can use. The credentials for 1 admin and 1 user account can be found\nin 1password as:\n\nGoogle Workspace Admin Test Account\n\nGoogle Workspace User Test Account\n\nIf you need to create more user test accounts, please delete them afterwards. There is a seat limit in the test environment.\n\nWhen creating apps, please include your name or the ticket number in the app name. Note that all apps should be considered temporary and may be deleted 2 weeks after creation.\n\nLDAP Testing Environments\n\nFor testing LDAP integrations with a self-managed GitLab instance, you may consider any of these options:\n\nJumpcloud (Free for up to 10 users).\n\nKeycloak Testing Environment",
+    "chunk_index": 15,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_16",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "t number in the app name. Note that all apps should be considered temporary and may be deleted 2 weeks after creation.\n\nLDAP Testing Environments\n\nFor testing LDAP integrations with a self-managed GitLab instance, you may consider any of these options:\n\nJumpcloud (Free for up to 10 users).\n\nKeycloak Testing Environment\n\nSetting up a test Keycloak instance might be useful when learning & troubleshooting SAML SSO for GitLab.com groups .To deploy it, please follow Deploying a test instance of Keycloak .\n\nDNS for test instances\n\nSee the handbook for IT policies about Domain Names and DNS Records .\n\nIf you wish to test resources using a real domain name (instead of an IP address, e.g. for testing TLS certificates), you can purchase a domain name of your choice (without GitLab trademarks) that is paid for by GitLab through your Sandbox Cloud AWS account or GCP project. Instructions and guidelines can be found here .\n\nSecuring Cloud Testing Environments\n\nTest instances are, by default, publicly accessible on the Internet. Often, we need to test specific versions or configurations that may be vulnerable to remote compromise. It is your responsibility to secure your test instances to prevent them from being compromised and used to further attack our cloud environment.\n\nThe GitLab Red Team regularly scans GitLab’s cloud environments for publicly accessible instances with known vulnerabilities. Instances vulnerable to known RCEs or other exploits detected through automated scans will be shut down without warning.",
+    "chunk_index": 16,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_17",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "from being compromised and used to further attack our cloud environment.\n\nThe GitLab Red Team regularly scans GitLab’s cloud environments for publicly accessible instances with known vulnerabilities. Instances vulnerable to known RCEs or other exploits detected through automated scans will be shut down without warning.\n\nA highly effective way to secure your cloud instances is to apply the concept of IP filtering for each test instance you create whether its a GitLab instance or otherwise.  For the majority of cases, this means source IP filtering from one or more CIDR block ranges ensuring that only certain IPs and integrations can interact with the GitLab instance, therefore reducing the attack surface of the GitLab organization as a whole.\n\nIf you don’t know your current IP address to use for source IP filtering, you can utilize services like whatsmyipaddress.com or ipinfo.io to retrieve it.  Though configuring IP filtering is currently a manual process for each cloud service, discussions are underway at the time of writing regarding how best to automate this practice to reduce complexity and manual processes needed in some cases. The steps to implement IP filtering will differ per cloud environment.  Below you can find a detailed guide maintained by the support engineering team.\n\nSupport Engineering Step-by-Step Guide to Implementing IP Filtering\n\nIn addition, you can find official, platform-specific documentation of features involved in implementing IP filtering:\n\nAmazon Web Services (AWS)",
+    "chunk_index": 17,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_18",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "per cloud environment.  Below you can find a detailed guide maintained by the support engineering team.\n\nSupport Engineering Step-by-Step Guide to Implementing IP Filtering\n\nIn addition, you can find official, platform-specific documentation of features involved in implementing IP filtering:\n\nAmazon Web Services (AWS)\n\nTo be in line with GitLab’s encryption policy , TLS should also be implemented on public-facing testing resources.\n\nFor GitLab instances specifically, it’s recommended that LetsEncrypt is manually enabled for Omnibus installs .  First, you’ll need a domain assigned to your external IP regardless of your cloud platform.  Enabling LetsEncrypt for Omnibus installs is well documented at the link above.\n\nSelf-Signed Certificates\n\nImplementing TLS on any test instance that includes a login page can be done with a self-signed certificate if desired.  Self-signed certificates are free, suitable for testing environments, and encrypt ingress and egress traffic with the same ciphers as paid certificates.  The down-side is that self-signed certificates are not trusted by any browser or operating system and will therefore warn users of the risks when accessing a site that utilizes a self-signed (untrusted) certificate.  If external parties will be accessing your instance that should rely on your TLS implementation, it’s best to include a signed certificate from a legitimate certificate authority.",
+    "chunk_index": 18,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_19",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "r or operating system and will therefore warn users of the risks when accessing a site that utilizes a self-signed (untrusted) certificate.  If external parties will be accessing your instance that should rely on your TLS implementation, it’s best to include a signed certificate from a legitimate certificate authority.\n\nSelf-signed certificates can be generated with a tool like mkcert . Once mkcert has been installed, you can this command to generate a certificate file and a key file for gitlab.example.com :\n\nThe command’s output will tell you the filenames that are generated:\n\nThe certificate is at \"./gitlab.example.com.pem\" and the key at \"./gitlab.example.com-key.pem\" ✅\n\nFor instructions on using self-signed certificates on your test instances, please review the GitLab docs on Configure HTTPS manually and the documentation available from these cloud service providers:\n\nPatching against known vulnerabilities\n\nRunning a Support test instance with a known vulnerability can be a security issue. When running a test instance, you should patch against known vulnerabilities if possible.\n\nFor example, GitLab versions from 11.9 to 13.10.2 are vulnerable to CVE-2021-22205 .\n\nIf you’re running GitLab version 12.6 to 13.10.2, patch against this vulnerability by running the following commands for each instance:\n\nFor GitLab versions 11.9.0 to 12.5.x, you can “patch” the vulnerability by replacing the exiftool binary with the following commands:\n\nLocal Testing Environments",
+    "chunk_index": 19,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_20",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "to CVE-2021-22205 .\n\nIf you’re running GitLab version 12.6 to 13.10.2, patch against this vulnerability by running the following commands for each instance:\n\nFor GitLab versions 11.9.0 to 12.5.x, you can “patch” the vulnerability by replacing the exiftool binary with the following commands:\n\nLocal Testing Environments\n\nIf you’d like to use Docker Desktop for Mac a subscription is required for business use. Please review the Docker Desktop handbook page to find more information on how to obtain a license as well as a list of recommended alternatives.\n\nIn the mean time, consider using a Cloud or local VM with Linux Engine for testing Docker environments.\n\nNote that on Macs with M1 / Apple Silicon, running GitLab in Docker is not working properly for now. Check out UTM below as an alternative for a local setup on your M1 Mac.\n\nSince Docker Toolbox has been deprecated, Docker Machine has to be downloaded and installed manually. Use the following commands to install or upgrade Docker Machine separately:\n\nThis guide involves configuring and setting up VMWare and Docker locally and assumes you’re using macOS.\n\nInstall VMWare (paid)\n\nNavigate to VMWare store , and then purchase VMWare Fusion 10 (for macOS) (or current version).\n\nDownload VMWare Fusion 10 (for macOS) using the provided link.\n\nInstall VMWare Fusion 10.\n\nLaunch VMWare Fusion.\n\nWhen prompted, enter the license details.\n\nUTM (Apple M1 Compatible)",
+    "chunk_index": 20,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_21",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "’re using macOS.\n\nInstall VMWare (paid)\n\nNavigate to VMWare store , and then purchase VMWare Fusion 10 (for macOS) (or current version).\n\nDownload VMWare Fusion 10 (for macOS) using the provided link.\n\nInstall VMWare Fusion 10.\n\nLaunch VMWare Fusion.\n\nWhen prompted, enter the license details.\n\nUTM (Apple M1 Compatible)\n\nUTM is an open source QEMU-based virtualisation software for MacOS. It currently provides support for Apple silicon hardware, so may be useful for engineers on Apple M1 devices to deploy local virtual machines.\n\nNavigate to the UTM home page and select ‘Download’.\n\nOnce installed, follow the instructions for an ARM-based installation of Ubuntu\n\nStart the VM within the UTM interface.\n\nVirtualBox (Incompatible with Apple M1)\n\nThis guide involves configuring and setting up VirtualBox and Docker locally and assumes you’re using macOS. VirtualBox does not currently support Apple M1 CPUs.\n\nOracle VM VirtualBox is a free and open-source hosted hypervisor for x86\nvirtualization.\n\nNavigate to VirtualBox .\n\nDownload the latest version of the software for your operating system.\n\nNote The following list of commands can be saved as bash script for quickly spinning up new instances\n\nFrom Introduction to Vagrant\n\nVagrant is a tool for building and managing virtual machine environments in a single workflow\n\nVagrant is a tool for building and managing virtual machine environments in a single workflow\n\nVagrant encapsulates the local VM apps VMWare and Virtual along with libvirt .\n\nTo install Vagrant, go to tutorials/vagrant/getting-started-install",
+    "chunk_index": 21,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_22",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "for building and managing virtual machine environments in a single workflow\n\nVagrant is a tool for building and managing virtual machine environments in a single workflow\n\nVagrant encapsulates the local VM apps VMWare and Virtual along with libvirt .\n\nTo install Vagrant, go to tutorials/vagrant/getting-started-install\n\nOnce installed, support/toolbox has two projects which you can explore for local GitLab and tools setup.\n\nGitLab Support Toolkit\n\nSupport toolkit to help manage GitLab inventory and additional services via docker containers.\n\nSupport toolkit to help manage GitLab inventory and additional services via docker containers.\n\nGitLab Support Setups\n\nProvide a common provisioning and directory structure for various support setups including GitLab with connected GitLab Runners.\n\nProvide a common provisioning and directory structure for various support setups including GitLab with connected GitLab Runners.\n\nMultipass is a tool to generate cloud-style Ubuntu VMs quickly on Linux, macOS, and Windows. This method is similar to Vagrant.\n\nIt can be installed using brew or the package installer .\n\nNOTE: Some Mac users on older operating systems may experience a long standing bug where the MacOS firewall prevents Multipass from functioning consistently. MacOS 15 and newer should no longer have this issue.\n\nOnce installed, use multipass help to get an idea of what it can do. The general format is multipass <command> <name> .",
+    "chunk_index": 22,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_23",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "Mac users on older operating systems may experience a long standing bug where the MacOS firewall prevents Multipass from functioning consistently. MacOS 15 and newer should no longer have this issue.\n\nOnce installed, use multipass help to get an idea of what it can do. The general format is multipass <command> <name> .\n\nFor a solution that uses multipass see GitLab-in-a-VM . It automates a lot of stuff regarding setting up the VMs and making sure the instance is trusted between the GitLab runner and the GitLab instance itself.\n\nMake sure you download and install multipass.\n\nMake sure you download and install multipass.\n\nCreate a script called install-omnibus.sh inside of ~/mp_mount (or your preferred mount directory) with the following content: #!/bin/bash echo \"Starting script...\" sudo apt-get update sudo apt-get install -y curl openssh-server ca-certificates curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash export GITLAB_ROOT_PASSWORD = \"your_root_password\" export EXTERNAL_URL = \" $( hostname -I | awk '{print $1}' ) \" echo $EXTERNAL_URL echo \"Please enter the GitLab version (ex. 15.1.1-ee.0):\" read GL_VERSION apt install -y \"gitlab-ee= $GL_VERSION \" Please note: You need to replace the above password entry “your_root_password” with an alphanumeric password which is not a series of words and phrases otherwise you will encounter the error message “Password must not contain commonly used combinations of words and letters”.",
+    "chunk_index": 23,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_24",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "ION apt install -y \"gitlab-ee= $GL_VERSION \" Please note: You need to replace the above password entry “your_root_password” with an alphanumeric password which is not a series of words and phrases otherwise you will encounter the error message “Password must not contain commonly used combinations of words and letters”.\n\nCreate a script called install-omnibus.sh inside of ~/mp_mount (or your preferred mount directory) with the following content:\n\nPlease note: You need to replace the above password entry “your_root_password” with an alphanumeric password which is not a series of words and phrases otherwise you will encounter the error message “Password must not contain commonly used combinations of words and letters”.\n\nRun the following one-liner. If you’d like to increase/decrease memory or disk, replace with the appropriate values. You can use multipass help launch for more details on this command. multipass launch --cpus 4 --memory 8G --disk 10G --name gitlab-omnibus && multipass mount ~/mp_mount/ gitlab-omnibus:/mp_mount && multipass exec gitlab-omnibus -- sh -c 'sudo sh /mp_mount/install-omnibus.sh'\n\nRun the following one-liner. If you’d like to increase/decrease memory or disk, replace with the appropriate values. You can use multipass help launch for more details on this command.",
+    "chunk_index": 24,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_25",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "multipass mount ~/mp_mount/ gitlab-omnibus:/mp_mount && multipass exec gitlab-omnibus -- sh -c 'sudo sh /mp_mount/install-omnibus.sh'\n\nRun the following one-liner. If you’d like to increase/decrease memory or disk, replace with the appropriate values. You can use multipass help launch for more details on this command.\n\nYou’re finished! Use multipass shell gitlab-omnibus to access your instance. Additionally: multipass list or multipass ls to see all instances multipass stop gitlab-omnibus to stop the instance multipass delete gitlab-omnibus to delete the instance Change the default open shell menu item by using duti\n\nYou’re finished! Use multipass shell gitlab-omnibus to access your instance. Additionally:\n\nmultipass list or multipass ls to see all instances\n\nmultipass stop gitlab-omnibus to stop the instance\n\nmultipass delete gitlab-omnibus to delete the instance\n\nChange the default open shell menu item by using duti",
+    "chunk_index": 25,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_26",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "y using duti\n\nYou’re finished! Use multipass shell gitlab-omnibus to access your instance. Additionally:\n\nmultipass list or multipass ls to see all instances\n\nmultipass stop gitlab-omnibus to stop the instance\n\nmultipass delete gitlab-omnibus to delete the instance\n\nChange the default open shell menu item by using duti\n\nCreate an executable script called install-runner.sh inside of ~/mp_mount (or your preferred mount directory) with the following content: #!/bin/bash echo \"Starting script...\" sudo apt-get update sudo mkdir -p /etc/apt/keyrings curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg echo \\ \"deb [arch= $( dpkg --print-architecture ) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \\ $( lsb_release -cs ) stable\" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null sudo apt-get update sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin curl -L \"https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh\" | sudo bash apt-get install -y gitlab-runner\n\nCreate an executable script called install-runner.sh inside of ~/mp_mount (or your preferred mount directory) with the following content:\n\nCreate a new instance: multipass launch --cpus 2 --memory 4G --disk 5G --name gitlab-runner && multipass mount ~/mp_mount/ gitlab-runner:/mp_mount && multipass exec gitlab-runner -- sh -c 'sudo sh /mp_mount/install-runner.sh'\n\nCreate a new instance:\n\nUse multipass shell gitlab-runner to access your instance.",
+    "chunk_index": 26,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_27",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "content:\n\nCreate a new instance: multipass launch --cpus 2 --memory 4G --disk 5G --name gitlab-runner && multipass mount ~/mp_mount/ gitlab-runner:/mp_mount && multipass exec gitlab-runner -- sh -c 'sudo sh /mp_mount/install-runner.sh'\n\nCreate a new instance:\n\nUse multipass shell gitlab-runner to access your instance.\n\nUse multipass shell gitlab-runner to access your instance.",
+    "chunk_index": 27,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_28",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "--memory 4G --disk 5G --name gitlab-runner && multipass mount ~/mp_mount/ gitlab-runner:/mp_mount && multipass exec gitlab-runner -- sh -c 'sudo sh /mp_mount/install-runner.sh'\n\nCreate a new instance:\n\nUse multipass shell gitlab-runner to access your instance.\n\nUse multipass shell gitlab-runner to access your instance.\n\nCreate a script called install-es.sh inside of ~/mp_mount (or your preferred mount directory) with the following content: #!/bin/bash wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg sudo apt-get install apt-transport-https echo \"deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/9.x/apt stable main\" | sudo tee /etc/apt/sources.list.d/elastic-9.x.list sudo apt-get update && sudo apt-get install elasticsearch sudo /bin/systemctl daemon-reload sudo /bin/systemctl enable elasticsearch.service # Configure with security disabled (DEVELOPMENT ONLY) sudo tee /etc/elasticsearch/elasticsearch.yml > /dev/null <<EOF path.data: /var/lib/elasticsearch path.logs: /var/log/elasticsearch network.host: $(hostname -I | awk '{print $1}') http.port: 9200 discovery.seed_hosts: [\"$(hostname -I | awk '{print $1}')\"] cluster.initial_master_nodes: [\"$(hostname -I | awk '{print $1}')\"] # Disable security (NOT for production!) xpack.security.enabled: false xpack.security.enrollment.enabled: false xpack.security.http.ssl.enabled: false xpack.security.transport.ssl.enabled: false EOF sudo systemctl start elasticsearch.service",
+    "chunk_index": 28,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_29",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "nt $1}')\"] cluster.initial_master_nodes: [\"$(hostname -I | awk '{print $1}')\"] # Disable security (NOT for production!) xpack.security.enabled: false xpack.security.enrollment.enabled: false xpack.security.http.ssl.enabled: false xpack.security.transport.ssl.enabled: false EOF sudo systemctl start elasticsearch.service\n\nCreate a script called install-es.sh inside of ~/mp_mount (or your preferred mount directory) with the following content:\n\nCreate a new instance: multipass launch --cpus 2 --memory 4G --disk 5G --name gitlab-es && multipass mount ~/mp_mount/ gitlab-es:/mp_mount && multipass exec gitlab-es -- sh -c 'sudo sh /mp_mount/install-es.sh'\n\nCreate a new instance:\n\nUse multipass shell gitlab-es to access your instance. You can use multipass ls to get the IP address and connect to it in your browser at port :9200 to verify it is working. Alternatively, run curl ip_address:9200 from your GitLab Omnibus instance to confirm you can reach your Elasticsearch instance.\n\nUse multipass shell gitlab-es to access your instance. You can use multipass ls to get the IP address and connect to it in your browser at port :9200 to verify it is working. Alternatively, run curl ip_address:9200 from your GitLab Omnibus instance to confirm you can reach your Elasticsearch instance.\n\nCreating GitLab test instance\n\nCreating settings variables\n\nCreate new docker host\n\nThis command will create a new VirtualBox virtual machine called gitlab-test-env that will act as a docker host.\n\nCPUs: Same as host ( -1 )\n\nName: gitlab-test-env",
+    "chunk_index": 29,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_30",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "b Omnibus instance to confirm you can reach your Elasticsearch instance.\n\nCreating GitLab test instance\n\nCreating settings variables\n\nCreate new docker host\n\nThis command will create a new VirtualBox virtual machine called gitlab-test-env that will act as a docker host.\n\nCPUs: Same as host ( -1 )\n\nName: gitlab-test-env\n\nResource: https://web.archive.org/web/20210619101324/https://docs.docker.com/machine/drivers/virtualbox/\n\nCreating GitLab test instance with docker machine\n\nConnect your shell to the new machine\n\nIn this example we’ll create a GitLab EE 11.9.9 instance.\n\nFirst connect the docker client to the docker host you created previously.\n\nYou can add this to your ~/.bash_profile file to ensure the docker client uses the gitlab-test-env docker host. You can use echo to do so:\n\nGet the available tags for GitLab\n\nOptionally replace the ee in the URL with ce\n\nCreate new GitLab container\n\nSSH port: 2222 Set gitlab_shell_ssh_port using --env GITLAB_OMNIBUS_CONFIG\n\nSet gitlab_shell_ssh_port using --env GITLAB_OMNIBUS_CONFIG\n\nHostname: IP of docker host\n\nContainer name: gitlab-test-11.9\n\nGitLab version: EE 11.9.9-ee.0\n\nConnect to the GitLab container\n\nBrowse to: https://192.168.151.134:8888/\n\nNote : The container might take a few seconds to spin up and become accessible via the browser.\n\nFor example, to set the gitlab_shell_ssh port on a container named gitlab-ee to port 2222\n\nhttps://docs.gitlab.com/install/docker/\n\nhttps://web.archive.org/web/20210619101324/https://docs.docker.com/machine/get-started/",
+    "chunk_index": 30,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "fed8a620881e_31",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/test_env",
+    "title": "Testing Environment",
+    "source": "handbook",
+    "headings": [
+      "Testing Environment",
+      "Selecting the Right Testing Environment",
+      "Testing Environment License",
+      "AWS Marketplace Resources",
+      "Testing on GitLab.com"
+    ],
+    "text": "8/\n\nNote : The container might take a few seconds to spin up and become accessible via the browser.\n\nFor example, to set the gitlab_shell_ssh port on a container named gitlab-ee to port 2222\n\nhttps://docs.gitlab.com/install/docker/\n\nhttps://web.archive.org/web/20210619101324/https://docs.docker.com/machine/get-started/\n\nhttps://web.archive.org/web/20210619101324/https://docs.docker.com/machine/reference/ip/\n\nIt may come to pass that you require a Windows environment to test a Windows Runner or\neven the Kubernetes Executor in a Mixed Cluster .\n\nThe options are the same as above:\n\nCloud environments: GCP and AWS have Windows Server images you can spin up to connect to via RDP.\n\nA local environment: Microsoft provides pre-packeged Windows VMs for your hypervisor of choice.",
+    "chunk_index": 31,
+    "total_chunks": 32
+  }
+]

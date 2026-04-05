@@ -1,0 +1,338 @@
+[
+  {
+    "chunk_id": "d64e940a8e4e_0",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "Top Misused Terms - GitLab Communication\n\nList of Top Misused Terms\n\nBelow are terms people frequently use when they should use another term.\n\n\"GitLabber\" includes both the GitLab community and people who work at GitLab. When you want to refer specifically to people who work at GitLab, use “GitLab team member” instead .\n\n\"GitLabber\" includes both the GitLab community and people who work at GitLab. When you want to refer specifically to people who work at GitLab, use “GitLab team member” instead .\n\nInternational Rest of world\n\nBy definition, we are all international and global, regardless of where in the world we’re located. International and rest of world are often incorrectly used to speak to non-US, so we don’t use them to avoid confusion.\n\nBy definition, we are all international and global, regardless of where in the world we’re located. International and rest of world are often incorrectly used to speak to non-US, so we don’t use them to avoid confusion.\n\nEnterprise Edition to reference a specific code or \"Paid\" users EE Code or EE to reference a specific code or \"Paid\" users\n\nEnterprise Edition to reference a specific code or \"Paid\" users\n\nEE Code or EE to reference a specific code or \"Paid\" users\n\nMIT Licensed (code is open source) and Proprietary (code is source-available) to refer to code. Free or Paid users to refer to types of users. Enterprise Edition to refer to the specific distribution.\n\nMIT Licensed (code is open source) and Proprietary (code is source-available) to refer to code.\n\nFree or Paid users to refer to types of users.",
+    "chunk_index": 0,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_1",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "n source) and Proprietary (code is source-available) to refer to code. Free or Paid users to refer to types of users. Enterprise Edition to refer to the specific distribution.\n\nMIT Licensed (code is open source) and Proprietary (code is source-available) to refer to code.\n\nFree or Paid users to refer to types of users.\n\nEnterprise Edition to refer to the specific distribution.\n\nCommunity Edition and Enterprise Edition are only distributions, and not a license of our code, nor a pricing tier .\n\nCommunity Edition and Enterprise Edition are only distributions, and not a license of our code, nor a pricing tier .\n\nCommunity Edition to reference a specific code or \"Free\" users CE to reference a specific code or \"Free\" users\n\nCommunity Edition to reference a specific code or \"Free\" users\n\nCE to reference a specific code or \"Free\" users\n\nMIT Licensed (code is open source) and Proprietary (code is source-available) to refer to code. Free or Paid users to refer to types of users. Community Edition to refer to the specific distribution.\n\nMIT Licensed (code is open source) and Proprietary (code is source-available) to refer to code.\n\nFree or Paid users to refer to types of users.\n\nCommunity Edition to refer to the specific distribution.\n\nCommunity Edition and Enterprise Edition are only distributions, and not a license of our code, nor a pricing tier .\n\nCommunity Edition and Enterprise Edition are only distributions, and not a license of our code, nor a pricing tier .\n\nHi people Hi everyone\n\nWe want to use inclusive language\n\nWe want to use inclusive language",
+    "chunk_index": 1,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_2",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "ty Edition and Enterprise Edition are only distributions, and not a license of our code, nor a pricing tier .\n\nCommunity Edition and Enterprise Edition are only distributions, and not a license of our code, nor a pricing tier .\n\nHi people Hi everyone\n\nWe want to use inclusive language\n\nWe want to use inclusive language\n\nWe want to attract a diverse set of people\n\nWe want to attract a diverse set of people\n\nWe have team members who are contractors\n\nWe have team members who are contractors\n\nWe are more than just our output.\n\nWe are more than just our output.\n\nWider community to refer to people outside of the company\n\nWider community to refer to people outside of the company\n\nPeople at GitLab are part of the community too .\n\nPeople at GitLab are part of the community too .\n\nIntentional transparency\n\nIntentional transparency\n\nRadical tends to be absolute and infers a lack of discretion. We are thoughtful and intentional about many things — informal communication , handbook-first documentation , onboarding , etc. — and have exceptions to transparency .\n\nRadical tends to be absolute and infers a lack of discretion. We are thoughtful and intentional about many things — informal communication , handbook-first documentation , onboarding , etc. — and have exceptions to transparency .\n\nWe are in it for the long-term and sprint implies fast, not quick .\n\nWe are in it for the long-term and sprint implies fast, not quick .\n\nThe term has negative connotations and the word refinement is used by the Scrum Guide .",
+    "chunk_index": 2,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_3",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "on , handbook-first documentation , onboarding , etc. — and have exceptions to transparency .\n\nWe are in it for the long-term and sprint implies fast, not quick .\n\nWe are in it for the long-term and sprint implies fast, not quick .\n\nThe term has negative connotations and the word refinement is used by the Scrum Guide .\n\nThe term has negative connotations and the word refinement is used by the Scrum Guide .\n\nUsing things like “obvious/as we all know/clearly” discourages people who don’t understand from asking for clarification. Also, be aware of the Curse of Knowledge when communicating.\n\nUsing things like “obvious/as we all know/clearly” discourages people who don’t understand from asking for clarification. Also, be aware of the Curse of Knowledge when communicating.\n\nThey [Do not refer to other teams at GitLab externally as \"they\" (e.g., \"Well, they haven't fixed that yet!\").]\n\n[Do not refer to other teams at GitLab externally as \"they\" (e.g., \"Well, they haven't fixed that yet!\").]\n\nThe Product team (example)\n\nThe Product team (example)\n\nThere is no “they” or “headquarters” - there is only us as team members, and it’s one team.\nYou could instead say something like “The Product team is looking at that issue…”.\nWhen used in the context of a pronoun, they is as valid as he, she, or any other pronoun someone decides to use.",
+    "chunk_index": 3,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_4",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "le)\n\nThe Product team (example)\n\nThere is no “they” or “headquarters” - there is only us as team members, and it’s one team.\nYou could instead say something like “The Product team is looking at that issue…”.\nWhen used in the context of a pronoun, they is as valid as he, she, or any other pronoun someone decides to use.\n\nThere is no “they” or “headquarters” - there is only us as team members, and it’s one team.\nYou could instead say something like “The Product team is looking at that issue…”.\nWhen used in the context of a pronoun, they is as valid as he, she, or any other pronoun someone decides to use.\n\nWe usually mean we’re removing a document or feature whereas deprecation is leaving the thing intact while discouraging its use. Unlike other terms on this list, there are times where “deprecate” is the right word, for example in the formal product process .\n\nWe usually mean we’re removing a document or feature whereas deprecation is leaving the thing intact while discouraging its use. Unlike other terms on this list, there are times where “deprecate” is the right word, for example in the formal product process .\n\nDiverse candidate Diversity candidate Diverse team member Diversity team member\n\nDiversity team member\n\nSomeone from an underrepresented group\n\nSomeone from an underrepresented group\n\nA single person cannot be “diverse.” Using “diverse” as a noun is an “othering” term. Instead, someone may be from an underrepresented group. It is okay to describe a team or any collection of people as “diverse”, however.",
+    "chunk_index": 4,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_5",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "sity team member\n\nSomeone from an underrepresented group\n\nSomeone from an underrepresented group\n\nA single person cannot be “diverse.” Using “diverse” as a noun is an “othering” term. Instead, someone may be from an underrepresented group. It is okay to describe a team or any collection of people as “diverse”, however.\n\nA single person cannot be “diverse.” Using “diverse” as a noun is an “othering” term. Instead, someone may be from an underrepresented group. It is okay to describe a team or any collection of people as “diverse”, however.\n\nNon-technical [used to describe a person]\n\n[used to describe a person]\n\nUsually, people mean “non-engineering.”\n\nUsually, people mean “non-engineering.”\n\nEveryone has technical knowledge that they used to perform in their role.\n\nEveryone has technical knowledge that they used to perform in their role.\n\nDocumentation [used to describe the handbook or the way that we communicate]\n\n[used to describe the handbook or the way that we communicate]\n\nHandbook Communication or specific type of communication material\n\nCommunication or specific type of communication material\n\nDocumentation often refers to the process of generating documentation after a change has been communicated. At GitLab, we write things down first and then communicate. This way there is no need for documentation after the communication, a step that is frequently skipped.",
+    "chunk_index": 5,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_6",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "tion or specific type of communication material\n\nDocumentation often refers to the process of generating documentation after a change has been communicated. At GitLab, we write things down first and then communicate. This way there is no need for documentation after the communication, a step that is frequently skipped.\n\nDocumentation often refers to the process of generating documentation after a change has been communicated. At GitLab, we write things down first and then communicate. This way there is no need for documentation after the communication, a step that is frequently skipped.\n\nGlobal Search with the features Basic Global Search and Advanced Global Search . Log Search for the Analytics Stage logging feature. Issue Search and Merge Request search for filtering and searching in those content areas. Elastic log Stack when referring to Elasticsearch and Filebeat.\n\nGlobal Search with the features Basic Global Search and Advanced Global Search .\n\nLog Search for the Analytics Stage logging feature.\n\nIssue Search and Merge Request search for filtering and searching in those content areas.\n\nElastic log Stack when referring to Elasticsearch and Filebeat.\n\nThere are many kinds of search in the GitLab application; use complete feature names to describe areas.\n\nThere are many kinds of search in the GitLab application; use complete feature names to describe areas.",
+    "chunk_index": 6,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_7",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "ltering and searching in those content areas.\n\nElastic log Stack when referring to Elasticsearch and Filebeat.\n\nThere are many kinds of search in the GitLab application; use complete feature names to describe areas.\n\nThere are many kinds of search in the GitLab application; use complete feature names to describe areas.\n\nSeat link is the number of seats on a license Version check is what version of GitLab a subscription is using Usage ping is high-level data of how GitLab is being used in a license Snowplow is a dynamic site for web event analytics Google Analytics is a static site for receiving data from about.gitlab.com and docs.gitlab.com Database events is using the database records of GitLab.com to look at how people are using the application. Product Usage Data is data collected on the customer’s account to be used within GTM tools such as Salesforce, Marketo, or Gainsight to improve retention and expansion\n\nSeat link is the number of seats on a license\n\nVersion check is what version of GitLab a subscription is using\n\nUsage ping is high-level data of how GitLab is being used in a license\n\nSnowplow is a dynamic site for web event analytics\n\nGoogle Analytics is a static site for receiving data from about.gitlab.com and docs.gitlab.com\n\nDatabase events is using the database records of GitLab.com to look at how people are using the application.\n\nProduct Usage Data is data collected on the customer’s account to be used within GTM tools such as Salesforce, Marketo, or Gainsight to improve retention and expansion",
+    "chunk_index": 7,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_8",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "from about.gitlab.com and docs.gitlab.com\n\nDatabase events is using the database records of GitLab.com to look at how people are using the application.\n\nProduct Usage Data is data collected on the customer’s account to be used within GTM tools such as Salesforce, Marketo, or Gainsight to improve retention and expansion\n\nAvoid this word since it has the connotation of third-party analytics. It also is too broad so use something more specific.\n\nAvoid this word since it has the connotation of third-party analytics. It also is too broad so use something more specific.\n\nGuideline or Heuristic\n\nGuideline or Heuristic\n\nRule of thumb is of dubious historical origins and can be considered a violent or non-inclusive term.\n\nRule of thumb is of dubious historical origins and can be considered a violent or non-inclusive term.\n\nDeadline may have violent origins and we use due date in our user interface for issues.\n\nDeadline may have violent origins and we use due date in our user interface for issues.\n\nprepared, ready, available\n\nprepared, ready, available\n\nLocked and loaded is a violent metaphor , referring to guns.\n\nLocked and loaded is a violent metaphor , referring to guns.\n\nGrandfathered has discriminatory origins .\n\nGrandfathered has discriminatory origins .\n\nWhitelist/Blacklist have connotations about value and map to racial terms.\n\nWhitelist/Blacklist have connotations about value and map to racial terms.\n\nProof of concept Point of contact",
+    "chunk_index": 8,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_9",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "ed is a violent metaphor , referring to guns.\n\nGrandfathered has discriminatory origins .\n\nGrandfathered has discriminatory origins .\n\nWhitelist/Blacklist have connotations about value and map to racial terms.\n\nWhitelist/Blacklist have connotations about value and map to racial terms.\n\nProof of concept Point of contact\n\nPOC is ambiguous. It is often used to mean proof of concept or point of contact and in some cases it’s unclear which is meant. It can also be used when referring to person/people of color , so it’s best to spell out the intended use.\n\nPOC is ambiguous. It is often used to mean proof of concept or point of contact and in some cases it’s unclear which is meant. It can also be used when referring to person/people of color , so it’s best to spell out the intended use.\n\nGitLab monitoring dashboard\n\nGitLab monitoring dashboard\n\nGitLab metrics dashboard\n\nGitLab metrics dashboard\n\nMonitoring dashboard is too generic and is often confused with GitLab’s self-monitoring features.\n\nMonitoring dashboard is too generic and is often confused with GitLab’s self-monitoring features.\n\nDifferent class of team member Being treated like you don’t belong/like an outsider\n\nDifferent class of team member\n\nBeing treated like you don’t belong/like an outsider",
+    "chunk_index": 9,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_10",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "n confused with GitLab’s self-monitoring features.\n\nMonitoring dashboard is too generic and is often confused with GitLab’s self-monitoring features.\n\nDifferent class of team member Being treated like you don’t belong/like an outsider\n\nDifferent class of team member\n\nBeing treated like you don’t belong/like an outsider\n\nWhen referencing people, “different class of team member” or “being treated like you don’t belong/like an outsider” is preferred when discussing such environments, since citizen has political and socioeconomic connotations. In a hybrid-remote environment (e.g. not GitLab, which is all-remote ), those outside of the office may feel inferior or deprioritized compared to coworkers who routinely work onsite.\n\nWhen referencing people, “different class of team member” or “being treated like you don’t belong/like an outsider” is preferred when discussing such environments, since citizen has political and socioeconomic connotations. In a hybrid-remote environment (e.g. not GitLab, which is all-remote ), those outside of the office may feel inferior or deprioritized compared to coworkers who routinely work onsite.\n\nTop of the hour Bottom of the hour\n\nWhile most timezones in the world are offset from UTC by a whole number of hours, a few are offset by 30 or 45 minutes .\n\nWhile most timezones in the world are offset from UTC by a whole number of hours, a few are offset by 30 or 45 minutes .\n\nGo-between intermediary middleperson\n\nIt is gender-specific and therefore exclusionary.\n\nIt is gender-specific and therefore exclusionary.",
+    "chunk_index": 10,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_11",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "le number of hours, a few are offset by 30 or 45 minutes .\n\nWhile most timezones in the world are offset from UTC by a whole number of hours, a few are offset by 30 or 45 minutes .\n\nGo-between intermediary middleperson\n\nIt is gender-specific and therefore exclusionary.\n\nIt is gender-specific and therefore exclusionary.\n\nIt is gender-specific and implies that someone with less money would come up with a substandard solution compared to someone who has more money.\n\nIt is gender-specific and implies that someone with less money would come up with a substandard solution compared to someone who has more money.\n\nWe should not associate forgetfulness with senior citizens.\n\nWe should not associate forgetfulness with senior citizens.\n\nTwice weekly/monthly Every two weeks/months\n\nEvery two weeks/months\n\nBiweekly and bimonthly are ambiguous terms.\n\nBiweekly and bimonthly are ambiguous terms.\n\nFunctional group leader\n\nFunctional group leader\n\nThe term “functional group leader” is a past term that has now been updated. See Org Structure .\n\nThe term “functional group leader” is a past term that has now been updated. See Org Structure .\n\nDepartment or team (depending on the context)\n\nDepartment or team (depending on the context)\n\n“Functional group” is a past term that is no longer used. See Org Structure .\n\n“Functional group” is a past term that is no longer used. See Org Structure .\n\nLearning Playbook FAQ Standard Operating Procedure Training\n\nStandard Operating Procedure\n\nThe entire Handbook is our standard operating procedure.\n\nThe entire Handbook is our standard operating procedure.",
+    "chunk_index": 11,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_12",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "o longer used. See Org Structure .\n\n“Functional group” is a past term that is no longer used. See Org Structure .\n\nLearning Playbook FAQ Standard Operating Procedure Training\n\nStandard Operating Procedure\n\nThe entire Handbook is our standard operating procedure.\n\nThe entire Handbook is our standard operating procedure.\n\nUsing these terms can confuse and lead to duplicate content. For example: Call it Contract Negotiation Handbook instead of Contract Negotiation Playbook\n\nUsing these terms can confuse and lead to duplicate content. For example: Call it Contract Negotiation Handbook instead of Contract Negotiation Playbook\n\nWhite-collar workers Blue-collar workers\n\nKnowledge worker Trade worker\n\nThe original terms are outdated references and have socioeconomic connotations. There are also other color classifications that are less common.\n\nThe original terms are outdated references and have socioeconomic connotations. There are also other color classifications that are less common.\n\nCustomer names mentioned in recorded or streamed meetings\n\nCustomer names mentioned in recorded or streamed meetings\n\nRefer to a Google doc agenda listing the customer name Use a codename\n\nRefer to a Google doc agenda listing the customer name\n\nWe want to train ourselves to not mention customer names to allow us to be as transparent as possible.  Whenever possible, we want to publicly stream our meetings to YouTube and to do that we need to be in the habit of not mentioning customer names. So we should avoid mentioning them even in privately streamed meetings .",
+    "chunk_index": 12,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_13",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "want to train ourselves to not mention customer names to allow us to be as transparent as possible.  Whenever possible, we want to publicly stream our meetings to YouTube and to do that we need to be in the habit of not mentioning customer names. So we should avoid mentioning them even in privately streamed meetings .\n\nWe want to train ourselves to not mention customer names to allow us to be as transparent as possible.  Whenever possible, we want to publicly stream our meetings to YouTube and to do that we need to be in the habit of not mentioning customer names. So we should avoid mentioning them even in privately streamed meetings .\n\nCustomersDot Stripe Zuora Billing\n\nThe (Customer) Portal is an overloaded term that has come to represent multiple aspects in GitLab’s Fulfillment process. To disambiguate the different components of the system we should use more specific language.\n\nThe (Customer) Portal is an overloaded term that has come to represent multiple aspects in GitLab’s Fulfillment process. To disambiguate the different components of the system we should use more specific language.\n\nThis phrase is meant to refer to a situation where someone remembers something you did and holds it against you unfairly in a later circumstance. However, it can unintentionally reinforce the idea that black is associated with negative or undesirable traits.",
+    "chunk_index": 13,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_14",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "mponents of the system we should use more specific language.\n\nThis phrase is meant to refer to a situation where someone remembers something you did and holds it against you unfairly in a later circumstance. However, it can unintentionally reinforce the idea that black is associated with negative or undesirable traits.\n\nThis phrase is meant to refer to a situation where someone remembers something you did and holds it against you unfairly in a later circumstance. However, it can unintentionally reinforce the idea that black is associated with negative or undesirable traits.\n\nVoluntary Attrition Recruiting\n\nIn the recruiting industry these are common terms to refer to companies targeting other company’s team members to hire them away. But they are violent and warlike. So it’s better to use the more literal, technical terms. While we want to keep voluntary attrition low as a company we should never forget that it is great for our team members if they get lots of great offers from other companies.\n\nIn the recruiting industry these are common terms to refer to companies targeting other company’s team members to hire them away. But they are violent and warlike. So it’s better to use the more literal, technical terms. While we want to keep voluntary attrition low as a company we should never forget that it is great for our team members if they get lots of great offers from other companies.\n\nReference Architecture Scaled Architecture\n\nReference Architecture",
+    "chunk_index": 14,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_15",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "violent and warlike. So it’s better to use the more literal, technical terms. While we want to keep voluntary attrition low as a company we should never forget that it is great for our team members if they get lots of great offers from other companies.\n\nReference Architecture Scaled Architecture\n\nReference Architecture\n\nAll solutions come with a trade-off between cost/complexity and uptime . Each availability component comes with complexity and maintenance. Users should thoroughly analyze the benefits of a solution against its costs and the team’s readiness.\n\nAll solutions come with a trade-off between cost/complexity and uptime . Each availability component comes with complexity and maintenance. Users should thoroughly analyze the benefits of a solution against its costs and the team’s readiness.\n\nWhile often natural to use this phrase when referring to a theoretical end-point of a developing feature there is historical sensitivity around the term and its use during World War II.\n\nWhile often natural to use this phrase when referring to a theoretical end-point of a developing feature there is historical sensitivity around the term and its use during World War II.\n\nMarketing Homepage Homepage Content\n\nBoth about.gitlab.com and gitlab.com has a homepage . Use “marketing homepage” to reference the homepage of about.gitlab.com and “homepage content” to reference the homepage of gitlab.com .",
+    "chunk_index": 15,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_16",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "ing feature there is historical sensitivity around the term and its use during World War II.\n\nMarketing Homepage Homepage Content\n\nBoth about.gitlab.com and gitlab.com has a homepage . Use “marketing homepage” to reference the homepage of about.gitlab.com and “homepage content” to reference the homepage of gitlab.com .\n\nBoth about.gitlab.com and gitlab.com has a homepage . Use “marketing homepage” to reference the homepage of about.gitlab.com and “homepage content” to reference the homepage of gitlab.com .\n\nCPO as an abbreviation for Chief Product Officer\n\nCPO as an abbreviation for Chief Product Officer\n\nAvoid name collision with our Chief People Officer .\n\nAvoid name collision with our Chief People Officer .\n\nTAM as an abbreviation for Total Addressable Marketing\n\nTAM as an abbreviation for Total Addressable Marketing\n\nAvoid name collision with the job-family of Technical Account Manager\n\nAvoid name collision with the job-family of Technical Account Manager\n\nDrinking the Kool-Aid\n\nDrinking the Kool-Aid\n\nThis term is used pejoratively to refer to a person that believes dangerous ideas.\nIt can also be used with humorous intent to refer to extreme beliefs, particularly in the startup realm where companies are celebrated for disruption.\nUnfortunately, it’s a reference to the Jonestown mass-suicide incident that took place in Guyana in 1978, and should be avoided because we don’t use violent analogies.",
+    "chunk_index": 16,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_17",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": ".\nIt can also be used with humorous intent to refer to extreme beliefs, particularly in the startup realm where companies are celebrated for disruption.\nUnfortunately, it’s a reference to the Jonestown mass-suicide incident that took place in Guyana in 1978, and should be avoided because we don’t use violent analogies.\n\nThis term is used pejoratively to refer to a person that believes dangerous ideas.\nIt can also be used with humorous intent to refer to extreme beliefs, particularly in the startup realm where companies are celebrated for disruption.\nUnfortunately, it’s a reference to the Jonestown mass-suicide incident that took place in Guyana in 1978, and should be avoided because we don’t use violent analogies.\n\nGame of Cat and Mouse\n\nGame of Cat and Mouse\n\nA “war of attrition” refers to a prolonged conflict where each side seeks to wear out the other by a series of small actions. This might be used to refer to activities such as fending off comment/issue spam content or abuse of our CI system to mine cryptocurrency. A Cat and Mouse game refers to a constant pursuit with near captures and repeated escapes, which is preferable because it’s less violent and not a reference to warfare.",
+    "chunk_index": 17,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_18",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "all actions. This might be used to refer to activities such as fending off comment/issue spam content or abuse of our CI system to mine cryptocurrency. A Cat and Mouse game refers to a constant pursuit with near captures and repeated escapes, which is preferable because it’s less violent and not a reference to warfare.\n\nA “war of attrition” refers to a prolonged conflict where each side seeks to wear out the other by a series of small actions. This might be used to refer to activities such as fending off comment/issue spam content or abuse of our CI system to mine cryptocurrency. A Cat and Mouse game refers to a constant pursuit with near captures and repeated escapes, which is preferable because it’s less violent and not a reference to warfare.\n\nPublic or private stream\n\nPublic or private stream\n\n“Livestream” is ambiguous as to whether the stream is publicly or privately available. Using “public livestream” or “private livestream” is too long and people often shorten it to “livestream.” To ensure everyone knows the visibility settings of the stream, use “public stream” or “private stream.”\n\n“Livestream” is ambiguous as to whether the stream is publicly or privately available. Using “public livestream” or “private livestream” is too long and people often shorten it to “livestream.” To ensure everyone knows the visibility settings of the stream, use “public stream” or “private stream.”\n\nSeasons (Autumn/Fall/Spring/Summer/Winter)\n\nSeasons (Autumn/Fall/Spring/Summer/Winter)\n\nMonths (Jun-Aug, Mar-May etc) or more precise date ranges.",
+    "chunk_index": 18,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_19",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "ivestream” is too long and people often shorten it to “livestream.” To ensure everyone knows the visibility settings of the stream, use “public stream” or “private stream.”\n\nSeasons (Autumn/Fall/Spring/Summer/Winter)\n\nSeasons (Autumn/Fall/Spring/Summer/Winter)\n\nMonths (Jun-Aug, Mar-May etc) or more precise date ranges.\n\nMonths (Jun-Aug, Mar-May etc) or more precise date ranges.\n\nSeasons are different in the Northern vs Southern hemispheres and can vary culturally too, meaning they are not only imprecise but they can also be exclusionary to the other hemisphere or non-Western cultures.\n\nSeasons are different in the Northern vs Southern hemispheres and can vary culturally too, meaning they are not only imprecise but they can also be exclusionary to the other hemisphere or non-Western cultures.\n\nMaster (unless used to describe the mastery of a specific topic. ) Slave\n\nMaster (unless used to describe the mastery of a specific topic. )\n\nLeader Follower Primary Secondary\n\nThis language can be used to describe an unequal and harmful relationship between people. We can use language that is more consistent with our DIB values . The word “master” can be used in the context of mastery of a specific topic such as receiving a Master’s Degree.  In data, we master certain data categories like customer, product, employee etc. We will use the industry term Master Data Management (MDM) as a way to communicate our mastery over the topic of data.",
+    "chunk_index": 19,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_20",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "lues . The word “master” can be used in the context of mastery of a specific topic such as receiving a Master’s Degree.  In data, we master certain data categories like customer, product, employee etc. We will use the industry term Master Data Management (MDM) as a way to communicate our mastery over the topic of data.\n\nThis language can be used to describe an unequal and harmful relationship between people. We can use language that is more consistent with our DIB values . The word “master” can be used in the context of mastery of a specific topic such as receiving a Master’s Degree.  In data, we master certain data categories like customer, product, employee etc. We will use the industry term Master Data Management (MDM) as a way to communicate our mastery over the topic of data.\n\nZuora Billing Zuora CPQ (Configure Price Quote) Zuora Revenue Zuora Orders Alternatively, you can say Billing, Collect, Revenue, Orders, etc.\n\nZuora CPQ (Configure Price Quote)\n\nAlternatively, you can say Billing, Collect, Revenue, Orders, etc.\n\nZuora offers many products and using the term by itself does not specify what Zuora product you are referring to. Specifying the Zuora product will provide clarity and context to your audience.\n\nZuora offers many products and using the term by itself does not specify what Zuora product you are referring to. Specifying the Zuora product will provide clarity and context to your audience.\n\nThe name of the specific survey you are referring to - i.e., Global Benefits Survey, Engagement Survey, Values Survey, Inclusion Survey, etc.",
+    "chunk_index": 20,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_21",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "y products and using the term by itself does not specify what Zuora product you are referring to. Specifying the Zuora product will provide clarity and context to your audience.\n\nThe name of the specific survey you are referring to - i.e., Global Benefits Survey, Engagement Survey, Values Survey, Inclusion Survey, etc.\n\nThe name of the specific survey you are referring to - i.e., Global Benefits Survey, Engagement Survey, Values Survey, Inclusion Survey, etc.\n\nCultureAmp offers many surveys and using the term by itself does not specify which CultureAmp survey you are referring to. Specifying the CultureAmp survey will provide clarity and context to your audience.\n\nCultureAmp offers many surveys and using the term by itself does not specify which CultureAmp survey you are referring to. Specifying the CultureAmp survey will provide clarity and context to your audience.\n\nReduction in Force (RiF)\n\nReduction in Force (RiF)\n\nRedundancy or dismissal for operational reasons\n\nRedundancy or dismissal for operational reasons\n\nRIF is short for Reduction in Force referring to “labor force” or “work force”, we don’t use this terminology to refer to team members or former team members. “Force” also has violent implications that should be avoided.\n\nRIF is short for Reduction in Force referring to “labor force” or “work force”, we don’t use this terminology to refer to team members or former team members. “Force” also has violent implications that should be avoided.",
+    "chunk_index": 21,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_22",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "team members or former team members. “Force” also has violent implications that should be avoided.\n\nRIF is short for Reduction in Force referring to “labor force” or “work force”, we don’t use this terminology to refer to team members or former team members. “Force” also has violent implications that should be avoided.\n\nPII is not the term used in most privacy laws and by definition PII is more narrow that what is legislated under global privacy laws. Personal Data is described in in the Privacy Handbook and the GitLab Data Classification Levels .\n\nPII is not the term used in most privacy laws and by definition PII is more narrow that what is legislated under global privacy laws. Personal Data is described in in the Privacy Handbook and the GitLab Data Classification Levels .\n\nGitLab SaaS SaaS (when referring to GitLab.com or Dedicated)\n\nSaaS (when referring to GitLab.com or Dedicated)\n\nGitLab.com or .com GitLab Dedicated or Dedicated\n\nGitLab Dedicated or Dedicated\n\nBoth GitLab.com and GitLab Dedicated are delivered as SaaS applications, which as a group we refer to SaaS.\n\nBoth GitLab.com and GitLab Dedicated are delivered as SaaS applications, which as a group we refer to SaaS.\n\nThe more specific consumption building block from the Internal Pricing Handbook\n\nThe more specific consumption building block from the Internal Pricing Handbook\n\nConsumption can be defined in multiple ways, and when discussing a particular pricing strategy or product it’s important to be specific.",
+    "chunk_index": 22,
+    "total_chunks": 24
+  },
+  {
+    "chunk_id": "d64e940a8e4e_23",
+    "url": "https://handbook.gitlab.com/handbook/communication/top-misused-terms",
+    "title": "Top Misused Terms - GitLab Communication",
+    "source": "handbook",
+    "headings": [
+      "Top Misused Terms - GitLab Communication",
+      "List of Top Misused Terms",
+      "Slack"
+    ],
+    "text": "up we refer to SaaS.\n\nThe more specific consumption building block from the Internal Pricing Handbook\n\nThe more specific consumption building block from the Internal Pricing Handbook\n\nConsumption can be defined in multiple ways, and when discussing a particular pricing strategy or product it’s important to be specific.\n\nConsumption can be defined in multiple ways, and when discussing a particular pricing strategy or product it’s important to be specific.\n\ndeceptive pattern inaccessible pattern confusing pattern discriminatory pattern exclusionary pattern\n\ndiscriminatory pattern\n\nThe phrase is meant to refer to a design pattern that causes a problem for users. Dark is used to mean bad which can unintentionaly reinforce the idea that dark is associated with negative or undesirable traits. More descriptive terms are better in general and help people understand more about the specific problem encountered.\n\nThe phrase is meant to refer to a design pattern that causes a problem for users. Dark is used to mean bad which can unintentionaly reinforce the idea that dark is associated with negative or undesirable traits. More descriptive terms are better in general and help people understand more about the specific problem encountered.\n\nSlackbot ( via configuration ) can remind team members when they use a misused term.",
+    "chunk_index": 23,
+    "total_chunks": 24
+  }
+]

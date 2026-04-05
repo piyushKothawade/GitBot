@@ -1,0 +1,258 @@
+[
+  {
+    "chunk_id": "a1e8c3ced7ef_0",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "The term “usability” can mean a variety of things. At GitLab, we use the following definition of usability when we conduct user research and design our product:\n\nTo be usable, an interactive system should be useful, efficient, effective, satisfying, and learnable.\n\nUsefulness is the degree to which our product enables a user to achieve his or her goals.\n\nEfficiency is the quickness with which the user’s goal can be accomplished accurately and completely in a period of time.\n\nEffectiveness refers to the extent to which the interactive system behaves in the way that users expect it to and the ease with which users can use it to do what they intend.\n\nLearnability is a part of effectiveness and has to do with the user’s ability to operate the interactive system to some defined level of competence after some predetermined amount and period of training (which may be no time at all). It can also refer to the ability of infrequent users to relearn the system after periods of inactivity.\n\nSatisfaction refers to the user’s perceptions, feelings, and opinions of the product.\n\nNote: This definition is based on information from the Handbook of Usability Testing and the International Usability and UX Qualification Board curriculum .",
+    "chunk_index": 0,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_1",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "lity of infrequent users to relearn the system after periods of inactivity.\n\nSatisfaction refers to the user’s perceptions, feelings, and opinions of the product.\n\nNote: This definition is based on information from the Handbook of Usability Testing and the International Usability and UX Qualification Board curriculum .\n\nUsability testing is the process of evaluating a product experience with representative users. The aim is to observe how users complete a set of tasks and to understand any problems they encounter. Since users often perform tasks differently than expected, this qualitative method helps to uncover why users perform tasks the way that they do, including understanding their motivations and needs. At GitLab, usability testing is part of solution validation .\n\nWe also conduct regular Usability Benchmarking studies at GitLab. These are also focused on usability, and are used to set performance and ux benchmarks for specific tasks and workflows across GitLab. As such, they are much more rigorous and time-consuming than a normal usability test ought to be.\n\nDifferent types of usability testing\n\nGenerally speaking, we can differentiate between:\n\nModerated versus unmoderated usability testing\n\nModerated tests have a moderator present who guides participants through the tasks. This allows them to have a conversation about their experience, and it helps to find answers to “Why?” questions.\n\nConversely, users complete unmoderated usability tests on their own without the presence of a moderator. This is helpful when you have a very direct question.",
+    "chunk_index": 1,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_2",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "ent who guides participants through the tasks. This allows them to have a conversation about their experience, and it helps to find answers to “Why?” questions.\n\nConversely, users complete unmoderated usability tests on their own without the presence of a moderator. This is helpful when you have a very direct question.\n\nModerated usability testing\n\nUnmoderated usability testing\n\nComplex questions/WHY? Questions, such as: “Why do users experience a problem when using a feature?\" “Why are users not successful in using a feature?\" “How do users go about using a feature?”\n\nDirect questions, such as: “Do users find the entry point to complete their task?\" “Do users recognize the new UI element?\" “Which design option do users prefer?”\n\nFormative versus summative usability testing\n\nFormative usability tests are continuous evaluations to discover usability problems. They tend to have a smaller scope, such as focusing on one specific feature of a product or just parts of it. Oftentimes, prototypes are used for evaluation.\n\nSummative usability tests tend to be larger in scope and are run with the live product. They are useful if you lack details on why users are experiencing a particular problem or want to validate in the first place how easy it is to use.\n\nSteps for conducting a usability test\n\nEstablish your research question .",
+    "chunk_index": 2,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_3",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "uation.\n\nSummative usability tests tend to be larger in scope and are run with the live product. They are useful if you lack details on why users are experiencing a particular problem or want to validate in the first place how easy it is to use.\n\nSteps for conducting a usability test\n\nEstablish your research question .\n\nIdentify the tasks you want to focus on for your usability test. There is no magic number when it comes to how many tasks to include. A guideline is to have 3 - 4 tasks , as this ensures that participants don’t get tired and exhausted. Another aspect to consider is that unmoderated test sessions should be 15 - 20 minutes max and moderated sessions 60 minutes max. The key thing to remember when writing your tasks is that they reflect realistic user goals . Taking the JTBD into account when creating your tasks helps keep the focus on user goals. See these tips for writing good tasks that include examples.\n\nThere is no magic number when it comes to how many tasks to include. A guideline is to have 3 - 4 tasks , as this ensures that participants don’t get tired and exhausted. Another aspect to consider is that unmoderated test sessions should be 15 - 20 minutes max and moderated sessions 60 minutes max.\n\nThe key thing to remember when writing your tasks is that they reflect realistic user goals . Taking the JTBD into account when creating your tasks helps keep the focus on user goals. See these tips for writing good tasks that include examples.",
+    "chunk_index": 3,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_4",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "sions should be 15 - 20 minutes max and moderated sessions 60 minutes max.\n\nThe key thing to remember when writing your tasks is that they reflect realistic user goals . Taking the JTBD into account when creating your tasks helps keep the focus on user goals. See these tips for writing good tasks that include examples.\n\nDefine what success looks like. Before testing with users, reach agreement among your stakeholders about what success looks like, such as the target completion rate you are aiming for. This article from MeasuringU suggests using 78% as a baseline, whereas a minimum of 92% would satisfy a completion rate in the top quartile. However, it’s not unreasonable to aim for even 100%; it’s up to each team to determine the success criteria required for each study and each feature.\n\nBefore testing with users, reach agreement among your stakeholders about what success looks like, such as the target completion rate you are aiming for. This article from MeasuringU suggests using 78% as a baseline, whereas a minimum of 92% would satisfy a completion rate in the top quartile. However, it’s not unreasonable to aim for even 100%; it’s up to each team to determine the success criteria required for each study and each feature.\n\nIdentify your target audience and initiate recruiting .",
+    "chunk_index": 4,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_5",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "U suggests using 78% as a baseline, whereas a minimum of 92% would satisfy a completion rate in the top quartile. However, it’s not unreasonable to aim for even 100%; it’s up to each team to determine the success criteria required for each study and each feature.\n\nIdentify your target audience and initiate recruiting .\n\nPrepare your prototype or demo environment. Consider which mode to test in: Use light mode by default for usability testing to help maintain testing efficiency while ensuring consistency across studies. Testing in dark mode should be a deliberate methodological choice and only be considered when the mode is the primary focus of your research, when mode variations might significantly influence your study’s results, or when catering to specific user preferences or accessibility requirements. Examples of when dark mode testing should be considered: Investigating visual hierarchy’s impact across modes; examining task performance variations in different modes; analyzing mode adaptation to environmental contexts such as lighting; exploring user engagement patterns across modes; examining mode compatibility and technical integration within digital ecosystems.",
+    "chunk_index": 5,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_6",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "idered: Investigating visual hierarchy’s impact across modes; examining task performance variations in different modes; analyzing mode adaptation to environmental contexts such as lighting; exploring user engagement patterns across modes; examining mode compatibility and technical integration within digital ecosystems.\n\nConsider which mode to test in: Use light mode by default for usability testing to help maintain testing efficiency while ensuring consistency across studies. Testing in dark mode should be a deliberate methodological choice and only be considered when the mode is the primary focus of your research, when mode variations might significantly influence your study’s results, or when catering to specific user preferences or accessibility requirements. Examples of when dark mode testing should be considered: Investigating visual hierarchy’s impact across modes; examining task performance variations in different modes; analyzing mode adaptation to environmental contexts such as lighting; exploring user engagement patterns across modes; examining mode compatibility and technical integration within digital ecosystems.",
+    "chunk_index": 6,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_7",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "idered: Investigating visual hierarchy’s impact across modes; examining task performance variations in different modes; analyzing mode adaptation to environmental contexts such as lighting; exploring user engagement patterns across modes; examining mode compatibility and technical integration within digital ecosystems.\n\nWrite your test script, including tasks and metrics to collect . Set up your test to measure these usability factors , as this will help to measure improvements consistently over time and to assess their impact on system usability . There are many other metrics that you can measure to understand usability problems, such as error rates or number of times a user needed help. If you find them helpful for your research topic, feel free to use them. Remind participants to think aloud as they go through the tasks, especially in an unmoderated test. Take a look at these more detailed tips and tricks on how to write an excellent usability test script. If you run an unmoderated usability test on UserTesting, create a test from the usability metrics template , located in the “Account templates” section. UserTesting has native options for task success and difficulty to capture metrics that are similar to ours, but these are not the same usability metrics needed for our studies. Please use the options listed in this template instead. If you run an unmoderated usability test that will run under 5 minutes, toggle the Short test option on when building your test plan.",
+    "chunk_index": 7,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_8",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "s and difficulty to capture metrics that are similar to ours, but these are not the same usability metrics needed for our studies. Please use the options listed in this template instead. If you run an unmoderated usability test that will run under 5 minutes, toggle the Short test option on when building your test plan.\n\nSet up your test to measure these usability factors , as this will help to measure improvements consistently over time and to assess their impact on system usability . There are many other metrics that you can measure to understand usability problems, such as error rates or number of times a user needed help. If you find them helpful for your research topic, feel free to use them.\n\nRemind participants to think aloud as they go through the tasks, especially in an unmoderated test.\n\nTake a look at these more detailed tips and tricks on how to write an excellent usability test script.\n\nIf you run an unmoderated usability test on UserTesting, create a test from the usability metrics template , located in the “Account templates” section. UserTesting has native options for task success and difficulty to capture metrics that are similar to ours, but these are not the same usability metrics needed for our studies. Please use the options listed in this template instead.\n\nIf you run an unmoderated usability test that will run under 5 minutes, toggle the Short test option on when building your test plan.\n\nRun a pilot session to test the usability test .",
+    "chunk_index": 8,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_9",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "r to ours, but these are not the same usability metrics needed for our studies. Please use the options listed in this template instead.\n\nIf you run an unmoderated usability test that will run under 5 minutes, toggle the Short test option on when building your test plan.\n\nRun a pilot session to test the usability test .\n\nAnalyze your research data For each task, synthesize how many users succeeded or failed, and why they failed. For each task, calculate the average score for the efficiency question. Look for patterns on why they gave a score. Calculate the average score for the satisfaction and usefulness questions. Look for patterns on why they gave a score. Note down any other interesting observations you had.\n\nFor each task, synthesize how many users succeeded or failed, and why they failed.\n\nFor each task, calculate the average score for the efficiency question. Look for patterns on why they gave a score.\n\nCalculate the average score for the satisfaction and usefulness questions. Look for patterns on why they gave a score.\n\nNote down any other interesting observations you had.\n\nDocument your insights in Dovetail . If you have actionable insights, ensure they are also documented in the GitLab UX Research project .\n\nDecide on the next steps. Any actionable insights require a follow up. Work with your counterparts to determine priority for the identified usability problems. Remember to conduct another usability study to validate your proposed solution.",
+    "chunk_index": 9,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_10",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "e insights, ensure they are also documented in the GitLab UX Research project .\n\nDecide on the next steps. Any actionable insights require a follow up. Work with your counterparts to determine priority for the identified usability problems. Remember to conduct another usability study to validate your proposed solution.\n\nAny actionable insights require a follow up. Work with your counterparts to determine priority for the identified usability problems. Remember to conduct another usability study to validate your proposed solution.\n\nUsability factors to measure\n\nTo learn more about these factors, see our definition of usability .\n\nWhat’s being measured? Effectiveness can be determined by calculating the pass rate. This shows the success or completion rate of each task.\n\nEffectiveness can be determined by calculating the pass rate. This shows the success or completion rate of each task.\n\nHow is it measured? The pass rate can be determined by dividing the number of participants that were able to complete the task by the total number of participants. Ensure that you are observing and documenting why participants are failing as well.\n\nThe pass rate can be determined by dividing the number of participants that were able to complete the task by the total number of participants.\n\nEnsure that you are observing and documenting why participants are failing as well.\n\nWhy are we measuring it? We want users to succeed in reaching their goals. Understanding why and where they fail will help us improve the experience.",
+    "chunk_index": 10,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_11",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "articipants that were able to complete the task by the total number of participants.\n\nEnsure that you are observing and documenting why participants are failing as well.\n\nWhy are we measuring it? We want users to succeed in reaching their goals. Understanding why and where they fail will help us improve the experience.\n\nWe want users to succeed in reaching their goals. Understanding why and where they fail will help us improve the experience.\n\nWhat’s being measured? Efficiency can be measured by understanding the participants perception of how easy a task is.\n\nEfficiency can be measured by understanding the participants perception of how easy a task is.\n\nHow is it measured? After each task, ask the Single Ease Question. “Overall, this task was…” - Extremely difficult - Difficult - Neither easy nor difficult - Easy - Extremely easy “Why?” Ensure that you are asking why participants rated it this way right after they reply.\n\nAfter each task, ask the Single Ease Question. “Overall, this task was…” - Extremely difficult - Difficult - Neither easy nor difficult - Easy - Extremely easy “Why?”\n\n“Overall, this task was…” - Extremely difficult - Difficult - Neither easy nor difficult - Easy - Extremely easy “Why?”\n\nEnsure that you are asking why participants rated it this way right after they reply.\n\nWhy are we measuring it? It is important to understand the participants’ reasons for giving a rating, especially in situations where a rating is low. This is especially important in usability testing when the number of participants is also low.",
+    "chunk_index": 11,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_12",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "you are asking why participants rated it this way right after they reply.\n\nWhy are we measuring it? It is important to understand the participants’ reasons for giving a rating, especially in situations where a rating is low. This is especially important in usability testing when the number of participants is also low.\n\nIt is important to understand the participants’ reasons for giving a rating, especially in situations where a rating is low. This is especially important in usability testing when the number of participants is also low.\n\nWhat’s being measured? Satisfaction can be determined by understanding the participants’ perception of how the experience is.\n\nSatisfaction can be determined by understanding the participants’ perception of how the experience is.\n\nHow is it measured? After all tasks are completed, ask the Satisfaction rating question. “How would you rate the quality of this experience?” - Extremely good - Good - Neither good nor bad - Bad - Extremely bad Ensure that you are asking why participants rated it this way right after they reply.\n\nAfter all tasks are completed, ask the Satisfaction rating question. “How would you rate the quality of this experience?” - Extremely good - Good - Neither good nor bad - Bad - Extremely bad\n\n“How would you rate the quality of this experience?” - Extremely good - Good - Neither good nor bad - Bad - Extremely bad\n\nEnsure that you are asking why participants rated it this way right after they reply.",
+    "chunk_index": 12,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_13",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "you rate the quality of this experience?” - Extremely good - Good - Neither good nor bad - Bad - Extremely bad\n\n“How would you rate the quality of this experience?” - Extremely good - Good - Neither good nor bad - Bad - Extremely bad\n\nEnsure that you are asking why participants rated it this way right after they reply.\n\nWhy are we measuring it? It is important to understand the participants’ reasons for giving a rating. This is especially important in usability testing when the number of participants is also low.\n\nIt is important to understand the participants’ reasons for giving a rating. This is especially important in usability testing when the number of participants is also low.\n\nWhat’s being measured? Usefulness can be determined by understanding the participants perception of how much the tested features would enable them to achieve their goals.\n\nUsefulness can be determined by understanding the participants perception of how much the tested features would enable them to achieve their goals.\n\nHow is it measured? After all tasks are completed, ask our adjusted UMUX Lite question. “You just experienced our implementation of <Feature/Scenario>. How would you agree or disagree with the following statement: <Feature/Scenario> has the capabilities I need for what I need to do in my own work.” - Strongly agree - Agree - Neither agree nor disagree - Disagree - Strongly disagree Ensure that you are asking why participants rated it this way right after they reply.",
+    "chunk_index": 13,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_14",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": ". How would you agree or disagree with the following statement: <Feature/Scenario> has the capabilities I need for what I need to do in my own work.” - Strongly agree - Agree - Neither agree nor disagree - Disagree - Strongly disagree Ensure that you are asking why participants rated it this way right after they reply.\n\nAfter all tasks are completed, ask our adjusted UMUX Lite question. “You just experienced our implementation of <Feature/Scenario>. How would you agree or disagree with the following statement: <Feature/Scenario> has the capabilities I need for what I need to do in my own work.” - Strongly agree - Agree - Neither agree nor disagree - Disagree - Strongly disagree\n\n“You just experienced our implementation of <Feature/Scenario>. How would you agree or disagree with the following statement: <Feature/Scenario> has the capabilities I need for what I need to do in my own work.” - Strongly agree - Agree - Neither agree nor disagree - Disagree - Strongly disagree\n\nEnsure that you are asking why participants rated it this way right after they reply.\n\nWhy are we measuring it? This score highly correlates to the System Usability Scale (SUS) score, one of our regular performance indicators . It is important to understand the participants’ reasons for giving a rating, especially in situations where a rating is low. This is especially important in usability testing when the number of participants is also low.\n\nThis score highly correlates to the System Usability Scale (SUS) score, one of our regular performance indicators .",
+    "chunk_index": 14,
+    "total_chunks": 16
+  },
+  {
+    "chunk_id": "a1e8c3ced7ef_15",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/usability-testing",
+    "title": "Usability testing",
+    "source": "handbook",
+    "headings": [
+      "Usability testing",
+      "Usability at GitLab",
+      "Usability testing",
+      "Different types of usability testing",
+      "Steps for conducting a usability test"
+    ],
+    "text": "to understand the participants’ reasons for giving a rating, especially in situations where a rating is low. This is especially important in usability testing when the number of participants is also low.\n\nThis score highly correlates to the System Usability Scale (SUS) score, one of our regular performance indicators .\n\nIt is important to understand the participants’ reasons for giving a rating, especially in situations where a rating is low. This is especially important in usability testing when the number of participants is also low.\n\nFrequently Asked Questions\n\nWhy should I not ask in user testing if a participant completed a task successfully?\n\nIt’s a self-reported measure which may or may not be true. If a participant indicated they completed a task successfully, you still need to check if they really completed it based on how you defined success. It’s important to capture only necessary data from users and considering you need to double-check their response with actual behaviour, we suggest to leave it out in the first place.\n\nWhy should I not use UserTesting.com’s native task metric difficulty to assess Efficiency? Isn’t it the same?\n\nUserTesting.com’s task metric difficulty is similar but it uses a different rating scale than the Single Ease Question. Currently, there is no option to change the scale labels in UserTesting.com to align with ours.",
+    "chunk_index": 15,
+    "total_chunks": 16
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "chunk_id": "379c0e6ab197_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandson",
+    "title": "GitLab Compliance - Hands-On Lab Overview",
+    "source": "handbook",
+    "headings": [
+      "GitLab Compliance - Hands-On Lab Overview",
+      "GitLab Compliance Labs",
+      "Quick links",
+      "Suggestions?"
+    ],
+    "text": "GitLab Compliance - Hands-On Lab Overview\n\nGitLab Compliance Labs\n\nSeparation of Privileges\n\nScan Execution Policies\n\nEnable and Configure License Compliance\n\nPipeline Execution Policies\n\nCompliance Center and Frameworks\n\nHere are some quick links that may be useful when reviewing this Hands-On Guide.\n\nGitLab Compliance Course Description\n\nIf you wish to make a change to the lab, please submit your changes via Merge Request.",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

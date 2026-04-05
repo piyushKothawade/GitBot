@@ -1,0 +1,11 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/engineering/workflow/development-processes/infra-dev-escalation/process",
+  "title": "Development Escalation Process (Discontinued)",
+  "content": "Development Escalation Process (Discontinued)\n\nProcess Discontinued - Effective January 5th\n\nThe Development Escalation process is no longer active. This process was initially set up to provide Rails Monolith support to the Infrastructure department. Over time, responsibilities expanded to providing general application support to both Infrastructure and Support teams. However, the application has become so broad that it’s unlikely a single on-call engineer will have expertise in any specific area that needs attention.\n\nFor escalations requiring subject matter expert support, please use the Tier 2 On-Call Program .\n\nFor non-urgent issues, you can:\n\nLabel with security and mention the @gitlab-com/security/appsec team to be notified as part of the Application Security Triage rotation\n\nLabel with infradev which will be raised to the Infra/Dev triage board\n\nRaise to the respective product stage/group Slack channel\n\nAsk the #is-this-known Slack channel",
+  "source": "handbook",
+  "headings": [
+    "Development Escalation Process (Discontinued)",
+    "Process Change",
+    "What to Use Instead"
+  ]
+}

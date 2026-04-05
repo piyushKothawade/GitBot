@@ -1,0 +1,62 @@
+[
+  {
+    "chunk_id": "9deda93406fb_0",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk/analytics",
+    "title": "Analytics",
+    "source": "handbook",
+    "headings": [
+      "Analytics",
+      "Understanding Zendesk analytics",
+      "What is Zendesk analytics",
+      "Common terminology"
+    ],
+    "text": "Deployment type: Ad-hoc\n\nFormerly known as: Explore\n\nUnderstanding Zendesk analytics\n\nWhat is Zendesk analytics\n\nZendesk analytics (formerly “Explore”) is a powerful analytics and reporting tool offered by Zendesk, designed to provide in-depth insights into customer support metrics and trends. With Zendesk analytics, our team can analyze and visualize our support data to make informed decisions, improve customer experiences, and optimize support operations.\n\nZendesk analytics offers a user-friendly interface that allows admins to create customized dashboards, reports, and queries without the need for coding knowledge. It integrates seamlessly with Zendesk Support, combining data from multiple sources to deliver comprehensive and actionable analytics.\n\nZendesk analytics also offers API access, allowing you to programmatically retrieve data, create and manage queries, and integrate Zendesk analytics with other systems or custom applications.\n\nSome of the commonly used terminology for Zendesk analytics are:\n\nColumns Like Rows and Explosions, when you add an attribute to Columns your metric results will be sliced by that attribute’s values. Unlike Rows and Explosions, Columns will render the results in one chart.\n\nLike Rows and Explosions, when you add an attribute to Columns your metric results will be sliced by that attribute’s values. Unlike Rows and Explosions, Columns will render the results in one chart.",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "9deda93406fb_1",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk/analytics",
+    "title": "Analytics",
+    "source": "handbook",
+    "headings": [
+      "Analytics",
+      "Understanding Zendesk analytics",
+      "What is Zendesk analytics",
+      "Common terminology"
+    ],
+    "text": "ts will be sliced by that attribute’s values. Unlike Rows and Explosions, Columns will render the results in one chart.\n\nLike Rows and Explosions, when you add an attribute to Columns your metric results will be sliced by that attribute’s values. Unlike Rows and Explosions, Columns will render the results in one chart.\n\nLike Rows and Explosions, when you add an attribute to Columns your metric results will be sliced by that attribute’s values. Unlike Rows and Explosions, Columns will render the results in one chart.\n\nDashboards Dashboards are customizable locations where you can share multiple reports with several viewers at the same time. You can break dashboards into different tabs, add interactive components, and share reports.\n\nDashboards are customizable locations where you can share multiple reports with several viewers at the same time. You can break dashboards into different tabs, add interactive components, and share reports.\n\nDashboards are customizable locations where you can share multiple reports with several viewers at the same time. You can break dashboards into different tabs, add interactive components, and share reports.\n\nDatasets Datasets represent the different Zendesk data models and contain metrics and attributes relevant to each product.\n\nDatasets represent the different Zendesk data models and contain metrics and attributes relevant to each product.\n\nDatasets represent the different Zendesk data models and contain metrics and attributes relevant to each product.",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "9deda93406fb_2",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk/analytics",
+    "title": "Analytics",
+    "source": "handbook",
+    "headings": [
+      "Analytics",
+      "Understanding Zendesk analytics",
+      "What is Zendesk analytics",
+      "Common terminology"
+    ],
+    "text": "different Zendesk data models and contain metrics and attributes relevant to each product.\n\nDatasets represent the different Zendesk data models and contain metrics and attributes relevant to each product.\n\nDatasets represent the different Zendesk data models and contain metrics and attributes relevant to each product.\n\nDrill in Use drill in to refine the results of your Explore report by slicing the result using extra attributes you choose or by allowing the report viewer to choose from a range of attributes.\n\nUse drill in to refine the results of your Explore report by slicing the result using extra attributes you choose or by allowing the report viewer to choose from a range of attributes.\n\nUse drill in to refine the results of your Explore report by slicing the result using extra attributes you choose or by allowing the report viewer to choose from a range of attributes.\n\nExplosions Similar to Rows, Explosions present you with multiple charts, each representing a different value for the added attributes.\n\nSimilar to Rows, Explosions present you with multiple charts, each representing a different value for the added attributes.\n\nSimilar to Rows, Explosions present you with multiple charts, each representing a different value for the added attributes.\n\nMetric Metrics are quantifiable results like the number of tickets, the agent wait time in minutes, the number of replies, first reply time in minutes, and more.\n\nMetrics are quantifiable results like the number of tickets, the agent wait time in minutes, the number of replies, first reply time in minutes, and more.",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "9deda93406fb_3",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk/analytics",
+    "title": "Analytics",
+    "source": "handbook",
+    "headings": [
+      "Analytics",
+      "Understanding Zendesk analytics",
+      "What is Zendesk analytics",
+      "Common terminology"
+    ],
+    "text": ".\n\nMetric Metrics are quantifiable results like the number of tickets, the agent wait time in minutes, the number of replies, first reply time in minutes, and more.\n\nMetrics are quantifiable results like the number of tickets, the agent wait time in minutes, the number of replies, first reply time in minutes, and more.\n\nMetrics are quantifiable results like the number of tickets, the agent wait time in minutes, the number of replies, first reply time in minutes, and more.\n\nRows Rows show you individual charts for each of your attribute’s values.\n\nRows show you individual charts for each of your attribute’s values.\n\nRows show you individual charts for each of your attribute’s values.\n\nFor a more complex reference, please see Zendesk documentation",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

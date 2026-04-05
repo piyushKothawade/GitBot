@@ -1,0 +1,12 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/product/ux/how-we-work/cross-stage-design-collaboration",
+  "title": "Cross-stage design collaboration",
+  "content": "Cross-stage design collaboration\n\nPlatform-wide experiences often require Product Designers to collaborate across multiple stage groups. This page provides guidance on effective cross-stage collaboration.\n\nWhen to collaborate across stages\n\nConsider cross-stage collaboration when:\n\nUser workflows span multiple product areas\n\nDesign decisions impact experiences outside your stage group\n\nPlatform-wide patterns or navigation are involved\n\nMultiple teams are solving similar problems\n\nHow to collaborate effectively\n\nStart with connection:\n\nReach out to designers in affected stage groups early\n\nShare context in Slack, issues, or UX Forum\n\nInvite relevant designers to design reviews\n\nWork together strategically:\n\nAlign on shared user workflows and goals\n\nIdentify dependencies and overlapping work\n\nChallenge each other’s assumptions\n\nBuild on each other’s ideas\n\nKeep communication asynchronous and transparent\n\nDocument decisions in issues and epics\n\nShare progress in UX Forum\n\nLoop in Product Design Managers for strategic alignment\n\nUX Forum - Share work and collaborate with the broader team\n\nDesign Studios - Project-based collaboration opportunities\n\nDesign Reach Program - Access specialized expertise\n\nStrategic partners collaborate organically, not through rigid processes. Trust your judgment on when and how to collaborate.",
+  "source": "handbook",
+  "headings": [
+    "Cross-stage design collaboration",
+    "When to collaborate across stages",
+    "How to collaborate effectively",
+    "Resources"
+  ]
+}

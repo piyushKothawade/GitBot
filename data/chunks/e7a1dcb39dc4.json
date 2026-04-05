@@ -1,0 +1,178 @@
+[
+  {
+    "chunk_id": "e7a1dcb39dc4_0",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/observation-management-procedure",
+    "title": "Observation Management Procedure",
+    "source": "handbook",
+    "headings": [
+      "Observation Management Procedure",
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Procedure"
+    ],
+    "text": "Observation Management Procedure\n\nThe Observation Management Program at GitLab is used to identify, track, remediate and provide a risk ratings of identified findings, exceptions or deficiencies for any Tier 3 information system risks that are identified as an output of compliance operations or other mechanisms by team members, such as self-identification of a system specific risk.\n\nThis procedure details the creation process for observations.\n\nTier 3 risks or observations identified at the information system or business process levels\n\nRoles and Responsibilities\n\nResponsible for being the observation DRI through the observation lifecycle including verifying and fine tuning recommended remediation plans in order to meet legal and regulatory requirements.\n\nValidates observation, confirms assignee, due date, finalizes remediation plan and conducts remediation activity based on defined remediation SLA’s .\n\nManagers to Executive Leadership\n\nResponsible for escalation as necessary and resource allocation for remediation activity.\n\nObservations are one risk source within the broader Unified Risk Management (USRM) procedure. For a comprehensive overview of the program structure and workflow, refer to the USRM handbook page . This page focuses on the unique aspects of observations and how they may deviate from the standard procedure.\n\nUnified Risk Management (USRM) Workflow Labels\n\nPlease refer to the USRM handbook page for workflow and required labels .\n\nObservation Category Labels",
+    "chunk_index": 0,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e7a1dcb39dc4_1",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/observation-management-procedure",
+    "title": "Observation Management Procedure",
+    "source": "handbook",
+    "headings": [
+      "Observation Management Procedure",
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Procedure"
+    ],
+    "text": "structure and workflow, refer to the USRM handbook page . This page focuses on the unique aspects of observations and how they may deviate from the standard procedure.\n\nUnified Risk Management (USRM) Workflow Labels\n\nPlease refer to the USRM handbook page for workflow and required labels .\n\nObservation Category Labels\n\nLabels in this set are used to categorize issues for metrics and reporting and cross-team collaboration.\n\nDepartment that is responsible for remediation\n\nRiskRating:: Critical\n\nRisk rating for security compliance observations - Critical\n\nRisk rating for security compliance observations - High\n\nRiskRating:: Moderate\n\nRisk rating for security compliance observations - Moderate\n\nRisk rating for security compliance observations - Low\n\nFinding Coordinator::***\n\nGitLab team member managing the observation through the lifecycle.\n\nBlocked:: Awaiting Remediation Owner Input\n\nThis flag indicates the observation manager is waiting for a response from the remediation owner.\n\nBlocked:: Awaiting Observation Manager Input\n\nThis flags the issue for the observation manager on the SecAssurance team\n\nBlocked:: New tool implementation in progress\n\nThis flags the issue for pending completion of the new tool\n\nUpgraded::StORM-Managed\n\nThis label will be leverage when the observation has been upgraded to a tier 2 risk and will be managed in the StORM program\n\nUpgraded::StORM-Shared\n\nThis label will be leveraged when the observation has been upgraded to a tier 2 risk and remediation is shared by the Security Risk and Security Compliance team\n\nNIST CSF Function:***",
+    "chunk_index": 1,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e7a1dcb39dc4_2",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/observation-management-procedure",
+    "title": "Observation Management Procedure",
+    "source": "handbook",
+    "headings": [
+      "Observation Management Procedure",
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Procedure"
+    ],
+    "text": "ll be leverage when the observation has been upgraded to a tier 2 risk and will be managed in the StORM program\n\nUpgraded::StORM-Shared\n\nThis label will be leveraged when the observation has been upgraded to a tier 2 risk and remediation is shared by the Security Risk and Security Compliance team\n\nNIST CSF Function:***\n\nIdentifies observations within the NIST CSF function\n\nNIST CSF Category:***\n\nIdentifies observations within the NIST CSF category\n\nIdentifies which program or external certification is affected by the observation\n\nIdentifies what system is impacted by the observation\n\nIdentifying Observations\n\nObservations can be identified through the following channels:\n\nSecurity control testing activities (CCM)\n\nBusiness Impact Analysis (BIA) activities\n\nExternal audit activities\n\nGap assessment activities\n\nTier 3 information system risk ratings are based on the formula below.\n\nRisk Rating = Likelihood x Impact\n\nRisk Rating = Likelihood x Impact\n\nDetermine the likelihood of the observation recurring\n\nAt GitLab, observations will be rated based on the likelihood the observation has recurring and/or the frequency that the control has seen observations.\n\nPersistent/Systemic: The control has recurring observations across multiple years OR the observation stems from a fundamental design flaw in the control.\n\nFrequent: The control has generated multiple observations within the current assessment period (12 months).",
+    "chunk_index": 2,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e7a1dcb39dc4_3",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/observation-management-procedure",
+    "title": "Observation Management Procedure",
+    "source": "handbook",
+    "headings": [
+      "Observation Management Procedure",
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Procedure"
+    ],
+    "text": "or the frequency that the control has seen observations.\n\nPersistent/Systemic: The control has recurring observations across multiple years OR the observation stems from a fundamental design flaw in the control.\n\nFrequent: The control has generated multiple observations within the current assessment period (12 months).\n\nOccasional: Inadequate management oversight led to this observation, with potential for recurrence. This is the only observation for this control in the current assessment period.\n\nRare: Isolated incident due to atypical circumstances. Unlikely to recur once addressed.\n\nDetermine the impact of the observation\n\nNote: When audit impact and remediation effort scores differ, use the higher score to ensure adequate attention and resources.\n\nExternal Audit Impact\n\nCritical : Will result in a documented audit finding\n\nExecutive-level : Requires C-suite sponsorship and cross-departmental coordination\n\nHigh : Likely to result in a documented audit finding\n\nDirector-level : Requires director sponsorship and dedicated resources\n\nMedium : Not Likely to result in a documented audit finding\n\nManager-level : Requires management oversight, process updates, and coordination within the department\n\nLow : Would not result in audit finding\n\nIndividual Contributor-level : Simple reinforcement of existing processes or minor procedural clarification\n\nDetermining Risk Rating\n\nOnce the likelihood and impact scores are determined, the following table can be used to determine the risk rating for the observation:\n\nObservation Remediation",
+    "chunk_index": 3,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e7a1dcb39dc4_4",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/observation-management-procedure",
+    "title": "Observation Management Procedure",
+    "source": "handbook",
+    "headings": [
+      "Observation Management Procedure",
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Procedure"
+    ],
+    "text": "result in audit finding\n\nIndividual Contributor-level : Simple reinforcement of existing processes or minor procedural clarification\n\nDetermining Risk Rating\n\nOnce the likelihood and impact scores are determined, the following table can be used to determine the risk rating for the observation:\n\nObservation Remediation\n\nOnce all remediation activities have been completed, the Remediation Owner is responsible for tagging the Finding Coordinator in the observation issue. If there is no Finding Coordinator assigned, tag @gitlab-com/gl-security/security-assurance/security-compliance in the observation issue.\n\nIt is the responsibility of the Finding Coordinator to track the milestones, work progress and validation of the remediation activity. The Finding Coordinator will then validate the remediation activity for completeness, re-test the observation (as applicable) and close the observation issue. If re-testing does not result in a fully effective conclusion, the observation description and remediation recommendations may be updated to reflect the new findings and required remediation tasks.\n\nObservation remediation SLA’s are determined by the risk rating of the individual observation. The following table shows the SLA for each risk rating unless otherwise defined by the agreed upon remediation plan.\n\nCriteria for Upgrading Observations To Tier 2 Risks",
+    "chunk_index": 4,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e7a1dcb39dc4_5",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/observation-management-procedure",
+    "title": "Observation Management Procedure",
+    "source": "handbook",
+    "headings": [
+      "Observation Management Procedure",
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Procedure"
+    ],
+    "text": "flect the new findings and required remediation tasks.\n\nObservation remediation SLA’s are determined by the risk rating of the individual observation. The following table shows the SLA for each risk rating unless otherwise defined by the agreed upon remediation plan.\n\nCriteria for Upgrading Observations To Tier 2 Risks\n\nThe observation program is a key input to the StORM program , which manages tier 2 security operational risks. When the following criteria is met, it is an indicator that a larger risk exists and is upgraded to a tier 2 operational risk and therefore included in the StORM program. This criteria is as follows:\n\nAn observation in an entity level control\n\nWhen multiple observations share root cause and are grouped in an observation epic. Observation epics are a group of observations spanning multiple systems that have shared root cause and remediation paths.\n\nSecurity Compliance Workflow\n\nSecurity Risk Workflow\n\nOpen an observation following the Observation Intake runbook (internal only).",
+    "chunk_index": 5,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e7a1dcb39dc4_6",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/observation-management-procedure",
+    "title": "Observation Management Procedure",
+    "source": "handbook",
+    "headings": [
+      "Observation Management Procedure",
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Procedure"
+    ],
+    "text": "vations share root cause and are grouped in an observation epic. Observation epics are a group of observations spanning multiple systems that have shared root cause and remediation paths.\n\nSecurity Compliance Workflow\n\nSecurity Risk Workflow\n\nOpen an observation following the Observation Intake runbook (internal only).\n\nIf the observation meets the criteria for being upgraded, tag the StORM DRI and apply label ~upgraded::storm-managed if an ELC or ~upgraded:storm-shared if added to an observation epic. Definitions of labels: Upgraded::StORM-Managed : StORM risk managers are solely responsible for tracking remediation activities Upgraded::StORM-Shared : Remediation of the observation and risk is shared by the StORM risk managers and the observation manager. The StORM risk manager may track remediation activities spanning multiple systems via a common initiative, while the observation manager would be responsible for remediation of the specific system. See the collaborative remediation section for more details.\n\nDefinitions of labels: Upgraded::StORM-Managed : StORM risk managers are solely responsible for tracking remediation activities Upgraded::StORM-Shared : Remediation of the observation and risk is shared by the StORM risk managers and the observation manager. The StORM risk manager may track remediation activities spanning multiple systems via a common initiative, while the observation manager would be responsible for remediation of the specific system. See the collaborative remediation section for more details.",
+    "chunk_index": 6,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e7a1dcb39dc4_7",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/observation-management-procedure",
+    "title": "Observation Management Procedure",
+    "source": "handbook",
+    "headings": [
+      "Observation Management Procedure",
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Procedure"
+    ],
+    "text": "shared by the StORM risk managers and the observation manager. The StORM risk manager may track remediation activities spanning multiple systems via a common initiative, while the observation manager would be responsible for remediation of the specific system. See the collaborative remediation section for more details.\n\nUpgraded::StORM-Managed : StORM risk managers are solely responsible for tracking remediation activities\n\nUpgraded::StORM-Shared : Remediation of the observation and risk is shared by the StORM risk managers and the observation manager. The StORM risk manager may track remediation activities spanning multiple systems via a common initiative, while the observation manager would be responsible for remediation of the specific system. See the collaborative remediation section for more details.\n\nWhen the Security Risk team is tagged, someone on that team will determine if there is a risk represented for the observation meeting the criteria. If there is an existing risk, they will map the observation to the risk and leave a comment in the GitLab issues for transparency. If there is not an existing risk, they will open a new risk following the StORM Risk Intake runbook (internal only).\n\nIf there is an existing risk, they will map the observation to the risk and leave a comment in the GitLab issues for transparency.\n\nIf there is not an existing risk, they will open a new risk following the StORM Risk Intake runbook (internal only).",
+    "chunk_index": 7,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e7a1dcb39dc4_8",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/observation-management-procedure",
+    "title": "Observation Management Procedure",
+    "source": "handbook",
+    "headings": [
+      "Observation Management Procedure",
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Procedure"
+    ],
+    "text": "en a new risk following the StORM Risk Intake runbook (internal only).\n\nIf there is an existing risk, they will map the observation to the risk and leave a comment in the GitLab issues for transparency.\n\nIf there is not an existing risk, they will open a new risk following the StORM Risk Intake runbook (internal only).\n\nAn entity level control, the observation will be entirely managed by the StORM program at the tier 2 risk level, represented by the Upgraded::StORM-Managed label.\n\nIf the Observation is not an entity level control, Security Compliance will work with Security Risk for collaborative remediation with the remediation owner(s).\n\nCollaborative Remediation\n\nSecurity Compliance and Security Risk should look for opportunities to remediate via aggregated/common controls. In the event that observations can be remediated via a common control or implementation, activities can be tracked by the Security Risk team. For example, if we have systems that are not meeting password requirements and remediation across multiple systems involves integrating with Okta, this roll-out can be tracked by Security Risk. If remediation is system-specific, remediation activities can be tracked by Security Compliance. Remediation testing will be completed by which ever team is tracking remediation activities using the Security Compliance remediation runbook .\n\nDefined below are status labels that will aide in the process of managing remediation of observations.\n\nBlocked:: Awaiting Remediation Owner Input",
+    "chunk_index": 8,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e7a1dcb39dc4_9",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/observation-management-procedure",
+    "title": "Observation Management Procedure",
+    "source": "handbook",
+    "headings": [
+      "Observation Management Procedure",
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Procedure"
+    ],
+    "text": "cked by Security Compliance. Remediation testing will be completed by which ever team is tracking remediation activities using the Security Compliance remediation runbook .\n\nDefined below are status labels that will aide in the process of managing remediation of observations.\n\nBlocked:: Awaiting Remediation Owner Input\n\nThis flags indicates the observation manager is waiting for response from the remediation owner.\n\nBlocked:: Awaiting Observation Manager Input\n\nThis flags the issue for the observation manager on the SecAssurance team\n\nBlocked:: New tool implementation in progress\n\nThis flags the issue for pending completion of the new tool\n\nUpgraded::StORM-Managed\n\nThis label will be leverage when the observation has been upgraded to a tier 2 risk and will be managed in the StORM program\n\nUpgraded::StORM-Shared\n\nThis label will be leverage when the observation has been upgraded to a tier 2 risk and remediation is shared by the Security Risk and Security Compliance team\n\nMetrics and Reporting\n\nPlease refer to the observation management project ’s issue boards for details for all observations by risk, status, and department. Please refer to our tableau dashboard for operational metrics for the observation program.\n\nExceptions will be created for observations that breach a mutually agreed upon remediation date, breach in SLA or if the Remediation Owner confirms the observation will not be remediated.\n\nExceptions to this procedure will be tracked as per the Information Security Policy Exception Management Process .\n\nGCF Control Lifecycle\n\nObservation Management Project",
+    "chunk_index": 9,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e7a1dcb39dc4_10",
+    "url": "https://handbook.gitlab.com/handbook/security/security-assurance/observation-management-procedure",
+    "title": "Observation Management Procedure",
+    "source": "handbook",
+    "headings": [
+      "Observation Management Procedure",
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Procedure"
+    ],
+    "text": "tions that breach a mutually agreed upon remediation date, breach in SLA or if the Remediation Owner confirms the observation will not be remediated.\n\nExceptions to this procedure will be tracked as per the Information Security Policy Exception Management Process .\n\nGCF Control Lifecycle\n\nObservation Management Project\n\nUnified Risk Management\n\nIf you have any questions or feedback about the observation management process please contact the GitLab Security Assurance Team .",
+    "chunk_index": 10,
+    "total_chunks": 11
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "b43b69e01a12_0",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/appsec-ops-index",
+    "title": "Application Security Operations",
+    "source": "handbook",
+    "headings": [
+      "Application Security Operations",
+      "Helpful Quicklinks for GitLab Engineers",
+      "GitLab Secure Tools coverage",
+      "Useful resources for AppSec engineers",
+      "PTO"
+    ],
+    "text": "Application Security Operations\n\nLast updated: May 27, 2025\n\nThe Application Security Subdepartment is made up of two teams, the Secure Development and Design Team and the Product Security Incident Response Team (PSIRT) . These two teams work together to anticipate and prevent the introduction of vulnerabilities during design and development, as well as identify, assess, and respond to security vulnerabilities discovered in GitLab products and services.\n\nHelpful Quicklinks for GitLab Engineers\n\nApplication Security Reviews\n\nBacklog reviews: When necessary a backlog review can be initiated, please see the Vulnerability Management Page for more details.\n\nGitLab AppSec Inventory\n\nResponding to customers security scanners review requests\n\nRoot Cause Analysis for Critical Vulnerabilities\n\nLearn how to identify or remediate security issues using real examples with GitLab’s Reproducible Vulnerabilities .\n\nLearn how GitLab is implementing Reproducible Builds for our build processes.\n\nLearn more about the automation initiatives that the Application Security team uses on the Application Security Automation and Monitoring page\n\nGitLab Secure Tools coverage\n\nAs part of our dogfooding effort , Secure Tools are set up on many different GitLab projects (see our policies . This list is too dynamic to be included in this page, and is now maintained in the GitLab AppSec Inventory .\n\nProjects without the expected configurations can be found in the inventory violations list (internal link).\n\nUseful resources for AppSec engineers\n\nApplication Security Engineer Runbooks",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "b43b69e01a12_1",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/appsec-ops-index",
+    "title": "Application Security Operations",
+    "source": "handbook",
+    "headings": [
+      "Application Security Operations",
+      "Helpful Quicklinks for GitLab Engineers",
+      "GitLab Secure Tools coverage",
+      "Useful resources for AppSec engineers",
+      "PTO"
+    ],
+    "text": "cts (see our policies . This list is too dynamic to be included in this page, and is now maintained in the GitLab AppSec Inventory .\n\nProjects without the expected configurations can be found in the inventory violations list (internal link).\n\nUseful resources for AppSec engineers\n\nApplication Security Engineer Runbooks\n\nApplication Security Engineer Job Families\n\nTeam members that are taking PTO for 5 days or more must both discuss time off with their manager prior to scheduling to ensure visibility and adequate team operational coverage and create a PTO coverage issue to organize their coverage during their time off. The PTO coverage issue should :\n\nList any potential requests that could come to the team while on PTO\n\nThe team member taking PTO should organize their work accordingly and ensure the PTO coverage issue contains the context required to handle the work\n\nAssign primary and secondary responsible team members\n\nAppSec team members should add any important information related to the work they are covering for the person on PTO and AppSec manager(s) should add any important announcement to see upon their return.\n\nThe AppSec private group that contains other private subgroups and projects\n\nThe appsec-lab group on Staging. This has an Ultimate license.\n\nBug Bounty Council search\n\nBug Bounty Council archive (before November 2025)\n\nUpcoming patch release\n\nGitLab Project Security dashboard\n\nSecurity issue board that tracks ongoing issues (HackerOne and others)\n\nOverview of a project member permissions",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "b43b69e01a12_2",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/appsec-ops-index",
+    "title": "Application Security Operations",
+    "source": "handbook",
+    "headings": [
+      "Application Security Operations",
+      "Helpful Quicklinks for GitLab Engineers",
+      "GitLab Secure Tools coverage",
+      "Useful resources for AppSec engineers",
+      "PTO"
+    ],
+    "text": "jects\n\nThe appsec-lab group on Staging. This has an Ultimate license.\n\nBug Bounty Council search\n\nBug Bounty Council archive (before November 2025)\n\nUpcoming patch release\n\nGitLab Project Security dashboard\n\nSecurity issue board that tracks ongoing issues (HackerOne and others)\n\nOverview of a project member permissions\n\nThe DevOps stages and their different groups . This page contains information on the development teams, their areas of focus, and their team members.\n\nThe product features listed by groups that own them\n\nList of merged security issues in gitlab-org . Note: It can include results from the security mirror gitlab-org/security/ .\n\nApplication Security KPIs & Other Metrics - Embedded KPIs which can be filtered by section, stage, or group .\n\nMilestone Planning - The GitLab Application Security team plans work based around Milestones, see this page for a description of that process\n\nThe list above is not exhaustive and is subject to be modified as our processes keep evolving.\n\nThe following recordings are available internally only:\n\nAppSec Leadership Weekly\n\nContent Review and Updates\n\nThis page will be reviewed quarterly to ensure alignment with company and divisional priorities, the GitLab Security product roadmap, and relevant business and operational changes. Updates may occur more frequently as business operations evolve.\n\nNext scheduled review: June 30, 2025",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

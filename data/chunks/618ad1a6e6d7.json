@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "618ad1a6e6d7_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab1",
+    "title": "GitLab Agile Portfolio Management - Hands-On Lab: Access The GitLab Training Environment",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management - Hands-On Lab: Access The GitLab Training Environment",
+      "Objectives",
+      "Task A. Access your Training Group and Lab Environment",
+      "Self-Paced Training",
+      "Suggestions?"
+    ],
+    "text": "GitLab Agile Portfolio Management - Hands-On Lab: Access The GitLab Training Environment\n\nEstimated time to complete: 5 to 10 minutes\n\nEstimated time to complete: 5 to 10 minutes\n\nIn this lab, you will access the training lab environment. This environment will allow you to try all of the GitLab Ultimate features, providing you with an environment to follow along with all of the lab steps.\n\nTask A. Access your Training Group and Lab Environment\n\nNavigate to https://gitlabdemo.com/invite in a web browser.\n\nNavigate to https://gitlabdemo.com/invite in a web browser.\n\nIn the Invitation Code field, enter the invitation code provided by your instructor or in the LevelUp LMS.\n\nIn the Invitation Code field, enter the invitation code provided by your instructor or in the LevelUp LMS.\n\nSelect Provision Training Environment . The login details for accessing the environment are slightly different between self-paced training and instructor-led training. Please follow the instructions that suit your needs.\n\nSelect Provision Training Environment .\n\nThe login details for accessing the environment are slightly different between self-paced training and instructor-led training. Please follow the instructions that suit your needs.\n\nThe login details for accessing the environment are slightly different between self-paced training and instructor-led training. Please follow the instructions that suit your needs.\n\nFor self-paced courses, you will need your GitLab.com username. To find your username, navigate to Gitlab .",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "618ad1a6e6d7_1",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab1",
+    "title": "GitLab Agile Portfolio Management - Hands-On Lab: Access The GitLab Training Environment",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management - Hands-On Lab: Access The GitLab Training Environment",
+      "Objectives",
+      "Task A. Access your Training Group and Lab Environment",
+      "Self-Paced Training",
+      "Suggestions?"
+    ],
+    "text": "uctions that suit your needs.\n\nThe login details for accessing the environment are slightly different between self-paced training and instructor-led training. Please follow the instructions that suit your needs.\n\nFor self-paced courses, you will need your GitLab.com username. To find your username, navigate to Gitlab .\n\nFor self-paced courses, you will need your GitLab.com username. To find your username, navigate to Gitlab .\n\nIn the left sidebar, select your profile image.\n\nIn the left sidebar, select your profile image.\n\nIn the resulting dropdown, you will see a value starting with @ . This is your GitLab username.\n\nIn the resulting dropdown, you will see a value starting with @ . This is your GitLab username.\n\nAfter inputting your invitation code, the portal prompts you for your GitLab.com username. Enter your GitLab.com user (excluding the leading @ sign) in the field provided.\n\nAfter inputting your invitation code, the portal prompts you for your GitLab.com username. Enter your GitLab.com user (excluding the leading @ sign) in the field provided.\n\nSelect Provision Training Environment .\n\nSelect Provision Training Environment .\n\nSelect My Group at the bottom of the page.\n\nSelect My Group at the bottom of the page.\n\nSign in with your GitLab.com credentials.\n\nSign in with your GitLab.com credentials.",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "618ad1a6e6d7_2",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab1",
+    "title": "GitLab Agile Portfolio Management - Hands-On Lab: Access The GitLab Training Environment",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management - Hands-On Lab: Access The GitLab Training Environment",
+      "Objectives",
+      "Task A. Access your Training Group and Lab Environment",
+      "Self-Paced Training",
+      "Suggestions?"
+    ],
+    "text": "b.com user (excluding the leading @ sign) in the field provided.\n\nSelect Provision Training Environment .\n\nSelect Provision Training Environment .\n\nSelect My Group at the bottom of the page.\n\nSelect My Group at the bottom of the page.\n\nSign in with your GitLab.com credentials.\n\nSign in with your GitLab.com credentials.\n\nYou will be redirected to a My Test Group group that provides a sandbox for you to perform training lab steps in. This group has a GitLab Ultimate license to see all of the features while your personal username namespace requires a paid subscription or a free trial to access all of the features. If you receive a 404 error when accessing your group, it is likely due to the username input during the lab provisioning. Double check your GitLab username to make sure it is entered correctly.\n\nYou will be redirected to a My Test Group group that provides a sandbox for you to perform training lab steps in.\n\nThis group has a GitLab Ultimate license to see all of the features while your personal username namespace requires a paid subscription or a free trial to access all of the features. If you receive a 404 error when accessing your group, it is likely due to the username input during the lab provisioning. Double check your GitLab username to make sure it is entered correctly.\n\nThis group has a GitLab Ultimate license to see all of the features while your personal username namespace requires a paid subscription or a free trial to access all of the features.",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "618ad1a6e6d7_3",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab1",
+    "title": "GitLab Agile Portfolio Management - Hands-On Lab: Access The GitLab Training Environment",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management - Hands-On Lab: Access The GitLab Training Environment",
+      "Objectives",
+      "Task A. Access your Training Group and Lab Environment",
+      "Self-Paced Training",
+      "Suggestions?"
+    ],
+    "text": "is likely due to the username input during the lab provisioning. Double check your GitLab username to make sure it is entered correctly.\n\nThis group has a GitLab Ultimate license to see all of the features while your personal username namespace requires a paid subscription or a free trial to access all of the features.\n\nIf you receive a 404 error when accessing your group, it is likely due to the username input during the lab provisioning. Double check your GitLab username to make sure it is entered correctly.\n\nFrom your My Test Group training subgroup, click the New project button.\n\nFrom your My Test Group training subgroup, click the New project button.\n\nIf you’d like to suggest changes to this lab, please submit them via merge request.",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

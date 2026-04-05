@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "088c4b3b6f97_0",
+    "url": "https://handbook.gitlab.com/handbook/finance/accounts-payable/tech-stack-guide-liquid",
+    "title": "Navan Expense Tech Stack Guide",
+    "source": "handbook",
+    "headings": [
+      "Navan Expense Tech Stack Guide",
+      "Implementation",
+      "System Diagrams",
+      "Integrations",
+      "Key Reports / Dashboards"
+    ],
+    "text": "Navan Expense Tech Stack Guide\n\nNote: Refer to the Tech Stack Index to browse Apps and Tech Stack Applications to manage Apps.\n\nNote: Refer to the Tech Stack Index to browse Apps and Tech Stack Applications to manage Apps.\n\nNavan Expense is an artificial intelligence expense platform that improves managing expenses while team members are on the road.\n\nNavan Expense to NetSuite\n\nOut of the box connector that syncs Navan Expense transaction data to NetSuite automatically.\n\nOkta SCIM to Navan Expense\n\nUser information syncs from Workday to Navan Expense via Okta SCIM integration and places users under the correct expense policies.\n\nKey Reports / Dashboards",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

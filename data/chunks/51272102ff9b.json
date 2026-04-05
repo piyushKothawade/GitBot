@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "51272102ff9b_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/merge-request-triage",
+    "title": "Wider Community Merge Request Triage",
+    "source": "handbook",
+    "headings": [
+      "Wider Community Merge Request Triage",
+      "Merge request triage for thegitlab-orggroup",
+      "Triage levels (gitlab-org)",
+      "Inactive merge requests triage policy (gitlab-org)",
+      "Wider community merge request triage SLOs (gitlab-org)"
+    ],
+    "text": "Wider Community Merge Request Triage\n\nAt GitLab, our mission is to change all creative work from read-only to read-write so that everyone can contribute . GitLab highly values community contribution and we want to continue growing community code contribution. GitLab encourages the community to file issues and open merge requests for our projects under the gitlab-org group , and for the gitlab-com/www-gitlab-com project . Their contributions are valuable, and we should handle them as effectively as possible. A central part of this is triage - the process of categorization according to type and product group.\n\nAny GitLab team-member can triage merge requests. Keeping the number of un-triaged merge requests low is essential for maintainability, and is our collective responsibility. Consider triaging a few merge requests around your other responsibilities, or scheduling some time for it on a regular basis.\n\nTriaging incoming wider community merge requests is divided between several departments. Quality Department maintains triage automation, Merge Request Coaches take on a partial merge request triage, and finally triage automation helps completing the triage process. Additionally, Developer Relations Engineering drives the community collaboration efforts and works with our community to ensure they receive support and recognition for contributing to GitLab.\n\nMerge request triage for the gitlab-org group\n\nTriage levels ( gitlab-org )\n\nWe define three levels of triage.\n\nInitial triage ( gitlab-org )\n\nA merge request is considered initially triaged when it has a:",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "51272102ff9b_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/merge-request-triage",
+    "title": "Wider Community Merge Request Triage",
+    "source": "handbook",
+    "headings": [
+      "Wider Community Merge Request Triage",
+      "Merge request triage for thegitlab-orggroup",
+      "Triage levels (gitlab-org)",
+      "Inactive merge requests triage policy (gitlab-org)",
+      "Wider community merge request triage SLOs (gitlab-org)"
+    ],
+    "text": "n efforts and works with our community to ensure they receive support and recognition for contributing to GitLab.\n\nMerge request triage for the gitlab-org group\n\nTriage levels ( gitlab-org )\n\nWe define three levels of triage.\n\nInitial triage ( gitlab-org )\n\nA merge request is considered initially triaged when it has a:\n\n~\"Community contribution\" label applied\n\n“Thank you” message posted by @gitlab-bot with more details on the process\n\nThe initial triage is automated by the Developer Relations Engineering team via the Community contribution thank you note reactive triage automation.\n\nPartial triage ( gitlab-org )\n\nA merge request is considered partially triaged when it has a:\n\ntype label applied. (For ~\"type::bug\" and ~\"Deferred UX\" ) It has a severity label applied.\n\n(For ~\"type::bug\" and ~\"Deferred UX\" ) It has a severity label applied.\n\ngroup label applied (e.g. ~\"group:editor\" ). If no group label exists, the stage label is enough.\n\nThe partial triage is completed by Merge Request Coaches via the Newly created community merge requests triage report.\n\nFor MRs related to issues, partial triage can be completed by using the following quick action and confirming proper metadata:\n\nComplete triage ( gitlab-org )\n\nThe complete Triage is divided into 3 subcategories depending on the community merge request state.\n\nA merge request is considered completely triaged when it has:\n\nthe workflow::ready for review label\n\nA merge request is considered completely triaged when it has a:\n\nmilestone set if the merge request with the ~\"Community contribution\" label is merged.",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "51272102ff9b_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/merge-request-triage",
+    "title": "Wider Community Merge Request Triage",
+    "source": "handbook",
+    "headings": [
+      "Wider Community Merge Request Triage",
+      "Merge request triage for thegitlab-orggroup",
+      "Triage levels (gitlab-org)",
+      "Inactive merge requests triage policy (gitlab-org)",
+      "Wider community merge request triage SLOs (gitlab-org)"
+    ],
+    "text": "to 3 subcategories depending on the community merge request state.\n\nA merge request is considered completely triaged when it has:\n\nthe workflow::ready for review label\n\nA merge request is considered completely triaged when it has a:\n\nmilestone set if the merge request with the ~\"Community contribution\" label is merged.\n\nThis triage process is automated by the Developer Relations Engineering team via the Add milestone to community contributions on Triage Operations scheduled triage automation.\n\nInactive merge requests triage policy ( gitlab-org )\n\nThe inactive merge request policy was created to enable GitLab teams to focus efforts on active merge request and prevent old merge requests from degrading into a state of disrepair. This is done by creating two thresholds at which GitLab team members attempt to move the merge request forward.\n\nDeveloper Relations Engineering team members attempt to move merge requests that have reached the first threshold forward via the Community merge requests requiring attention triage report.\n\nIf that’s not successful an Engineering Manager makes a decision at the second threshold. We value your effort - that’s why all decisions to close a merge request are made by a human, and are not automated.\n\nWider community merge request triage SLOs ( gitlab-org )\n\nCommunity contributions are valuable, and we should handle them as effectively as possible to ensure swift feedback to community and increase engagement. To achieve that we define the following Service-level objectives (SLOs) :\n\nTriage Level or Response Metric\n\n2 hours ( this is automated )",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "51272102ff9b_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/merge-request-triage",
+    "title": "Wider Community Merge Request Triage",
+    "source": "handbook",
+    "headings": [
+      "Wider Community Merge Request Triage",
+      "Merge request triage for thegitlab-orggroup",
+      "Triage levels (gitlab-org)",
+      "Inactive merge requests triage policy (gitlab-org)",
+      "Wider community merge request triage SLOs (gitlab-org)"
+    ],
+    "text": "triage SLOs ( gitlab-org )\n\nCommunity contributions are valuable, and we should handle them as effectively as possible to ensure swift feedback to community and increase engagement. To achieve that we define the following Service-level objectives (SLOs) :\n\nTriage Level or Response Metric\n\n2 hours ( this is automated )\n\nComplete Triage for Merged Merge Requests\n\n1 day ( this is automated for gitlab-org/gitlab )\n\nTime to assign reviewer\n\n2 hours ( this is automated )\n\nIf an SLO isn’t met, reach out to the Developer Relations Engineering team .\n\nMerge request triage for the gitlab-com/www-gitlab-com project\n\nTriage levels ( gitlab-com/www-gitlab-com )\n\nThe GitLab Website is owned and managed by a different team than GitLab.org; thus, a further triage process must be defined.\n\nInitial triage ( gitlab-com/www-gitlab-com )\n\nSame as for the gitlab-org group above.\n\nComplete triage ( gitlab-com/www-gitlab-com )\n\nThe Complete Triage is divided into 3 subcategories depending on the community merge request state.\n\nA merge request is considered completely triaged when it has:\n\na reviewer assigned by a member of the GitLab Website Community Team .\n\nbeen reviewed by a reviewer.\n\nTypically, the reviewer is the code owner of the page the merge request is updated. If there is no code owner assigned, the triager will reach out to the relevant team the page belongs to identify a reviewer.\n\nA merge request is considered completely triaged when it:\n\nis closed following the closing policy for merge requests .",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "51272102ff9b_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/merge-request-triage",
+    "title": "Wider Community Merge Request Triage",
+    "source": "handbook",
+    "headings": [
+      "Wider Community Merge Request Triage",
+      "Merge request triage for thegitlab-orggroup",
+      "Triage levels (gitlab-org)",
+      "Inactive merge requests triage policy (gitlab-org)",
+      "Wider community merge request triage SLOs (gitlab-org)"
+    ],
+    "text": "y, the reviewer is the code owner of the page the merge request is updated. If there is no code owner assigned, the triager will reach out to the relevant team the page belongs to identify a reviewer.\n\nA merge request is considered completely triaged when it:\n\nis closed following the closing policy for merge requests .\n\nThis triage process is being done manually on a case-by-case basis by a member of the GitLab Website Community Team or the relevant code owner .\n\nWider community merge request triage SLOs ( gitlab-com/www-gitlab-com )\n\nCommunity contributions are valuable, and we should handle them as effectively as possible to ensure swift feedback to community and increase engagement. To achieve that we define the following Service-level objectives (SLOs) :\n\n2 hours ( this is automated )\n\nTime to assign reviewer\n\n7 days ( this is automated )\n\nComplete triage for idle merge requests\n\nIf an SLO isn’t met, reach out to @gitlab-com-community in the merge request.",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

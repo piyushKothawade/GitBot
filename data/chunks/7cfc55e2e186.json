@@ -1,0 +1,802 @@
+[
+  {
+    "chunk_id": "7cfc55e2e186_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "Data model for Dependencies Information\n\nThis document explores additions to the Security reports and to the database schemas\nthat would enable new features for Dependency Scanning and License Scanning.\n\nThe solutions being considered are:\n\nadding tables to the PostgreSQL primary database (schema change)\n\ncreating a new PostgreSQL database (new schema)\n\nstoring new documents in Object Storage\n\nindexing data in ElasticSearch\n\ncaching data in Redis\n\nMost sections of this document are organized in three parts:\n\nfeature: What do users need?\n\ntechnical discussion: How can we implement the feature? What are the technical constraints, and how can we satisfy them?\n\nproposal: What is the corresponding DB schema or document schema?\n\nThis document contains a simplified proposal that should be used when implementing new features.\nAs such, it might skip implementation details, like the exact Foreign Key constraints we would add to the relational DB.\n\nUsers want to search project dependencies:\n\nfor a specific package name; they might also specify a package type and a version number to refine the search\n\nfor packages that use a given license\n\nfor packages that are affected by a given vulnerability\n\nThe scope of the search can either be:\n\na project group/namespace\n\nThe search result is a list of packages that match the query along with the projects that depend on these.\n\nIn a first version the search is limited to the default branch.\nLater on, it could be extended to all protected branches or to all project releases.",
+    "chunk_index": 0,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "scope of the search can either be:\n\na project group/namespace\n\nThe search result is a list of packages that match the query along with the projects that depend on these.\n\nIn a first version the search is limited to the default branch.\nLater on, it could be extended to all protected branches or to all project releases.\n\nUsers want to know what package versions their projects use.\nThey might search project dependencies for:\n\na package name and a version number\n\nWhen searching project dependencies, users might not know the non-canonical package names.\nFor instance, they might search for django , not realizing that Django is the canonical name for that Python package.\nAlso, django might be the dependency name used in their project, in the dependency file.\n\nWe need a DB table to efficiently query project dependencies by package name, type, and version.\nWe could have a project_dependencies table with:\n\nsmallint column for the package type (integer values are interpreted by the Rails backend)\n\nvarchar column for the package name\n\nvarchar column for the package version\n\ncomposite index that combines all these columns, for performance\n\nHowever, package names and versions would be repeated across project dependencies:\n\nSome packages are popular; many projects depend on them, and their names are repeated.\n\nThis also applies to specific versions, and both the names and versions are repeated.\n\nIn the future, the search won’t be limited to the default branch, and branches of the same project are likely to repeat names and versions.",
+    "chunk_index": 1,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ies:\n\nSome packages are popular; many projects depend on them, and their names are repeated.\n\nThis also applies to specific versions, and both the names and versions are repeated.\n\nIn the future, the search won’t be limited to the default branch, and branches of the same project are likely to repeat names and versions.\n\nIn order to save storage, we keep track of packages used as project dependencies in two separate tables:\n\npackages tracks packages by type and canonical name\n\npackage_versions tracks versions by package_id and version\n\nTo reduce storage, these tables can be cleaned up when packages or specific versions are no longer used as project dependencies.\nThis can be done when updating project dependencies, or in a periodically executing batch job.\n\nSince packages and package_versions records are coming from the scanning jobs and these can’t be trusted,\nthe default scopes for the corresponding ActiveRecord models shouldn’t return any objects.\nIn the future, these scopes could return all the packages and versions that match what’s listed on trusted public package registries.\n\nSince the packages table doesn’t track the package source,\nthe same record might refer to a public package (fetched from the main registry) or to a private package.\nThis collision is not a problem since the goal is to enable efficient queries with a limited impact on storage,\nand not to accurately track packages.",
+    "chunk_index": 2,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ies.\n\nSince the packages table doesn’t track the package source,\nthe same record might refer to a public package (fetched from the main registry) or to a private package.\nThis collision is not a problem since the goal is to enable efficient queries with a limited impact on storage,\nand not to accurately track packages.\n\nThe canonical names stored in the DB might differ from the package names used in the dependency file.\nThe Rails backend normalizes the names before storing them in the packages table.\nWhen processing a search query, the backend normalizes the given package names\nso that they can be compared to the ones stored in the DB.\nIt might also make the search case-insensitive for convenience.\nIf needed, the exact package names used in the dependency files can be fetched from the Dependency Scanning report\nand presented in the search result.\n\nTo support multi-project repositories, we need to track the paths to the dependency files where project dependencies were found,\nand report these files in the search result. This supports the case where the same package manager is used\nin different directories of the same GitLab project, like client/Gemfile and server/Gemfile .\nAlso, the file paths are likely to be repeated across projects,\nand they should be stored in a separate DB table to reduce storage.\n\nTo avoid repeating the file paths across dependencies of the same project and across projects,\nwe track project dependencies using 2 tables:\n\ndependency_files tracks paths of dependency files.\n\nproject_dependencies tracks package versions found in dependency files of projects.",
+    "chunk_index": 3,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "in a separate DB table to reduce storage.\n\nTo avoid repeating the file paths across dependencies of the same project and across projects,\nwe track project dependencies using 2 tables:\n\ndependency_files tracks paths of dependency files.\n\nproject_dependencies tracks package versions found in dependency files of projects.\n\nPlease note that in reality, package managers typically use two files to track project dependencies:\nan editable dependency file, and a generated lock file,\nbut the Dependency Scanning analyzers and the report format they use only allow for one.\nAs a result, users might search for a path that isn’t stored in the database, and get no results.\nTo address this, the Rails backend could convert the requested file path, or search for extra paths.\nFor instance, it could search for client/Gemfile.lock when users are searching for client/Gemfile .\nIn the future we could replace the dependency_file_id foreign key with a relation table\nto track all the files that contribute to a set of dependencies,\nor introduce a dependency_file_sets table that represents the sets.\n\nBy leveraging the dependency_files table, the backend can efficiently\nlist project dependencies that match a given file path or package type.\n\nThe dependency_files table can be cleaned up automatically, similar to packages .",
+    "chunk_index": 4,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "to a set of dependencies,\nor introduce a dependency_file_sets table that represents the sets.\n\nBy leveraging the dependency_files table, the backend can efficiently\nlist project dependencies that match a given file path or package type.\n\nThe dependency_files table can be cleaned up automatically, similar to packages .\n\nSince dependency_files records are coming from the scanning jobs and these can’t be trusted,\nthe default scope for the DependencyFile ActiveRecord model should only return objects\nwhere the path matches a supported dependency file found in the root directory: Gemfile , Gemfile.lock , package.json , etc.\nCustom filenames and dependency files found in sub-directories are excluded from the default scope.\n\nProject dependencies are upserted when a new successful pipeline for the default branch\ngenerates a new set of Dependency Scanning reports.\nThe backend upserts into the following database tables in this order:\n\nIf a scanning job is retried, then the backend reprocesses the corresponding pipeline\nas is this was a new one, to ensure data consistency.\nIt goes through the following steps:\n\nList all the completed jobs of the pipeline. Jobs that have been retried are excluded.\n\nCollect the Dependency Scanning reports of these jobs.\n\nProcess these reports, and do the upserts.",
+    "chunk_index": 5,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "nd reprocesses the corresponding pipeline\nas is this was a new one, to ensure data consistency.\nIt goes through the following steps:\n\nList all the completed jobs of the pipeline. Jobs that have been retried are excluded.\n\nCollect the Dependency Scanning reports of these jobs.\n\nProcess these reports, and do the upserts.\n\nAll the DB tables involved in tracking project dependencies\n( packages , package_versions , dependency_files , and project_dependencies )\nare stored in the primary DB\nso that they can be efficiently joined when searching for specific packages\nacross a namespace that has a large number of projects, using PostgreSQL.\nMoving project dependencies to a separate database would result in doing in-memory joins with too many project IDs.\n\nSearch across protected branches and releases\n\nUsers want to search project dependencies across all protected branches and releases.\n\nProtected branches and project releases are particular important because they usually correspond to:\n\nversion branches under development or in maintenance mode\n\nreleases being deployed and actively used\n\nThe names of the protected branches are stored in the protected_branches.name column,\nand the git tags corresponding to the project releases are stored in releases.tag .\n(These columns already exist in the DB schema of GitLab.)\nBranch names and git tags are both git refs,\nand so we store a “ref” that can either be a git tag or a branch.",
+    "chunk_index": 6,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_7",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "rotected branches are stored in the protected_branches.name column,\nand the git tags corresponding to the project releases are stored in releases.tag .\n(These columns already exist in the DB schema of GitLab.)\nBranch names and git tags are both git refs,\nand so we store a “ref” that can either be a git tag or a branch.\n\nTo avoid repeating the same git ref across all dependencies that belong to the same project branch or release,\nwe introduce a new project_dependency_sets table that groups dependencies by ref.\n\nProject dependencies now belong to dependency sets.\n\nProject dependencies no longer need to reference projects,\nand the project_id column is removed to save space.\n\nWhen doing this change, we first create dependency sets for the default branches of the existing projects,\nand then add the existing dependencies to these sets.\nOnly then we can add a NOT NULL constraint to the project_dependency_set_id column;\nthis cannot be done when creating the column.\n\nThe upsert of project dependencies is changed so that dependency sets are also upserted.\n\nNavigate to scanning jobs\n\nUsers want to inspect the CI pipeline or CI job that reported a specific project dependency.\n\nTo keep track of the CI pipeline where a project dependency was detected,\nwe can leverage the project_dependency_sets table used to group dependencies detected in the same branch or release;\nthis avoids repeating the same pipeline ID across many project dependencies.\n\nThe pipeline_id is set or updated when upserting project dependencies for a given git ref.",
+    "chunk_index": 7,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_8",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "a project dependency was detected,\nwe can leverage the project_dependency_sets table used to group dependencies detected in the same branch or release;\nthis avoids repeating the same pipeline ID across many project dependencies.\n\nThe pipeline_id is set or updated when upserting project dependencies for a given git ref.\n\nAlternatively, the concept of “dependency set” is changed, and a set now groups the dependencies detected by a single CI job.\nThis is more accurate, and users can be redirected to the exact job where a dependency was detected.\nAlso, this better supports the scenario where a CI job is retried, and the corresponding dependencies updated.\nThe upsert mechanism needs to be changed to upsert the multiple sets that correspond to the same ref.\nHere are two ways this can be achieved:\n\nTrack the job name in project_dependency_sets.job_name ,\nand upsert dependencies that correspond to a project ID, ref, and job name.\n\nMove the dependency_file_id from the project_dependencies table to project_dependency_sets ,\nand upsert dependencies that correspond to a project ID, ref, and file ID.\n\nThe latter is less coupled to the CI, and it results in a simpler logic where we upsert files, not files found in jobs.\n\nWhen a branch is made protected, the last set of Dependency Scanning artifacts for that branch\n(coming from the latest pipeline) should be processed, and project dependencies should be added to the relational DB.\nThis way project dependencies for the newly protected branch can be queried without having to wait for a new pipeline.\n\nFilter out development dependencies",
+    "chunk_index": 8,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_9",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "Dependency Scanning artifacts for that branch\n(coming from the latest pipeline) should be processed, and project dependencies should be added to the relational DB.\nThis way project dependencies for the newly protected branch can be queried without having to wait for a new pipeline.\n\nFilter out development dependencies\n\nUsers want to exclude development dependencies when searching project dependencies.\nThey are not interested in the exact scope (Maven) or group (Bundler) these dependencies belong to.\n\nA development dependency is a package that’s only used when developing the project or its dependencies.\nThis might be package only used for testing, linting, or debugging the project or the libraries it uses.\n\nPackage managers and build tools use different concepts to track how dependencies are used:\n\nnpm and yarn distinguish between development dependencies and others.\n\nMaven puts dependencies into 5 scopes, and each scope has well-defined semantics.\n\nBundler supports user-defined dependency groups. They are naming conventions but the semantics of a particular group might be unknown.\n\nFor the purpose of the search, the exact dependency group/scope is converted to a boolean value,\nand then stored into the development column of the project_dependencies table.\n\nproject_dependencies.development is NULL when we can’t establish whether this is a development dependency:\n\nThe files processed by the analyzer don’t provide the information.\n\nThe semantics of the dependency group is unknown.",
+    "chunk_index": 9,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_10",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "boolean value,\nand then stored into the development column of the project_dependencies table.\n\nproject_dependencies.development is NULL when we can’t establish whether this is a development dependency:\n\nThe files processed by the analyzer don’t provide the information.\n\nThe semantics of the dependency group is unknown.\n\nThe exact dependency group or scope can be fetched from the reports and artifacts if/when needed.\nIn the future, if users need to filter project dependencies by dependency group,\nthen the following changes are needed:\n\nCreate a DB table that tracks dependency groups without repeating their names. A group has name and package type, so that its name can be interpreted in the context of the package type.\n\nAdd a dependency_group_id foreign key to the project_dependencies table, so that the backend can track the group of a project dependency. This column is NULL when the information is not available.\n\nDrop the existing development column, because it becomes redundant with the new dependency_group_id column.\n\nCurrently the Gemnasium analyzers don’t track whether a package is a development dependency.\nMost of the lock files and graph exports they parse don’t provide the information,\nand this information can’t be stored in the Dependency Scanning reports.\n\nSearch for dependencies using specific licenses\n\nUsers want to list project dependencies that use a specific license.",
+    "chunk_index": 10,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_11",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "hether a package is a development dependency.\nMost of the lock files and graph exports they parse don’t provide the information,\nand this information can’t be stored in the Dependency Scanning reports.\n\nSearch for dependencies using specific licenses\n\nUsers want to list project dependencies that use a specific license.\n\nLicenses of project dependencies are already tracked in the software_licenses table.\nIt’s currently used in combination of software_license_policies to set up a policy,\nand allow or deny a license in the context of project.\n\nsoftware_licenses can be reused to track licenses detected in project dependencies.\nA relation table is needed because a package version can have multiple licenses.\n\nPlease note that this model doesn’t accurately track composite licenses.\nFor instance, it doesn’t make the distinction between “MIT and BSD” and “MIT or BSD”.\nIt’s assumed that this distinction isn’t needed when searching for dependencies matching a license.\n\nBy joining project_dependencies with project_dependency_software_licenses and software_license_policies ,\nit’s possible to efficiently list dependencies with unapproved licenses.\n\nTo reduce storage, licenses that are no longer referenced by project dependencies or license policies should be removed.\nThis can be done when updating or destroying dependencies and policies, or in batch mode in a periodic job.",
+    "chunk_index": 11,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_12",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "icense_policies ,\nit’s possible to efficiently list dependencies with unapproved licenses.\n\nTo reduce storage, licenses that are no longer referenced by project dependencies or license policies should be removed.\nThis can be done when updating or destroying dependencies and policies, or in batch mode in a periodic job.\n\nIf we start collecting information about public packages (outside of user pipelines), including the licenses they use,\nthen project_dependency_software_licenses might repeat information stored in other tables.\nHowever, this redundancy eliminates risks of collisions when the dependency is a private package whose name matches a public package.\nIn that particular case, licenses of a project dependency can differ from licenses of the corresponding public package.\n\nSearch for dependencies affected by specific vulnerabilities\n\nUsers want to list project dependencies that are affected by a given vulnerability.\n\nA project dependency might be affected by multiple vulnerabilities but a vulnerability belongs to a dependency.\n\nSince vulnerabilities are tracked in the vulnerability_occurrences table,\nwe could add a project_dependency_id foreign key to link a vulnerability finding to a project dependency.\nBy adding that column, we can efficiently search for project dependencies matching a vulnerability,\nand efficiently group vulnerabilities per dependency.\n\nproject_dependency_id would be NULL when the vulnerability has been reported by Dependency Scanning.",
+    "chunk_index": 12,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_13",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ign key to link a vulnerability finding to a project dependency.\nBy adding that column, we can efficiently search for project dependencies matching a vulnerability,\nand efficiently group vulnerabilities per dependency.\n\nproject_dependency_id would be NULL when the vulnerability has been reported by Dependency Scanning.\n\nHowever, this change would link a generic table used for all vulnerabilities to a table that is specific to Dependency Scanning.\nIf that’s an issue, then we can load both project vulnerabilities and project dependencies in memory,\nand leverage the vulnerability location to remove dependencies that don’t match the requested vulnerability.\n\nThe backend already loads project vulnerabilities and project dependencies in memory,\nand joins them when serving the dependency list, in order to group vulnerabilities per dependency.\nHowever, project dependencies for the default branch would be fetched from the relational DB,\nand not from a collection of Dependency Scanning reports.\n\nSearch for newly added dependencies\n\nUsers want to list project dependencies that were recently added to the default branch or a protected branch.\n\nProject dependencies detected in any given branch are upserted in the project_dependencies table.\nThe created_at column isn’t touched when doing the upsert,\nso it can be used to filter on dependencies recently added.\n\nUsers want to prevent specific packages from being added as project dependencies.\nThey might exclude specific package versions, or exclude the package altogether.",
+    "chunk_index": 13,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_14",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ed in the project_dependencies table.\nThe created_at column isn’t touched when doing the upsert,\nso it can be used to filter on dependencies recently added.\n\nUsers want to prevent specific packages from being added as project dependencies.\nThey might exclude specific package versions, or exclude the package altogether.\n\nPackage policies are tracked by introducing a project_dependency_policies relation table\nthat combines a project ID, a package ID, a classification, and a version range.\nThis table is similar to the existing software_license_policies table used to store license policies.\n\nWe can leverage the relational DB to JOIN project dependencies with corresponding policies, based on the project_id and package_id .\nHowever, the policies returned by the SQL query might not be a match,\nand the Rails backend must evaluate the version_range to establish whether the policy applies to the package version being used a dependency.\n\nproject_dependency_policies could also be called package_policies .\nThis would be more consistent with the existing software_license_policies table\nbut wouldn’t communicate that packages are used as project dependencies.\n\nUsers want to know when specific packages were added as project dependencies.\n\nProject dependencies detected in any given branch are upserted in the project_dependencies table.\nThe created_at column isn’t touched when doing the upsert, so it reflects the time when a dependency was first detected.",
+    "chunk_index": 14,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_15",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "project dependencies.\n\nUsers want to know when specific packages were added as project dependencies.\n\nProject dependencies detected in any given branch are upserted in the project_dependencies table.\nThe created_at column isn’t touched when doing the upsert, so it reflects the time when a dependency was first detected.\n\nIf we need to know the exact commit where a project dependency was first introduced, then we need a new column in the project_dependencies table to store the SHA of that commit.\n\nThe first commit could also be retrieved by storing the ID of the pipeline where a project dependency was first detected. However, we would need to access the CI database, and that should be avoided for performance reasons.\n\nTrack changes in dependencies\n\nWhen reviewing an MR, users want to review changes to project dependencies.\n\nThe Rails backend compares project dependencies between the source branch and the target branch,\nand prepares a diff that’s presented in the MR page.\nThis is similar to how newly-introduced and fixed vulnerabilities are presented in a MR.\n\nProject dependencies being compared can be fetched from different data sources,\nand the Rails backend uses the fastest option that’s available:\n\nfetch from the relational DB, if has the project dependencies\n\nelse load from the internal Software of Bill of Materials (SBoM) if available\n\nelse load from the collection of Dependency Scanning reports\n\nProject dependencies all respond to the same interface so that they can be compared in the same way,\nindependently of the data source.",
+    "chunk_index": 15,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_16",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ational DB, if has the project dependencies\n\nelse load from the internal Software of Bill of Materials (SBoM) if available\n\nelse load from the collection of Dependency Scanning reports\n\nProject dependencies all respond to the same interface so that they can be compared in the same way,\nindependently of the data source.\n\nThe internal SBoM (when supported) can be created dynamically when calculating the diff, acting as an intermediary cache.\n\nThe diff itself can also be cached to speed up the loading of the MR page.\n\nDependency confusion protection\n\nUsers want to be warned about possible dependency confusion attacks.\nThese should be reported as vulnerability findings listed in the security dashboard of their projects.\n\nReporting changes in package checksums\n\nUsers want to be warned when the checksum of a project dependency has changed\neven though the package name, package version, and package source (if tracked) haven’t changed.\n\nPackage checksums need to be reported by Dependency Scanning analyzers as part of the Dependency Scanning report.\nOnce checksums are made available to the Rails backend, they can be stored in the project_dependencies table.",
+    "chunk_index": 16,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_17",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "even though the package name, package version, and package source (if tracked) haven’t changed.\n\nPackage checksums need to be reported by Dependency Scanning analyzers as part of the Dependency Scanning report.\nOnce checksums are made available to the Rails backend, they can be stored in the project_dependencies table.\n\nBefore upserting project dependencies when a CI pipeline finishes,\nthe backend fetches the current checksums from the project_dependencies table\nand compares them to the checksums of the corresponding dependencies it has in memory (and about to be upserted).\nIt then creates vulnerability findings for each project dependency where the new checksum doesn’t match the old one,\nand eventually proceeds with the upsert.\nThe security check can be handled in a separate job so that it doesn’t impact the upsert.\n\nChecksums can’t be stored in the package_versions table because:\n\nA package version can have multiple distributions, and each distribution can have multiple checksums.\n\nA package distribution can have multiple checksums corresponding to different hashing algorithms, like MD5 and SHA1.\n\npackages and packages_versions don’t track the package source,\nand there might be a collision between a public package and a private one.\n\nSince the backend simply compares checksums, it doesn’t matter that project_dependencies doesn’t track the package source.\n\nReporting a change of package source",
+    "chunk_index": 17,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_18",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "like MD5 and SHA1.\n\npackages and packages_versions don’t track the package source,\nand there might be a collision between a public package and a private one.\n\nSince the backend simply compares checksums, it doesn’t matter that project_dependencies doesn’t track the package source.\n\nReporting a change of package source\n\nUsers want to be warned when the source of a project dependency has changed.\nIn particular, they want to be notified when the package used to be fetched from a private registry,\nand is now fetched from a public registry.\n\nPackage sources need to be reported by Dependency Scanning analyzers as part of the Dependency Scanning report.\nOnce the sources are made available to the Rails backend, their URLs can be stored in a new package_sources table.\nso that they can be reused across projects dependencies.\n\nA new package_source_id column is added to track the source from which a dependency has been fetched.\nThis column might be NULL because there are cases where the analyzer cannot report the package source.\nFor instance, the analyzer might parse a lock file that doesn’t provide this information.\n\nSimilar to packages and package versions, package sources are upserted before upserting project dependencies for a completed pipeline.",
+    "chunk_index": 18,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_19",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "umn might be NULL because there are cases where the analyzer cannot report the package source.\nFor instance, the analyzer might parse a lock file that doesn’t provide this information.\n\nSimilar to packages and package versions, package sources are upserted before upserting project dependencies for a completed pipeline.\n\nBefore upserting project dependencies when a CI pipeline finishes,\nthe backend fetches the current package source IDs from the project_dependencies table\nand compares them to the source IDs of the corresponding dependencies it has in memory (and about to be upserted).\nIt then creates vulnerability findings for each project dependency where the source is about to change,\nand eventually proceeds with the upsert.\n\nReporting a package checksum mismatch\n\nUsers want to be warned when a project dependency matches a public package,\nbut the checksum of the dependency doesn’t match any distribution of that public package.\n\nWhen upserting project dependencies after a pipeline completes,\nthe backend collects the dependencies added to the project,\nand uses the package metadata DB to collect metadata on the public package versions matching these dependencies.\nIt then iterate the dependencies, and creates a vulnerability finding when the checksum of the dependency\ndoesn’t match any checksum of the corresponding package version.\n\nNew vulnerability findings created by the backend are false-positives in some cases:\n\nThe dependency is a private package whose name and version match a public package.",
+    "chunk_index": 19,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_20",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "dependencies, and creates a vulnerability finding when the checksum of the dependency\ndoesn’t match any checksum of the corresponding package version.\n\nNew vulnerability findings created by the backend are false-positives in some cases:\n\nThe dependency is a private package whose name and version match a public package.\n\nThe dependency uses a package distribution or an alternative checksum that isn’t tracked in the package metadata DB.\n\nIf the package source is being tracked in the project_dependencies table,\nthen this can be leveraged to exclude private packages when comparing the checksums.\n\nPackage metadata usually include the name of the package, a description of its purpose, an author list, a dependency list, etc.\n\nPackage metadata can be included in the installable package itself or kept in a separate file.\nAlso, they might be repeated by the registry hosting the package, and be fetched using the registry API.\n\nPackage registries might provide:\n\nversion metadata specific to a package version\n\npackage metadata that applies to all versions\n\nFor instance, the rubygems.org API provides both gem methods and gem version methods .\n\nIn most cases version metadata are immutable whereas package metadata are not.\nFor instance, the description, authors, and license of a package might change over time,\nbut these metadata won’t change for a specific package version.",
+    "chunk_index": 20,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_21",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "For instance, the rubygems.org API provides both gem methods and gem version methods .\n\nIn most cases version metadata are immutable whereas package metadata are not.\nFor instance, the description, authors, and license of a package might change over time,\nbut these metadata won’t change for a specific package version.\n\nWe introduce a new service that tracks public packages, looks for specific package metadata, and posts notifications when these metadata change.\nDepending on the package registry, the tracking service will either poll the registry API or listen to a feed of events.\n\nIn a simple design, the service could track relevant metadata fields in a relational DB.\n\nWhen a package is seen for the first time, the fields being tracked are store in a DB table.\n\nWhen new metadata is available for the same package, these metadata are compared to what’s in the DB.\n\nIf the new value doesn’t match the old one, a notification is posted and the DB record is upserted.\n\nIf we decide to track a new field, then two metadata updates are required to detect a change of that field, even if the package is already tracked in the DB.\nTo remove that limitation, the service can store raw metadata coming from package registries in a document database (Object Storage).\nWhen we decide to track a new field, we can process the existing metadata stored in the doc DB to fill up the new DB column corresponding to that field.",
+    "chunk_index": 21,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_22",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "age is already tracked in the DB.\nTo remove that limitation, the service can store raw metadata coming from package registries in a document database (Object Storage).\nWhen we decide to track a new field, we can process the existing metadata stored in the doc DB to fill up the new DB column corresponding to that field.\n\nThe service might use two DB tables to track changes in package metadata and version metadata, respectively.\nThese tables would be similar to the packages and package_versions tables of the GitLab backend.\nHowever, the backend only tracks packages and versions used as project dependencies,\nand it only stores the information it needs to search for specific dependencies.\n\nThe GitLab backend listens to the notifications posted by the tracking service\nand reacts by acting on the projects that depend on the package that’s updated.\nFor instance, it might react by creating vulnerability findings in all projects using the updated package.\n\nThe tracking service also exposes API endpoints to fetch the fields it extracts from package metadata,\nacting as a proxy for the package registries it tracks.\n\nLicense Scanning outside of a pipeline\n\nUsers want to track licenses used by their project dependencies without running a CI pipeline.\nThey are aware that running License Scanning outside of a pipeline has limitations,\nlike not being able to track licenses used by private packages.",
+    "chunk_index": 22,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_23",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "or the package registries it tracks.\n\nLicense Scanning outside of a pipeline\n\nUsers want to track licenses used by their project dependencies without running a CI pipeline.\nThey are aware that running License Scanning outside of a pipeline has limitations,\nlike not being able to track licenses used by private packages.\n\nTo perform License Scanning outside of a pipeline,\nthe backend extracts package types, names, and versions from the project dependencies\nand uses the package Tracking Service API to collect the corresponding licenses.\nIt then upserts licenses into software_licenses ,\nand inserts records into project_dependency_licenses to reflect the licenses that have been found.\n\nDoing License Scanning outside of a pipeline might be inaccurate if the project dependency is a private package\nwhose type, name, and version match a public package tracked by the Tracking Service.\nIf the package source of project dependencies are tracked in the relational DB,\nthen the backend can leverage this information to exclude private packages from the scan.\n\nThe backend can leverage the relational DB to list project dependencies\nif the branch being scanned is tracked by the project_dependencies table.\nIf this is not the case, then it uses the Dependency Scanning reports or any other document\nthat lists the project dependencies for the commit being scanned.\n\nNotifications about package updates\n\nUsers want to be notified about important events relative to packages their projects depend on.\nIn particular, they want to be notified about these events:\n\nA new major version has been published.",
+    "chunk_index": 23,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_24",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "any other document\nthat lists the project dependencies for the commit being scanned.\n\nNotifications about package updates\n\nUsers want to be notified about important events relative to packages their projects depend on.\nIn particular, they want to be notified about these events:\n\nA new major version has been published.\n\nA new minor version of the major version being used has been published.\n\nA new patch version of the minor version being used has been published.\n\nThe major version being used has reached end of life.\n\nThe software license has changed.\n\nThe package maintainers have changed.\n\nThe maintainers of the upstream project have changed.\n\nWhen one of these events occurs, the Tracking Service notifies the GitLab backend,\nand the backend reacts by listing all the projects using the updated package,\nand creating user notifications for these.\n\nDepending on the event, the backend might exclude projects that are not affected by the package update.\nFor instance, it won’t create notifications for a new minor version 1.2.3 if a project uses version 2.0.0 of the package.\n\nSince creating notifications for all projects depending on an updated package is a long process,\nthis task might be split up in multiple asynchronous jobs.\nFor instance, there could be one job per namespace and/or one job per project.\n\nThe exact notification messages and how they are delivered to users are to be defined.\n\nWarnings about yanked packages",
+    "chunk_index": 24,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_25",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ll projects depending on an updated package is a long process,\nthis task might be split up in multiple asynchronous jobs.\nFor instance, there could be one job per namespace and/or one job per project.\n\nThe exact notification messages and how they are delivered to users are to be defined.\n\nWarnings about yanked packages\n\nUsers want to be warned when a package their projects depend on has been yanked from the package registry.\nThis warning shows up as a new vulnerability finding listed in the security dashboard.\n\nWhen a package is yanked from a package registry, the Tracking Service notifies the GitLab backend,\nand the backend reacts by creating vulnerability findings in all projects that depend on the same package type and name.\nSimilarly, when it’s notified about a yanked package version,\nthe backend creates vulnerability findings in projects that depend on the exact same package type, name, and version.\n\nSince creating vulnerability findings for all projects depending on a yanked package is a long process,\nthis task might be split up in multiple asynchronous jobs.\nFor instance, there could be one job per namespace and/or one job per project.\n\nThe vulnerability finding created by the backend might be a false-positive\nwhen the package or version yanked from the public registry matches a private package the project depends on.\nHowever, the private package might be fetched from a registry that mirrors the public registry, so the finding might still be relevant.",
+    "chunk_index": 25,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_26",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "The vulnerability finding created by the backend might be a false-positive\nwhen the package or version yanked from the public registry matches a private package the project depends on.\nHowever, the private package might be fetched from a registry that mirrors the public registry, so the finding might still be relevant.\n\nSome services provide metrics on public packages, like a score that measures the quality and health of a package.\nLike the package registries, they provide package metadata that can be tracked using the Tracking Service.\n\nGitLab could either rely on existing package scoring services or create its own scoring service;\nin both cases the Tracking Service notifies the backend about a score change in the exact same way.\n\nWarnings about score going down\n\nUsers want to be notified when the score of a package they use as a project dependency goes down.\n\nWhen the package score goes down (like from B to C), the Tracking Service notifies the GitLab backend,\nand the backend reacts by listing all the projects using the updated package,\nand creating user notifications for these.\nThis is similar to sending notifications about a metadata that has changed on the package registry.\n\nA security advisory describes a vulnerability that applies to specific versions of a package.\nUnlike ordinary package metadata, security advisories associated to a given package version do change:\n\nA new security advisory can affect a package version at any time.\n\nAn existing advisory might be updated. For instance, its CVSS score might change.",
+    "chunk_index": 26,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_27",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "bes a vulnerability that applies to specific versions of a package.\nUnlike ordinary package metadata, security advisories associated to a given package version do change:\n\nA new security advisory can affect a package version at any time.\n\nAn existing advisory might be updated. For instance, its CVSS score might change.\n\nAn existing advisory might be removed because it no longer affects the version.\n\nSecurity advisories can be provided by The GitLab Advisory Database ,\nthe vulnerability database maintained by GitLab,\nor by other vulnerability databases, like ruby-advisory-db .\n\nTracking vulnerability databases\n\nIn order to support multiple vulnerability databases,\nwe introduce a new service that tracks these databases and notifies listeners about two kinds of events:\n\nA security advisory has been added to a vulnerability database.\n\nAn important field of an existing advisory has changed.\n\nThe tracking service also acts as a proxy for the vulnerability databases:\nit exposes an API endpoint that returns the security advisories for any package identified by a type, a name, and a version.\n\nIf GitLab only uses its own vulnerability database, then there are two possible architectures:\n\nThe tracking service is built on top of the gemnasium-db git repo,\nand it uses web hooks to react in real-time when YAML files are added or modified.\n\ngemnasium-db is replaced by a service that hosts the security advisories.\nIt behaves like the tracking service and notifies listeners about new advisories and advisory updates.\n\nDependency Scanning outside of a pipeline",
+    "chunk_index": 27,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_28",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ium-db git repo,\nand it uses web hooks to react in real-time when YAML files are added or modified.\n\ngemnasium-db is replaced by a service that hosts the security advisories.\nIt behaves like the tracking service and notifies listeners about new advisories and advisory updates.\n\nDependency Scanning outside of a pipeline\n\nUsers want to scan their project dependencies without running a CI pipeline.\nThey are aware of limitations, like not being able to scan projects that have no lock files.\n\nWhen running outside of a pipeline, Dependency Scanning relies on reports that list project dependencies.\nThese reports could either be the existing Dependency Scanning reports or some kind of SBoM artifacts.\nIn the future, the Rails backend could also process the lock files or dependency exports directly,\nremoving the need for CI jobs that list project dependencies.\n\nTo perform Dependency Scanning outside of a pipeline, the backend proceeds in 4 steps:\n\nextract the package types, names, and versions from the project dependencies being scanned\n\nconnect to the advisory database API or tracking service API to collect the advisories that match the package types and names\n\nevaluates the affected version range of each advisory; dependencies that use a version that’s not in range are not affected\n\ncreate vulnerability findings for each affected dependency\n\nWhen creating vulnerability findings, the backend combines:\n\ninformation specific to the affected dependency, like the package version and the file where the dependency is declared",
+    "chunk_index": 28,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_29",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "advisory; dependencies that use a version that’s not in range are not affected\n\ncreate vulnerability findings for each affected dependency\n\nWhen creating vulnerability findings, the backend combines:\n\ninformation specific to the affected dependency, like the package version and the file where the dependency is declared\n\ngeneric information coming from the security advisory, like a description of the security flaw, the CVE id, or the CVSS vector\n\nIn a mixed enviroment where Dependency Scanning can be performed by both the backend and scanning jobs,\nthe backend must set the vulnerability finding fingerprint,\nso that it matches the fingerprint of the same vulnerability reported by a scanning job.\nIf the fingerprints don’t match, then the vulnerability detected by the backend\nwill then be marked as no longer detected after a pipeline with Dependency Scanning jobs finishes.\n\nPerforming Dependency Scanning outside of a pipeline might lead to false-positives if the project dependency is a private package\nwhose type and name match a public package for which there’s a security advisory.\nHowever, this private package might be fetched from a registry that mirrors the public registry, so the vulnerability finding might still be relevant.\n\nWhen running on the CI, Dependency Scanning can benefit from post-analyzers\nthat cross check Dependency Scanning reports with other reports in order to flag false-positives.\nIf that’s the case, then Dependency Scanning won’t benefit from these post-analyzers when running outside of a pipeline,\nand it might report false-positives.",
+    "chunk_index": 29,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_30",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "g on the CI, Dependency Scanning can benefit from post-analyzers\nthat cross check Dependency Scanning reports with other reports in order to flag false-positives.\nIf that’s the case, then Dependency Scanning won’t benefit from these post-analyzers when running outside of a pipeline,\nand it might report false-positives.\n\nThe backend can leverage the relational DB to list project dependencies\nif the branch being scanned is tracked by the project_dependencies table.\nIf this is not the case, then it uses the Dependency Scanning reports or any other document\nthat lists the project dependencies for the commit being scanned.\n\nWhen running outside of a pipeline, Dependency Scanning should support all the filters it supports when running on the CI.\nIn particular, it should be capable of excluding development dependencies from the scan when this is supported by the Dependency Scanning CI job.\nToday scan filters are configured using CI variables, and these are not directly available to the Rails backend,\nso we might move scan filter settings to project settings.\n\nWarnings about new security advisories\n\nUsers want to be warned about new security advisories affecting their project dependencies without running a new CI pipeline.\nThey receive a notification, and a new vulnerability finding appears in their security dashboard.\nThey are aware that this finding might not be as accurate as the ones reported by a Dependency Scanning CI job,\nand that this might be a false-positive.",
+    "chunk_index": 30,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_31",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "fecting their project dependencies without running a new CI pipeline.\nThey receive a notification, and a new vulnerability finding appears in their security dashboard.\nThey are aware that this finding might not be as accurate as the ones reported by a Dependency Scanning CI job,\nand that this might be a false-positive.\n\nWhen a new security advisory is added to a vulnerability database, the GitLab backend is notified and it responds in 4 steps:\n\nIt lists all the projects using the affected package as a dependency, based on its package type and name.\n\nIt evaluates the range of the affected versions, and filters out the projects using a package version that’s not affected.\n\nIt creates vulnerability findings in all remaining projects.\n\nFinally, it creates user notifications for these new vulnerabilities.\n\nSince creating vulnerability findings and user notifications for all affected projects is a long process,\nthis task might be split up in multiple asynchronous jobs.\nFor instance, there would be one job per project that depends on the affected package.\nThe job would follow steps:\n\nevaluate the affected version range, and exit if the project doesn’t depend on any affected version\n\ncreate vulnerability findings for all project dependencies that match the affected version range\n\ncreate notifications for all users who have notifications enabled for that project\n\nThe backend uses the relational DB to efficiently list all the project dependencies that match the newly affected package.\n\nNotifications about updated security advisories",
+    "chunk_index": 31,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_32",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "all project dependencies that match the affected version range\n\ncreate notifications for all users who have notifications enabled for that project\n\nThe backend uses the relational DB to efficiently list all the project dependencies that match the newly affected package.\n\nNotifications about updated security advisories\n\nUsers want to be notified when a security advisory affecting their project dependencies changes.\nIn particular, they want to know when the CVSS score changes or when a new fix is available.\n\nWhen a new security advisory is updated, the GitLab backend is notified about that change,\nand it lists all the projects with a primary vulnerability identifier that matches the ID of the security advisory.\nIt then creates user notifications about this change in all matching projects.\n\nIt is assumed that the primary identifier of the Dependency Scanning vulnerability finding is the ID of the security advisory, like the CVE ID.\nThis identifier is tracked in the existing primary_identifier_id column of the vulnerability_occurrences table.\n\nTo find projects affected by the updated advisory,\nthe backend performs a SQL query that joins projects , vulnerability_occurrences and vulnerability_identifiers .\nThe two last tables are joined on vulnerability_occurrences.primary_identifier_id .\nIf the advisory has a CVE ID, then query is filtered on identifiers WHERE vulnerability_identifiers.external_type is cve and where vulnerability_identifiers.external_type equals the CVE id.",
+    "chunk_index": 32,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_33",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ty_occurrences and vulnerability_identifiers .\nThe two last tables are joined on vulnerability_occurrences.primary_identifier_id .\nIf the advisory has a CVE ID, then query is filtered on identifiers WHERE vulnerability_identifiers.external_type is cve and where vulnerability_identifiers.external_type equals the CVE id.\n\nThe query that lists matching projects uses the existing index on vulnerability_occurrences.primary_identifier .\nTo make it efficient, a composite index on vulnerability_identifiers.external_type and vulnerability_identifiers.external_name is also needed.\n\nSoftware of Bill of Materials\n\nA Software Bill of Materials (SBoM) is a document that lists components in a piece of software.\nThe components are identified using URLs, sets of coordinates, or some other kind of IDs.\nComponents might have additional metadata like a list of authors, URLs, licenses, security advisories, etc.\nThe document usually describes both the software for which the SBoM was created and the tool used to create the SBoM.\n\nIn this document we focus on application-level packages detected by Dependency Scanning and License Scanning\neven though SBoMs can also list system-level packages detected by Container Scanning\nor components tracked manually and not detected by scanners.\n\nThere are many different SBoM formats but this document focuses on CycloneDX because it is comprehensive, extensible, and well supported by open source libraries and automation tools.",
+    "chunk_index": 33,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_34",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "h SBoMs can also list system-level packages detected by Container Scanning\nor components tracked manually and not detected by scanners.\n\nThere are many different SBoM formats but this document focuses on CycloneDX because it is comprehensive, extensible, and well supported by open source libraries and automation tools.\n\nCycloneDX can be used for an inventory of components used as project dependencies.\nCyloneDX components can be identified using SWID, CPE, or Package URL (PURL).\nLike the package slug of the gemnasium-db vulnerability database,\nthe PURL combines the package type, the full package name, and the package version.\nPURL also supports non-default package registries or repositories.\n\nComponents can be linked to describe a dependency graph .\nDependencies can either be transient (dependencies of components) or direct (dependencies of the software itself).\nDependencies have no metadata and it’s not possible to distinguish development dependencies from production ones.\nHowever, dependency metadata could be supported by extending the CycloneDX format.\n\nComponents can have multiple licenses .\nA license can be described using a name, a URL, a SPDX identifier, and by quoting the license itself.\nSPDX expressions are also supported.\n\nComponents can have external URLs ,\nand each URL can provide multiple checksums or “hashes”.\nThis can be used to store signatures of package distributions.",
+    "chunk_index": 34,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_35",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "have multiple licenses .\nA license can be described using a name, a URL, a SPDX identifier, and by quoting the license itself.\nSPDX expressions are also supported.\n\nComponents can have external URLs ,\nand each URL can provide multiple checksums or “hashes”.\nThis can be used to store signatures of package distributions.\n\nSBoM metadata can describe the software for which the inventory was created.\nIt doesn’t seem possible to describe a composite software made of multiple subprojects, like a Gradle multi-project build.\nHowever, there are at least two ways the parent project and its subproject can be described using CycloneDX:\n\nby describing the subprojects as “components” of the parent project\n\nby having multiple CycloneDX documents\n\nCycloneDX doesn’t track the dependency files being used to do an inventory.\nAs a result, the SBoM can’t be used to redirect users to the file that introduces a component listed in the inventory.\nHowever, there are ways we can circumvent this limitation:\n\nUse global metadata properties to track the dependency file (and optional lock file) where the dependencies were detected. It’s not possible to track multiple files of the same type though.\n\nUse component properties to track the dependency file (and optional lock file) where each dependency was detected. This introduces redundancies but is more flexible.\n\nCreate a CycloneDX extension to accurately describe the dependency files, and how they relate to the components.",
+    "chunk_index": 35,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_36",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "multiple files of the same type though.\n\nUse component properties to track the dependency file (and optional lock file) where each dependency was detected. This introduces redundancies but is more flexible.\n\nCreate a CycloneDX extension to accurately describe the dependency files, and how they relate to the components.\n\nThe vulnerability extension can be used to embed vulnerabilities in the SBoM and link them to the components.\nA vulnerability can have:\n\na source name (like NVD) and URL\n\nCVSS vectors, base score, etc.\n\nA vulnerability only has one identifier, and it looks like this has to be a CVE ID. To be checked.\nAlso, it doesn’t seem possible to provide a short description for the vulnerability.\n\nThe Internal SBoM (ISBoM) is a document or a set of documents that describe all the dependencies of a project commit.\nIt must contain all the data needed to generate SBoM exports, render the Dependency List, compare dependencies, and perform new dependency scans on old commits.",
+    "chunk_index": 36,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_37",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "short description for the vulnerability.\n\nThe Internal SBoM (ISBoM) is a document or a set of documents that describe all the dependencies of a project commit.\nIt must contain all the data needed to generate SBoM exports, render the Dependency List, compare dependencies, and perform new dependency scans on old commits.\n\nThe primary goal of the ISBoM is to reduce maintenance cost by introducing a file format that is both comprehensive and extensible;\nthis way we don’t have to maintain adapters for a variety of formats and format versions.\nNewer versions of the Rails backend should remain backwards compatible with older versions of the ISBoM,\nmaking it possible to export a new SBoM for an old git commit without running a new CI pipeline.\nTo achieve that goal, and considering that the SBoM represents a lot of information, the ISBoM is stored as a file (or files) in Object Storage, and not in the relational DB.\nAlso, the file paths or URLs should be predictable so that the ISBoM can be retrieved without storing a significant amount of information in the relational DB.\nTo that effect, the ISBoM could either be:\n\na single SBoM document that can track multiple dependency files and describe a multi-project repository\n\na collection of SBoM documents combined in an archive\n\nThe secondary goals are:\n\nFast parsing: Project dependencies are efficiently extracted from the ISBoM, with or without graph information. It should be possible to extract project dependencies corresponding to a set of dependency files without parsing the entire ISBoM.",
+    "chunk_index": 37,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_38",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ollection of SBoM documents combined in an archive\n\nThe secondary goals are:\n\nFast parsing: Project dependencies are efficiently extracted from the ISBoM, with or without graph information. It should be possible to extract project dependencies corresponding to a set of dependency files without parsing the entire ISBoM.\n\nEfficient Storage: The ISBoM is compressed when it becomes unlikely that this is going to be accessed.\n\nSince it’s a long lasting document, the ISBoM should only contain immutable data.\nIn particular, it might contain license information but it should not contain vulnerabilities detected in project dependencies;\nover time vulnerabilities can change and new vulnerabilities can be added, resulting in a vulnerability list that’s inaccurate and/or incomplete.\n\nThe ISBoM is primarily used to create SBoM exports but it can also be used to support other features\nwhen project dependencies are not tracked in the relational DB:\n\ncompare dependencies between the source branch and the target branch of an MR\n\nrender the Dependency List\n\nshow dependency paths or dependency graphs in the Dependency List\n\nfind new vulnerabilities\n\nFor features that only need basic information on project dependencies,\nthe ISBoM can be used as a fallback when project dependencies are not available in the relational DB for the commit being processed.\n(It’s assumed that it’s faster to retrieve these information from the DB tables.)\nIn this case, the ISBoM can be used to fill the DB tables, to later use these tables as a cache.",
+    "chunk_index": 38,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_39",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "dencies,\nthe ISBoM can be used as a fallback when project dependencies are not available in the relational DB for the commit being processed.\n(It’s assumed that it’s faster to retrieve these information from the DB tables.)\nIn this case, the ISBoM can be used to fill the DB tables, to later use these tables as a cache.\n\nIf the scanning jobs don’t provide the information needed to export the SBoM,\nthen this information should be retrieved from external services and added to the ISBoM.\nFor instance, if license information or the authors list is needed for the SBoM export,\nthey should be fetched form the registry or repository hosting the package, either directly or via a Tracking Service.\nThis complicates the creation of the ISBoM but ensures that the ISBoM is complete and can be used directly.\n\nSBoM as a License Scanning artifact\n\nCycloneDX is a superset of the License Scanning (LS) report format:\n\nCombined with the package manager, the package name and version (LS) can be converted to a Package URL (CycloneDX).\n\nLicense IDs (LS) can be used as SPDX IDs (CycloneDX) if they match the SPDX License List .\n\nLicense can have a name and a URL in both formats.\n\nLike CycloneDX, LS reports don’t track the dependency files that introduce project dependencies\nor the subprojects of a multi-project build/repository.",
+    "chunk_index": 39,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_40",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ackage URL (CycloneDX).\n\nLicense IDs (LS) can be used as SPDX IDs (CycloneDX) if they match the SPDX License List .\n\nLicense can have a name and a URL in both formats.\n\nLike CycloneDX, LS reports don’t track the dependency files that introduce project dependencies\nor the subprojects of a multi-project build/repository.\n\nAs a result, the existing License Scanning job can be changed to generate CycloneDX documents.\nConversely, the Rails backend can be changed to use CycloneDX documents instead of the existing LS reports or to support both formats.\nHowever, the fields the backend needs to implement License Scanning features are optional in CycloneDX\nand the backend must be able to handle incomplete documents.\n\nSBoM as a Dependency Scanning artifact\n\nCycloneDX is NOT a superset of the Dependency Scanning (DS) report format:\n\nIt can’t track the dependency file that introduces a dependency, either directly or indirectly.\n\nIt can’t describe a composite project, like multi-project Gradle build.\n\nVulnerabilities can’t have a short description (vulnerability name).\n\nVulnerabilities can’t have alternative identifiers, and it looks like only CVE IDs are supported.\n\nHowever, it’s possible to remove these limitations by extending CycloneDX.\n(It might be necessary to generate multiple CycloneDX documents to accurately describe multi-project builds and repositories.)\n\nAs a result, the existing Dependency Scanning job can be changed to generate CycloneDX documents,\nbut these documents won’t be as accurate as the original DS report until we write the CycloneDX extensions that fill the gap.",
+    "chunk_index": 40,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_41",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ate multiple CycloneDX documents to accurately describe multi-project builds and repositories.)\n\nAs a result, the existing Dependency Scanning job can be changed to generate CycloneDX documents,\nbut these documents won’t be as accurate as the original DS report until we write the CycloneDX extensions that fill the gap.\n\nThe Rails backend can be changed to use CycloneDX documents instead of the existing DS reports,\nbut not before extending CycloneDX so that its SBoM accurately tracks dependency files.\nWe might change the backend to support vulnerabilities that don’t have a short description and alternative identifiers; this seems affordable.\nHowever, the backend heavily relies on the dependency file path when rendering the dependency list and when tracking vulnerabilities.\n\nUsers want to export the SBoM of their projects to the format they use, like CylconeDX.\nThey might need an SBoM that covers all the projects of a project group, a workspace, or an instance.\nIf it takes a significant amount of time to generate the SBoM, users need to be notified when it’s ready.\nDepending on project settings and group settings, SBoM exports are created:\n\non user request, for any project commit\n\nwhenever a project release is created\n\nperiodically, for all relevant branches\n\nTechnically an SBoM export of a project commit could be created from:\n\nall the Dependency Scanning and License Scanning reports of the latest successfull pipeline\n\nthe Internal SBoM corresponding to the commit\n\nUsing the ISBoM as the input has multiple benefits:",
+    "chunk_index": 41,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_42",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ease is created\n\nperiodically, for all relevant branches\n\nTechnically an SBoM export of a project commit could be created from:\n\nall the Dependency Scanning and License Scanning reports of the latest successfull pipeline\n\nthe Internal SBoM corresponding to the commit\n\nUsing the ISBoM as the input has multiple benefits:\n\nThere’s no need to query the CI database to list the CI artifacts.\n\nThere’s only one file to retrieve from Object Storage.\n\nThe ISBoM format is more stable compared to the reports used to build it.\n\nThe ISBoM already provides package metadata needed for the SBoM export.\n\nOverall this is faster, especially when processing a large number of projects.\n\nThe SBoM export may consist of multiple SBoM documents combined in an archive.\n\nThe export might cover all the projects of a project group or a workspace, resulting in multiple SBoM documents.\n\nThe GitLab project might be a multi-project repository, and depending on the SBoM format\nit might be necessary to create multiple SBoM documents to do a full inventory.\n\nWhen the exports consists of multiple SBoM documents,\nit is available as a tgz archive or a zip archive, depending on the project settings or group settings.\nCompressed archives are convenient to download and they also have a positive impact on storage.\n\nFor simplicity, on-demand exports could be limited to a single project\nto ensure that it only takes seconds to generate the export.\nIf quick enough, this task could be handled synchronously,\nwhich simplifies the UI and removes the need for a dedicated Rails worker.",
+    "chunk_index": 42,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_43",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "load and they also have a positive impact on storage.\n\nFor simplicity, on-demand exports could be limited to a single project\nto ensure that it only takes seconds to generate the export.\nIf quick enough, this task could be handled synchronously,\nwhich simplifies the UI and removes the need for a dedicated Rails worker.\n\nIt’s assumed that SBoM exports of a project group or workspace take too long to be performed synchronously on demand request,\nand that these tasks should be handled by dedicated Rails workers.\nPeriodic SBoM exports are then performed by periodic Rails jobs.\n\nSBoM exports created asynchronously are stored in Object Storage.\nUsers might need an SBoM export longer after the corresponding code was published.\n\nIf SBoM exports are created from CI artifacts, then they should have a specific retention policy, and expire later.\n\nIf SBoM exports are created from long lasting ISBoMs, then they can be safely removed to save space.\n\nSBoM as a release asset\n\nOne or multiple SBoM exports are linked to a project release when it’s created, depending on the project settings.\nThe SBoM exports are stored on Object Storage and linked to the release using asset links.\nIdeally the feature supports three scenarios:\n\nThe SBoM export is already available when creating the release.\n\nThe SBoM export is in progress, and linked when available.\n\nThere is no SBoM export. The export should be triggered and the SBoM should later be linked when available.\n\nExplain dependencies using graphs",
+    "chunk_index": 43,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_44",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "inks.\nIdeally the feature supports three scenarios:\n\nThe SBoM export is already available when creating the release.\n\nThe SBoM export is in progress, and linked when available.\n\nThere is no SBoM export. The export should be triggered and the SBoM should later be linked when available.\n\nExplain dependencies using graphs\n\nUsers want to know why their project depends on a specific package even though it’s not explicitly required;\nthey want to know the relationship between a transient dependency and dependencies introduced in the dependency files they maintain.\nThis relationship could be presented in different ways:\n\nlist all the paths that connect the transient dependency to the introduced ones\n\nshow the full dependency graph and highlight nodes and edges that connect the transient dependency to the introduced ones\n\nshow a sub-graph that only includes the transient dependency and the introduced dependencies connected to it\n\nA single project might have multiple dependency graphs, and these might be stored in multiple artifacts generated by one or multiple scanning jobs.\n\nDepending on the report format being used, multiple documents might be necessary to describe all the dependencies of a multi-project repository or build.\n\nWhen a repository uses multiple package managers, it might be processed by multiple scanning jobs, resulting in multiple CI artifacts.",
+    "chunk_index": 44,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_45",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "ne or multiple scanning jobs.\n\nDepending on the report format being used, multiple documents might be necessary to describe all the dependencies of a multi-project repository or build.\n\nWhen a repository uses multiple package managers, it might be processed by multiple scanning jobs, resulting in multiple CI artifacts.\n\nThat said, users only want to know how one specific transient dependency is connected to introduced dependencies,\nand a single dependency graph is sufficient to answer that question;\nthe information can be retreived from a single Dependency Scanning report or SBoM artifact.\n\nThe implementation is mostly the same independently of what is presented in the UI.\n\nThe frontend asks the sub-graph for a package name, package version, dependency file path, commit SHA, and project ID.\n\nIf the sub-graph is highlighted in the graph, then the frontend also requests the full graph for a file, commit, and project.\n\nThe backend fetches the CI artifact corresponding to the file, commit, and project.\n\nThe backend builds the full dependency graph and calculates the sub-graph.\n\nThe backend returns the sub-graph, a list of paths, or whatever the frontend needs to explain the transient dependency.\n\nFrontend could use GraphQL to query the graph.\n\nIf users explore one specific transient dependency, it becomes likely that they explore other transient dependencies of the same file, commit, and project.\nAs an optimization, the backend should then cache the corresponding dependency graph, so that these steps are not repeated:",
+    "chunk_index": 45,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_46",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "d could use GraphQL to query the graph.\n\nIf users explore one specific transient dependency, it becomes likely that they explore other transient dependencies of the same file, commit, and project.\nAs an optimization, the backend should then cache the corresponding dependency graph, so that these steps are not repeated:\n\nList the CI artifacts and find the one corresponding to a dependency file, commit, and project.\n\nParse the CI artifact being found and extract graph information.\n\nAlternatively, dependency graph information could be fetched from the ISBoM.\nIf that’s the case, then the ISBoM format should be optimized to efficiently retrieve the graph for a specific dependency file\nwithout parsing and loading in memory the entire ISBoM.\n\nGroup vulnerabilities by introduced dependencies\n\nUsers want to know which dependencies introduced in the editable dependency files are responsible for the vulnerabilities being detected.\nTo address this, the existing dependency list should group vulnerabilities per introduced dependency.\nAn introduced dependency is responsible for a vulnerability if it’s directly affected or it depends on a package that’s affected (a transient dependency).\n\nTransient dependencies might be shared by multiple introduced dependencies,\nso there’s a N-N relationship between introduced dependencies and vulnerabilities:\n\nAn introduced dependency might have multiple vulnerabilities.\n\nA vulnerability might be connected to multiple introduced dependencies.",
+    "chunk_index": 46,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_47",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "a transient dependency).\n\nTransient dependencies might be shared by multiple introduced dependencies,\nso there’s a N-N relationship between introduced dependencies and vulnerabilities:\n\nAn introduced dependency might have multiple vulnerabilities.\n\nA vulnerability might be connected to multiple introduced dependencies.\n\nGrouping vulnerabilities by introduced dependencies could be extended to all dependencies,\nthat is any transient dependency that has dependencies.\nFor instance, if an introduced dependency A depends on B, and transient dependency B depends on C and D, then we could group:\n\nvulnerabilities related to A; these are vulnerabilities directly affecting A, B, C, or D\n\nvulnerabilities related to B; these are vulnerabilities directly affecting B, C, or D\n\nThe relationships between the affected dependencies and their ancestors are described by the dependency graph.\nThe dependency graph is not part of the Dependency Scanning report at the moment,\nbut the existing report will be replaced, extended, or completed to provide the graph.\n\nTo efficiently fetch the introduced dependencies from the relational DB,\nwe could add a new introduced boolean column to the project_dependencies table,\nand set when upserting project dependencies for the branch being tracked.\nThe backend fetches and processes the dependency graph to establish whether a dependency is introduced or transient.\nThe column is NULL if the graph isn’t available. This might be because of limitations in the analyzer or in the dependency files they parse.",
+    "chunk_index": 47,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_48",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "n upserting project dependencies for the branch being tracked.\nThe backend fetches and processes the dependency graph to establish whether a dependency is introduced or transient.\nThe column is NULL if the graph isn’t available. This might be because of limitations in the analyzer or in the dependency files they parse.\n\nTo prepare a list of introduced dependencies along with all related vulnerabilities,\nthe backend proceeds in 4 steps:\n\nfetch introduced project dependencies from the relational DB, possibly using project_dependencies.introduced\n\nload corresponding dependency graphs from Object Storage\n\nfetch vulnerability findings for the same project branch\n\nbuild a dependency map that connects the affected dependencies to the introduced dependencies\n\ngroup the vulnerability findings per introduced using the dependency map\n\nThe dependency list could be limited to the dependencies introduced in one specific file, like api/Gemfile .\nThis would make the backend more efficient:\n\nIt fetches the project dependencies matching that file when querying the relational DB.\n\nIt fetches all vulnerability findings for the project branch, but it doesn’t keep in memory the findings where the location doesn’t match the file.\n\nIt only loads and processes the dependency graph corresponding to the file.\n\nTechnically, api/Gemfile could be resolved to api/Gemfile.lock if this is the only file we track in the project_dependency_files table.",
+    "chunk_index": 48,
+    "total_chunks": 50
+  },
+  {
+    "chunk_id": "7cfc55e2e186_49",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information",
+    "title": "Data model for Dependencies Information",
+    "source": "handbook",
+    "headings": [
+      "Data model for Dependencies Information",
+      "Overview",
+      "Dependency search",
+      "Search for a package",
+      "Search across protected branches and releases"
+    ],
+    "text": "the project branch, but it doesn’t keep in memory the findings where the location doesn’t match the file.\n\nIt only loads and processes the dependency graph corresponding to the file.\n\nTechnically, api/Gemfile could be resolved to api/Gemfile.lock if this is the only file we track in the project_dependency_files table.\n\nThe dependency map used to resolve affected transient dependency to introduced dependencies could be cached for performance.\nThe scope of the cache would be the project commit and the set of dependency files for which the map was generated.",
+    "chunk_index": 49,
+    "total_chunks": 50
+  }
+]

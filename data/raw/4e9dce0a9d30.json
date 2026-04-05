@@ -1,0 +1,12 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/okta/app",
+  "title": "Okta Applications",
+  "content": "Create an Application\n\nOkta Application Setup Guide (for System Owners)\n\nCreating SCIM Applications\n\nOkta is configured with assigned groups based on team member’s department or role attributes.\n\nOkta Application Groups",
+  "source": "handbook",
+  "headings": [
+    "Okta Applications",
+    "List of Applications",
+    "Create an Application",
+    "Application Users"
+  ]
+}

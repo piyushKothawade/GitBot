@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "ac98d09f058f_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/readmes/mike-lockhart",
+    "title": "MikeL's README",
+    "source": "handbook",
+    "headings": [
+      "MikeL's README",
+      "MikeL’s README",
+      "Related pages",
+      "About me",
+      "TL;DR"
+    ],
+    "text": "Mike Lockhart - Support Engineer\n\nThis page aims to help others who haven’t worked with me before, understand what that might be like.\n\nIt’s also a well-intentioned effort at building some trust by being vulnerable, and to share my ideas of a good working relationship, to reduce your anxiety when starting to work with me.\n\nPlease feel free to contribute to this page by opening a merge request, particularly if you’ve worked with me before and know something which should be added or improved.\n\n@mlockhart GitLab, Inc company profile\n\nGitLabbook general field notes, code, snippets, issues and work log\n\nMilosophical Me personal web\n\nList of Preferences for text editor, OS, food and so on\n\nMILOHAX.NET public memex TiddlyWiki\n\n@milohax personal GitLab\n\nsinewalker@github personal GitHub\n\nsinewalker@keybase secure messaging and file sharing\n\nG’day, I’m Mike! Computer generalist, percussionist, humanist, and dad. Sometimes also a computer-percussionist.\n\nI enjoy meeting and engaging with people, and solving customers’ technical problems by being their trusted ambassador to experienced technologists within the company. With my Support role I’m sure to be asking for help from all parts of GitLab. Hit me up for a coffee chat!\n\nMore than twenty years as a support sysadmin\n\nI like computers, tinkering and programming many kinds from 1980s onward\n\nGrew up and live in Tasmania, the island to the south of Australia’s mainland\n\nMarried since 1998, father of 3 boys\n\nAnimals: dog, cat, chickens\n\nHobbies: taiko drumming, walking, technical blogging, hacking (software and hardware)",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "ac98d09f058f_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/readmes/mike-lockhart",
+    "title": "MikeL's README",
+    "source": "handbook",
+    "headings": [
+      "MikeL's README",
+      "MikeL’s README",
+      "Related pages",
+      "About me",
+      "TL;DR"
+    ],
+    "text": "port sysadmin\n\nI like computers, tinkering and programming many kinds from 1980s onward\n\nGrew up and live in Tasmania, the island to the south of Australia’s mainland\n\nMarried since 1998, father of 3 boys\n\nAnimals: dog, cat, chickens\n\nHobbies: taiko drumming, walking, technical blogging, hacking (software and hardware)\n\nInterests: electronics, code, maps, musicology, multimedia\n\nI grew up in Northern Tasmania in the 1980s, cutting my teeth on 8-bit British micro’s, eagerly typing in codes from computer magazines and library books. After graduating from Uni of Tasmania I moved to Sydney, then the Blue Mountains, and spent 15 years cat-hurding at major IT corporations on all sorts of computers from mainframes to mobiles. My family and I returned to Tassie in 2013, where since I have been working as a support sysop for Linux-based web systems. My wife Jenny and I juggle three boys and various animals, in a little house South of Hobart.\n\nWhen not computing, I like to read, walk our dog while listening to music, or audio books, podcasts and Support Week In Review . I also cycle (casually) and play music. I play percussion, keyboards, a little bit of blues harp, and code. I also play trombone since I was ten, but not since our first child. With the family I like to play card- or board-games, and I regularly get involved in the boys’ Scouting activities.\n\nIt matters to me that I can say your name properly, even though I’m terrible at it. So do tell me if I say it wrong =)",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "ac98d09f058f_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/readmes/mike-lockhart",
+    "title": "MikeL's README",
+    "source": "handbook",
+    "headings": [
+      "MikeL's README",
+      "MikeL’s README",
+      "Related pages",
+      "About me",
+      "TL;DR"
+    ],
+    "text": "harp, and code. I also play trombone since I was ten, but not since our first child. With the family I like to play card- or board-games, and I regularly get involved in the boys’ Scouting activities.\n\nIt matters to me that I can say your name properly, even though I’m terrible at it. So do tell me if I say it wrong =)\n\nThe same goes for unconcious biases: if I do or say something to upset you, please tell me about it, if you feel able. I want to un-learn biases and be as inclusive as I can be.\n\nI live and work in the Australian Eastern Time Zone Australian Eastern Standard Time (UTC+10) in late Autumn/Winter/early Spring (Southern hemisphere) Australian Eastern Daylight Time (UTC+11) in late Spring/Summer/early Autumn\n\nAustralian Eastern Standard Time (UTC+10) in late Autumn/Winter/early Spring (Southern hemisphere)\n\nAustralian Eastern Daylight Time (UTC+11) in late Spring/Summer/early Autumn\n\nI’m more of a morning person than a night owl, usually do my best work before 12:00 (local), and not very useful after about 16:00\n\nI have a four-bit list of rules that I work by in computing. You’ll probably see a lot of overlap with GitLab’s core Values…\n\nI strive to write down new learnings and observations as soon as possible. I keep a digital lab book for this purpose\n\nAlso I keep a public wiki for more general notes. Dumping things in there gets them out of my brain, so that I can focuss better\n\nNew things excite me: be they technology, methods, people, language, ideas…\n\nStay calm and be kind\n\nWhat I assume about others",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "ac98d09f058f_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/readmes/mike-lockhart",
+    "title": "MikeL's README",
+    "source": "handbook",
+    "headings": [
+      "MikeL's README",
+      "MikeL’s README",
+      "Related pages",
+      "About me",
+      "TL;DR"
+    ],
+    "text": "s soon as possible. I keep a digital lab book for this purpose\n\nAlso I keep a public wiki for more general notes. Dumping things in there gets them out of my brain, so that I can focuss better\n\nNew things excite me: be they technology, methods, people, language, ideas…\n\nStay calm and be kind\n\nWhat I assume about others\n\nIf you’re doing something in a way that’s different to how I do it, then I’m super interested — I assume there are good reasons for how people work.\n\nI want to earn your trust and gain a better understanding of how you work.\n\nCommunicating with me\n\nThis “asynchronous” idea is new to me, and I love it. You are welcome to @-mention me in GitLab and Slack\n\nIf we’re both online then I’ll probably /zoom you after a couple of back-and-forth, if it seems we’re talking at cross purposes\n\nI check email maybe once or twice a day, so use Slack to get my attention\n\nIf I gave you my mobile number, then that means you’re welcome to call it. It goes silent between 22:00 and 07:00 (UTC+10/11)\n\nPairing is awesome! I always come away feeling great about what I learnt and who I learnt it from. Sometimes I might even show you something new, too\n\nI’m comfortable with long silences in pairing video calls. Just having the virtual company is nice as well\n\nResponding quickly on Slack. I may not even see things for a few hours or days, unless I’m mentioned or DM’d\n\nProne to overthink things, branch off-topic down curious rabbit holes, or ruminate on unresolved conflict\n\nMy quick witt is hobbled by my tendency toward dad jokes",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "ac98d09f058f_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/readmes/mike-lockhart",
+    "title": "MikeL's README",
+    "source": "handbook",
+    "headings": [
+      "MikeL's README",
+      "MikeL’s README",
+      "Related pages",
+      "About me",
+      "TL;DR"
+    ],
+    "text": "st having the virtual company is nice as well\n\nResponding quickly on Slack. I may not even see things for a few hours or days, unless I’m mentioned or DM’d\n\nProne to overthink things, branch off-topic down curious rabbit holes, or ruminate on unresolved conflict\n\nMy quick witt is hobbled by my tendency toward dad jokes\n\nSometimes I say perfectly innocent things, but with accidental innuendo. I’ve been told I’d make a good straight-man in a comedy duo\n\nI prefer to think in 24-hour times; AM/PM confuses me no end\n\nPeople ask me strange technical questions, because I know obscure things about computers and internets\n\nI’ve worked in the customer-facing support role all my career, and understand the sub-value “assume good intent” as well as keeping timely updates for customers\n\nNot affraid to admit when I don’t know something, but I will find it out or ask for help from someone who does know\n\nApproach difficult conversations with humility and empathy\n\nI will have your back, even if I don’t have the skills. At the very least, I make a good “rubber duck”/“sounding board”. No idea is too crazy, though we may both laugh about it afterwards",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

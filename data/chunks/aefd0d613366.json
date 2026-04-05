@@ -1,0 +1,98 @@
+[
+  {
+    "chunk_id": "aefd0d613366_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success",
+    "title": "Customer Experience",
+    "source": "handbook",
+    "headings": [
+      "Customer Experience",
+      "Mission Statement",
+      "North Star Metrics",
+      "Customer Experience Teams",
+      "Digital Strategy"
+    ],
+    "text": "The Customer Experience department is part of the GitLab Sales function who partners with our customers to deliver value and positive business outcomes throughout their journey with GitLab.\n\nThe team can be reached in Slack channel (internal only).\n\nTo deliver value to all customers by engaging in a consistent, repeatable, and scalable way across defined segments so that customers see the value in their investment with GitLab, and we retain and drive growth within our enterprise customers.\n\nThe mission of the Customer Experience Department is to provide these customers with experience in order to:\n\nAccelerate initial customer value\n\nMaximize long-term, sustainable customer value\n\nImprove overall customer satisfaction & referenceability\n\nMaximize the total value of the customer to GitLab\n\nOur top-level metrics are:\n\nRenewal Rate of ATR (available to renew)\n\nCustomer Outcomes Realized\n\nCustomer Experience Teams\n\nCustomer Success Manager handbook\n\nCustomer Success Engineer handbook\n\nCustomer Success Architect handbook\n\nRenewals Managers handbook\n\nDigital Strategy handbook\n\nDemo Systems documentation\n\nCustomer Success Decision Tree\n\nCSMAE Decision Tree - internal only\n\nThe account team is comprised of the Strategic Account Executive/Account Executive, Solutions Architect (Enterprise), and Customer Success Manager.\n\nMore information about the account team\n\nOverlap Between Solution Architects and Customer Success Managers or Architects",
+    "chunk_index": 0,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "aefd0d613366_1",
+    "url": "https://handbook.gitlab.com/handbook/customer-success",
+    "title": "Customer Experience",
+    "source": "handbook",
+    "headings": [
+      "Customer Experience",
+      "Mission Statement",
+      "North Star Metrics",
+      "Customer Experience Teams",
+      "Digital Strategy"
+    ],
+    "text": "ecision Tree\n\nCSMAE Decision Tree - internal only\n\nThe account team is comprised of the Strategic Account Executive/Account Executive, Solutions Architect (Enterprise), and Customer Success Manager.\n\nMore information about the account team\n\nOverlap Between Solution Architects and Customer Success Managers or Architects\n\nSA owns 1) pre-sales technical evaluation and relationships prior to the initial sale and 2) tier upgrades and new business units (i.e., connected new) within an existing customer. CSM owns 1) post-sales customer relationship and 2) license upgrades within an existing customer.\n\nMore information on the transition and ownership between Pre-Sales and Post-Sales\n\nEducation and Enablement\n\nAs a Customer Experience team member, it is important to be continuously learning more about our product and related industry topics. The education and enablement handbook page provides a dashboard of aggregated resources that we encourage you to use to get up to speed.\n\nCustomer Experience Playbooks\n\nSee the Playbooks Page\n\nCSM-Created, Enablement Focus:\n\nAll CSM-created workshops\n\nCSE-Created, Enablement Focus:\n\nGitLab User Webinars and Labs\n\nUsing Salesforce within Customer Success\n\nVisit this page for more info on using Salesforce within Customer Success.\n\nUsing Gainsight with Customer Success\n\nVisit this page for more information on using Gainsight within Customer Success.\n\nUsing the Customer Feedback Form\n\nVisit this page for more information on submitting Customer Feedback.",
+    "chunk_index": 1,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "aefd0d613366_2",
+    "url": "https://handbook.gitlab.com/handbook/customer-success",
+    "title": "Customer Experience",
+    "source": "handbook",
+    "headings": [
+      "Customer Experience",
+      "Mission Statement",
+      "North Star Metrics",
+      "Customer Experience Teams",
+      "Digital Strategy"
+    ],
+    "text": "n Customer Success\n\nVisit this page for more info on using Salesforce within Customer Success.\n\nUsing Gainsight with Customer Success\n\nVisit this page for more information on using Gainsight within Customer Success.\n\nUsing the Customer Feedback Form\n\nVisit this page for more information on submitting Customer Feedback.\n\nOutside of Engineering the Customer Experience team has the largest concentration of tooling development capability. The team has unique needs that can’t always be solved by GitLab’s single DevOps platform . However, it is important to dogfood and avoid dogfooding anti-patterns . As a result the Product organization heavily weights internal customers when considering prioritization. If you are considering building tooling in support of Customer Experience priorities outside of GitLab, please follow the dogfooding process .\n\nCustomer Experience AWS Test Account\n\nIn an effort to keep AWS spend down, initiatives are being taken to automatically clean up our AWS account. This account is primarily used as a proof of concept for IaC and creating demos for GitLab customers. An automated cleanup script is currently being tested that will tag, shutdown and delete old resources as they are no longer needed. The automation will:\n\nTurn off and Tag Un-named resources. When resources are created a “Name” tag should be created with a value that’s meaningful and indicates who deployed the resource. Example: {initials}-GitLabRunner\n\nNew Resources will be automatically tagged with a Discovered and Expiration tag",
+    "chunk_index": 2,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "aefd0d613366_3",
+    "url": "https://handbook.gitlab.com/handbook/customer-success",
+    "title": "Customer Experience",
+    "source": "handbook",
+    "headings": [
+      "Customer Experience",
+      "Mission Statement",
+      "North Star Metrics",
+      "Customer Experience Teams",
+      "Digital Strategy"
+    ],
+    "text": "no longer needed. The automation will:\n\nTurn off and Tag Un-named resources. When resources are created a “Name” tag should be created with a value that’s meaningful and indicates who deployed the resource. Example: {initials}-GitLabRunner\n\nNew Resources will be automatically tagged with a Discovered and Expiration tag\n\nThe Expiration tag is 14 days after the discovery. The script will only a tag an instance once. If you need additional time, please change the date to a reasonable date for cleanup (Add a month or two for prospective customers)\n\nIf a resource needs to be permanent please set termination protection on the instance. This should also include tagging the instance with an explanation on why it’s permanent and what its for\n\nOn expiration the resource will be shut off and left for 7 days\n\nIn 7 days if the instance is still off a snapshot will be taken and it will be terminated\n\nIf the instance is still on but the expiration has not been changed it will be terminated\n\nCustomer Experience Tools and Scripts\n\nBy customer or internal request, we sometimes develop tools to automate certain GitLab tasks using the API. The resulting tools and scripts are publicly available for everyone to use and contribute to in the GitLab CS Tools group . Note: Those tools are not supported by GitLab Support.\n\nCommunities of Practice",
+    "chunk_index": 3,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "aefd0d613366_4",
+    "url": "https://handbook.gitlab.com/handbook/customer-success",
+    "title": "Customer Experience",
+    "source": "handbook",
+    "headings": [
+      "Customer Experience",
+      "Mission Statement",
+      "North Star Metrics",
+      "Customer Experience Teams",
+      "Digital Strategy"
+    ],
+    "text": "Scripts\n\nBy customer or internal request, we sometimes develop tools to automate certain GitLab tasks using the API. The resulting tools and scripts are publicly available for everyone to use and contribute to in the GitLab CS Tools group . Note: Those tools are not supported by GitLab Support.\n\nCommunities of Practice\n\nCommunity of Practice are cross-functional groups of SME’s (or aspiring to be!) within the CX organization dedicated to a topic within GitLab or the broader DevOps space. The goal is to build assets, best practices, demonstrations, and share experiences we learn from prospects and customers. In turn, CoP will build broader technical depth within our CX organization to better advise our customers and influence our product roadmap.\n\nCustomer Terrain Mapping Engagements\n\nTerrain Mapping discovery engagements provide customers with the benefit of GitLab’s experience with DevOps methodologies, Git, GitLab, CI, CD, and monitoring by brainstorming a high level, first draft discovery of the elements of a success plan to address various challenges. They are also mapped to professional services that can help with some of the elements identified in the engagement.\n\nSee the Terrain Mapping Engagements Page\n\nFrequently Asked Questions\n\nCustomer Experience team members maintain a FAQ to keep questions customers ask documented in a place where everyone can view and contribute to.\n\nCustomer Experience resource links outside handbook\n\nCustomer Reference Sheet\n\nCustomer Collaboration Project template\n\nWorkflow SA Demo Scenarios (Internal Only)\n\nSA-Created - Hands-On Workshops",
+    "chunk_index": 4,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "aefd0d613366_5",
+    "url": "https://handbook.gitlab.com/handbook/customer-success",
+    "title": "Customer Experience",
+    "source": "handbook",
+    "headings": [
+      "Customer Experience",
+      "Mission Statement",
+      "North Star Metrics",
+      "Customer Experience Teams",
+      "Digital Strategy"
+    ],
+    "text": "eam members maintain a FAQ to keep questions customers ask documented in a place where everyone can view and contribute to.\n\nCustomer Experience resource links outside handbook\n\nCustomer Reference Sheet\n\nCustomer Collaboration Project template\n\nWorkflow SA Demo Scenarios (Internal Only)\n\nSA-Created - Hands-On Workshops\n\nSales Skills Best Practices\n\nSales Discovery Questions\n\nEE Product Qualification Questions\n\nProof of Value Guidelines\n\nAccount Planning Template for Large/Strategic Accounts\n\nSales Development Group Handbook\n\nWith Whom to Talk to Ask Questions or Give Feedback on a GitLab feature\n\nCustomer Experience Meetings\n\nCustomer Experience has a few standing meetings:\n\nCX Team Monthly All-Hands - Monthly on the second Wednesday\n\nTechnical Skills Exchange (TSX) - Twice Monthly\n\nThe different groups within CX also have standing meetings, including meetings for the Customer Success teams and Renewal Managers, regional groups, and social calls.",
+    "chunk_index": 5,
+    "total_chunks": 6
+  }
+]

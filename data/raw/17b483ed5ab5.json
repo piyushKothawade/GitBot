@@ -1,0 +1,9 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/customer-success/workshops/secure/questionnaire",
+  "title": "CSM Secure Workshop Discovery Questionnaire",
+  "content": "CSM Secure Workshop Discovery Questionnaire\n\nUse this questionnaire to determine what information to cover in the workshop you are conducting with your customer. Copy the information below into an issue in your customer collaboration project, and fill in the details either by asking the questions during your initial planning session (recommended), or asynchronously by asking the customer to answer the questions in the issue.\n\nA few things to keep in mind about this questionnaire:\n\nThe capabilities listed are based on what the Secure Workshop materials currently support. As additional materials are added, this list will be expanded.\n\nTailor the questions to your customer and your understanding of their objectives. As appropriate, add discovery questions provided by the Marketing team .",
+  "source": "handbook",
+  "headings": [
+    "CSM Secure Workshop Discovery Questionnaire"
+  ]
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "chunk_id": "ab2234667df9_0",
+    "url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development",
+    "title": "Talent Development",
+    "source": "handbook",
+    "headings": [
+      "Talent Development",
+      "Overview",
+      "Purpose",
+      "Vision",
+      "Mission"
+    ],
+    "text": "Why we exist: GitLab Talent Development (commonly referred to as “Learning & Development”) exists to enhance team member performance, expand capabilities, and further develop skills that make GitLab team members the top talent in the industry. We strive to foster a culture of continous growth so that GitLab remains a great place to work. Positive impact on team member experience leads to a positive impact on results, which leads to a positive impact on GitLab customers.\n\nWhere are we going: GitLab seeks to be recognized as a top organization for remote learning & development. We aim for a future where everyone contributes to a culture of curiosity.\n\nWhat we do: We empower individual contributors and equip leaders through self-service learning. We accomplish a culture of development by:\n\nFocusing on skill-based learning\n\nProviding resources to improve career mobility\n\nDeveloping learning journeys for teams throughout the organization\n\nMeaningful and relevant content. We deliver learning solutions that help you reach your professional goals.\n\nValues aligned. Our learning solutions reinforce GitLab’s values and foster continuous learning and curiosity.\n\nDiverse approaches to learning. We apply a blended learning model to find solutions to various individual needs.\n\nCommunity. L&D offerings available to the public so that everyone can contribute.\n\nLearning & Development Team\n\nWe are a small team, but we’ve got a big role to play at GitLab!\n\nInterim Head of Talent Management and Development: Marcy Tavano\n\nSenior Learning and Development Program Manager : Jamie Allen",
+    "chunk_index": 0,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "ab2234667df9_1",
+    "url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development",
+    "title": "Talent Development",
+    "source": "handbook",
+    "headings": [
+      "Talent Development",
+      "Overview",
+      "Purpose",
+      "Vision",
+      "Mission"
+    ],
+    "text": "ividual needs.\n\nCommunity. L&D offerings available to the public so that everyone can contribute.\n\nLearning & Development Team\n\nWe are a small team, but we’ve got a big role to play at GitLab!\n\nInterim Head of Talent Management and Development: Marcy Tavano\n\nSenior Learning and Development Program Manager : Jamie Allen\n\nSenior Learning and Development Program Manager : Lauren Cairns\n\nSenior Learning and Development Program Manager : MQ Gillespie\n\nSenior Manager, Talent Management: Sylvia Mahlebjian\n\nTeam Member Resources\n\nThe Learning & Development team has a number of resources to help team members learn new skills. Click the button(s) below to learn more about each one:\n\nSlack: #learninganddevelopment\n\nEmail Us: learning@gitlab.com\n\nAvailable Learning and Development Support\n\nThe Learning and Development team is available to support GitLab teams in the following capacities. Requests will be evaluated as they come in based on team’s capacity for support, business impact, correlation to company OKRs, and number of impacted users.\n\nWhen to use this process\n\nCreating a new learning pathway\n\nCreate a new learning pathway or course for any audience\n\nUploading to company learning platform\n\nAdd new or existing learning content to the LXP\n\nIntegrating external content to learning platform\n\nAdd off-the-shelf learning from another provider\n\nRequesting content review\n\nL&D review of your learning content for handbook first, adult learning theory, and bias for async alignment\n\nRequesting new content creation\n\nYou’d like the L&D team to create or host learning content for your team",
+    "chunk_index": 1,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "ab2234667df9_2",
+    "url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development",
+    "title": "Talent Development",
+    "source": "handbook",
+    "headings": [
+      "Talent Development",
+      "Overview",
+      "Purpose",
+      "Vision",
+      "Mission"
+    ],
+    "text": "ontent to learning platform\n\nAdd off-the-shelf learning from another provider\n\nRequesting content review\n\nL&D review of your learning content for handbook first, adult learning theory, and bias for async alignment\n\nRequesting new content creation\n\nYou’d like the L&D team to create or host learning content for your team\n\nWe review and classify requests based on the scalability and possible organizational impact. Learning solutions that can be applied and used company-wide take priority. Our process includes:\n\nEvaluate the strategic impact of the learning session\n\nDetermine the level of work associated with the learning requirement\n\nAssess the impacted audience groups of the session\n\nIdentify measures of success\n\nAssess dates of delivery with the course schedule and forecast a future date\n\nWe’re formalizing a more structured process to engage with the team going forward, but for now please get started by opening an issue the lxp-contributions project and tagging a member of the L&D team to review. If you have any questions, you can always reach out to us in Slack via #learninganddevelopment .\n\nGitLab Product Training\n\nFor in depth GitLab product training, check out the Get Started with GitLab resources on GitLab University, and take a look at the various certifications available, which are freely accessibly for GitLab Team Members. The Talent Development team do not create learning content for product training. If you have any queries or requests for product training, please get in touch with the digital success team in the #digital-success Slack channel",
+    "chunk_index": 2,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "ab2234667df9_3",
+    "url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development",
+    "title": "Talent Development",
+    "source": "handbook",
+    "headings": [
+      "Talent Development",
+      "Overview",
+      "Purpose",
+      "Vision",
+      "Mission"
+    ],
+    "text": "at the various certifications available, which are freely accessibly for GitLab Team Members. The Talent Development team do not create learning content for product training. If you have any queries or requests for product training, please get in touch with the digital success team in the #digital-success Slack channel\n\nThe L&D team frequently uses the following tools for creating and communicating learning opportunities at GitLab.\n\nImage and infographic creation\n\nCreate Interactive Images\n\nRise 360 is an excellent tool for creating engaging, interactive elearning content that integrates seamlessly with our new LevelUp learning system. While LevelUp offers many great features, its interactive content authoring options can be somewhat limited, making Rise 360 a valuable complement for developing more dynamic and visually appealing courses. We maintain a small number of Rise 360 licenses that can be easily redistributed to team members based on project needs. If you’re interested in creating a Rise course and would like access to our licenses, please reach out in #learninganddevelopment where our team can support your course development needs and help you get started.RetryClaude can make mistakes. Please double-check responses.\n\nDeveloping Learning Content\n\nIf you’re looking to develop your own e-learning content, there are a number of things to think about in order to maximize it’s effectiveness.\n\nLearning Content Accessibility Guidelines\n\nIn July 2024, GitLab published the first iteration of our Learning Content Accessibility Guidelines .",
+    "chunk_index": 3,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "ab2234667df9_4",
+    "url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development",
+    "title": "Talent Development",
+    "source": "handbook",
+    "headings": [
+      "Talent Development",
+      "Overview",
+      "Purpose",
+      "Vision",
+      "Mission"
+    ],
+    "text": ".\n\nDeveloping Learning Content\n\nIf you’re looking to develop your own e-learning content, there are a number of things to think about in order to maximize it’s effectiveness.\n\nLearning Content Accessibility Guidelines\n\nIn July 2024, GitLab published the first iteration of our Learning Content Accessibility Guidelines .\n\nWe ask that team members who create both internal and external learning content:\n\nFamiliarize themselves with these guidelines\n\nApply these guidelines when creating learning content for internal and external use, when applicable\n\nRevisit existing learning content you have created, to consider whether any updates are appropriate\n\nTraining Content Development Principles\n\nKnow Your Audience - Analyze and assess the course audience. Ensure that all audience needs are accounted for at every level in the organization you are delivering the training too.\n\nDefine Learning Objectives - Highlight the learner outcome. Consider developing two to three broad overall statements of what the audience will achieve.\n\nBreak Down Complex Information - Consider breaking down complex information into easy to digest visuals or text. Reference the handbook but do not be afraid to create a visual representation or use storytelling for the audience.\n\nEngage the Learner - Adults learn through practice and involvement. Consider using tools to engage learners in a virtual setting like Mentimeter or Kahoot to stimulate interactivity.",
+    "chunk_index": 4,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "ab2234667df9_5",
+    "url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development",
+    "title": "Talent Development",
+    "source": "handbook",
+    "headings": [
+      "Talent Development",
+      "Overview",
+      "Purpose",
+      "Vision",
+      "Mission"
+    ],
+    "text": "est visuals or text. Reference the handbook but do not be afraid to create a visual representation or use storytelling for the audience.\n\nEngage the Learner - Adults learn through practice and involvement. Consider using tools to engage learners in a virtual setting like Mentimeter or Kahoot to stimulate interactivity.\n\nImplement Blended Learning Course Content - Give the learners pre-course work to read and review before the learning session. Use off-the-shelf resources and ensure the content is applicable to what will be covered in the session. Follow up to gauge how they’ve applied what they’ve learned on the job through surveys and questionnaires.\n\nApplication of Adult Learning Theory\n\nAdults learn differently in the workplace than in traditional learning environments or how they learned growing up. If you are developing training, consider applying principles related to Adult Learning Theories, those include:\n\nTransformative learning: Learning should change the individual through transformative learning approaches. Start with learning experiences that appeal to your specific audience, and then move to activities that challenge assumptions and points of view.\n\nSelf-directed learning: Emphasize informal learning experiences. Infuse applications of pre-reads and post-course follow up. Have the participants bring up examples of self-directed learning that they have taken that is related to the training course.",
+    "chunk_index": 5,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "ab2234667df9_6",
+    "url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development",
+    "title": "Talent Development",
+    "source": "handbook",
+    "headings": [
+      "Talent Development",
+      "Overview",
+      "Purpose",
+      "Vision",
+      "Mission"
+    ],
+    "text": "n move to activities that challenge assumptions and points of view.\n\nSelf-directed learning: Emphasize informal learning experiences. Infuse applications of pre-reads and post-course follow up. Have the participants bring up examples of self-directed learning that they have taken that is related to the training course.\n\nExperiential learning: Adults learn through experiences and by doing. When designing a learning experience, apply activities to stimulate learning by doing through role-playing, simulations, virtual labs, case studies, etc.\n\nAndragogy: Design learning experiences with the assumption that your participants will come to the table with their own set of life experiences and motivations. Adults tend to direct their own learning, learn better by doing, and want to quickly apply their learning to concrete situations.\n\nLearning Delivery Methods - Definitions\n\nInstructor-Led Training (ILT)\n\nPractice of training and learning material between an instructor and learners. Face-to-face training (classroom training)\n\nVirtual Instructor-Led Training (VILT)\n\nTraining that is delivered in a virtual environment (i.e. training in Zoom)\n\nLearning based on traditional learning theories which takes place electronically, often via the Internet.\n\nTraining that uses multiple methods to teach the new information to learners. It can include ILTs, self-paced materials, VILT sessions, etc.\n\nA seminar conducted virtually to a large audience\n\nHands-on or virtual demos, problem solving, tutorials where team members engage in discussion and activity on a particular subject",
+    "chunk_index": 6,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "ab2234667df9_7",
+    "url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development",
+    "title": "Talent Development",
+    "source": "handbook",
+    "headings": [
+      "Talent Development",
+      "Overview",
+      "Purpose",
+      "Vision",
+      "Mission"
+    ],
+    "text": "ining that uses multiple methods to teach the new information to learners. It can include ILTs, self-paced materials, VILT sessions, etc.\n\nA seminar conducted virtually to a large audience\n\nHands-on or virtual demos, problem solving, tutorials where team members engage in discussion and activity on a particular subject\n\nLeveraging Content Partner Resources\n\nGitLab provides access to premium content from leading industry partners to support diverse learning objectives across all teams.\n\nThrough Masterclass, team members can access world-class instruction from renowned experts across business, leadership, creative, and technical disciplines.\n\nFor technical teams, Google Cloud Skills Boost offers hands-on labs and courses to build cloud computing expertise and earn Google Cloud certifications.\n\nO’Reilly provides an extensive library of technical books, videos, and interactive learning resources covering programming, data science, cybersecurity, and emerging technologies.\n\nAdditionally, LevelUp houses an extensive, searchable library of content from various providers, making it easy to find relevant courses, tutorials, and resources tailored to specific skills and professional development goals. When planning your learning path, explore these curated content options first—they’re already vetted, high-quality, and immediately accessible to support your growth objectives.",
+    "chunk_index": 7,
+    "total_chunks": 8
+  }
+]

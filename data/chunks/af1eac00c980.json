@@ -1,0 +1,114 @@
+[
+  {
+    "chunk_id": "af1eac00c980_0",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/subject-matter-experts",
+    "title": "Solutions Architects - Subject Matter Experts",
+    "source": "handbook",
+    "headings": [
+      "Solutions Architects - Subject Matter Experts",
+      "Goals",
+      "Areas of Expertise",
+      "Responsibilities",
+      "Time Commitment"
+    ],
+    "text": "Solutions Architects - Subject Matter Experts\n\nThe Subject Matter Experts (SME) Program is an initiative designed to help solutions architects (SAs) provide better support to customers. The program will identify and onboard subject matter experts in key areas, such as AI, security, and agile planning.\n\nSMEs are Solutions Architects who will help SAs in their region to answer more-in-depths questions, provide deep technical expertise, and assist with customer demos and presentations when needed.\n\nThe goals of the SME Program are to:\n\nProvide fellow SAs with the knowledge and expertise they need to support customers effectively.\n\nImprove the quality of customer support by reducing the number of questions that SAs have to answer.\n\nIncrease customer satisfaction by providing them with access to experts who can answer their questions quickly and accurately.\n\nIn order to fulfill the above goals, the SME Program will be structured appropriately, with defined Roles and Responsibilities. .\n\nOther areas of the SME Program include:\n\nComplete SME Logistics - Collabation Project, Google Groups, Slack Channels\n\nSME Nomination and Onboarding - The Process to Become a SME\n\nRequest a SME process - How to Request a SME on an opportunity to provide technical guidance and expertise\n\nRequesting Collaterial, Articles and Best Practices to be Created & Gathered\n\nHolding Regular SME Cadences](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-cadences/)\n\nProcess to Gather Feedback from Customers, back to Product Management\n\nHow to Engage with, and Escalate to Product Management",
+    "chunk_index": 0,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "af1eac00c980_1",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/subject-matter-experts",
+    "title": "Solutions Architects - Subject Matter Experts",
+    "source": "handbook",
+    "headings": [
+      "Solutions Architects - Subject Matter Experts",
+      "Goals",
+      "Areas of Expertise",
+      "Responsibilities",
+      "Time Commitment"
+    ],
+    "text": "se\n\nRequesting Collaterial, Articles and Best Practices to be Created & Gathered\n\nHolding Regular SME Cadences](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-cadences/)\n\nProcess to Gather Feedback from Customers, back to Product Management\n\nHow to Engage with, and Escalate to Product Management\n\nThe SME Program, with formal PM engagement will initially focus on the following areas:\n\nThe following SME areas are also available but will not, as yet, require formal PM enagement:\n\nMetrics and Observability\n\nEmbedded DevOps Systems\n\nOther areas may be added in the future, depending on customer and SA demand, such as:\n\nOther Verticals sucu as Telecommunications etc.\n\nIn summary, the responsibilities of a SME includes\n\nProvide technical guidance and expertise\n\nMaintain collateral for each SME Area, Currently the CSM SMEs have collated resources and materials for each SME Area. They are maintained in Highspot at CS SME Hub of content .\n\nGather feedback from customers\n\nEngage with product management.\n\nIn detail, SMEs will be responsible for the following:",
+    "chunk_index": 1,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "af1eac00c980_2",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/subject-matter-experts",
+    "title": "Solutions Architects - Subject Matter Experts",
+    "source": "handbook",
+    "headings": [
+      "Solutions Architects - Subject Matter Experts",
+      "Goals",
+      "Areas of Expertise",
+      "Responsibilities",
+      "Time Commitment"
+    ],
+    "text": "idance and expertise\n\nMaintain collateral for each SME Area, Currently the CSM SMEs have collated resources and materials for each SME Area. They are maintained in Highspot at CS SME Hub of content .\n\nGather feedback from customers\n\nEngage with product management.\n\nIn detail, SMEs will be responsible for the following:\n\nProvide Technical Guidance and Expertise for the field and/ or customer, often in the form of: Staying up-to-date on the latest trends in their area of expertise. Providing updates to SAs and CSMs on Regional Calls during “SME Corner” Answering questions from SAs in the sme slack channels, as well as in StackOverFlow for Teams , the official Knowledge Base. Responding to Requests from SAs to assist on copportunities. Office hours to enable other SAs or CSMs Collaborate with Demo Architects on workshop updates and assist Solutions Architects with new feature adoption. Participate in field enablement activities such as Technical Skills Exchange . Customer Success Plans reviews Deliberate practice Form communities of practices among the SMEs for the same topic and with fellow SAs to foster the knowledge in the team.\n\nStaying up-to-date on the latest trends in their area of expertise.\n\nProviding updates to SAs and CSMs on Regional Calls during “SME Corner”\n\nAnswering questions from SAs in the sme slack channels, as well as in StackOverFlow for Teams , the official Knowledge Base.\n\nResponding to Requests from SAs to assist on copportunities.\n\nOffice hours to enable other SAs or CSMs",
+    "chunk_index": 2,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "af1eac00c980_3",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/subject-matter-experts",
+    "title": "Solutions Architects - Subject Matter Experts",
+    "source": "handbook",
+    "headings": [
+      "Solutions Architects - Subject Matter Experts",
+      "Goals",
+      "Areas of Expertise",
+      "Responsibilities",
+      "Time Commitment"
+    ],
+    "text": "rea of expertise.\n\nProviding updates to SAs and CSMs on Regional Calls during “SME Corner”\n\nAnswering questions from SAs in the sme slack channels, as well as in StackOverFlow for Teams , the official Knowledge Base.\n\nResponding to Requests from SAs to assist on copportunities.\n\nOffice hours to enable other SAs or CSMs\n\nCollaborate with Demo Architects on workshop updates and assist Solutions Architects with new feature adoption.\n\nParticipate in field enablement activities such as Technical Skills Exchange .\n\nCustomer Success Plans reviews\n\nForm communities of practices among the SMEs for the same topic and with fellow SAs to foster the knowledge in the team.\n\nMaintain Collateral in the Handbook or Highspot such as the CS SME Hub of content , to be used indepenently by account teams, including: Maintain List of SMEs (also in StackOverFlow) and SME Associates Develop and deliver training materials on their area of expertise. Creating a list of discovery questions to be used during discovery process by SAs Creating frequently asked questions by customers per category Gather and categorize recorded enablement sessions Work with PMs to maintain FAQs for each Area Create Golden demos Hands-on workshops Technical evaluation guidelines POV templates Common notional architecture diagrams Competitive intelligence Work with Enablement to ensure SA SME onboarding is updated. Put together a sequence of tasks, by which an SA can gain expertise in a particular area.\n\nMaintain List of SMEs (also in StackOverFlow) and SME Associates",
+    "chunk_index": 3,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "af1eac00c980_4",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/subject-matter-experts",
+    "title": "Solutions Architects - Subject Matter Experts",
+    "source": "handbook",
+    "headings": [
+      "Solutions Architects - Subject Matter Experts",
+      "Goals",
+      "Areas of Expertise",
+      "Responsibilities",
+      "Time Commitment"
+    ],
+    "text": "ical evaluation guidelines POV templates Common notional architecture diagrams Competitive intelligence Work with Enablement to ensure SA SME onboarding is updated. Put together a sequence of tasks, by which an SA can gain expertise in a particular area.\n\nMaintain List of SMEs (also in StackOverFlow) and SME Associates\n\nDevelop and deliver training materials on their area of expertise.\n\nCreating a list of discovery questions to be used during discovery process by SAs\n\nCreating frequently asked questions by customers per category\n\nGather and categorize recorded enablement sessions\n\nWork with PMs to maintain FAQs for each Area\n\nTechnical evaluation guidelines\n\nCommon notional architecture diagrams\n\nCompetitive intelligence\n\nWork with Enablement to ensure SA SME onboarding is updated. Put together a sequence of tasks, by which an SA can gain expertise in a particular area.",
+    "chunk_index": 4,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "af1eac00c980_5",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/subject-matter-experts",
+    "title": "Solutions Architects - Subject Matter Experts",
+    "source": "handbook",
+    "headings": [
+      "Solutions Architects - Subject Matter Experts",
+      "Goals",
+      "Areas of Expertise",
+      "Responsibilities",
+      "Time Commitment"
+    ],
+    "text": "rded enablement sessions\n\nWork with PMs to maintain FAQs for each Area\n\nTechnical evaluation guidelines\n\nCommon notional architecture diagrams\n\nCompetitive intelligence\n\nWork with Enablement to ensure SA SME onboarding is updated. Put together a sequence of tasks, by which an SA can gain expertise in a particular area.\n\nEngage Product Management and Gather Customer Feedback from the field to share with product and account teams, such as: Be a counterpart to the Product Manager in the corresponding product group Communicate with PMs and update the field via a shared medium of communication Ensure that SAs are submitting customer feedback for PM review Review and analyze submissions for patterns, get more context from SAs Meet with their SME Area Leads, at least once a month, async, to calibrate submissions, assign priorities, and prepare to present to PMs a narrative Maintain Issue Board of customer feedback and PM statuses Meet with PMs once a month to review high priority submissions get updates from PMs or work being done ensure submissions are being updated Contribute to product documentation\n\nBe a counterpart to the Product Manager in the corresponding product group\n\nCommunicate with PMs and update the field via a shared medium of communication\n\nEnsure that SAs are submitting customer feedback for PM review\n\nReview and analyze submissions for patterns, get more context from SAs\n\nMeet with their SME Area Leads, at least once a month, async, to calibrate submissions, assign priorities, and prepare to present to PMs a narrative",
+    "chunk_index": 5,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "af1eac00c980_6",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/subject-matter-experts",
+    "title": "Solutions Architects - Subject Matter Experts",
+    "source": "handbook",
+    "headings": [
+      "Solutions Architects - Subject Matter Experts",
+      "Goals",
+      "Areas of Expertise",
+      "Responsibilities",
+      "Time Commitment"
+    ],
+    "text": "a a shared medium of communication\n\nEnsure that SAs are submitting customer feedback for PM review\n\nReview and analyze submissions for patterns, get more context from SAs\n\nMeet with their SME Area Leads, at least once a month, async, to calibrate submissions, assign priorities, and prepare to present to PMs a narrative\n\nMaintain Issue Board of customer feedback and PM statuses\n\nMeet with PMs once a month to review high priority submissions\n\nget updates from PMs or work being done\n\nensure submissions are being updated\n\nContribute to product documentation\n\nFor other roles including SME Associates, SME Area Lead/ DRI and SME Program Lead, go to SME Responsibilities for further details.\n\nSMEs are expected to dedicate approximately 10-15% of their time to SME-related activities. This includes:\n\nAnswering questions from other SAs\n\nParticipating in SME/Product meetings\n\nDeveloping and delivering training materials\n\nStaying up-to-date with their area of expertise\n\nThe remaining 85-90% of their time will be dedicated to their regular SA responsibilities.\n\nRecognition and Growth\n\nBeing an SME provides opportunities for professional growth and recognition:\n\nIncreased visibility within the organization\n\nOpportunities to present at internal and external events\n\nPotential for career advancement\n\nRecognition in performance reviews\n\nSMEs will be regularly evaluated based on their contributions and impact on the SA team and customer satisfaction.  Here is the list of SME Metrics that would be gathered to quanify the impact of a SME’s contribution.",
+    "chunk_index": 6,
+    "total_chunks": 7
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "254cdbb2ecc2_0",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/lost_emails",
+    "title": "Lost Email Account",
+    "source": "handbook",
+    "headings": [
+      "Lost Email Account",
+      "Overview",
+      "Stage 0:Ticket Triage",
+      "Stage 1:Process",
+      "Paid user"
+    ],
+    "text": "This workflow covers cases when a user requests that their email address be changed, for example due to having lost access to all email addresses on their account and being asked to perform Account email verification in order to access their account.\n\nStage 0: Ticket Triage\n\nEnsure the ticket has the correct:\n\nCategory, such as Cannot access account\n\nSubcategory, such as Need to change my username/email\n\nImpacted email address\n\nAs the user has reportedly lost access to the email address associated with their GitLab.com account, they have likely raised the ticket using an alternate email address. As with all account activities, you should be particularly mindful of this and take care to not share any information related to the account which is not publicly available, or where applicable, account verification has not been successfully completed.\n\nThe actions support can take on accounts are different for free users and paid users. To confirm the user’s tier status, search for the user using the User Lookup GitLab Super App in Zendesk to confirm the user’s group memberships, if the user is not a member of any premium group they are considered a free user.\n\nRefer to Making Changes and Taking Actions on a user’s behalf for the options available to paid users.\n\nFree users who have lost access to all email addresses on their GitLab.com account have the following options:\n\nSelf-Service (Preferred): If the user can still log in, direct them to update their email in Profile Settings .",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "254cdbb2ecc2_1",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/lost_emails",
+    "title": "Lost Email Account",
+    "source": "handbook",
+    "headings": [
+      "Lost Email Account",
+      "Overview",
+      "Stage 0:Ticket Triage",
+      "Stage 1:Process",
+      "Paid user"
+    ],
+    "text": "o Making Changes and Taking Actions on a user’s behalf for the options available to paid users.\n\nFree users who have lost access to all email addresses on their GitLab.com account have the following options:\n\nSelf-Service (Preferred): If the user can still log in, direct them to update their email in Profile Settings .\n\nPurchase a Subscription: Free users may purchase a GitLab subscription to gain access to Priority Support for customer account recovery assistance. However they will still need to pass the account verification challenge questions .\n\nIf neither option applies, apply the Zendesk macro Support::SaaS::GitLab.com::Email::Free user verification code and submit the ticket as Solved . Note that this will close the ticket, removing any opportunity for further response from the user, do not use the macro if you believe further dialogue is needed.\n\nNote: If a free user raises data subject rights concerns regarding their account data, do not close the ticket. Instead, refer to the Free User Data Correction Request process for additional guidance.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

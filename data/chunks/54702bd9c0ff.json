@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "54702bd9c0ff_0",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/salesforce/cases",
+    "title": "Cases",
+    "source": "handbook",
+    "headings": [
+      "Cases",
+      "Understanding Salesforce Cases",
+      "What are Salesforce Cases",
+      "How do tickets become Salesforce Cases",
+      "Administrator tasks"
+    ],
+    "text": "This page documents how Zendesk tickets are synchronized to Salesforce Cases, including the automated workflow, administrator procedures, and troubleshooting guidance.\n\nDeployment type: Ad-hoc\n\nProject repos: Zendesk Global Zendesk US Government\n\nZendesk US Government\n\nUnderstanding Salesforce Cases\n\nWhat are Salesforce Cases\n\nIn Salesforce, a Case is a record that tracks a customer’s question, issue, feedback, or request.\n\nHow do tickets become Salesforce Cases\n\nNote: Only tickets associated with a Zendesk organization are synced to Salesforce. Tickets without an organization (such as free user inquiries) are not synced.\n\nWhenever a ticket (associated to an organization) is created or closed, a trigger in the Zendesk instance triggers a pipeline (via a Zendesk webhook) in the project for the corresponding Zendesk instance.\n\nThis causes the bin/run script to run, which does the following:\n\nFetch information on the ticket from Zendesk (including organization, requester, and assignee information)\n\nFetch information on the ticket from Zendesk (including organization, requester, and assignee information)\n\nFetch a list of Zendesk forms\n\nFetch a list of Zendesk forms\n\nSearch Salesforce to determine if the case exists SOQL used SELECT Id , Zendesk_Support_Ticket_ID__c , Priority , Status FROM Case WHERE Zendesk_Support_Ticket_URL__c = 'TICKET_URL'\n\nSearch Salesforce to determine if the case exists\n\nCreates a case if one does not exist\n\nCreates a case if one does not exist\n\nUpdates the case if one does exist\n\nUpdates the case if one does exist",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "54702bd9c0ff_1",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/salesforce/cases",
+    "title": "Cases",
+    "source": "handbook",
+    "headings": [
+      "Cases",
+      "Understanding Salesforce Cases",
+      "What are Salesforce Cases",
+      "How do tickets become Salesforce Cases",
+      "Administrator tasks"
+    ],
+    "text": "SELECT Id , Zendesk_Support_Ticket_ID__c , Priority , Status FROM Case WHERE Zendesk_Support_Ticket_URL__c = 'TICKET_URL'\n\nSearch Salesforce to determine if the case exists\n\nCreates a case if one does not exist\n\nCreates a case if one does not exist\n\nUpdates the case if one does exist\n\nUpdates the case if one does exist\n\nThe information synced to a Salesforce Case from a ticket is:\n\nTicket assignee’s name (if one is present)\n\nTicket requester’s email\n\nTicket requester’s name\n\nAgent accessible ticket URL\n\nAdministrator tasks are performed by Customer Support Operations team members with appropriate access to the project repositories.\n\nModifying the sync projects\n\nThis should only be done if there is a corresponding request issue (Feature Request, Administrative, Bug, etc.). If one does not exist, you should first create one (and let it go through the standard process before working it).\n\nTo modify the sync that manages Salesforce cases, you will need to create a MR in the corresponding project repo (which one depends on the change being made). The exact changes being made will depend on the request itself.\n\nAfter a peer reviews and approves your MR, you can merge the MR. Because this is an Ad-hoc deployment type, the changes will be used the next time a ticket is created or closed (which triggers the sync).\n\nCommon issues and troubleshooting\n\nCase not created in Salesforce",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "54702bd9c0ff_2",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/salesforce/cases",
+    "title": "Cases",
+    "source": "handbook",
+    "headings": [
+      "Cases",
+      "Understanding Salesforce Cases",
+      "What are Salesforce Cases",
+      "How do tickets become Salesforce Cases",
+      "Administrator tasks"
+    ],
+    "text": "es being made will depend on the request itself.\n\nAfter a peer reviews and approves your MR, you can merge the MR. Because this is an Ad-hoc deployment type, the changes will be used the next time a ticket is created or closed (which triggers the sync).\n\nCommon issues and troubleshooting\n\nCase not created in Salesforce\n\nIf a Zendesk ticket does not have a corresponding Salesforce case, it indicates the ticket was not associated with an organization in Zendesk at the time of creation. If association occurs on the ticket prior to it closing, a case will be created at the time of ticket closure.",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

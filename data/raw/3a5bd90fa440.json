@@ -1,0 +1,10 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/tools-and-tips/editors-and-ides/sublime-text",
+  "title": "Sublime Text",
+  "content": "Website: https://www.sublimetext.com/\n\nBest for: entry level developers, editing markdown.\n\nmany extensions, including one for integration with GitLab ( GitlabIntegrate ).\n\npowerful visual git-client integrated ( sublime-merge )\n\nA powerful text editor, sublime text is an excellent choice for editing plain text documents, but scales\nup to full code-editing. Installing extensions is simple.\n\nPutting the following in Preferences.sublime-settings - User will among other things ensure that if you open the www-gitlab-com website you’re not opening the output files by accident:",
+  "source": "handbook",
+  "headings": [
+    "Sublime Text",
+    "Configuration"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production-engineering/observability/capacity_planning",
+  "title": "Capacity Planning",
+  "content": "We maintain and improve the Capacity Planning process that is described in the Infrastructure Handbook . This is a controlled activity covered by SOC 2. Please see this issue for further details\n\nThe goal of this process is to predict and prevent saturation incidents on GitLab.com.\n\nIssues are kept in the capacity planning issue tracker . Where an issue is needed to improve metrics to support this process, we raise an issue in the Scalability group tracker with the label of Saturation Metrics .\n\nPlease see the docs-hub on Capacity Planning for more information on the forecasting tool we develop and use.\n\nThe triage duties docs have been moved to the Observability team’s docs-hub .",
+  "source": "handbook",
+  "headings": [
+    "Capacity Planning",
+    "Triage Duties"
+  ]
+}

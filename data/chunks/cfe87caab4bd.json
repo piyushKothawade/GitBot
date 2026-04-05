@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "cfe87caab4bd_0",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/customer-success-operations/cs-ops-programs",
+    "title": "Customer Programs",
+    "source": "handbook",
+    "headings": [
+      "Customer Programs",
+      "What we do",
+      "Team Members",
+      "Meet the Team",
+      "Related Content"
+    ],
+    "text": "Customer Programs creates communication paths using Gainsight to inform, educate, and learn from our customers.\n\nYou can see more information about what we do and our strategy in the following decks:\n\nSr. Director, CS Strategy & Operations\n\nSr. Program Manager, Customer Programs\n\nSr. Program Manager, Scale\n\nProgram Manager, Customer Programs\n\nGetting Help from Digital Customer Success\n\nWe support all customers with our programs but primarily serve customers that do not have one-to-one Customer Success relationships or are supported by the Scale Team. We manage time-based and/or data-driven email programs via Gainsight to further enable customers in their journey with GitLab.\n\nPrograms follow the lifecycle of the customer, from onboarding to enablement to retention.\n\nSegment specific journey - Tech Touch | Scale | CSM-Managed\n\nPlease refer to the Available Programs page for a list of active DCS Programs. A program can be any of the following:\n\nEmail, either single or a series, sent automatically or manually through Gainsight\n\nWebinar invitations and promotion through Zoom and Gainsight\n\nSurveys sent through Gainsight\n\nAvailable program metrics and data and timelines\n\nWhen an email program is sent, Gainsight collects data about the following points:\n\nTo whom the program was sent\n\nOpen, bounce, and click rates\n\nIf an email contains a survey, Gainsight will collect information about who opens and responds to the survey (unless the survey is stated to be anonymous). For more information about surveys, visit Customer NPS/CSAT surveys .",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "cfe87caab4bd_1",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/customer-success-operations/cs-ops-programs",
+    "title": "Customer Programs",
+    "source": "handbook",
+    "headings": [
+      "Customer Programs",
+      "What we do",
+      "Team Members",
+      "Meet the Team",
+      "Related Content"
+    ],
+    "text": "data about the following points:\n\nTo whom the program was sent\n\nOpen, bounce, and click rates\n\nIf an email contains a survey, Gainsight will collect information about who opens and responds to the survey (unless the survey is stated to be anonymous). For more information about surveys, visit Customer NPS/CSAT surveys .\n\nNew programs typically take 30 to 60 days to show meaningful data.\n\nIf the information requested is already available in Gainsight, please expect 1-3 business days beyond 30 days to respond to the request.\n\nIf a new dashboard or report must be created, CS Ops will provide more accurate time expectations.\n\nGitLab Admin contacts\n\nThe GitLab Admin contact user is the primary recipient of communication sent by the Digital Customer Success (DCS) Team. This contact receives all primary communication regarding onboarding, enablement, and overall customer health from DCS. More than one GitLab Admin may be configured on an account.\n\nConfiguring the GitLab Admin contact is a required step in the Sales process. GitLab Admin contacts can be changed or added at any point in the customer journey in Gainsight or Salesforce.\n\nLearn more about the GitLab Admin contact role requirement on the Gainsight Go-To-Market Technical Documentation page .\n\nOwner and Maintainer users (SaaS Customers Only)\n\nOn accounts using the GitLab SaaS product, individual users with Owner and Maintainer permissions in an organization may receive email programs from the DCS Team.",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "cfe87caab4bd_2",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/customer-success-operations/cs-ops-programs",
+    "title": "Customer Programs",
+    "source": "handbook",
+    "headings": [
+      "Customer Programs",
+      "What we do",
+      "Team Members",
+      "Meet the Team",
+      "Related Content"
+    ],
+    "text": "out the GitLab Admin contact role requirement on the Gainsight Go-To-Market Technical Documentation page .\n\nOwner and Maintainer users (SaaS Customers Only)\n\nOn accounts using the GitLab SaaS product, individual users with Owner and Maintainer permissions in an organization may receive email programs from the DCS Team.\n\nTargeting individual users at the account level enables the DCS Team to ensure customer enablement programs reach contacts most likely to take action on individual features of GitLab.\n\nIf a customer purchases GitLab without the assistance of the Sales team directly from GitLab’s website, there may be no GitLab Admin user configured to the account. If so, communications normally designed for the GitLab Admin contacts will be sent to the contact that directly purchased GitLab products and services (the Sold-To contact). These contacts do not receive NPS or CSAT communication.\n\nHow to configure a GitLab Admin\n\nAdd a contact by using Gainsight:\n\nNavigate to the Gainsight Customer360 page.\n\nUnder Contacts , find the contact name to enroll.\n\nEdit the GitLab Role field.\n\nSelect GitLab Admin from the picklist.\n\nAdd a contact by using Salesforce:\n\nFind the contact in Salesforce.\n\nSelect GitLab Admin from the picklist.",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

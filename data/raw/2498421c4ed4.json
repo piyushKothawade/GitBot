@@ -1,0 +1,23 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/development-tooling",
+  "title": "Development Tooling team",
+  "content": "Development Tooling team\n\nBuild state-of-the-art developer tools that are efficient and reliable, empowering developers to keep their development environments up-to-date painlessly.\n\nEnable team members and the wider community to contribute efficiently to our tools and products.\n\nMeasure what matters: improvements in developer experience, efficiency, and toil reduction, using both quantitative and qualitative metrics.\n\nOur vision is to create tools that enable GitLab team members and the wider community to contribute to GitLab rapidly, efficiently and reliably.\n\nAreas of responsibilities\n\nAs part of continuous roadmapping, we’ll review our roadmap quarterly, updating it as we validate or refine our approach and reflect new priorities.\n\nFocus: Improve Developer Experience across Development Environments and lay foundation of FY'27 (FY26Q4)\n\nImprove GitLab engineering teams’ onboarding experience for Development Environments\n\nImprove observability and monitoring capabilities for Development Environments\n\nFY'27 planning and groundwork: Build architectural concept for modular containerised Development environments Curate technical requirements, proof-of-concept, and tooling of Feature Gates system for improved rollout health on SaaS Provision logging standardisation mechanisms in LabKit for improved production debugging\n\nBuild architectural concept for modular containerised Development environments\n\nCurate technical requirements, proof-of-concept, and tooling of Feature Gates system for improved rollout health on SaaS\n\nProvision logging standardisation mechanisms in LabKit for improved production debugging\n\nFocus: Build foundations for improved feature stability (FY27Q1/Q2)\n\nEnable engineering teams to self-serve their components’ integration in Development Environments\n\nImprove production debugging with standardised logging & metrics using LabKit\n\nComplete technical solutioning of Feature Gates system for improved rollout health on SaaS\n\nFocus: Build foundations for improved feature stability (FY27Q3+)\n\nBuild production-aligned Development Environments to improve team’s confidence in shipped-changes\n\nProvision tracing capabilities within LabKit to improve production debugging and incident resolution\n\nBuild Feature Gates system to improve rollout health on SaaS\n\nKeeping The Lights On (KTLO)\n\nIn addition to planned work, our team will also be responsible for ongoing maintenance and support that impacts shared tooling functionality and infrastructure, such as dependency upgrades, security vulnerabilities, critical bug fixes, etc.\n\nFor problems, feature requests, enhancements: Please create an issue in our RFH repo . Or you can Engage us in #g_development_tooling .\n\nFor individual questions, please mention team members directly on GitLab.com or reach out to the team through our Slack channels.\n\n@gl-dx/development-tooling\n\n#g_development_tooling\n\ngitlab-org/dx/tooling/team\n\nWe’re geographically distributed across AMER, APAC & EMEA regions and work asynchronously by default.\n\nWe meet synchronously once a week to plan our iterations, align on priorities and discuss any ongoing topics. Currently the schedule alternates biweekly to accomdate members of all involved timezones.\nTo facilitate a productive discussion, topics should be entered into the agenda by the beginning of the week.\n\nWe follow project management process for Infrastructure Platforms department .\n\nFor more information on current projects, refer to our parent epic .",
+  "source": "handbook",
+  "headings": [
+    "Development Tooling team",
+    "Mission",
+    "Vision",
+    "Areas of responsibilities",
+    "Team Structure",
+    "Roadmap",
+    "Now",
+    "Next",
+    "Later",
+    "Keeping The Lights On (KTLO)",
+    "Working with us",
+    "Communication",
+    "How we work",
+    "Meetings",
+    "Project Management"
+  ]
+}

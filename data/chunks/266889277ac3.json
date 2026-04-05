@@ -1,0 +1,514 @@
+[
+  {
+    "chunk_id": "266889277ac3_0",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "This page focuses on emails processes, owned and managed by Lifecycle Marketing, Marketing Campaigns, and Marketing Operations.\n\nRelated Handbook: Email Management\n\nGitLab Email Calendar\n\nWe have moved our email calendar to Asana! We will have email stakeholder syncs each Thursday to review emails for the upcoming two weeks. If you need the call added to your calendar, please ask Allie Klatzkin. To ensure this is done smoothly, please add your emails to the calendar as soon as you know that they are upcoming (regardless if you have all information).\n\nAll emails must be added to the calendar before the Email Stakeholder call the week before send . Emails added after the call will be pushed to the next week.\n\nDue to limited seats, we will be providing 1-2 seats per team on the calendar. Please reach out to your team’s DRI with any questions.\n\nPrioritize our emails to ensure we are sending the right emails to the right audience at the right time.\n\nProvide visibility across teams on upcoming sends\n\nStreamline communication and processes around emails\n\nProcess to add emails to the calendar:\n\nEmail issue templates , in Campaigns, Marketing Ops, Corporate Marketing, and Field Marketing projects, will have the ~email-calendar label on them which will automatically add emails to the calendar. If your issue does not have the ~email-calendar label, please add it to ensure visibility for the calendar.\n\nSteps to add to the Asana calendar:\n\nEnsure the label for “email-calendar” is added to your issue.",
+    "chunk_index": 0,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_1",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "eting projects, will have the ~email-calendar label on them which will automatically add emails to the calendar. If your issue does not have the ~email-calendar label, please add it to ensure visibility for the calendar.\n\nSteps to add to the Asana calendar:\n\nEnsure the label for “email-calendar” is added to your issue.\n\nAdd labels for the appropriate segmentation: “Global-email”, “EMEA-email”, “AMER-email”, “APAC-email”\n\nAdd labels for appropriate email type: “operational-email” “non-operational-email”\n\nSet email issue due date as the send date\n\nEmail Request Issue Template\n\nPLEASE READ IMPORTANT NOTE IN SECTION ABOVE PRIOR TO SUBMITTING\n\nTo request an email send, please open an issue for consideration of your email idea, and provide as much detail as possible (especially around the audience), and please respect if the determination is that “the juice isn’t worth the squeeze” and that we may want to delay the launch until some foundational audience segmentations are established. Please review the Email Review Protocol section below for more detail.\n\nSLA: There is a standard 5 Business Day SLA in place for new email requests. All details in the “Submitter Checklist” of the issue must be complete in order to be triaged to the appropriate Campaign Manager and/or Lifecycle Marketing Manager.\n\nPlease note: Invitation and follow-up emails will not be sent on Thursdays, due to our ongoing nurture programs.",
+    "chunk_index": 1,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_2",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "Day SLA in place for new email requests. All details in the “Submitter Checklist” of the issue must be complete in order to be triaged to the appropriate Campaign Manager and/or Lifecycle Marketing Manager.\n\nPlease note: Invitation and follow-up emails will not be sent on Thursdays, due to our ongoing nurture programs.\n\nEmail copy template: Use this copy doc template to write your email. The GitLab email copy doc template is a standardized format for requesting marketing emails. It ensures consistency across all email communications and provides clear specifications for the marketing team.\n\nAssign issues to: You must assign issues to the corresponding Lifecycle Marketing Manager for review before send.\n\n@aklatzkin : Global, Public Sector, Localized emails, Corporate Events\n\n@alee : AMER, Customer emails\n\n@cbaun : EMEA, APAC, Newsletters\n\nAdd the issue to the Asana email calendar: By default, issues will add the label for ~“email-calendar”, you will need to add the label for your audience as well:\n\n* Urgent security emails are exempt from this SLA.\n\nAll links in email sends, going to about.gitlab.com will need to be appended with utm parameters, following the nomenclature outlined in this document . This is the way we track and give attribution to emails.\n\nNeed-to-know details for the email request\n\nBelow are the information from the issue template that will need to be filled out before the Campaign Manager will create the email in the appropriate system:",
+    "chunk_index": 2,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_3",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "ers, following the nomenclature outlined in this document . This is the way we track and give attribution to emails.\n\nNeed-to-know details for the email request\n\nBelow are the information from the issue template that will need to be filled out before the Campaign Manager will create the email in the appropriate system:\n\nSender Name : Typically we use GitLab for most outgoing communications; for Security Alerts we use GitLab Security. Choosing a name that is consistent with the type and/or content of email being sent is important, if unsure make a note and we will make recommendation.\n\nSender Email Address : What email address should be used? Default is info@gitlab.com\n\nApprovers : All approvers must be listed on the email request. At least one individual who will receive the replies to the email must be listed an as approver. For example, if the email is coming from security@, someone who will receive replies to the email should be listed as one of the approvers. See approval table below.\n\nSubject Line : 50 character max is preferred (30-40 characters for mobile devices)\n\nEmail Body Copy : Can be a text snippet within issue, clearly identified comment on issue or attach a Google Doc with copy. The copy must be approved before requesting the email.",
+    "chunk_index": 3,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_4",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "isted as one of the approvers. See approval table below.\n\nSubject Line : 50 character max is preferred (30-40 characters for mobile devices)\n\nEmail Body Copy : Can be a text snippet within issue, clearly identified comment on issue or attach a Google Doc with copy. The copy must be approved before requesting the email.\n\nTarget Date to Send Email : At a minimum 5days notice is preferred because we need to balancing the number of emails being sent to our database so they are not perceived (or marked) as spam; however, a simple email can be turned in a few hours if absolutely necessary Please note invitation and follow-up emails will not be sent on Thursdays due to our ongoing nurture programs\n\nPlease note invitation and follow-up emails will not be sent on Thursdays due to our ongoing nurture programs\n\nRecipient List : Emails can be sent to one of our existing existing segments or a recipient list can be uploaded as a .csv file by following the List Import Guidelines\n\nTypes of email requests\n\nGo to this page to read more about email management and the different types of emails.\n\nApprovals and notifications for email requests\n\nMarketing related ad-hoc emails are sent at the discretion of the Campaigns team.\n\nTerms of Service or Privacy Policy updates that impact all users must be announced on the company meeting, in the #whats-happening-at-gitlab and #community-advocates Slack channels, and approved according to the table below prior to submitting the Email Request.",
+    "chunk_index": 4,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_5",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "emails are sent at the discretion of the Campaigns team.\n\nTerms of Service or Privacy Policy updates that impact all users must be announced on the company meeting, in the #whats-happening-at-gitlab and #community-advocates Slack channels, and approved according to the table below prior to submitting the Email Request.\n\nSupport and Security emails sent to a small subset of users should be announced in #community-advocates and #support_escalations Slack channels, and mentioned in #whats-happening-at-gitlab if relevant.\n\nThe approval table below applies to non-Marketing emails.\n\nUsers to be contacted\n\nPR, reply-to owner, community advocate\n\nPR, reply-to owner, community advocate, director+ in originating department\n\nPR, reply-to owner, community advocate, director+ in originating department, e-group member\n\nAd-hoc (one-time) emails\n\nSteps to set up and edit emails\n\nFor one-time emails (i.e. a blast to promote a program for which we do not receive leads):\n\nDEPENDENCY: target list issue must be complete before email can be sent (15 business day SLA to create target list)\n\nClone this Marketo email send template Clone to: A campaign folder Folder: Ad-hoc (one time) emails Name: follow format of YYYYMMDD_NameOfEmail where YYYYMMDD is date of send (i.e. 20210603_DORAsurvey) Description: Link to GitLab email issue\n\nClone to: A campaign folder\n\nFolder: Ad-hoc (one time) emails\n\nName: follow format of YYYYMMDD_NameOfEmail where YYYYMMDD is date of send (i.e. 20210603_DORAsurvey)\n\nDescription: Link to GitLab email issue\n\nUpdate email in the send program",
+    "chunk_index": 5,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_6",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "date of send (i.e. 20210603_DORAsurvey) Description: Link to GitLab email issue\n\nClone to: A campaign folder\n\nFolder: Ad-hoc (one time) emails\n\nName: follow format of YYYYMMDD_NameOfEmail where YYYYMMDD is date of send (i.e. 20210603_DORAsurvey)\n\nDescription: Link to GitLab email issue\n\nUpdate email in the send program\n\nUpdate utm_campaign in Marketo My Tokens for email send\n\nVideo on how to create an email\n\nVideo on how to edit an email\n\nLifecycle Stage (Lead Status): (Raw, Inquiry, MQL, Accepted, Qualifying, Qualified) Funnel Stage: (see options ) Sales Segment: (Large, MM, SMB, PUBSEC - if US PubSec, you can also specify territory (NSG, DoD, etc)) Region: (APAC, AMER, EMEA) Sub-Region (East/West/PubSec or Southern/Northern/UKI/DACH):\n\nFunnel Stage: (see options )\n\nSales Segment: (Large, MM, SMB, PUBSEC - if US PubSec, you can also specify territory (NSG, DoD, etc))\n\nRegion: (APAC, AMER, EMEA)\n\nSub-Region (East/West/PubSec or Southern/Northern/UKI/DACH):\n\nPersona-Level: (see options ) Buyer Personas-Function: (see options ) Language Preference: (see options ) Activity filters (if necessary): ( see options ) Inclusions: (if including records on previous campaigns, MUST include the name as appears on SFDC campaign, and campaign membership statuses to exclude) Exclusions: (if excluding records on previous campaigns, MUST include the name as appears on SFDC campaign, and campaign membership statuses to exclude)\n\nBuyer Personas-Function: (see options )\n\nLanguage Preference: (see options )\n\nActivity filters (if necessary): ( see options )",
+    "chunk_index": 6,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_7",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "ampaign membership statuses to exclude) Exclusions: (if excluding records on previous campaigns, MUST include the name as appears on SFDC campaign, and campaign membership statuses to exclude)\n\nBuyer Personas-Function: (see options )\n\nLanguage Preference: (see options )\n\nActivity filters (if necessary): ( see options )\n\nInclusions: (if including records on previous campaigns, MUST include the name as appears on SFDC campaign, and campaign membership statuses to exclude)\n\nExclusions: (if excluding records on previous campaigns, MUST include the name as appears on SFDC campaign, and campaign membership statuses to exclude)\n\nTo assist in building email target lists, MktgOps has developed a series of Marketo smart lists that can be used to determine how active a lead is based on specific time increments. Call on these smart lists to get the most up to date active user list for your email sends. The smart lists are located in the Database section of Marketo. They are:\n\n01 Active List 30 days\n\n02 Active List 60 days\n\n03 Active List 90 days\n\n04 Active List 6 months days\n\n05 Active List 12 months\n\n06 Active List 18 months",
+    "chunk_index": 7,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_8",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "Call on these smart lists to get the most up to date active user list for your email sends. The smart lists are located in the Database section of Marketo. They are:\n\n01 Active List 30 days\n\n02 Active List 60 days\n\n03 Active List 90 days\n\n04 Active List 6 months days\n\n05 Active List 12 months\n\n06 Active List 18 months\n\nFY23-Q4 : Lifecycle Marketing will be running a Q4 trial of reviewing all emails prior to send to ensure compliance with email best practices. Team members are responsible fo reviewing and optimizing their own emails, following the latest email best practices from lifecycle marketing . Lifecycle will be partnering will email stakeholders to improve email performance and drive the best results for our campaigns, as well as maintain brand consistency across all email touchpoints.\n\nFY24-Q1 : In Q1 of FY24, we will share out how we will continue to scale the email review process.\n\nEmail workflow:\nFirst step in requesting an email from lifecycle begins by creating an issue using the appropriate issue template in GitLab.\n\nTeam variations to QA process\n\nCampaigns: build the email yourself and have lifecycle QA.\n\nFMM: Request the email to be built by MOps and send to lifecycle for approval.\n\nCorp: using the process we outlined previously here\n\nCampaigns Team QA process\n\nSubmit final email for QA and scheduling",
+    "chunk_index": 8,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_9",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "e issue template in GitLab.\n\nTeam variations to QA process\n\nCampaigns: build the email yourself and have lifecycle QA.\n\nFMM: Request the email to be built by MOps and send to lifecycle for approval.\n\nCorp: using the process we outlined previously here\n\nCampaigns Team QA process\n\nSubmit final email for QA and scheduling\n\nStep 1: Campaign manager: Submit an email issue for the appropriate email type and assign yourself and a lifecycle counterpart to your email. Be sure to include the proper labels for the email calendar. This needs to be done before the SLA date or at latest by Thursday at 9 am PT (with audience information) the week before send (i.e. if an email is going out the following Friday, it still needs to be in on Thursday the week before)\n\nStep 2: Highlight your desired send date and time. (Will be reviewed and potentially modified by the Lifecycle team).\n\nStep 3: Build the program and email in Marketo by referring to our email marketing best practices and segment the email accordingly.\n\nStep 4: Include a link to the Marketo program while submitting an Email issue request .\n\nStep 5: Send a sample for lifecycle to QA Global/EMEA/Localized/PubSec/Corporate/Nurture = reviewed by Allie Customers/AMER = reviewed by Alison EMEA/APAC/Newsletters = reviewed by Christian\n\nGlobal/EMEA/Localized/PubSec/Corporate/Nurture = reviewed by Allie\n\nCustomers/AMER = reviewed by Alison\n\nEMEA/APAC/Newsletters = reviewed by Christian\n\nStep 6: Lifecycle will make revisions and send the email back to the campaign manager.",
+    "chunk_index": 9,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_10",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "ustomers/AMER = reviewed by Alison EMEA/APAC/Newsletters = reviewed by Christian\n\nGlobal/EMEA/Localized/PubSec/Corporate/Nurture = reviewed by Allie\n\nCustomers/AMER = reviewed by Alison\n\nEMEA/APAC/Newsletters = reviewed by Christian\n\nStep 6: Lifecycle will make revisions and send the email back to the campaign manager.\n\nStep 7: Lifecycle will schedule the email to send at requested time slot\n\nLarger events (GitLab 18 is typically Lifecycle owned, but events of similar scale): 7 business days\n\nTech demos: 5 business days\n\nEmail follow-ups: 2 business days\n\nField Marketing QA process\n\nRequest for MOps to build the email\n\nFMC/Etc puts in the issue request (per usual)\n\nMops reviews and puts in Triage if all pieces are in place (per usual)\n\nWhen in triage, Mops adds a new label for Lifecycle Copy Review\n\nLifecycle reviews the copy, makes suggestions and does the back/forth with submittor\n\nOnce approved, Lifecycle adds the Lifecycle Copy Approved Label\n\nMarketing Ops will then start to build the email\n\nOnce build, Mops will mark needing review for layout/format\n\nLifecycle approves layout/format\n\nLifecycle does not approve emails that we have a prebuilt template for (workshops, etc.)\n\nFor follow-up emails, lifecycle will still do a quick review of the copy in the new pre-built templates\n\nImportant note on 3rd party conferences/tradeshows We only send emails for 3rd party conferences/tradeshows if they meet the following criteria:\n\nThey have a GitLab specific CTA (can be our own landing page, book a meeting link, activation registration page)",
+    "chunk_index": 10,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_11",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "do a quick review of the copy in the new pre-built templates\n\nImportant note on 3rd party conferences/tradeshows We only send emails for 3rd party conferences/tradeshows if they meet the following criteria:\n\nThey have a GitLab specific CTA (can be our own landing page, book a meeting link, activation registration page)\n\nWhen we have a blind list account list or previous attendee audience to send the email to.\n\nFor more information on why we do this, please visit this issue .\n\nCorporate Marketing QA process\n\nRequest for Lifecycle to determine promotional content\n\nUpon request, we will work with the Corporate Events team to promote and follow-up from our sponsored corporate conferences.\n\nPromotion will only be done for Tier 1 events and events that have ancillary events added to them. We will promote to audiences who have previously attended the event, in addition to local audiences that match the persona. For full criteria and steps, please see this spreadsheet .\n\nThe process must kick off a month before the event, to ensure we have all of the relevant information for promotion and follow-up.\n\nNewsletter QA process\n\nFull newsletter request information can be found here .\n\nEmail QA Checklist - Technical\n\nThe following outlines the technical QA that any email builder including Lifecycle, MOps, and Campaigns should complete after building an email. This also applies to anyone providing a secondary QA prior to deployment.",
+    "chunk_index": 11,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_12",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "QA process\n\nFull newsletter request information can be found here .\n\nEmail QA Checklist - Technical\n\nThe following outlines the technical QA that any email builder including Lifecycle, MOps, and Campaigns should complete after building an email. This also applies to anyone providing a secondary QA prior to deployment.\n\nAs the email builder, you are responsible for making sure the email is formatted properly according to our templates, that the links are formatted properly for tracking and use, that any tokenized sections are showing properly, the appropriate unsubscribe language is included, and any special requests from the business owner are displaying properly in the email in accordance with our template guidelines. You are not responsible for QA on spelling, grammar, dates/times, or links provided to you by the business owner (for example, if they drive to a webpage and provided you with the wrong link - as long as you formatted it properly in the email). If you notice inaccuracies in spelling/grammar, please update them in the email, but the business owner is responsibile for those. You have joint ownership with the business owner to make sure the email looks good and is easy for the user to read.",
+    "chunk_index": 12,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_13",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "ith the wrong link - as long as you formatted it properly in the email). If you notice inaccuracies in spelling/grammar, please update them in the email, but the business owner is responsibile for those. You have joint ownership with the business owner to make sure the email looks good and is easy for the user to read.\n\nConfirm that all tokens used in the email are complete in the program. This can vary from email to email, so you will need to check the email in the editor to confirm which tokens are in use. Generally, be sure to check {{my.landingpageURL}}, {{my.utm}}, the tokens for the title of the event, date, time, and in some cases intro paragraph and bullets. If anything is not complete and you do not have the information, ask the business owner to complete them.\n\nConfirm that CTAs are in sentence case: ex: Register now (not Register Now)\n\nCheck the {{my.landingpageURL}} token to confirm that if you are driving to a page.gitlab.com address, there is NO / at the end of the url. If you are driving to about.gitlab.com , there should be a / at the end of the url. For example, the token should look like this (with no https://): about.gitlab.com/sixteen/ or page.gitlab.com/sixteen .\n\nIn the email editor, confirm that each link is hard-coded with https:// . This cannot be in a token because the Marketo tracking will not work properly . Your links should look like this in the email editor: https://{{my.LandingpageURL}}?{{my.utm}}",
+    "chunk_index": 13,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_14",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "h no https://): about.gitlab.com/sixteen/ or page.gitlab.com/sixteen .\n\nIn the email editor, confirm that each link is hard-coded with https:// . This cannot be in a token because the Marketo tracking will not work properly . Your links should look like this in the email editor: https://{{my.LandingpageURL}}?{{my.utm}}\n\nWhen linking to an anchored spot on a page, the UTM must come before the anchor or the link will break. Correct format: https://{{my.landingpageurl}}?{{my.utm}}#{{my.anchor}}\n\nIn the editor, click on the text version of the email. The content should have been copied from HTML, but you will need to reformat it. Be sure that after you bring over the copy initially, you uncheck the “Copy from HTML” box. Format the email to use proper spacing between paragraphs and that the date/time information is easy to read.\n\nIn the text version, there should be no links in line with content. Move the links to the end of the paragraph or into separate bullets. You should have a “Register now” link at the top of the email and at the bottom. Confirm the links in the text version are formatted properly (as described above).\n\nOn the text version, you do not need unsubscribe text because Marketo will automatically attach this if it is missing. If it is there, no need to remove it. The exception is if you are using the Localized email footer snippet. You do need to make sure this appears in the text version.",
+    "chunk_index": 14,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_15",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "ed properly (as described above).\n\nOn the text version, you do not need unsubscribe text because Marketo will automatically attach this if it is missing. If it is there, no need to remove it. The exception is if you are using the Localized email footer snippet. You do need to make sure this appears in the text version.\n\nIf dynamic content or snippets are not intended for the email, make sure no dynamic content is in use. In the email editor, click on “Dynamic” under the content section. If this is blank, there is no dynamic content in use. If it is not blank, click on the segment in use and it will highlight it in the email. If this is not intentional, select “Make Static” or “Replace with Rich Text” (depending on the type of dynamic content in use).\n\nIf you are using dynamic content or snippets, click on “Preview”. Change the View by to “Segmentation”. Select the segmentation, then be sure to preview the email for each segmentation option to make sure it displays as you expect. You can also send yourself a sample using each segmentation if you would like. You will need to provide screenshots or samples to the business owner to review the content in use for each segment.",
+    "chunk_index": 15,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_16",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "ect the segmentation, then be sure to preview the email for each segmentation option to make sure it displays as you expect. You can also send yourself a sample using each segmentation if you would like. You will need to provide screenshots or samples to the business owner to review the content in use for each segment.\n\nCustom Header Image: If you are using the standard template with no changes to the header image, you can skip this step. If you are using custom header images (for example on large owned events), you must confirm that the image used was a transparent image. You can do this by looking at the design issue and confirming the image requested and provided by the design team is transparent. If you are working on a large event email (sending to 100k plus), you must also QA the email in Litmus .\n\nView the email in Preview . Confirm all of the tokenized sections fill in properly and the name of the event, date, and time are showing correctly.\n\nIn Preview , hover over each link in the email and confirm the full URL is accurate with the correct UTM values. If any of this is incorrect, confirm that the https:// is hard-coded, check the {{my.landingpageURL}} token, and check the {{my.utm}} token. After you make any necessary changes, preview the email again.\n\nAfter viewing in Preview , if the text in the header appears to be too large, resize it to be smaller so the line breaks make sense and the text isn’t overbearing.",
+    "chunk_index": 16,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_17",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "tps:// is hard-coded, check the {{my.landingpageURL}} token, and check the {{my.utm}} token. After you make any necessary changes, preview the email again.\n\nAfter viewing in Preview , if the text in the header appears to be too large, resize it to be smaller so the line breaks make sense and the text isn’t overbearing.\n\nSend a sample to yourself. Click all links in the email and confirm they go where you expect them to. The links in your emails should have Marketo tracking codes, so when you get to the URL in your browser, confirm that the complete URL with utms is accurate. If the links drive to about.gitlab.com pages, it is recommended that you fill out the form and make sure the response is captured in Marketo.\n\nOn the sample you sent to yourself, confirm all tokenized sections filled in properly. Check the formatting and images on the email.\n\nMake sure to check the email copy and links on your mobile phone as well.\n\nAfter your QA is complete, send a sample to the business owner for review.\n\nEmail QA Checklist - Business owner\n\nThe following outlines the business owner QA that the requestor (not builder) should complete before approving the email.\n\nAs the requestor/business owner, you are responsible for QA on content, spelling, grammar, dates/times, and links. You have joint ownership with the email builder to make sure the email looks good and is easy for the user to read, in line with our email best practices.\n\nCheck the pre-header information before you click on the email.",
+    "chunk_index": 17,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_18",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "or/business owner, you are responsible for QA on content, spelling, grammar, dates/times, and links. You have joint ownership with the email builder to make sure the email looks good and is easy for the user to read, in line with our email best practices.\n\nCheck the pre-header information before you click on the email.\n\nOn the HTML version: Check the subject line, to and from details. Check the date, time, and event name/header. Read the subject line and email for spelling mistakes and grammar. Confirm the content is accurate. Review locations, agendas, or any other details included in the email. Click on all links in the email. You must click on the links because the links are coded for Marketo tracking and will not show the URL until after you click on them. Confirm that all links go where you expect. You should also confirm that the utms (particularly the utm campaign value) is accurate. Confirm the layout and text size in the header is what you expect.\n\nCheck the subject line, to and from details.\n\nCheck the date, time, and event name/header.\n\nRead the subject line and email for spelling mistakes and grammar. Confirm the content is accurate.\n\nReview locations, agendas, or any other details included in the email.\n\nClick on all links in the email. You must click on the links because the links are coded for Marketo tracking and will not show the URL until after you click on them. Confirm that all links go where you expect. You should also confirm that the utms (particularly the utm campaign value) is accurate.",
+    "chunk_index": 18,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_19",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "luded in the email.\n\nClick on all links in the email. You must click on the links because the links are coded for Marketo tracking and will not show the URL until after you click on them. Confirm that all links go where you expect. You should also confirm that the utms (particularly the utm campaign value) is accurate.\n\nConfirm the layout and text size in the header is what you expect.\n\nYou will also receive a text version of the email. This email is built separately from the HTML, so you must repeat your review on this. Check the date, time, and event name/header. Read the email for spelling mistakes and grammar. Confirm the content is accurate. Review locations, agendas, or any other details included in the email. Click on all links in the email. You must click on the links because the links are coded for Marketo tracking and will not show the URL until after you click on them. Confirm that all links go where you expect. You should also confirm that the utms (particularly the utm campaign value) is accurate. Make sure to check the email copy and links on your mobile phone as well.\n\nCheck the date, time, and event name/header.\n\nRead the email for spelling mistakes and grammar. Confirm the content is accurate.\n\nReview locations, agendas, or any other details included in the email.",
+    "chunk_index": 19,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_20",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "cularly the utm campaign value) is accurate. Make sure to check the email copy and links on your mobile phone as well.\n\nCheck the date, time, and event name/header.\n\nRead the email for spelling mistakes and grammar. Confirm the content is accurate.\n\nReview locations, agendas, or any other details included in the email.\n\nClick on all links in the email. You must click on the links because the links are coded for Marketo tracking and will not show the URL until after you click on them. Confirm that all links go where you expect. You should also confirm that the utms (particularly the utm campaign value) is accurate.\n\nMake sure to check the email copy and links on your mobile phone as well.\n\nIf you requested dynamic content or if your email is localized, you may receive multiple versions of the email. Repeat the checks above for each version, confirming that the dynamic content is showing up as you expect.\n\nFor localized emails, confirm that the email footer is displaying in the requested language. This snippet displays based on the language preference of the user, with the default being English if they do not have a language on file.\n\nEmail review protocol\n\nAll Campaign Managers and reviewers should adhere to the following protocol for every marketing email that is sent to ensure brand consistency and quality in our email program. While the owner of the email should review the email, they must also assign the emails to the corresponding Lifecycle Marketing Manager as listed on the email templates.",
+    "chunk_index": 20,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_21",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "reviewers should adhere to the following protocol for every marketing email that is sent to ensure brand consistency and quality in our email program. While the owner of the email should review the email, they must also assign the emails to the corresponding Lifecycle Marketing Manager as listed on the email templates.\n\nMarketo is the primary system for all marketing emails and the regularly scheduled security updates. Iterable or Marketo should be used for emails to gitlab.com users as these users are not in our marketing systems (unless they have signed up for content).\n\nTo send an operational email, fill out an issue and follow protocol found here .\n\nSales nominated flows in Marketo\n\nIn some cases, when invitations need to be more specific for an event, the Sales Nominated flows are used to allow sales to nominate who will receive the invite.\n\nNote: if someone is nominated, but is unmailable (due to unsubscribe, invalid email, or hard bounce), they will not receive the invitation.\n\nActivating the sales nominated flow in Marketo\n\nSales Nominated automation smart lists are applied to Marketo program templates where sales nominated flows are relevant.\n\nSend sample to the DRI for the program (i.e. workshop owner) who is responsible for testing and QAing the email. The email can be found under the Assets folder in the program. For some programs, the Marketo My Tokens are included in the Sales Nominated invite to make the email setup more efficient.\n\nReview the smartlist and schedule recurrence of email:",
+    "chunk_index": 21,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_22",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "ram (i.e. workshop owner) who is responsible for testing and QAing the email. The email can be found under the Assets folder in the program. For some programs, the Marketo My Tokens are included in the Sales Nominated invite to make the email setup more efficient.\n\nReview the smartlist and schedule recurrence of email:\n\nSmart List (filter): Member of Program: (current program, registered status) Not Was Sent Email: (one of previous emails for this event) in last 7 days Subscription Filters (fitlers here are dependent on program type, and subject to change, so not adding all details)\n\nMember of Program: (current program, registered status)\n\nNot Was Sent Email: (one of previous emails for this event) in last 7 days\n\nSubscription Filters (fitlers here are dependent on program type, and subject to change, so not adding all details)\n\nFlow Send email: sales nominated email in the program\n\nSend email: sales nominated email in the program\n\nSchedule Choose Schedule Recurrence Schedule: Daily First Run: next relevant day to send (i.e. next business day available). Choose time of day relevant for timezone of event. Repeat Every: Weekday (M-F) End On: Day of the event\n\nChoose Schedule Recurrence\n\nFirst Run: next relevant day to send (i.e. next business day available). Choose time of day relevant for timezone of event.\n\nRepeat Every: Weekday (M-F)\n\nEnd On: Day of the event\n\nRemoving sales nominated scheduled deployment",
+    "chunk_index": 22,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_23",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "ne of event. Repeat Every: Weekday (M-F) End On: Day of the event\n\nChoose Schedule Recurrence\n\nFirst Run: next relevant day to send (i.e. next business day available). Choose time of day relevant for timezone of event.\n\nRepeat Every: Weekday (M-F)\n\nEnd On: Day of the event\n\nRemoving sales nominated scheduled deployment\n\nYou can remove specific recurrences of scheduled sales nominated deployments. The FMC is responsible for this change for field marketing activities, and campaign managers are responsible for this change for demand generation activities.\n\nTo cancel a send, follow these directions .\n\nAdding an A/B test Nurture Emails\n\nBecause our nurture is setup calling to programs, we cannot use Marketo’s Champion/Challenger to A/B test emails.\n\nInstead, we should take the following steps:\n\nBuild a second email and create a description of what was changed in the name i.e “Subject line test version” (or even saying the test)\n\nBuild a second email and create a description of what was changed in the name i.e “Subject line test version” (or even saying the test)\n\nAdd it as a random sample in the send controller as shown in the flow below (use 50% for 2 versions, or split between 100% for more versions):\n\nAdd it as a random sample in the send controller as shown in the flow below (use 50% for 2 versions, or split between 100% for more versions):\n\nMonitor results on an email report\n\nMonitor results on an email report\n\nDocument results on A/B testing tracker\n\nDocument results on A/B testing tracker",
+    "chunk_index": 23,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_24",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "0% for more versions):\n\nAdd it as a random sample in the send controller as shown in the flow below (use 50% for 2 versions, or split between 100% for more versions):\n\nMonitor results on an email report\n\nMonitor results on an email report\n\nDocument results on A/B testing tracker\n\nDocument results on A/B testing tracker\n\nPlease see the A/B testing section below for best practices for conducting an A/B test.\n\nProcess for monthly newsletter\n\nOpen an issue using the Newsletter Request Template , including the newsletter send date\nin the issue title.\n\nEpic of Past and Upcoming Newsletters\n\nCreating the newsletter in Marketo\n\nA day or two before the issue due date, create the newsletter draft. It’s easiest to clone the last newsletter in Marketo:\n\nGo to Marketing Activities > Master Setup > Outreach > Newsletter & Security Release\n\nSelect the newsletter program template [YYY.MM.DD] - New blog newsletter template , right click and select Clone .\n\nClone to A Campaign Folder .\n\nIn the Name field enter the name following the newsletter template naming format YYYYMMDD_Newsletter Name .\n\nIn the Folder field select Newsletter & Security Release . You do not need to enter a description.\n\nWhen it is finished cloning, you will need to drag and drop the new newsletter item into the appropriate subfolder ( Bi-weekly Newsletters , Monthly Newsletters or Quarterly Newsletters ).\n\nClick the + symbol to the left of your new newsletter item and select Newsletter .\n\nIn the menu bar that appears along the top of your screen, select Edit draft .\n\nEditing the newsletter in Marketo",
+    "chunk_index": 24,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_25",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "newsletter item into the appropriate subfolder ( Bi-weekly Newsletters , Monthly Newsletters or Quarterly Newsletters ).\n\nClick the + symbol to the left of your new newsletter item and select Newsletter .\n\nIn the menu bar that appears along the top of your screen, select Edit draft .\n\nEditing the newsletter in Marketo\n\nMake sure you update the subject line.\n\nAdd your newsletter items by editing the existing boxes (double click to go into them). It’s best to select the HTML button on the menu bar and edit the HTML so you don’t inadvertently lose formatting.\n\nDon’t forget to update the dates in the UTM parameters of your links (including the banner at the top and all default items such as the “We’re hiring” button).\n\nSending newsletter test/samples from Marketo\n\nWhen you’re ready, select Email actions from the menu at the top, then Send sample to preview.\n\nEnter your email in the Person field, then in Send to you can add any other emails you’d like to send a preview too. We recommend sending a sample to the newsletter requestor (or rebecca@ from the content team for marketing newsletters) for final approval.\n\nWhen you are satisfied with the newsletter, select Approve and close from the Email actions menu.\n\nSending the newsletter\n\nWhen the edit view has closed, click on the main newsletter item in the left-hand column.\n\nIf there are over 250,000 recipients due to be sent, you must request Marketing Operations to temporarily lift the Campaign Limits , otherwise the email will not send.",
+    "chunk_index": 25,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_26",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "d close from the Email actions menu.\n\nSending the newsletter\n\nWhen the edit view has closed, click on the main newsletter item in the left-hand column.\n\nIf there are over 250,000 recipients due to be sent, you must request Marketing Operations to temporarily lift the Campaign Limits , otherwise the email will not send.\n\nIn the Schedule box, enter the send date and select Recipient time zone if the option is available.\n\nMake sure Head start is checked too.\n\nIn the Approval box, click on Approve program .\n\nReturn to the newsletter issue and leave a comment telling requestor  to double check all has been set up correctly. Close the issue when this is confirmed.\n\nTemplate and process for mass-uploading issues for promotional events\n\nDuplicate spreadsheet Simple = 2 emails, follow-up for no show and attendee, audience sizing\nComplex = multiple emails and follow-ups, audience sizing (think Commit)\n\nUpdate issue titles in the 1st column\n\nUpdate due dates in the 3rd column\n\nUpdate template to have the epic by searching (“Command/CTRL F”) EPICNAME then the three dots on the side and replace with your epic name.",
+    "chunk_index": 26,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_27",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "ow and attendee, audience sizing\nComplex = multiple emails and follow-ups, audience sizing (think Commit)\n\nUpdate issue titles in the 1st column\n\nUpdate due dates in the 3rd column\n\nUpdate template to have the epic by searching (“Command/CTRL F”) EPICNAME then the three dots on the side and replace with your epic name.\n\nFor the following, you can update 1 issue then drag it down (at least for email descriptions):\n5. Add any additional assignees at the bottom of the issue, it’ll automatically assign to you\n6. Choose any labels that you want added and add them to the bottom using /label ~“labelname”\n7. Make any adjustments to audience, email names\n8. Upload issue to the campaigns project using the import button. https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/uploads/c644b04f8460d6f1007e731093ff16fc/Screen_Shot_2022-08-11_at_2.10.56_PM.png 9. Check to make sure your issues uploaded correctly and are in the right epic!\n\nAdding “add to calendar” links in our emails without using 3rd party tools\n\nAdd to google calendar | Add to other calendar\n\nNote: gmail inboxes a majority of our sends, according to litmus analytics pixel data. Outlook makes up 3-15% of our recipients. This is exactly what Limus did:",
+    "chunk_index": 27,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_28",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "rrectly and are in the right epic!\n\nAdding “add to calendar” links in our emails without using 3rd party tools\n\nAdd to google calendar | Add to other calendar\n\nNote: gmail inboxes a majority of our sends, according to litmus analytics pixel data. Outlook makes up 3-15% of our recipients. This is exactly what Limus did:\n\nIt’s virtually impossible to support all the calendar applications available. To help us understand what calendar tools to focus on, we took a look at our Email Analytics data. The most popular email clients our subscribers use are Apple Mail, Gmail, and Outlook. Using this data, we focused our efforts on creating a “add to calendar” button that would be compatible with iCalendar, Google’s calendar, and Outlook’s calendar. Learn More Here\n\nSteps to manually creating “add to calendar” links in our emails\n\nCreate google calendar link for your events Use this tool to generate your event information: https://kalinka.tardate.com/ You would have to copy and paste the information for the event from marketo to the tool above, this takes about 2 minutes Location should be formatted as follows to show up as an address in the google calendar invite: 747 Howard St, San Francisco, CA 94103, USA Make sure time zone is correct Create link Example Here and paste into correct template in Marketo as follows: < a href = \"https://www.google.com/calendar/event?action=TEMPLATE&dates=20200206T035000Z%2F20200206T065000Z&text=Nouts%20test%20event&location=5107%20Oakbrook%20Drive%2C%20Durham%2C%20NC&details=nout's%20test%20event%20\" > Add to Google calendar </ a >",
+    "chunk_index": 28,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_29",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "Example Here and paste into correct template in Marketo as follows: < a href = \"https://www.google.com/calendar/event?action=TEMPLATE&dates=20200206T035000Z%2F20200206T065000Z&text=Nouts%20test%20event&location=5107%20Oakbrook%20Drive%2C%20Durham%2C%20NC&details=nout's%20test%20event%20\" > Add to Google calendar </ a >\n\nCreate google calendar link for your events\n\nUse this tool to generate your event information: https://kalinka.tardate.com/\n\nUse this tool to generate your event information: https://kalinka.tardate.com/\n\nYou would have to copy and paste the information for the event from marketo to the tool above, this takes about 2 minutes Location should be formatted as follows to show up as an address in the google calendar invite: 747 Howard St, San Francisco, CA 94103, USA Make sure time zone is correct\n\nYou would have to copy and paste the information for the event from marketo to the tool above, this takes about 2 minutes\n\nLocation should be formatted as follows to show up as an address in the google calendar invite: 747 Howard St, San Francisco, CA 94103, USA\n\nLocation should be formatted as follows to show up as an address in the google calendar invite:\n\n747 Howard St, San Francisco, CA 94103, USA\n\nMake sure time zone is correct\n\nMake sure time zone is correct",
+    "chunk_index": 29,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_30",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "ted as follows to show up as an address in the google calendar invite: 747 Howard St, San Francisco, CA 94103, USA\n\nLocation should be formatted as follows to show up as an address in the google calendar invite:\n\n747 Howard St, San Francisco, CA 94103, USA\n\nMake sure time zone is correct\n\nMake sure time zone is correct\n\nCreate link Example Here and paste into correct template in Marketo as follows: < a href = \"https://www.google.com/calendar/event?action=TEMPLATE&dates=20200206T035000Z%2F20200206T065000Z&text=Nouts%20test%20event&location=5107%20Oakbrook%20Drive%2C%20Durham%2C%20NC&details=nout's%20test%20event%20\" > Add to Google calendar </ a >\n\nCreate link Example Here and paste into correct template in Marketo as follows:\n\nCreate ICS file for all other calendars (mostly Outlook and Apple) Marketo can create an ICS file Add “Calendar File” Token to local tokens section Paste all necessary information (same as above) Add token to the email as follows: <a href=\"link goes here\">Add to other calendar</a>\n\nCreate ICS file for all other calendars (mostly Outlook and Apple)\n\nMarketo can create an ICS file\n\nMarketo can create an ICS file\n\nAdd “Calendar File” Token to local tokens section\n\nAdd “Calendar File” Token to local tokens section\n\nPaste all necessary information (same as above)\n\nPaste all necessary information (same as above)\n\nAdd token to the email as follows: <a href=\"link goes here\">Add to other calendar</a>\n\nAdd token to the email as follows:\n\n<a href=\"link goes here\">Add to other calendar</a>\n\nAdditional option for “add to calendar”: APIs",
+    "chunk_index": 30,
+    "total_chunks": 32
+  },
+  {
+    "chunk_id": "266889277ac3_31",
+    "url": "https://handbook.gitlab.com/handbook/marketing/lifecycle-marketing/email-processes-requests",
+    "title": "Emails Processes",
+    "source": "handbook",
+    "headings": [
+      "Emails Processes",
+      "Overview",
+      "GitLab Email Calendar",
+      "Email Request Issue Template",
+      "Need-to-know details for the email request"
+    ],
+    "text": "Paste all necessary information (same as above)\n\nPaste all necessary information (same as above)\n\nAdd token to the email as follows: <a href=\"link goes here\">Add to other calendar</a>\n\nAdd token to the email as follows:\n\n<a href=\"link goes here\">Add to other calendar</a>\n\nAdditional option for “add to calendar”: APIs\n\nUse AddEvent API (available for $19/month billed annually for up to 50 events/month). https://www.addevent.com/c/plans-and-pricing\n\nUse AddEvent API (available for $19/month billed annually for up to 50 events/month).\n\nhttps://www.addevent.com/c/plans-and-pricing\n\nUse Eventable in Marketo (not sure about price) https://www.eventable.com/info/add-to-calendar-marketo/\n\nUse Eventable in Marketo (not sure about price)\n\nhttps://www.eventable.com/info/add-to-calendar-marketo/\n\nCurrently available Action Streams. Please use the values below to populate the Marketo {{my.Action Stream}} token. These must be exactly as written:\n\nInstructions for routing to Action Streams is available on the Campaigns & Programs page. Video Instructions .",
+    "chunk_index": 31,
+    "total_chunks": 32
+  }
+]

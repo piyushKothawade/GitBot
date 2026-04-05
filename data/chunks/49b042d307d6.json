@@ -1,0 +1,15 @@
+[
+  {
+    "chunk_id": "49b042d307d6_0",
+    "url": "https://handbook.gitlab.com/handbook/support/license-and-renewals/workflows/self-managed/opt-out_service-usage-data",
+    "title": "Handling Opt Out of Services Usage Data request",
+    "source": "handbook",
+    "headings": [
+      "Handling Opt Out of Services Usage Data request",
+      "Overview"
+    ],
+    "text": "Handling Opt Out of Services Usage Data request\n\nThe Support team doesn’t have the ability to opt the customer out of Services Usage Data and the customer cannot opt-out of the feature without Sales team approval as mentioned in the handbook . To handle this request, you can\n\nFind the Account owner on SFDC\n\nUse the Zendesk Macro Support::Self-Managed::Super Sonics Opt Out and fill in the account information",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

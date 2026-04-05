@@ -1,0 +1,12 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/security/critical-projects",
+  "title": "Critical Projects",
+  "content": "How are critical projects defined?\n\nThese projects aren’t considered a function of OKRs (e.g., ambitious) but are considered critical because they\n\nmust be accomplished fully within a specific time frame; and\n\nrequire cross-functional collaboration; and\n\naddress immediate-term risks within security or GitLab\n\nCritical Projects must use the label sec-okr::p0 .\n\nIn essence, SMART goals are about setting clear, achievable objectives, while OKRs focus on setting ambitious goals to drive performance and align efforts across an organization.\n\nA SMART goal is a framework for setting clear, attainable objectives, characterized by the acronym SMART, which stands for Specific, Measurable, Achievable, Relevant, and Time-bound:\n\nS pecific: The goal is well-defined and clear to anyone who has a basic knowledge of the project.\n\nM easurable: The goal has criteria for measuring progress and completion, making it easy to track success.\n\nA chievable: The goal is realistic and attainable, not something too far out of reach.\n\nR elevant: The goal matters to the business or individual, aligning with broader objectives.\n\nT ime-bound: The goal has a deadline or defined timeframe, giving it a sense of urgency and a timeline for completion.\n\nRelationship to Security OKRs\n\nWork toward these objectives takes a higher priority over OKRs\n\nThe more critical projects we assume, the fewer OKRs we should have. It should be considered acceptable to have a quarter with one or zero OKRs due to critical project load.\n\nExpected critical projects are identified during the OKR planning process between functional leaders.\n\nIt’s possible for there to be zero critical projects in a given quarter.\n\nIt’s possible for an unexpected and critical project to appear mid-quarter outside of the OKR planning cycle. Functional leaders should recalibrate relevant KR expectations accordingly, and within the relevant OKR issues.",
+  "source": "handbook",
+  "headings": [
+    "Critical Projects",
+    "How are critical projects defined?",
+    "SMART and not an OKR",
+    "Relationship to Security OKRs"
+  ]
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "chunk_id": "d6fec7e38fa1_0",
+    "url": "https://handbook.gitlab.com/handbook/legal/patent-program",
+    "title": "Patents",
+    "source": "handbook",
+    "headings": [
+      "Patents",
+      "Why patents matter?",
+      "Patents and Open Source",
+      "GitLab patents",
+      "GitLab’s Patent Program"
+    ],
+    "text": "Patent protection for inventions offers several benefits:\n\nFor customers , it signals that they’re partnering with an innovative company, that is committed to solving complex technical problems.\n\nFor customers , it signals that they’re partnering with an innovative company, that is committed to solving complex technical problems.\n\nFor individual team members , appearing as a named inventor on a published patent is a significant achievement and provides tangible evidence of team members’ creative contributions to GitLab and emphasizes GitLab’s focus on results for customers .\n\nFor individual team members , appearing as a named inventor on a published patent is a significant achievement and provides tangible evidence of team members’ creative contributions to GitLab and emphasizes GitLab’s focus on results for customers .\n\nFor GitLab , building a portfolio of patents helps increase our profile as innovators in the DevOps space. Furthermore, Patents are valuable assets, and an investment in building a patent portfolio can increase value for shareholders. In some regions, obtaining patent protection for inventions renders the related research and development costs tax deductible. Patents can also be used as a defensive tool in the event the owner of another patent seeks to assert their patent rights against GitLab.\n\nFor GitLab , building a portfolio of patents helps increase our profile as innovators in the DevOps space. Furthermore,\n\nPatents are valuable assets, and an investment in building a patent portfolio can increase value for shareholders.",
+    "chunk_index": 0,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "d6fec7e38fa1_1",
+    "url": "https://handbook.gitlab.com/handbook/legal/patent-program",
+    "title": "Patents",
+    "source": "handbook",
+    "headings": [
+      "Patents",
+      "Why patents matter?",
+      "Patents and Open Source",
+      "GitLab patents",
+      "GitLab’s Patent Program"
+    ],
+    "text": "ent the owner of another patent seeks to assert their patent rights against GitLab.\n\nFor GitLab , building a portfolio of patents helps increase our profile as innovators in the DevOps space. Furthermore,\n\nPatents are valuable assets, and an investment in building a patent portfolio can increase value for shareholders.\n\nPatents are valuable assets, and an investment in building a patent portfolio can increase value for shareholders.\n\nIn some regions, obtaining patent protection for inventions renders the related research and development costs tax deductible.\n\nIn some regions, obtaining patent protection for inventions renders the related research and development costs tax deductible.\n\nPatents can also be used as a defensive tool in the event the owner of another patent seeks to assert their patent rights against GitLab.\n\nPatents can also be used as a defensive tool in the event the owner of another patent seeks to assert their patent rights against GitLab.\n\nPatents and Open Source\n\nGitLab’s stewardship of open source informs how we exercise patent rights, but not whether GitLab applies for a patent. Whether covering open source, open core, or proprietary technology, patents play an important role in managing the risk of third-party patent suits. GitLab emphasizes the defensive use of its patent rights as necessary to protect the GitLab project.",
+    "chunk_index": 1,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "d6fec7e38fa1_2",
+    "url": "https://handbook.gitlab.com/handbook/legal/patent-program",
+    "title": "Patents",
+    "source": "handbook",
+    "headings": [
+      "Patents",
+      "Why patents matter?",
+      "Patents and Open Source",
+      "GitLab patents",
+      "GitLab’s Patent Program"
+    ],
+    "text": "e exercise patent rights, but not whether GitLab applies for a patent. Whether covering open source, open core, or proprietary technology, patents play an important role in managing the risk of third-party patent suits. GitLab emphasizes the defensive use of its patent rights as necessary to protect the GitLab project.\n\nAll GitLab-created open source software is distributed under the MIT license which includes a well-established implied grant of patent rights; the rights granted under the MIT license are not undermined by a patent covering an element of the distributed software. Moreover, although patents are a proprietary right, the mandatory public disclosure of the covered invention required to obtain patent protection is consistent with GitLab’s open core business model and aligns with GitLab’s transparency value.\n\nGitLab holds the following registered patents:\n\nAutomatic mitigation of corrupted or compromised compute resources\n\nTransactional Access to Resource Repositories\n\nScalable code testing and benchmarking\n\nAdaptively generated program model\n\nVulnerability tracing using scope and offset\n\nWhitebox network fuzzing\n\nUS 9,767,005 & 9,098,352, CN 104346277A, EP 2827253A1\n\nMetaphor based language fuzzing of computer code\n\nFlow based fault testing\n\nGitLab’s Patent Program",
+    "chunk_index": 2,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "d6fec7e38fa1_3",
+    "url": "https://handbook.gitlab.com/handbook/legal/patent-program",
+    "title": "Patents",
+    "source": "handbook",
+    "headings": [
+      "Patents",
+      "Why patents matter?",
+      "Patents and Open Source",
+      "GitLab patents",
+      "GitLab’s Patent Program"
+    ],
+    "text": "rce Repositories\n\nScalable code testing and benchmarking\n\nAdaptively generated program model\n\nVulnerability tracing using scope and offset\n\nWhitebox network fuzzing\n\nUS 9,767,005 & 9,098,352, CN 104346277A, EP 2827253A1\n\nMetaphor based language fuzzing of computer code\n\nFlow based fault testing\n\nGitLab’s Patent Program\n\nInnovation is key to GitLab’s success. The GitLab Patent Program seeks to maximize the competitive and commercial value of GitLab’s intellectual property rights and capitalize on the time and effort invested by team members in developing patentable inventions. The Program establishes a process to systematically identify valuable inventions, assess their patentability and, where appropriate, enable successful prosecution and registration of a patent covering the invention.\n\nAs a recognition of the efforts of team members who develop inventions for GitLab, named inventors who contribute patentable inventions under the Patent Program may be eligible for Patent Awards, as follows:\n\nNew and Provisional Patent Applications\n\n$250 per named inventor\n\nApplication submission accepted by GitLab\n\nPayable after acceptance\n\n$500 per named inventor\n\nPatent application filed by GitLab\n\nPayable after filing; not applicable for provisional applications\n\n$1,000 per named inventor\n\nPatent issued to GitLab\n\nPayable after patent issue\n\nContinuation Patent Applications\n\nAwards are also payable for continuation patent applications. A continuation patent seeks to claim different aspects of the same invention disclosed in an existing patent application.\n\n$250 per named inventor",
+    "chunk_index": 3,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "d6fec7e38fa1_4",
+    "url": "https://handbook.gitlab.com/handbook/legal/patent-program",
+    "title": "Patents",
+    "source": "handbook",
+    "headings": [
+      "Patents",
+      "Why patents matter?",
+      "Patents and Open Source",
+      "GitLab patents",
+      "GitLab’s Patent Program"
+    ],
+    "text": ",000 per named inventor\n\nPatent issued to GitLab\n\nPayable after patent issue\n\nContinuation Patent Applications\n\nAwards are also payable for continuation patent applications. A continuation patent seeks to claim different aspects of the same invention disclosed in an existing patent application.\n\n$250 per named inventor\n\nContinuation application filed by GitLab\n\n$500 per named inventor\n\nContinuation patent issued to GitLab\n\nTo disclose an invention, complete an Invention Disclosure Form and email it to intellectualproperty@gitlab.com .\n\nTo disclose an invention, complete an Invention Disclosure Form and email it to intellectualproperty@gitlab.com .\n\nTo disclose an improvement to an invention, complete an Invention Improvement Disclosure Form and email it to intellectualproperty@gitlab.com .\n\nTo disclose an improvement to an invention, complete an Invention Improvement Disclosure Form and email it to intellectualproperty@gitlab.com .\n\nThe Invention Disclosure and Invention Improvement Disclosure forms must not be shared outside GitLab, even to former GitLab team members. If the input of a former GitLab team member is required to complete either form, contact intellectualproperty@gitlab.com to discuss before proceeding.",
+    "chunk_index": 4,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "d6fec7e38fa1_5",
+    "url": "https://handbook.gitlab.com/handbook/legal/patent-program",
+    "title": "Patents",
+    "source": "handbook",
+    "headings": [
+      "Patents",
+      "Why patents matter?",
+      "Patents and Open Source",
+      "GitLab patents",
+      "GitLab’s Patent Program"
+    ],
+    "text": "llectualproperty@gitlab.com .\n\nThe Invention Disclosure and Invention Improvement Disclosure forms must not be shared outside GitLab, even to former GitLab team members. If the input of a former GitLab team member is required to complete either form, contact intellectualproperty@gitlab.com to discuss before proceeding.\n\nYou should submit an Invention Disclosure Form any time you think you may have created a new, inventive process, product, or product feature. Since you may be overly conservative in determining what constitutes an invention, or an improvement to an invention, you should submit the applicable Form even if you aren’t sure that your work is sufficiently novel to be an invention or improvement.\n\nYou should submit an Invention Improvement Disclosure Form anytime you think you have made a novel improvement to a previously disclosed invention.\n\nThe sooner you submit the applicable Form, the better. Always err on the side of disclosing, leaving it to the Legal and Corporate Affairs Team, and our external patent specialists, to decide whether to file, retain as a trade secret, or publish to preempt.\n\nDiscussion of inventions and improvements to inventions\n\nFollow the guidelines below related to the discussion of inventions, treatment of underlying source code, and software licensing throughout the stages of patent prosecution:\n\nDefault Treatment of Underlying Software Code\n\nPublic discussion of the Invention?\n\nUnderlying Software Code License",
+    "chunk_index": 5,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "d6fec7e38fa1_6",
+    "url": "https://handbook.gitlab.com/handbook/legal/patent-program",
+    "title": "Patents",
+    "source": "handbook",
+    "headings": [
+      "Patents",
+      "Why patents matter?",
+      "Patents and Open Source",
+      "GitLab patents",
+      "GitLab’s Patent Program"
+    ],
+    "text": "improvements to inventions\n\nFollow the guidelines below related to the discussion of inventions, treatment of underlying source code, and software licensing throughout the stages of patent prosecution:\n\nDefault Treatment of Underlying Software Code\n\nPublic discussion of the Invention?\n\nUnderlying Software Code License\n\nDiscovery: Team member has identified a potential invention and has completed or plans to complete an Invention Disclosure Form\n\nAll discussions and code related to an invention in the Discovery phase should be kept internal (only accessible to team members).\n\nSoftware should not be released until the application is filed.\n\nPatent application has been filed\n\nOpen source or source available as appropriate.\n\nThe invention may be discussed publicly. Do not discuss the patent application itself, including statements about what the application seeks to protect.\n\nSoftware can be licensed under the EE or MIT license with no additional considerations required from a patent perspective.\n\nOpen source or source available as appropriate.\n\nThe invention may be discussed publicly. Do not discuss the patent itself, including statements about what the patent protects.\n\nSoftware can be licensed under the EE or MIT license with no additional considerations required from a patent perspective.\n\nImprovement to existing or pending patents\n\nAll discussions and code related to the improvements of existing or pending patents should be kept internal (only accessible to team members).\n\nSoftware should not be released until the application is filed.",
+    "chunk_index": 6,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "d6fec7e38fa1_7",
+    "url": "https://handbook.gitlab.com/handbook/legal/patent-program",
+    "title": "Patents",
+    "source": "handbook",
+    "headings": [
+      "Patents",
+      "Why patents matter?",
+      "Patents and Open Source",
+      "GitLab patents",
+      "GitLab’s Patent Program"
+    ],
+    "text": "th no additional considerations required from a patent perspective.\n\nImprovement to existing or pending patents\n\nAll discussions and code related to the improvements of existing or pending patents should be kept internal (only accessible to team members).\n\nSoftware should not be released until the application is filed.\n\nRejected patents. This includes disclosed inventions and improvements that are determined to not qualify for patent protection as communicated by LACA.\n\nOpen source or source available as appropriate.\n\nThe rejected patent may be discussed publicly.\n\nSoftware can be licensed under the EE or MIT license with no additional considerations required from a patent perspective.\n\nIf you have any questions or concerns, reach out to #legal.\nFor guidance on how to review third-party patent functionality, visit the Guidelines for reviewing third-party patents (accessible to GitLab team members only).\n\nConditions of participation\n\nInventors must be current GitLab Team Members to participate in the GitLab Patent Program and be eligible for the receipt of Patent Awards.\n\nGitLab may change or terminate the Program at any time.\n\nGitLab reserves the right in its sole discretion to decide whether to file for a patent on submissions or retain submissions as a trade secret or publish to preempt.\n\nParticipation in the GitLab Patent Program is subject to local employment and intellectual property laws.",
+    "chunk_index": 7,
+    "total_chunks": 8
+  }
+]

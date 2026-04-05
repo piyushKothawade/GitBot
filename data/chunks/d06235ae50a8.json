@@ -1,0 +1,17 @@
+[
+  {
+    "chunk_id": "d06235ae50a8_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/on-call/best-effort-rotations",
+    "title": "On-Call Processes and Policies - Best Effort Rotations",
+    "source": "handbook",
+    "headings": [
+      "On-Call Processes and Policies - Best Effort Rotations",
+      "Active Best Effort Rotations",
+      "Release Managers",
+      "Database Operations"
+    ],
+    "text": "On-Call Processes and Policies - Best Effort Rotations\n\nSome systems use a best-effort rotation rather than an on-call system. For example, the Release Managers rotation is best effort where a pair of engineers are on duty for a week at a time.\n\nBest effort rotations do not have an SLA.\n\nThe decision to use a best effort rotation should center around the on-call requirements rather than the size or nature of the team. However, it is recognized that best effort rotations might be the best option due to the size of your team.\n\nWith a Best Effort Rotation:\n\nThere is no set on-call rotation (team members are not on-call).\n\nWhen there is an escalation to this group, every team member in that region is paged.\n\nIf you are paged, there is an expectation that you will make your best effort to respond to the page.\n\nConversely, Tier 1 rotations will make their best effort to only issue a page in dire circumstances.\n\nIf you want to use a Best Effort Rotation, you need to create an issue for tracking . Please include:\n\nThe participants for this rotation\n\nThe location of the participants\n\nWhy you are choosing a Best Effort Rotation\n\nHow you are preparing to elevate your rotation to 24x5 and what timeframe you expect for this\n\nActive Best Effort Rotations\n\nRotation Leader: Michele Bursi\n\nCoverage: best-effort\n\nCoverage: best-effort\n\nDatabase Operations - ( details )",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

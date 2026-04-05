@@ -1,0 +1,146 @@
+[
+  {
+    "chunk_id": "7a21513cd914_0",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com",
+    "title": "Intellectual property on gitlab.com",
+    "source": "handbook",
+    "headings": [
+      "Intellectual property on gitlab.com",
+      "Overview",
+      "DMCA - Digital Millennium Copyright Act",
+      "Trademark Policy",
+      "Namespace Policy"
+    ],
+    "text": "Intellectual property on gitlab.com\n\nDMCA - Digital Millennium Copyright Act\n\nGitLab takes the intellectual property rights of others seriously and require that our users do the same. The Digital Millennium Copyright Act (DMCA) established a process for addressing claims of copyright infringement. If you own a copyright or have authority to act on behalf of a copyright owner and want to report a claim that a third party is infringing that material on or through GitLab’s services, review the Submitting a DMCA Notice section further below.\n\nGitLab.com namespaces are available on a first come, first served basis. No one can claim priority rights to any namespace on GitLab.com based on a trademark registration. For example, owning the trademark for “GreatCompany” does not mean the trademark owner will be granted the namespace name “gitlab.com/GreatCompany” if it is already registered.\n\nGitLab is not in a position to investigate, assess or adjudicate complicated trademark disputes between third parties. In these instances, contact the third party that you believe is infringing your rights to resolve the matter, or seek resolution by available legal means. GitLab cannot intervene in such matters without a valid legal order.\n\nGitLab will only review a trademark infringement claim related to a namespace registered to a third party, and may intervene, where both of the below criteria are satisfied:\n\nyou provide evidence to GitLab’s satisfaction that you are holder of a relevant trademark registration, and",
+    "chunk_index": 0,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "7a21513cd914_1",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com",
+    "title": "Intellectual property on gitlab.com",
+    "source": "handbook",
+    "headings": [
+      "Intellectual property on gitlab.com",
+      "Overview",
+      "DMCA - Digital Millennium Copyright Act",
+      "Trademark Policy",
+      "Namespace Policy"
+    ],
+    "text": "matters without a valid legal order.\n\nGitLab will only review a trademark infringement claim related to a namespace registered to a third party, and may intervene, where both of the below criteria are satisfied:\n\nyou provide evidence to GitLab’s satisfaction that you are holder of a relevant trademark registration, and\n\nyou provide clear evidence to GitLab’s satisfaction showing that unauthorized use is being made of your trademark such that there is an obvious intent to mislead others into believing that the relevant namespace is affiliated with your trademark.\n\nReports can be submitted to dmca@gitlab.com , and GitLab will review the evidence provided, and if it satisfies the above criteria, GitLab will take any action it deems appropriate.\n\nGitLab.com namespaces are available on a first come, first served basis and cannot be reserved. No brand, company, entity, or persons own the rights to any namespace on GitLab.com and may not claim them based on the trademark. Owning the brand “GreatCompany” does not mean owning the namespace “gitlab.com/GreatCompany”. Disputes regarding namespaces and trademarks must be resolved by the parties involved. GitLab will never act as arbitrators or intermediaries in these disputes, and will not take any action without the appropriate legal orders.\n\nAccount and Group Ownership Disputes\n\nGitLab will not act as an arbitrator of Group or Account ownership disputes. Each user and group owner is responsible for ensuring that they are following best practices for data security.",
+    "chunk_index": 1,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "7a21513cd914_2",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com",
+    "title": "Intellectual property on gitlab.com",
+    "source": "handbook",
+    "headings": [
+      "Intellectual property on gitlab.com",
+      "Overview",
+      "DMCA - Digital Millennium Copyright Act",
+      "Trademark Policy",
+      "Namespace Policy"
+    ],
+    "text": "iaries in these disputes, and will not take any action without the appropriate legal orders.\n\nAccount and Group Ownership Disputes\n\nGitLab will not act as an arbitrator of Group or Account ownership disputes. Each user and group owner is responsible for ensuring that they are following best practices for data security.\n\nAs GitLab subscriptions are generally business-to-business transactions, in the event that a former employee has revoked company access to a paid group, please contact GitLab Support for recovery options.\n\nName Squatting Policy\n\nPer the GitLab Terms of Service:\n\nAccount name squatting is prohibited by GitLab. Account names on GitLab are administered to users on a first-come, first-serve basis. Accordingly, account names cannot be held or remain inactive for future use.\n\nThe GitLab.com Support Team will consider a namespace (user name or group name) to fall under the provisions of this policy when the user has not logged in or otherwise used the namespace for an extended time. For more information, see the Name Squatting section further below.\n\nIf you believe that someone is infringing on your copyright as the copyright owner, you can send a DMCA notice to dmca@gitlab.com .\n\nA DMCA notice is a legal document, therefore GitLab requires you to submit a notice in the following format.\n\nA description of the copyrighted work that you claim is being infringed;\n\nA description of the material you claim is infringing and that you want removed or access to which you want disabled, and the URL or other location of that material;",
+    "chunk_index": 2,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "7a21513cd914_3",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com",
+    "title": "Intellectual property on gitlab.com",
+    "source": "handbook",
+    "headings": [
+      "Intellectual property on gitlab.com",
+      "Overview",
+      "DMCA - Digital Millennium Copyright Act",
+      "Trademark Policy",
+      "Namespace Policy"
+    ],
+    "text": "ment, therefore GitLab requires you to submit a notice in the following format.\n\nA description of the copyrighted work that you claim is being infringed;\n\nA description of the material you claim is infringing and that you want removed or access to which you want disabled, and the URL or other location of that material;\n\nYour name, title (if acting as an agent), address, telephone number, and email address;\n\nThe following statement: \"I have a good faith belief that the use of the copyrighted material I am complaining of is not authorized by the copyright owner, its agent, or the law (e.g., as a fair use)\" ;\n\nThe following statement: \"The information in this notice is accurate and, under penalty of perjury, I am the owner, or authorized to act on behalf of the owner, of the copyright or of an exclusive right that is allegedly infringed\" ; and\n\nAn electronic or physical signature of the owner of the copyright or a person authorized to act on the owner’s behalf.\n\nAfter your submission to dmca@gitlab.com , you should receive an automated confirmation of receipt.\n\nOnce your request is received, a member of our Trust and Safety Team will verify and process your notice.\n\nNotices with missing or inaccurate information cannot be processed. A member of the Trust and Safety team will reach out to you for more information.\n\nShould we verify that you have submitted the required information, you will receive a confirmation email from our team that your request has been processed. If you have not heard from us, you are welcome to send a follow-up email requesting an update.",
+    "chunk_index": 3,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "7a21513cd914_4",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com",
+    "title": "Intellectual property on gitlab.com",
+    "source": "handbook",
+    "headings": [
+      "Intellectual property on gitlab.com",
+      "Overview",
+      "DMCA - Digital Millennium Copyright Act",
+      "Trademark Policy",
+      "Namespace Policy"
+    ],
+    "text": "e Trust and Safety team will reach out to you for more information.\n\nShould we verify that you have submitted the required information, you will receive a confirmation email from our team that your request has been processed. If you have not heard from us, you are welcome to send a follow-up email requesting an update.\n\nIf you have not heard from us, you are welcome to send a follow-up email requesting an update.\n\nValid notices will be forwarded to the reported account owner, allowing them to submit a counter notice or remove the content from gitlab.com\n\nGitLab users, implicated by the notice, have the right to submit a counter-notice. If the counter-notice is deemed valid, we will forward it to you for further action.\n\nFor more information on counter complaints, see the Responding to a DMCA notice section on this page.\n\nResponding to a DMCA Notice\n\nIf it is not possible to come to an agreement with the reporting copyright owner, the content owner may submit a DMCA Counter-Notice to dmca@gitlab.com within ten (10) business days of the date of receiving our notice.\nIf we receive a valid counter-complaint, we will email a copy of the notice to the copyright owner.\n\nThe Counter complaint is a legal document and must comply with the requirements of the DMCA and must include the following:\n\nContact Information: Your name, title (if acting as an agent), physical address, email address, and phone number;\n\nContent Identification: A reasonable identification of the material that has been removed or to which access has been restricted;",
+    "chunk_index": 4,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "7a21513cd914_5",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com",
+    "title": "Intellectual property on gitlab.com",
+    "source": "handbook",
+    "headings": [
+      "Intellectual property on gitlab.com",
+      "Overview",
+      "DMCA - Digital Millennium Copyright Act",
+      "Trademark Policy",
+      "Namespace Policy"
+    ],
+    "text": "t comply with the requirements of the DMCA and must include the following:\n\nContact Information: Your name, title (if acting as an agent), physical address, email address, and phone number;\n\nContent Identification: A reasonable identification of the material that has been removed or to which access has been restricted;\n\nStatement under Perjury: A statement under penalty of perjury that you have \"a good faith belief that the material was removed or disabled as a result of mistake or misidentification of the material to be removed or disabled.\" ;\n\nConsent to Jurisdiction: A statement that you consent to the jurisdiction of Federal District Court for the judicial district in which your provided address is located, or if your address is outside of the United States, for any judicial district in which GitLab may be found .\n\nConsent to service of process: A statement that you will accept service of process from the person who provided the original notification or an agent of such person .\n\nSignature: An electronic or physical signature of the owner of the copyright or a person authorized to act on the owner’s behalf.\n\nShould you receive a gitlab.com DMCA notice for content that is in your control; You can respond to the notice by removing the reported content from gitlab.com. If you believe your content is mistakenly the subject of a DMCA take down request, you have the right to contest the take down request by submitting a counter complaint.\n\nYou can respond to the notice by removing the reported content from gitlab.com.",
+    "chunk_index": 5,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "7a21513cd914_6",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com",
+    "title": "Intellectual property on gitlab.com",
+    "source": "handbook",
+    "headings": [
+      "Intellectual property on gitlab.com",
+      "Overview",
+      "DMCA - Digital Millennium Copyright Act",
+      "Trademark Policy",
+      "Namespace Policy"
+    ],
+    "text": "spond to the notice by removing the reported content from gitlab.com. If you believe your content is mistakenly the subject of a DMCA take down request, you have the right to contest the take down request by submitting a counter complaint.\n\nYou can respond to the notice by removing the reported content from gitlab.com.\n\nIf you believe your content is mistakenly the subject of a DMCA take down request, you have the right to contest the take down request by submitting a counter complaint.\n\nIn the event that we do not see that any actions has been taken and no response to the DMCA notice has been received; The reported content will be made private. Depending on where the content is located, access to the group/project can be restricted. Access to the gitlab.com account is restricted.\n\nThe reported content will be made private. Depending on where the content is located, access to the group/project can be restricted. Access to the gitlab.com account is restricted.\n\nDepending on where the content is located, access to the group/project can be restricted.\n\nAccess to the gitlab.com account is restricted.\n\nTrademark Infringement\n\nTo submit a trademark infringement report under the Trademark Policy , please provide:\n\nEvidence that you are holder of a relevant trademark registration, such as a scanned copy of the trademark registration certificate(s) or screenshot of the registration on the website or database of the applicable national intellectual property office(s).",
+    "chunk_index": 6,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "7a21513cd914_7",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com",
+    "title": "Intellectual property on gitlab.com",
+    "source": "handbook",
+    "headings": [
+      "Intellectual property on gitlab.com",
+      "Overview",
+      "DMCA - Digital Millennium Copyright Act",
+      "Trademark Policy",
+      "Namespace Policy"
+    ],
+    "text": "nfringement report under the Trademark Policy , please provide:\n\nEvidence that you are holder of a relevant trademark registration, such as a scanned copy of the trademark registration certificate(s) or screenshot of the registration on the website or database of the applicable national intellectual property office(s).\n\nA declaration of the following statement: “By submitting this trademark infringement notice, I state that I have a good-faith belief that the reported use, in the manner that I have complained of, is not authorized by the intellectual property rights owner, its agent or the law; that the information contained in this notice is accurate; and, under penalty of perjury, that I am authorized to act on behalf of the owner of the intellectual property rights at issue”.\n\nYou can send this information to dmca@gitlab.com , you should receive an automated confirmation of receipt.\n\nThe GitLab.com Support Team will consider a namespace (user name or group name) to fall under the provisions of this policy when the user has not logged in or otherwise used the namespace for an extended time.\n\nUser namespaces can be reassigned if both of the following are true:\n\nThe user’s last sign in was at least two years ago.\n\nThe user is not the sole owner of any active projects.\n\nGroup namespaces can be reassigned if one of the following is true:\n\nThere is no data (no project or project(s) are empty).\n\nThe owner’s last sign in was at least two years ago.",
+    "chunk_index": 7,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "7a21513cd914_8",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com",
+    "title": "Intellectual property on gitlab.com",
+    "source": "handbook",
+    "headings": [
+      "Intellectual property on gitlab.com",
+      "Overview",
+      "DMCA - Digital Millennium Copyright Act",
+      "Trademark Policy",
+      "Namespace Policy"
+    ],
+    "text": "both of the following are true:\n\nThe user’s last sign in was at least two years ago.\n\nThe user is not the sole owner of any active projects.\n\nGroup namespaces can be reassigned if one of the following is true:\n\nThere is no data (no project or project(s) are empty).\n\nThe owner’s last sign in was at least two years ago.\n\nIf the namespace contains data, GitLab Support will attempt to contact the owner over a two-week period before reassigning the namespaces. If the namespace contains no data (empty or no projects) and the owner is inactive, the namespace will be released immediately.\n\nNamespaces associated with unconfirmed accounts over 90 days old are eligible for immediate release. Group namespaces that contain no data and were created more than 6 months ago are likewise eligible for immediate release.\n\nAccount and Group ownership disputes should contact GitLab Support to see if namespaces are eligible.",
+    "chunk_index": 8,
+    "total_chunks": 9
+  }
+]

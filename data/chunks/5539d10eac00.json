@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "5539d10eac00_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/senior",
+    "title": "Core Platform Career Framework: Senior Distribution Engineer",
+    "source": "handbook",
+    "headings": [
+      "Core Platform Career Framework: Senior Distribution Engineer",
+      "Core Platform Senior Distribution Engineer",
+      "Leadership Competencies",
+      "Technical Competencies",
+      "Values Alignment"
+    ],
+    "text": "Core Platform Career Framework: Senior Distribution Engineer\n\nCore Platform Senior Distribution Engineer\n\nCore Platform Framework | Development Framework | Engineering Framework\n\nIntermediate Distribution | Senior Distribution\n\nCore Platform Senior Distribution Engineers at GitLab are expected to exhibit the following competencies:\n\nLeadership Competencies\n\nTechnical Competencies\n\nAll competencies exhibited by an Intermediate\n\nLeadership Competencies\n\nCommunicates clearly and effectively, both written and verbally, when advising, setting expectations, or suggesting improvements. This applies whether interacting with team members, customers, or the wider community.\n\nAble to deliver work, even when given unclear requirements, within the context of their team.\n\nDemonstrates knowledge about how their group and stage fit into the larger business.\n\nAble to suggest alternative solutions to customer problems based on what they know about other areas of GitLab.\n\nLooks for opportunities for process improvements within their team and works with others to implement process changes.\n\n{{$ include “includes/engineering/development-senior-leadership-competency.md” %}}\n\nPresents training or demos within their domain on a regular cadence.\n\nLeads technical architecture discussions and help drive technical decisions.\n\nWorks with project maintainers, and contributes to maintainer discussion issues.\n\nParticipates on Working Groups as the need arises.\n\nParticipates on customer support/feedback calls as the need arises.\n\nAct as a coach for releasing service components to end-users.",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "5539d10eac00_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/senior",
+    "title": "Core Platform Career Framework: Senior Distribution Engineer",
+    "source": "handbook",
+    "headings": [
+      "Core Platform Career Framework: Senior Distribution Engineer",
+      "Core Platform Senior Distribution Engineer",
+      "Leadership Competencies",
+      "Technical Competencies",
+      "Values Alignment"
+    ],
+    "text": "ecture discussions and help drive technical decisions.\n\nWorks with project maintainers, and contributes to maintainer discussion issues.\n\nParticipates on Working Groups as the need arises.\n\nParticipates on customer support/feedback calls as the need arises.\n\nAct as a coach for releasing service components to end-users.\n\nAble to own a engineering project from concept to production, including proposal, discussion, and execution.\n\nTechnical Competencies\n\nContributes to the team’s understanding of quality and how it impacts the team’s domain with respect to their role.\n\nAble to take on large issues with vague requirements.\n\nAble to resolve complex challenges.\n\nActs as a Coach and Mentor to others.\n\nImproves the state of our test framework and any other dependencies.\n\nCoaches others on improving their tests.\n\nAlways looks to improve our test coverage with every MR coded or reviewed.\n\nEnsures security best practices are followed across many domains and escalate security risks\n\nAble to take on large issues with vague requirements and design an implementation.\n\nImplements the GitLab Iteration value when faced with an issue that grows in size or complexity by converting the issue into an Epic or breaking it down into smaller issues.\n\nHelps to set and enforce coding standards.\n\nLooks to maintain coding consistency across the code base.\n\nProvides reviews across many domains and be mindful of how changes may impact other teams.\n\nImproves the engineering projects at GitLab as a project maintainer . For more information regarding timelines and exceptions, see this page .",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "5539d10eac00_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/senior",
+    "title": "Core Platform Career Framework: Senior Distribution Engineer",
+    "source": "handbook",
+    "headings": [
+      "Core Platform Career Framework: Senior Distribution Engineer",
+      "Core Platform Senior Distribution Engineer",
+      "Leadership Competencies",
+      "Technical Competencies",
+      "Values Alignment"
+    ],
+    "text": "nforce coding standards.\n\nLooks to maintain coding consistency across the code base.\n\nProvides reviews across many domains and be mindful of how changes may impact other teams.\n\nImproves the engineering projects at GitLab as a project maintainer . For more information regarding timelines and exceptions, see this page .\n\nAble to resolve complex performance issues.\n\nMentors others on best practices.\n\nUnderstands how code in their domain performs in production on GitLab.com.\n\nUnderstands impact of the architecture and dependencies required for the self-managed product.\n\nAct as coach for open source contributors.\n\nProvides high level of expertise in programming languages and their frameworks used in Distribution managed engineering projects.\n\nActs as a subject matter expert in one or more linux system deployment technology.\n\nAble to debug production issues across services and identify the product category.\n\nAble to provide deployment recommendations for production installations.\n\nUnderstand how features in their domain operate at scale in production.\n\nAdhere to the Collaboration Competencies for this job level.\n\nAdhere to the Results Competencies for this job level.\n\nAdhere to the Efficiency Competencies for this job level.\n\nAdhere to the Diversity, Inclusion & Belonging Competencies for this job level.\n\nAdhere to the Iteration Competencies for this job level.\n\nAdhere to the Transparency Competencies for this job level.\n\nEngages with the stable-counterparts for their team looking at how to improve the working relationships and processes.",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "5539d10eac00_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/senior",
+    "title": "Core Platform Career Framework: Senior Distribution Engineer",
+    "source": "handbook",
+    "headings": [
+      "Core Platform Career Framework: Senior Distribution Engineer",
+      "Core Platform Senior Distribution Engineer",
+      "Leadership Competencies",
+      "Technical Competencies",
+      "Values Alignment"
+    ],
+    "text": "Adhere to the Diversity, Inclusion & Belonging Competencies for this job level.\n\nAdhere to the Iteration Competencies for this job level.\n\nAdhere to the Transparency Competencies for this job level.\n\nEngages with the stable-counterparts for their team looking at how to improve the working relationships and processes.\n\nRepresents their team, and considers the impact to the team, when in conversations with others.\n\nProvides feedback that focuses on the business impact of the behaviour.\n\nExtensive user of GitLab ( dogfooding ) and regularly makes helpful suggestions for feature proposals in a variety of stages.\n\nDemonstrates ownership of projects that require collaboration with other teams.\n\nLeads conversations towards action and encourages bias for action to deliver results.\n\nHelps others in their group to achieve their group’s goals.\n\nFollows up on suggestions that they make and issues that they create.\n\nSeeks out ways to be more effective in their role, while also starting to mentor others in ways to work efficiently.\n\nProactively takes on work that enables greater efficiency of others in the team.\n\nSeeks out diverse opinions to improve the quality of the team’s work, for example through code review from outside the team.\n\nUses people’s talents to maximize the results of their group.\n\nIndependently balances short term gains and long term benefit.\n\nCreates proposals for the team that have a wide scope but still contain an iterative proposal for delivering the outcome.\n\nIdentifies opportunities to improve the processes around iteration.",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "5539d10eac00_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/senior",
+    "title": "Core Platform Career Framework: Senior Distribution Engineer",
+    "source": "handbook",
+    "headings": [
+      "Core Platform Career Framework: Senior Distribution Engineer",
+      "Core Platform Senior Distribution Engineer",
+      "Leadership Competencies",
+      "Technical Competencies",
+      "Values Alignment"
+    ],
+    "text": ".\n\nUses people’s talents to maximize the results of their group.\n\nIndependently balances short term gains and long term benefit.\n\nCreates proposals for the team that have a wide scope but still contain an iterative proposal for delivering the outcome.\n\nIdentifies opportunities to improve the processes around iteration.\n\nHolds their team to a high standard of transparency and encourages others to work in the open.\n\nDirectly or indirectly takes part in the hiring process to help ensure that we bring in a wide variety of experience into our teams.\n\nIntermediate Competencies\n\nAll competencies exhibited by an Intermediate",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

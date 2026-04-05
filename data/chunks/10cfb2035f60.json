@@ -1,0 +1,194 @@
+[
+  {
+    "chunk_id": "10cfb2035f60_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis\n\nEstimated time to complete: 45 minutes\n\nEstimated time to complete: 45 minutes\n\nA merge request is a proposal to incorporate changes from a source branch to a target branch. Merge requests help you manage the changes that are applied to your code. In this lab, you will learn how to set up and manage merge request approval rules in your projects. You can learn more about merge requests in the documentation .\n\nApproval rules define how many approvals a merge request must receive before it can be merged, and which users should do the approving. They can be used in conjunction with Code owners to ensure that changes are reviewed both by the group maintaining the feature, and any groups responsible for specific areas of oversight. See the documentation to learn more.\n\nTask A. Set merge request approval rules\n\nNavigate to your Family Budget Calculator project inside the Software > Core subgroup.\n\nNavigate to your Family Budget Calculator project inside the Software > Core subgroup.\n\nIn the left pane, click Settings > Merge Requests .\n\nIn the left pane, click Settings > Merge Requests .\n\nScroll down to the Merge request approvals section and click Add approval rule .\n\nScroll down to the Merge request approvals section and click Add approval rule .\n\nIn the Rule name field, enter Infra team .\n\nIn the Rule name field, enter Infra team .",
+    "chunk_index": 0,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "10cfb2035f60_1",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "erge Requests .\n\nIn the left pane, click Settings > Merge Requests .\n\nScroll down to the Merge request approvals section and click Add approval rule .\n\nScroll down to the Merge request approvals section and click Add approval rule .\n\nIn the Rule name field, enter Infra team .\n\nIn the Rule name field, enter Infra team .\n\nIn the Groups field, select your Infrastructure group. You may need to use the ‘All groups’ option and search for your top-level group. To help reduce the search results, try searching for /awesome/infrastructure , or yourgroupname/awesome/infrastructure .\n\nIn the Groups field, select your Infrastructure group. You may need to use the ‘All groups’ option and search for your top-level group.\n\nTo help reduce the search results, try searching for /awesome/infrastructure , or yourgroupname/awesome/infrastructure .\n\nTo help reduce the search results, try searching for /awesome/infrastructure , or yourgroupname/awesome/infrastructure .\n\nBack in the Merge request approvals section of the Merge Requests page, click Add approval rule to create a second project-level rule.\n\nBack in the Merge request approvals section of the Merge Requests page, click Add approval rule to create a second project-level rule.\n\nIn the Rule name field, enter Security operations .\n\nIn the Rule name field, enter Security operations .\n\nIn the Groups field, select your Security group. You may need to use the ‘all groups’ option and search for your top-level group.\n\nIn the Groups field, select your Security group. You may need to use the ‘all groups’ option and search for your top-level group.",
+    "chunk_index": 1,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "10cfb2035f60_2",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "ons .\n\nIn the Rule name field, enter Security operations .\n\nIn the Groups field, select your Security group. You may need to use the ‘all groups’ option and search for your top-level group.\n\nIn the Groups field, select your Security group. You may need to use the ‘all groups’ option and search for your top-level group.\n\nBack in the Merge request approvals section of the Merge Requests page, under Approval Settings , check the box next to Prevent editing approval rules in merge requests.\n\nBack in the Merge request approvals section of the Merge Requests page, under Approval Settings , check the box next to Prevent editing approval rules in merge requests.\n\nIn the same section, ensure that Prevent approval by the creator is unchecked . This is necessary so we can approve our own merge requests in the training environment.\n\nIn the same section, ensure that Prevent approval by the creator is unchecked . This is necessary so we can approve our own merge requests in the training environment.\n\nTask B. Create a merge request\n\nIn your Family Budget Calculator project, click Issues in the left pane.\n\nIn your Family Budget Calculator project, click Issues in the left pane.\n\nClick into your Third-party financial services integration issue.\n\nClick into your Third-party financial services integration issue.\n\nClick on the Create merge request button at the bottom of the description of the issue.\n\nClick on the Create merge request button at the bottom of the description of the issue.\n\nIn the Branch name field, change the text to read update-db-docs-perf-tools .",
+    "chunk_index": 2,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "10cfb2035f60_3",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "ick into your Third-party financial services integration issue.\n\nClick on the Create merge request button at the bottom of the description of the issue.\n\nClick on the Create merge request button at the bottom of the description of the issue.\n\nIn the Branch name field, change the text to read update-db-docs-perf-tools .\n\nIn the Branch name field, change the text to read update-db-docs-perf-tools .\n\nEnsure that the Source (branch or tag) is set to main .\n\nEnsure that the Source (branch or tag) is set to main .\n\nClick Create merge request .\n\nClick Create merge request .\n\nType Draft: Add performance tools to Family Budget Calculator documentation in the Title field. Putting ‘Draft:’ at the beginning of your merge request means that the merge request will not occur until it has been marked as ready. This is used to note that a merge request is not ready to be merged yet, and to prevent accidental merges. Note that the Mark as draft checkbox below the title will also check automatically when ‘Draft:’ is added to the title.\n\nType Draft: Add performance tools to Family Budget Calculator documentation in the Title field.\n\nPutting ‘Draft:’ at the beginning of your merge request means that the merge request will not occur until it has been marked as ready. This is used to note that a merge request is not ready to be merged yet, and to prevent accidental merges. Note that the Mark as draft checkbox below the title will also check automatically when ‘Draft:’ is added to the title.",
+    "chunk_index": 3,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "10cfb2035f60_4",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "merge request means that the merge request will not occur until it has been marked as ready. This is used to note that a merge request is not ready to be merged yet, and to prevent accidental merges. Note that the Mark as draft checkbox below the title will also check automatically when ‘Draft:’ is added to the title.\n\nPutting ‘Draft:’ at the beginning of your merge request means that the merge request will not occur until it has been marked as ready. This is used to note that a merge request is not ready to be merged yet, and to prevent accidental merges. Note that the Mark as draft checkbox below the title will also check automatically when ‘Draft:’ is added to the title.\n\nRemove Closes #<issue-number> from the Description field. We want to keep the original issue open for additional work. If a merge request has Closes #<issue-number> in their description, the issue will be closed when the merge request is merged.\n\nRemove Closes #<issue-number> from the Description field. We want to keep the original issue open for additional work.\n\nIf a merge request has Closes #<issue-number> in their description, the issue will be closed when the merge request is merged.\n\nIf a merge request has Closes #<issue-number> in their description, the issue will be closed when the merge request is merged.\n\nVerify that you are assigned to the merge request by checking the Assignees section. Also note any labels inherited from the issue, and any approval rules inherited from project settings.",
+    "chunk_index": 4,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "10cfb2035f60_5",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "ed.\n\nIf a merge request has Closes #<issue-number> in their description, the issue will be closed when the merge request is merged.\n\nVerify that you are assigned to the merge request by checking the Assignees section. Also note any labels inherited from the issue, and any approval rules inherited from project settings.\n\nVerify that you are assigned to the merge request by checking the Assignees section. Also note any labels inherited from the issue, and any approval rules inherited from project settings.\n\nClick the Create Merge Request button.\n\nClick the Create Merge Request button.\n\nFrom the merge request details page, select Code > Open in Web IDE to edit files on the update-db-docs-perf-tools branch. The Web IDE is an advanced editor with built-in ability to commit to your repository branches. You can use the Web IDE to make changes to multiple files directly from the GitLab UI. See the documentation to learn more.\n\nFrom the merge request details page, select Code > Open in Web IDE to edit files on the update-db-docs-perf-tools branch.\n\nThe Web IDE is an advanced editor with built-in ability to commit to your repository branches. You can use the Web IDE to make changes to multiple files directly from the GitLab UI. See the documentation to learn more.\n\nThe Web IDE is an advanced editor with built-in ability to commit to your repository branches. You can use the Web IDE to make changes to multiple files directly from the GitLab UI. See the documentation to learn more.\n\nClick README.md from the left file pane.\n\nClick README.md from the left file pane.",
+    "chunk_index": 5,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "10cfb2035f60_6",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "n to learn more.\n\nThe Web IDE is an advanced editor with built-in ability to commit to your repository branches. You can use the Web IDE to make changes to multiple files directly from the GitLab UI. See the documentation to learn more.\n\nClick README.md from the left file pane.\n\nClick README.md from the left file pane.\n\nPaste the following into README.md , beginning on line 3. ## Performance tools The Family Budget Calculator currently uses HAProxy for load balancing. We are researching and testing additional tools to improve performance.\n\nPaste the following into README.md , beginning on line 3.\n\nClick Source Control in the left pane (the third button from the top).\n\nClick Source Control in the left pane (the third button from the top).\n\nIn the Commit message field, enter Update docs with performance tools\n\nIn the Commit message field, enter Update docs with performance tools\n\nEnsure that the message “ Commit and push to update-db-docs-perf-tools branch ” is written in the red ‘commit’ box underneath your commit message.\n\nEnsure that the message “ Commit and push to update-db-docs-perf-tools branch ” is written in the red ‘commit’ box underneath your commit message.\n\nClick Commit and push to update-db-docs-perf-tools branch .\n\nClick Commit and push to update-db-docs-perf-tools branch .\n\nTask C. Perform code review and merge changes\n\nFor advice on best practices when it comes to code reviews, see the documentation .\n\nFor advice on best practices when it comes to code reviews, see the documentation .",
+    "chunk_index": 6,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "10cfb2035f60_7",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "push to update-db-docs-perf-tools branch .\n\nClick Commit and push to update-db-docs-perf-tools branch .\n\nTask C. Perform code review and merge changes\n\nFor advice on best practices when it comes to code reviews, see the documentation .\n\nFor advice on best practices when it comes to code reviews, see the documentation .\n\nNavigate to the Draft: Add performance tools to Family Budget Calculator documentation merge request by clicking on the red GitLab button in the bottom left corner of the Web IDE, and then clicking Go to Family Budget Calculator project on GitLab .\n\nNavigate to the Draft: Add performance tools to Family Budget Calculator documentation merge request by clicking on the red GitLab button in the bottom left corner of the Web IDE, and then clicking Go to Family Budget Calculator project on GitLab .\n\nClick on Code > Merge Requests , and then click on Draft: Add performance tools to Family Budget Calculator documentation .\n\nClick on Code > Merge Requests , and then click on Draft: Add performance tools to Family Budget Calculator documentation .\n\nOn the merge request page, click the Changes tab to see the changes that will be applied to the project’s main branch after merge. Code reviewers can critique individual lines of code and suggest changes. See the documentation to learn more.\n\nOn the merge request page, click the Changes tab to see the changes that will be applied to the project’s main branch after merge.\n\nCode reviewers can critique individual lines of code and suggest changes. See the documentation to learn more.",
+    "chunk_index": 7,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "10cfb2035f60_8",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "dual lines of code and suggest changes. See the documentation to learn more.\n\nOn the merge request page, click the Changes tab to see the changes that will be applied to the project’s main branch after merge.\n\nCode reviewers can critique individual lines of code and suggest changes. See the documentation to learn more.\n\nCode reviewers can critique individual lines of code and suggest changes. See the documentation to learn more.\n\nClick on the Overview tab.\n\nClick on the Overview tab.\n\nIn the three dots menu to the right of the merge request title, click Mark as ready to take the merge request out of draft mode. You will see that Draft: has been removed from the merge request’s title.\n\nIn the three dots menu to the right of the merge request title, click Mark as ready to take the merge request out of draft mode. You will see that Draft: has been removed from the merge request’s title.\n\nClick Approve to approve the merge request. Note that the Merge button now appears since all requisite approvals have been applied.\n\nClick Approve to approve the merge request. Note that the Merge button now appears since all requisite approvals have been applied.\n\nScroll down to the comments field and type a comment in the comments field that reads: Approved. Ready to merge. . Click Comment to post the comment.\n\nScroll down to the comments field and type a comment in the comments field that reads: Approved. Ready to merge. . Click Comment to post the comment.\n\nClick Merge and observe the merge complete successfully.\n\nClick Merge and observe the merge complete successfully.",
+    "chunk_index": 8,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "10cfb2035f60_9",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "Ready to merge. . Click Comment to post the comment.\n\nScroll down to the comments field and type a comment in the comments field that reads: Approved. Ready to merge. . Click Comment to post the comment.\n\nClick Merge and observe the merge complete successfully.\n\nClick Merge and observe the merge complete successfully.\n\nNavigate to the project landing page by clicking the Family Budget Calculator title tile in the top left corner. See that the README.md file on the main branch now includes your updates.\n\nNavigate to the project landing page by clicking the Family Budget Calculator title tile in the top left corner. See that the README.md file on the main branch now includes your updates.\n\nIn the left pane, click Code > Merge requests . The merge request will now appear under the Merged tab on this page.\n\nIn the left pane, click Code > Merge requests . The merge request will now appear under the Merged tab on this page.\n\nTask D. Create a wiki for project documentation\n\nIf you don’t want to keep your documentation in your repository, but you want to keep it in the same project as your code, you can use the wiki GitLab provides in each GitLab project. Every wiki is a separate Git repository, so you can create wiki pages in the web interface, or locally using Git. GitLab wikis support Markdown, Rdoc, AsciiDoc, and Org for content. Wiki pages written in Markdown support all Markdown features, and also provide some wiki-specific behavior for links. You can read more about wikis here .",
+    "chunk_index": 9,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "10cfb2035f60_10",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "separate Git repository, so you can create wiki pages in the web interface, or locally using Git. GitLab wikis support Markdown, Rdoc, AsciiDoc, and Org for content. Wiki pages written in Markdown support all Markdown features, and also provide some wiki-specific behavior for links. You can read more about wikis here .\n\nIf you don’t want to keep your documentation in your repository, but you want to keep it in the same project as your code, you can use the wiki GitLab provides in each GitLab project. Every wiki is a separate Git repository, so you can create wiki pages in the web interface, or locally using Git. GitLab wikis support Markdown, Rdoc, AsciiDoc, and Org for content. Wiki pages written in Markdown support all Markdown features, and also provide some wiki-specific behavior for links. You can read more about wikis here .\n\nNavigate to your Family Budget Calculator project in the Software > Core subgroup.\n\nNavigate to your Family Budget Calculator project in the Software > Core subgroup.\n\nIn the left pane, click Plan > Wiki .\n\nIn the left pane, click Plan > Wiki .\n\nClick Create your first page button in the middle of the page.\n\nClick Create your first page button in the middle of the page.\n\nIn the Title section, type in Family Budget Calculator Documentation as the page title.\n\nIn the Title section, type in Family Budget Calculator Documentation as the page title.",
+    "chunk_index": 10,
+    "total_chunks": 12
+  },
+  {
+    "chunk_id": "10cfb2035f60_11",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4",
+    "title": "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+    "source": "handbook",
+    "headings": [
+      "GitLab Agile Portfolio Management- Hands-On Lab: Collaboration via MRs and Wikis",
+      "Objectives",
+      "Task A. Set merge request approval rules",
+      "Task B. Create a merge request",
+      "Task C. Perform code review and merge changes"
+    ],
+    "text": "Plan > Wiki .\n\nClick Create your first page button in the middle of the page.\n\nClick Create your first page button in the middle of the page.\n\nIn the Title section, type in Family Budget Calculator Documentation as the page title.\n\nIn the Title section, type in Family Budget Calculator Documentation as the page title.\n\nPaste the following text in the content field underneath the title field. ## Summary The Family Budget Calculator helps households stay on budget and save for the future. ## Contact Contact <your-name> with questions or comments.\n\nPaste the following text in the content field underneath the title field.\n\nClick Create Page . You should see a new Wiki page with the content you created.\n\nClick Create Page . You should see a new Wiki page with the content you created.\n\nIf you’d like, edit the Family Budget Calculator Documentation page to add additional content or create additional wiki pages.\n\nIf you’d like, edit the Family Budget Calculator Documentation page to add additional content or create additional wiki pages.\n\nYou have completed this lab exercise. You can view the other lab guides for this course .\n\nIf you wish to make a change to the lab, please submit your changes via Merge Request.",
+    "chunk_index": 11,
+    "total_chunks": 12
+  }
+]

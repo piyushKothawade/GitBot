@@ -1,0 +1,162 @@
+[
+  {
+    "chunk_id": "23d6581e8e0b_0",
+    "url": "https://handbook.gitlab.com/handbook/marketing/marketing-operations/leadgenius",
+    "title": "LeadGenius",
+    "source": "handbook",
+    "headings": [
+      "LeadGenius",
+      "LeadGenius",
+      "Access, Licensing, and Provisioning",
+      "Who needs direct LeadGenius access",
+      "How to request access (Lumos)"
+    ],
+    "text": "LeadGenius is a B2B data provider used by Marketing Operations & Sales Development Teams to source and enrich and leads & contacts for the APJ market . It complements our existing enrichment stack (ZoomInfo, Cognism, etc.) by focusing specifically on APJ data coverage and quality .\n\nLeadGenius is an enrichment and sourcing tool only – all production data from LeadGenius is written into Salesforce (SFDC) so that GTM teams can work entirely from SFDC.\n\nAccess, Licensing, and Provisioning\n\nWho needs direct LeadGenius access\n\nMost GTM users do not need a LeadGenius login. Direct platform access is limited to a small group of users who operationally run campaigns and enrichment:\n\nMarketing Operations (MktgOps) – tool owner, integration, data governance, and workflows\n\nSelected APJ GTM ops / SDR/BDR stakeholders – where hands-on list building or QA is required\n\nEveryone else consumes LeadGenius data through SFDC only .\n\nHow to request access (Lumos)\n\nIf your role requires direct tool access:\n\nGo to Okta and open Lumos .\n\nSearch for LeadGenius .\n\nSubmit an access request including: Your role (e.g., APJ BDR, APJ Field Marketing, MktgOps) Your region and use case (e.g., “APJ outbound sourcing for Japan enterprise accounts”)\n\nYour role (e.g., APJ BDR, APJ Field Marketing, MktgOps)\n\nYour region and use case (e.g., “APJ outbound sourcing for Japan enterprise accounts”)\n\nRequests are reviewed by MktgOps and provisioned based on license availability and regional priorities.\n\nWho can see LeadGenius data",
+    "chunk_index": 0,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "23d6581e8e0b_1",
+    "url": "https://handbook.gitlab.com/handbook/marketing/marketing-operations/leadgenius",
+    "title": "LeadGenius",
+    "source": "handbook",
+    "headings": [
+      "LeadGenius",
+      "LeadGenius",
+      "Access, Licensing, and Provisioning",
+      "Who needs direct LeadGenius access",
+      "How to request access (Lumos)"
+    ],
+    "text": "sourcing for Japan enterprise accounts”)\n\nYour role (e.g., APJ BDR, APJ Field Marketing, MktgOps)\n\nYour region and use case (e.g., “APJ outbound sourcing for Japan enterprise accounts”)\n\nRequests are reviewed by MktgOps and provisioned based on license availability and regional priorities.\n\nWho can see LeadGenius data\n\nAll enrichment and net-new data from LeadGenius is stored in SFDC on Lead , Contact records.\n\nAny user with standard access to those objects in SFDC can see LeadGenius-enriched fields.\n\nThere is no production data that exists only inside LeadGenius ; SFDC is the SSOT for LeadGenius output.\n\nWhere LeadGenius Data Lives in SFDC\n\nLeadGenius enrichment is written directly into standard and custom fields on the Lead and Contact layouts so that reps can see and use the data without leaving SFDC.\n\nOn both Lead and Contact objects, LeadGenius data is grouped in the LeadGenius/OceanFrogs section. This section includes:\n\nPerson-level fields First Name , Last Name Email Title Seniority Level Department Mobile Phone Person LinkedIn Contact Country , Contact State\n\nFirst Name , Last Name\n\nContact Country , Contact State\n\nCompany-level fields Company Name Company Website Company Domain Company HQ Country Company HQ State Industry Annual Revenue Employee Count Technologies Used\n\nOperational enrichment fields Email Verification Status Last Enrichment Date Enrichment Source\n\nOperational enrichment fields\n\nEmail Verification Status",
+    "chunk_index": 1,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "23d6581e8e0b_2",
+    "url": "https://handbook.gitlab.com/handbook/marketing/marketing-operations/leadgenius",
+    "title": "LeadGenius",
+    "source": "handbook",
+    "headings": [
+      "LeadGenius",
+      "LeadGenius",
+      "Access, Licensing, and Provisioning",
+      "Who needs direct LeadGenius access",
+      "How to request access (Lumos)"
+    ],
+    "text": "t State\n\nCompany-level fields Company Name Company Website Company Domain Company HQ Country Company HQ State Industry Annual Revenue Employee Count Technologies Used\n\nOperational enrichment fields Email Verification Status Last Enrichment Date Enrichment Source\n\nOperational enrichment fields\n\nEmail Verification Status\n\nThese fields are read-only for most users and are populated/updated by the LeadGenius integration. They are used by routing, reporting, and GTM workflows , and should be treated as the system of record for APJ enrichment data alongside our other enrichment providers.\n\nLeadGenius APJ Campaign Workflows\n\nMktgOps & Sales Development Teams uses LeadGenius in two core workflows :\n\nICP-based APJ sourcing and enrichment\n\nAccount-level Nominate for Enrichment workflow\n\n1. ICP-based APJ sourcing & enrichment\n\nThis workflow is used when we want to proactively source net-new APJ contacts that match our target ICP.\n\nDefine ICP MktgOps and APJ GTM stakeholders agree on an APJ ICP spec (segment, geo, employee band, industry, tech profile, etc.).\n\nDefine ICP MktgOps and APJ GTM stakeholders agree on an APJ ICP spec (segment, geo, employee band, industry, tech profile, etc.).\n\nLeadGenius sourcing LeadGenius uses this ICP to: Identify net-new accounts in the APJ region Identify key contacts at those accounts (titles, buying groups, etc.)\n\nLeadGenius sourcing LeadGenius uses this ICP to:\n\nIdentify net-new accounts in the APJ region\n\nIdentify key contacts at those accounts (titles, buying groups, etc.)",
+    "chunk_index": 2,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "23d6581e8e0b_3",
+    "url": "https://handbook.gitlab.com/handbook/marketing/marketing-operations/leadgenius",
+    "title": "LeadGenius",
+    "source": "handbook",
+    "headings": [
+      "LeadGenius",
+      "LeadGenius",
+      "Access, Licensing, and Provisioning",
+      "Who needs direct LeadGenius access",
+      "How to request access (Lumos)"
+    ],
+    "text": "us sourcing LeadGenius uses this ICP to: Identify net-new accounts in the APJ region Identify key contacts at those accounts (titles, buying groups, etc.)\n\nLeadGenius sourcing LeadGenius uses this ICP to:\n\nIdentify net-new accounts in the APJ region\n\nIdentify key contacts at those accounts (titles, buying groups, etc.)\n\nLoad into SFDC MktgOps: Loads the results into SFDC using our standard enrichment process Tags records with a consistent Initial Source (for example, an APJ-specific LeadGenius source value) so we can report on performance and data quality\n\nLoad into SFDC MktgOps:\n\nLoads the results into SFDC using our standard enrichment process\n\nTags records with a consistent Initial Source (for example, an APJ-specific LeadGenius source value) so we can report on performance and data quality\n\nDownstream usage New and enriched records are used for SDR/BDR prospecting . All subsequent ownership and routing follows standard APJ rules (see Routing section below).\n\nNew and enriched records are used for SDR/BDR prospecting .\n\nAll subsequent ownership and routing follows standard APJ rules (see Routing section below).\n\n2. Nominate for Enrichment (Account object)\n\nThis workflow lets APJ GTM teams flag specific accounts where deeper or refreshed data would unlock better prospecting.",
+    "chunk_index": 3,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "23d6581e8e0b_4",
+    "url": "https://handbook.gitlab.com/handbook/marketing/marketing-operations/leadgenius",
+    "title": "LeadGenius",
+    "source": "handbook",
+    "headings": [
+      "LeadGenius",
+      "LeadGenius",
+      "Access, Licensing, and Provisioning",
+      "Who needs direct LeadGenius access",
+      "How to request access (Lumos)"
+    ],
+    "text": "New and enriched records are used for SDR/BDR prospecting .\n\nAll subsequent ownership and routing follows standard APJ rules (see Routing section below).\n\n2. Nominate for Enrichment (Account object)\n\nThis workflow lets APJ GTM teams flag specific accounts where deeper or refreshed data would unlock better prospecting.\n\nNomination in SFDC On the Account object, APJ reps (AEs, SDRs/BDRs, or MktgOps) can set a dedicated field such as “Nominate for Enrichment” to indicate that the account should be enriched via LeadGenius. Reps should only nominate accounts that: Are in the APJ region Are legitimate target or customer accounts (not personal or test records) Have a clear business need (e.g., missing buying group, outdated firmographics)\n\nOn the Account object, APJ reps (AEs, SDRs/BDRs, or MktgOps) can set a dedicated field such as “Nominate for Enrichment” to indicate that the account should be enriched via LeadGenius.\n\nReps should only nominate accounts that: Are in the APJ region Are legitimate target or customer accounts (not personal or test records) Have a clear business need (e.g., missing buying group, outdated firmographics)\n\nAre in the APJ region\n\nAre legitimate target or customer accounts (not personal or test records)\n\nHave a clear business need (e.g., missing buying group, outdated firmographics)\n\nBatch extraction by MktgOps On a regular cadence (e.g., weekly ), MktgOps pulls all APJ accounts where Nominate for Enrichment = True . The account list is provided to LeadGenius for enrichment.\n\nBatch extraction by MktgOps",
+    "chunk_index": 4,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "23d6581e8e0b_5",
+    "url": "https://handbook.gitlab.com/handbook/marketing/marketing-operations/leadgenius",
+    "title": "LeadGenius",
+    "source": "handbook",
+    "headings": [
+      "LeadGenius",
+      "LeadGenius",
+      "Access, Licensing, and Provisioning",
+      "Who needs direct LeadGenius access",
+      "How to request access (Lumos)"
+    ],
+    "text": "test records)\n\nHave a clear business need (e.g., missing buying group, outdated firmographics)\n\nBatch extraction by MktgOps On a regular cadence (e.g., weekly ), MktgOps pulls all APJ accounts where Nominate for Enrichment = True . The account list is provided to LeadGenius for enrichment.\n\nBatch extraction by MktgOps\n\nOn a regular cadence (e.g., weekly ), MktgOps pulls all APJ accounts where Nominate for Enrichment = True .\n\nThe account list is provided to LeadGenius for enrichment.\n\nEnrichment + import back to SFDC LeadGenius returns additional contacts for those accounts. MktgOps loads the results back into SFDC using the same controlled import process: Creates new leads for those accounts Updates operational metadata (e.g., last enrichment date / source)\n\nEnrichment + import back to SFDC\n\nLeadGenius returns additional contacts for those accounts.\n\nMktgOps loads the results back into SFDC using the same controlled import process: Creates new leads for those accounts Updates operational metadata (e.g., last enrichment date / source)\n\nCreates new leads for those accounts\n\nUpdates operational metadata (e.g., last enrichment date / source)\n\nPost-enrichment hygiene After the batch has been processed, MktgOps (or automation) clears or updates the Nominate for Enrichment field so it reflects current status. APJ reps can then work the newly enriched contacts using standard SFDC views and sequences.\n\nPost-enrichment hygiene\n\nAfter the batch has been processed, MktgOps (or automation) clears or updates the Nominate for Enrichment field so it reflects current status.",
+    "chunk_index": 5,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "23d6581e8e0b_6",
+    "url": "https://handbook.gitlab.com/handbook/marketing/marketing-operations/leadgenius",
+    "title": "LeadGenius",
+    "source": "handbook",
+    "headings": [
+      "LeadGenius",
+      "LeadGenius",
+      "Access, Licensing, and Provisioning",
+      "Who needs direct LeadGenius access",
+      "How to request access (Lumos)"
+    ],
+    "text": "ominate for Enrichment field so it reflects current status. APJ reps can then work the newly enriched contacts using standard SFDC views and sequences.\n\nPost-enrichment hygiene\n\nAfter the batch has been processed, MktgOps (or automation) clears or updates the Nominate for Enrichment field so it reflects current status.\n\nAPJ reps can then work the newly enriched contacts using standard SFDC views and sequences.\n\nRouting and Ownership (APJ)\n\nLeadGenius itself does not own routing logic; it simply populates data and creates records. Routing takes place in Traction and remains fully aligned with our standard APJ lead & contact routing .\n\nLead Source & attribution Records created via LeadGenius should be tagged with a clear source / source detail that identifies LeadGenius as the origin. This allows us to measure volume, quality, and pipeline impact from LeadGenius specifically.\n\nLead Source & attribution\n\nRecords created via LeadGenius should be tagged with a clear source / source detail that identifies LeadGenius as the origin.\n\nThis allows us to measure volume, quality, and pipeline impact from LeadGenius specifically.\n\nStandard APJ routing Leads created from LeadGenius imports follow the same Traction / routing rules as any other APJ lead: Routing is based on segment, geo, and routing rules defined in our APJ lead & contact routing configuration. Ownership (BDR vs SDR vs AE vs queues) is not special-cased for LeadGenius; it is determined by the standard routing logic.",
+    "chunk_index": 6,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "23d6581e8e0b_7",
+    "url": "https://handbook.gitlab.com/handbook/marketing/marketing-operations/leadgenius",
+    "title": "LeadGenius",
+    "source": "handbook",
+    "headings": [
+      "LeadGenius",
+      "LeadGenius",
+      "Access, Licensing, and Provisioning",
+      "Who needs direct LeadGenius access",
+      "How to request access (Lumos)"
+    ],
+    "text": "from LeadGenius imports follow the same Traction / routing rules as any other APJ lead: Routing is based on segment, geo, and routing rules defined in our APJ lead & contact routing configuration. Ownership (BDR vs SDR vs AE vs queues) is not special-cased for LeadGenius; it is determined by the standard routing logic.\n\nLeads created from LeadGenius imports follow the same Traction / routing rules as any other APJ lead: Routing is based on segment, geo, and routing rules defined in our APJ lead & contact routing configuration. Ownership (BDR vs SDR vs AE vs queues) is not special-cased for LeadGenius; it is determined by the standard routing logic.\n\nRouting is based on segment, geo, and routing rules defined in our APJ lead & contact routing configuration.\n\nOwnership (BDR vs SDR vs AE vs queues) is not special-cased for LeadGenius; it is determined by the standard routing logic.\n\nNo bypass of RoE LeadGenius-sourced records are still subject to our Rules of Engagement (RoE) and Do Not Contact / consent policies. Reps should treat LeadGenius as one more data source , not as a reason to bypass routing or RoE.\n\nLeadGenius-sourced records are still subject to our Rules of Engagement (RoE) and Do Not Contact / consent policies.\n\nReps should treat LeadGenius as one more data source , not as a reason to bypass routing or RoE.\n\nWhen to Use LeadGenius vs. Other Enrichment Tools\n\nFrom a MktgOps perspective:",
+    "chunk_index": 7,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "23d6581e8e0b_8",
+    "url": "https://handbook.gitlab.com/handbook/marketing/marketing-operations/leadgenius",
+    "title": "LeadGenius",
+    "source": "handbook",
+    "headings": [
+      "LeadGenius",
+      "LeadGenius",
+      "Access, Licensing, and Provisioning",
+      "Who needs direct LeadGenius access",
+      "How to request access (Lumos)"
+    ],
+    "text": "o bypass routing or RoE.\n\nLeadGenius-sourced records are still subject to our Rules of Engagement (RoE) and Do Not Contact / consent policies.\n\nReps should treat LeadGenius as one more data source , not as a reason to bypass routing or RoE.\n\nWhen to Use LeadGenius vs. Other Enrichment Tools\n\nFrom a MktgOps perspective:\n\nUse LeadGenius when The target audience is in APJ (either net-new sourcing or deeper enrichment on APJ accounts). You need targeted APJ campaigns (e.g., vertical, region, or cluster plays) and existing data providers have gaps. An APJ rep or marketer has explicitly nominated an APJ account for enrichment .\n\nThe target audience is in APJ (either net-new sourcing or deeper enrichment on APJ accounts).\n\nYou need targeted APJ campaigns (e.g., vertical, region, or cluster plays) and existing data providers have gaps.\n\nAn APJ rep or marketer has explicitly nominated an APJ account for enrichment .\n\nUse ZoomInfo / Cognism when You are working outside APJ (e.g., AMER, EMEA, LATAM ). You’re following established workflows documented on the ZoomInfo and Cognism handbook pages or the lead & contact enrichment internal page.\n\nUse ZoomInfo / Cognism when\n\nYou are working outside APJ (e.g., AMER, EMEA, LATAM ).\n\nYou’re following established workflows documented on the ZoomInfo and Cognism handbook pages or the lead & contact enrichment internal page.\n\nIf you are unsure which provider is appropriate for your campaign, start a thread in #mktgops with:\n\nUse case (e.g., “APJ ABM for strategic accounts in Japan”)",
+    "chunk_index": 8,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "23d6581e8e0b_9",
+    "url": "https://handbook.gitlab.com/handbook/marketing/marketing-operations/leadgenius",
+    "title": "LeadGenius",
+    "source": "handbook",
+    "headings": [
+      "LeadGenius",
+      "LeadGenius",
+      "Access, Licensing, and Provisioning",
+      "Who needs direct LeadGenius access",
+      "How to request access (Lumos)"
+    ],
+    "text": "R, EMEA, LATAM ).\n\nYou’re following established workflows documented on the ZoomInfo and Cognism handbook pages or the lead & contact enrichment internal page.\n\nIf you are unsure which provider is appropriate for your campaign, start a thread in #mktgops with:\n\nUse case (e.g., “APJ ABM for strategic accounts in Japan”)\n\nWhether you need net-new sourcing , enrichment on existing accounts , or both\n\nData Quality, Compliance, and Best Practices\n\nSFDC is the SSOT for all LeadGenius data.\n\nFollow existing DNC / consent / privacy processes when using LeadGenius-enriched records in emails, calls, or campaigns.\n\nDo not manually overwrite LeadGenius-enriched fields with guessed values; instead: Log a MktgOps issue or Nominate the account again for enrichment or correction.\n\nLog a MktgOps issue or\n\nNominate the account again for enrichment or correction.\n\nFor questions or issues related to LeadGenius:\n\nStart in Slack #mktgops and include: A link to the Account / Lead / Contact in question Whether you are asking about access , data quality , routing , or campaign setup\n\nA link to the Account / Lead / Contact in question\n\nWhether you are asking about access , data quality , routing , or campaign setup\n\nFor structural changes or new workflows, open a MktgOps issue using the standard templates and mention LeadGenius in the title or description.",
+    "chunk_index": 9,
+    "total_chunks": 10
+  }
+]

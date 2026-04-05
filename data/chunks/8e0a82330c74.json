@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "8e0a82330c74_0",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk/apps/us-government",
+    "title": "US Government apps",
+    "source": "handbook",
+    "headings": [
+      "US Government apps",
+      "Advanced SAST App",
+      "Advanced Search",
+      "Architecture Diagrams",
+      "GitLab Reminders App"
+    ],
+    "text": "This guide covers the Zendesk apps currently used in the US Government Zendesk instance.\n\nIntroduced via support-team-meta#6652\n\nThe Advanced SAST App is a ticket app that enables a quick working of User requests for source code of LGPL-licensed components in GitLab Advanced SAST.\n\nLocation: Ticket sidebar\n\nRestricted by Group: Support Support Managers Support Operations\n\nThis application was developed in-house and can be found Advanced SAST App project .\n\nAdvanced Search is an app that provides a simple visual interface for constructing complex search queries against tickets, users, and organizations (orgs). It also enables you to export the search results in a CSV format.\n\nThis application was developed by Zendesk and is available in the Zendesk Marketplace .\n\nArchitecture Diagrams\n\nIntroduced via support-ops-project#801\n\nThis app uses the Organization field AM Project ID to check for an existing Account Management project. If it finds it, it will then link to that project’s Architecture Diagram.\n\nLocation: Ticket sidebar\n\nThis application was developed in-house and can be found Architecture Diagrams project .\n\nIntroduced via support-team-meta#3036\n\nThe Reminders App appears in the navbar and allows the agent a more specialized view of tickets they are involved in. It currently shows:\n\nTickets assigned to you with a pending/overdue task that are not in a Closed state\n\nRecent tickets you have viewed\n\nTickets assigned to you that are not in a Closed state\n\nTickets you are CC’d on that are not in a Closed state",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "8e0a82330c74_1",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk/apps/us-government",
+    "title": "US Government apps",
+    "source": "handbook",
+    "headings": [
+      "US Government apps",
+      "Advanced SAST App",
+      "Advanced Search",
+      "Architecture Diagrams",
+      "GitLab Reminders App"
+    ],
+    "text": "llows the agent a more specialized view of tickets they are involved in. It currently shows:\n\nTickets assigned to you with a pending/overdue task that are not in a Closed state\n\nRecent tickets you have viewed\n\nTickets assigned to you that are not in a Closed state\n\nTickets you are CC’d on that are not in a Closed state\n\nIt also allows you to quickly manage your tasks by seeing the notes you have left for said task, when it is due, and a button to quickly mark the task as done (remove the notes and due date).\n\nThis application was developed in-house and can be found GitLab Reminders App project .\n\nSalesforce Account Info\n\nShows basic information about a Salesforce account when provided the account’s ID value.\n\nRestricted by Role: Admins Support Managers\n\nThis application was developed in-house and can be found SFDC Account Info project .\n\nThis uses the ticket subject to search for other tickets with a similar subject. This helps to locate potentially related tickets you can check to see how they were solved.\n\nLocation: Ticket sidebar\n\nThis application was developed by Zendesk and is available in the Zendesk Marketplace .\n\nIntroduced via support-team-meta#4694\n\nSupport Ticket Attention Requests (STAR) are the mechanism by which GitLab Team Members can request additional attention be placed on tickets. This is the app agents use in Zendesk to start a STAR process.\n\nLocation: Ticket sidebar\n\nThis application was developed in-house and can be found STAR project .\n\nIntroduced via support-ops-project#801\n\nA plugin controlled app that can do several things Zendesk related",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "8e0a82330c74_2",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk/apps/us-government",
+    "title": "US Government apps",
+    "source": "handbook",
+    "headings": [
+      "US Government apps",
+      "Advanced SAST App",
+      "Advanced Search",
+      "Architecture Diagrams",
+      "GitLab Reminders App"
+    ],
+    "text": "request additional attention be placed on tickets. This is the app agents use in Zendesk to start a STAR process.\n\nLocation: Ticket sidebar\n\nThis application was developed in-house and can be found STAR project .\n\nIntroduced via support-ops-project#801\n\nA plugin controlled app that can do several things Zendesk related\n\nCreate new ticket Allows an agent to create a new ticket using the same user as the ticket they are currently on.\n\nAllows an agent to create a new ticket using the same user as the ticket they are currently on.\n\nAllows an agent to create a new ticket using the same user as the ticket they are currently on.\n\nDue date picker This allows you to customize what the Due Date for a Task ticket is set for. By default, Zendesk only allows setting the date. This enables you to set the date, time, and timezone. You can also set the Due Date Note and disable (or enable) task notifications using this app.\n\nThis allows you to customize what the Due Date for a Task ticket is set for. By default, Zendesk only allows setting the date. This enables you to set the date, time, and timezone. You can also set the Due Date Note and disable (or enable) task notifications using this app.\n\nThis allows you to customize what the Due Date for a Task ticket is set for. By default, Zendesk only allows setting the date. This enables you to set the date, time, and timezone.\n\nYou can also set the Due Date Note and disable (or enable) task notifications using this app.\n\nEscalated tickets This searches for tickets under the organization that have been escalated within the last 6 months.",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "8e0a82330c74_3",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk/apps/us-government",
+    "title": "US Government apps",
+    "source": "handbook",
+    "headings": [
+      "US Government apps",
+      "Advanced SAST App",
+      "Advanced Search",
+      "Architecture Diagrams",
+      "GitLab Reminders App"
+    ],
+    "text": "r. By default, Zendesk only allows setting the date. This enables you to set the date, time, and timezone.\n\nYou can also set the Due Date Note and disable (or enable) task notifications using this app.\n\nEscalated tickets This searches for tickets under the organization that have been escalated within the last 6 months.\n\nThis searches for tickets under the organization that have been escalated within the last 6 months.\n\nThis searches for tickets under the organization that have been escalated within the last 6 months.\n\nRelated tickets This looks for tickets related to the current one based off the category (or subcategory) the ticket is currently using. It then displays up to 5 of them (sorted by the update_at value of the ticket, descending).\n\nThis looks for tickets related to the current one based off the category (or subcategory) the ticket is currently using. It then displays up to 5 of them (sorted by the update_at value of the ticket, descending).\n\nThis looks for tickets related to the current one based off the category (or subcategory) the ticket is currently using. It then displays up to 5 of them (sorted by the update_at value of the ticket, descending).\n\nAttachments Displays attachments present on the ticket.\n\nDisplays attachments present on the ticket.\n\nDisplays attachments present on the ticket.\n\nTicket Info Shows various metric information about a ticket: Agent Wait Time Customer wait time Last assignee update Last customer update Assigned at On-hold time Time to first reply SLA Policy First reply SLA Next reply SLA Schedule",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "8e0a82330c74_4",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk/apps/us-government",
+    "title": "US Government apps",
+    "source": "handbook",
+    "headings": [
+      "US Government apps",
+      "Advanced SAST App",
+      "Advanced Search",
+      "Architecture Diagrams",
+      "GitLab Reminders App"
+    ],
+    "text": "plays attachments present on the ticket.\n\nDisplays attachments present on the ticket.\n\nTicket Info Shows various metric information about a ticket: Agent Wait Time Customer wait time Last assignee update Last customer update Assigned at On-hold time Time to first reply SLA Policy First reply SLA Next reply SLA Schedule\n\nShows various metric information about a ticket: Agent Wait Time Customer wait time Last assignee update Last customer update Assigned at On-hold time Time to first reply SLA Policy First reply SLA Next reply SLA Schedule\n\nShows various metric information about a ticket:\n\nLocation: Ticket sidebar\n\nRestricted by Group: Support Support Managers Support Operations\n\nThis application was developed in-house and can be found Zendesk Super App project .",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

@@ -1,0 +1,11 @@
+# Phase 1 — Data Pipeline
+# requests==2.32.3
+# beautifulsoup4==4.12.3
+# chromadb>=0.6.0
+
+# Phase 2 — Chatbot Backend (install when ready)
+# fastapi==0.115.0
+# uvicorn[standard]==0.30.6
+# google-genai
+ 
+# Phase 3 — Frontend (Node/React — separate package.json)

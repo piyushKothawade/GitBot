@@ -1,0 +1,178 @@
+[
+  {
+    "chunk_id": "b18beb6a6f80_0",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/platform/snowflake-benchmarking-guide",
+    "title": "Snowflake warehouse optimization",
+    "source": "handbook",
+    "headings": [
+      "Snowflake warehouse optimization",
+      "Quick Summary",
+      "Prospectus",
+      "Section 1: Warehouse sizing - concepts",
+      "Concept 1: Cost vs Performance"
+    ],
+    "text": "Snowflake warehouse optimization\n\nPrecisely choosing the correct warehouse requires benchmarking different warehouses:\n\nThe user should base the initial estimated warehouse size on the number of partitions scanned within the query\n\nBenchmark by increasing the warehouse size and comparing the ‘cost’ vs ‘reduction in query time’\n\nIn the context of the total credits consumed by the dbt DAG, right-sizing warehouses by model for the smallest models does not lead to much cost reduction.\n\nIn our current dbt set-up, we use a mix of Large and X-Large warehouses to run our production dbt jobs, based on the model tag.\n\nHowever, dbt offers the ability to specify the warehouse size on the model level.\n\nInitially, we had looked at right-sizing the warehouse for every single model, and we ran benchmarks in this issue to see what the potential cost savings would be. We found that right-sizing the warehouse for our smaller models doesn’t make a key difference in the credits consumed when looking at overall credit consumption.\n\nHowever, this does not make right-sizing the warehouse for models an unnecessary task. It just shows that we should be selective about which models we try to right-size. Since it takes time to right-size each model, time should be allocated to the models that are currently costing the most credits.\n\nThe rest of this page will document:\n\nKey theoretical concepts for warehouse efficiency: How warehouse sizing affects cost vs performance What makes the most ’efficient’ warehouse for our needs Hypothetical examples\n\nHow warehouse sizing affects cost vs performance",
+    "chunk_index": 0,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "b18beb6a6f80_1",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/platform/snowflake-benchmarking-guide",
+    "title": "Snowflake warehouse optimization",
+    "source": "handbook",
+    "headings": [
+      "Snowflake warehouse optimization",
+      "Quick Summary",
+      "Prospectus",
+      "Section 1: Warehouse sizing - concepts",
+      "Concept 1: Cost vs Performance"
+    ],
+    "text": "e models that are currently costing the most credits.\n\nThe rest of this page will document:\n\nKey theoretical concepts for warehouse efficiency: How warehouse sizing affects cost vs performance What makes the most ’efficient’ warehouse for our needs Hypothetical examples\n\nHow warehouse sizing affects cost vs performance\n\nWhat makes the most ’efficient’ warehouse for our needs\n\nHypothetical examples\n\nHow to right-size a warehouse Steps needed Real-world examples\n\nWhen to spend time right-sizing models\n\nSection 1: Warehouse sizing - concepts\n\nConcept 1: Cost vs Performance\n\nEach time you increase the size of the warehouse by one level, you are doubling the CPU and RAM of your compute instance. Correspondingly, you are also doubling the price via the credits you consume.\n\nWhile the price is doubled , in an ideal world on the proper workload/query, the query time is reduced by half due to the doubling of the compute instance’s resources. Therefore, in this situation, you would pay the same price on either warehouse, but the bigger warehouse would halve the run-time of the query, making it the more efficient choice.\n\nEventually, if you keep upsizing the warehouse, you’ll reach a point of diminishing returns, where the query run-time may be only slightly reduced while the costs increase disproportionately faster.\nHere’s a select.dev cost vs performance diagram illustrating this point [1].\n\nConcept 2: Defining Warehouse efficiency\n\nWarehouse Efficiency comes in two dimensions: cost and performance. Note that ‘warehouse efficiency’ is a different concept than model efficiency .",
+    "chunk_index": 1,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "b18beb6a6f80_2",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/platform/snowflake-benchmarking-guide",
+    "title": "Snowflake warehouse optimization",
+    "source": "handbook",
+    "headings": [
+      "Snowflake warehouse optimization",
+      "Quick Summary",
+      "Prospectus",
+      "Section 1: Warehouse sizing - concepts",
+      "Concept 1: Cost vs Performance"
+    ],
+    "text": "while the costs increase disproportionately faster.\nHere’s a select.dev cost vs performance diagram illustrating this point [1].\n\nConcept 2: Defining Warehouse efficiency\n\nWarehouse Efficiency comes in two dimensions: cost and performance. Note that ‘warehouse efficiency’ is a different concept than model efficiency .\n\nBecause there are two dimensions, ‘warehouse efficiency’ doesn’t have a clear definition; it needs to be decided based on how much you value ‘cost’ versus ‘performance.’\n\nIn our case, we want one of these two outcomes when using a different warehouse:\n\nmaintain existing runtimes while reducing costs\n\nreduce runtimes, without increasing cost drastically\n\nBased on the requirements above, we will define warehouse efficiency clearly as follows:\n\nA warehouse is efficient when compared to the next-size smaller warehouse; the query run-time is reduced by 40% or more.\n\nA warehouse is efficient when compared to the next-size smaller warehouse; the query run-time is reduced by 40% or more.\n\nExplanation: As discussed in the previous section, for the next-size bigger warehouse to break even, it needs to run 2x as fast (query run-time is reduced by 50% ) to compensate for its 2x price increase.\n\nIn our definition, we require run-time to be reduced by at least 40%, which translates to a maximum increase in cost of 20%. The reason why we don’t require a 50% reduction in run-time (and break-even in costs) is the following:\n\nwe need our performance to stay close to existing dbt run-times",
+    "chunk_index": 2,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "b18beb6a6f80_3",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/platform/snowflake-benchmarking-guide",
+    "title": "Snowflake warehouse optimization",
+    "source": "handbook",
+    "headings": [
+      "Snowflake warehouse optimization",
+      "Quick Summary",
+      "Prospectus",
+      "Section 1: Warehouse sizing - concepts",
+      "Concept 1: Cost vs Performance"
+    ],
+    "text": "or its 2x price increase.\n\nIn our definition, we require run-time to be reduced by at least 40%, which translates to a maximum increase in cost of 20%. The reason why we don’t require a 50% reduction in run-time (and break-even in costs) is the following:\n\nwe need our performance to stay close to existing dbt run-times\n\nwe want to work iteratively, which means setting a more realistic goal that allows some wiggle-room and then adjusting the goalpost once we learn more.\n\nTo get into a technicality here, percentage improvement in query run-time can be a bit confusing because performance improves when run-time decreases - it’s an inverse relationship.\n\nWe will calculate the percentage improvement in run-time using the traditional formula [2]:\n\n$$\n\\frac{new - old}{old} \\times 100%\n$$\n\nFor example, if we have the values new = 5 and old = 10 , the calculation would be:\n\n$$\n\\begin{align*}\n\\frac{new - old}{old} \\times 100% &= \\frac{5 - 10}{10} \\times 100% \\\n&= \\frac{-5}{10} \\times 100% \\\n&= -50%\n\\end{align*}\n$$\n\nThat means the new value is 50% smaller (faster, since we’re talking about response time) than the old value.\n\nThat might sound a bit vague, so here are some hypothetical examples:\n\nHypothetical Examples\n\nThe run-time has decreased by 50%, from 1 hour -> 30 minutes. In this case, it’s a no-brainer to increase the warehouse size:\n\nThe run-time has decreased by 40% from 1 hour -> 36 minutes. Meanwhile, the cost has increased by 20% from $2 to $2.40:\n\nIn this case, upsizing the warehouse is no longer a no-brainer. It now depends on how much you value cost vs. query run-time.",
+    "chunk_index": 3,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "b18beb6a6f80_4",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/platform/snowflake-benchmarking-guide",
+    "title": "Snowflake warehouse optimization",
+    "source": "handbook",
+    "headings": [
+      "Snowflake warehouse optimization",
+      "Quick Summary",
+      "Prospectus",
+      "Section 1: Warehouse sizing - concepts",
+      "Concept 1: Cost vs Performance"
+    ],
+    "text": "minutes. In this case, it’s a no-brainer to increase the warehouse size:\n\nThe run-time has decreased by 40% from 1 hour -> 36 minutes. Meanwhile, the cost has increased by 20% from $2 to $2.40:\n\nIn this case, upsizing the warehouse is no longer a no-brainer. It now depends on how much you value cost vs. query run-time.\n\nIf you only cared about cost, you would stick with the X-small; if you only cared about speed, you would go with the Small.\n\nIn our case, we want to find a balance between both, so we use the previously established guidelines:\n\nA warehouse is efficient when compared to the next-size smaller warehouse, the query run-time is 40% less.\n\nA warehouse is efficient when compared to the next-size smaller warehouse, the query run-time is 40% less.\n\nIn this case, since the query run-time has been reduced by 40%, it’s exactly on the threshold of being considered ’efficient’, and we should choose the ‘S’ warehouse.\n\nExample 3, run-time has decreased by 20% from 1 hour -> 48 minutes. Meanwhile, the cost has increased by 60%, from $2 to $3.20:\n\nIn this case, the query would be considered ‘inefficient’ because the runtime has only been reduced by 20%. For it to be considered ’efficient’, the runtime needs to be reduced by 40% or more. Therefore, the ‘XS’ warehouse should be chosen.\n\nSection 2: Steps to right-sizing warehouse\n\nWe have discussed in theory what an ‘optimal’ warehouse is, but how do we actually choose the correct warehouse for each model?\n\nrun an explain plan to figure out how many partitions the table has",
+    "chunk_index": 4,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "b18beb6a6f80_5",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/platform/snowflake-benchmarking-guide",
+    "title": "Snowflake warehouse optimization",
+    "source": "handbook",
+    "headings": [
+      "Snowflake warehouse optimization",
+      "Quick Summary",
+      "Prospectus",
+      "Section 1: Warehouse sizing - concepts",
+      "Concept 1: Cost vs Performance"
+    ],
+    "text": "to be reduced by 40% or more. Therefore, the ‘XS’ warehouse should be chosen.\n\nSection 2: Steps to right-sizing warehouse\n\nWe have discussed in theory what an ‘optimal’ warehouse is, but how do we actually choose the correct warehouse for each model?\n\nrun an explain plan to figure out how many partitions the table has\n\nBased on the number of partitions, use select.dev # of partitions diagram to estimate what warehouse to start with\n\nRun the query in dbt with the estimated warehouse from the previous step\n\nCheck the below ‘Benchmarking heuristics’ section to see if you can immediately assign a warehouse; if not, continue\n\nUsing this Google Sheet record the query time\n\nUpsizing warehouse(s) Now, rerun the query with the next highest warehouse Record the results in the Google Sheet again Stop once the cost is increasing faster than the performance\n\nNow, rerun the query with the next highest warehouse\n\nRecord the results in the Google Sheet again\n\nStop once the cost is increasing faster than the performance\n\nIn the following sections, we’ll look at the following:\n\nWhy the benchmarking needs to happen in dbt\n\nWe’ll look at two examples of right-sizing warehouses by following these steps: simple query: gitlab_dotcom_deployment_todo_dedupe_source more complicated query with more partitions: prep_ci_stage\n\nsimple query: gitlab_dotcom_deployment_todo_dedupe_source\n\nmore complicated query with more partitions: prep_ci_stage\n\nBenchmarking needs to be done in dbt",
+    "chunk_index": 5,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "b18beb6a6f80_6",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/platform/snowflake-benchmarking-guide",
+    "title": "Snowflake warehouse optimization",
+    "source": "handbook",
+    "headings": [
+      "Snowflake warehouse optimization",
+      "Quick Summary",
+      "Prospectus",
+      "Section 1: Warehouse sizing - concepts",
+      "Concept 1: Cost vs Performance"
+    ],
+    "text": "ht-sizing warehouses by following these steps: simple query: gitlab_dotcom_deployment_todo_dedupe_source more complicated query with more partitions: prep_ci_stage\n\nsimple query: gitlab_dotcom_deployment_todo_dedupe_source\n\nmore complicated query with more partitions: prep_ci_stage\n\nBenchmarking needs to be done in dbt\n\nIn the above list of steps, it states that the queries need to be run in dbt. This is because for almost all models, at least two sets of SQL statements are being run. Firstly, a SELECT statement is being run, but additionally, one of these two statements is also being run under the hood:\n\nFor incremental models, a MERGE statement is being run\n\nFor new and full_refresh models, a CREATE TABLE statement is being run\n\nThese additional SQL statements can be expensive computationally and need to be part of the benchmark.\n\nWhen using dbt run , these statements are automatically run for you. Therefore, it’s best to run all warehouse benchmarking queries via dbt, either locally or via CI job.\n\nBenchmarking incremental runs\n\nWhen benchmarking incremental models specifically, the ‘most efficient’ warehouse will differ based on whether it’s an incremental or full_refresh run.\n\nAt the very least, the incremental runs should be benchmarked like so:\n\nThe corresponding table should be fully loaded\n\nDelete the previous day of data and then run the model incrementally using the estimated warehouse based on the partition size.",
+    "chunk_index": 6,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "b18beb6a6f80_7",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/platform/snowflake-benchmarking-guide",
+    "title": "Snowflake warehouse optimization",
+    "source": "handbook",
+    "headings": [
+      "Snowflake warehouse optimization",
+      "Quick Summary",
+      "Prospectus",
+      "Section 1: Warehouse sizing - concepts",
+      "Concept 1: Cost vs Performance"
+    ],
+    "text": "e will differ based on whether it’s an incremental or full_refresh run.\n\nAt the very least, the incremental runs should be benchmarked like so:\n\nThe corresponding table should be fully loaded\n\nDelete the previous day of data and then run the model incrementally using the estimated warehouse based on the partition size.\n\nOptional: The model could also be benchmarked by running it on full_refresh as well. That way, the model can be configured on a different warehouse based on whether it is an incremental or full_refresh run:\n\nThe below sections will look at two examples of how to follow the benchmarking steps.\n\nexample 1: gitlab_dotcom_deployment_todo_dedupe_source\n\nThe first step is to run an explain plan, which shows the query has 630 partitons:\n\nThe 2nd step is to choose a warehouse based on the number of partitions, per the above diagram. In this case, with 630 partitions, we can start with a size XS warehouse.\n\nWith warehouse XS , the query 01b5ff9d-080a-e214-0000-289d77d4f1e2 took 7m14s, so we’ll add those stats to the Google Sheets template\n\nNext, we will try using M warehouse. First, let’s remove caching by running:\n\nWith warehouse M query 01b5ffc3-080a-e214-0000-289d77d57b3e took 1m45s, so we’ll add those stats to the Google Sheets template:\n\nrun-time minutes part\n\nrun-time seconds part\n\nThe above shows that with the M warehouse, run-time has decreased by 73%, AND cost has also decreased by 3%, meaning that a ‘M’ warehouse is superior to the XS warehouse in this situation.",
+    "chunk_index": 7,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "b18beb6a6f80_8",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/platform/snowflake-benchmarking-guide",
+    "title": "Snowflake warehouse optimization",
+    "source": "handbook",
+    "headings": [
+      "Snowflake warehouse optimization",
+      "Quick Summary",
+      "Prospectus",
+      "Section 1: Warehouse sizing - concepts",
+      "Concept 1: Cost vs Performance"
+    ],
+    "text": "000-289d77d57b3e took 1m45s, so we’ll add those stats to the Google Sheets template:\n\nrun-time minutes part\n\nrun-time seconds part\n\nThe above shows that with the M warehouse, run-time has decreased by 73%, AND cost has also decreased by 3%, meaning that a ‘M’ warehouse is superior to the XS warehouse in this situation.\n\nSince performance has increased faster than cost, we can upsize again to the L warehouse to see if that continues.\n\nUsing the L warehouse, the query 01b5ffdc-080a-e214-0000-289d77d5c756 finished in 1m23s, pasting this into the spreadsheet:\n\nrun-time minutes part\n\nrun-time seconds part\n\nThe above spreadsheet shows that query run-time was reduced by 21% (good), but costs increased by 58% (bad). Therefore, the price is growing much faster than the performance gains.\n\nConclusion: The M warehouse has the best run-time-to-cost ratio and should be used for this model.\n\nexample 2: prep_ci_stage\n\nThe EXPLAIN plan shows that there are a total of 9211 partitions that will need to be scanned. The estimation warehouse diagram has guidelines for 8,000 and 16,000 multi-partitions.\n\nWe’ll start with the L warehouse.\n\nLet’s first run the below statement to prevent caching for benchmarking:\n\nThese were the query run-times:\n\nPasting the run-times in our spreadsheet:\n\nrun-time minutes part\n\nrun-time seconds part\n\nIt’s clear that the XL is more ’efficient’ here because the run-time was reduced by 64%, and the cost was reduced by 29%.\n\nSection 3: When to right-size models",
+    "chunk_index": 8,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "b18beb6a6f80_9",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/platform/snowflake-benchmarking-guide",
+    "title": "Snowflake warehouse optimization",
+    "source": "handbook",
+    "headings": [
+      "Snowflake warehouse optimization",
+      "Quick Summary",
+      "Prospectus",
+      "Section 1: Warehouse sizing - concepts",
+      "Concept 1: Cost vs Performance"
+    ],
+    "text": "to prevent caching for benchmarking:\n\nThese were the query run-times:\n\nPasting the run-times in our spreadsheet:\n\nrun-time minutes part\n\nrun-time seconds part\n\nIt’s clear that the XL is more ’efficient’ here because the run-time was reduced by 64%, and the cost was reduced by 29%.\n\nSection 3: When to right-size models\n\nAs mentioned in the Prospectus section, a benchmark was done right-sizing all the models in the non-product dbt task, and per this benchmarking issue . It shows that right-sizing the smallest models does NOT lead to significant cost-savings (if at all), even though these type of models make up more than 90% of the models within the run.\n\nTherefore, in the context of the dbt.py DAG, benchmarking would be most valuable for the most expensive models. We can use the query_attribution Snowflake table to find these models.\n\nA small caveat to the above is that we also run dbt models in other environments outside of the production dbt.py DAG, such as:\n\nIn these latter environments, it may make sense to right-size the warehouse for every model, even if the models are small. In these cases, the method to right-size doesn’t need to be as precise, i.e., having to compare against multiple warehouse sizes. Instead, one could immediately assign an estimated warehouse per model based on the number of partitions scanned by the model.\n\nTo summarize, the priority for right-sizing warehouses should be the largest models that take the longest to run and consume the most credits since these models make up a disproportionate amount of the total credits consumed.",
+    "chunk_index": 9,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "b18beb6a6f80_10",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/platform/snowflake-benchmarking-guide",
+    "title": "Snowflake warehouse optimization",
+    "source": "handbook",
+    "headings": [
+      "Snowflake warehouse optimization",
+      "Quick Summary",
+      "Prospectus",
+      "Section 1: Warehouse sizing - concepts",
+      "Concept 1: Cost vs Performance"
+    ],
+    "text": "sign an estimated warehouse per model based on the number of partitions scanned by the model.\n\nTo summarize, the priority for right-sizing warehouses should be the largest models that take the longest to run and consume the most credits since these models make up a disproportionate amount of the total credits consumed.\n\nWhen working on query optimization of the most expensive models, one should also consider benchmarking the warehouse to make sure the most ’efficient’ warehouse is being used\n\nConsider implementing these benchmarking steps programmatically. For example, a CI job could be one end product of this that tells the user what size warehouse they should be using.\n\n[1] select.dev: warehouse sizing\n\n[2] calculating percentage improvements for run-times, StackOverflow ``",
+    "chunk_index": 10,
+    "total_chunks": 11
+  }
+]

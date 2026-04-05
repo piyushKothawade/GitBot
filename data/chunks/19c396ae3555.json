@@ -1,0 +1,226 @@
+[
+  {
+    "chunk_id": "19c396ae3555_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "Test Quarantine Process\n\nThis page describes GitLab’s quarantine process for managing flaky and broken tests. For technical implementation syntax (RSpec and Jest), see Quarantining Tests (Developer Docs) . For debugging flaky tests, see Unhealthy Tests (Developer Docs) .\n\nThe quarantine process helps maintain pipeline stability by temporarily removing flaky or broken tests from CI execution while preserving them to be fixed in the future. It helps reduce test failure noise and ensures engineers are not blocked by unrelated failures. Quarantining a test should be temporary: tests must be fixed, removed, or moved to a lower test level.\n\n📬 I’ve been assigned a quarantine MR\n\nReview and take action\n\n🚨 I need to quarantine a test\n\n✅ I want to dequarantine a test\n\nFollow the dequarantine process\n\n🔍 How do tests get quarantined?\n\nAutomated detection & manual process\n\nFlaky test detection and tracking\n\nSlack channels & support\n\nYou’ve been assigned a quarantine merge request\n\nIf you have been assigned a quarantine merge request, you have been identified as an appropriate DRI to review the quarantine for the test. These merge requests are created automatically for consistently failing flaky tests , but can also be created manually by team members.",
+    "chunk_index": 0,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "ve been assigned a quarantine merge request\n\nIf you have been assigned a quarantine merge request, you have been identified as an appropriate DRI to review the quarantine for the test. These merge requests are created automatically for consistently failing flaky tests , but can also be created manually by team members.\n\nReview and decide the best approach : Fix immediately : If the root cause is clear and a fix is known. Delete the test : If it’s low-value or redundant. Convert to lower level : If it can be tested more reliably at unit or integration level. Quarantine : If investigation or fix will take longer than the required response time (see Flaky tests - Urgency Tiers and Response Timelines for specific timelines).\n\nFix immediately : If the root cause is clear and a fix is known.\n\nDelete the test : If it’s low-value or redundant.\n\nConvert to lower level : If it can be tested more reliably at unit or integration level.\n\nQuarantine : If investigation or fix will take longer than the required response time (see Flaky tests - Urgency Tiers and Response Timelines for specific timelines).\n\nTake action according to the response timelines (see Flaky tests - Urgency Tiers and Response Timelines for specific timelines): Merge the merge request (test enters quarantine), OR Fix the test and close the merge request, OR Provide feedback on why it shouldn’t be quarantined.\n\nMerge the merge request (test enters quarantine), OR\n\nFix the test and close the merge request, OR\n\nProvide feedback on why it shouldn’t be quarantined.\n\nIf no action is taken:",
+    "chunk_index": 1,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "e merge request (test enters quarantine), OR Fix the test and close the merge request, OR Provide feedback on why it shouldn’t be quarantined.\n\nMerge the merge request (test enters quarantine), OR\n\nFix the test and close the merge request, OR\n\nProvide feedback on why it shouldn’t be quarantined.\n\nIf no action is taken:\n\nThe merge request is approved by the Pipeline DRI after the urgency timeline expires.\n\nThe test enters long-term quarantine.\n\nThe 3-month deletion countdown begins.\n\nYour responsibilities after merging:\n\nInvestigate the root cause.\n\nUpdate the issue with progress weekly.\n\nResolve or remove within 3 months.\n\nHow tests become quarantined\n\nTests are identified for quarantine through automated detection and manual identification:\n\nAutomated Flaky Test Reporting (recommended) - Identifies the most impactful flaky test files and creates quarantine merge requests automatically, assigned to Engineering Managers based on feature_category metadata. See Flaky Tests: Reporting of Top Flaky Test Files for details.\n\nAutomated Flaky Test Reporting (recommended) - Identifies the most impactful flaky test files and creates quarantine merge requests automatically, assigned to Engineering Managers based on feature_category metadata. See Flaky Tests: Reporting of Top Flaky Test Files for details.\n\nTest Failure Issues (deprecated) - Automatically creates and updates GitLab issues when tests fail in CI pipelines. This system has significant shortcomings compared to the Automated Flaky Test Reporting system. See comparison of the two systems for details.",
+    "chunk_index": 2,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "Flaky Tests: Reporting of Top Flaky Test Files for details.\n\nTest Failure Issues (deprecated) - Automatically creates and updates GitLab issues when tests fail in CI pipelines. This system has significant shortcomings compared to the Automated Flaky Test Reporting system. See comparison of the two systems for details.\n\nTest Failure Issues (deprecated) - Automatically creates and updates GitLab issues when tests fail in CI pipelines. This system has significant shortcomings compared to the Automated Flaky Test Reporting system. See comparison of the two systems for details.\n\nFor details on how these systems work, see Flaky Tests: Detection and Tracking .\n\nManual identification\n\nPipeline DRIs or other team members identify repeated failures and use the associated issue from the Test Failure Issues project to manually quarantine the test.\n\nBefore you quarantine a test, you must have a relevant issue. Test failure and flaky issues are created automatically when a test fails on a scheduled pipeline. Issues such as bug defects may have been manually created.\n\nThe pipeline job retries failed tests. When the test fails again, a test failure issue is either updated (if it is found to exist) or created. If environment issues are found on an end-to-end test pipeline, a test environment issue is raised instead.\n\nYou can also create a test failure issue manually in the Test Failure Issues project.\n\nThe issue must include:",
+    "chunk_index": 3,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "n the test fails again, a test failure issue is either updated (if it is found to exist) or created. If environment issues are found on an end-to-end test pipeline, a test environment issue is raised instead.\n\nYou can also create a test failure issue manually in the Test Failure Issues project.\n\nThe issue must include:\n\nThe correct group::* label (for example, group::code_review ). For failure issues created due to a failing pipeline test, these labels are applied automatically by the labeler.\n\nA link to the failing pipeline or job.\n\nThe stack trace and failure pattern.\n\nThe ~\"failure::flaky-test\" label.\n\nFlaky test detection and tracking\n\nBefore quarantining a test, it must be identified as flaky or failing. GitLab uses automated systems to detect and track test failures.\n\nFor complete information about how flaky tests are detected, tracked, and reported, see the Flaky Tests handbook page .\n\nAutomated Flaky Test Reporting (recommended): Identifies the most impactful flaky test files and creates quarantine merge requests\n\nTest Failure Issues (deprecated): Automatically creates and updates issues when tests fail in CI pipelines\n\nThese systems provide the foundation for the quarantine process by identifying which tests need attention.\n\nChoose the right quarantine type based on urgency and your ability to resolve the test failure.\nFast quarantine uses a separate file in a dedicated repository for rapid merging, while long-term quarantine modifies test metadata directly in the GitLab codebase.\n\nQuarantine phase durations\n\nFix, remove, or convert to long-term",
+    "chunk_index": 4,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "the right quarantine type based on urgency and your ability to resolve the test failure.\nFast quarantine uses a separate file in a dedicated repository for rapid merging, while long-term quarantine modifies test metadata directly in the GitLab codebase.\n\nQuarantine phase durations\n\nFix, remove, or convert to long-term\n\nInvestigation and resolution\n\nFinal opportunity to resolve\n\nTest permanently removed\n\nUse fast quarantine when:\n\nA test failure is blocking critical development work and needs immediate quarantine.\n\nThe root cause is known or easily identifiable.\n\nYou can commit to providing an update within 3 days.\n\nImmediate action : Follow the fast quarantining process Update related test failure issue in the Test Failure Issues project with correct stage and group labels\n\nFollow the fast quarantining process\n\nUpdate related test failure issue in the Test Failure Issues project with correct stage and group labels\n\nRe-running failed jobs with the latest fast quarantine file : RSpec tests (unit/integration/system) : Re-trigger the retrieve-tests-metadata job, then retry the failed RSpec job. Simply restarting the job will NOT pick up new fast quarantine updates. E2E tests : Simply retry the failed E2E job - E2E tests automatically download the latest fast quarantine file. Alternative : Running a new pipeline will pick up the latest fast quarantine for all test types.\n\nRe-running failed jobs with the latest fast quarantine file :",
+    "chunk_index": 5,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "ob will NOT pick up new fast quarantine updates. E2E tests : Simply retry the failed E2E job - E2E tests automatically download the latest fast quarantine file. Alternative : Running a new pipeline will pick up the latest fast quarantine for all test types.\n\nRe-running failed jobs with the latest fast quarantine file :\n\nRSpec tests (unit/integration/system) : Re-trigger the retrieve-tests-metadata job, then retry the failed RSpec job. Simply restarting the job will NOT pick up new fast quarantine updates.\n\nE2E tests : Simply retry the failed E2E job - E2E tests automatically download the latest fast quarantine file.\n\nAlternative : Running a new pipeline will pick up the latest fast quarantine for all test types.\n\nWithin 3 days (fast quarantine expectation): Option A : Implement a fix for the flaky test Option B : Remove the test entirely (if it’s duplicating other tests or the flakiness cannot be fixed) Option C : If investigation reveals the issue is more complex, convert to long-term quarantine with updated timeline.\n\nWithin 3 days (fast quarantine expectation):\n\nOption A : Implement a fix for the flaky test\n\nOption B : Remove the test entirely (if it’s duplicating other tests or the flakiness cannot be fixed)\n\nOption C : If investigation reveals the issue is more complex, convert to long-term quarantine with updated timeline.\n\nAfter merging fast quarantine : You will receive an automated reminder comment with instructions for creating a permanent quarantine\n\nAfter merging fast quarantine :",
+    "chunk_index": 6,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_7",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "or the flakiness cannot be fixed)\n\nOption C : If investigation reveals the issue is more complex, convert to long-term quarantine with updated timeline.\n\nAfter merging fast quarantine : You will receive an automated reminder comment with instructions for creating a permanent quarantine\n\nAfter merging fast quarantine :\n\nYou will receive an automated reminder comment with instructions for creating a permanent quarantine\n\nAfter long-term quarantine MR is merged : If the test was failing in the default branch only, revert the fast-quarantine MR you created earlier If the test was failing in a test environment, wait for the long-term quarantine to reach the desired environment before removing the fast-quarantine Update the test failure issue with long term quarantine MR\n\nAfter long-term quarantine MR is merged :\n\nIf the test was failing in the default branch only, revert the fast-quarantine MR you created earlier\n\nIf the test was failing in a test environment, wait for the long-term quarantine to reach the desired environment before removing the fast-quarantine\n\nUpdate the test failure issue with long term quarantine MR\n\nFast quarantine commits you to providing an update within 3 days\n\nIf you cannot meet the 3-day timeline, always convert to long-term quarantine\n\nFast-quarantined tests still run locally by default\n\nFast-quarantined tests apply to all branches including stable branches (e.g., 17-6-stable-ee )\n\nFast-quarantined tests can be ignored in merge requests by applying the ~“pipeline:run-flaky-tests” label",
+    "chunk_index": 7,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_8",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "meet the 3-day timeline, always convert to long-term quarantine\n\nFast-quarantined tests still run locally by default\n\nFast-quarantined tests apply to all branches including stable branches (e.g., 17-6-stable-ee )\n\nFast-quarantined tests can be ignored in merge requests by applying the ~“pipeline:run-flaky-tests” label\n\n⚠️ Warning: The fast quarantine file is automatically cleared every Sunday at 10:00 AM UTC via scheduled pipeline. Please follow up with a permanent quarantine or fix, otherwise the tests may start failing again.\n\n⚠️ Warning: The fast quarantine file is automatically cleared every Sunday at 10:00 AM UTC via scheduled pipeline. Please follow up with a permanent quarantine or fix, otherwise the tests may start failing again.\n\nUse long-term quarantine when:\n\nThe root cause is unknown and requires extensive investigation.\n\nYou don’t have immediate bandwidth available for this specific test.\n\nInvestigation is expected to take longer than 3 days.\n\nTo use long-term quarantine, create a quarantine merge request with the appropriate metadata. For technical implementation details (RSpec syntax, Jest syntax, metadata types), see Quarantining Tests (Developer Docs) .\n\nThe maximum duration for long-term quarantine is 3 months (3 milestones or releases). The owner or Engineering Manager is alerted by the Quarantine Notification System that the test is to be deleted. The Quarantine Cleanup System then creates the deletion merge request to be actioned by the Pipeline DRI within a week.\n\nBefore you dequarantine a test, ensure that one of the following is true:",
+    "chunk_index": 8,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_9",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "releases). The owner or Engineering Manager is alerted by the Quarantine Notification System that the test is to be deleted. The Quarantine Cleanup System then creates the deletion merge request to be actioned by the Pipeline DRI within a week.\n\nBefore you dequarantine a test, ensure that one of the following is true:\n\nThe test passes consistently (more than 100 local runs), and the root cause is identified and fixed.\n\nThe test is removed or replaced with better coverage.\n\nYou must also have a plan to monitor the test for 1 week after dequarantine, and commit to re-quarantine immediately if failures occur.\n\nTo dequarantine a test:\n\nVerify the fix locally by running the test multiple times without failure.\n\nCreate a merge request: Remove the quarantine: 'issue-url' metadata from the test. Link to the original quarantine issue. Include evidence of your verification.\n\nRemove the quarantine: 'issue-url' metadata from the test.\n\nLink to the original quarantine issue.\n\nInclude evidence of your verification.\n\nAfter the merge request is merged, monitor the test for 1 week: Watch #master-broken for failures. Check test failure issues for new reports. Be prepared to re-quarantine immediately if needed.\n\nWatch #master-broken for failures.\n\nCheck test failure issues for new reports.\n\nBe prepared to re-quarantine immediately if needed.\n\nAfter 1 week of stable runs, close the quarantine issue: Document the root cause and fix. Add the ~\"quarantine::resolved\" label.\n\nDocument the root cause and fix.\n\nAdd the ~\"quarantine::resolved\" label.\n\nIf the test fails again",
+    "chunk_index": 9,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_10",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "k test failure issues for new reports.\n\nBe prepared to re-quarantine immediately if needed.\n\nAfter 1 week of stable runs, close the quarantine issue: Document the root cause and fix. Add the ~\"quarantine::resolved\" label.\n\nDocument the root cause and fix.\n\nAdd the ~\"quarantine::resolved\" label.\n\nIf the test fails again\n\nIf a dequarantined test fails again:\n\nRe-quarantine immediately using fast quarantine.\n\nUpdate the original issue with new failure information.\n\nReassess whether the test should be: Moved to a lower test level. Removed entirely. Subject to deeper investigation.\n\nMoved to a lower test level.\n\nSubject to deeper investigation.\n\nIf a test is quarantined 3 or more times:\n\nThe test is a candidate for permanent removal.\n\nDiscuss with the Test Governance team in #g_test_governance .\n\nConsider alternative testing approaches.\n\nOwnership and accountability\n\nWho owns a quarantined test\n\nOwnership is determined by feature_category . Each feature category maps to a specific engineering group, which is responsible for all tests with their feature category.\n\nOwnership responsibilities\n\nWhen your test is quarantined:\n\nAcknowledge within 48 hours.\n\nInvestigate the root cause.\n\nProvide a timeline for resolution.\n\nUpdate the issue with progress weekly.\n\nResolve or remove within 3 months.\n\nIf you don’t maintain ownership:\n\nThe test is automatically deleted after 3 months.\n\nYour team’s test health metrics might be impacted.\n\nRepeated issues might require Test Governance intervention.\n\nAutomated cleanup process\n\nThree-month deletion timeline",
+    "chunk_index": 10,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_11",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "issue with progress weekly.\n\nResolve or remove within 3 months.\n\nIf you don’t maintain ownership:\n\nThe test is automatically deleted after 3 months.\n\nYour team’s test health metrics might be impacted.\n\nRepeated issues might require Test Governance intervention.\n\nAutomated cleanup process\n\nThree-month deletion timeline\n\nMonths 1-2 : Active quarantine period. Teams are expected to investigate and resolve. Weekly progress updates are encouraged.\n\nMonth 3 : Final warning period. One week advance notification is sent to test owners. A deletion merge request is created and assigned to the team. This is the last opportunity to resolve or justify an extension.\n\nAfter 3 months : Automatic deletion. The test is permanently removed from the codebase. The quarantine issue is closed with a deletion note. The team is notified of removal.\n\nThroughout the quarantine lifecycle, owners receive automated notifications:\n\nWeekly reminders : While test is in quarantine, to encourage progress updates.\n\nOne week before deletion : Final warning with link to deletion merge request.\n\nAt deletion : Notification that test has been removed.\n\nThe deletion merge request:\n\nIs assigned to the relevant Engineering Manager or code owners.\n\nIs tagged with mentions.\n\nRequires manual approval by the Pipeline DRI (semi-automatic process, not fully automatic).\n\nProvides one final opportunity to resolve or justify an extension.\n\nTo maintain visibility and accountability:\n\nWeekly summaries : Sent to engineering teams with current quarantine status and encouragement to resolve tests.",
+    "chunk_index": 11,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_12",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "s.\n\nRequires manual approval by the Pipeline DRI (semi-automatic process, not fully automatic).\n\nProvides one final opportunity to resolve or justify an extension.\n\nTo maintain visibility and accountability:\n\nWeekly summaries : Sent to engineering teams with current quarantine status and encouragement to resolve tests.\n\nMonthly rollups : Provided to senior management on test health metrics.\n\nTeam dashboards : Available to track your team’s quarantined tests by feature category.\n\nThese reports help ensure quarantine remains a temporary state, not a backlog.\n\nFor more information, see the quarantine improvement initiative epic .\n\nEnvironment-specific issues\n\nFor live environment test failures:\n\nOnly applies to E2E tests\n\nInfrastructure team involvement is required.\n\nDifferent SLA expectations apply.\n\nBackport support (stable branches)\n\nFast quarantine applies to all stable branches also but should only be used to unblock pipelines until a long term quarantine is merged into the stable branch with the failure.\n\nThe fast-quarantine repository automates merge request creation for immediate quarantine.\n\nFlaky test tracking and dashboards\n\nFor information about flaky test tracking systems, metrics, and dashboards, see the Flaky Tests handbook page .\n\nTest Failure Issue : Failure issues raised when a test fails in a pipeline. They can also be manually created. See the Test Failure Issue project .",
+    "chunk_index": 12,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "19c396ae3555_13",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/quarantine-process",
+    "title": "Test Quarantine Process",
+    "source": "handbook",
+    "headings": [
+      "Test Quarantine Process",
+      "🗺️ Quick navigation",
+      "You’ve been assigned a quarantine merge request",
+      "How tests become quarantined",
+      "Automated processes"
+    ],
+    "text": "immediate quarantine.\n\nFlaky test tracking and dashboards\n\nFor information about flaky test tracking systems, metrics, and dashboards, see the Flaky Tests handbook page .\n\nTest Failure Issue : Failure issues raised when a test fails in a pipeline. They can also be manually created. See the Test Failure Issue project .\n\nQuarantine merge request : A merge request that quarantines a test such that it is ignored on test pipeline executions. The metadata includes the type of failure and the Test Failure Issue.\n\nFlaky test : An unreliable test that occasionally fails but passes eventually if you retry it enough times. See Flaky Tests handbook page .\n\nTop Flaky Tests: Reporting - How the top flaky tests are automatically detected and reported\n\nQuarantine improvement initiative epic - Full context on the quarantine improvement project\n\nProcess questions : #g_test_governance - Test Governance Group\n\nGeneral questions : #s_developer_experience - Developer Experience Stage\n\nTechnical help : #development - General development help\n\nUrgent issues : #master-broken - Immediate pipeline issues\n\nTest Ownership questions : Check the feature category mapping, ask in relevant team channels, or escalate to #g_test_governance",
+    "chunk_index": 13,
+    "total_chunks": 14
+  }
+]

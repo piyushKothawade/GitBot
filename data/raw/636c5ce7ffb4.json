@@ -1,0 +1,16 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/product/ux/product-designer/mr-reviews/preview-mr",
+  "title": "Preview Merge Request Changes",
+  "content": "Preview Merge Request Changes\n\nThis page shows different ways to preview merge request (MRs) changes.\nFor the full review process, see Product Designer MR Reviews .\n\nYou can preview MR changes for the app, documentation, Pajamas, or company handbook using these methods:\n\nGitpod ( Get started and Help ): Cloud environment that provides a ready-to-use app with one click. Works for GitLab instances (using GDK, see below), docs, Pajamas, and handbook.\n\nGitLab Development Kit (GDK) ( Get started and Help ): Run GitLab on your local machine. Requires technical knowledge and can break during updates.\n\nReview Apps ( Get started ): Unique links created for each MR. Great for documentation but limited for GitLab instances ( improvements planned ).\n\nSync with author : Although we have a bias towards asynchronous communication , sometimes a quick call with the MR author is the most efficient approach.\n\n🐢 Very slow (30+ min)\n\nGitLab (>30 min) Docs (>20 min) Pajamas (~10 min) Handbook (~10 min)\n\n🤷 Depends on your machine\n\nTest data for GitLab instances\n\nProduct Designers should have general knowledge of Git and DevOps flows. Using GitLab in a live environment and making small contributions helps build:\n\nEmpathy for user workflows.\n\nUnderstanding of the product.\n\nSkills to make small improvements directly (UI copy, component migration, etc.).\n\nCreate a free Gitpod account.\n\nConnect it to your GitLab account. This happens automatically when launching from GitLab.com, but if it doesn’t work,\nsee how to manually connect them .\n\nGitpod for the GitLab project (i.e. cloud GDK)\n\n📺 Get started with Gitpod\n\n📺 Review MRs with Gitpod\n\nGDK commands (start, stop, update, etc.)\n\nPreview/change GitLab\n\nApply GitLab paid license\n\nConfigure additional GitLab features (runners, feature flags, advanced search, etc.)\n\nMore how-to topics for GDK\n\nCommit and push changes\n\nPrevent auto-deleting workspaces\n\nGitpod official documentation\n\nOne-line installation\n\n📺 Review MRs with GDK\n\nBrowse your dev server\n\nGDK commands (start, stop, update, etc.)\n\nPreview/change GitLab\n\nApply GitLab paid license\n\nMore how-to topics for GDK\n\nUse Review Apps in MRs\n\nPrevent auto-stopping\n\n📺 Toggle feature flags . You can enable feature flags using tools like curl or Postman ..\n\nIf using GDK (locally or in Gitpod), try to troubleshoot it yourself first.\nThen, don’t hesitate to reach out for help (see below).\n\nGitpod help Ask in the #gitpod-gdk Slack channel. Contact: Marcel van Remmerden\n\nAsk in the #gitpod-gdk Slack channel.\n\nContact: Marcel van Remmerden\n\nGDK help See getting help . Ask in the #gdk Slack channel. Contact: Taurie Davis , Sunjung Park\n\nAsk in the #gdk Slack channel.\n\nContact: Taurie Davis , Sunjung Park",
+  "source": "handbook",
+  "headings": [
+    "Preview Merge Request Changes",
+    "Overview",
+    "Preview options",
+    "Contributing",
+    "Gitpod",
+    "GDK",
+    "Review Apps",
+    "Help"
+  ]
+}

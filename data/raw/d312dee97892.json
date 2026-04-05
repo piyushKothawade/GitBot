@@ -1,0 +1,10 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/tools-and-tips/searching/gitlab-keyword-search-firefox-bookmarks",
+  "title": "Bookmark these GitLab keyword search paths",
+  "content": "Bookmark these GitLab keyword search paths\n\nSave the following links in your bookmarks for quick access to different places you can search for items across GitLab.\n\nGitLab keyword searches\n\nGitLab docs search: https://docs.gitlab.com/search/?q=%s\n\nGitLab issues search: https://gitlab.com/gitlab-org/gitlab/-/issues?search=%s\n\nGo to specific GitLab epic: https://gitlab.com/groups/gitlab-org/-/epics/%s\n\nGo to specific GitLab issue: https://gitlab.com/gitlab-org/gitlab/issues/%s\n\nGo to specific GitLab MR: https://gitlab.com/gitlab-org/gitlab/merge_requests/%s\n\nGitLab open issues by author search: https://gitlab.com/gitlab-org/gitlab/-/issues?scope=all&utf8=%E2%9C%93&state=opened&author_username=%s\n\nGitLab open MRs by author search: https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&utf8=%E2%9C%93&state=opened&author_username=%s\n\nGoogle Drive search: https://drive.google.com/drive/search?q=%s",
+  "source": "handbook",
+  "headings": [
+    "Bookmark these GitLab keyword search paths",
+    "GitLab keyword searches"
+  ]
+}

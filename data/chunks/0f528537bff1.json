@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "0f528537bff1_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/package/quality",
+    "title": "Package Group - GitLab Quality Assurance End-to-End Testing for the Package group",
+    "source": "handbook",
+    "headings": [
+      "Package Group - GitLab Quality Assurance End-to-End Testing for the Package group",
+      "Testing Strategy",
+      "Local Development Testing",
+      "End-to-End Testing",
+      "Test Environment Setup"
+    ],
+    "text": "Package Group - GitLab Quality Assurance End-to-End Testing for the Package group\n\nLocal Development Testing\n\nUnit Tests Container Registry (Go): make test Package Registry (Rails): bundle exec rspec ee/spec/models/packages/ Frontend: yarn jest ee/spec/frontend/packages\n\nContainer Registry (Go): make test\n\nPackage Registry (Rails): bundle exec rspec ee/spec/models/packages/\n\nFrontend: yarn jest ee/spec/frontend/packages\n\nIntegration Tests Test against different storage backends Verify API endpoints Check authorization rules\n\nTest against different storage backends\n\nCheck authorization rules\n\nThe Package group uses GitLab QA for E2E testing. This is crucial for features that integrate multiple services.\n\nCommon Test Scenarios\n\nContainer Registry # Publishing a container image Resource :: Container :: Image . fabricate_via_api! do | image | image . name = 'my-image' image . repository_name = 'my-project' end\n\nPackage Registry # Publishing an npm package Resource :: Package :: Npm . fabricate_via_api! do | package | package . name = 'my-package' package . version = '1.0.0' end\n\nTest Environment Setup\n\nLocal Testing with GDK\n\nSet required environment variables: export QA_LOG_LEVEL = debug export WEBDRIVER_HEADLESS = false\n\nSet required environment variables:\n\nEnsure GDK is using a loopback interface\n\nEnsure GDK is using a loopback interface\n\nMap hostname to the loopback interface\n\nMap hostname to the loopback interface\n\nTest uploads against multiple storage backends:\n\nLocal storage (default)",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "0f528537bff1_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/package/quality",
+    "title": "Package Group - GitLab Quality Assurance End-to-End Testing for the Package group",
+    "source": "handbook",
+    "headings": [
+      "Package Group - GitLab Quality Assurance End-to-End Testing for the Package group",
+      "Testing Strategy",
+      "Local Development Testing",
+      "End-to-End Testing",
+      "Test Environment Setup"
+    ],
+    "text": "VEL = debug export WEBDRIVER_HEADLESS = false\n\nSet required environment variables:\n\nEnsure GDK is using a loopback interface\n\nEnsure GDK is using a loopback interface\n\nMap hostname to the loopback interface\n\nMap hostname to the loopback interface\n\nTest uploads against multiple storage backends:\n\nLocal storage (default)\n\nObject storage: GCP (recommended for GitLab.com parity) MinIO (local development) AWS S3 Azure\n\nGCP (recommended for GitLab.com parity)\n\nMinIO (local development)\n\nHackyStack Demo Environment\n\nFor ephemeral demos with Omnibus and Container Registry:\n\nLogin to https://gitlabsandbox.cloud\n\nSelect Cloud Account ID dev-package-container-96a3ff34\n\nGet credentials from View Credentials tab\n\nLaunch environment using Play icon\n\nManually trigger Deploy action\n\nAccess demo project using provided credentials\n\nClean up by triggering Destroy job when done\n\nContainer Factory Quick creation of test images Supports multiple architectures\n\nQuick creation of test images\n\nSupports multiple architectures\n\nContainer Registry Cloud Seeder Bulk image creation Load testing support\n\nContainer Registry Cloud Seeder\n\nStorage backend connectivity # Check GCS credentials gsutil ls gs://your-bucket # Verify S3 access aws s3 ls s3://your-bucket\n\nStorage backend connectivity\n\nRegistry authentication # Test registry login docker login registry.gitlab.com\n\nRegistry authentication\n\nPackage publishing failures Verify project/group permissions Check storage quotas Validate package metadata\n\nPackage publishing failures\n\nVerify project/group permissions\n\nValidate package metadata",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "0f528537bff1_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/package/quality",
+    "title": "Package Group - GitLab Quality Assurance End-to-End Testing for the Package group",
+    "source": "handbook",
+    "headings": [
+      "Package Group - GitLab Quality Assurance End-to-End Testing for the Package group",
+      "Testing Strategy",
+      "Local Development Testing",
+      "End-to-End Testing",
+      "Test Environment Setup"
+    ],
+    "text": "end connectivity\n\nRegistry authentication # Test registry login docker login registry.gitlab.com\n\nRegistry authentication\n\nPackage publishing failures Verify project/group permissions Check storage quotas Validate package metadata\n\nPackage publishing failures\n\nVerify project/group permissions\n\nValidate package metadata\n\nEnd-to-End Testing Guide\n\nContainer Registry Development",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

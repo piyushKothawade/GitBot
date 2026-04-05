@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "5b0494cad830_0",
+    "url": "https://handbook.gitlab.com/handbook/about",
+    "title": "About the Handbook",
+    "source": "handbook",
+    "headings": [
+      "About the Handbook",
+      "History of the handbook",
+      "Advantages",
+      "Handbook Interpretation",
+      "Count handbook pages"
+    ],
+    "text": "History of the handbook\n\nThe handbook started when GitLab was a company of just ten people to make sharing information efficient and easy.\nWe knew that future GitLab team-members wouldn’t be able to see emails about process changes that were being sent before they joined and that most of the people who would eventually join GitLab likely hadn’t even heard of us yet.\nThe handbook was our way of ensuring that all of our company information was accessible to everyone regardless of when they became part of the team.\n\nAt GitLab our handbook is extensive and keeping it relevant is an important part of everyone’s job.\nIt is a vital part of who we are and how we communicate.\nWe established these processes because we saw these benefits:\n\nReading is much faster than listening.\n\nReading is async, you don’t have to interrupt someone or wait for them to become available.\n\nTalent Acquisition is easier if people can see what we stand for and how we operate.\n\nRetention is better if people know what they are getting into before they join.\n\nOn-boarding is easier if you can find all relevant information spelled out.\n\nTeamwork is easier if you can read how other parts of the company work.\n\nDiscussing changes is easier if you can read what the current process is.\n\nCommunicating change is easier if you can just point to the diff.\n\nEveryone can contribute to it by proposing a change via a merge request.",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "5b0494cad830_1",
+    "url": "https://handbook.gitlab.com/handbook/about",
+    "title": "About the Handbook",
+    "source": "handbook",
+    "headings": [
+      "About the Handbook",
+      "History of the handbook",
+      "Advantages",
+      "Handbook Interpretation",
+      "Count handbook pages"
+    ],
+    "text": "levant information spelled out.\n\nTeamwork is easier if you can read how other parts of the company work.\n\nDiscussing changes is easier if you can read what the current process is.\n\nCommunicating change is easier if you can just point to the diff.\n\nEveryone can contribute to it by proposing a change via a merge request.\n\nOne common concern newcomers to the handbook express is that the strict documentation makes the company more rigid.\nIn fact, writing down our current process in the handbook has the effect of empowering contributors to propose change.\nAs a result, this handbook is far from rigid. You only need to look at the handbook commits list to see the evidence. Every attempt is made to document guidelines and processes in the handbook. However, it is not possible to document every possible situation or scenario that could potentially occur. Just because something is not yet in the handbook does not mean that it is allowed. GitLab will review each team member’s concern or situation based on local laws to determine the best outcome and then update the handbook accordingly. If you have questions, please discuss with your manager or contact the People Success team.\n\nHandbook Interpretation\n\nThe handbook is subject to interpretation. We do our best to be as clear as possible to minimize confusion and/or misinterpretation. We also recognize that we have a global audience and that may bring different interpretations. If you have any questions or need further clarification please check with the content owner of the page. When in doubt please reach out and ask.",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "5b0494cad830_2",
+    "url": "https://handbook.gitlab.com/handbook/about",
+    "title": "About the Handbook",
+    "source": "handbook",
+    "headings": [
+      "About the Handbook",
+      "History of the handbook",
+      "Advantages",
+      "Handbook Interpretation",
+      "Count handbook pages"
+    ],
+    "text": "best to be as clear as possible to minimize confusion and/or misinterpretation. We also recognize that we have a global audience and that may bring different interpretations. If you have any questions or need further clarification please check with the content owner of the page. When in doubt please reach out and ask.\n\nRemember that everything is in draft at GitLab and subject to change, this includes our handbook.\n\nIt’s easy to see that the handbook is large, but have you ever wondered just how large?\nThe handbook is over two thousand pages long. That’s a lot of good info!\n\nHistorical Word and Page Counts\n\nabout.gitlab.com/handbook\n\n⬅️ Last entry before migration\n\n⬅️ Handbook Migration Complete\n\nhandbook.gitlab.com/handbook\n\n⬅️  Migration Completed\n\n⬅️ Hugo generated Live Count\n\nWord and page counts are determined through a simple two-step process:\n\nCount the number of words in the handbook. This can be done by running find sites/handbook/source/handbook -type f -name \"*.md\" -o -name \"*.md.erb\" | xargs wc -w from the root of the repository.\n\nCount the number of pages in the handbook. This can be done by running grep -l -r \"\\\" * | wc -l from the root of the repository.\n\nNote: If you need to go back to an earlier version of the handbook, use git checkout `git rev-list -n 1 --first-parent --before=\"2021-07-02 00:00\" master` specifying the next day after the day you want.\n\nOn this page you can see handbook trends and discover popular pages that you may not know about.\n\nGitLab uses Snowplow to track handbook usage; the information can be viewed on Tableau .",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "5b0494cad830_3",
+    "url": "https://handbook.gitlab.com/handbook/about",
+    "title": "About the Handbook",
+    "source": "handbook",
+    "headings": [
+      "About the Handbook",
+      "History of the handbook",
+      "Advantages",
+      "Handbook Interpretation",
+      "Count handbook pages"
+    ],
+    "text": "e git checkout `git rev-list -n 1 --first-parent --before=\"2021-07-02 00:00\" master` specifying the next day after the day you want.\n\nOn this page you can see handbook trends and discover popular pages that you may not know about.\n\nGitLab uses Snowplow to track handbook usage; the information can be viewed on Tableau .\n\nMore about the handbook\n\nWe’ve gathered some information about the handbook here, but there’s still more elsewhere.\n\nHandbook editing examples",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

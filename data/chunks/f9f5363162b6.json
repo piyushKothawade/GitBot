@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "f9f5363162b6_0",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/sales-systems/gtm-integrated-environments",
+    "title": "Go-To-Market Integrated Environments",
+    "source": "handbook",
+    "headings": [
+      "Go-To-Market Integrated Environments",
+      "How to use this documentation",
+      "Production",
+      "Staging",
+      "Development"
+    ],
+    "text": "Go-To-Market Integrated Environments\n\nHow to use this documentation\n\nThis page provides a guide to show how our main GTM SaaS applications and their sandboxes are connected and what the purpose of each integrated environment layer is.\n\ncustomers.gitlab.com Production\n\nSalesforce Production\n\nOur production systems are integrated by either stock or internally developed integrations (and see image below) and serve as the template for our other environments to emulate.\n\nStatus: Integrated and Running.\n\ncustomers.gitlab.com Staging\n\nZuora “Central” Sandbox\n\nSalesforce “Staging” Sandbox\n\nOur Staging environment is designed to emulate production as closely as possible. Changes from the Development environment should be deployed here first for user acceptence testing before being promoted to production.\n\nStatus: Currently we are using the Interim setup for both staging and development.\n\ncustomers.gitlab.com Engineer Dev Environment\n\nZuora “apiSandbox2” Sandbox\n\nSalesforce “Sandbox” Sandbox\n\nOur integrated development environment is designed for working on projects delivering large functionality changes between our systems. The current use for this setup will be our Zuora conversion to Orders and the Zuora 360 and Zuora CPQ upgrades associated with that.\n\nStatus: Currently we are using the Interim setup for both staging and development.\n\ncustomers.gitlab.com Staging\n\nZuora “apiSandbox1” Sandbox\n\nSalesforce “Sandbox” Sandbox",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "f9f5363162b6_1",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/sales-systems/gtm-integrated-environments",
+    "title": "Go-To-Market Integrated Environments",
+    "source": "handbook",
+    "headings": [
+      "Go-To-Market Integrated Environments",
+      "How to use this documentation",
+      "Production",
+      "Staging",
+      "Development"
+    ],
+    "text": "n our systems. The current use for this setup will be our Zuora conversion to Orders and the Zuora 360 and Zuora CPQ upgrades associated with that.\n\nStatus: Currently we are using the Interim setup for both staging and development.\n\ncustomers.gitlab.com Staging\n\nZuora “apiSandbox1” Sandbox\n\nSalesforce “Sandbox” Sandbox\n\nThis is our current development environment being used to work on Web Directs send more data to Salesforce. It will be depreciated and repurposed once that work is done.\n\nOther Development Environments\n\nThe Sales Systems team uses the “1 Sandbox Per Engineer” rule for ease and speed of development, this might cause for deployments directly into Staging or doing a full stop off in the Development Environment.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

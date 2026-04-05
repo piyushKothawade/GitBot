@@ -1,0 +1,226 @@
+[
+  {
+    "chunk_id": "bb92cbef166f_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application\n\nEstimated time to complete: 15 minutes\n\nEstimated time to complete: 15 minutes\n\nThe engineering team at Tanuki Enterprises currently builds their Go applications manually on individual developer workstations. This approach has led to several critical issues:\n\nInconsistent Environments : Builds succeed on one developer’s machine but fail on another due to different Go versions or system configurations\n\nWasted Time : Developers repeatedly build the same application across different stages of development\n\nNo Visibility : Management has no clear view of build status or deployment readiness\n\nSlow Feedback : Bugs aren’t discovered until late in the development cycle\n\nManual Processes : Every build requires a developer to remember and execute the correct commands\n\nIn this lab, you’ll implement a foundational CI/CD pipeline using GitLab to automate builds, ensure consistency, and create visibility into the development process. The techniques you’ll practice—writing pipeline configurations, using Docker images, and managing artifacts—are industry-standard practices that will transform how Tanuki Enterprises builds and deploys software.\n\nTask A. Creating a Project\n\nNavigate to your GitLab group.\n\nNavigate to your GitLab group.\n\nSelect Create new project .\n\nSelect Create new project .\n\nSelect Create blank project .\n\nSelect Create blank project .\n\nIn the project name, type Tanuki App .\n\nIn the project name, type Tanuki App .\n\nLeave all other options as default and select Create project .",
+    "chunk_index": 0,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_1",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "te to your GitLab group.\n\nNavigate to your GitLab group.\n\nSelect Create new project .\n\nSelect Create new project .\n\nSelect Create blank project .\n\nSelect Create blank project .\n\nIn the project name, type Tanuki App .\n\nIn the project name, type Tanuki App .\n\nLeave all other options as default and select Create project .\n\nLeave all other options as default and select Create project .\n\nFor this project, we are going to set up main.go so that it simply runs. Later, we will extend the functionality of the application to show more complex features of the CI/CD process.\n\nFor this project, we are going to set up main.go so that it simply runs. Later, we will extend the functionality of the application to show more complex features of the CI/CD process.\n\nTask B. Setup Go Files\n\nIn your project, select + > New file .\n\nIn your project, select + > New file .\n\nIn the filename field, type main.go\n\nIn the filename field, type main.go\n\nInside of main.go , add the following code: package main import ( \"fmt\" ) func main () { fmt . Println ( \"Tanuki Enterprises is up and running!\" ) }\n\nInside of main.go , add the following code:\n\nSelect Commit changes , add an appropriate commit message, and select Commit changes . Next, we will create a go.mod file:\n\nSelect Commit changes , add an appropriate commit message, and select Commit changes .\n\nNext, we will create a go.mod file:\n\nNavigate back to your project main page.\n\nNavigate back to your project main page.\n\nSelect + > New file .\n\nSelect + > New file .\n\nIn the Filename field, type go.mod .\n\nIn the Filename field, type go.mod .",
+    "chunk_index": 1,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_2",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "mmit changes , add an appropriate commit message, and select Commit changes .\n\nNext, we will create a go.mod file:\n\nNavigate back to your project main page.\n\nNavigate back to your project main page.\n\nSelect + > New file .\n\nSelect + > New file .\n\nIn the Filename field, type go.mod .\n\nIn the Filename field, type go.mod .\n\nAdd the following code to the file: module array go 1.22.2\n\nAdd the following code to the file:\n\nSelect Commit changes , add an appropriate commit message, and select Commit changes .\n\nSelect Commit changes , add an appropriate commit message, and select Commit changes .\n\nIf we were developing this locally, we would be able to run this application using the command go run . and we could build the application using go build . Let’s see how we can replicate this process in a GitLab pipeline.\n\nTask C. Creating a Build Process\n\nYou will write all of your pipeline jobs in the .gitlab-ci.yml file . To start, create this file at the root of your project using the following steps:\n\nNavigate to your project home page.\n\nNavigate to your project home page.\n\nSelect + > New file .\n\nSelect + > New file .\n\nIn the Filename field, type .gitlab-ci.yml .\n\nIn the Filename field, type .gitlab-ci.yml .\n\nThe script section requires you to provide any scripts or code that will run as a part of your job. Since we want to build the Go application. Copy the following code into your .gitlab-ci.yml file. default : image : golang stages : - build build go : stage : build script : - go build",
+    "chunk_index": 2,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_3",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "ename field, type .gitlab-ci.yml .\n\nThe script section requires you to provide any scripts or code that will run as a part of your job. Since we want to build the Go application. Copy the following code into your .gitlab-ci.yml file. default : image : golang stages : - build build go : stage : build script : - go build\n\nThe script section requires you to provide any scripts or code that will run as a part of your job. Since we want to build the Go application. Copy the following code into your .gitlab-ci.yml file.\n\nSelect Commit changes , add an appropriate commit message, and select Commit changes .\n\nSelect Commit changes , add an appropriate commit message, and select Commit changes .\n\nTask D. View the Build\n\nAfter committing your code, your pipeline will immediately start. To view the pipeline, navigate to Build > Pipelines . Here, you will see a summary of all of your project pipelines. Each pipeline shows the following details: The status of the pipeline The pipeline name, ID, branch, and triggering commit Who created the pipeline A breakdown of pipeline status by stage\n\nAfter committing your code, your pipeline will immediately start. To view the pipeline, navigate to Build > Pipelines .\n\nHere, you will see a summary of all of your project pipelines. Each pipeline shows the following details:\n\nThe status of the pipeline\n\nThe pipeline name, ID, branch, and triggering commit\n\nWho created the pipeline\n\nA breakdown of pipeline status by stage",
+    "chunk_index": 3,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_4",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "ely start. To view the pipeline, navigate to Build > Pipelines .\n\nHere, you will see a summary of all of your project pipelines. Each pipeline shows the following details:\n\nThe status of the pipeline\n\nThe pipeline name, ID, branch, and triggering commit\n\nWho created the pipeline\n\nA breakdown of pipeline status by stage\n\nTo view more details about the pipeline, select the Status of the pipeline. In this UI, you will see a graph of the pipeline, showing each stage, and the jobs associated with the stage.\n\nTo view more details about the pipeline, select the Status of the pipeline. In this UI, you will see a graph of the pipeline, showing each stage, and the jobs associated with the stage.\n\nSelect your build go job. On this screen, you will see details about your job, including all of the commands run during your job execution. On the right, you will see the duration of the job, when the job finished, how long the job was queued, the runner that completed the job, the commit that triggered the job, and further pipeline details related to the job. Let’s explore each of these in detail. To start, navigate to your job:\n\nSelect your build go job.\n\nOn this screen, you will see details about your job, including all of the commands run during your job execution. On the right, you will see the duration of the job, when the job finished, how long the job was queued, the runner that completed the job, the commit that triggered the job, and further pipeline details related to the job.",
+    "chunk_index": 4,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_5",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "you will see details about your job, including all of the commands run during your job execution. On the right, you will see the duration of the job, when the job finished, how long the job was queued, the runner that completed the job, the commit that triggered the job, and further pipeline details related to the job.\n\nOn this screen, you will see details about your job, including all of the commands run during your job execution. On the right, you will see the duration of the job, when the job finished, how long the job was queued, the runner that completed the job, the commit that triggered the job, and further pipeline details related to the job.\n\nLet’s explore each of these in detail. To start, navigate to your job:\n\nSelect Build > Jobs .\n\nSelect Build > Jobs .",
+    "chunk_index": 5,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_6",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "ll see the duration of the job, when the job finished, how long the job was queued, the runner that completed the job, the commit that triggered the job, and further pipeline details related to the job.\n\nLet’s explore each of these in detail. To start, navigate to your job:\n\nSelect Build > Jobs .\n\nSelect Build > Jobs .\n\nSelect your build go job. Let’s walk through the job log to better understand each job stage. The first thing you will see is something like this: Setting up your job environment Running with gitlab-runner 17.0.0 ( 44feccdf ) on ilt-gitlab-runner xZL9uN-ry, system ID: s_e1aab81f250d Resolving secrets Preparing the \"docker-autoscaler\" executor 00:33 Dialing instance https://www.googleapis.com/compute/v1/projects/demosys-ilt-training-cloud/zones/us-central1-c/instances/added-scale-ilt-runner-group-1138177e63ca2c1e... Instance https://www.googleapis.com/compute/v1/projects/demosys-ilt-training-cloud/zones/us-central1-c/instances/added-scale-ilt-runner-group-1138177e63ca2c1e connected Using Docker executor with image golang ... Pulling docker image golang ... Using docker image sha256:92c72d51a65b247eb5672073192030d4964cee907770b0569665499e9880fa48 for golang with digest golang@sha256:ab1f5c47de0f2693ed97c46a646bde2e4f380e40c173454d00352940a379af60 ... The GitLab lab environment uses runner managers to help with scaling jobs. When your job starts, it first enters a queue. When a runner manager is available, it picks up the job. It then creates an instance and sets it up with the defined Docker image, in this case, the golang image. This image is pulled and loaded onto the runner, making it ready to start processing your job request. Cloning your Git repository After the environment setup, GitLab will clone your repository onto the runner. Preparing environment 00:02 Running on runner-xzl9un-ry-project-25858-concurrent-0 via ilt-autoscale-runner-manager-2...",
+    "chunk_index": 6,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_7",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "is pulled and loaded onto the runner, making it ready to start processing your job request. Cloning your Git repository After the environment setup, GitLab will clone your repository onto the runner. Preparing environment 00:02 Running on runner-xzl9un-ry-project-25858-concurrent-0 via ilt-autoscale-runner-manager-2...\n\nGetting source from Git repository 00:02 Fetching changes with git depth set to 20... Initialized empty Git repository in /builds/training-users/session-c68006ec/iua7f2zr/fundamentals/qa/cool-app-qa/.git/ Created fresh repository. Checking out e4f0de4d as detached HEAD ( ref is initial-code ) ... Skipping Git submodules setup After doing this, all of your code will be available on the runner. One important note is that your runner now has access to your Git repository and has a link to your remote repository. This means two things: You can access and use any files in your Git repository You can commit changes back to your repository if you make any during your job process Optional Task: Want to see this in action? Add the ls command to your job scripts. This will list the current directory, showing you all the files that were cloned to the runner. default : image : golang stages : - build build go : stage : build script : - ls - go build Executing your Scripts: After the environment is set up and your repository is cloned, your job scripts will run. Executing \"step_script\" stage of the job script Using docker image sha256:5905f95343e84d1f8f14aff8f8b83747fb39ea0e0fad52a9d14cf41860295fff for golang with digest golang@sha256:f43c6f049f04cbbaeb28f0aad3eea15274a7d0a7899a617d0037aec48d7ab010 ... $ go build Cleaning up project directory and file based variables Job succeeded To summarize, there are a few important ideas to keep in mind when considering running jobs in your pipeline.",
+    "chunk_index": 7,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_8",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "0fad52a9d14cf41860295fff for golang with digest golang@sha256:f43c6f049f04cbbaeb28f0aad3eea15274a7d0a7899a617d0037aec48d7ab010 ... $ go build Cleaning up project directory and file based variables Job succeeded To summarize, there are a few important ideas to keep in mind when considering running jobs in your pipeline.\n\nJobs will generally use a Docker image to run your job scripts Every job runs on a separate runner, within its own Docker container, so there are no concerns about jobs interfering with each other You have full access to your Git repository and any other system resources during the execution of your jobs\n\nSelect your build go job.\n\nLet’s walk through the job log to better understand each job stage. The first thing you will see is something like this:\n\nSetting up your job environment\n\nThe GitLab lab environment uses runner managers to help with scaling jobs. When your job starts, it first enters a queue. When a runner manager is available, it picks up the job. It then creates an instance and sets it up with the defined Docker image, in this case, the golang image. This image is pulled and loaded onto the runner, making it ready to start processing your job request.\n\nCloning your Git repository\n\nAfter the environment setup, GitLab will clone your repository onto the runner.\n\nAfter doing this, all of your code will be available on the runner. One important note is that your runner now has access to your Git repository and has a link to your remote repository. This means two things:\n\nYou can access and use any files in your Git repository",
+    "chunk_index": 8,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_9",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": ", GitLab will clone your repository onto the runner.\n\nAfter doing this, all of your code will be available on the runner. One important note is that your runner now has access to your Git repository and has a link to your remote repository. This means two things:\n\nYou can access and use any files in your Git repository\n\nYou can commit changes back to your repository if you make any during your job process\n\nOptional Task: Want to see this in action? Add the ls command to your job scripts. This will list the current directory, showing you all the files that were cloned to the runner.\n\nExecuting your Scripts: After the environment is set up and your repository is cloned, your job scripts will run.\n\nTo summarize, there are a few important ideas to keep in mind when considering running jobs in your pipeline.\n\nJobs will generally use a Docker image to run your job scripts\n\nEvery job runs on a separate runner, within its own Docker container, so there are no concerns about jobs interfering with each other\n\nYou have full access to your Git repository and any other system resources during the execution of your jobs\n\nTask E. Artifacts, and sharing data between Stages\n\nWhen we explored the way jobs run, you saw that each job runs on its own runner. In some cases, you will want to share data between jobs to avoid duplication of work. To do this, you can use an artifact. An artifact saves a result from a job and stores it in GitLab for use by other jobs.\n\nWithout artifacts, we need to build our application twice.",
+    "chunk_index": 9,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_10",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "s run, you saw that each job runs on its own runner. In some cases, you will want to share data between jobs to avoid duplication of work. To do this, you can use an artifact. An artifact saves a result from a job and stores it in GitLab for use by other jobs.\n\nWithout artifacts, we need to build our application twice.\n\nNavigate back to your pipeline editor by selecting Build > Pipeline Editor .\n\nNavigate back to your pipeline editor by selecting Build > Pipeline Editor .\n\nCreate a new stage called run and a job called run go . run go : stage : run script : - go build\n\nCreate a new stage called run and a job called run go .\n\nThe go build command creates a new binary that will be named array . We can execute the binary by using the command .array . run go : stage : run script : - go build - ./array So far, your .gitlab-ci.yml file should look like this: default : image : golang stages : - build - run build go : stage : build script : - go build run go : stage : run script : - go build - ./array In this set of jobs, we end up building the go application twice. It would be easier to just build the application once and pass it between jobs.\n\nThe go build command creates a new binary that will be named array . We can execute the binary by using the command .array .\n\nSo far, your .gitlab-ci.yml file should look like this:\n\nIn this set of jobs, we end up building the go application twice. It would be easier to just build the application once and pass it between jobs.",
+    "chunk_index": 10,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_11",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "uild command creates a new binary that will be named array . We can execute the binary by using the command .array .\n\nSo far, your .gitlab-ci.yml file should look like this:\n\nIn this set of jobs, we end up building the go application twice. It would be easier to just build the application once and pass it between jobs.\n\nTo do this, we can define an artifact for the app binary from the first job by adding the following code: artifacts : paths : - array The job should now look like this: build go : stage : build script : - go build artifacts : paths : - array When this job runs, go build will build a new binary named array . The path property of artifacts tells GitLab to save the array file. Now, all future jobs will download the array binary and use it in their execution. With this setup, we no longer need to run a go build command in the run go job, we can just run the binary, since it was downloaded from the previous job.\n\nTo do this, we can define an artifact for the app binary from the first job by adding the following code:\n\nThe job should now look like this:\n\nWhen this job runs, go build will build a new binary named array . The path property of artifacts tells GitLab to save the array file. Now, all future jobs will download the array binary and use it in their execution.\n\nWith this setup, we no longer need to run a go build command in the run go job, we can just run the binary, since it was downloaded from the previous job.",
+    "chunk_index": 11,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_12",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "named array . The path property of artifacts tells GitLab to save the array file. Now, all future jobs will download the array binary and use it in their execution.\n\nWith this setup, we no longer need to run a go build command in the run go job, we can just run the binary, since it was downloaded from the previous job.\n\nRemove the go build command from the run go script. Doing this gives you the following configuration: default : image : golang stages : - build - run build go : stage : build script : - go build artifacts : paths : - array run go : stage : run script : - ./array\n\nRemove the go build command from the run go script. Doing this gives you the following configuration:\n\nSelect Commit changes .\n\nSelect Commit changes .\n\nNavigate to your pipeline by selecting Build > Pipelines in the left sidebar.\n\nNavigate to your pipeline by selecting Build > Pipelines in the left sidebar.\n\nVerify that your jobs run successfully.\n\nVerify that your jobs run successfully.\n\nIn the run go job log, you will now see a line like Downloading artifacts for build go (318742) . This shows the actual download of artifacts between jobs.\n\nIn the run go job log, you will now see a line like Downloading artifacts for build go (318742) . This shows the actual download of artifacts between jobs.",
+    "chunk_index": 12,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "bb92cbef166f_13",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1",
+    "title": "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Configure a Pipeline to Build an Application",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Project",
+      "Task B. Setup Go Files"
+    ],
+    "text": "fully.\n\nIn the run go job log, you will now see a line like Downloading artifacts for build go (318742) . This shows the actual download of artifacts between jobs.\n\nIn the run go job log, you will now see a line like Downloading artifacts for build go (318742) . This shows the actual download of artifacts between jobs.\n\nAfter implementing their first GitLab CI/CD pipeline, Tanuki Enterprises experienced immediate improvements. Every code commit now automatically triggers a standardized build in a Docker container, eliminating the “it works on my machine” problem. By using artifacts to share the compiled binary between stages, you eliminate redundant builds, reducing build times from 5-10 minutes to under 2 minutes and saving approximately 15-20 hours per week. Engineering managers gain complete visibility into build status, timing, and logs, while you receive instant feedback on code quality within minutes of committing changes.\n\nYou have completed this lab exercise. You can view the other lab guides for this course .\n\nIf you wish to make a change to the lab, please submit your changes via Merge Request.",
+    "chunk_index": 13,
+    "total_chunks": 14
+  }
+]

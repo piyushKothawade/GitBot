@@ -1,0 +1,130 @@
+[
+  {
+    "chunk_id": "a4e36807624c_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/metrics",
+    "title": "Secret Detection Metrics",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Metrics",
+      "Overview",
+      "Metrics workflow",
+      "Creating metrics",
+      "Internal tracking events"
+    ],
+    "text": "Secret Detection Metrics\n\nThis page documents the process a member of the Secure: Secret Detection team should use to add\nmetrics to capture product insights for the features we develop.\n\nYou should use this guide to help you understand the different types of metrics we\ncan use, when to use each one, and give you a jumpstart in implementing them.\n\nIn general, the workflow for developing and adding metrics is:\n\nFor our use cases, we utilize Internal Tracking Events or Database Metrics\n(formerly Service Ping) depending on the situation:\n\nInternal Tracking Events are good for capturing events that occur but aren’t\nstored in the database. For example, a user clicks a specific button.\n\nDatabase metrics are useful when the data you want is stored in the database\nin some way that can be extracted with the right query. For example, the number of\nprojects that have a setting enabled.\n\nThe Analytics Instrumentation team has great documentation here but we outline some of the learnings on implementing metrics for our use here.\n\nInternal tracking events\n\nInternal Tracking Events capture discrete events and can be collected over 7\ndays, 28 days, or all time. These events require code changes to explicitly fire the\nevent.\n\nHere is an example from Notes::BaseService\n\nEach event has a descriptive name and, when possible, useful data for context like:\n\nnamespace (which will be pulled from project if not supplied)\n\nThere’s another field, category that is automatically set to the classname of\nthe class that the event was fired from. This is important to know for testing.",
+    "chunk_index": 0,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "a4e36807624c_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/metrics",
+    "title": "Secret Detection Metrics",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Metrics",
+      "Overview",
+      "Metrics workflow",
+      "Creating metrics",
+      "Internal tracking events"
+    ],
+    "text": "::BaseService\n\nEach event has a descriptive name and, when possible, useful data for context like:\n\nnamespace (which will be pulled from project if not supplied)\n\nThere’s another field, category that is automatically set to the classname of\nthe class that the event was fired from. This is important to know for testing.\n\nEach event can also have up to 3 additional data. Events support 2 string values, and 1 numeric.\nThese additional properties are stored in the additional_properties map in the\nevent and the keys are:\n\nYou should utilize them in that order when possible, i.e., label before property .\n\nYou should follow the process Analytics Instrumentation has defined in the quick start guide .\n\nRun the ruby scripts/internal_events/cli.rb CLI tool and follow the\nprompts. The event definition is necessary for the code to know what\nevents to output and the metric definition is what Snowflake and Tableau will\nmake available given the events.\n\nThere are shared examples that you can utilize to test firing of tracking\nevents:\n\nUnlike in the implementation file, when using the shared example in the specs,\nyou will need to define the :category to be the class under test.\n\nIf you’re adding internal event tracking tests to shared specs, you need to be\nable to redefine the subject to be what triggers the event firing if it isn’t\nalready.\n\nAs an example, in the specs for Gitlab::Checks::SecretsCheck we use the shared examples from secrets_check_shared_example.rb .",
+    "chunk_index": 1,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "a4e36807624c_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/metrics",
+    "title": "Secret Detection Metrics",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Metrics",
+      "Overview",
+      "Metrics workflow",
+      "Creating metrics",
+      "Internal tracking events"
+    ],
+    "text": "be the class under test.\n\nIf you’re adding internal event tracking tests to shared specs, you need to be\nable to redefine the subject to be what triggers the event firing if it isn’t\nalready.\n\nAs an example, in the specs for Gitlab::Checks::SecretsCheck we use the shared examples from secrets_check_shared_example.rb .\n\nIn that file, most of the specs call subject.validate! to run the secrets\ncheck, but for the internal tracking shared examples, it expects to be able to\njust call subject .\n\nTherefore, to use the internal tracking event shared\nexamples from our shared examples we have to redefine subject to subject { super().validate! } . super() within the subject{} block refers to the\npredefined subject object, i.e., the Gitlab::Checks::SecretsCheck class.\n\nSo in this special case, we add a shared example internal event tracking to\nbe:\n\nDatabase Metric (Service Ping)\n\nDatabase metrics ,\naka Service Pings, are metrics that can be collected with\ndatabase queries. These metrics are updated in a batch approximately every 7\ndays. However, this is not guaranteed and may be generated anywhere from 4-10 days.\n\nDatabase metrics are implemented by a Ruby subclass of GitLab::Usage::Metrics::Instrumentation::DatabaseMetric and\nutilizes ActiveRecord relations to build the queries. Alternatively, you can\nprovide the SQL for the query too.\n\nThe class should be in lib/gitlab/usage/metrics/instrumentation/ or the EE\nequivalent.\n\nWe have a Rails generator that can be used to create the necessary classes:",
+    "chunk_index": 2,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "a4e36807624c_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/metrics",
+    "title": "Secret Detection Metrics",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Metrics",
+      "Overview",
+      "Metrics workflow",
+      "Creating metrics",
+      "Internal tracking events"
+    ],
+    "text": "etrics::Instrumentation::DatabaseMetric and\nutilizes ActiveRecord relations to build the queries. Alternatively, you can\nprovide the SQL for the query too.\n\nThe class should be in lib/gitlab/usage/metrics/instrumentation/ or the EE\nequivalent.\n\nWe have a Rails generator that can be used to create the necessary classes:\n\nThe simplest way to implement the metric is to call the class-level #operation and #relation methods.\n\nThe argument to operation can be\n\n:estimate_batch_distinct_count\n\nrelation takes a block that returns the query results.\n\nExample from `Gitlab::usage::Metrics::Instrumentation::CountProjectsWithSecretPushProtectionEnabledMetric :\n\nEach database metric has to have an accompanying metric dictionary like Internal\nTracking Events. Unfortunately, database metrics are not yet supported by the internal_events CLI script so must be partially done by hand.\n\nCreate a yaml file in the appropriate subdirectory of config/metrics or ee/config/metrics if it’s a metric limited to an enterprise tier. If the metric is meant to capture all time, use the counts_all subdirectory. Otherwise use the appropriate counts_7d or counts_28d subdirectory for weekly and monthly metrics respectively.\n\nIf the metric is meant to capture all time, use the counts_all subdirectory.\n\nOtherwise use the appropriate counts_7d or counts_28d subdirectory for weekly and monthly metrics respectively.\n\nUse existing yaml files as templates\n\nUse the schema defined here .\n\nNOTE: Make sure that the milestone is a string.",
+    "chunk_index": 3,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "a4e36807624c_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/metrics",
+    "title": "Secret Detection Metrics",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Metrics",
+      "Overview",
+      "Metrics workflow",
+      "Creating metrics",
+      "Internal tracking events"
+    ],
+    "text": "spectively.\n\nIf the metric is meant to capture all time, use the counts_all subdirectory.\n\nOtherwise use the appropriate counts_7d or counts_28d subdirectory for weekly and monthly metrics respectively.\n\nUse existing yaml files as templates\n\nUse the schema defined here .\n\nNOTE: Make sure that the milestone is a string.\n\nLike Internal Tracking Events, database metrics have shared examples that we can\nutilize in our tests.\n\ntime_frame should match the value in the dictionary for the metric that was\ndefined, i.e., 7d , 28d , or all .\n\nCI-based analyzer observability metrics\n\nThis section covers adding observability metrics to the Secret Detection analyzer .\n\nFor architecture and design considerations, see Tutorial: Add observability metrics to a CI-based analyzer .\n\nFor implementation details on adding new events, see the analyzer README .\n\nEvents require a corresponding definition in the GitLab monolith and must be added to the\nbackend allow list. Only allowed events are processed.\n\nCreate event definition in config/events/ or ee/config/events/ .\n\nAdd the new event name to Security::ProcessScanEventsService::EVENT_NAME_ALLOW_LIST .\n\nAdd an rspec test using actual report output from the analyzer.\n\nFor more information, see Quick start for internal event tracking .\n\nQuery Snowflake to verify events are collected correctly.\n\nCheck Sentry for exceptions during report processing.\n\nRequest dashboard creation from the Analytics Instrumentation team.\n\nCurrent implementation\n\nThe Secret Detection analyzer emits the collect_secret_detection_scan_metrics_from_pipeline event.",
+    "chunk_index": 4,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "a4e36807624c_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/metrics",
+    "title": "Secret Detection Metrics",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Metrics",
+      "Overview",
+      "Metrics workflow",
+      "Creating metrics",
+      "Internal tracking events"
+    ],
+    "text": "nt tracking .\n\nQuery Snowflake to verify events are collected correctly.\n\nCheck Sentry for exceptions during report processing.\n\nRequest dashboard creation from the Analytics Instrumentation team.\n\nCurrent implementation\n\nThe Secret Detection analyzer emits the collect_secret_detection_scan_metrics_from_pipeline event.\n\nEvent name. Always collect_secret_detection_scan_metrics_from_pipeline .\n\nScan duration in seconds.\n\nGitleaks exit code. 0 for success, non-zero for errors or findings.\n\nGit fetch strategy: FetchRange , FetchAll , or NoFetch .\n\nNumber of commits scanned. Zero for directory scans.\n\nApproximate bytes scanned by Gitleaks.\n\nNumber of secrets detected.\n\nRepository size in kilobytes.\n\nError message if the scan failed.\n\nRelated merge requests\n\nAdd observability metrics to Secret Detection analyzer\n\nViewing and analyzing\n\nVerifying creation and deployment\n\nMetrics are collected into Snowflake which are then viewable in Tableau. To\nverify a metric is in production and being generated there are 2 locations to\ncheck:\n\nTableau Service Ping Exploration (You need Explorer level access or higher to Tableau)\n\nThe Metrics dictionary only shows what metrics are available and gives you the\nability to copy the Snowflake query to get its values.\n\nThe Tableau Service Ping explorer shows the basic values of and allows you see the last\n5 generated values. Further analysis must be done either in Tableau or Snowflake.",
+    "chunk_index": 5,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "a4e36807624c_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/metrics",
+    "title": "Secret Detection Metrics",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Metrics",
+      "Overview",
+      "Metrics workflow",
+      "Creating metrics",
+      "Internal tracking events"
+    ],
+    "text": "er to Tableau)\n\nThe Metrics dictionary only shows what metrics are available and gives you the\nability to copy the Snowflake query to get its values.\n\nThe Tableau Service Ping explorer shows the basic values of and allows you see the last\n5 generated values. Further analysis must be done either in Tableau or Snowflake.\n\nWith the Explorer role in Tableau, you will be able to create dashboards but\nwill be limited to using data sources created by someone with higher\npermissions. Any new Internal Tracking Event or Database Metric should be\nincluded in existing data sources\n\nMart Ping Instance Metric Monthly\n\nMart Ping Instance Metric Weekly\n\nIf you’re not familiar with Tableau, creating worksheets and dashboards in it,\nand haven’t worked through the Tableau-hosted courses, you have some options for\nhelp:\n\nFor help in creating Tableau dashboards and visualizations, the Product Data Insights (PDI) team has an issue intake process where you can request their help.\n\nFor specific questions on your Tableau worksheet or\ndashboard, you can reach out to the PDI team on their slack channels: #data-tableau for\nTableau-specific help #data for any\ndata-related question\n\n#data-tableau for\nTableau-specific help\n\n#data for any\ndata-related question\n\nWhen you set up the internal events monitor, you might encounter issues with some YAML file settings.\nThe following changes are necessary for internal events to appear in the monitor. When you run reconfigure ,\nthese YAML files are reset to their defaults.\n\nConfigure GitLab ( config/gitlab.yml )",
+    "chunk_index": 6,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "a4e36807624c_7",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/metrics",
+    "title": "Secret Detection Metrics",
+    "source": "handbook",
+    "headings": [
+      "Secret Detection Metrics",
+      "Overview",
+      "Metrics workflow",
+      "Creating metrics",
+      "Internal tracking events"
+    ],
+    "text": "data-related question\n\nWhen you set up the internal events monitor, you might encounter issues with some YAML file settings.\nThe following changes are necessary for internal events to appear in the monitor. When you run reconfigure ,\nthese YAML files are reset to their defaults.\n\nConfigure GitLab ( config/gitlab.yml )\n\nChange prometheus and snowplow_micro ’s enabled field to false and ensure address is using localhost instead of alias (for example, gdk.test ).\n\nConfigure GDK ( gdk.yml )\n\nChange snowplow_micro enabled field to false .\n\nRun the monitoring script with your specific events: rails runner scripts/internal_events/monitor.rb EVENT_NAME\n\nRun the monitoring script with your specific events:\n\nrails runner scripts/internal_events/monitor.rb EVENT_NAME\n\nEvents appear in the terminal output.\n\nEvents appear in the terminal output.\n\nOpen the browser DevTools Network tab and filter by track_event to verify events fire.\n\nOpen the browser DevTools Network tab and filter by track_event to verify events fire.\n\nFor general internal events debugging, see Local Setup and Debugging .\n\nIf the metrics don’t show up in Tableau or Snowplow you should contact #g_monitor_analytics_instrumention or #data_tableau slack channel.\n\nIf, in Tableau, you can’t find either of the 2 data sources mentioned above,\nmake sure to use the New Data Source button, then click the See All link on\nthe right side above the table of available data sources.",
+    "chunk_index": 7,
+    "total_chunks": 8
+  }
+]

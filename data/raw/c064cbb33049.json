@@ -1,0 +1,11 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/report-widgets-dri-list",
+  "title": "Merge Request Report Widgets - DRI list",
+  "content": "Merge Request Report Widgets - DRI list\n\nMerge Request Report Widgets - DRI list\n\nIn the context of the Working Group , a list of DRIs have been identified to facilitate communication among all Widgets currently active and in development.\n\nPlease refer to this list and keep it updated as Widgets evolve.\n\n(Core) / Global Feature Flag Rollout\n\nVerify:Pipeline Security\n\nVerify:Pipeline Security\n\nSecure:Static Analysis\n\nSecure:Composition Analysis\n\nVerify:Pipeline Security\n\nSecurity Risk Management:Security Insights\n\nVerify:Pipeline Security\n\nSoftware Supply Chain Security:Compliance\n\nVerify:Pipeline Security\n\nMerge Request Extensions technical documentation\n\nMerge Request Report Widget Working Group page",
+  "source": "handbook",
+  "headings": [
+    "Merge Request Report Widgets - DRI list",
+    "Merge Request Report Widgets - DRI list",
+    "Related links"
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "chunk_id": "a41deaa642fd_0",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/1password/setup",
+    "title": "1Password Setup Guide",
+    "source": "handbook",
+    "headings": [
+      "1Password Setup Guide",
+      "Troubleshooting Tips",
+      "Admin Account 1Password Extension Integration"
+    ],
+    "text": "1Password Setup Guide\n\nYou will receive an invitation to get started in your email on your first day. You will get access to service or team-specific vaults in your onboarding or through access requests.\n\nAs an added benefit, we give all team members a free family account for securing your personal passwords as well in two separate accounts with respective vaults.\n\nVendor Docs - Getting Started\n\nVendor Docs - Install Password on Mac\n\n1Password Chrome Extension\n\nVendor Docs - Getting Started on Mac\n\nVendor Docs - Save and Fill Passwords\n\nVendor Docs - Sharing a Password Securely\n\nAdmin Account 1Password Extension Integration\n\nFor users with access to secondary 1Password accounts, please make sure that the 1Password Chrome extension in your Black Chrome profile is NOT set to automatically integrate with the desktop app. This setting may re-enable itself after a major 1Password or Chrome update.\n\nIn the top right corner of Chrome, click the plugin icon (puzzle piece), click the 3 dots dropdown menu next to 1Password, then choose Settings .\n\nIn the General section in the left sidebar, ensure that Integrate this extension with the 1Password desktop app is disabled.\n\nIn the left sidebar, navigate to Accounts & vaults .\n\nIf your normal user account ( {handle}@gitlab.com and not {handle}-admin@gitlab.com ) is listed, click the three dots and choose Sign Out . Repeat these actions for any other accounts that appear (ex. your personal 1Password email address).",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "a41deaa642fd_1",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/1password/setup",
+    "title": "1Password Setup Guide",
+    "source": "handbook",
+    "headings": [
+      "1Password Setup Guide",
+      "Troubleshooting Tips",
+      "Admin Account 1Password Extension Integration"
+    ],
+    "text": "desktop app is disabled.\n\nIn the left sidebar, navigate to Accounts & vaults .\n\nIf your normal user account ( {handle}@gitlab.com and not {handle}-admin@gitlab.com ) is listed, click the three dots and choose Sign Out . Repeat these actions for any other accounts that appear (ex. your personal 1Password email address).\n\nIf your admin account is not listed, click Sign in to another account . After redirecting to the 1Password website, choose the gitlab.1password.com tile and verify that your {handle}-admin@gitlab.com email address is shown, then type in your master password.\n\nThe 1Password extension in the top right corner should now show your admin creentials.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

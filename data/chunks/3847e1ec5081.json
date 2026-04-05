@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "3847e1ec5081_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/gainsight/deployment-types",
+    "title": "Customer Deployment Types",
+    "source": "handbook",
+    "headings": [
+      "Customer Deployment Types",
+      "Customer Deployment Types",
+      "Customer Conversion Source",
+      "Hosting",
+      "Deployer"
+    ],
+    "text": "Customer Deployment Types\n\nCustomer Deployment Types\n\nDuring customer onboarding, these fields should be filled out in Gainsight. Deployment types definitions for customer attributes on the Gainsight C360:\n\nCustomer Conversion Source\n\nThe purpose is understanding where the customer came from — this is about sourcing (e.g., marketing/SDR’ing as an analogy). Each customer should fit into one of three buckets regardless of when they started using GitLab:\n\nCommunity conversion (first value waived) - A customer who was using the free community version and is converting (or converted) to a paid subscription tier.\n\nNew Customer - This is a brand new customer who doesn’t (or didn’t) have an existing GitLab deployment.\n\nExisting - New CSM (first value waived) - The customer was already a paying customer and is being (or was) assigned a CSM (e.g., upgraded from a small deployment to large).\n\nWhat is the customer’s main deployment type?\n\nSelf-managed - on-premises\n\nSelf-managed - hybrid\n\nSelf-managed and GitLab.com\n\nAddresses the question of who did the work to deploy them?\n\nLogs what (cloud) provider the customer uses or if they’re on-premises",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

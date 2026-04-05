@@ -1,0 +1,578 @@
+[
+  {
+    "chunk_id": "07d7ed132815_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "Component Ownership Model\n\n_A paved path for adding new Infrastructure Components to all GitLab’s Platforms\n\nUnderstanding the Ecosystem\n\nThe Component Ownership Model extends GitLab’s Production Readiness Enablement Process (PREP) with a focus on ownership,\nand best practices using a paved-path to production in all of GitLab’s platforms.\n\nIt guides teams through bringing non-Runway infrastructure components online for GitLab.com.\nWhile focused on .com deployment,\nit ensures components remain compatible with GitLab’s broader deployment landscape:\nDedicated, FedRAMP, Cells, and future Self-Managed offerings.\n\nThis model is part of a larger transformation.\nOther initiatives define the Segmenting Self-Managed for a Cloud Native Future blueprint and the Production Readiness Enablement Process .\nThe Component Ownership Model is focused on accelerating and unifying the approach taken for delivering new software components to GitLab.com in a way which aligns expectations,\nencourages ownership and reduces the need for manual (possibly slow) gatekeeping from Infrastructure Platforms department.\n\nRelationship to Runway and the Production Readiness Process\n\nThis process is not a replacement for the Production Readiness process,\nbut is intended to be an opinionated paved path designed to reduce the cycle time on Production Readiness.\n\nThis is similar to the goals of Runway .\nSelecting Runway is preferable to using this process,\nand should be used when possible.",
+    "chunk_index": 0,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "ss Process\n\nThis process is not a replacement for the Production Readiness process,\nbut is intended to be an opinionated paved path designed to reduce the cycle time on Production Readiness.\n\nThis is similar to the goals of Runway .\nSelecting Runway is preferable to using this process,\nand should be used when possible.\n\nUnfortunately, Runway does not yet support deployment of services into Self-Managed environments.\nIn the case that a new component will require Self-Managed deployment, and until Runway supports Self-Managed,\nthe Component Ownership Model is the next best option.\n\nCompared to the previous engagement model,\nComponent Ownership Model will allow teams to work with greater autonomy,\nfaster cycle time,\nand greater alignment with Infrastructure.\n\nComponent : A self-contained infrastructure-as-code module that provides specific functionality to GitLab.com.\nIn this context, refers specifically to Helm charts or Terraform modules that define cloud resources or Kubernetes workloads.\nComponents are versioned, tested, and are accessed through a well-defined interface.\n\nComponent : A self-contained infrastructure-as-code module that provides specific functionality to GitLab.com.\nIn this context, refers specifically to Helm charts or Terraform modules that define cloud resources or Kubernetes workloads.\nComponents are versioned, tested, and are accessed through a well-defined interface.",
+    "chunk_index": 1,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "omponent : A self-contained infrastructure-as-code module that provides specific functionality to GitLab.com.\nIn this context, refers specifically to Helm charts or Terraform modules that define cloud resources or Kubernetes workloads.\nComponents are versioned, tested, and are accessed through a well-defined interface.\n\nPolicy as Code : Infrastructure standards and requirements defined as machine-readable rules using tools like Open Policy Agent and conftest ,\nrather than written documentation.\nPolicies are versioned, shared and distributed as OCI images .\n\nPolicy as Code : Infrastructure standards and requirements defined as machine-readable rules using tools like Open Policy Agent and conftest ,\nrather than written documentation.\nPolicies are versioned, shared and distributed as OCI images .\n\nSemantic Versioning (SemVer) : A versioning scheme using MAJOR.MINOR.PATCH format.\nSee semver.org for detailed specification.\n\nSemantic Versioning (SemVer) : A versioning scheme using MAJOR.MINOR.PATCH format.\nSee semver.org for detailed specification.\n\nComponent Owner : The Stage Group team or Infrastructure team responsible for a component from design through production operations,\nincluding on-call responsibilities, security updates, and ongoing maintenance.\n\nComponent Owner : The Stage Group team or Infrastructure team responsible for a component from design through production operations,\nincluding on-call responsibilities, security updates, and ongoing maintenance.",
+    "chunk_index": 2,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "rough production operations,\nincluding on-call responsibilities, security updates, and ongoing maintenance.\n\nComponent Owner : The Stage Group team or Infrastructure team responsible for a component from design through production operations,\nincluding on-call responsibilities, security updates, and ongoing maintenance.\n\nNon-Runway Components : Infrastructure components that cannot use GitLab’s Runway platform due to specific requirements or constraints, necessitating the Component Ownership Model approach.\nFor GitLab-application-components, the primary reason currently is the need the deploy on Self-Managed.\nWork for this is planned, but the feature is not yet available.\nAdditionally, some services rely on infrastructure features not covered by Runway,\nsuch as advanced stateful Kubernetes features (e.g. Persistent Volumes, Stateful Sets, etc).\n\nNon-Runway Components : Infrastructure components that cannot use GitLab’s Runway platform due to specific requirements or constraints, necessitating the Component Ownership Model approach.\nFor GitLab-application-components, the primary reason currently is the need the deploy on Self-Managed.\nWork for this is planned, but the feature is not yet available.\nAdditionally, some services rely on infrastructure features not covered by Runway,\nsuch as advanced stateful Kubernetes features (e.g. Persistent Volumes, Stateful Sets, etc).",
+    "chunk_index": 3,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "components, the primary reason currently is the need the deploy on Self-Managed.\nWork for this is planned, but the feature is not yet available.\nAdditionally, some services rely on infrastructure features not covered by Runway,\nsuch as advanced stateful Kubernetes features (e.g. Persistent Volumes, Stateful Sets, etc).\n\nIntegration Engineer : A Production Engineering team member who guides the integration of components into GitLab.com’s infrastructure,\nreviews implementation against design, and ensures policy compliance during the integration stage.\n\nIntegration Engineer : A Production Engineering team member who guides the integration of components into GitLab.com’s infrastructure,\nreviews implementation against design, and ensures policy compliance during the integration stage.\n\nReviewer SRE : A Staff+ Individual Contributor from Production Engineering who evaluates component designs during the engagement stage,\nfocusing on scalability, operations, and architectural decisions.\n\nReviewer SRE : A Staff+ Individual Contributor from Production Engineering who evaluates component designs during the engagement stage,\nfocusing on scalability, operations, and architectural decisions.\n\nPaved Path : An opinionated, standardized approach with pre-built tooling, templates, and automation that accelerates development while ensuring consistency and compliance.\n\nPaved Path : An opinionated, standardized approach with pre-built tooling, templates, and automation that accelerates development while ensuring consistency and compliance.",
+    "chunk_index": 4,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "d, standardized approach with pre-built tooling, templates, and automation that accelerates development while ensuring consistency and compliance.\n\nPaved Path : An opinionated, standardized approach with pre-built tooling, templates, and automation that accelerates development while ensuring consistency and compliance.\n\nconfig-mgmt : GitLab’s configuration management repository for infrastructure. Under the Component Ownership Model,\ncomponents must NOT be added directly to this repository.\n\nconfig-mgmt : GitLab’s configuration management repository for infrastructure. Under the Component Ownership Model,\ncomponents must NOT be added directly to this repository.\n\nk8s-workloads : GitLab’s Kubernetes workloads repositories .\nLike config-mgmt , application components must be maintained separately and integrated as versioned dependencies.\n\nk8s-workloads : GitLab’s Kubernetes workloads repositories .\nLike config-mgmt , application components must be maintained separately and integrated as versioned dependencies.\n\ncommon-ci-tasks : A GitLab repository providing standardized CI components at https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks that enforce policies, run tests, and automate deployments.\n\ncommon-ci-tasks : A GitLab repository providing standardized CI components at https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks that enforce policies, run tests, and automate deployments.\n\nCopier Templates : Project templates using the Copier tool that generate standardized project structures.\nAvailable at https://gitlab.com/gitlab-com/gl-infra/common-template-copier .",
+    "chunk_index": 5,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "ized CI components at https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks that enforce policies, run tests, and automate deployments.\n\nCopier Templates : Project templates using the Copier tool that generate standardized project structures.\nAvailable at https://gitlab.com/gitlab-com/gl-infra/common-template-copier .\n\nCopier Templates : Project templates using the Copier tool that generate standardized project structures.\nAvailable at https://gitlab.com/gitlab-com/gl-infra/common-template-copier .\n\nMetrics Catalog : GitLab’s centralized system for defining service metrics,\nwhich automatically generates dashboards and alerts.\nComponents must integrate with this system for observability. It’s jsonnet dependencies can be imported from the runbooks repository .\n\nMetrics Catalog : GitLab’s centralized system for defining service metrics,\nwhich automatically generates dashboards and alerts.\nComponents must integrate with this system for observability. It’s jsonnet dependencies can be imported from the runbooks repository .\n\nProduction Readiness : GitLab’s existing process for ensuring services meet operational requirements before production deployment.\nThe Component Ownership Model extends and accelerates this process.\nThe Production Readiness process is documented in the handbook .\n\nProduction Readiness : GitLab’s existing process for ensuring services meet operational requirements before production deployment.\nThe Component Ownership Model extends and accelerates this process.\nThe Production Readiness process is documented in the handbook .",
+    "chunk_index": 6,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_7",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "ction Readiness process is documented in the handbook .\n\nProduction Readiness : GitLab’s existing process for ensuring services meet operational requirements before production deployment.\nThe Component Ownership Model extends and accelerates this process.\nThe Production Readiness process is documented in the handbook .\n\ninfra-mgmt : Infrastructure management repository at https://gitlab.com/gitlab-com/gl-infra/infra-mgmt used to automate the creation and management of GitLab’s repositories on GitLab.com,\nincluding enforcement of baseline project requirements ,\nmanaging Vault integration, secrets rotation,\nand mirroring between GitLab instances.\n\ninfra-mgmt : Infrastructure management repository at https://gitlab.com/gitlab-com/gl-infra/infra-mgmt used to automate the creation and management of GitLab’s repositories on GitLab.com,\nincluding enforcement of baseline project requirements ,\nmanaging Vault integration, secrets rotation,\nand mirroring between GitLab instances.\n\nSLA (Service Level Agreement) : Defined response times and resolution targets for various operational activities, including security updates, policy compliance, and incident response.\n\nSLA (Service Level Agreement) : Defined response times and resolution targets for various operational activities, including security updates, policy compliance, and incident response.\n\nCVE (Common Vulnerabilities and Exposures) : Publicly disclosed security vulnerabilities tracked at cve.mitre.org that require timely remediation according to defined SLAs based on severity levels.",
+    "chunk_index": 7,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_8",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "olution targets for various operational activities, including security updates, policy compliance, and incident response.\n\nCVE (Common Vulnerabilities and Exposures) : Publicly disclosed security vulnerabilities tracked at cve.mitre.org that require timely remediation according to defined SLAs based on severity levels.\n\nCVE (Common Vulnerabilities and Exposures) : Publicly disclosed security vulnerabilities tracked at cve.mitre.org that require timely remediation according to defined SLAs based on severity levels.\n\nCVSS (Common Vulnerability Scoring System) : Industry-standard scoring system (0-10) used to assess the severity of security vulnerabilities. See FIRST CVSS specification for details.\n\nCVSS (Common Vulnerability Scoring System) : Industry-standard scoring system (0-10) used to assess the severity of security vulnerabilities. See FIRST CVSS specification for details.\n\nThree distinct roles drive the component addition process.\nEach brings specific expertise.\nEach owns different responsibilities.\n\nTeam introducing and owning the new component\n\nThe stage group team or infrastructure team introducing the new component. The team owns it from conception through production. Drives the engagement process forward. Creates the artifacts: Container Images, Terraform modules, Helm charts, design documents.\n\nProduction Engineering (Staff+ IC)\n\nEvaluates the design. Asks difficult questions about scale, operations, architecture, and security. Their approval signals that the design can survive production’s demands and would be viable in Self-Managed in future.",
+    "chunk_index": 8,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_9",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "tainer Images, Terraform modules, Helm charts, design documents.\n\nProduction Engineering (Staff+ IC)\n\nEvaluates the design. Asks difficult questions about scale, operations, architecture, and security. Their approval signals that the design can survive production’s demands and would be viable in Self-Managed in future.\n\nIntegration Engineers\n\nProduction Engineering\n\nGuides the component into GitLab.com’s infrastructure. Reviews code against the approved design. Verifies policy compliance. Ensures the implementation matches the promise.\n\nThe Vision: Self-service Infrastructure\n\nThe Component Ownership Model pushes infrastructure component ownership left.\nTeams that propose components own them, from Idea to Production and beyond into ongoing maintenance and support.\nComponent Owners maintain separate repositories for their Infrastructure-as-Code,\navoiding adding their changes directly to Infrastructure repositories.\nBy maintaining their own modules, they control their release cycles, and respond to alerts and incidents.\nInfrastructure teams provide platforms, a paved path, guidance and guardrails.\nThe goal is to avoid roadblocks.\n\nInfra-Mgmt will be used to automate\nrepository management, mirroring, secret management and rotation.\n\nFuture iterations may include a self-service platform that automates, GCP sandbox resource provisioning.\nTeams could spin up standardized environments with Atlantis for Terraform automation and Vault for secrets management.\nThis vision builds on proven patterns while removing infrastructure teams from the critical path.",
+    "chunk_index": 9,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_10",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "uture iterations may include a self-service platform that automates, GCP sandbox resource provisioning.\nTeams could spin up standardized environments with Atlantis for Terraform automation and Vault for secrets management.\nThis vision builds on proven patterns while removing infrastructure teams from the critical path.\n\nMaintaining Clear Boundaries\n\nUnlike today, component IaC definitions will not reside in Config-Mgmt or k8s-workloads repositories.\nThey exist in their own repositories under the https://gitlab.com/gitlab-com/gl-infra/components namespace (TBD).\nComponent owners own these repositories, have owner rights and merge their own changes.\nThey manage releases.\n\nTeams build components as Helm charts for Kubernetes workloads, or Terraform Modules for\ncloud resource provisioning.\nThey define Metrics Catalog entries for observability.\nInfrastructure platforms consume these modules as isolated, well-defined, versioned dependencies,\ninstead of absorbing weakly-owned changes into a monolithic repository.\n\nFor modules, Convention-over-Configuration is strongly favoured,\nand using common-ci-tasks CI Components and common-template-copier Project Templates will encourage this approach.\n\nBuilding on Proven Foundations\n\nThe common-ci-tasks repository provides standardized CI components for consistent project builds.\nTeams inherit policy enforcement, testing frameworks, and deployment patterns.\nThis approach will avoid reinventing wheels and divergent practices, encouraging a paved-path approach.",
+    "chunk_index": 10,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_11",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "roach.\n\nBuilding on Proven Foundations\n\nThe common-ci-tasks repository provides standardized CI components for consistent project builds.\nTeams inherit policy enforcement, testing frameworks, and deployment patterns.\nThis approach will avoid reinventing wheels and divergent practices, encouraging a paved-path approach.\n\nGitLab Infrastructure team already makes use of Copier for project templates stored in the common-template-copier project.\nThe Copier Templates establish patterns that make components maintainable and consistent, and provide automated upgrades to projects to migrate around breaking changes.\nUsing these Copier templates for new projects is mandatory.\n\nFor Component Ownership Model, Infrastructure standards live as code, not documentation.\nTeams consume versioned policies published as OCI images. conftest will be used to valid modules against policies defined by Infrastructure policies.\nAdditionally, unit testing for Helm (using helmunit ) and Terraform (using terraform test ) will be required. checkov scans will further enforce broader, industry standard policies.\n\nPolicy versions follow semantic versioning:\n\nMajor versions introduce breaking changes requiring major and disruptive code updates\n\nMinor versions add new rules\n\nPatch versions fix bugs without breaking existing components",
+    "chunk_index": 11,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_12",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "test ) will be required. checkov scans will further enforce broader, industry standard policies.\n\nPolicy versions follow semantic versioning:\n\nMajor versions introduce breaking changes requiring major and disruptive code updates\n\nMinor versions add new rules\n\nPatch versions fix bugs without breaking existing components\n\nEach project will declaratively define the policy versions supported.\nThis will be verified through CI/CD checks on the project,\nensuring that developers are aware of policy breaches as soon as possible.\nTeams declare their supported policy version.\nRenovate proposes updates to the policy documents.\nInfrastructure communicates standards through policy releases,\nnot meetings or checkboxes in a merge request template.\n\nInfrastructure evolves policies based on operational experience, the need to nudge teams in a specific direction,\nor even small linter fixes.\nNew attack vectors may require new security rules.\nPerformance issues drive resource policies.\nTeams consume these updates at their own pace within support windows, but the\nInfrastructure Platforms team may require certain minimum versions of the\npolicies to be enforced before allowing the team to integrate a module.\nAlthough the Component Owner team will be responsible for upgrading to the new version,\nthese is a well-established approach to automating upgrades all GitLab projects\nusing the copier templates, using Source Migrations .\n\nContinuous Validation",
+    "chunk_index": 12,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_13",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "the\npolicies to be enforced before allowing the team to integrate a module.\nAlthough the Component Owner team will be responsible for upgrading to the new version,\nthese is a well-established approach to automating upgrades all GitLab projects\nusing the copier templates, using Source Migrations .\n\nContinuous Validation\n\nSince policy checks are defined in code, and integrated into the standard CI components used in component projects,\npolicies are validated on each push and failed checks block merges.\nTeams know immediately when they violate standards.\n\nPolicy violations during development are learning opportunities.\nTeams can temporarily disable specific policies with justification.\nThese exceptions require review during integration.\n\nObservability as Code\n\nMetrics Catalog integration starts during development.\nTeams define PodMonitor and ServiceMonitor configurations as part of helm chart definitions.\n\nServices define their metrics-catalog configurations alongside Helm Charts.\nThese configurations generate dashboards and alerts.\nAlerts are automatically routed to the owning team.\n\nComponent repositories maintain their own release cycles.\nTeams use semantic commits to drive an automated semantic release process.\n\nInfrastructure repositories reference specific component module versions,\nbut don’t contain component (IaC) code.\nTeams propose version updates through merge requests, or Renovate will open them automatically.\nUpgrades need to be validated in staging before production.",
+    "chunk_index": 13,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_14",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "s to drive an automated semantic release process.\n\nInfrastructure repositories reference specific component module versions,\nbut don’t contain component (IaC) code.\nTeams propose version updates through merge requests, or Renovate will open them automatically.\nUpgrades need to be validated in staging before production.\n\nBy using versioned modules, there is a physical limit to the drift that\ncan occur between the implementations in each environment.\nThis is different from the copy-pasta style approach sometimes used at present,\nwhich results in configuration drift between environments over time.\n\nImportantly, by using a single module for multiple environments, teams need to\nconsider the interface to their module and the appropriate level of abstraction.\nThis is an important part of the design process, but can be missed if you’re simply\ndeclaring Terraform resources.\n\nService-Level Agreements\n\nInfrastructure Platforms and Component Owner Teams will both commit to maintaining the following SLAs.\n\nInfrastructure Platforms Team SLAs\n\nAs the platform provider, the Infrastructure Platforms department will commit to the following SLAs.\n\nInitial Design Review Response : 10 business days to provide initial feedback on design documents\n\nInitial Design Review Response : 10 business days to provide initial feedback on design documents\n\nIntegration Review Turnaround : Initial review: 2 business days for first pass Subsequent reviews: 1 business day for re-reviews after changes\n\nIntegration Review Turnaround :\n\nInitial review: 2 business days for first pass",
+    "chunk_index": 14,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_15",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "itial Design Review Response : 10 business days to provide initial feedback on design documents\n\nIntegration Review Turnaround : Initial review: 2 business days for first pass Subsequent reviews: 1 business day for re-reviews after changes\n\nIntegration Review Turnaround :\n\nInitial review: 2 business days for first pass\n\nSubsequent reviews: 1 business day for re-reviews after changes\n\nSupport Response Times : Blocking issues: 2 business days Non-blocking questions: 5 business days\n\nSupport Response Times :\n\nBlocking issues: 2 business days\n\nNon-blocking questions: 5 business days\n\nPlatform Availability : CI/CD pipeline availability, no upstream blockers: 99.5% uptime\n\nPlatform Availability :\n\nCI/CD pipeline availability, no upstream blockers: 99.5% uptime\n\nComponent Owner Team SLAs\n\nThe Component Owner will commit to the following SLAs.\n- Component Owners undertake to follow the Security Department’s Vulnerability mitigation and remediation SLAS - For embargoed vulnerabilities: Must comply with coordinated disclosure timelines.",
+    "chunk_index": 15,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_16",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "bility, no upstream blockers: 99.5% uptime\n\nComponent Owner Team SLAs\n\nThe Component Owner will commit to the following SLAs.\n- Component Owners undertake to follow the Security Department’s Vulnerability mitigation and remediation SLAS - For embargoed vulnerabilities: Must comply with coordinated disclosure timelines.\n\nTooling and Dependency Updates : Breaking tool updates (Terraform, Helm major versions): 30 days from Infrastructure Team adoption Security updates for dependencies: Follow security incident SLAs above Provider plugin updates: 14 days for critical providers (GCP, Kubernetes) Note: Renovate will manage the creation of these MRs, and with sufficient test coverage,\nthese updates should low effort. However, if components require manual testing,\nthis will quickly become a burden on component owners.\nIt is highly recommended that proper automated tests are maintained by\ncomponent owners to reduce dependency upgrade overhead.\n\nTooling and Dependency Updates :\n\nBreaking tool updates (Terraform, Helm major versions): 30 days from Infrastructure Team adoption\n\nSecurity updates for dependencies: Follow security incident SLAs above\n\nProvider plugin updates: 14 days for critical providers (GCP, Kubernetes)\n\nNote: Renovate will manage the creation of these MRs, and with sufficient test coverage,\nthese updates should low effort. However, if components require manual testing,\nthis will quickly become a burden on component owners.\nIt is highly recommended that proper automated tests are maintained by\ncomponent owners to reduce dependency upgrade overhead.",
+    "chunk_index": 16,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_17",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "creation of these MRs, and with sufficient test coverage,\nthese updates should low effort. However, if components require manual testing,\nthis will quickly become a burden on component owners.\nIt is highly recommended that proper automated tests are maintained by\ncomponent owners to reduce dependency upgrade overhead.\n\nPolicy Compliance Updates : Major policy versions: 90 days from release Minor policy versions: 30 days from release Security-related policy updates: 14 days\n\nPolicy Compliance Updates :\n\nMajor policy versions: 90 days from release\n\nMinor policy versions: 30 days from release\n\nSecurity-related policy updates: 14 days\n\nOperational Response : Production incidents (S1/S2): 15-minute response time Performance degradation: 1 hour response time Capacity alerts: X business days\n\nOperational Response :\n\nProduction incidents (S1/S2): 15-minute response time\n\nPerformance degradation: 1 hour response time\n\nCapacity alerts: X business days\n\nDocumentation Maintenance : Runbook updates: Delivered as part of any significant change project\n\nDocumentation Maintenance :\n\nRunbook updates: Delivered as part of any significant change project\n\nOn-call Coverage : The Component Owner team must provide either a Tier 1 On-Call or Tier 2 On-Call .\nNote: a new 24x5 Pilot On-Call is being considered at present,\nand this may be used once it is available. Escalation path configured in PagerDuty, through automation Handoff procedures documented.",
+    "chunk_index": 17,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_18",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "ficant change project\n\nOn-call Coverage : The Component Owner team must provide either a Tier 1 On-Call or Tier 2 On-Call .\nNote: a new 24x5 Pilot On-Call is being considered at present,\nand this may be used once it is available. Escalation path configured in PagerDuty, through automation Handoff procedures documented.\n\nThe Component Owner team must provide either a Tier 1 On-Call or Tier 2 On-Call .\nNote: a new 24x5 Pilot On-Call is being considered at present,\nand this may be used once it is available.\n\nEscalation path configured in PagerDuty, through automation\n\nHandoff procedures documented.\n\nMeasurement and Reporting\n\nAs much as is reasonably possible, the GitLab Product should be used to manage\nGitLab security finding reporting.\n\nQuarterly reviews between Infrastructure Platforms and Component Owners\n\nAnnual SLA review and adjustment based on operational data\n\nSLA Exceptions and Escalations\n\nGrace periods may be extended  with Infrastructure Platform Leadership approval\n\nWaivers require director-level approval from both teams\n\nNon-compliance triggers escalation to  director-level heads after: 2 missed SLAs in a quarter Any critical security SLA breach Repeated violations of the same SLA Reported in SaaS Availability Weekly Standup\n\n2 missed SLAs in a quarter\n\nAny critical security SLA breach\n\nRepeated violations of the same SLA\n\nReported in SaaS Availability Weekly Standup\n\nThe Component Ownership Model succeeds through automation and clear ownership.\nTeams move faster because standards are automated.",
+    "chunk_index": 18,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_19",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "Reported in SaaS Availability Weekly Standup\n\n2 missed SLAs in a quarter\n\nAny critical security SLA breach\n\nRepeated violations of the same SLA\n\nReported in SaaS Availability Weekly Standup\n\nThe Component Ownership Model succeeds through automation and clear ownership.\nTeams move faster because standards are automated.\n\nComponent owners must embrace operational ownership.\nInfrastructure teams must provide platforms, not permission.\n\nStage 1: Design Stage\n\nThe process begins with engagement and a design.\nThe Component owner produces a small design document.\nThis is not a sprawling specification but a focused proposal, specifically covering the deployment of the component to GitLab.com.\nThis same documentation will later be used as part of the service runbooks, and production readiness process.\n\nA Staff+ engineer in the Production Engineering sub-department will work with the Component Owner to validate the design.\n\nA set of prerequisites questions will need to be covered before approval can be given, such as:\n\nProduction Readiness Design Review Checklist\n\nNote: this section may evolve into a section in the broader Production Readiness checklist.\n\nPortability Although this process focuses on GitLab.com,\ncomponents must should be forward compatible with GitLab’s other deployment models.\nA feature requiring proprietary cloud services without self-managed equivalents\nwill not pass review.",
+    "chunk_index": 19,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_20",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "ion may evolve into a section in the broader Production Readiness checklist.\n\nPortability Although this process focuses on GitLab.com,\ncomponents must should be forward compatible with GitLab’s other deployment models.\nA feature requiring proprietary cloud services without self-managed equivalents\nwill not pass review.\n\nPortability Although this process focuses on GitLab.com,\ncomponents must should be forward compatible with GitLab’s other deployment models.\nA feature requiring proprietary cloud services without self-managed equivalents\nwill not pass review.\n\nMulti-tenancy, Single-tenancy and Isolation Does this component design consider future deployments into other GitLab platforms, such as Cells and Dedicated?\nIs it forward-compatible with these environments?\n\nMulti-tenancy, Single-tenancy and Isolation Does this component design consider future deployments into other GitLab platforms, such as Cells and Dedicated?\nIs it forward-compatible with these environments?\n\nObservability Standards Does the component emit structured logs and metrics compatible with GitLab’s observability stack?\n\nObservability Standards Does the component emit structured logs and metrics compatible with GitLab’s observability stack?\n\nDependency Management “Are all external dependencies documented with version constraints, and can they operate in restricted network environments?”\n\nDependency Management “Are all external dependencies documented with version constraints, and can they operate in restricted network environments?”",
+    "chunk_index": 20,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_21",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "s observability stack?\n\nDependency Management “Are all external dependencies documented with version constraints, and can they operate in restricted network environments?”\n\nDependency Management “Are all external dependencies documented with version constraints, and can they operate in restricted network environments?”\n\nData Lifecycle Is there a clear data retention and deletion strategy that supports compliance requirements?\n\nData Lifecycle Is there a clear data retention and deletion strategy that supports compliance requirements?\n\nPerformance Degradation Does the component gracefully degrade under load,\nfor example, with clear circuit breakers and backpressure mechanisms?\n\nPerformance Degradation Does the component gracefully degrade under load,\nfor example, with clear circuit breakers and backpressure mechanisms?\n\nConfiguration Management Can all configuration be managed through GitLab’s standard configuration systems (Terraform, Kubernetes)\nwithout manual clickops operations or hardcoded values?\n\nConfiguration Management Can all configuration be managed through GitLab’s standard configuration systems (Terraform, Kubernetes)\nwithout manual clickops operations or hardcoded values?\n\nCross-region Considerations Will the component be forward-compatible with geo-distributed deployments in future?\n\nCross-region Considerations Will the component be forward-compatible with geo-distributed deployments in future?\n\nResource Quotas Does the component implement resource quotas and rate limiting that can be configured per-tenant or per-deployment?",
+    "chunk_index": 21,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_22",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "mponent be forward-compatible with geo-distributed deployments in future?\n\nCross-region Considerations Will the component be forward-compatible with geo-distributed deployments in future?\n\nResource Quotas Does the component implement resource quotas and rate limiting that can be configured per-tenant or per-deployment?\n\nResource Quotas Does the component implement resource quotas and rate limiting that can be configured per-tenant or per-deployment?\n\nUpgrade Path Is there a zero-downtime upgrade path that supports rolling updates?\n\nUpgrade Path Is there a zero-downtime upgrade path that supports rolling updates?\n\nSecurity Boundaries Are security boundaries clearly defined with appropriate authentication and authorization checkpoints?\n\nSecurity Boundaries Are security boundaries clearly defined with appropriate authentication and authorization checkpoints?\n\nDisaster Recovery Does the component support backup/restore operations that align with the RPO/RTO requirements for GitLab.com.\nIs the component forward compatible with the various RPO/PTO requirements across Cells and Dedicated?\n\nDisaster Recovery Does the component support backup/restore operations that align with the RPO/RTO requirements for GitLab.com.\nIs the component forward compatible with the various RPO/PTO requirements across Cells and Dedicated?\n\nIntegration Testing Can the component be fully tested in isolation and as part of integrated test suites without external dependencies?",
+    "chunk_index": 22,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_23",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "ackup/restore operations that align with the RPO/RTO requirements for GitLab.com.\nIs the component forward compatible with the various RPO/PTO requirements across Cells and Dedicated?\n\nIntegration Testing Can the component be fully tested in isolation and as part of integrated test suites without external dependencies?\n\nIntegration Testing Can the component be fully tested in isolation and as part of integrated test suites without external dependencies?\n\nData Residency and Privacy Controls Is the component forward compatible with the data residency requirements and privacy controls of Dedicated and Dedicated-for-Government deployments?\n\nData Residency and Privacy Controls Is the component forward compatible with the data residency requirements and privacy controls of Dedicated and Dedicated-for-Government deployments?\n\nExtensibility Without Core Modifications Does the interface for the component allow the component’s behavior be extended through configuration without modifying core code,\nsupporting different deployment configurations?\n\nExtensibility Without Core Modifications Does the interface for the component allow the component’s behavior be extended through configuration without modifying core code,\nsupporting different deployment configurations?\n\nComponent Replaceability and Independence Is the module designed with clear interface boundaries and loose coupling to enable independent replacement or migration without affecting other services?",
+    "chunk_index": 23,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_24",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "’s behavior be extended through configuration without modifying core code,\nsupporting different deployment configurations?\n\nComponent Replaceability and Independence Is the module designed with clear interface boundaries and loose coupling to enable independent replacement or migration without affecting other services?\n\nComponent Replaceability and Independence Is the module designed with clear interface boundaries and loose coupling to enable independent replacement or migration without affecting other services?\n\nStage 2: Development Stage\n\nDevelopment follows design approval. This stage is driven by the Component Owner team.\nComponent Owners build in their repositories and own the pace of development.\nChanges can be merged in the component repository without Infrastructure Platforms involvement.\nWithin policy constraints, development can occur according to preferred approach of the Component Owner team.\nThis will reduce the need to wait for Infrastructure Platform reviews during development.\n\nStage 3: Integration Stage\n\nOnce the component is ready,\nthe Component Owner team and the Integration SRE collaborate on delivering the change, first to staging and then production.\n\nAs a first step, an MR is opened in the appropriate Infrastructure Platforms repository,\nsuch as Config-Mgmt or k8s-workloads .\nThe review should be assigned to the Integration SRE.\n\nChanges to integrate the module into each successive environment should be carried out in separate MRs,\nso that each change is tested in staging before being rolled out in canary and  finally production.",
+    "chunk_index": 24,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_25",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "Platforms repository,\nsuch as Config-Mgmt or k8s-workloads .\nThe review should be assigned to the Integration SRE.\n\nChanges to integrate the module into each successive environment should be carried out in separate MRs,\nso that each change is tested in staging before being rolled out in canary and  finally production.\n\nOnce the change is ready, the Integration SRE will review the change.\nThis will include a review of the Component module, to ensure that:\n\nThe implementation matches the agreed design (within reason).\n\nPolicy versions are up-to-date, and common-ci-tasks build components are up-to-date.\n\nTest coverage and quality\n\nOperational readiness (monitoring, alerting, runbooks)\n\nBackup and recovery procedures\n\nThe reviewing Integration SRE should, whenever possible, avoid being a “human linter”.\nFocusing on small menial linter-style issues should be avoided.\nComputers can lint for us,\nand human time is far more valuable for focusing on the big picture.\nSometimes by focusing on small niggles,\nthe reviewer may fail to see the wood for the trees.\n\nNote: this isn’t to say that linting isn’t important. SREs should look to\nautomate linter issues in common-ci-tasks .\nThis is better since it reduces gatekeeping, allows Component Owner Teams to learn about\nthese issues earlier in the development cycle, and prevents unexpected delays\nlater in the process.\n\nDuring the integration stage, multiple iterations of review and deployment may take place,\nuntil the component is deemed to be sufficiently stable and ready for\ndeployment to production.",
+    "chunk_index": 25,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_26",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "onent Owner Teams to learn about\nthese issues earlier in the development cycle, and prevents unexpected delays\nlater in the process.\n\nDuring the integration stage, multiple iterations of review and deployment may take place,\nuntil the component is deemed to be sufficiently stable and ready for\ndeployment to production.\n\nEach of these changes will be released as a new semver release of the module.\n\nStage 4: Operations and Maintenance\n\nOnce the component has graduated to production, ongoing feature improvements\ncan iteratively be added, along with other changes, such as dependency upgrades,\nperformance improvements and technical debt resolution.\n\nOngoing review of operational metrics is expected, which include storage growth, operating cost, and any other metrics relevant to the new component.\n\nThe responsibility for these tasks will fall on the team owning the component.\n\nFrom Idea to Production, a runbook for Component Owner teams\n\nStage 1: Design Stage\n\nFollow the Production Readiness Process to open a Production Readiness issue.\nThe earlier this is done, the better.\nOpening the Production Readiness issue kicks initiates the process and starts the process of\nallocating a Design Reviewer “slot”.\n\nCreate a Production Readiness MR, as per the Production Readiness Process. At this stage, the document will be fairly empty, but the Component Design can be carried out in this draft document.\n\nA component may have either a Terraform Module, a Helm Module or both.",
+    "chunk_index": 26,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_27",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "ts the process of\nallocating a Design Reviewer “slot”.\n\nCreate a Production Readiness MR, as per the Production Readiness Process. At this stage, the document will be fairly empty, but the Component Design can be carried out in this draft document.\n\nA component may have either a Terraform Module, a Helm Module or both.\n\nDefine the interface for the component and document it in the production readiness draft MR. The interface is, in Terraform, the inputs, or in Helm, the values.\n\nProduce a diagram and description of the cloud resources that the module will consume.\n\nStage 2: Development Stage\n\nDeclare the project in https://gitlab.com/gitlab-com/gl-infra/infra-mgmt , to create it in https://gitlab.com/gitlab-com/gl-infra/components . Although Infra-Mgmt is not currently optimized for self-service updates,\nit is possible for any engineer within the company to manage their projects through the system. Work to improve the UX of Infra-Mgmt, making it better for self-service is being tracked in https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1632 .\n\nAlthough Infra-Mgmt is not currently optimized for self-service updates,\nit is possible for any engineer within the company to manage their projects through the system.\n\nWork to improve the UX of Infra-Mgmt, making it better for self-service is being tracked in https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1632 .\n\nClone the new empty project, and follow the instructions in https://gitlab.com/gitlab-com/gl-infra/common-template-copier to apply the base template for the project. Push the initial commit to GitLab.",
+    "chunk_index": 27,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_28",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "mt, making it better for self-service is being tracked in https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1632 .\n\nClone the new empty project, and follow the instructions in https://gitlab.com/gitlab-com/gl-infra/common-template-copier to apply the base template for the project. Push the initial commit to GitLab.\n\nStart iterating on development of the module. MR reviews can be conducted within the team.\n\nBuild unit tests for your infrastructure using the scaffolding provided by the Copier template.\n\nIntegration test the changes using Sandbox accounts, KinD and other development tooling.\n\nMonitor any policy failures, and address these early.\n\nUse Semantic Commits to control versioning. Semantic Versioning will automatically tag and release new versions of your module automatically, and publish these versions.\n\nStage 3: Integration Stage\n\nWhen the team is confident that the component is ready for staging, the Component Owner team should open an MR in Config-Mgmt or k8s-workloads repositories.\n\nThe change should target to Staging environment and should reference a specific version of the component module.\n\nThe Component Owner team will not have merge access to the Infrastructure Platforms projects, but should assign\nto the Integration SRE for review.\n\nThe Integration SRE will conduct a review of the MR and also ensure that the upstream module meets the proposed design.",
+    "chunk_index": 28,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_29",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "ference a specific version of the component module.\n\nThe Component Owner team will not have merge access to the Infrastructure Platforms projects, but should assign\nto the Integration SRE for review.\n\nThe Integration SRE will conduct a review of the MR and also ensure that the upstream module meets the proposed design.\n\nIf any changes need to be done upstream, these should be carried out in the upstream module\nwith Semantic Releases used to publish new versions of the module, until the review is completed\nand the change is merged to the Staging environment.\n\nThe Component Owner team then validates the change, ensuring that it is working as expected in the staging environment.\n\nComponent Owner team verifies observability, alerts, etc. Some additional work will need to be done by the Observability Team to allow teams to\ndeclare and test their observability directly in their own modules, without needing\nto define these configurations in Infrastructure repositories (such as Infrastructure Runbooks). This work will likely be done as part of the https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1637 epic.\n\nSome additional work will need to be done by the Observability Team to allow teams to\ndeclare and test their observability directly in their own modules, without needing\nto define these configurations in Infrastructure repositories (such as Infrastructure Runbooks).\n\nThis work will likely be done as part of the https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1637 epic.",
+    "chunk_index": 29,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_30",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "ility Team to allow teams to\ndeclare and test their observability directly in their own modules, without needing\nto define these configurations in Infrastructure repositories (such as Infrastructure Runbooks).\n\nThis work will likely be done as part of the https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1637 epic.\n\nThrough multiple iterations to the upstream module, and to the integration project, the change will be rolled into production.\n\nThe Production deployment will need to be aligned with the wider Production Readiness process, with the production deployments\nbeing dependent on the production readiness review status.\nHowever, since the project is using Infrastructure templates, Infrastructure Policies\nand Infrastructure best-practices, the production readiness review is likely to\nto be significantly faster than one in which components are produced without\nfollowing the paved path.\n\nOnce the change is deployed, further progressive iterative changes can be made by the team in the upstream modules.\n\nAs during the development phase, changes are owned by the Component Owner team.\n\nIntegration can usually be done by a version bump to the downstream Infrastructure Platforms project.\n\nVersion bumps MRs will be created automatically by Renovate, but will require a review by an Infrastructure Platform engineer for MR approval. In most cases, for small changes, these will be quick reviews.",
+    "chunk_index": 30,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_31",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "wner team.\n\nIntegration can usually be done by a version bump to the downstream Infrastructure Platforms project.\n\nVersion bumps MRs will be created automatically by Renovate, but will require a review by an Infrastructure Platform engineer for MR approval. In most cases, for small changes, these will be quick reviews.\n\nRenovate will also propose dependency upgrades to the component module itself.\nSome of these will address CVEs in downstream dependencies and the team will\nbe responsible for addressing these (possibly within an SLA).\n\nSome shared components, such as Terraform and Helm will need to closely track the versions used on GitLab.com in the Config-Mgmt and k8s-workloads repositories. The team will be responsible for performing these upgrades, although Renovate will open the MRs.\n\nThe team will be responsible for Capacity Planning issues related to the component. Similar to how Observability for components will be defined by Component Owners\nin-module, the same approach will be used to define saturation points for\nCapacity Planning. This work will likely be done as part of the https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1637 epic.\n\nSimilar to how Observability for components will be defined by Component Owners\nin-module, the same approach will be used to define saturation points for\nCapacity Planning.\n\nThis work will likely be done as part of the https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1637 epic.",
+    "chunk_index": 31,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_32",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "lab-com/gl-infra/-/epics/1637 epic.\n\nSimilar to how Observability for components will be defined by Component Owners\nin-module, the same approach will be used to define saturation points for\nCapacity Planning.\n\nThis work will likely be done as part of the https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1637 epic.\n\nThe team will need to maintain their on-call schedule for escalations to the service. Incident.io resources should be managed alongside Infra-Mgmt component modules.\n\nIncident.io resources should be managed alongside Infra-Mgmt component modules.\n\nDeploying your component to GitLab.com is only the first step in a much larger\nprocess of bringing a new component to all GitLab customers.\n\nNext, we’ll need to consider Cells, GitLab Dedicated, Dedicated for Government,\nSelf-Managed using GET, Omnibus and Cloud Native GitLab.\n\nSome of these processes for handling new components are undergoing change, and\nthose changes are still underway.\nOnce they are complete, this guide will reference the appropriate next steps.\n\nAppendix: Case Study: GitLab’s Tenant Observability Stack (TOS)\n\nGitLab operates multiple deployment models: the multi-tenant GitLab.com,\nsingle-tenant GitLab Dedicated , GitLab Cells ,\nand Dedicated for Government .\nEach has unique requirements for scale, isolation, and compliance,\nyet all need comprehensive observability.\nWithout a unified approach, each platform team would implement their own observability solutions,\nleading to duplicated effort, inconsistent tooling, and operational toil.\n\nThe Solution: Component Ownership in Action",
+    "chunk_index": 32,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_33",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "has unique requirements for scale, isolation, and compliance,\nyet all need comprehensive observability.\nWithout a unified approach, each platform team would implement their own observability solutions,\nleading to duplicated effort, inconsistent tooling, and operational toil.\n\nThe Solution: Component Ownership in Action\n\nThe Observability Team created the Tenant Observability Stack (TOS) as a reusable Terraform module.\nInstead of embedding observability directly into each platform,\nTOS provides a complete observability solution that adapts to different deployment scenarios through configuration.\n\nClear Ownership Boundaries\n\nThe Observability Team owns the TOS module completely. They:\n\nMaintain the module in gitlab.com/gitlab-com/gl-infra/terraform-modules/observability/tenant-observability-stack\n\nRelease updates through semantic versioning\n\nProvide comprehensive documentation\n\nHandle security updates, dependency upgrades and add features to the module\n\nTreat module consumers as their customer\n\nTreat TOS as an internal product\n\nPlatform teams (Dedicated, Cells, Production Engineering) consume TOS as a versioned dependency. They:\n\nConfigure TOS for their specific requirements\n\nControl when to adopt new versions, progressively staggering roll-outs through staging to production environments.\n\nFocus on their platform-specific challenges\n\nConsistency : All platforms use the same dashboards, alerts, and tools, reducing cognitive load and enabling engineer mobility.",
+    "chunk_index": 33,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_34",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "or their specific requirements\n\nControl when to adopt new versions, progressively staggering roll-outs through staging to production environments.\n\nFocus on their platform-specific challenges\n\nConsistency : All platforms use the same dashboards, alerts, and tools, reducing cognitive load and enabling engineer mobility.\n\nIndependent development : The Observability Team iterates rapidly without disrupting platform deployments. Features roll out through simple version updates.\n\nCost efficiency : Consolidating observability development eliminates duplication. Improvements benefit all deployments simultaneously.\n\nDefine clear interfaces : Stable module inputs and outputs enable platform teams to integrate confidently\n\nDefine clear interfaces : Stable module inputs and outputs enable platform teams to integrate confidently\n\nInvest in automation : Automated testing, versioning, and deployment reduce manual intervention\n\nInvest in automation : Automated testing, versioning, and deployment reduce manual intervention\n\nEnable self-service : Comprehensive documentation allows platform teams to adopt and configure independently\n\nEnable self-service : Comprehensive documentation allows platform teams to adopt and configure independently\n\nMaintain backward compatibility : Semantic versioning with migration guides ensures smooth upgrades\n\nMaintain backward compatibility : Semantic versioning with migration guides ensures smooth upgrades\n\nIterate based on feedback : Regular engagement with platform teams drives practical improvements",
+    "chunk_index": 34,
+    "total_chunks": 36
+  },
+  {
+    "chunk_id": "07d7ed132815_35",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production/component-ownership-model",
+    "title": "Component Ownership Model",
+    "source": "handbook",
+    "headings": [
+      "Component Ownership Model",
+      "Understanding the Ecosystem",
+      "Relationship to Runway and the Production Readiness Process",
+      "Definitions",
+      "Roles"
+    ],
+    "text": "figure independently\n\nMaintain backward compatibility : Semantic versioning with migration guides ensures smooth upgrades\n\nMaintain backward compatibility : Semantic versioning with migration guides ensures smooth upgrades\n\nIterate based on feedback : Regular engagement with platform teams drives practical improvements\n\nIterate based on feedback : Regular engagement with platform teams drives practical improvements\n\nTOS demonstrates that the Component Ownership Model transforms infrastructure management.\n\nBy packaging observability as a module with clear ownership, we achieved:\n\nConsistent observability across diverse platforms\n\nRapid feature delivery without platform disruption\n\nReduced operational burden on platform teams\n\nScalable foundation for future growth\n\nThe success of TOS proves that well-defined component ownership,\ncombined with thoughtful interfaces and automation,\ncreates infrastructure components that serve as multipliers –\nenabling teams to focus on their unique value while leveraging best-in-class shared capabilities.\n\nFor more details, see the TOS module documentation and the Cells Observability architecture .",
+    "chunk_index": 35,
+    "total_chunks": 36
+  }
+]

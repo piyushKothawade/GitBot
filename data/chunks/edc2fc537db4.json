@@ -1,0 +1,658 @@
+[
+  {
+    "chunk_id": "edc2fc537db4_0",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "Zendesk-Salesforce Sync\n\nThis guide documents the Zendesk-Salesforce Sync, an automated hourly process that synchronizes customer organization and user data from Salesforce (the Single Source of Truth) to Zendesk. This sync ensures accurate support entitlements, proper SLA application, and current customer metadata in Zendesk.\n\nThe sync runs through nine sequential stages via GitLab CI/CD pipelines. This documentation explains how the sync works and provides troubleshooting guidance for administrators.\n\nAdministrators should review the Administrator tasks section.\n\nDeployment type: Ad-hoc\n\nProject repos: Salesforce Accounts Zendesk Orgs Processor Global Org Compare Zendesk Global Org Sync Partner Sync US Government Org Compare Zendesk US Government Org sync Zendesk US Government User Sync\n\nZendesk Global Org Sync\n\nUS Government Org Compare\n\nZendesk US Government Org sync\n\nZendesk US Government User Sync\n\nManaged content repos: Zendesk Global Organization Entitlement Overrides\n\nZendesk Global Organization Entitlement Overrides\n\nUnderstanding the Zendesk-Salesforce Sync\n\nWhat is the Zendesk-Salesforce Sync\n\nThe Zendesk-Salesforce Sync is a collection of nine interconnected GitLab CI/CD projects that synchronize customer data from Salesforce to Zendesk. The sync handles:\n\nCustomer organizations : Account metadata, support entitlements, subscription tiers, and ARR for both Zendesk Global and US Government\n\nPartner organizations : Separate sync process for partner accounts (Zendesk Global only)",
+    "chunk_index": 0,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_1",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "ab CI/CD projects that synchronize customer data from Salesforce to Zendesk. The sync handles:\n\nCustomer organizations : Account metadata, support entitlements, subscription tiers, and ARR for both Zendesk Global and US Government\n\nPartner organizations : Separate sync process for partner accounts (Zendesk Global only)\n\nUser associations : Automatic user-to-organization linking based on Salesforce contacts (Zendesk US Government only)\n\nThe sync runs hourly and processes data through sequential stages: gathering, processing, comparing, and syncing.\n\nHow does Zendesk-Salesforce Sync work\n\nThe Zendesk-Salesforce Sync is a complex set of projects that run in “stages” to keep all our Zendesk production instances in sync with Salesforce. The stages for this look like:\n\nSource project: Salesforce Accounts\n\nThis is the stage that starts the whole process for the Zendesk-Salesforce Sync. A scheduled pipeline on the source project runs at the top of every hour UTC ( 0 * * * * ). This uses the bin/gather script, which does the following:",
+    "chunk_index": 1,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_2",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "nc with Salesforce. The stages for this look like:\n\nSource project: Salesforce Accounts\n\nThis is the stage that starts the whole process for the Zendesk-Salesforce Sync. A scheduled pipeline on the source project runs at the top of every hour UTC ( 0 * * * * ). This uses the bin/gather script, which does the following:\n\nFetches a list of Salesforce accounts using the following SOQL query: Click to expand SELECT Account_ID_18__c , Name , CARR_This_Account__c , Type , Ultimate_Parent_Sales_Segment_Employees__c , Account_Owner_Calc__c , Technical_Account_Manager_Name__c , Restricted_Account__c , Solutions_Architect_Lookup__r . Name , Account_Demographics_Geo__c , Account_Demographics_Region__c , Latest_Sold_To_Contact__r . Email , Latest_Sold_To_Contact__r . Name , Partner_Track__c , Partners_Partner_Type__c , Support_Hold__c , Account_Risk_Level__c , Support_Instance__c , ( SELECT Id , Name , Subscription_ID_18__c , Zuora__Status__c , Zuora__SubscriptionStartDate__c , Zuora__SubscriptionEndDate__c , Sold_To_Email__c FROM Zuora__Subscriptions__r WHERE Zuora__Status__c != 'Cancelled' AND Zuora__SubscriptionEndDate__c >= # { end_date } ), ( SELECT Id , Name , Zuora__SubscriptionRatePlanChargeName__c , Zuora__Subscription__c , Zuora__EffectiveStartDate__c , Zuora__EffectiveEndDate__c , Zuora__Quantity__c FROM Zuora__R00N40000001lGjTEAU__r WHERE Subscription_Status__c != 'Cancelled' AND Zuora__EffectiveEndDate__c >= # { end_date } ) FROM Account WHERE Type IN ( 'Customer' , 'Former Customer' )\n\nFetches a list of Salesforce accounts using the following SOQL query:",
+    "chunk_index": 2,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_3",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "Date__c , Zuora__EffectiveEndDate__c , Zuora__Quantity__c FROM Zuora__R00N40000001lGjTEAU__r WHERE Subscription_Status__c != 'Cancelled' AND Zuora__EffectiveEndDate__c >= # { end_date } ) FROM Account WHERE Type IN ( 'Customer' , 'Former Customer' )\n\nFetches a list of Salesforce accounts using the following SOQL query:\n\nRemaps all found Salesforce accounts into account objects The sales_segment attribute is derived from the Ultimate_Parent_Sales_Segment_Employees__c value Sets it to all lowercase if it has a value. If no value, it is set to unknown The region attribute is derived from the Account_Demographics_Geo__c and Account_Demographics_Region__c values: Uses the Account_Demographics_Geo__c value if it is AMER , APJ , or EMEA . If none of those values, uses the Account_Demographics_Region__c value if it is AMER , APJ , or EMEA . If none of those values, it is set nil The restricted attribute is derived from the Restricted_Account__c value: Set to true if the Restricted_Account__c value is Restricted Party . Otherwise it is set to false The escalated attribute is derived from the Account_Risk_Level__c value: Set to true if the Account_Risk_Level__c value is At Risk - Escalated . Otherwise it is set to false The exception attribute is derived from the Support_Instance__c value: Set to true if the Support_Instance__c value is federal-support . Otherwise it is set to false The subs attribute is derived from the Zuora__Subscriptions__r value The charges attribute is derived from the Zuora__R00N40000001lGjTEAU__r value",
+    "chunk_index": 3,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_4",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "o false The exception attribute is derived from the Support_Instance__c value: Set to true if the Support_Instance__c value is federal-support . Otherwise it is set to false The subs attribute is derived from the Zuora__Subscriptions__r value The charges attribute is derived from the Zuora__R00N40000001lGjTEAU__r value\n\nRemaps all found Salesforce accounts into account objects\n\nThe sales_segment attribute is derived from the Ultimate_Parent_Sales_Segment_Employees__c value Sets it to all lowercase if it has a value. If no value, it is set to unknown\n\nSets it to all lowercase if it has a value. If no value, it is set to unknown\n\nThe region attribute is derived from the Account_Demographics_Geo__c and Account_Demographics_Region__c values: Uses the Account_Demographics_Geo__c value if it is AMER , APJ , or EMEA . If none of those values, uses the Account_Demographics_Region__c value if it is AMER , APJ , or EMEA . If none of those values, it is set nil\n\nUses the Account_Demographics_Geo__c value if it is AMER , APJ , or EMEA .\n\nIf none of those values, uses the Account_Demographics_Region__c value if it is AMER , APJ , or EMEA .\n\nIf none of those values, it is set nil\n\nThe restricted attribute is derived from the Restricted_Account__c value: Set to true if the Restricted_Account__c value is Restricted Party . Otherwise it is set to false\n\nSet to true if the Restricted_Account__c value is Restricted Party . Otherwise it is set to false",
+    "chunk_index": 4,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_5",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "r EMEA .\n\nIf none of those values, it is set nil\n\nThe restricted attribute is derived from the Restricted_Account__c value: Set to true if the Restricted_Account__c value is Restricted Party . Otherwise it is set to false\n\nSet to true if the Restricted_Account__c value is Restricted Party . Otherwise it is set to false\n\nThe escalated attribute is derived from the Account_Risk_Level__c value: Set to true if the Account_Risk_Level__c value is At Risk - Escalated . Otherwise it is set to false\n\nSet to true if the Account_Risk_Level__c value is At Risk - Escalated . Otherwise it is set to false\n\nThe exception attribute is derived from the Support_Instance__c value: Set to true if the Support_Instance__c value is federal-support . Otherwise it is set to false\n\nSet to true if the Support_Instance__c value is federal-support . Otherwise it is set to false\n\nThe subs attribute is derived from the Zuora__Subscriptions__r value\n\nThe charges attribute is derived from the Zuora__R00N40000001lGjTEAU__r value\n\nCreates an artifact file ( data/salesforce_accounts.json ) containing the remapped Salesforce accounts\n\nCreates an artifact file ( data/salesforce_accounts.json ) containing the remapped Salesforce accounts\n\nAfter it finishes running, the artifact file generated is then passed to the next stage, Organization gathering .\n\nOrganization gathering\n\nSource project: Zendesk Orgs\n\nThis stage is triggered upon the completion of Account gathering .\n\nThis uses two scripts:\n\nbin/gather_us_government\n\nWhile the exact attributes vary based on script, both scripts work the same general way:",
+    "chunk_index": 5,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_6",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "is then passed to the next stage, Organization gathering .\n\nOrganization gathering\n\nSource project: Zendesk Orgs\n\nThis stage is triggered upon the completion of Account gathering .\n\nThis uses two scripts:\n\nbin/gather_us_government\n\nWhile the exact attributes vary based on script, both scripts work the same general way:\n\nGather all Zendesk organizations for the instance using the List organizations API endpoints\n\nMapping all found organizations into account objects\n\nCreates an artifact file containing the remapped organizations data/zendesk_global.json for bin/gather_global data/zendesk_usgov.json for bin/gather_us_government\n\ndata/zendesk_global.json for bin/gather_global\n\ndata/zendesk_usgov.json for bin/gather_us_government\n\nAfter it finishes running, the artifact files it generated, as well as the one generated by Account gathering , are then passed to the next stage, Processing .\n\nSource project: Processor\n\nThis stage is triggered upon the completion of Organization gathering . It is the most complex of the stages (as it does all needed conversions for the sync itself).\n\nThis uses the bin/processor script, which does the following:\n\nLoads the data needed Fetches an override file from the managed content project, Zendesk Global Organization Entitlement Overrides Reads the data/plans.yml file Reads the data from the artifact files\n\nLoads the data needed\n\nFetches an override file from the managed content project, Zendesk Global Organization Entitlement Overrides\n\nReads the data/plans.yml file\n\nReads the data from the artifact files",
+    "chunk_index": 6,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_7",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "ndesk Global Organization Entitlement Overrides Reads the data/plans.yml file Reads the data from the artifact files\n\nLoads the data needed\n\nFetches an override file from the managed content project, Zendesk Global Organization Entitlement Overrides\n\nReads the data/plans.yml file\n\nReads the data from the artifact files\n\nGenerates lookup structures, due to the sheer amount of data being analyzed and manipulated Name Description Object type global_orgs_by_id All Global organizations converted to a Hash using the salesforce_id key Hash usgov_orgs_by_id All US Government organizations converted to a Hash using the salesforce_id key Hash partners_by_sfdc_id The salesforce_id of all partner organizations Array overrides_by_id All overrides converted to a Hash using the salesforce_id key Hash plan_lookup All product charge names tied to the subscription type they align to Hash all_valid_plans All product charge names tied to any type of account Array usgov_plan_names_for_exceptions All product charge names tied to US Government accounts with an exception Array usgov_plan_names All product charge names tied to US Government accounts without an exception Array today Today’s Date Date expired_end_date 15 days ago Date three_years_out 3 years and one day ago Date\n\nGenerates lookup structures, due to the sheer amount of data being analyzed and manipulated\n\nAll Global organizations converted to a Hash using the salesforce_id key\n\nAll US Government organizations converted to a Hash using the salesforce_id key\n\nThe salesforce_id of all partner organizations",
+    "chunk_index": 7,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_8",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "ars and one day ago Date\n\nGenerates lookup structures, due to the sheer amount of data being analyzed and manipulated\n\nAll Global organizations converted to a Hash using the salesforce_id key\n\nAll US Government organizations converted to a Hash using the salesforce_id key\n\nThe salesforce_id of all partner organizations\n\nAll overrides converted to a Hash using the salesforce_id key\n\nAll product charge names tied to the subscription type they align to\n\nAll product charge names tied to any type of account\n\nusgov_plan_names_for_exceptions\n\nAll product charge names tied to US Government accounts with an exception\n\nAll product charge names tied to US Government accounts without an exception\n\n3 years and one day ago",
+    "chunk_index": 8,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_9",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "harge names tied to the subscription type they align to\n\nAll product charge names tied to any type of account\n\nusgov_plan_names_for_exceptions\n\nAll product charge names tied to US Government accounts with an exception\n\nAll product charge names tied to US Government accounts without an exception\n\n3 years and one day ago\n\nDetermines the Global object for each account Creates a Hash matching the Zendesk organization attributes Analyzes all subscriptions from the corresponding Salesforce account It begins by only selecting the subscriptions that would apply to the Global object depending on the account’s US Government exception setting It then iterates over each one to determine the object’s subscription values based off the product charge names tied to the subscriptions of the account Sets the expiration_date value based off the max value of all product charges effective end date Checks if there is an override listed for the account (and modifies the object accordingly) Sets the support_level of the object to be that of the highest level of support Ultimate > Gold > Premium > Silver > Consumption Only > Custom > Community > Expired Sets the type of the object to that of customer unless the object is showing as having a support_level of expired Sets the aar of the object to 0 if the object is showing as having a support_level of expired Sets the sub_ss_ase value to true if the object’s sub_ss_enterprise is true Determines if the account should be included in the sync by checking the relationship between the object’s expiration_date and the value of the lookup object three_years_out (if it is less than, it will not be included)",
+    "chunk_index": 9,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_10",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "support_level of expired Sets the sub_ss_ase value to true if the object’s sub_ss_enterprise is true Determines if the account should be included in the sync by checking the relationship between the object’s expiration_date and the value of the lookup object three_years_out (if it is less than, it will not be included)\n\nDetermines the Global object for each account\n\nCreates a Hash matching the Zendesk organization attributes\n\nAnalyzes all subscriptions from the corresponding Salesforce account It begins by only selecting the subscriptions that would apply to the Global object depending on the account’s US Government exception setting It then iterates over each one to determine the object’s subscription values based off the product charge names tied to the subscriptions of the account\n\nIt begins by only selecting the subscriptions that would apply to the Global object depending on the account’s US Government exception setting\n\nIt then iterates over each one to determine the object’s subscription values based off the product charge names tied to the subscriptions of the account\n\nSets the expiration_date value based off the max value of all product charges effective end date\n\nChecks if there is an override listed for the account (and modifies the object accordingly)\n\nSets the support_level of the object to be that of the highest level of support Ultimate > Gold > Premium > Silver > Consumption Only > Custom > Community > Expired\n\nUltimate > Gold > Premium > Silver > Consumption Only > Custom > Community > Expired",
+    "chunk_index": 10,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_11",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "verride listed for the account (and modifies the object accordingly)\n\nSets the support_level of the object to be that of the highest level of support Ultimate > Gold > Premium > Silver > Consumption Only > Custom > Community > Expired\n\nUltimate > Gold > Premium > Silver > Consumption Only > Custom > Community > Expired\n\nSets the type of the object to that of customer unless the object is showing as having a support_level of expired\n\nSets the aar of the object to 0 if the object is showing as having a support_level of expired\n\nSets the sub_ss_ase value to true if the object’s sub_ss_enterprise is true\n\nDetermines if the account should be included in the sync by checking the relationship between the object’s expiration_date and the value of the lookup object three_years_out (if it is less than, it will not be included)",
+    "chunk_index": 11,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_12",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "pport_level of expired\n\nSets the sub_ss_ase value to true if the object’s sub_ss_enterprise is true\n\nDetermines if the account should be included in the sync by checking the relationship between the object’s expiration_date and the value of the lookup object three_years_out (if it is less than, it will not be included)\n\nDetermines the US Government object for each account Creates a Hash matching the Zendesk organization attributes Analyzes all subscriptions from the corresponding Salesforce account It begins by only selecting the subscriptions that would apply to the US Government object depending on the account’s US Government exception setting It then iterates over each one to determine the object’s subscription values based off the product charge names tied to the subscriptions of the account Sets the expiration_date value based off the max value of all product charges effective end date Checks if there is an override listed for the account (and modifies the object accordingly) Sets the support_level of the object to be that of the highest level of support Ultimate > Gold > Premium > Silver > Consumption Only > Custom > Community > Expired Sets the type of the object to that of customer unless the object is showing as having a support_level of expired Sets the arr of the object to 0 if the object is showing as having a support_level of expired Sets the sub_gitlab_dedicated and sub_usgov_24x7 of the object to true if the value of the object’s usgov_fedramp is true Sets the corresponding schedule for the object (12x5 vs 24x7) Determines if the account should be included in the sync by checking the relationship between the object’s expiration_date and the value of the lookup object three_years_out (if it is less than, it will not be included)",
+    "chunk_index": 12,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_13",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "of the object’s usgov_fedramp is true Sets the corresponding schedule for the object (12x5 vs 24x7) Determines if the account should be included in the sync by checking the relationship between the object’s expiration_date and the value of the lookup object three_years_out (if it is less than, it will not be included)\n\nDetermines the US Government object for each account\n\nCreates a Hash matching the Zendesk organization attributes\n\nAnalyzes all subscriptions from the corresponding Salesforce account It begins by only selecting the subscriptions that would apply to the US Government object depending on the account’s US Government exception setting It then iterates over each one to determine the object’s subscription values based off the product charge names tied to the subscriptions of the account\n\nIt begins by only selecting the subscriptions that would apply to the US Government object depending on the account’s US Government exception setting\n\nIt then iterates over each one to determine the object’s subscription values based off the product charge names tied to the subscriptions of the account\n\nSets the expiration_date value based off the max value of all product charges effective end date\n\nChecks if there is an override listed for the account (and modifies the object accordingly)\n\nSets the support_level of the object to be that of the highest level of support Ultimate > Gold > Premium > Silver > Consumption Only > Custom > Community > Expired\n\nUltimate > Gold > Premium > Silver > Consumption Only > Custom > Community > Expired",
+    "chunk_index": 13,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_14",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "verride listed for the account (and modifies the object accordingly)\n\nSets the support_level of the object to be that of the highest level of support Ultimate > Gold > Premium > Silver > Consumption Only > Custom > Community > Expired\n\nUltimate > Gold > Premium > Silver > Consumption Only > Custom > Community > Expired\n\nSets the type of the object to that of customer unless the object is showing as having a support_level of expired\n\nSets the arr of the object to 0 if the object is showing as having a support_level of expired\n\nSets the sub_gitlab_dedicated and sub_usgov_24x7 of the object to true if the value of the object’s usgov_fedramp is true\n\nSets the corresponding schedule for the object (12x5 vs 24x7)\n\nDetermines if the account should be included in the sync by checking the relationship between the object’s expiration_date and the value of the lookup object three_years_out (if it is less than, it will not be included)\n\nCreates artifact files from the various objects: data/global_accounts.json for Global objects data/usgov_accounts.json for US Government objects\n\nCreates artifact files from the various objects:\n\ndata/global_accounts.json for Global objects\n\ndata/usgov_accounts.json for US Government objects\n\nAfter it finishes running, two separate stages are triggered:\n\nComparing - Global , passing the artifact files from Organization gathering and data/global_accounts.json\n\nComparing - US Government , passing the artifact files from Organization gathering and data/usgov_accounts.json\n\nSource project: Global Org Compare",
+    "chunk_index": 14,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_15",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "s\n\nAfter it finishes running, two separate stages are triggered:\n\nComparing - Global , passing the artifact files from Organization gathering and data/global_accounts.json\n\nComparing - US Government , passing the artifact files from Organization gathering and data/usgov_accounts.json\n\nSource project: Global Org Compare\n\nThis stage is triggered upon the completion of Processing .\n\nThis uses the bin/compare script, which does the following:\n\nReads the data from the artifact files\n\nRuns all data through a comparison, using salesforce_id as the unifying field (the one that ties a Zendesk organization to an organization object) to generate three arrays: zendesk_only_objects , which equates to Zendesk organizations without a matching organization object ssot_only_objects , which equates to organization objects without a matching Zendesk organization different_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal\n\nzendesk_only_objects , which equates to Zendesk organizations without a matching organization object\n\nssot_only_objects , which equates to organization objects without a matching Zendesk organization\n\ndifferent_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal",
+    "chunk_index": 15,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_16",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": ", which equates to Zendesk organizations without a matching organization object\n\nssot_only_objects , which equates to organization objects without a matching Zendesk organization\n\ndifferent_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal\n\nIt then generates three artifacts: data/global_updates.json , which contains the items in different_objects data/global_creates.json , which contains the items in ssot_only_objects minus those that have a support_level of expired data/global_not_in_sync.json , which contains the items in zendesk_only_objects minus: Those with a type of alliance_partner , open_partner , or select_partner Those with a salesforce_id contained in the array defined by the protected_ids function\n\ndata/global_updates.json , which contains the items in different_objects\n\ndata/global_creates.json , which contains the items in ssot_only_objects minus those that have a support_level of expired\n\ndata/global_not_in_sync.json , which contains the items in zendesk_only_objects minus: Those with a type of alliance_partner , open_partner , or select_partner Those with a salesforce_id contained in the array defined by the protected_ids function\n\nThose with a type of alliance_partner , open_partner , or select_partner\n\nThose with a salesforce_id contained in the array defined by the protected_ids function\n\nAfter it finishes running, the artifact files it generated are then passed to the next stage, Syncing - Global .\n\nComparing - US Government\n\nSource project: US Government Org Compare",
+    "chunk_index": 16,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_17",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "ance_partner , open_partner , or select_partner\n\nThose with a salesforce_id contained in the array defined by the protected_ids function\n\nAfter it finishes running, the artifact files it generated are then passed to the next stage, Syncing - Global .\n\nComparing - US Government\n\nSource project: US Government Org Compare\n\nThis stage is triggered upon the completion of Processing .\n\nThis uses the bin/compare script, which does the following:\n\nReads the data from the artifact files\n\nRuns all data through a comparison, using salesforce_id as the unifying field (the one that ties a Zendesk organization to an organization object) to generate three arrays: zendesk_only_objects , which equates to Zendesk organizations without a matching organization object ssot_only_objects , which equates to organization objects without a matching Zendesk organization different_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal\n\nzendesk_only_objects , which equates to Zendesk organizations without a matching organization object\n\nssot_only_objects , which equates to organization objects without a matching Zendesk organization\n\ndifferent_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal",
+    "chunk_index": 17,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_18",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": ", which equates to Zendesk organizations without a matching organization object\n\nssot_only_objects , which equates to organization objects without a matching Zendesk organization\n\ndifferent_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal\n\nIt then generates three artifacts: data/usgov_updates.json , which contains the items in different_objects data/usgov_creates.json , which contains the items in ssot_only_objects minus those that have a support_level of expired data/usgov_not_in_sync.json , which contains the items in zendesk_only_objects minus: Those with a salesforce_id contained in the array defined by the protected_ids function\n\ndata/usgov_updates.json , which contains the items in different_objects\n\ndata/usgov_creates.json , which contains the items in ssot_only_objects minus those that have a support_level of expired\n\ndata/usgov_not_in_sync.json , which contains the items in zendesk_only_objects minus: Those with a salesforce_id contained in the array defined by the protected_ids function\n\nThose with a salesforce_id contained in the array defined by the protected_ids function\n\nAfter it finishes running, the artifact files it generated are then passed to the next stage, Syncing - US Government .\n\nSource project: Zendesk Global Org Sync\n\nThis stage is triggered upon the completion of Comparing - Global .\n\nThis uses the bin/sync script, which does the following:\n\nReads the data from the artifact files",
+    "chunk_index": 18,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_19",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "t finishes running, the artifact files it generated are then passed to the next stage, Syncing - US Government .\n\nSource project: Zendesk Global Org Sync\n\nThis stage is triggered upon the completion of Comparing - Global .\n\nThis uses the bin/sync script, which does the following:\n\nReads the data from the artifact files\n\nIterates through the list of objects from the data/global_creates.json artifact file to do the following: Create the organization using the Zendesk Create Organization API endpoint Associate users from the sold_tos attribute to the newly created organization In the event no users can be associated, a post is made in the #support_operations Slack channel notifying the Customer Support Operations team\n\nCreate the organization using the Zendesk Create Organization API endpoint\n\nAssociate users from the sold_tos attribute to the newly created organization In the event no users can be associated, a post is made in the #support_operations Slack channel notifying the Customer Support Operations team\n\nIn the event no users can be associated, a post is made in the #support_operations Slack channel notifying the Customer Support Operations team\n\nSplits the objects from the data/global_updates.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Organizations API endpoint (to update them to match what was previously determined)\n\nCreate an update job using the Zendesk Update Many Organizations API endpoint (to update them to match what was previously determined)",
+    "chunk_index": 19,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_20",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Organizations API endpoint (to update them to match what was previously determined)\n\nCreate an update job using the Zendesk Update Many Organizations API endpoint (to update them to match what was previously determined)\n\nSplits the objects from the data/global_not_in_sync.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Organizations API endpoint (to update them to mark them for deletion)\n\nCreate an update job using the Zendesk Update Many Organizations API endpoint (to update them to mark them for deletion)\n\nAfter it finishes running, the next stage, Partner Sync - Global , is triggered.\n\nSyncing - US Government\n\nSource project: Zendesk US Government Org sync\n\nThis stage is triggered upon the completion of Comparing - US Government .\n\nThis uses the bin/sync script, which does the following:\n\nReads the data from the artifact files\n\nIterates through the list of objects from the data/usgov_creates.json artifact file to do the following: Create the organization using the Zendesk Create Organization API endpoint\n\nCreate the organization using the Zendesk Create Organization API endpoint\n\nSplits the objects from the data/usgov_updates.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Organizations API endpoint (to update them to match what was previously determined)",
+    "chunk_index": 20,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_21",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "using the Zendesk Create Organization API endpoint\n\nSplits the objects from the data/usgov_updates.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Organizations API endpoint (to update them to match what was previously determined)\n\nCreate an update job using the Zendesk Update Many Organizations API endpoint (to update them to match what was previously determined)\n\nSplits the objects from the data/usgov_not_in_sync.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Organizations API endpoint (to update them to mark them for deletion)\n\nCreate an update job using the Zendesk Update Many Organizations API endpoint (to update them to mark them for deletion)\n\nAfter it finishes running, the next stage, User Sync - US Government , is triggered.\n\nPartner Sync - Global\n\nSource project: Partner Sync\n\nThis stage is triggered upon the completion of Syncing - Global . It acts as the final stage for the Zendesk-Salesforce Sync from a Zendesk Global perspective.\n\nThis stage is a multi-script process:",
+    "chunk_index": 21,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_22",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "running, the next stage, User Sync - US Government , is triggered.\n\nPartner Sync - Global\n\nSource project: Partner Sync\n\nThis stage is triggered upon the completion of Syncing - Global . It acts as the final stage for the Zendesk-Salesforce Sync from a Zendesk Global perspective.\n\nThis stage is a multi-script process:\n\nbin/salesforce , which does the following: Fetches a list of Salesforce accounts using the following SOQL query: Click to expand SELECT Account_ID_18__c , Name , Account_Owner_Calc__c , Technical_Account_Manager_Name__c , Restricted_Account__c , Solutions_Architect_Lookup__r . Name , Partner_Track__c , Support_Hold__c , Account_Risk_Level__c , Type , Partners_Partner_Status__c FROM Account WHERE Account_ID_18__c = 'REDACTED' OR ( Type = 'Partner' AND Partners_Partner_Status__c IN ( 'Authorized' ) AND Partner_Track__c IN ( 'Open' , 'Select' ) ) Remaps all found Salesforce accounts into account objects The account_type attribute is derived from the Partner_Track__c and Account_ID_18__c values: Set to alliance_partner if it Account_ID_18__c is the value of a specific Salesforce account Set to open_partner if Partner_Track__c is Open Set to select_partner if Partner_Track__c is Select Set to nil if no previously matching criteria The restricted_account attribute is derived from the Restricted_Account__c value: Set to true if the Restricted_Account__c value is Restricted Party . Otherwise it is set to false The org_in_escalated_state attribute is derived from the Account_Risk_Level__c value: Set to true if the Account_Risk_Level__c value is At Risk - Escalated . Otherwise it is set to false Creates an artifact file ( data/salesforce_accounts.json ) containing the remapped Salesforce accounts",
+    "chunk_index": 22,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_23",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": ". Otherwise it is set to false The org_in_escalated_state attribute is derived from the Account_Risk_Level__c value: Set to true if the Account_Risk_Level__c value is At Risk - Escalated . Otherwise it is set to false Creates an artifact file ( data/salesforce_accounts.json ) containing the remapped Salesforce accounts\n\nFetches a list of Salesforce accounts using the following SOQL query: Click to expand SELECT Account_ID_18__c , Name , Account_Owner_Calc__c , Technical_Account_Manager_Name__c , Restricted_Account__c , Solutions_Architect_Lookup__r . Name , Partner_Track__c , Support_Hold__c , Account_Risk_Level__c , Type , Partners_Partner_Status__c FROM Account WHERE Account_ID_18__c = 'REDACTED' OR ( Type = 'Partner' AND Partners_Partner_Status__c IN ( 'Authorized' ) AND Partner_Track__c IN ( 'Open' , 'Select' ) )\n\nFetches a list of Salesforce accounts using the following SOQL query:",
+    "chunk_index": 23,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_24",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "c , Support_Hold__c , Account_Risk_Level__c , Type , Partners_Partner_Status__c FROM Account WHERE Account_ID_18__c = 'REDACTED' OR ( Type = 'Partner' AND Partners_Partner_Status__c IN ( 'Authorized' ) AND Partner_Track__c IN ( 'Open' , 'Select' ) )\n\nFetches a list of Salesforce accounts using the following SOQL query:\n\nRemaps all found Salesforce accounts into account objects The account_type attribute is derived from the Partner_Track__c and Account_ID_18__c values: Set to alliance_partner if it Account_ID_18__c is the value of a specific Salesforce account Set to open_partner if Partner_Track__c is Open Set to select_partner if Partner_Track__c is Select Set to nil if no previously matching criteria The restricted_account attribute is derived from the Restricted_Account__c value: Set to true if the Restricted_Account__c value is Restricted Party . Otherwise it is set to false The org_in_escalated_state attribute is derived from the Account_Risk_Level__c value: Set to true if the Account_Risk_Level__c value is At Risk - Escalated . Otherwise it is set to false\n\nRemaps all found Salesforce accounts into account objects\n\nThe account_type attribute is derived from the Partner_Track__c and Account_ID_18__c values: Set to alliance_partner if it Account_ID_18__c is the value of a specific Salesforce account Set to open_partner if Partner_Track__c is Open Set to select_partner if Partner_Track__c is Select Set to nil if no previously matching criteria\n\nSet to alliance_partner if it Account_ID_18__c is the value of a specific Salesforce account",
+    "chunk_index": 24,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_25",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "nce_partner if it Account_ID_18__c is the value of a specific Salesforce account Set to open_partner if Partner_Track__c is Open Set to select_partner if Partner_Track__c is Select Set to nil if no previously matching criteria\n\nSet to alliance_partner if it Account_ID_18__c is the value of a specific Salesforce account\n\nSet to open_partner if Partner_Track__c is Open\n\nSet to select_partner if Partner_Track__c is Select\n\nSet to nil if no previously matching criteria\n\nThe restricted_account attribute is derived from the Restricted_Account__c value: Set to true if the Restricted_Account__c value is Restricted Party . Otherwise it is set to false\n\nSet to true if the Restricted_Account__c value is Restricted Party . Otherwise it is set to false\n\nThe org_in_escalated_state attribute is derived from the Account_Risk_Level__c value: Set to true if the Account_Risk_Level__c value is At Risk - Escalated . Otherwise it is set to false\n\nSet to true if the Account_Risk_Level__c value is At Risk - Escalated . Otherwise it is set to false\n\nCreates an artifact file ( data/salesforce_accounts.json ) containing the remapped Salesforce accounts\n\nCreates an artifact file ( data/salesforce_accounts.json ) containing the remapped Salesforce accounts",
+    "chunk_index": 25,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_26",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "t to false\n\nSet to true if the Account_Risk_Level__c value is At Risk - Escalated . Otherwise it is set to false\n\nCreates an artifact file ( data/salesforce_accounts.json ) containing the remapped Salesforce accounts\n\nCreates an artifact file ( data/salesforce_accounts.json ) containing the remapped Salesforce accounts\n\nbin/zendesk , which does the following: Gathers all Zendesk organizations for the instance using the List organizations API endpoint Filters out non-partner type organizations ( account_type is either alliance_partner , open_partner , or select_partner ) Mapping all remaining organizations into organizations objects Creates an artifact file ( data/zendesk_orgs.json ) containing the remapped organizations\n\nGathers all Zendesk organizations for the instance using the List organizations API endpoint\n\nFilters out non-partner type organizations ( account_type is either alliance_partner , open_partner , or select_partner )\n\nMapping all remaining organizations into organizations objects\n\nCreates an artifact file ( data/zendesk_orgs.json ) containing the remapped organizations",
+    "chunk_index": 26,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_27",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "using the List organizations API endpoint\n\nFilters out non-partner type organizations ( account_type is either alliance_partner , open_partner , or select_partner )\n\nMapping all remaining organizations into organizations objects\n\nCreates an artifact file ( data/zendesk_orgs.json ) containing the remapped organizations\n\nbin/compare , which does the following: Reads the data from the artifact files Runs all data through a comparison, using salesforce_id as the unifying field (the one that ties a Zendesk organization to an organization object) to generate three arrays: zendesk_only_objects , which equates to Zendesk organizations without a matching organization object ssot_only_objects , which equates to organization objects without a matching Zendesk organization different_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal It then generates three artifacts: data/updates.json , which contains the items in different_objects data/creates.json , which contains the items in ssot_only_objects data/not_in_sync.json , which contains the items in zendesk_only_objects\n\nReads the data from the artifact files",
+    "chunk_index": 27,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_28",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "but the data within the two is not equal It then generates three artifacts: data/updates.json , which contains the items in different_objects data/creates.json , which contains the items in ssot_only_objects data/not_in_sync.json , which contains the items in zendesk_only_objects\n\nReads the data from the artifact files\n\nRuns all data through a comparison, using salesforce_id as the unifying field (the one that ties a Zendesk organization to an organization object) to generate three arrays: zendesk_only_objects , which equates to Zendesk organizations without a matching organization object ssot_only_objects , which equates to organization objects without a matching Zendesk organization different_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal\n\nzendesk_only_objects , which equates to Zendesk organizations without a matching organization object\n\nssot_only_objects , which equates to organization objects without a matching Zendesk organization\n\ndifferent_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal\n\nIt then generates three artifacts: data/updates.json , which contains the items in different_objects data/creates.json , which contains the items in ssot_only_objects data/not_in_sync.json , which contains the items in zendesk_only_objects\n\ndata/updates.json , which contains the items in different_objects\n\ndata/creates.json , which contains the items in ssot_only_objects",
+    "chunk_index": 28,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_29",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": ", which contains the items in different_objects data/creates.json , which contains the items in ssot_only_objects data/not_in_sync.json , which contains the items in zendesk_only_objects\n\ndata/updates.json , which contains the items in different_objects\n\ndata/creates.json , which contains the items in ssot_only_objects\n\ndata/not_in_sync.json , which contains the items in zendesk_only_objects\n\nbin/sync , which does the following: Reads the data from the artifact files Iterates through the list of objects from the data/creates.json artifact file to do the following: Create the organization using the Zendesk Create Organization API endpoint Splits the objects from the data/updates.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Organizations API endpoint (to update them to match what was previously determined) Splits the objects from the data/not_in_sync.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Organizations API endpoint (to update them to mark them for deletion)\n\nReads the data from the artifact files\n\nIterates through the list of objects from the data/creates.json artifact file to do the following: Create the organization using the Zendesk Create Organization API endpoint\n\nCreate the organization using the Zendesk Create Organization API endpoint",
+    "chunk_index": 29,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_30",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "em to mark them for deletion)\n\nReads the data from the artifact files\n\nIterates through the list of objects from the data/creates.json artifact file to do the following: Create the organization using the Zendesk Create Organization API endpoint\n\nCreate the organization using the Zendesk Create Organization API endpoint\n\nSplits the objects from the data/updates.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Organizations API endpoint (to update them to match what was previously determined)\n\nCreate an update job using the Zendesk Update Many Organizations API endpoint (to update them to match what was previously determined)\n\nSplits the objects from the data/not_in_sync.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Organizations API endpoint (to update them to mark them for deletion)\n\nCreate an update job using the Zendesk Update Many Organizations API endpoint (to update them to mark them for deletion)\n\nUser Sync - US Government\n\nSource project: Zendesk US Government User Sync\n\nThis stage is triggered upon the completion of Syncing - US Government . It acts as the final stage for the Zendesk-Salesforce Sync from a Zendesk US Government perspective.\n\nThis stage is a multi-script process:",
+    "chunk_index": 30,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_31",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "hem to mark them for deletion)\n\nUser Sync - US Government\n\nSource project: Zendesk US Government User Sync\n\nThis stage is triggered upon the completion of Syncing - US Government . It acts as the final stage for the Zendesk-Salesforce Sync from a Zendesk US Government perspective.\n\nThis stage is a multi-script process:\n\nbin/zendesk_orgs_gather , which does the following: Gathers all Zendesk organizations for the instance using the List organizations API endpoint Mapping all organizations into organizations objects Creates an artifact file ( data/zendesk_orgs.json ) containing the remapped organizations\n\nGathers all Zendesk organizations for the instance using the List organizations API endpoint\n\nMapping all organizations into organizations objects\n\nCreates an artifact file ( data/zendesk_orgs.json ) containing the remapped organizations\n\nbin/zendesk_users_gather , which does the following: Gathers all Zendesk users for the instance using the List Users API endpoint Filtering out all protected users (those with an email domain of gitlab.com or our controlled end user’s email address) Mapping all users into user objects Creates an artifact file ( data/zendesk_users.json ) containing the remapped users\n\nGathers all Zendesk users for the instance using the List Users API endpoint\n\nFiltering out all protected users (those with an email domain of gitlab.com or our controlled end user’s email address)\n\nMapping all users into user objects\n\nCreates an artifact file ( data/zendesk_users.json ) containing the remapped users",
+    "chunk_index": 31,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_32",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "Gathers all Zendesk users for the instance using the List Users API endpoint\n\nFiltering out all protected users (those with an email domain of gitlab.com or our controlled end user’s email address)\n\nMapping all users into user objects\n\nCreates an artifact file ( data/zendesk_users.json ) containing the remapped users\n\nbin/salesforce , which does the following: Reads the artifact file data/zendesk_orgs.json to split the list into chunks of 500 (due to SOQL limits) containing only the value of the salesforce_id value Fetches a list of Salesforce contacts using the following SOQL query: Click to expand SELECT Name , Email , Account . Account_ID_18__c FROM Contact WHERE Inactive_Contact__c = false AND Role__c INCLUDES ( 'Gitlab Admin' ) AND Name != '' AND Email != '' AND Account . Account_ID_18__c IN ( # { chunk . map { | i | \"'#{i}'\" } . join ( ',' ) } ) Where the chunk portion is the list of salesforce_id values in each chunk Remaps all found Salesforce contacts into contact The organization_id attribute is derived from the id value of a matching Zendesk organization’s salesforce_id value Removes any invalid contacts Missing an email value Any duplicates (matched by the email value) Creates an artifact file ( data/salesforce_contacts.json ) containing the remapped Salesforce contacts\n\nReads the artifact file data/zendesk_orgs.json to split the list into chunks of 500 (due to SOQL limits) containing only the value of the salesforce_id value",
+    "chunk_index": 32,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_33",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "an email value Any duplicates (matched by the email value) Creates an artifact file ( data/salesforce_contacts.json ) containing the remapped Salesforce contacts\n\nReads the artifact file data/zendesk_orgs.json to split the list into chunks of 500 (due to SOQL limits) containing only the value of the salesforce_id value\n\nReads the artifact file data/zendesk_orgs.json to split the list into chunks of 500 (due to SOQL limits) containing only the value of the salesforce_id value\n\nFetches a list of Salesforce contacts using the following SOQL query: Click to expand SELECT Name , Email , Account . Account_ID_18__c FROM Contact WHERE Inactive_Contact__c = false AND Role__c INCLUDES ( 'Gitlab Admin' ) AND Name != '' AND Email != '' AND Account . Account_ID_18__c IN ( # { chunk . map { | i | \"'#{i}'\" } . join ( ',' ) } ) Where the chunk portion is the list of salesforce_id values in each chunk\n\nFetches a list of Salesforce contacts using the following SOQL query:\n\nWhere the chunk portion is the list of salesforce_id values in each chunk\n\nRemaps all found Salesforce contacts into contact The organization_id attribute is derived from the id value of a matching Zendesk organization’s salesforce_id value\n\nRemaps all found Salesforce contacts into contact\n\nThe organization_id attribute is derived from the id value of a matching Zendesk organization’s salesforce_id value\n\nRemoves any invalid contacts Missing an email value Any duplicates (matched by the email value)\n\nRemoves any invalid contacts\n\nMissing an email value\n\nAny duplicates (matched by the email value)",
+    "chunk_index": 33,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_34",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "contact\n\nThe organization_id attribute is derived from the id value of a matching Zendesk organization’s salesforce_id value\n\nRemoves any invalid contacts Missing an email value Any duplicates (matched by the email value)\n\nRemoves any invalid contacts\n\nMissing an email value\n\nAny duplicates (matched by the email value)\n\nCreates an artifact file ( data/salesforce_contacts.json ) containing the remapped Salesforce contacts\n\nCreates an artifact file ( data/salesforce_contacts.json ) containing the remapped Salesforce contacts\n\nbin/compare , which does the following: Reads the data from the artifact files Runs all data through a comparison, using email as the unifying field (the one that ties a Zendesk user to a user object) to generate three arrays: zendesk_only_objects , which equates to Zendesk organizations without a matching organization object ssot_only_objects , which equates to organization objects without a matching Zendesk organization different_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal It then generates three artifacts: data/updates.json , which contains the items in different_objects data/creates.json , which contains the items in ssot_only_objects data/not_in_sync.json , which contains the items in zendesk_only_objects\n\nReads the data from the artifact files",
+    "chunk_index": 34,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_35",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "but the data within the two is not equal It then generates three artifacts: data/updates.json , which contains the items in different_objects data/creates.json , which contains the items in ssot_only_objects data/not_in_sync.json , which contains the items in zendesk_only_objects\n\nReads the data from the artifact files\n\nRuns all data through a comparison, using email as the unifying field (the one that ties a Zendesk user to a user object) to generate three arrays: zendesk_only_objects , which equates to Zendesk organizations without a matching organization object ssot_only_objects , which equates to organization objects without a matching Zendesk organization different_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal\n\nzendesk_only_objects , which equates to Zendesk organizations without a matching organization object\n\nssot_only_objects , which equates to organization objects without a matching Zendesk organization\n\ndifferent_objects , which equates to organization objects that have a matching Zendesk organization but the data within the two is not equal\n\nIt then generates three artifacts: data/updates.json , which contains the items in different_objects data/creates.json , which contains the items in ssot_only_objects data/not_in_sync.json , which contains the items in zendesk_only_objects\n\ndata/updates.json , which contains the items in different_objects\n\ndata/creates.json , which contains the items in ssot_only_objects",
+    "chunk_index": 35,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_36",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": ", which contains the items in different_objects data/creates.json , which contains the items in ssot_only_objects data/not_in_sync.json , which contains the items in zendesk_only_objects\n\ndata/updates.json , which contains the items in different_objects\n\ndata/creates.json , which contains the items in ssot_only_objects\n\ndata/not_in_sync.json , which contains the items in zendesk_only_objects\n\nbin/sync , which does the following: Reads the data from the artifact files Iterates through the list of objects from the data/creates.json artifact file to do the following: Create the user using the Zendesk Create User API endpoint Splits the objects from the data/updates.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Users API endpoint (to update them to match what was previously determined) Splits the objects from the data/not_in_sync.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Users API endpoint (to update them to mark them for deletion)\n\nReads the data from the artifact files\n\nIterates through the list of objects from the data/creates.json artifact file to do the following: Create the user using the Zendesk Create User API endpoint\n\nCreate the user using the Zendesk Create User API endpoint",
+    "chunk_index": 36,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_37",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "Users API endpoint (to update them to mark them for deletion)\n\nReads the data from the artifact files\n\nIterates through the list of objects from the data/creates.json artifact file to do the following: Create the user using the Zendesk Create User API endpoint\n\nCreate the user using the Zendesk Create User API endpoint\n\nSplits the objects from the data/updates.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Users API endpoint (to update them to match what was previously determined)\n\nCreate an update job using the Zendesk Update Many Users API endpoint (to update them to match what was previously determined)\n\nSplits the objects from the data/not_in_sync.json artifact file into batches (of up to 100 due to API limits) to do the following: Create an update job using the Zendesk Update Many Users API endpoint (to update them to mark them for deletion)\n\nCreate an update job using the Zendesk Update Many Users API endpoint (to update them to mark them for deletion)\n\nThis action requires Developer level access to the Zendesk-Salesforce Sync projects.\n\nModifying the Zendesk-Salesforce Sync\n\nThis should only be done if there is a corresponding request issue (Feature Request, Administrative, Bug, etc.). If one does not exist, you should first create one (and let it go through the standard process before working it).",
+    "chunk_index": 37,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_38",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "evel access to the Zendesk-Salesforce Sync projects.\n\nModifying the Zendesk-Salesforce Sync\n\nThis should only be done if there is a corresponding request issue (Feature Request, Administrative, Bug, etc.). If one does not exist, you should first create one (and let it go through the standard process before working it).\n\nTo modify the Zendesk-Salesforce Sync, you will need to create a MR in the corresponding project repo (which one depends on the change being made). The exact changes being made will depend on the request itself.\n\nAfter a peer reviews and approves your MR, you can merge the MR. Being this is an Ad-hoc deployment type, the changes will be used in the next scheduled run.\n\nQuick reference on what changes occur where\n\nSKU changes: see our SKU Mapping documentation for more information\n\nChanging entitlement calculations: Modifications will occur in the Processor project\n\nModifying the pipeline schedule: Modifications will occur in the Salesforce Accounts project\n\nModifying object attributes: Modifications are likely to occur in every project\n\nCommon issues and troubleshooting\n\nThis can include runners failing completely, timing out, etc. When these occur, you have two course of action you can take:\n\nRestart the sync from the beginning\n\nWait for the next run of the sync to occur\n\nIf the issue occurred early into the run (within the first 5-10 minutes of the hour), restarting it is an acceptable way to go. Anything later than that, and you should wait for the next run of the sync to occur.",
+    "chunk_index": 38,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_39",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "e of action you can take:\n\nRestart the sync from the beginning\n\nWait for the next run of the sync to occur\n\nIf the issue occurred early into the run (within the first 5-10 minutes of the hour), restarting it is an acceptable way to go. Anything later than that, and you should wait for the next run of the sync to occur.\n\nIf you see this occur repeatedly, please file an issue to notify the Fullstack Engineer.\n\nThe complete process should never take more than 45 minutes. If you encounter alerts about long running jobs, the best move is to do one of the following:\n\nCancel the older pipeline\n\nCancel the newer pipeline\n\nThe one left running will be able to handle this (since there is not a cache being used) and should self-correct.\n\nIf you see this occur repeatedly, please file an issue to notify the Fullstack Engineer.\n\nThese can be complex to work out, as it is either a problem in calculation or a problem in expectation. Careful review of the data in the source (Salesforce, Zendesk) will be required to determine if there is actually a data mismatch (i.e. a problem in calculation) or simply a problem in expectation.\n\nFor problems in calculation, please file a bug report to notify the Fullstack Engineer.\n\nFor problems in expectation, explain the difference and why it is the value it is. If that conversation results in a desire to change the calculations, please have the reporter file a feature request issue.\n\nIf that conversation results in a desire to change the calculations, please have the reporter file a feature request issue.",
+    "chunk_index": 39,
+    "total_chunks": 41
+  },
+  {
+    "chunk_id": "edc2fc537db4_40",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk-salesforce-sync",
+    "title": "Zendesk-Salesforce Sync",
+    "source": "handbook",
+    "headings": [
+      "Zendesk-Salesforce Sync",
+      "Understanding the Zendesk-Salesforce Sync",
+      "What is the Zendesk-Salesforce Sync",
+      "How does Zendesk-Salesforce Sync work",
+      "Administrator tasks"
+    ],
+    "text": "s in expectation, explain the difference and why it is the value it is. If that conversation results in a desire to change the calculations, please have the reporter file a feature request issue.\n\nIf that conversation results in a desire to change the calculations, please have the reporter file a feature request issue.\n\nThe various scripts used for this have been coded in a way to try to provide as much detail as possible. When you encounter a script error, you first need to conclude if it is actually a script error or simply a problem in networking (causing a script error).\n\nThe easiest way to be sure is to look at the past run of the sync and the one after it. A true script error will repeat itself every time. If you do not see it occurring every time, it is a problem in networking.\n\nFor a problem in networking, see Runner errors\n\nFor a true script error, please file an issue to notify the Fullstack Engineer",
+    "chunk_index": 40,
+    "total_chunks": 41
+  }
+]

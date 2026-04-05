@@ -1,0 +1,210 @@
+[
+  {
+    "chunk_id": "61c91510be45_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "Plan:Project Management Team\n\nPlan:Project Management Team\n\nThe Plan:Project Management team works on\nGitLab’s Project Management category in the Plan stage .\n\nFor more details about the vision for this area of the product, see the Plan stage page.\n\nDirector of Engineering , Plan\n\nActing Engineering Manager , Plan:Project Management\n\nBackend Engineer , Plan:Project Management\n\nSenior Frontend Engineer\n\nSenior Frontend Engineer , Plan:Project Management\n\nSenior Security Engineer, Application Security , Plan (Project Management, Product Planning, Certify), Create:Source Code, Growth, Fulfillment:Purchase, Fulfillment:Provision, Fulfillment:Utilization, Systems:Gitaly\n\nSenior Frontend Engineer , Plan:Project Management\n\nSenior Product Manager , Plan:Project Management\n\nBackend Engineer , Plan:Project Management\n\nSenior Frontend Engineer , Plan:Project Management\n\nSenior Backend Engineer , Plan:Project Management\n\nStaff Fullstack Engineer , Plan:Project Management\n\nStaff Product Designer , Plan:Project Management\n\nStefanos Xanthopoulos\n\nBackend Engineer , Plan:Project Management\n\nCheck out our jobs page for current openings.\n\nYou can see how we work as a stage at the Plan stage page .",
+    "chunk_index": 0,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "Backend Engineer , Plan:Project Management\n\nStaff Fullstack Engineer , Plan:Project Management\n\nStaff Product Designer , Plan:Project Management\n\nStefanos Xanthopoulos\n\nBackend Engineer , Plan:Project Management\n\nCheck out our jobs page for current openings.\n\nYou can see how we work as a stage at the Plan stage page .\n\nFor the backend team specifically, we use the standard GitLab engineering workflow . To get in touch with the Plan:Project Management\nbackend team, it’s best to create an issue in the relevant project\n(typically GitLab ) and add the ~“group::project management” label, along\nwith any other appropriate labels. Then, feel free to ping the relevant\nProduct Manager and/or Engineering Manager as listed above.\n\nFor more urgent items, feel free to use #s_plan on Slack.\n\nWhen estimating the effort involved in upcoming work, we use the same approach and numerical scale as other groups in the Plan stage.\n\nWhen weighting an issue for a milestone, we use a lightweight, relative estimation approach, recognizing that tasks often take longer than you think . These weights are primarily\nused for capacity planning, ensuring that the total estimated effort aligns with each group’s capacity for a milestone.\n\nRelative Estimation: We focus on the relative complexity and effort required for each issue rather than precise time estimates.\n\nAggregate Focus: The sum of all issue weights should be reasonable for the milestone, even if individual issues vary in actual time taken.",
+    "chunk_index": 1,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "aligns with each group’s capacity for a milestone.\n\nRelative Estimation: We focus on the relative complexity and effort required for each issue rather than precise time estimates.\n\nAggregate Focus: The sum of all issue weights should be reasonable for the milestone, even if individual issues vary in actual time taken.\n\nFlexibility: It’s acceptable for an issue to take more or less time than its weight suggests. Variations are expected due to differences in individual expertise and familiarity with the work.\n\nTrivial, does not need any testing\n\nSmall, needs some testing but nothing involved\n\nMedium, will take some time and collaboration\n\nSubstantial, will take significant time and collaboration to finish\n\nLarge, will take a major portion of the milestone to finish\n\nInitial Planning: During milestone planning, tasks can be estimated up to a weight of 5 if necessary. However, as the milestone approaches and the team moves closer to starting implementation, any task with a weight larger than 3 should be decomposed into smaller, more manageable issues or tasks with lower weights.\n\nWhy This Approach: Allowing larger weights early on provides flexibility in high-level planning. Breaking down tasks closer to implementation ensures better clarity, reduces risk, and facilitates more accurate tracking and execution.\n\nWe assess the available capacity for a milestone by reviewing recent milestones and upcoming team availability. This ensures that our milestone planning remains realistic and achievable based on the collective effort estimated through these weights.",
+    "chunk_index": 2,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": ", reduces risk, and facilitates more accurate tracking and execution.\n\nWe assess the available capacity for a milestone by reviewing recent milestones and upcoming team availability. This ensures that our milestone planning remains realistic and achievable based on the collective effort estimated through these weights.\n\nEstimating bugs is inherently difficult. The majority of the effort in fixing\nbugs is finding the cause, and then a bug can be\naccurately estimated. Additionally, velocity is used to measure the amount of\nnew product output, and bug fixes are typically fixes on a feature that has been\ntracked and had a weight attached to it previously.\n\nBecause of this, we do not weigh bugs during ~“workflow::planning breakdown”. If\nan engineer picks up a bug and determines that there will be a significant level\nof effort in fixing it (for example, a large migration is needed), we then will want to\nprioritize it against feature deliverables. Ping the product manager with this\ninformation so they can determine when the work should be scheduled.\n\nRefining and organizing feature work\n\nTo help drive alignment with our stable counterparts, provide visibility into progress, and breakdown our vision into a series of MVCs , we collaborate with Product and UX during ~workflow::planning breakdown to refine and organize ~type::feature deliverables into the following structure:",
+    "chunk_index": 3,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "g and organizing feature work\n\nTo help drive alignment with our stable counterparts, provide visibility into progress, and breakdown our vision into a series of MVCs , we collaborate with Product and UX during ~workflow::planning breakdown to refine and organize ~type::feature deliverables into the following structure:\n\nFeature (Epic) - Contains all the necessary vertical feature slices to default the corresponding feature flag to “on”. The feature epic will also serve as the location to generate a corresponding Release Post item MR. The feature epic should be scoped to the minimal amount of functionality that still provides customer value . Additional scope planned for future enhancements should be stored in follow-on epics. Spike (Issue) - If we are unable to accurately estimate the effort necessary to implement the feature, we first conduct a spike UX (Issue) - For larger initiatives, UX creates a separate UX issue that serves as the SSOT for design goals, design drafts, design conversation and critique, and the chosen design direction that will be implemented. Learn more about UX issues . Vertical Feature Slice (Issue) - A subset of the feature that can be completed within a single milestone, tested, and verified within the plan-stage group on production. Engineering Tasks (Task - Optional ) - One or more engineering tasks that need to be completed in order to deliver the vertical feature slice. The scope of a task should generally correlate to a single MR.",
+    "chunk_index": 4,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "e that can be completed within a single milestone, tested, and verified within the plan-stage group on production. Engineering Tasks (Task - Optional ) - One or more engineering tasks that need to be completed in order to deliver the vertical feature slice. The scope of a task should generally correlate to a single MR.\n\nSpike (Issue) - If we are unable to accurately estimate the effort necessary to implement the feature, we first conduct a spike\n\nUX (Issue) - For larger initiatives, UX creates a separate UX issue that serves as the SSOT for design goals, design drafts, design conversation and critique, and the chosen design direction that will be implemented. Learn more about UX issues .\n\nVertical Feature Slice (Issue) - A subset of the feature that can be completed within a single milestone, tested, and verified within the plan-stage group on production. Engineering Tasks (Task - Optional ) - One or more engineering tasks that need to be completed in order to deliver the vertical feature slice. The scope of a task should generally correlate to a single MR.\n\nEngineering Tasks (Task - Optional ) - One or more engineering tasks that need to be completed in order to deliver the vertical feature slice. The scope of a task should generally correlate to a single MR.",
+    "chunk_index": 5,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "ed in order to deliver the vertical feature slice. The scope of a task should generally correlate to a single MR.\n\nEngineering Tasks (Task - Optional ) - One or more engineering tasks that need to be completed in order to deliver the vertical feature slice. The scope of a task should generally correlate to a single MR.\n\nDuring the ~workflow::planning breakdown phase, all issues need to be weighted so we can efficiently and effectively collaborate with Product and UX on “right sizing” the feature epic. It’s advisable that all issues are connected to a parent epic that describes the broader set of improvements we are proposing within a specific area of the product. The desired outcome is to ensure it’s as small as possible, maximizes our ability to iterate, and makes it easy to track overall progress on delivery, while providing meaningful value and avoiding an undue amount of “change fatigue” for our customers.\n\nEngineering work rotation\n\nTo ensure we consistently address technical debt, security issues, and the bug\nbacklog alongside our product commitments, we’re implementing a milestone-based\nrotation system. Each milestone, one backend and one frontend engineer will\ndedicate their time to engineering-focused work instead of feature development.\n\nOne milestone at a time\n\n100% dedication during rotation period\n\nOne backend engineer and one frontend engineer per milestone\n\nEngineers will not be in the rotation pool while serving as a DRI of a long-term initiative\n\nFocus Areas Non-exhaustive list of work that can be picked up during\nrotations:",
+    "chunk_index": 6,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_7",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "eature development.\n\nOne milestone at a time\n\n100% dedication during rotation period\n\nOne backend engineer and one frontend engineer per milestone\n\nEngineers will not be in the rotation pool while serving as a DRI of a long-term initiative\n\nFocus Areas Non-exhaustive list of work that can be picked up during\nrotations:\n\nSecurity issues nearing or past SLAs\n\nBug backlog reduction\n\nDatabase scalability and performance\n\nGeneral technical debt and refactoring\n\nConsistent Progress : Engineering health work won’t be perpetually\ndeferred\n\nKnowledge Sharing : Different team members gain experience with different\nparts of our codebase and different processes\n\nDeep Focus : 100% dedication allows engineers the focus to work on complex\nproblems without context switching\n\nPredictable Planning : We know exactly when engineers will be unavailable\nfor feature work\n\nImplementation guidelines\n\nEngineers on rotation are protected from feature work pulls (except critical\nescalations)\n\nEach rotation should include handoff notes for continuity\n\nWe’ll adjust focus areas based on Core DevOps and company priorities\n\nReduction in overdue and overall security issues\n\nPerformance improvements\n\nAvailability/error budget improvements\n\nTeam satisfaction with the rotation system\n\nCollaboration between backend and frontend\n\nUsing the ~“backend complete” label",
+    "chunk_index": 7,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_8",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "ontinuity\n\nWe’ll adjust focus areas based on Core DevOps and company priorities\n\nReduction in overdue and overall security issues\n\nPerformance improvements\n\nAvailability/error budget improvements\n\nTeam satisfaction with the rotation system\n\nCollaboration between backend and frontend\n\nUsing the ~“backend complete” label\n\nThe ~“backend complete” label is added to issues with multiple specializations (usually backend and\nfrontend) to indicate that the backend component is complete. Add this label when the backend work is\nfunctionally complete, merged and verified but frontend, or other, work is ongoing.\n\nPicking something to work on\n\nThe Plan:Project Management Build board shows prioritized work with workflow columns relevant to implementation. There is an\nadditional column to show in-progress community contributions. Filtering it by\n~backend shows issues for backend engineers to work on.\n\nIt’s OK to not take the top item if you are not confident you can solve\nit, but please post in #s_plan if that’s the case, as this probably\nmeans the issue should be better specified.\n\nQueueing Experimentation\n\nAs part of our ongoing efforts to improve efficiency, we will experiment with queuing techniques instead of traditional weight/story points for the migration of legacy issues to work items project . Starting in milestone 17.3, we will:",
+    "chunk_index": 8,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_9",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "this probably\nmeans the issue should be better specified.\n\nQueueing Experimentation\n\nAs part of our ongoing efforts to improve efficiency, we will experiment with queuing techniques instead of traditional weight/story points for the migration of legacy issues to work items project . Starting in milestone 17.3, we will:\n\nRefine Required Issues : Review the list of required issues for the first MVC . Determine the best way to group bundles of tasks, using issues or epics. Break down large issues into tasks, aiming for tasks that are small enough to be moved from ~“workflow::in dev” to ~“workflow::in review” within 5 business days.\n\nRefine Required Issues : Review the list of required issues for the first MVC .\n\nDetermine the best way to group bundles of tasks, using issues or epics.\n\nBreak down large issues into tasks, aiming for tasks that are small enough to be moved from ~“workflow::in dev” to ~“workflow::in review” within 5 business days.\n\nPrioritize Tasks : Prioritize the tasks from step 1.\n\nPrioritize Tasks : Prioritize the tasks from step 1.\n\nUpdate Workflow : Update the #picking-something-to-work-on section to include the list of tasks, monitoring work in progress to keep it as low as possible.\n\nUpdate Workflow : Update the #picking-something-to-work-on section to include the list of tasks, monitoring work in progress to keep it as low as possible.\n\nThis will help us manage and report progress more effectively using queue management principles.",
+    "chunk_index": 9,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_10",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "tasks, monitoring work in progress to keep it as low as possible.\n\nUpdate Workflow : Update the #picking-something-to-work-on section to include the list of tasks, monitoring work in progress to keep it as low as possible.\n\nThis will help us manage and report progress more effectively using queue management principles.\n\nWhen an issue comes through that is both ~“severity::1” and ~“priority::1”, our SLO requires that it be looked at right away. Other items being worked on should\nbe postponed in favor of any investigations or work for the high\nseverity/priority issue. When postponing an issue, engineers should leave a comment on the issue with a link to the high severity item that is being prioritized instead. Leaving a comment will help with communication with the cross-functional team and for historical tracking.  The exception to this is if another “severity::1”/ “priority::1” issue is currently being worked on by an engineer.\nIf this is the case, the engineer should make others on the team aware of the\nnew issue on Slack but then keep working on the initial issue.\n\nWorking on unscheduled issues\n\nEveryone at GitLab has the freedom to manage their work as they see fit,\nbecause we measure impact, not activity . Part of this is the\nopportunity to work on items that aren’t scheduled as part of the\nregular monthly release. This is mostly a reiteration of items elsewhere\nin the handbook, and it is here to make those explicit:",
+    "chunk_index": 10,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_11",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "at GitLab has the freedom to manage their work as they see fit,\nbecause we measure impact, not activity . Part of this is the\nopportunity to work on items that aren’t scheduled as part of the\nregular monthly release. This is mostly a reiteration of items elsewhere\nin the handbook, and it is here to make those explicit:\n\nWe expect people to be managers of one , and we use GitLab ourselves . If you see something that you think\nis important, you can request for it to be scheduled , or you can work on a proposal yourself , as long as you keep your\nother tasks in mind.\n\nIf you feel like you want to have some specific time set aside, but\naren’t interested in the topics of an existing event, feel free to\nlabel issues with “For Scheduling” and copy your manager for visibility.\n\nWhen you pick something to work on, please:\n\nFollow the standard workflow and assign it to yourself.\n\nShare it in #s_plan - if not even more widely (like in #development\nor #backend).\n\nGitLab milestones end on the 3rd Thursday of each month , and we run async retrospectives tied to that schedule. The retrospectives consist of three phases:\n\nWhen: Starts: 3 Mondays before milestone ends Ends: End of release week (milestone Thursday)\n\nTeam submits retro topics via the Slack shortcut ( ⚡Project Management Retro Ideas )\n\nWeekly reminders go out\n\nResponses are sent to a google sheet that the facilitator has access to\n\nWhen: Starts: Friday of release week Ends: Following Tuesday\n\nFacilitator reviews and groups entries into themes\n\nPoll generated to vote for the top two or three topics to discuss",
+    "chunk_index": 11,
+    "total_chunks": 13
+  },
+  {
+    "chunk_id": "61c91510be45_12",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management",
+    "title": "Plan:Project Management Team",
+    "source": "handbook",
+    "headings": [
+      "Plan:Project Management Team",
+      "Plan:Project Management Team",
+      "Team members",
+      "Stable counterparts",
+      "Hiring chart"
+    ],
+    "text": "rtcut ( ⚡Project Management Retro Ideas )\n\nWeekly reminders go out\n\nResponses are sent to a google sheet that the facilitator has access to\n\nWhen: Starts: Friday of release week Ends: Following Tuesday\n\nFacilitator reviews and groups entries into themes\n\nPoll generated to vote for the top two or three topics to discuss\n\nPhase 3: Discussion & Action\n\nWhen: Starts: 1 week post-release (Tuesday–Friday)\n\nFacilitator adds topics to generated retrospective issue\n\nTeam reviews points async and comments on the items\n\nTeam selects 2–3 action items to carry forward\n\nOwners are assigned and new issues are created to track follow-up\n\nExample Timeline (Milestone 18.3 Ends 2025-07-17)\n\nUse the Slack shortcut to submit retro ideas anytime during the collection window.\n\nWeekly reminder messages will be posted to encourage participation.\n\nKeep it short — even one sentence helps.\n\nPlan:Project Management Build board - this shows work in the current release",
+    "chunk_index": 12,
+    "total_chunks": 13
+  }
+]

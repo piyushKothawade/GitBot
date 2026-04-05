@@ -1,0 +1,18 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/security/security-assurance/automation-and-compliance",
+  "title": "Automation and Compliance",
+  "content": "Automation and Compliance\n\nThe goal of this handbook page is to document the goals and priorities for the automation in compliance within the Security Compliance team at GitLab. Automations are built and enabled through the support of GitLab’s Security Assurance Automation team for technical implementations.\n\nSupport the business by automating security processes, compliance controls, and finding automation efficiencies.\n\nDevelop and maintain automated solutions that enhance our security posture, streamline compliance efforts, and provide continuous monitoring of our systems and infrastructure.\n\nEnable security to scale through the discovery and application of compliance automation.\n\nKey priorities for Compliance Automation (in order)\n\nControl Automations - Automated testing and alert on failures of controls\n\nControl Automations - Automated testing and workbook creation\n\nMetrics - Key insights into compliance/risk metrics to inform scope\n\nUser Access Reviews - Process automation and risk based review enablement\n\nProcess Automations - Process automation around compliance activities such as observation management, audit management, etc.\n\nPossible areas of opportunity\n\nDeveloping and implementing automated security controls and processes\n\nCreating and maintaining compliance automation tools and scripts\n\nIntegrating security and compliance checks into CI/CD pipelines\n\nAutomating vulnerability scanning and remediation processes\n\nImplementing automated security testing and validation\n\nDeveloping dashboards and reporting tools for security metrics and compliance status\n\nCollaborating with other security teams to identify automation opportunities\n\nContinuously improving and optimizing existing compliance automation solutions\n\nWhere and How we work\n\nCompliance Automation leverages the workflows defined by the Security Assurance Automation Team\n\nMetrics and Measures of Success\n\nAutomation and Compliance Roadmap\n\nFor FY25, the first Automation and Compliance Roadmap (internal-only link) was defined after a questionnaire and completed brainstorming session with Security Compliance team members.\n\nFor questions related to Compliance Automation, please reach out to the #sec-assurance slack channel. Issues for Compliance Automation should be opened in the Security Assurance Automation Issue Landing project as is outlined in the Security Assurance Automation handbook page .\n\nByron Boots , @byronboots, Senior Security Assurance Engineer, Compliance",
+  "source": "handbook",
+  "headings": [
+    "Automation and Compliance",
+    "Purpose",
+    "Core Focuses",
+    "Key priorities for Compliance Automation (in order)",
+    "Possible areas of opportunity",
+    "Where and How we work",
+    "Metrics and Measures of Success",
+    "Automation and Compliance Roadmap",
+    "Contact the Team",
+    "I have questions"
+  ]
+}

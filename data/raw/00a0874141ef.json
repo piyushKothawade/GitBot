@@ -1,0 +1,13 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/metrics",
+  "title": "Delivery Team Metrics",
+  "content": "Delivery Team Metrics\n\nDelivery team uses Mean Time To Production (MTTP) as an indicator of our speed capabilities\nto deploy application changes into production.\n\nPerformance Indicator\n\nMTTP measures the elapsed time (in hours) from merging a change in gitlab-org/gitlab project master\nbranch, to deploying that change to GitLab.com.\n\nMTTP is conformed by:\n\nTime to inclusion: The merge request is merged and waiting to be included in an auto-deploy branch.\n\nTime to package: The package to be deployed is being built.\n\nTime to staging: Time it takes for the package to be deployed to staging and tested.\n\nTime to canary: Time it takes for the package to be deployed to canary and tested.\n\nTime to production: Time it takes for the package to be deployed to production.\n\nTo measure the MTTP subcomponents, the following metrics are used:\n\nThese allows to decide whether we need to focus on speed or safety would have the\nbiggest impact on further reducing MTTP.\n\nDeployment SLO measures the deployment frequency and duration by tracking\nthe percentage of deployment pipelines that complete within the target duration.\nDeployment duration is measured as the elapsed time between a starting on staging canary ( gstg-cny )\nthrough the completion of the deployment on Production ( gprd ).\nVisit the Releases page for an\nend-to-end overview of the various environments and deployment process .\n\nNext: Include Deployment SLO metric as part of our release process\n\nRelease Manager workload metrics\n\nThe Release Manager workload metrics - internal link track the time needed for Release Management tasks.\n\nEach process is broken down into key parts to help identify where the majority of the effort is spent. Overall times are tracked and an average allows changes over time to been observed.\n\nMore details about what is being measured, and how, can be found in the release docs .",
+  "source": "handbook",
+  "headings": [
+    "Delivery Team Metrics",
+    "Metrics",
+    "MTTP breakdown",
+    "Deployment SLO",
+    "Release Manager workload metrics"
+  ]
+}

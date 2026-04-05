@@ -1,0 +1,62 @@
+[
+  {
+    "chunk_id": "40729c142828_0",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/patching_an_instance",
+    "title": "Patching an instance",
+    "source": "handbook",
+    "headings": [
+      "Patching an instance",
+      "Patching an Omnibus install",
+      "Patching a Docker install",
+      "Patching a Kubernetes install"
+    ],
+    "text": "Patching an Omnibus install\n\nSometimes, we need to ask a customer to patch their systems manually. This may\nbe because:\n\nThe customer can’t upgrade to the newest version, but needs a fix from that\nversion.\n\nWe have a fix merged, but not yet in a release.\n\nThe fix for their issue is still in development, but we’d like to verify that\nit resolves the customer’s problem.\n\nFor Omnibus installs on a single server, this is fairly straightforward. Replace $mr_iid below with the IID of the merge request, or change the URL to point to\na raw snippet.\n\nTo revert the patch, use the .orig files the patch program generates.\n\nA patch can include changes to multiple files. If you want to confirm that the file or files were patched,\nyou can compare the file(s) to the checksums included with most package managers.\n\nFor example, in Debian/Ubuntu running dpkg you can compare the checksum of each of the files in the patch to the list in /var/lib/dpkg/info/gitlab-ee.md5sums .\nView the patch file in a text editor to see which files are affected.\n\nThe checksums will differ if the patch was applied correctly.\n\nThis process only applies to the Rails application ( the GitLab repository ).\nOther components may need additional steps.\n\nThe patch will need to be reapplied if GitLab is upgraded.\n\nThe value of the patch option -p needs to be set to the correct a strip size.\n\nPatching a Docker install",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "40729c142828_1",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/patching_an_instance",
+    "title": "Patching an instance",
+    "source": "handbook",
+    "headings": [
+      "Patching an instance",
+      "Patching an Omnibus install",
+      "Patching a Docker install",
+      "Patching a Kubernetes install"
+    ],
+    "text": "he patch was applied correctly.\n\nThis process only applies to the Rails application ( the GitLab repository ).\nOther components may need additional steps.\n\nThe patch will need to be reapplied if GitLab is upgraded.\n\nThe value of the patch option -p needs to be set to the correct a strip size.\n\nPatching a Docker install\n\nThe GitLab Docker image uses an Ubuntu-based image with Omnibus installed inside the container to run GitLab. You can follow the same\nsteps as Patching an Omnibus install . Make sure to install patch binary from Ubuntu repository:\n\nDeleting and recreating the container will revert the patch.\n\nThe value for the patch option -p needs to be set to the correct a strip size.\n\nPatching a Kubernetes install\n\nPatching a Kubernetes install involves doing the following steps:\n\nIdentify the image we want to patch. # Identify the image used for gitlab-webservice kubectl -n <gitlab-namespace> get deployment <webservice-deployment> -o yaml | grep image: image: registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.5.1 image: registry.gitlab.com/gitlab-org/build/cng/gitlab-workhorse-ee:v15.5.1 ... The command output will show a list of images, one of which you will need to patch. In this\nexample, we would need to patch registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.5.1\n\nIdentify the image we want to patch.\n\nThe command output will show a list of images, one of which you will need to patch. In this\nexample, we would need to patch registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.5.1",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "40729c142828_2",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/patching_an_instance",
+    "title": "Patching an instance",
+    "source": "handbook",
+    "headings": [
+      "Patching an instance",
+      "Patching an Omnibus install",
+      "Patching a Docker install",
+      "Patching a Kubernetes install"
+    ],
+    "text": "uld need to patch registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.5.1\n\nIdentify the image we want to patch.\n\nThe command output will show a list of images, one of which you will need to patch. In this\nexample, we would need to patch registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.5.1\n\nCreate a Dockerfile that we will use to build the image for the patch FROM registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.5.1 ARG MR_IID USER root RUN apt-get update -y && apt-get install -y patch patchutils USER git RUN curl -o /tmp/$MR_IID.patch https://gitlab.com/gitlab-org/gitlab/-/merge_requests/$MR_IID.patch RUN bash -c \"cd /srv/gitlab; filterdiff -x '*/spec/*' /tmp/$MR_IID.patch > /tmp/filtered.patch; patch -p1 < /tmp/filtered.patch\" Replace registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.5.1 with the image you identified in step 1.\n\nCreate a Dockerfile that we will use to build the image for the patch\n\nReplace registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.5.1 with the image you identified in step 1.\n\nBuild and push the image with docker build and docker push : # Replace <merge_request_id> with the ID of the merge request containing the patch. docker build --build-arg MR_IID = <merge_request_id> -t path/to/remote/registry/gitlab-webservice-ee:v15.5.1 . docker push path/to/remote/registry/gitlab-webservice-ee:v15.5.1\n\nBuild and push the image with docker build and docker push :",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "40729c142828_3",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/patching_an_instance",
+    "title": "Patching an instance",
+    "source": "handbook",
+    "headings": [
+      "Patching an instance",
+      "Patching an Omnibus install",
+      "Patching a Docker install",
+      "Patching a Kubernetes install"
+    ],
+    "text": "Replace <merge_request_id> with the ID of the merge request containing the patch. docker build --build-arg MR_IID = <merge_request_id> -t path/to/remote/registry/gitlab-webservice-ee:v15.5.1 . docker push path/to/remote/registry/gitlab-webservice-ee:v15.5.1\n\nBuild and push the image with docker build and docker push :\n\nUpdate the deployment to use the patched image: # Replace every instance of registry.gitlab.com/gitlab-org/build/cng/gitlab-webservice-ee:v15.5.1 # with the new image kubectl -n <gitlab-namespace> edit deployment <webservice-deployment>\n\nUpdate the deployment to use the patched image:\n\nTo revert the patch, you can edit the deployment to use the original image.\n\nThis process only applies to the Rails application ( the GitLab repository ).\nYou will need to patch a different image depending on the GitLab component, you want to patch.\n\nThis is different with Patching the Rails code in the toolbox pod . Patching rails code directly in the toolbox pod will not apply the patch to the rails code that is serving the requests to the users.\n\nYou will need to create a new image with the patch if you upgraded the helm chart to a newer version of GitLab.",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

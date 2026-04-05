@@ -1,0 +1,32 @@
+[
+  {
+    "chunk_id": "fa2b6208c8cb_0",
+    "url": "https://handbook.gitlab.com/handbook/finance/jihu-support/jihu-validation-pipelines",
+    "title": "JiHu validation pipelines",
+    "source": "handbook",
+    "headings": [
+      "JiHu validation pipelines",
+      "JiHu validation pipelines",
+      "When and where we run it",
+      "What to do when the validation pipeline failed"
+    ],
+    "text": "JiHu validation pipelines\n\nJiHu validation pipelines\n\nIn order to make sure our regular development does not break JiHu’s pipelines,\nwe run JiHu validation pipelines in merge requests which we consider it’s\nmore likely to break JiHu’s pipelines.\n\nThose pipelines are currently allowed to fail, and they should not block\nany merge requests from being merged.\n\nTo revisit this policy, checkout: Disallow as-if-jh pipeline to fail\n\nWhen and where we run it\n\nWe run the validation pipelines when we detected that the changes is more\nlikely to break JiHu’s pipeline. The detection is automated and we can also\napply label ~\"pipeline:run-as-if-jh\" to force it if not detected.\n\nJob start-as-if-jh will trigger a cross project downstream pipeline in the GitLab JH validation project.\n\nFor how the detection works and technical details about how we run this\nvalidation pipeline, checkout: As-if-JH cross project downstream pipeline\n\nWhat to do when the validation pipeline failed\n\nIn the case when the validation pipeline failed, follow this workflow:\n\nCheck if the failure is known by searching for existing issues or merge requests: Issues labeled with ~\"JiHu Broken Pipeline\" Merge requests labeled with ~\"JiHu Broken Pipeline\" JiHu’s issues labeled with ~\"main-jh broken\" JiHu’s merge requests labeled with ~\"main-jh broken\"\n\nIssues labeled with ~\"JiHu Broken Pipeline\"\n\nMerge requests labeled with ~\"JiHu Broken Pipeline\"\n\nJiHu’s issues labeled with ~\"main-jh broken\"\n\nJiHu’s merge requests labeled with ~\"main-jh broken\"\n\nCheck if JiHu’s pipelines are broken",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "fa2b6208c8cb_1",
+    "url": "https://handbook.gitlab.com/handbook/finance/jihu-support/jihu-validation-pipelines",
+    "title": "JiHu validation pipelines",
+    "source": "handbook",
+    "headings": [
+      "JiHu validation pipelines",
+      "JiHu validation pipelines",
+      "When and where we run it",
+      "What to do when the validation pipeline failed"
+    ],
+    "text": "labeled with ~\"main-jh broken\" JiHu’s merge requests labeled with ~\"main-jh broken\"\n\nIssues labeled with ~\"JiHu Broken Pipeline\"\n\nMerge requests labeled with ~\"JiHu Broken Pipeline\"\n\nJiHu’s issues labeled with ~\"main-jh broken\"\n\nJiHu’s merge requests labeled with ~\"main-jh broken\"\n\nCheck if JiHu’s pipelines are broken\n\nIf any related items can be found, feel free to drop a reference in the issue\nor merge request, and move on.\n\nIf nothing can be found, follow this workflow:\n\nCreate an issue and notify JiHu for the potential breakage. You can contact @qianzhangxa\n\nAdd ~\"JiHu impacted\" label to the merge request so we can track this.\n\n(Bonus) Investigate the failure and follow up accordingly. This can be telling JiHu why and how the failure can happen, or what they need to do or what they need to change. To better support them, figuring out a way so they can more easily follow up is encouraged.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

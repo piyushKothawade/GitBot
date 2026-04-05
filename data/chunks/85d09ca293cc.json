@@ -1,0 +1,178 @@
+[
+  {
+    "chunk_id": "85d09ca293cc_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/qa_process",
+    "title": "Secure QA Process",
+    "source": "handbook",
+    "headings": [
+      "Secure QA Process",
+      "Everything starts with a Merge Request",
+      "Additional considerations for Merge Request reviewers",
+      "Additional considerations for Merge Request authors",
+      "Secure QA Process"
+    ],
+    "text": "Everything starts with a Merge Request\n\nWe expect and require all contributions to our products to go a merge request with a formal review. As such, we follow the Merge Request workflow and code review guidelines articulated in GitLab’s developer documentation. We would, however, like to highlight a few items from these documents and add a few additional considerations for reviewers and authors.\n\nAdditional considerations for Merge Request reviewers\n\nThe best way to unblock a peer or community member is to provide feedback in a timely manner . If you are at capacity and cannot facilitate a review in the SLO to which we aspire, please let folks know in the merge request so another reviewer may be found.\n\nAdditional considerations for Merge Request authors\n\nBeing a globally distributed organization can, and frequently does, add latency to back-and-forth communication between folks. Don’t take it personally if it’s taking longer than you expected to get feedback on your changes.\n\nThe secure analyzers verify merge requests by running a new commit against downstream test projects for their supported languages/frameworks (i.e. the gemnasium analyzer of Dependency Scanning will trigger tests against php , go , and several other test projects). The verification is done by comparing the generated report output against an expected report committed to the analyzer’s repository. If analyzer behavior has changed, then the pipeline will fail because the contents of the expected and generated reports will no longer match.",
+    "chunk_index": 0,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "85d09ca293cc_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/qa_process",
+    "title": "Secure QA Process",
+    "source": "handbook",
+    "headings": [
+      "Secure QA Process",
+      "Everything starts with a Merge Request",
+      "Additional considerations for Merge Request reviewers",
+      "Additional considerations for Merge Request authors",
+      "Secure QA Process"
+    ],
+    "text": "php , go , and several other test projects). The verification is done by comparing the generated report output against an expected report committed to the analyzer’s repository. If analyzer behavior has changed, then the pipeline will fail because the contents of the expected and generated reports will no longer match.\n\nThe expectations for the Dependency Scanning , SAST , and Secrets Detection analyzers are stored in the project’s qa/expect directory with a sub-directory for each particular framework/language type.\n\nThe test projects reside in the Secure tests subgroup and their use and best practices are found in the common README .\n\nChanging Analyzer Behavior\n\nIf a change to an analyzer changes the report output, then the expected report must change as well.\n\nIn SAST , Dependency Scanning , Secret Detection the expected reports are stored with the analyzer in a path corresponding to the test project in a subdirectory for the language/framework. For example, the expected report for scanning the dependencies of java-maven is stored in gemnasium-maven/qa/expect . This way if an analyzer’s behavior changes, the expectation can be changed and packaged in the same commit.\n\nFor License Compliance , expectations are stored in the test project’s qa/expect directory (e.g. ruby-bundler/qa/expect ).\n\nMore information about can be found in the Security Products test projects repository .",
+    "chunk_index": 1,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "85d09ca293cc_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/qa_process",
+    "title": "Secure QA Process",
+    "source": "handbook",
+    "headings": [
+      "Secure QA Process",
+      "Everything starts with a Merge Request",
+      "Additional considerations for Merge Request reviewers",
+      "Additional considerations for Merge Request authors",
+      "Secure QA Process"
+    ],
+    "text": "This way if an analyzer’s behavior changes, the expectation can be changed and packaged in the same commit.\n\nFor License Compliance , expectations are stored in the test project’s qa/expect directory (e.g. ruby-bundler/qa/expect ).\n\nMore information about can be found in the Security Products test projects repository .\n\nWe currently do not have automated tests for OpenShift. If you want to see how a change affects the analyzer behavior on OpenShift, you can test it by setting up an OpenShift environment. There are two methods to do this:\n\nThe distribution team has shared an automated script for setting up an OpenShift cluster. While untested by our group, this method could potentially streamline the cluster creation process.\n\nYou can setup an OpenShift cluster following the steps below assuming that you already have access to the GitLab Sandbox Cloud .\n\nLogin to https://gitlabsandbox.cloud/ .\n\nLogin to https://gitlabsandbox.cloud/ .\n\nCreate an AWS sandbox account and login to the AWS console by following steps 1 to 3 from Static Analysis Group EC2 development machine setup guide .\n\nCreate an AWS sandbox account and login to the AWS console by following steps 1 to 3 from Static Analysis Group EC2 development machine setup guide .\n\nOnce you are logged into the AWS console, you can search for “OpenShift” in the search field in the upper left corner, which should show Red Hat OpenShift Service on AWS under the Services category. ROSA provides an integrated OpenShift experience with AWS. Click on this search result to proceed.",
+    "chunk_index": 2,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "85d09ca293cc_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/qa_process",
+    "title": "Secure QA Process",
+    "source": "handbook",
+    "headings": [
+      "Secure QA Process",
+      "Everything starts with a Merge Request",
+      "Additional considerations for Merge Request reviewers",
+      "Additional considerations for Merge Request authors",
+      "Secure QA Process"
+    ],
+    "text": "machine setup guide .\n\nOnce you are logged into the AWS console, you can search for “OpenShift” in the search field in the upper left corner, which should show Red Hat OpenShift Service on AWS under the Services category. ROSA provides an integrated OpenShift experience with AWS. Click on this search result to proceed.\n\nOnce you are logged into the AWS console, you can search for “OpenShift” in the search field in the upper left corner, which should show Red Hat OpenShift Service on AWS under the Services category. ROSA provides an integrated OpenShift experience with AWS. Click on this search result to proceed.\n\nYou are redirected to the Red Hat OpenShift Service on AWS (ROSA) landing page. Click on the Get started link in the left sidebar, or the Get started orange button.\n\nYou are redirected to the Red Hat OpenShift Service on AWS (ROSA) landing page. Click on the Get started link in the left sidebar, or the Get started orange button.\n\nYou will then be redirected to the Verify ROSA prerequisites page: Click on the Enable ROSA HCP and ROSA classic button in the ROSA enablement section, and keep the box I agree to share my AWS account number... checked. The ROSA enablement section will then explain Your request to enable ROSA is pending and may take several minutes to resolve. We recommend keeping this page open so that you can review any errors.\n\nYou will then be redirected to the Verify ROSA prerequisites page:",
+    "chunk_index": 3,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "85d09ca293cc_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/qa_process",
+    "title": "Secure QA Process",
+    "source": "handbook",
+    "headings": [
+      "Secure QA Process",
+      "Everything starts with a Merge Request",
+      "Additional considerations for Merge Request reviewers",
+      "Additional considerations for Merge Request authors",
+      "Secure QA Process"
+    ],
+    "text": "box I agree to share my AWS account number... checked. The ROSA enablement section will then explain Your request to enable ROSA is pending and may take several minutes to resolve. We recommend keeping this page open so that you can review any errors.\n\nYou will then be redirected to the Verify ROSA prerequisites page:\n\nClick on the Enable ROSA HCP and ROSA classic button in the ROSA enablement section, and keep the box I agree to share my AWS account number... checked. The ROSA enablement section will then explain Your request to enable ROSA is pending and may take several minutes to resolve. We recommend keeping this page open so that you can review any errors.\n\nAfter a few minutes, the ROSA enablement section will be updated and display the following messages: You have agreed to share your AWS account number and email address with red hat. You have enabled ROSA and HCP and ROSA classic.\n\nAfter a few minutes, the ROSA enablement section will be updated and display the following messages:\n\nYou have agreed to share your AWS account number and email address with red hat.\n\nYou have enabled ROSA and HCP and ROSA classic.\n\nClick on the Continue to Red Hat orange button in the bottom right corner. This will redirect you to https://sso.redhat.com and request you to Log in to your Red Hat account :\n\nClick on the Continue to Red Hat orange button in the bottom right corner. This will redirect you to https://sso.redhat.com and request you to Log in to your Red Hat account :",
+    "chunk_index": 4,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "85d09ca293cc_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/qa_process",
+    "title": "Secure QA Process",
+    "source": "handbook",
+    "headings": [
+      "Secure QA Process",
+      "Everything starts with a Merge Request",
+      "Additional considerations for Merge Request reviewers",
+      "Additional considerations for Merge Request authors",
+      "Secure QA Process"
+    ],
+    "text": "orange button in the bottom right corner. This will redirect you to https://sso.redhat.com and request you to Log in to your Red Hat account :\n\nClick on the Continue to Red Hat orange button in the bottom right corner. This will redirect you to https://sso.redhat.com and request you to Log in to your Red Hat account :\n\nClick on Log in with Google and use your gitlab.com gmail account. You will be redirected to the Register for a Red Hat account page: Complete the required fields, using your gitlab.com gmail account for the Email address , then click on Create my account .\n\nClick on Log in with Google and use your gitlab.com gmail account. You will be redirected to the Register for a Red Hat account page:\n\nComplete the required fields, using your gitlab.com gmail account for the Email address , then click on Create my account .\n\nYou should now be redirected to a page to Complete your account connection . Check the I have read and agreed to the terms and conditions checkbox, then click on the Connect accounts button:\n\nYou should now be redirected to a page to Complete your account connection . Check the I have read and agreed to the terms and conditions checkbox, then click on the Connect accounts button:\n\nYou’ll then be redirected to another page explaining We need a little more information . Complete the required fields, using your gitlab.com gmail account for the Email address , and select Personal for Account type :",
+    "chunk_index": 5,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "85d09ca293cc_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/qa_process",
+    "title": "Secure QA Process",
+    "source": "handbook",
+    "headings": [
+      "Secure QA Process",
+      "Everything starts with a Merge Request",
+      "Additional considerations for Merge Request reviewers",
+      "Additional considerations for Merge Request authors",
+      "Secure QA Process"
+    ],
+    "text": "have read and agreed to the terms and conditions checkbox, then click on the Connect accounts button:\n\nYou’ll then be redirected to another page explaining We need a little more information . Complete the required fields, using your gitlab.com gmail account for the Email address , and select Personal for Account type :\n\nYou’ll then be redirected to another page explaining We need a little more information . Complete the required fields, using your gitlab.com gmail account for the Email address , and select Personal for Account type :\n\nThe Terms and conditions box will now be displayed, click on View Terms and Conditions and accept them:\n\nThe Terms and conditions box will now be displayed, click on View Terms and Conditions and accept them:\n\nYou’ll now be redirected to the Red Hat Hybrid Cloud Console Overview screen, and can set up an OpenShift cluster by clicking the Create cluster in the Red Hat OpenShift Service on AWS (ROSA) dialog box: If you are only planning to use the cluster for testing, it is recommended to select the OSD Trial with a free trial period of 2 months. After this period, the cluster will be deleted. The free trial enables you to upgrade to a paid tier within time frame of two months.\n\nYou’ll now be redirected to the Red Hat Hybrid Cloud Console Overview screen, and can set up an OpenShift cluster by clicking the Create cluster in the Red Hat OpenShift Service on AWS (ROSA) dialog box:",
+    "chunk_index": 6,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "85d09ca293cc_7",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/qa_process",
+    "title": "Secure QA Process",
+    "source": "handbook",
+    "headings": [
+      "Secure QA Process",
+      "Everything starts with a Merge Request",
+      "Additional considerations for Merge Request reviewers",
+      "Additional considerations for Merge Request authors",
+      "Secure QA Process"
+    ],
+    "text": "the cluster will be deleted. The free trial enables you to upgrade to a paid tier within time frame of two months.\n\nYou’ll now be redirected to the Red Hat Hybrid Cloud Console Overview screen, and can set up an OpenShift cluster by clicking the Create cluster in the Red Hat OpenShift Service on AWS (ROSA) dialog box:\n\nIf you are only planning to use the cluster for testing, it is recommended to select the OSD Trial with a free trial period of 2 months. After this period, the cluster will be deleted. The free trial enables you to upgrade to a paid tier within time frame of two months.\n\nOnce the cluster is set up, we have to create a user to login to the OpenShift cluster; you can select Cluster List > <your cluster> and select htpasswd for Identity Provider . Under Cluster Roles and Access you can create the user for accessing the OpenShift cluster. Make sure that this user belongs to the groups dedicated-admin and cluster-admins .\n\nOnce the cluster is set up, we have to create a user to login to the OpenShift cluster; you can select Cluster List > <your cluster> and select htpasswd for Identity Provider . Under Cluster Roles and Access you can create the user for accessing the OpenShift cluster. Make sure that this user belongs to the groups dedicated-admin and cluster-admins .\n\nAfterwards you can click on the Open console button and login with the cluster admin user you created in the previous step.\n\nAfterwards you can click on the Open console button and login with the cluster admin user you created in the previous step.",
+    "chunk_index": 7,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "85d09ca293cc_8",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/qa_process",
+    "title": "Secure QA Process",
+    "source": "handbook",
+    "headings": [
+      "Secure QA Process",
+      "Everything starts with a Merge Request",
+      "Additional considerations for Merge Request reviewers",
+      "Additional considerations for Merge Request authors",
+      "Secure QA Process"
+    ],
+    "text": "t this user belongs to the groups dedicated-admin and cluster-admins .\n\nAfterwards you can click on the Open console button and login with the cluster admin user you created in the previous step.\n\nAfterwards you can click on the Open console button and login with the cluster admin user you created in the previous step.\n\nOnce you are logged into the OpenShift cluster, you can now install the GitLab Runner Operator by selecting Operators > Operator Hub . You can search GitLab Runner, click on the search result and then click on the Install button as explained here .\n\nOnce you are logged into the OpenShift cluster, you can now install the GitLab Runner Operator by selecting Operators > Operator Hub . You can search GitLab Runner, click on the search result and then click on the Install button as explained here .",
+    "chunk_index": 8,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "85d09ca293cc_9",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/qa_process",
+    "title": "Secure QA Process",
+    "source": "handbook",
+    "headings": [
+      "Secure QA Process",
+      "Everything starts with a Merge Request",
+      "Additional considerations for Merge Request reviewers",
+      "Additional considerations for Merge Request authors",
+      "Secure QA Process"
+    ],
+    "text": "search result and then click on the Install button as explained here .\n\nOnce you are logged into the OpenShift cluster, you can now install the GitLab Runner Operator by selecting Operators > Operator Hub . You can search GitLab Runner, click on the search result and then click on the Install button as explained here .\n\nIn order to set up the runner in the OpenShift cluster, you can follow the instructions that are included in the README of the operator . Note that the runner token referenced in the gitlab-runner-operator README.md can be obtained by selecting CI/CD Settings > Runners > New Runner from a GitLab project. The runner setup requires the command line tool oc (OpenShift client) to be installed . Before using oc you have to authenticate against your cluster. You can find the authentication credentials by clicking on your OpenShift cluster admin user name and then selecting Copy login comand . Note, that the default runner setup allows containers to be executed with root privileges. In order to restrict access to non root users, you can provide the configuration below: [[ runners ]] name = \"gitlab-runner\" url = \"https://gitlab.com\" executor = \"kubernetes\" [ runners . kubernetes ] [ runners . kubernetes . pod_security_context ] run_as_non_root = true run_as_user = 1000 After applying this configuration with oc create configmap my-runner-config --from-file=config.toml , you can update the runner config as illustrated below and apply it with oc appy -f gitlab-runner.yml . apiVersion : apps.gitlab.com/v1beta2 kind : Runner metadata : name : gitlab-runner spec : gitlabUrl : https://gitlab.com buildImage : alpine token : gitlab-runner-secret tags : openshift config : my-runner-config",
+    "chunk_index": 9,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "85d09ca293cc_10",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/qa_process",
+    "title": "Secure QA Process",
+    "source": "handbook",
+    "headings": [
+      "Secure QA Process",
+      "Everything starts with a Merge Request",
+      "Additional considerations for Merge Request reviewers",
+      "Additional considerations for Merge Request authors",
+      "Secure QA Process"
+    ],
+    "text": "ml , you can update the runner config as illustrated below and apply it with oc appy -f gitlab-runner.yml . apiVersion : apps.gitlab.com/v1beta2 kind : Runner metadata : name : gitlab-runner spec : gitlabUrl : https://gitlab.com buildImage : alpine token : gitlab-runner-secret tags : openshift config : my-runner-config\n\nIn order to set up the runner in the OpenShift cluster, you can follow the instructions that are included in the README of the operator .\n\nNote that the runner token referenced in the gitlab-runner-operator README.md can be obtained by selecting CI/CD Settings > Runners > New Runner from a GitLab project.\n\nThe runner setup requires the command line tool oc (OpenShift client) to be installed . Before using oc you have to authenticate against your cluster. You can find the authentication credentials by clicking on your OpenShift cluster admin user name and then selecting Copy login comand . Note, that the default runner setup allows containers to be executed with root privileges. In order to restrict access to non root users, you can provide the configuration below:\n\nAfter applying this configuration with oc create configmap my-runner-config --from-file=config.toml , you can update the runner config as illustrated below and apply it with oc appy -f gitlab-runner.yml .\n\nThe OpenShift runner should now appear green in your GitLab project settings CI/CD Settings > Runners .\n\nThe OpenShift runner should now appear green in your GitLab project settings CI/CD Settings > Runners .",
+    "chunk_index": 10,
+    "total_chunks": 11
+  }
+]

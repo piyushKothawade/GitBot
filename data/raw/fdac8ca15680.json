@@ -1,0 +1,26 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/linux/setup",
+  "title": "Linux Desktop OS Setup Guide",
+  "content": "Linux Desktop OS Setup Guide\n\nBefore starting, ensure you have:\n\nA company-provided Dell laptop (Dell is the only approved Linux laptop vendor)\n\nUbuntu LTS (latest version) - the only approved Linux distribution\n\nSetup and Deployment Steps\n\n1. Install Linux (if needed)\n\nCertain circumstances (world region and availability of hardware) might require the self-installation of Linux on a Dell that was shipped with OEM Windows. If this is the case:\n\nSet up a USB drive with Ubuntu LTS\n\nPerform the installation\n\nOptional backup: For laptops shipped with OEM Windows, you may want to make a full drive backup (e.g., using open source utility Clonezilla ) to an external drive before installing Linux. This makes the RMA process easier if needed.\n\n2. Enable Full-Disk Encryption (LUKS Required)\n\nFull-disk encryption is mandatory. To verify encryption is enabled:\n\nIf there is a reference to cryptdata or dm_crypt-0 in the output, encryption is enabled. If not, you will need to reinstall Ubuntu and enable LUKS drive encryption during the installation process.\n\n3. Enable the Firewall\n\nLinux endpoints must have the firewall enabled. Check the status and enable if needed:\n\nBefore enrolling in Fleet, your hostname must follow the standardized naming convention:\n\nFor example, if your email is jsmith@gitlab.com :\n\nTo rename your hostname:\n\nYou can use hostnamectl to set your hostname manually:\n\nAlternatively, you can use the hostname rename script available on the internal handbook. Contact #security_help if you need assistance.\n\nAll Linux endpoints must have Fleet installed. Fleet will also install the EDR tool (CrowdStrike or SentinelOne depending on your region).\n\nDownload the package:\n\nThe Fleet binary is available for DEB and RPM package managers for both x86-64 and ARM CPUs. Download the latest release from the fleet-builds repository .\n\nFor Debian/Ubuntu (the only approved distribution):\n\nVerify Fleet is installed:\n\nWith supported Linux Desktop Environments (like GNOME with the required GNOME Shell extension ), you can see if Fleet Desktop is showing on your top bar.\n\nFor detailed Fleet enrollment instructions, see the Fleet handbook page .\n\n6. Verify EDR Installation\n\nThe EDR agent should be installed automatically via Fleet. To verify:\n\nFor SentinelOne (Netherlands, Germany, Italy, Austria):\n\nYou should see Connectivity: On and a valid SentinelOne URL.\n\nFor CrowdStrike (all other regions):\n\nYou should see the service as active and an Agent ID (AID) value returned.\n\nIf you need assistance, reach out in #sentinelone or #crowdstrike Slack channels.\n\n7. Install Standard Applications\n\nInstall the regular approved applications:\n\nGoogle Chrome (and sign into Okta)\n\nOther applications for your job description (e.g., development tools)\n\nComplete the steps in your onboarding issue and/or laptop equipment issue.\n\nAdditional Configuration\n\nAutomatic Updates (Recommended)\n\nWhile not required, it is highly recommended that automatic updates are configured to ensure the latest security patches are available. Options include:\n\nGNOME Update Manager: Configure Software & Updates for automatic updates\n\nunattended-upgrades: Install and configure the unattended-upgrades package\n\nMore detail is available at Ubuntu Automatic Security Updates .\n\nIf your Dell laptop has a fingerprint reader, modern Ubuntu may support it out of the box. If not, consider the following steps (results may vary):\n\nSentinelOne Installation Issues\n\nIf you’re using Advanced Intrusion Detection Environment (AIDE), create an exclusion for SentinelOne:\n\nSentinelOne Agent Offline\n\nThe most common reason for a SentinelOne agent to appear offline is a local firewall prohibiting outbound connections to *.sentinelone.net . HTTPS (port 443) needs to be allowed outbound to that domain.\n\nCommon local firewalls that may block access include pfSense and iptables.\n\nFleet Package Not Available\n\nIf the appropriate Fleet package doesn’t exist for your endpoint, contact #security_help for assistance building fleetd from source.\n\nFleet/EDR Issues: #security_help\n\nSentinelOne Help: #sentinelone\n\nCrowdStrike Help: #crowdstrike\n\nGeneral Linux Tips: #linux",
+  "source": "handbook",
+  "headings": [
+    "Linux Desktop OS Setup Guide",
+    "Prerequisites",
+    "Setup and Deployment Steps",
+    "1. Install Linux (if needed)",
+    "2. Enable Full-Disk Encryption (LUKS Required)",
+    "3. Enable the Firewall",
+    "4. Set Your Hostname",
+    "5. Install Fleet",
+    "6. Verify EDR Installation",
+    "7. Install Standard Applications",
+    "Additional Configuration",
+    "Automatic Updates (Recommended)",
+    "Fingerprint Reader",
+    "Troubleshooting",
+    "SentinelOne Installation Issues",
+    "SentinelOne Agent Offline",
+    "Fleet Package Not Available",
+    "Support"
+  ]
+}

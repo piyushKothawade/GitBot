@@ -1,0 +1,162 @@
+[
+  {
+    "chunk_id": "45c5357ea89c_0",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/data-development",
+    "title": "Data Development",
+    "source": "handbook",
+    "headings": [
+      "Data Development",
+      "Data Development at GitLab",
+      "Development Location per Data Application",
+      "Development Location Comparison",
+      "Data Development"
+    ],
+    "text": "Data Development at GitLab\n\nGitLab deploys two distinct but interrelated approaches to build data solutions that help drive insights and business decisions. These approaches are complementary to one another and are focused on delivering results at a level of speed, quality, and reliability required by the business, problem being solved, and question being asked. The approaches are complementary and evolutionary in nature, enabling development in an earlier stage to be leveraged in a later stage if required. Data solutions developed at an early stage can be improved and enhanced to a later stage if there is sufficient business need to do so. All analysis follows the well-established Data Analysis Process .\n\nDevelopment Location per Data Application\n\nAd-hoc Development Location\n\nTrusted Data Development Location\n\nCOMMON and SPECIFIC Schemas\n\nDevelopment Project Folders\n\nProduction Project Folders\n\nDevelopment Location Comparison\n\nPrototyping / Directional / Urgent Analysis\n\nMission Critical Analysis / Operational Analysis\n\nSnowflake Schema Location\n\nTableau Folder Locations\n\nCreating own data structures\n\nVisualization using Tableau\n\nBuilt Using the Enterprise Dimensional Model\n\nBuilt Using Data from the COMMON or SPECIFIC schemas\n\nRegistered in the Data Catalog\n\nFollows Trusted Data Development process\n\nTested using the Trusted Data Framework\n\nAuditable w/linkage to source systems\n\nAd-hoc Data Development",
+    "chunk_index": 0,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "45c5357ea89c_1",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/data-development",
+    "title": "Data Development",
+    "source": "handbook",
+    "headings": [
+      "Data Development",
+      "Data Development at GitLab",
+      "Development Location per Data Application",
+      "Development Location Comparison",
+      "Data Development"
+    ],
+    "text": "a structures\n\nVisualization using Tableau\n\nBuilt Using the Enterprise Dimensional Model\n\nBuilt Using Data from the COMMON or SPECIFIC schemas\n\nRegistered in the Data Catalog\n\nFollows Trusted Data Development process\n\nTested using the Trusted Data Framework\n\nAuditable w/linkage to source systems\n\nAd-hoc Data Development\n\nAd-hoc delivers a report or dashboard for one-time or limited use and it can also deliver a prototype, first iteration of a data solution that is not mature enough for a long-term, Trusted Data Solution yet. Ad-hoc development is performed when no existing data solution answers the questions being asked. Code developed for ad-hoc analysis for one-time or limited use is not written to be leveraged in a long-term solution; rather, it is a means to deliver results quickly. Code developed for ad-hoc analysis for prototypes and first iterations of data solutions can be leveraged in a long-term, Trusted Data Solution.",
+    "chunk_index": 1,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "45c5357ea89c_2",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/data-development",
+    "title": "Data Development",
+    "source": "handbook",
+    "headings": [
+      "Data Development",
+      "Data Development at GitLab",
+      "Development Location per Data Application",
+      "Development Location Comparison",
+      "Data Development"
+    ],
+    "text": "asked. Code developed for ad-hoc analysis for one-time or limited use is not written to be leveraged in a long-term solution; rather, it is a means to deliver results quickly. Code developed for ad-hoc analysis for prototypes and first iterations of data solutions can be leveraged in a long-term, Trusted Data Solution.\n\nTo complete ad-hoc analysis, Analysts typically write and run SQL queries against the Enterprise Data Warehouse and extract data to analyze using tools like Tableau or Python. Analysts and Analytics Engineers can also complete Ad-Hoc analysis using dbt and prototyping data solutions that can be leveraged in long-term, Trusted Data Solutions. At times, new data may need to be sourced from text files, spreadsheets, or other data sources. In many cases, the ad-hoc report solves for the immediate business need and no further action is required. However, sometimes the results of ad-hoc analysis yield results that require additional data modeling or dashboard development. In these cases, a more robust and trustworthy solution can be developed using Trusted Data Development.",
+    "chunk_index": 2,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "45c5357ea89c_3",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/data-development",
+    "title": "Data Development",
+    "source": "handbook",
+    "headings": [
+      "Data Development",
+      "Data Development at GitLab",
+      "Development Location per Data Application",
+      "Development Location Comparison",
+      "Data Development"
+    ],
+    "text": "ad-hoc report solves for the immediate business need and no further action is required. However, sometimes the results of ad-hoc analysis yield results that require additional data modeling or dashboard development. In these cases, a more robust and trustworthy solution can be developed using Trusted Data Development.\n\nAd-hoc development gives ultimate flexibility to prototype data solutions. If a new data set needs to be explored and new transformations need to be built in a fast-paced, iterative way, the Ad-hoc Data Development approach can be used. Because of its flexible nature, not all ad-hoc data development is suitable to make mission critical decisions. It is often a first step for maturing the data solution. Care and caution should be taken when using ad-hoc data solutions to inform business making decisions.\n\nAd-hoc development takes place in the WORKSPACE or EXPLORATIONAL schemas where the following access and permissions apply:\n\nWORKSPACE Schema : Users lack create/insert/update/drop permissions. Updates are made via standardized dbt processes.\n\nEXPLORATIONAL Schema : Users have create/insert/update/drop permissions, allowing for rapid prototyping. This schema is less governed and primarily used by a smaller, trusted audience.\n\nTrusted Data Development",
+    "chunk_index": 3,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "45c5357ea89c_4",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/data-development",
+    "title": "Data Development",
+    "source": "handbook",
+    "headings": [
+      "Data Development",
+      "Data Development at GitLab",
+      "Development Location per Data Application",
+      "Development Location Comparison",
+      "Data Development"
+    ],
+    "text": "Schema : Users lack create/insert/update/drop permissions. Updates are made via standardized dbt processes.\n\nEXPLORATIONAL Schema : Users have create/insert/update/drop permissions, allowing for rapid prototyping. This schema is less governed and primarily used by a smaller, trusted audience.\n\nTrusted Data Development\n\nTrusted Data delivers the most complete, reliable, and accurate analytics available to an enterprise. Over time as an organization matures and value of analytics increases, Trusted Data evolves and development rigor also evolves, but the core steps remain consistent and include requirements gathering, design, iterative wireframing, testing, and operational monitoring. Trusted data solutions differ from ad-hoc reports because they include quality validations such as data testing, code review, and registration in the Data Catalog. Trusted data solutions can be built either in the Enterprise Dimensional Model (EDM) located in the COMMON schemas or in the SPECIFIC schema that models application data. Both solutions are trusted due to having data testing, code review, and registration in the Data Catalog.\n\nTrusted data development uses the following schemas:\n\nCOMMON Schema : Models cross-functional business processes using Kimball’s dimensional modeling techniques which allows joining of data in a star schema structure for robust and easy to data modeling.\n\nSPECIFIC Schema : Represents not cross-application or cross-functional data. Overtime, these data models may mature and evolve into cross-functional models. (e.g. NetSuite data source).",
+    "chunk_index": 4,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "45c5357ea89c_5",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/data-development",
+    "title": "Data Development",
+    "source": "handbook",
+    "headings": [
+      "Data Development",
+      "Data Development at GitLab",
+      "Development Location per Data Application",
+      "Development Location Comparison",
+      "Data Development"
+    ],
+    "text": "mball’s dimensional modeling techniques which allows joining of data in a star schema structure for robust and easy to data modeling.\n\nSPECIFIC Schema : Represents not cross-application or cross-functional data. Overtime, these data models may mature and evolve into cross-functional models. (e.g. NetSuite data source).\n\nTrusted Data Development Steps\n\nTrusted Data Solution Criteria\n\nAll Trusted Data solutions must meet the following criteria:\n\nThe business problem is defined with clear revenue impact established\n\nA Data project Epic is created to manage development\n\nRequirements and success criteria are captured and tracked in the Epic\n\nScope is defined for v1.0 and v1.1, with a release cycle established up-front (e.g. weekly, bi-weekly, monthly)\n\nA Dashboard Wireframe is created in Lucid or Tableau and shared with users, iterating to “final draft”\n\nIf a Dimensional Data Model solution is indicated, then the Dimensional Data Model is designed and integrated into the Enterprise Dimensional Model Bus Matrix . This step is not applicable for data modeled in the SPECIFIC application schema.\n\n( DRAFT: Under review with Monte Carlo Project ) Trusted Data Tests are created and deployed\n\nThe solution enters a User Acceptance Testing phase, including data validations to source systems\n\nThe solution is registered in the Data Catalog\n\nThe solution is deployed, including any required training and user enablement\n\nTrusted data development prioritizes consistency, reliability, and adherence to industry best practices.\n\nDatabase Implementation",
+    "chunk_index": 5,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "45c5357ea89c_6",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/data-development",
+    "title": "Data Development",
+    "source": "handbook",
+    "headings": [
+      "Data Development",
+      "Data Development at GitLab",
+      "Development Location per Data Application",
+      "Development Location Comparison",
+      "Data Development"
+    ],
+    "text": "ce Testing phase, including data validations to source systems\n\nThe solution is registered in the Data Catalog\n\nThe solution is deployed, including any required training and user enablement\n\nTrusted data development prioritizes consistency, reliability, and adherence to industry best practices.\n\nDatabase Implementation\n\nIn both Ad-hoc and Trusted Data development data is made available in the PROD database, via multiple schemas. Data can be read out of multiple schemas in Snowflake and Tableau.\n\nAd-Hoc Database Implementation\n\nTo make data available for Ad-Hoc Data Development , data is transformed and made available in the Snowflake PROD database. This data is available in two different schemas, WORKSPACE AND EXPLORATIONAL .:\n\nWORKSPACE Schemas : Prefixed with WORKSPACE_ or RESTRICTED_SAFE_WORKSPACE_ variants for MNPI data. These schemas require standardized dbt processes.",
+    "chunk_index": 6,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "45c5357ea89c_7",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/data-development",
+    "title": "Data Development",
+    "source": "handbook",
+    "headings": [
+      "Data Development",
+      "Data Development at GitLab",
+      "Development Location per Data Application",
+      "Development Location Comparison",
+      "Data Development"
+    ],
+    "text": "Data Development , data is transformed and made available in the Snowflake PROD database. This data is available in two different schemas, WORKSPACE AND EXPLORATIONAL .:\n\nWORKSPACE Schemas : Prefixed with WORKSPACE_ or RESTRICTED_SAFE_WORKSPACE_ variants for MNPI data. These schemas require standardized dbt processes.\n\nEXPLORATIONAL Schemas : Prefixed with EXPLORATIONAL_ or RESTRICTED_SAFE_EXPLORATIONAL_ . Users have read and write permissions in order to create tables, add columns and prototype data solutions. The schemas are set up on departmental level and access is not provisioned on a lower grain than schema level. Functional ownership of the schemas resides with the departmental VP (or equivalent). This means that the VP needs to provide approval in case of an Access Request and carries the responsibility of proper usage of the data in the schema (i.e. in case of MNPI, PII and sensitive data). EXPLORATIONAL schemas are the least governed data schemas, which gives ultimate flexibility. Advise to use these schemas on a need-to-use basis.\n\nTrusted Data Database Implementation\n\nTrusted data resides exclusively in Snowflake’s PROD database. It follows the EDM methodology or the Specific application methodology and adheres to stringent development standards:\n\nSchemas : Prefixed with COMMON_ or SPECIFIC_ , with RESTRICTED_SAFE_ variants for MNPI data.\n\nMethodology : Data transformations use dbt to align with either the Enterprise Dimensional Model(fact and dimension tables) or Specific application tables.",
+    "chunk_index": 7,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "45c5357ea89c_8",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/data-development",
+    "title": "Data Development",
+    "source": "handbook",
+    "headings": [
+      "Data Development",
+      "Data Development at GitLab",
+      "Development Location per Data Application",
+      "Development Location Comparison",
+      "Data Development"
+    ],
+    "text": "plication methodology and adheres to stringent development standards:\n\nSchemas : Prefixed with COMMON_ or SPECIFIC_ , with RESTRICTED_SAFE_ variants for MNPI data.\n\nMethodology : Data transformations use dbt to align with either the Enterprise Dimensional Model(fact and dimension tables) or Specific application tables.\n\nGovernance : Trusted data undergoes rigorous validation, documentation, and registration.\n\nBI Tool Implementation - Tableau\n\nTableau leverages the robust data warehouse structure, configuration, and security to deliver high-quality, reliable analytics. This integration ensures optimized data retrieval, governance, and scalability, empowering organizations to create accurate, insightful dashboards while maintaining data integrity. Tableau classifies data with Project Folder environments and Certified Data Source Data Labels.\n\nDevelopment and Production Project Folders\n\nDevelopment Project Folders: Are a prototyping and testing environment which Supports iterative work with evolving datasets and dashboards. This Sandbox environment allows creativity and flexibility during design phases. Further documentation can be found here .\n\nProduction Project Folders: Hosts trusted data and validated , finalized dashboards. This ensures end-users access validated, high-quality content which maintains data integrity and supports decision-making. Production Folder Publishing requirements can be found here .\n\nTableau Certified Data Sources",
+    "chunk_index": 8,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "45c5357ea89c_9",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/data-development",
+    "title": "Data Development",
+    "source": "handbook",
+    "headings": [
+      "Data Development",
+      "Data Development at GitLab",
+      "Development Location per Data Application",
+      "Development Location Comparison",
+      "Data Development"
+    ],
+    "text": "n be found here .\n\nProduction Project Folders: Hosts trusted data and validated , finalized dashboards. This ensures end-users access validated, high-quality content which maintains data integrity and supports decision-making. Production Folder Publishing requirements can be found here .\n\nTableau Certified Data Sources\n\nCertified data sources serve as reliable, reusable, and versatile single sources of truth for Tableau reporting. These data sources are reviewed for accuracy, compliance, and broad usability. By adhering to best-in-class BI and modeling standards, certified data sources streamline onboarding, reduce duplication, and promote consistency, simplifying decision-making and reinforcing their role in the organization’s data ecosystem. Learn more about Certified Data Sources by clicking here .",
+    "chunk_index": 9,
+    "total_chunks": 10
+  }
+]

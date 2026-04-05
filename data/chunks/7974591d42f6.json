@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "7974591d42f6_0",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/psirt/runbooks/unintended-vuln-disclosure",
+    "title": "Handling unintended vulnerability disclosures",
+    "source": "handbook",
+    "headings": [
+      "Handling unintended vulnerability disclosures",
+      "Summary",
+      "Instructions for paging SIRT",
+      "Vulnerabilities fixed in canonical instead of security mirrors",
+      "Insufficient fix of a different or related vulnerability"
+    ],
+    "text": "Handling unintended vulnerability disclosures\n\nThere are situations where details about an unfixed (or insufficiently fixed) vulnerability can be inadvertently made public. This runbook includes specific processes for AppSec to follow in these situations.\n\nInstructions for paging SIRT\n\nFor actions outlined below that involve paging SIRT, please check the “page immediately box” for issues with severity above ~severity::4.\n\nVulnerabilities fixed in canonical instead of security mirrors\n\nCheck whether the security issue is OK to be addressed in public. This is usually denoted by ~“security-fix-in-public” label and if this label is not there proceed to next step.\n\nThe AppSec engineer should page SIRT by using /security in Slack.\n\nSIRT performs a commit cleanup\n\nSIRT performs monitoring to look for active exploitation attempts against the vulnerability.\n\nInsufficient fix of a different or related vulnerability\n\nIf the vulnerability is critical, SIRT must be paged via /security so they can begin working on detection and mitigation.\n\nAppSec should create a new issue with the appropriate priority and severity labeling. The appropriate EM / PM should be pinged so they can work on it immediately.\n\nSame as any other vulnerability report.\n\nIf the fix was found out to be insufficient shortly after it went out, consider opening an AppSec review for that feature.\n\nConsider opening an RCA issue to figure out why the fix was insufficient.\n\nHackerOne reporter decides to make something public prior to a fix being made",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "7974591d42f6_1",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/psirt/runbooks/unintended-vuln-disclosure",
+    "title": "Handling unintended vulnerability disclosures",
+    "source": "handbook",
+    "headings": [
+      "Handling unintended vulnerability disclosures",
+      "Summary",
+      "Instructions for paging SIRT",
+      "Vulnerabilities fixed in canonical instead of security mirrors",
+      "Insufficient fix of a different or related vulnerability"
+    ],
+    "text": ".\n\nSame as any other vulnerability report.\n\nIf the fix was found out to be insufficient shortly after it went out, consider opening an AppSec review for that feature.\n\nConsider opening an RCA issue to figure out why the fix was insufficient.\n\nHackerOne reporter decides to make something public prior to a fix being made\n\nThe AppSec engineer should immediately page SIRT by using /security in Slack.\n\nBump up the SLA windows to urge the developers to work on fixing the vulnerability on priority.\n\nConsider scheduling a security release, regular or critical - depending on the severity of the vulnerability.\n\nBan the HackerOne researcher from the program following the code of conduct violation process.\n\nCommunicate the situation to the Legal team via the #legal Slack channel or pinging them into the issue, so they can determine what (if any) steps need to be taken from a legal perspective\n\nInvolve Communications to alert any potentially impacted customers.\n\nCommunication mistakes or other unintentional leaks\n\nTitles revealed via email inbox leak in a YouTube video\n\nSomeone accidentally gives too much information to a community member or customer\n\nFigure out if enough information was leaked for an attacker to build a PoC to exploit the vulnerability. If yes, page SIRT by using /security in Slack.\n\nMake the YouTube video private by following these instructions .\n\nCommunicate with the EMs, PMs, and development teams to urge them to work on fixing the vulnerability as a priority.",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "7974591d42f6_2",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/psirt/runbooks/unintended-vuln-disclosure",
+    "title": "Handling unintended vulnerability disclosures",
+    "source": "handbook",
+    "headings": [
+      "Handling unintended vulnerability disclosures",
+      "Summary",
+      "Instructions for paging SIRT",
+      "Vulnerabilities fixed in canonical instead of security mirrors",
+      "Insufficient fix of a different or related vulnerability"
+    ],
+    "text": "nough information was leaked for an attacker to build a PoC to exploit the vulnerability. If yes, page SIRT by using /security in Slack.\n\nMake the YouTube video private by following these instructions .\n\nCommunicate with the EMs, PMs, and development teams to urge them to work on fixing the vulnerability as a priority.\n\nConsider starting a conversation with Delivery, Dedicated, and the relevant development teams about potentially scheduling an ad-hoc critical security release, depending on the severity of the vulnerability.\n\nReach out to the team member that caused the leak, and educate them on keeping vulnerability-related data SAFE.\n\nVulnerability issue wasn’t made as confidential, or accidentally becomes visible to everyone\n\nAccidentally added to the security release blog post even though the fix didn’t make it into the release\n\nImmediate response for Communication mistakes or other unintentional leaks\n\nChange the confidentiality of the issue.\n\nEdit the blogpost and ping the SRE on-call to merge it right away.\n\nPage SIRT by using /security in Slack.\n\nMitigation for Communication mistakes or other unintentional leaks\n\nCommunicate with the EMs, PMs, and development teams to urge them to work on fixing the vulnerability as a priority.\n\nConsider starting a conversation with Delivery, Dedicated, and the relevant development teams about potentially scheduling an ad-hoc critical security release, depending on the severity of the vulnerability.\n\nFollow-up actions for Communication mistakes or other unintentional leaks",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "7974591d42f6_3",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/psirt/runbooks/unintended-vuln-disclosure",
+    "title": "Handling unintended vulnerability disclosures",
+    "source": "handbook",
+    "headings": [
+      "Handling unintended vulnerability disclosures",
+      "Summary",
+      "Instructions for paging SIRT",
+      "Vulnerabilities fixed in canonical instead of security mirrors",
+      "Insufficient fix of a different or related vulnerability"
+    ],
+    "text": "ing the vulnerability as a priority.\n\nConsider starting a conversation with Delivery, Dedicated, and the relevant development teams about potentially scheduling an ad-hoc critical security release, depending on the severity of the vulnerability.\n\nFollow-up actions for Communication mistakes or other unintentional leaks\n\nWas the confidentiality of the issue incorrectly changed by a team member? If yes, educate them on keeping vulnerability-related data SAFE.\n\nPing the AppSec release managers about the incident, as before the release goes out, it is carefully vetted for such mishaps.\n\nAddition of vulnerability details to the blogpost is automated by the Delivery team. Reach out to them to figure out if this was somehow a bug in their tooling.",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "0b3d465c3ad8_0",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/devops-tools",
+    "title": "DevOps tools",
+    "source": "handbook",
+    "headings": [
+      "DevOps tools",
+      "Project management",
+      "Portfolio Management",
+      "Service Desk",
+      "Source code management"
+    ],
+    "text": "The DevOps tools below are commonly found in a build-your-own DevOps tool chain. Many of these can be replaced by GitLab’s single platform for the entire DevOps lifecycle.\n\nMicrosoft TFS/VSTS/Asure DevOps\n\nInflectra Corporation\n\nAtlassian Jira Portfolio\n\nCA Technologies / Rally\n\nIBM Rational Team Concert\n\nHP Application Lifecycle Management\n\nAtlassian Jira Service Desk\n\nCA Service Desk Manager\n\nSource code management\n\nMicrosoft TFS/VSTS/Azure DevOps\n\nCA Technologies / Rally\n\nIBM Rational Clear case\n\nSmart Bear Collaborator\n\nContinuous Integration\n\nMicrosoft TFS/VSTS/Azure DevOps\n\nDrone.io - New Stack Article\n\nDocker Trusted Registry\n\nGoogle Cloud Container Registry\n\nContinuous Delivery/Deployment\n\nElectric Cloud ElectricFlow\n\nMicrosoft TFS/VSTS/Azure DevOps\n\nCenturyLink Cloud Application Manager\n\nInfrastructure Configuration\n\nApplication Performance Monitoring\n\nMeltano is a separate product that isn’t part of GitLab. Here’s a list of BizOps tools. Other lists include cloud native ETL tools (link no longer available), and the Meltano README .",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "chunk_id": "09a4ff42486c_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/skus",
+    "title": "PS Standard SKUs",
+    "source": "handbook",
+    "headings": [
+      "PS Standard SKUs"
+    ],
+    "text": "Some Professional Services Offerings, such as non-customized Education Services courses, Health Check, CI/CD andDevSecOps Workshop, Implementation/Migration QuickStart SKUS, and other out-of-the-box packages can be sold as a standard SKU. Professional Services SKUs can be easily added to an order within Zuora and do not require creation of a custom SOW.\n\nConsulting services become SKUs as a last step of the service lifecycle, after a service has successfully been delivered a handful of times to allow any necessary adjustments to price, scope, and timeline, as well as ensure sufficient product-market fit.\n\nTo submit an Education Request, create a new issue and select the education-request template and fill out the necessary details.",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

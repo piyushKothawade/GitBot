@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "20a97efe04b3_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/build/demo",
+    "title": "Distribution Team Demo",
+    "source": "handbook",
+    "headings": [
+      "Distribution Team Demo",
+      "Weekly Demo",
+      "Goals",
+      "Presenter",
+      "Attendees"
+    ],
+    "text": "Distribution Team Demo\n\nDistribution team members present demos related to work they’ve accomplished (or are developing) and share context. Special guests from outside the team also occasionally present to raise awareness and answer questions on specific subjects.\n\nDemo recordings are publicly available on YouTube to spread knowledge, technologies and solutions the team creates.\n\nThe goals of our demos are to:\n\nSpread awareness of current issues impacting our customers and team\n\nSolicit feedback from the team to improve our solutions and related documentation\n\nIdentify gaps in our collective understanding of environments, components, processes and dependencies\n\nImprove visibility of the work our team does\n\nThe team collaboratively selects the demo presenter during the weekly team\nmeeting from a pool of:\n\nIssues labeled Demo-worthy label\n\nSuggestions during the weekly team meeting\n\nVolunteers from either team or non-team members\n\nThe demo presenter is responsible for making sure the demo meeting invite is\nrescheduled to the proper time.\n\nThe presenter is expected to:\n\nPrepare any required environmental and related dependencies ahead of the demo\n\nInclude a demo synopsis in the meeting notes with key component/environment versions, etc. for reproducibility\n\nRecord the demo locally and upload to YouTube Distribution Team Demos\n\nLimit distractions and keep professionalism high by muting slack and presenting in a demo conducive location\n\nFollow up on concerns raised during the demo and/or provide links to known issues identified\n\nAttendess are expected to:",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "20a97efe04b3_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/build/demo",
+    "title": "Distribution Team Demo",
+    "source": "handbook",
+    "headings": [
+      "Distribution Team Demo",
+      "Weekly Demo",
+      "Goals",
+      "Presenter",
+      "Attendees"
+    ],
+    "text": "r reproducibility\n\nRecord the demo locally and upload to YouTube Distribution Team Demos\n\nLimit distractions and keep professionalism high by muting slack and presenting in a demo conducive location\n\nFollow up on concerns raised during the demo and/or provide links to known issues identified\n\nAttendess are expected to:\n\nAsk questions - attendee participatation is encouraged, but not required\n\nDocument questions/problems that arise in the meeting notes document\n\nMute yourself while not actively participating to avoid distractions\n\nBe internal attendees from Distribution with other teams always welcome\n\nDemo sessions are recorded and uploaded to YouTube GitLab Unfiltered Distribution Demos and are publicly available.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

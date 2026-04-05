@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "cc87037d751f_0",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/rate-limit-architecture",
+    "title": "Rate Limit Architecture Working Group",
+    "source": "handbook",
+    "headings": [
+      "Rate Limit Architecture Working Group",
+      "Attributes",
+      "Summary",
+      "Context",
+      "Exit Criteria"
+    ],
+    "text": "Rate Limit Architecture Working Group\n\n#wg_rate_limit_architecture (only accessible from within the company)\n\nAgenda ( https://docs.google.com/document/d/1nv8hDLqZS16yTa4M3FtdMQNOFM4dt4OXBGCPvp-FHbM/edit# ) (only accessible from within the company)\n\nThe Rate Limit Architecture WG was active from April - December 2022.  In FY23-Q1 we regularly experienced site incidents related to a lack of rate limits on various features.  We initiated an Engineering Allocation for Rate Limiting Across DevOps Platform which performed an Rate Limiting audit for each DevOps Stage, and updated development docs and guidelines to provide clearer rate limit related guidance, and closed 70+ rate limiting issues.  This resulted in increased reliability and a major reduction in the number of rate limit related site incidents.\n\nFollowing the Engineering Allocation we initiated this Working Group to establish a forward looking vision for Rate Limiting.  The group developed a Rate Limiting Architecture Blueprint which captures this vision.  The group also collaborated to identify which GitLab stage group would own this functionality long term.  This was documented by adding the Rate Limiting Framework to the Application Performance group .  The blueprint will continue to be reviewed regularly as part of the Architecture Evolution Workflow process.\n\nAs the Working Group has accomplished it’s exit criteria we made the decision to disband the group.",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "cc87037d751f_1",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/rate-limit-architecture",
+    "title": "Rate Limit Architecture Working Group",
+    "source": "handbook",
+    "headings": [
+      "Rate Limit Architecture Working Group",
+      "Attributes",
+      "Summary",
+      "Context",
+      "Exit Criteria"
+    ],
+    "text": "long term.  This was documented by adding the Rate Limiting Framework to the Application Performance group .  The blueprint will continue to be reviewed regularly as part of the Architecture Evolution Workflow process.\n\nAs the Working Group has accomplished it’s exit criteria we made the decision to disband the group.\n\nDuring FY23-Q1 we prioritized an engineering allocation for Rate Limiting Across DevOps Platform focused on identifying and addressing denial of service (DoS) vectors via rate and application limits.  So far that effort has been successful in addressing 70+ of DoS related issues .\n\nIn addition to addressing DoS vectors to ensure high availability we have goals around:\n\nconsistent monitoring and alerting on limits\n\nconsistent, comprehensive documentation of limits\n\nsynchronization of GitLab.com limit settings with GitLab default limits\n\nCurrently there are multiple approaches to rate limiting documented in GitLab application limits development documentation .\n\nThis Working Group has the following goals:\n\nDevelop a recommendation for the preferred way to implement application rate limits within GitLab\n\nDocument this recommendation for GitLab developers in an Architecture Evolution Blueprint .\n\nDocument iterative project plan for short term, medium term, and long term rate limiting improvements\n\nDetermine organizational approach to funding effort on this work (e.g. new team, borrow, SIG, fan out, etc.)\n\nRoles and Responsibilities\n\nChristopher Lefelhocz\n\nDirector Engineering, Ops\n\nPrincipal Engineer, Verify\n\nStaff Backend Engineer, Verify",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "cc87037d751f_2",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/rate-limit-architecture",
+    "title": "Rate Limit Architecture Working Group",
+    "source": "handbook",
+    "headings": [
+      "Rate Limit Architecture Working Group",
+      "Attributes",
+      "Summary",
+      "Context",
+      "Exit Criteria"
+    ],
+    "text": "an for short term, medium term, and long term rate limiting improvements\n\nDetermine organizational approach to funding effort on this work (e.g. new team, borrow, SIG, fan out, etc.)\n\nRoles and Responsibilities\n\nChristopher Lefelhocz\n\nDirector Engineering, Ops\n\nPrincipal Engineer, Verify\n\nStaff Backend Engineer, Verify\n\nStrategy and Operations (Technical)\n\nSenior Backend Engineer, Container Registry\n\nSenior Backend Engineer, Scalability\n\nEngineering Manager, Scalability\n\nSenior Backend Engineer, Integrations\n\nSr Product Manager, Integrations\n\nArchitecture Evolution Coach\n\nDistinguished Engineer, Infrastructure",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

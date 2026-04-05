@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "91f00188b929_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/success-services/accelerator-catalog",
+    "title": "Accelerator Catalog",
+    "source": "handbook",
+    "headings": [
+      "Accelerator Catalog",
+      "What Is an Accelerator?",
+      "Accelerator Lifecycle",
+      "Available Accelerators",
+      "CI/CD"
+    ],
+    "text": "Accelerators are 12-week structured enablement programs delivered by your Customer Success Architect (CSA) , aligned to your mutual success plan and strategic goals. They are included with GitLab’s Advanced (2/year) and Signature (4/year) Success Tiers .\n\nFor the full interactive marketplace, visit the GitLab Accelerator Marketplace .\n\nWhat Is an Accelerator?\n\nAn Accelerator is a customized form of enablement that a GitLab CSA defines and delivers in partnership with your team. Each Accelerator:\n\nRuns over approximately 12 weeks\n\nIs scoped to your specific environment, goals, and maturity level\n\nFollows a four-phase lifecycle: Discovery → Design → Deliver → Measure\n\nProduces measurable outcomes tracked in a shared GitLab collaboration project\n\nCustomer Success is not permitted to be “hands on keyboard” with customers. CSAs provide best practices, architectural guidance, and tailored adoption plans. If a customer needs GitLab to actively implement or configure their environment, that work is handled by Professional Services .\n\nCustomer Success is not permitted to be “hands on keyboard” with customers. CSAs provide best practices, architectural guidance, and tailored adoption plans. If a customer needs GitLab to actively implement or configure their environment, that work is handled by Professional Services .\n\nAccelerator Lifecycle\n\nAssess current state, understand business objectives, and define desired outcomes\n\nBuild a customized enablement plan with milestones and a backlog of tracked issues\n\nExecute through workshops, hands-on sessions, and async guidance over ~10 weeks",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "91f00188b929_1",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/success-services/accelerator-catalog",
+    "title": "Accelerator Catalog",
+    "source": "handbook",
+    "headings": [
+      "Accelerator Catalog",
+      "What Is an Accelerator?",
+      "Accelerator Lifecycle",
+      "Available Accelerators",
+      "CI/CD"
+    ],
+    "text": ", that work is handled by Professional Services .\n\nAccelerator Lifecycle\n\nAssess current state, understand business objectives, and define desired outcomes\n\nBuild a customized enablement plan with milestones and a backlog of tracked issues\n\nExecute through workshops, hands-on sessions, and async guidance over ~10 weeks\n\nAssess results against defined outcomes, document impact, and plan the next Accelerator\n\nAvailable Accelerators\n\nIntroduction to CI/CD\n\nGetting-started accelerator covering GitLab CI architecture, gitlab-ci.yml basics, and common pipeline patterns for teams new to the platform\n\nRunner Fleet Guidance\n\nOptimize and manage a GitLab Runner fleet at scale through maturity assessment, informational sessions, and interactive training\n\nRules and Pipeline Flow\n\nAdvanced concepts covering pipeline flow control using rules, DAG, parent/child pipelines, and optimization methods\n\nCI Templates and Reusability\n\nCreation and use of CI templates and workflow optimization for standardized, reusable pipelines\n\nProduct Coach (CI/CD)\n\nDeep-dive consultative guidance on pipeline best practices, producing a detailed guidance report across 20+ optimization categories\n\nPipeline Template Optimization\n\n12-week program developing standardized, reusable templates tailored to your project types, languages, and compliance requirements\n\nSecurity and Compliance\n\nIntro to Security Workshop\n\n60–90 minute overview of GitLab security concepts, scanners, vulnerability dashboards, and getting-started recommendations\n\nHands-on Security Lab",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "91f00188b929_2",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/success-services/accelerator-catalog",
+    "title": "Accelerator Catalog",
+    "source": "handbook",
+    "headings": [
+      "Accelerator Catalog",
+      "What Is an Accelerator?",
+      "Accelerator Lifecycle",
+      "Available Accelerators",
+      "CI/CD"
+    ],
+    "text": "ogram developing standardized, reusable templates tailored to your project types, languages, and compliance requirements\n\nSecurity and Compliance\n\nIntro to Security Workshop\n\n60–90 minute overview of GitLab security concepts, scanners, vulnerability dashboards, and getting-started recommendations\n\nHands-on Security Lab\n\n90–120 minute interactive lab covering security scanner configuration, security policies, compliance frameworks, and vulnerability triage\n\nComprehensive 12-week program implementing security scanning, policy configuration, and vulnerability management workflows\n\nIntro to Audit, Compliance, and Separation of Duties\n\n60–90 minute workshop on audit concepts, compliance policies, and best practices for passing audits and enforcing consistency\n\nSecurity Rollout Strategy\n\nComplete plan for rolling out security and compliance features with timelines, milestones, and a tracked collaboration project backlog\n\nProduct Coach (Security)\n\nDeep-dive consultative guidance on security policies, developer workflow, and separation of duties, producing a detailed guidance report\n\nSecurity Policy Rollout Strategy\n\nMulti-quarter program guiding security policy implementation across five phases: Architecture & Design, Compliance, Audit & Enablement, Dashboards & Integration, and Scaling\n\nOverview of GitLab issue management, backlog workflows, reporting, and planning best practices\n\nJira + GitLab Workshop\n\nCustomized workshop covering integration options between Jira and GitLab, tailored to your current setup and outcomes\n\nAI and Machine Learning",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "91f00188b929_3",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/success-services/accelerator-catalog",
+    "title": "Accelerator Catalog",
+    "source": "handbook",
+    "headings": [
+      "Accelerator Catalog",
+      "What Is an Accelerator?",
+      "Accelerator Lifecycle",
+      "Available Accelerators",
+      "CI/CD"
+    ],
+    "text": "udit & Enablement, Dashboards & Integration, and Scaling\n\nOverview of GitLab issue management, backlog workflows, reporting, and planning best practices\n\nJira + GitLab Workshop\n\nCustomized workshop covering integration options between Jira and GitLab, tailored to your current setup and outcomes\n\nAI and Machine Learning\n\nBootstrap your developers on all GitLab AI/ML features with hands-on sandbox access\n\nDuo Enterprise Onboarding\n\n12-week program implementing AI-powered development tools across your organization, including customized demonstrations, guided adoption strategies, and champion network development\n\nSystem Administration\n\nDeep-dive preparation for upcoming GitLab upgrades, including a detailed upgrade plan, deprecation review, and a tracked collaboration project\n\nManaging Monorepos and Large Repositories\n\nOptimization of repository structure, Git LFS implementation, and CI/CD pipeline efficiency for oversized repositories\n\nOptimizing Platform Resiliency\n\nSecurity hardening, backup strategies, incident response planning, and policy controls to protect your GitLab platform\n\nHow to Get an Accelerator\n\nAccelerators are included with GitLab’s Advanced and Signature Success Tiers:\n\nAdvanced tier : up to 2 Accelerators per year\n\nSignature tier : up to 4 Accelerators per year\n\nVisit about.gitlab.com/services/ to learn about Success Tiers\n\nPurchase the Advanced or Signature tier\n\nWork with your assigned CSA to select and scope your first Accelerator\n\nFor the full interactive catalog, visit the GitLab Accelerator Marketplace .\n\nSuccess Tiers — tier overview and role mapping",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "91f00188b929_4",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/success-services/accelerator-catalog",
+    "title": "Accelerator Catalog",
+    "source": "handbook",
+    "headings": [
+      "Accelerator Catalog",
+      "What Is an Accelerator?",
+      "Accelerator Lifecycle",
+      "Available Accelerators",
+      "CI/CD"
+    ],
+    "text": "elerators per year\n\nVisit about.gitlab.com/services/ to learn about Success Tiers\n\nPurchase the Advanced or Signature tier\n\nWork with your assigned CSA to select and scope your first Accelerator\n\nFor the full interactive catalog, visit the GitLab Accelerator Marketplace .\n\nSuccess Tiers — tier overview and role mapping\n\nCustomer Success Architects (CSA) — the team that delivers Accelerators\n\nAccelerator Development — internal guide for CSAs building new Accelerators",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

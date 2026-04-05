@@ -1,0 +1,98 @@
+[
+  {
+    "chunk_id": "ce398b11ab74_0",
+    "url": "https://handbook.gitlab.com/handbook/upstream-studios/vision-strategy",
+    "title": "Vision and Strategy",
+    "source": "handbook",
+    "headings": [
+      "Vision and Strategy",
+      "What strategic looks like for each discipline",
+      "Product Design",
+      "UX Research",
+      "Technical Writing"
+    ],
+    "text": "This page explains what strategic positioning means for each discipline, how we’re building it through three foundational pillars, and how to partner with us effectively.\n\nWhat strategic looks like for each discipline\n\nStrategic positioning means different things for each discipline, but the core shift is the same: being upstream, where decisions get made.\n\nStrategic Product Designers are involved in Interlock planning from the start, not after direction is set. We have a strong point of view on user workflows and use that perspective to drive product decisions.\n\nSimplifying aggressively and challenging assumptions before features are built\n\nWorking as a connected team with platform-wide perspective\n\nHaving clear success criteria to advocate for quality with data\n\nRoom for experimentation and vision work, not just execution\n\nBeing positioned to say “no” or “not like this” before engineering starts\n\nStrategic UX Research validates or disproves hypotheses before teams commit to direction, not after building has started. Research drives what we build and shapes how the entire company approaches decision-making.\n\nProactive experiments designed to understand users before problems emerge\n\nWorkflows analyzed before they become issues\n\nMethodologies developed that influence company-wide processes\n\nImpact expanding across both product and brand",
+    "chunk_index": 0,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "ce398b11ab74_1",
+    "url": "https://handbook.gitlab.com/handbook/upstream-studios/vision-strategy",
+    "title": "Vision and Strategy",
+    "source": "handbook",
+    "headings": [
+      "Vision and Strategy",
+      "What strategic looks like for each discipline",
+      "Product Design",
+      "UX Research",
+      "Technical Writing"
+    ],
+    "text": "earch drives what we build and shapes how the entire company approaches decision-making.\n\nProactive experiments designed to understand users before problems emerge\n\nWorkflows analyzed before they become issues\n\nMethodologies developed that influence company-wide processes\n\nImpact expanding across both product and brand\n\nStrategic Technical Writing focuses words where they create direct product impact—guiding users exactly where and when they need it most. Technical Writers are involved in product design early enough to influence where guidance lives and how it’s delivered.\n\nExpertise shapes the product experience, not just documents it\n\nWords deployed at the beginning of the process\n\nDirect influence on product decisions through documentation clarity\n\nStrategic Design System work delivers platform-wide patterns and production code that sets the foundation everyone builds on. The team ships cross-cutting experiences that no single product team owns.\n\nExpanding capability to deliver code beyond components\n\nPlatform-wide thinking that drives standards proactively\n\nSetting strategic patterns that enable velocity and consistency\n\nStrategic Brand establishes one consistent language across web, collateral, support, education, technical docs, and product. Brand creates customer love and trust proactively, not just supporting launches already planned.\n\nExpanding visual vocabulary before campaigns require it\n\nEnforcing consistency as gatekeepers of the experience\n\nTelling stories that shape brand perception strategically\n\nHow we get there: three pillars",
+    "chunk_index": 1,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "ce398b11ab74_2",
+    "url": "https://handbook.gitlab.com/handbook/upstream-studios/vision-strategy",
+    "title": "Vision and Strategy",
+    "source": "handbook",
+    "headings": [
+      "Vision and Strategy",
+      "What strategic looks like for each discipline",
+      "Product Design",
+      "UX Research",
+      "Technical Writing"
+    ],
+    "text": "docs, and product. Brand creates customer love and trust proactively, not just supporting launches already planned.\n\nExpanding visual vocabulary before campaigns require it\n\nEnforcing consistency as gatekeepers of the experience\n\nTelling stories that shape brand perception strategically\n\nHow we get there: three pillars\n\nOur strategic positioning is built on three foundational pillars:\n\n1. Identity - being seen as strategic partners\n\nWe operate as Upstream Studios —one unified organization that sets the pace. Each discipline maintains its distinct identity and expertise, but together we represent strategic partnership.\n\nThe name matters. Strategic partners are upstream—at the source, where things begin, where ideas originate, where direction gets set. Identity shapes how others see us and how we see ourselves.\n\n2. Process & structure - operating strategically\n\nStrategic positioning requires strategic processes:\n\nWe optimize for creativity and quality through:\n\nLonger lead times that allow for exploration\n\nClearer objectives upfront\n\nWorkflows that position us at the beginning of planning\n\nClear success criteria and shared definitions of done\n\nData to advocate for quality\n\nOur structure enables strategic work through:\n\nProject-based work alongside group-level assignments\n\nStage-level collaboration for platform-wide thinking\n\nSpecialists who coach and elevate work across teams\n\nStrategic bets and investments in high-impact areas\n\n3. Experimentation and platform thinking - thinking strategically\n\nStrategic partners proactively explore, experiment, and push thinking forward:",
+    "chunk_index": 2,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "ce398b11ab74_3",
+    "url": "https://handbook.gitlab.com/handbook/upstream-studios/vision-strategy",
+    "title": "Vision and Strategy",
+    "source": "handbook",
+    "headings": [
+      "Vision and Strategy",
+      "What strategic looks like for each discipline",
+      "Product Design",
+      "UX Research",
+      "Technical Writing"
+    ],
+    "text": "l assignments\n\nStage-level collaboration for platform-wide thinking\n\nSpecialists who coach and elevate work across teams\n\nStrategic bets and investments in high-impact areas\n\n3. Experimentation and platform thinking - thinking strategically\n\nStrategic partners proactively explore, experiment, and push thinking forward:\n\nBuilding libraries of tested patterns\n\nCreating vision work for tomorrow’s users\n\nPlatform-wide thinking, not just feature-level work\n\nPsychological safety to share early, rough work\n\nCross-timezone collaboration that elevates quality before execution\n\nStrategic thinking is messy. We collaborate early with rough explorations, not late with polished work.\n\nBuilding strategic connections\n\nStrategic work requires collaboration across disciplines and geographies:\n\nDesigner-to-designer connections: Strong internal collaboration as foundation for external partnerships\n\nRegional design studios: Opportunities to work together in person\n\nCross-discipline collaboration: Research informs design, design systems enable development, documentation guides success, brand creates meaning\n\nWe’re the connective tissue across GitLab—unified by shared commitment to exceptional customer experiences.\n\nStrategic work in action\n\nExamples of strategic, upstream work:\n\nPlatform-wide Settings initiative: Cross-cutting experience improvements no single team owns\n\nNavigation redesign: Foundational information architecture work spanning the entire product\n\nDesign System expansion: Proactive pattern development that enables velocity",
+    "chunk_index": 3,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "ce398b11ab74_4",
+    "url": "https://handbook.gitlab.com/handbook/upstream-studios/vision-strategy",
+    "title": "Vision and Strategy",
+    "source": "handbook",
+    "headings": [
+      "Vision and Strategy",
+      "What strategic looks like for each discipline",
+      "Product Design",
+      "UX Research",
+      "Technical Writing"
+    ],
+    "text": "c work in action\n\nExamples of strategic, upstream work:\n\nPlatform-wide Settings initiative: Cross-cutting experience improvements no single team owns\n\nNavigation redesign: Foundational information architecture work spanning the entire product\n\nDesign System expansion: Proactive pattern development that enables velocity\n\nCross-brand research: Understanding users before launching campaigns\n\nVision work: Branch rules, merge request flows, and future-facing explorations\n\nThese aren’t tactical executions—they’re strategic initiatives that shape GitLab’s direction.\n\nHow to partner with Upstream Studios\n\nFor Product Managers:\n\nInvolve design in Interlock planning from the start\n\nDefine success criteria together before execution begins\n\nCreate space for exploration and experimentation\n\nValue the strategic POV design brings to product decisions\n\nCollaborate on technical feasibility early in the process\n\nPartner on implementation quality, not just handoffs\n\nContribute to design system patterns\n\nShare feedback on what works and what doesn’t\n\nEngage Brand on storytelling before campaigns lock\n\nLeverage research insights for audience understanding\n\nMaintain consistency through Slippers design system\n\nPartner early on visual language and narrative\n\nBring us upstream—at the beginning, not the end\n\nTrust the expertise each discipline brings\n\nCreate space for messy, early collaboration\n\nMeasure success by customer outcomes, not output volume\n\nWe’re committed to being strategic partners who:\n\nShip experiences that matter from research to production",
+    "chunk_index": 4,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "ce398b11ab74_5",
+    "url": "https://handbook.gitlab.com/handbook/upstream-studios/vision-strategy",
+    "title": "Vision and Strategy",
+    "source": "handbook",
+    "headings": [
+      "Vision and Strategy",
+      "What strategic looks like for each discipline",
+      "Product Design",
+      "UX Research",
+      "Technical Writing"
+    ],
+    "text": "age and narrative\n\nBring us upstream—at the beginning, not the end\n\nTrust the expertise each discipline brings\n\nCreate space for messy, early collaboration\n\nMeasure success by customer outcomes, not output volume\n\nWe’re committed to being strategic partners who:\n\nShip experiences that matter from research to production\n\nThink platform-wide beyond individual features\n\nCollaborate early when ideas are still rough\n\nAdvocate with data for quality and user needs\n\nMove fast while maintaining craft standards\n\nFrom research insights to production code, from brand narrative to technical documentation—we own the complete stack and deliver it upstream.\n\nHow we work : Our principles, manifesto, and approach\n\nProduct Design : Workflows and practices\n\nUX Research : Research methodologies and impact\n\nTechnical Writing : Documentation philosophy\n\nDesign System : Pajamas and platform patterns\n\nBrand : Brand strategy and Slippers design system\n\nFor GitLab team members: See our internal vision document for additional context on our strategic transformation and organizational direction.",
+    "chunk_index": 5,
+    "total_chunks": 6
+  }
+]

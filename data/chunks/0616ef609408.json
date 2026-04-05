@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "0616ef609408_0",
+    "url": "https://handbook.gitlab.com/handbook/support/support-pods/gitlab-dedicated/ssc-monthly-business-review-prep",
+    "title": "GitLab Dedicated Monthly Business Review Prep",
+    "source": "handbook",
+    "headings": [
+      "GitLab Dedicated Monthly Business Review Prep",
+      "ℹ️ Information Sources",
+      "Assembling Metrics",
+      "Counting Tenants",
+      "📅 Cutoff Period"
+    ],
+    "text": "GitLab Dedicated Monthly Business Review Prep\n\nEach month, the Support Stable Counterparts (SSCs) prepare information for use in GitLab Support’s Monthly Business Review (MBR). This handbook pages documents what steps a GitLab Dedicated SSC should take to prepare the notes for GitLab Dedicated for any given MBR. Any GitLab Dedicated SSC can lead MBR coordination.\n\nℹ️ Information Sources\n\nEach MBR must include information from these sources:\n\nEach MBR might also include information from other sources.\n\nWe report on GitLab Dedicated (Commercial) and GitLab Dedicated for Government. You will need to work with Brie or Wade to get specific data about GitLab Dedicated for Government. Those areas are noted specifically.\n\nTo ensure reproducibility, follow these steps when assembling metrics for the MBR.\n\nRefer to this spreadsheet and ensure the list is up-to-date with the tenant and ASE sources. When counting tenants, keep in mind the distinction between production, pre-production and internal tenants. When counting what percentage of tenants have an Assigned Support Engineer, we focus only on Production tenants and note that specifically in the MBR slide.\n\nEach MBR is taking a look at how things went during the last month. To make sure we count things once and only once, you’ll want to make a special note of what dates you’re looking at when you are preparing the MBR. The end of the week before the MBR is a good cutoff point .\n\nRecord the start and end dates used in the table at the bottom of this page.\n\nGitLab Dedicated (Commercial)",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "0616ef609408_1",
+    "url": "https://handbook.gitlab.com/handbook/support/support-pods/gitlab-dedicated/ssc-monthly-business-review-prep",
+    "title": "GitLab Dedicated Monthly Business Review Prep",
+    "source": "handbook",
+    "headings": [
+      "GitLab Dedicated Monthly Business Review Prep",
+      "ℹ️ Information Sources",
+      "Assembling Metrics",
+      "Counting Tenants",
+      "📅 Cutoff Period"
+    ],
+    "text": "th. To make sure we count things once and only once, you’ll want to make a special note of what dates you’re looking at when you are preparing the MBR. The end of the week before the MBR is a good cutoff point .\n\nRecord the start and end dates used in the table at the bottom of this page.\n\nGitLab Dedicated (Commercial)\n\nGitLab Dedicated SSCs have access to a Zendesk Explore dashboard that should be used to count tickets. The Custom range option should be used to gather the correct number of tickets for the specific MBR that you are preparing for.\n\nGitLab Dedicated for Government\n\nThis is a work in progress.\n\nGitLab Dedicated (Commercial)\n\nFilter the issues in the consolidated request-for-help project with Label is one of Help group::Dedicated , Help group::switchboard ( direct link )\n\nFilter the issues in the consolidated request-for-help project with Label is one of Help group::Dedicated , Help group::switchboard ( direct link )\n\nSet the Sort direction to Descending\n\nSet the Sort direction to Descending\n\nEach issue that was opened within the cutoff period should be counted.\n\nGitLab Dedicated for Government\n\nPerform the steps above using the RFH issues in the appropriate project on CompSecGov.\n\nAs of this writing, Wade and Brie are the only GitLab Dedicated SSCs who can retrieve this information. (Other members of the US Government Support team can help.)\n\nWe count the total number of pages – not the total number of incidents. (Not every incident involves the GitLab Support team.)\n\nGitLab Dedicated (Commercial)",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "0616ef609408_2",
+    "url": "https://handbook.gitlab.com/handbook/support/support-pods/gitlab-dedicated/ssc-monthly-business-review-prep",
+    "title": "GitLab Dedicated Monthly Business Review Prep",
+    "source": "handbook",
+    "headings": [
+      "GitLab Dedicated Monthly Business Review Prep",
+      "ℹ️ Information Sources",
+      "Assembling Metrics",
+      "Counting Tenants",
+      "📅 Cutoff Period"
+    ],
+    "text": "of this writing, Wade and Brie are the only GitLab Dedicated SSCs who can retrieve this information. (Other members of the US Government Support team can help.)\n\nWe count the total number of pages – not the total number of incidents. (Not every incident involves the GitLab Support team.)\n\nGitLab Dedicated (Commercial)\n\nUsing the Incident Management - GDCMOC service, count the number of Resolved Incidents within the cutoff period.\n\nGitLab Dedicated for Government\n\nUsing the Incident Management - GitLab Dedicated for US Gov CMOC service, count the number of Resolved Incidents within the cutoff period.\n\nAs of this writing, Wade and Brie are the only GitLab Dedicated SSCs who can retrieve this information. (Other members of the US Government Support team can help.)\n\nThe MBR slide typically covers:\n\nKey metrics and trends\n\nIssues, learnings & updates\n\nAreas where we need help\n\nThere’s also a table with:\n\nIn each cell, we have X (percentage increase month-over-month, last month's value of X .\n\n📜 Historical MBR Dates\n\nRecord the Start Date and End Date that you use when preparing for the MBR. The dates should be inclusive .",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

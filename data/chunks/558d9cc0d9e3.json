@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "558d9cc0d9e3_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint",
+    "title": "Technical Blueprint",
+    "source": "handbook",
+    "headings": [
+      "Technical Blueprint",
+      "Overview",
+      "Why does the Analytics Instrumentation team exist?",
+      "1. Empowering internal teams within GitLab with data-driven product insights to build a better GitLab",
+      "2. Evolving GitLab’s offerings to include usage-based services that align costs with customer value"
+    ],
+    "text": "The Technical Blueprint documents the following:\n\nThe current state of the platform.\n\nThe current understanding of the various user personas that interact with the systems and processes.\n\nCurrently known gaps, challenges, and opportunities.\n\nOur desired architecture, knowing what we know today.\n\nOur current stance on how we realize our desired architecture, i.e., our path from the current to the desired state.\n\nThis technical blueprint is intended to be living documentation of the current collective understanding of the Analytics Instrumentation team.\nThe commit history for the blueprint is intended to be used to understand how the team’s collective understanding of our scope, processes, and systems has evolved over time.\n\nWhy does the Analytics Instrumentation team exist?\n\nThe Analytics Instrumentation Group is part of the Analytics section.\nWe build product usage data collection and instrumentation tools within the GitLab product in a privacy-focused manner.\n\nOur group focuses on:\n\n1. Empowering internal teams within GitLab with data-driven product insights to build a better GitLab\n\nInsights generated from Analytics Instrumentation enable teams to identify the best places to invest people and resources, what product categories mature faster, where our user experience can be improved, and how product changes impact the business.\n\n2. Evolving GitLab’s offerings to include usage-based services that align costs with customer value",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "558d9cc0d9e3_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint",
+    "title": "Technical Blueprint",
+    "source": "handbook",
+    "headings": [
+      "Technical Blueprint",
+      "Overview",
+      "Why does the Analytics Instrumentation team exist?",
+      "1. Empowering internal teams within GitLab with data-driven product insights to build a better GitLab",
+      "2. Evolving GitLab’s offerings to include usage-based services that align costs with customer value"
+    ],
+    "text": "ics Instrumentation enable teams to identify the best places to invest people and resources, what product categories mature faster, where our user experience can be improved, and how product changes impact the business.\n\n2. Evolving GitLab’s offerings to include usage-based services that align costs with customer value\n\nThe billing events collected by the Analytics Instrumentation tooling enable GitLab to provide robust usage metering capabilities across GitLab’s product portfolio.\n\nThese are our high-level product goals:\n\n1. Ease of Instrumentation\n\nOur goal is to make instrumentation easy: we do this by building self-service tooling and infrastructure that allows product teams to add instrumentation independently with minimal friction or support requests. This means creating clear documentation, automated workflows, and intuitive APIs that reduce the time from “we need to track this” to “data is flowing!” We want instrumentation to feel effortless rather than burdensome.\n\n2. Broaden Instrumentation Support",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "558d9cc0d9e3_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint",
+    "title": "Technical Blueprint",
+    "source": "handbook",
+    "headings": [
+      "Technical Blueprint",
+      "Overview",
+      "Why does the Analytics Instrumentation team exist?",
+      "1. Empowering internal teams within GitLab with data-driven product insights to build a better GitLab",
+      "2. Evolving GitLab’s offerings to include usage-based services that align costs with customer value"
+    ],
+    "text": "ntation independently with minimal friction or support requests. This means creating clear documentation, automated workflows, and intuitive APIs that reduce the time from “we need to track this” to “data is flowing!” We want instrumentation to feel effortless rather than burdensome.\n\n2. Broaden Instrumentation Support\n\nOur goal is to enable every GitLab product team to instrument their product usage, billing events, and metrics using our tools and processes, regardless of how they are developed or deployed. We aim to provide consistent instrumentation coverage across GitLab’s entire product architecture: from our main Ruby-based monolith to all satellite services, spanning .com, self-managed, and dedicated deployments. We currently have strong instrumentation support for the main GitLab monolith, but we’re working to bridge the gap and achieve parity across all our satellite services and deployment types. No codebase should be left behind when it comes to usage tracking and data collection capabilities.\n\n3. Deepen Instrumentation Adoption\n\nWe’re working to achieve thorough, comprehensive instrumentation within our existing codebases rather than settling for superficial coverage. Some parts of our platform are well-instrumented while others have significant gaps - this creates an uneven understanding of user behavior across our product. We’re particularly focused on the GitLab monolith, which contains critical features that users rely on daily but where we often lack sufficient visibility into actual usage patterns and user journeys.",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "558d9cc0d9e3_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint",
+    "title": "Technical Blueprint",
+    "source": "handbook",
+    "headings": [
+      "Technical Blueprint",
+      "Overview",
+      "Why does the Analytics Instrumentation team exist?",
+      "1. Empowering internal teams within GitLab with data-driven product insights to build a better GitLab",
+      "2. Evolving GitLab’s offerings to include usage-based services that align costs with customer value"
+    ],
+    "text": "rumented while others have significant gaps - this creates an uneven understanding of user behavior across our product. We’re particularly focused on the GitLab monolith, which contains critical features that users rely on daily but where we often lack sufficient visibility into actual usage patterns and user journeys.\n\nWe want the Analytics Instrumentation team to be a trusted source of usage data by ensuring accuracy, reliability, and consistency in everything we collect. We’re implementing data validation, monitoring pipelines for anomalies, and maintaining strict adherence to privacy policies and legal compliance.\n\nThe data quality for the Analytics Instrumentation team is evaluated using the following principles :\n\nUniqueness and Integrity\n\nOur goal is to ensure that our collected data integrates well with internal analytics and visualization tools, supports both internal decision-making as well as in-product analytics and insights for customers, and enables teams to quickly answer questions about user behavior and product performance.",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

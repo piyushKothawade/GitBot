@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "b78213a321fe_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/data-engineering/analytics/analytics-instrumentation/infrastructure",
+    "title": "Internal Analytics Infrastructure",
+    "source": "handbook",
+    "headings": [
+      "Internal Analytics Infrastructure",
+      "Service Ping",
+      "Snowplow",
+      "Event flow in the AWS pipeline",
+      "Pseudonymization"
+    ],
+    "text": "Internal Analytics Infrastructure\n\nOur documentation provides an overview of the purpose of Service Ping.\n\nThere are five distinct systems involved in the process of gathering the Service Ping.\nThe three systems managed by the Analytics Instrumentation team are:\n\nThe GitLab instance that generates and sends the Service Ping payload\n\nversion.gitlab.com which receives and stores the Service Ping payload\n\nAn AWS S3 bucket into which version.gitlab.com extracts Service Ping payloads\n\nThe two systems managed by the Data team are:\n\nSnowflake the data warehouse which makes the Service Ping payloads accessible\n\nAirflow, which is used specifically to gather the Service Ping from GitLab.com which is the only instance that does not send the Service Ping automatically due to the volume of data.\n\nSnowplow events are fired from GitLab SaaS and other projects, such as customers.gitlab.com and the AI gateway , to go through an AWS pipeline managed by GitLab.\n\nSelf-Managed instances can be configured to report to a custom Snowplow collector if desired which will not be managed by GitLab.\n\nEvent flow in the AWS pipeline\n\nEvery event goes through a collector, enricher, and pseudonymization lambda. The event is then dumped to S3 storage where it can be picked up by the Snowflake data warehouse.\n\nDeploying and managing the infrastructure is automated using Terraform in the current Terraform repository .\n\nSee Snowplow technology 101 for Snowplow’s own documentation and an overview how collectors and enrichers work.",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "b78213a321fe_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/data-engineering/analytics/analytics-instrumentation/infrastructure",
+    "title": "Internal Analytics Infrastructure",
+    "source": "handbook",
+    "headings": [
+      "Internal Analytics Infrastructure",
+      "Service Ping",
+      "Snowplow",
+      "Event flow in the AWS pipeline",
+      "Pseudonymization"
+    ],
+    "text": "The event is then dumped to S3 storage where it can be picked up by the Snowflake data warehouse.\n\nDeploying and managing the infrastructure is automated using Terraform in the current Terraform repository .\n\nSee Snowplow technology 101 for Snowplow’s own documentation and an overview how collectors and enrichers work.\n\nIn contrast to a typical Snowplow pipeline, after enrichment, GitLab Snowplow events go through a pseudonymization service in the form of an AWS Lambda service before they are stored in S3 storage.\n\nWhy events need to be pseudonymized\n\nGitLab is bound by its obligations to community and by legal regulations to protect the privacy of its users.\n\nGitLab must provide valuable insights for business decisions, and there is a need for a better understanding of different users’ behavior patterns.\nThe pseudonymization process helps you find a compromise between these two requirements.\n\nPseudonymization processes personally identifiable information inside a Snowplow event in an irreversible fashion\nmaintaining dcheterministic output for given input, while masking any relation to that input.\n\nHow events are pseudonymized\n\nPseudonymization uses an allowlist that provides privacy by default. Therefore, each\nattribute received as part of a Snowplow event is pseudonymized unless the attribute\nis an allowed exception.\n\nPseudonymization is done using the HMAC-SHA256 keyed hash algorithm.\nAttributes are combined with a secret salt to replace each identifiable information with a pseudonym.\n\nS3 bucket data lake to Snowflake",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "b78213a321fe_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/data-engineering/analytics/analytics-instrumentation/infrastructure",
+    "title": "Internal Analytics Infrastructure",
+    "source": "handbook",
+    "headings": [
+      "Internal Analytics Infrastructure",
+      "Service Ping",
+      "Snowplow",
+      "Event flow in the AWS pipeline",
+      "Pseudonymization"
+    ],
+    "text": "each\nattribute received as part of a Snowplow event is pseudonymized unless the attribute\nis an allowed exception.\n\nPseudonymization is done using the HMAC-SHA256 keyed hash algorithm.\nAttributes are combined with a secret salt to replace each identifiable information with a pseudonym.\n\nS3 bucket data lake to Snowflake\n\nSee Data team’s Snowplow Overview for further details how data is ingested into our Snowflake data warehouse.",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

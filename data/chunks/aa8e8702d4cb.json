@@ -1,0 +1,450 @@
+[
+  {
+    "chunk_id": "aa8e8702d4cb_0",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "GitLab monthly releases\n\nSee additions and changes to the GitLab product. New releases monthly.\n\nPlans subject to change\n\nThis page outlines the expected most important planned features of upcoming releases. We often move things around, do things that are not listed, and cancel things that are listed. This is an estimate of planned features, but is not definitive.\n\nFrom intelligent coding assistants to orchestrated AI across the entire software lifecycle\n\nBYOK Iteration 1: Token authentication with GitLab AI Gateway\n\nBYOK Iteration 1: Token authentication with GitLab AI Gateway\n\nEnterprises want to use their own model subscriptions to power Duo Agent Platform features, for cost control, data residency, or existing contract leverage. BYOK Iteration 1 connects customer-owned providers through token-based authentication via GitLab AI Gateway. Weâre working to add:\n\nConnections to existing provider relationships through the AI Gateway using token authentication.\n\nConnections to existing provider relationships through the AI Gateway using token authentication.\n\nSupport for providers exposed through the AI Gateway.\n\nSupport for providers exposed through the AI Gateway.\n\nPreservation of existing contract leverage while gaining GitLab's agentic workflow layer.\n\nPreservation of existing contract leverage while gaining GitLab's agentic workflow layer.\n\nMore features to Self-Hosted Duo Agent Platform and model choice introduced in earlier releases.\n\nMore features to Self-Hosted Duo Agent Platform and model choice introduced in earlier releases.",
+    "chunk_index": 0,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_1",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "GitLab's agentic workflow layer.\n\nPreservation of existing contract leverage while gaining GitLab's agentic workflow layer.\n\nMore features to Self-Hosted Duo Agent Platform and model choice introduced in earlier releases.\n\nMore features to Self-Hosted Duo Agent Platform and model choice introduced in earlier releases.\n\nAI-powered false positive detection for secret scanning\n\nAI-powered false positive detection for secret scanning\n\nSecurity teams spend significant time triaging secret detection findings that turn out to be test credentials or dummy values. AI-powered false positive detection analyzes findings before developers see them, identifying test credentials, example values, and placeholder secrets with clear explanations and confidence scores. This detection is separate from SAST false positive detection. This capability is being built to:\n\nProactively identify false positives before they reach developer workflows\n\nProactively identify false positives before they reach developer workflows\n\nProvide clear explanations and confidence scoring for each determination\n\nProvide clear explanations and confidence scoring for each determination\n\nSupport bulk dismiss for validated false positives\n\nSupport bulk dismiss for validated false positives\n\nTrack precision and recall metrics to continuously improve detection accuracy\n\nTrack precision and recall metrics to continuously improve detection accuracy\n\nWeb and upload in GitLab Duo Chat (Agentic)\n\nWeb and upload in GitLab Duo Chat (Agentic)",
+    "chunk_index": 1,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_2",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "ated false positives\n\nSupport bulk dismiss for validated false positives\n\nTrack precision and recall metrics to continuously improve detection accuracy\n\nTrack precision and recall metrics to continuously improve detection accuracy\n\nWeb and upload in GitLab Duo Chat (Agentic)\n\nWeb and upload in GitLab Duo Chat (Agentic)\n\nGitLab Duo Chat (Agentic) will support file uploads and web content as first-class context, so agents can reason over documentation, logs, specs, and other artifacts alongside repository data. This expansion is intended to:\n\nMove DAP from repo-only reasoning to cross-source troubleshooting, planning, and analysis.\n\nMove DAP from repo-only reasoning to cross-source troubleshooting, planning, and analysis.\n\nLet teams share logs, specs, and documentation directly into agent conversations.\n\nLet teams share logs, specs, and documentation directly into agent conversations.\n\nSupport richer context for agentic workflows like root-cause analysis and incident triage.\n\nSupport richer context for agentic workflows like root-cause analysis and incident triage.\n\nReduce context-switching between external documents and GitLab.\n\nReduce context-switching between external documents and GitLab.\n\nAgentic bulk vulnerability resolution\n\nAgentic bulk vulnerability resolution",
+    "chunk_index": 2,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_3",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "and incident triage.\n\nSupport richer context for agentic workflows like root-cause analysis and incident triage.\n\nReduce context-switching between external documents and GitLab.\n\nReduce context-switching between external documents and GitLab.\n\nAgentic bulk vulnerability resolution\n\nAgentic bulk vulnerability resolution\n\nWhen the same vulnerability pattern appears across a codebase, creating individual merge requests for each instance creates review fatigue and slows remediation. Building on the per-vulnerability SAST resolution flow, this extension will intelligently group related findings by shared root causes and generate consolidated merge requests. Weâre planning to include:\n\nPattern recognition to identify similar vulnerabilities across codebases.\n\nPattern recognition to identify similar vulnerabilities across codebases.\n\nIntelligent grouping of findings by root cause or remediation strategy.\n\nIntelligent grouping of findings by root cause or remediation strategy.\n\nSingle consolidated MRs that address multiple related findings.\n\nSingle consolidated MRs that address multiple related findings.\n\nVisual clustering in the merge request interface for clear review context.\n\nVisual clustering in the merge request interface for clear review context.\n\nUnified DevOps & Security\n\nFrom bolt-on security and fragmented toolchains to integrated, context-aware DevSecOps\n\nVulnerability management across contexts (non-default branch tracking)\n\nVulnerability management across contexts (non-default branch tracking)",
+    "chunk_index": 3,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_4",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "ring in the merge request interface for clear review context.\n\nUnified DevOps & Security\n\nFrom bolt-on security and fragmented toolchains to integrated, context-aware DevSecOps\n\nVulnerability management across contexts (non-default branch tracking)\n\nVulnerability management across contexts (non-default branch tracking)\n\nToday, GitLab only tracks vulnerabilities on the default branch, meaning organizations releasing from long-lived branches have zero visibility into security posture for code running in production. Non-default branch tracking is a top Security Insights request and a documented adoption blocker. Hereâs what we are working on:\n\nConfiguration of which branches are tracked for vulnerability management beyond the default branch.\n\nConfiguration of which branches are tracked for vulnerability management beyond the default branch.\n\nLocal scoping of vulnerability state changes to each branch with an option for global changes.\n\nLocal scoping of vulnerability state changes to each branch with an option for global changes.\n\nBranch-aware filtering on the vulnerability report for release-specific security posture views.\n\nBranch-aware filtering on the vulnerability report for release-specific security posture views.\n\nVulnerability management activity on tracked non-default branches as on default.\n\nVulnerability management activity on tracked non-default branches as on default.\n\nSecurity dashboard attribute filters\n\nSecurity dashboard attribute filters",
+    "chunk_index": 4,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_5",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "ltering on the vulnerability report for release-specific security posture views.\n\nVulnerability management activity on tracked non-default branches as on default.\n\nVulnerability management activity on tracked non-default branches as on default.\n\nSecurity dashboard attribute filters\n\nSecurity dashboard attribute filters\n\nThe business-context security attributes introduced earlier need to be filterable on the Security Dashboard itself. Security managers will be able to filter dashboards by business impact, application, business unit, and more. We are planning to:\n\nAdd security attribute filters on the Security Dashboard building on context filtering.\n\nAdd security attribute filters on the Security Dashboard building on context filtering.\n\nIntegrate with existing Report Type and Project filters for combined views.\n\nIntegrate with existing Report Type and Project filters for combined views.\n\nLet compliance teams pull scoped reports and engineering leads focus on their domain.\n\nLet compliance teams pull scoped reports and engineering leads focus on their domain.\n\nAdd a foundation for vulnerability report attribute filtering in subsequent iterations.\n\nAdd a foundation for vulnerability report attribute filtering in subsequent iterations.\n\nJob inputs for manual pipeline jobs\n\nJob inputs for manual pipeline jobs",
+    "chunk_index": 5,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_6",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "ams pull scoped reports and engineering leads focus on their domain.\n\nAdd a foundation for vulnerability report attribute filtering in subsequent iterations.\n\nAdd a foundation for vulnerability report attribute filtering in subsequent iterations.\n\nJob inputs for manual pipeline jobs\n\nJob inputs for manual pipeline jobs\n\nCI/CD inputs exist today for pipeline-level configuration, but developers still cannot set parameters for individual manual jobs within pipelines, forcing expensive full pipeline re-runs for simple parameter changes. Job-level inputs will bring dynamic parameter setting to manual jobs when parameters change during execution. This capability is being built to:\n\nAllow individual job parameter configuration without full pipeline re-runs.\n\nAllow individual job parameter configuration without full pipeline re-runs.\n\nSupport dynamic inputs based on earlier job outputs or external conditions.\n\nSupport dynamic inputs based on earlier job outputs or external conditions.\n\nReduce deployment errors from parameter mismatches.\n\nReduce deployment errors from parameter mismatches.\n\nProvide an easy migration from other tools without needing Jenkins for enterprise CI/CD consolidation.\n\nProvide an easy migration from other tools without needing Jenkins for enterprise CI/CD consolidation.\n\nSecurity Dashboard and SBOM across contexts\n\nSecurity Dashboard and SBOM across contexts\n\nExtending non-default branch tracking to the Security Dashboard and SBOM means vulnerability trends, dependency lists, and SBOM exports all become branch-aware. This extension is intended for:",
+    "chunk_index": 6,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_7",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "for enterprise CI/CD consolidation.\n\nSecurity Dashboard and SBOM across contexts\n\nSecurity Dashboard and SBOM across contexts\n\nExtending non-default branch tracking to the Security Dashboard and SBOM means vulnerability trends, dependency lists, and SBOM exports all become branch-aware. This extension is intended for:\n\nMaking vulnerability trends and SBOM exports branch-aware for organizations with long-lived release branches.\n\nMaking vulnerability trends and SBOM exports branch-aware for organizations with long-lived release branches.\n\nSupporting CycloneDX, JSON, and SPDX export formats scoped to specific branches.\n\nSupporting CycloneDX, JSON, and SPDX export formats scoped to specific branches.\n\nTracking local vs. global vulnerability state changes with branch-scoped detection timestamps.\n\nTracking local vs. global vulnerability state changes with branch-scoped detection timestamps.\n\nKEV/EPSS filter in MR approval policies\n\nKEV/EPSS filter in MR approval policies\n\nCVSS severity alone does not tell you whether a vulnerability is actively exploited or likely to be. Adding Known Exploited Vulnerabilities (KEV) and Exploit Prediction Scoring System (EPSS) as filter criteria in MR approval policies shifts enforcement from theoretical severity to real-world exploitability. This filter is being created to:\n\nAdd KEV and EPSS as filter options in MR approval policies.\n\nAdd KEV and EPSS as filter options in MR approval policies.\n\nSupport policies like \"block merge if any dependency has a known exploit.\n\nSupport policies like \"block merge if any dependency has a known exploit.",
+    "chunk_index": 7,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_8",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "exploitability. This filter is being created to:\n\nAdd KEV and EPSS as filter options in MR approval policies.\n\nAdd KEV and EPSS as filter options in MR approval policies.\n\nSupport policies like \"block merge if any dependency has a known exploit.\n\nSupport policies like \"block merge if any dependency has a known exploit.\n\nIntegrate with Dependency and Container scanning results.\n\nIntegrate with Dependency and Container scanning results.\n\nFocus on enforcement of findings that pose actual risk rather than theoretical severity.\n\nFocus on enforcement of findings that pose actual risk rather than theoretical severity.\n\nOne of GitLab's most requested features and a documented blocker for organizations migrating. Epics are currently group-level only, forcing teams to create unnecessary subgroups or misuse milestones. Project-level Epics are being enhanced to:\n\nMake Epics available at the project level for Premium tier.\n\nMake Epics available at the project level for Premium tier.\n\nSupport roadmap, board, and view availability within project context.\n\nSupport roadmap, board, and view availability within project context.\n\nRemove the need for subgroup workarounds to group issues within a project.\n\nRemove the need for subgroup workarounds to group issues within a project.\n\nAddress the needs of customers wanting to migrate, by providing project-scoped planning.\n\nAddress the needs of customers wanting to migrate, by providing project-scoped planning.\n\nNative CODEOWNERS reviewer auto-assignment\n\nNative CODEOWNERS reviewer auto-assignment",
+    "chunk_index": 8,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_9",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "bgroup workarounds to group issues within a project.\n\nAddress the needs of customers wanting to migrate, by providing project-scoped planning.\n\nAddress the needs of customers wanting to migrate, by providing project-scoped planning.\n\nNative CODEOWNERS reviewer auto-assignment\n\nNative CODEOWNERS reviewer auto-assignment\n\nGitLab wants to bring automated CODEOWNERS assignments to address manual steps for each MR by reducing bottlenecks for developers and lowering risk with review selection. This feature is being made to:\n\nAutomatically assign reviewers based on CODEOWNERS patterns matched against MR changed files.\n\nAutomatically assign reviewers based on CODEOWNERS patterns matched against MR changed files.\n\nSupport both group and individual user assignments.\n\nSupport both group and individual user assignments.\n\nPreserve manual override with audit trail for automatic vs. manual assignments.\n\nPreserve manual override with audit trail for automatic vs. manual assignments.\n\nLay the foundation for DAP-powered intelligent reviewer selection that considers expertise and availability.\n\nLay the foundation for DAP-powered intelligent reviewer selection that considers expertise and availability.\n\nMany teams hesitate to adopt work item features (custom statuses, custom fields, work item types) that are only available through GraphQL. The REST API removes this adoption blocker for integrations, automation scripts, and tools that rely on REST. This API is being created to:\n\nWrap existing work item Finders and Services with GraphQL-exposed operations.",
+    "chunk_index": 9,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_10",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "m features (custom statuses, custom fields, work item types) that are only available through GraphQL. The REST API removes this adoption blocker for integrations, automation scripts, and tools that rely on REST. This API is being created to:\n\nWrap existing work item Finders and Services with GraphQL-exposed operations.\n\nWrap existing work item Finders and Services with GraphQL-exposed operations.\n\nUnblock adoption of custom statuses, fields, and types for REST-dependent teams.\n\nUnblock adoption of custom statuses, fields, and types for REST-dependent teams.\n\nProvide a consistent interface for automation and third-party integrations.\n\nProvide a consistent interface for automation and third-party integrations.\n\nRemove a blocker for teams evaluating GitLab for project management.\n\nRemove a blocker for teams evaluating GitLab for project management.\n\nWiki contextual discussions\n\nWiki contextual discussions\n\nWiki discussions happen away from relevant content, reducing effectiveness and increasing context switching. Inline contextual commenting will tie threaded discussions directly to highlighted text, keeping conversations connected to the content they reference. We're working on:\n\nInline commenting on highlighted wiki content.\n\nInline commenting on highlighted wiki content.\n\nThreaded discussions tied to specific text selections.\n\nThreaded discussions tied to specific text selections.\n\nDiscussion visibility indicators on wiki pages.\n\nDiscussion visibility indicators on wiki pages.\n\nExisting wiki permission model integration.\n\nExisting wiki permission model integration.",
+    "chunk_index": 10,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_11",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "ighted wiki content.\n\nThreaded discussions tied to specific text selections.\n\nThreaded discussions tied to specific text selections.\n\nDiscussion visibility indicators on wiki pages.\n\nDiscussion visibility indicators on wiki pages.\n\nExisting wiki permission model integration.\n\nExisting wiki permission model integration.\n\nMaven Virtual Registry GA and npm Virtual Registry\n\nMaven Virtual Registry GA and npm Virtual Registry\n\nMaven graduates to GA while npm enters beta, covering the two highest-volume enterprise artifact ecosystems. Docker Virtual Registry also targets GA in this timeframe. By mid-year, GitLab will have virtual registries at GA for Maven, Docker, and npm. These registries are being made to:\n\nBring Maven to production readiness with allow/deny filtering, lifecycle policies, Geo support, and analytics.\n\nBring Maven to production readiness with allow/deny filtering, lifecycle policies, Geo support, and analytics.\n\nExtend the virtual registry architecture to npm for JavaScript/Node.js teams, targeting GA after beta.\n\nExtend the virtual registry architecture to npm for JavaScript/Node.js teams, targeting GA after beta.\n\nMove Docker Virtual Registry from experiment to GA, completing the container image solution.\n\nMove Docker Virtual Registry from experiment to GA, completing the container image solution.",
+    "chunk_index": 11,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_12",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "ms, targeting GA after beta.\n\nExtend the virtual registry architecture to npm for JavaScript/Node.js teams, targeting GA after beta.\n\nMove Docker Virtual Registry from experiment to GA, completing the container image solution.\n\nMove Docker Virtual Registry from experiment to GA, completing the container image solution.\n\nDORA metrics (deployment frequency, lead time for changes, change failure rate, time to restore service) are the industry standard for measuring software delivery performance. Complete maturity for the API means full feature parity for programmatic consumption. This milestone is meant to include:\n\nAPI coverage for all four DORA metrics.\n\nAPI coverage for all four DORA metrics.\n\nSupport for dashboards, executive reporting, and automated alerting without relying on the GitLab UI.\n\nSupport for dashboards, executive reporting, and automated alerting without relying on the GitLab UI.\n\nEnhanced CI/CD job metrics and analytics improvements from earlier releases.\n\nEnhanced CI/CD job metrics and analytics improvements from earlier releases.\n\nSecurity attribute filtering on vulnerability reports\n\nSecurity attribute filtering on vulnerability reports\n\nThe security attributes story that started on the Security Dashboard reaches the vulnerability report. Teams will be able to filter vulnerabilities by application, business unit, or team directly on the report, bookmark filtered URLs, and share filtered views. This filter is being developed for:\n\nAdding business context filtering on the group-level vulnerability report.",
+    "chunk_index": 12,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_13",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "curity Dashboard reaches the vulnerability report. Teams will be able to filter vulnerabilities by application, business unit, or team directly on the report, bookmark filtered URLs, and share filtered views. This filter is being developed for:\n\nAdding business context filtering on the group-level vulnerability report.\n\nAdding business context filtering on the group-level vulnerability report.\n\nSupporting URL bookmarking for filtered views.\n\nSupporting URL bookmarking for filtered views.\n\nCompleting the business-context filtering loop from dashboard to report.\n\nCompleting the business-context filtering loop from dashboard to report.\n\nBuilding on security attributes and dashboard attribute filters.\n\nBuilding on security attributes and dashboard attribute filters.\n\nAuto-remediation with automatic dependency bumping\n\nAuto-remediation with automatic dependency bumping\n\nExpanding from lower severity vulnerabilities, auto-remediation will support configurable severity levels and version targets. We are working on:\n\nTargets for configurable severity levels from LOW through CRITICAL.\n\nTargets for configurable severity levels from LOW through CRITICAL.\n\nSupporting version target selection (MAJOR, MINOR, PATCH).\n\nSupporting version target selection (MAJOR, MINOR, PATCH).\n\nOffering grouped or individual MR options for dependency bumps.\n\nOffering grouped or individual MR options for dependency bumps.\n\nIncluding UI indicators highlighting auto-remediated vulnerabilities.\n\nIncluding UI indicators highlighting auto-remediated vulnerabilities.\n\nEnablement-only SAST profile",
+    "chunk_index": 13,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_14",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "OR, MINOR, PATCH).\n\nOffering grouped or individual MR options for dependency bumps.\n\nOffering grouped or individual MR options for dependency bumps.\n\nIncluding UI indicators highlighting auto-remediated vulnerabilities.\n\nIncluding UI indicators highlighting auto-remediated vulnerabilities.\n\nEnablement-only SAST profile\n\nEnablement-only SAST profile\n\nSAST remains foundational to application security, but CI/CD configuration requirements create adoption barriers. The SAST scan profile will let security managers deploy static analysis across projects through Security Inventory, with automatic language detection and Advanced SAST for supported languages on Ultimate. This profile is designed to:\n\nAuto-detect project languages and appropriate analyzers.\n\nAuto-detect project languages and appropriate analyzers.\n\nAutomatically apply Advanced SAST for supported languages.\n\nAutomatically apply Advanced SAST for supported languages.\n\nSupport group-level management through Security Configuration and Inventory.\n\nSupport group-level management through Security Configuration and Inventory.\n\nFollow the same interaction patterns established by secret push protection profiles.\n\nFollow the same interaction patterns established by secret push protection profiles.\n\nEnablement-only secret push protection profile\n\nEnablement-only secret push protection profile",
+    "chunk_index": 14,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_15",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "gement through Security Configuration and Inventory.\n\nFollow the same interaction patterns established by secret push protection profiles.\n\nFollow the same interaction patterns established by secret push protection profiles.\n\nEnablement-only secret push protection profile\n\nEnablement-only secret push protection profile\n\nSecurity managers need to deploy secret push protection at scale without manual project-by-project configuration. Scan configuration profiles will introduce bulk enablement through Security Inventory, protecting projects without requiring YAML changes or developer intervention. This profile is being created to:\n\nProvide bulk protection across projects through the Security Inventory interface.\n\nProvide bulk protection across projects through the Security Inventory interface.\n\nHave a zero-YAML, profile-based approach that is consistent with other scan profiles.\n\nHave a zero-YAML, profile-based approach that is consistent with other scan profiles.\n\nProvide project-level control for teams experiencing edge cases.\n\nProvide project-level control for teams experiencing edge cases.\n\nEstablish a foundation pattern for additional scan profile types.\n\nEstablish a foundation pattern for additional scan profile types.\n\nEnablement-only secret detection pipeline profile\n\nEnablement-only secret detection pipeline profile",
+    "chunk_index": 15,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_16",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "encing edge cases.\n\nProvide project-level control for teams experiencing edge cases.\n\nEstablish a foundation pattern for additional scan profile types.\n\nEstablish a foundation pattern for additional scan profile types.\n\nEnablement-only secret detection pipeline profile\n\nEnablement-only secret detection pipeline profile\n\nWhile secret push protection blocks commits in real-time, pipeline scanning provides complementary coverage by detecting secrets in repository history and pipeline artifacts. This profile will let security managers apply broad secret detection using the same profile-based approach, creating defense-in-depth without configuration overhead. We are building this profile to:\n\nScan historical repositories for previously committed secrets.\n\nScan historical repositories for previously committed secrets.\n\nCover pipeline artifacts for exposed credentials.\n\nCover pipeline artifacts for exposed credentials.\n\nProvide complementary coverage alongside secret push protection.\n\nProvide complementary coverage alongside secret push protection.\n\nSupport staggered rollout to help prevent infrastructure overload.\n\nSupport staggered rollout to help prevent infrastructure overload.\n\nEnablement-only dependency scanning profile\n\nEnablement-only dependency scanning profile\n\nCompleting the scan configuration profiles family, the dependency scanning profile will let security teams apply dependency scanning across projects without requiring developers to edit CI configs. We are working to create this profile for:\n\nDependency scanning across projects through Security Inventory.",
+    "chunk_index": 16,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_17",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "nning profile\n\nCompleting the scan configuration profiles family, the dependency scanning profile will let security teams apply dependency scanning across projects without requiring developers to edit CI configs. We are working to create this profile for:\n\nDependency scanning across projects through Security Inventory.\n\nDependency scanning across projects through Security Inventory.\n\nKeeping the same zero-YAML, profile-based enablement approach as secret detection and SAST profiles.\n\nKeeping the same zero-YAML, profile-based enablement approach as secret detection and SAST profiles.\n\nReducing configuration overhead for teams adopting comprehensive security scanning.\n\nReducing configuration overhead for teams adopting comprehensive security scanning.\n\nCustom rules for secret detection\n\nCustom rules for secret detection\n\nOrganizations with proprietary credential formats need the ability to define their own secret patterns beyond GitLab's built-in rules. Custom rules will let security teams add organization-specific patterns that are automatically enforced during secret detection. This capability is being designed to:\n\nAllow organizations to define custom secret patterns for proprietary credential formats.\n\nAllow organizations to define custom secret patterns for proprietary credential formats.\n\nEnforce custom rules alongside built-in detection rules automatically.\n\nEnforce custom rules alongside built-in detection rules automatically.\n\nCatch organization-specific leaks that generic pattern-based rules miss.",
+    "chunk_index": 17,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_18",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "ial formats.\n\nAllow organizations to define custom secret patterns for proprietary credential formats.\n\nEnforce custom rules alongside built-in detection rules automatically.\n\nEnforce custom rules alongside built-in detection rules automatically.\n\nCatch organization-specific leaks that generic pattern-based rules miss.\n\nCatch organization-specific leaks that generic pattern-based rules miss.\n\nExtend secret detection coverage to match organizational security requirements.\n\nExtend secret detection coverage to match organizational security requirements.\n\nAutomated vulnerability severity customization policy\n\nAutomated vulnerability severity customization policy\n\nDefault vulnerability severities don't always reflect organizational risk priorities. Security teams will be able to automate severity overrides based on rules including KEV/EPSS, CVSS, reachability, CVE, CWE, and scan type, mapping risk to business needs while automating triage processes that previously required manual intervention. This policy is meant to:\n\nAutomate severity adjustments using KEV, EPSS, CVSS, and reachability signals.\n\nAutomate severity adjustments using KEV, EPSS, CVSS, and reachability signals.\n\nQuickly process new vulnerabilities matching policy conditions.\n\nQuickly process new vulnerabilities matching policy conditions.\n\nReduce critical/high vulnerability noise through intelligent prioritization.\n\nReduce critical/high vulnerability noise through intelligent prioritization.\n\nProvide an audit trail of policy-driven severity changes for compliance visibility.",
+    "chunk_index": 18,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_19",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "cy conditions.\n\nQuickly process new vulnerabilities matching policy conditions.\n\nReduce critical/high vulnerability noise through intelligent prioritization.\n\nReduce critical/high vulnerability noise through intelligent prioritization.\n\nProvide an audit trail of policy-driven severity changes for compliance visibility.\n\nProvide an audit trail of policy-driven severity changes for compliance visibility.\n\nSecurity Manager role\n\nSecurity Manager role\n\nSecurity teams currently need Developer or Maintainer access to use vulnerability management features, granting far more permissions than necessary. The Security Manager role inherits from Reporter and adds security-specific permissions. This role is being made to help:\n\nProvide vulnerability management, dashboards, policies, and compliance feature access without over-privileging.\n\nProvide vulnerability management, dashboards, policies, and compliance feature access without over-privileging.\n\nIntroduce a non-hierarchical role that breaks the linear Guest-to-Owner inheritance model.\n\nIntroduce a non-hierarchical role that breaks the linear Guest-to-Owner inheritance model.\n\nSupport promotion on the invite members page for easy assignment.\n\nSupport promotion on the invite members page for easy assignment.\n\nLicense scanning for Dart/Flutter projects\n\nLicense scanning for Dart/Flutter projects",
+    "chunk_index": 19,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_20",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "model.\n\nIntroduce a non-hierarchical role that breaks the linear Guest-to-Owner inheritance model.\n\nSupport promotion on the invite members page for easy assignment.\n\nSupport promotion on the invite members page for easy assignment.\n\nLicense scanning for Dart/Flutter projects\n\nLicense scanning for Dart/Flutter projects\n\nDart and Flutter license information currently displays as UNKNOWN, forcing teams to use external tools for license compliance. License scanning support for the pub package manager fills this gap for the growing Flutter ecosystem. Weâre working on:\n\nCreating an ingestion of license data for the pub package manager.\n\nCreating an ingestion of license data for the pub package manager.\n\nRemoving UNKNOWN license status with accurate visibility.\n\nRemoving UNKNOWN license status with accurate visibility.\n\nSupporting policy enforcement for Dart/Flutter license compliance.\n\nSupporting policy enforcement for Dart/Flutter license compliance.\n\nReducing reliance on external license data sources.\n\nReducing reliance on external license data sources.\n\nGeneric password detection with contextual indicators\n\nGeneric password detection with contextual indicators\n\nPattern-based secret detection misses generic passwords like admin_password=Password123! that lack recognizable formats. Context-aware detection identifies generic passwords by analyzing surrounding code patterns and variable naming conventions, extending current secret detection coverage. Currently in the pipeline is:\n\nContext-aware filtering to reduce false negatives for generic passwords.",
+    "chunk_index": 20,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_21",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "d=Password123! that lack recognizable formats. Context-aware detection identifies generic passwords by analyzing surrounding code patterns and variable naming conventions, extending current secret detection coverage. Currently in the pipeline is:\n\nContext-aware filtering to reduce false negatives for generic passwords.\n\nContext-aware filtering to reduce false negatives for generic passwords.\n\nDetection of passwords assigned to common credential variable patterns.\n\nDetection of passwords assigned to common credential variable patterns.\n\nExtended coverage beyond format-specific secret types.\n\nExtended coverage beyond format-specific secret types.\n\nReduced exposure risk from inadvertently committed credentials.\n\nReduced exposure risk from inadvertently committed credentials.\n\nMalicious package detection in dependency scanning\n\nMalicious package detection in dependency scanning\n\nSupply chain attacks through malicious packages pose immediate risk: unlike CVEs that may exist dormant for months, a malicious package causes harm the moment it is ingested. GitLab is exploring surfacing malicious packages directly in dependency scanning results to help teams identify and respond to active threats. We're exploring:\n\nCritical severity flagging for malicious packages with clear \"MAL-\" identifiers for immediate recognition.\n\nCritical severity flagging for malicious packages with clear \"MAL-\" identifiers for immediate recognition.\n\nDetection of credential theft, data exfiltration, botnet, and database corruption attack vectors.",
+    "chunk_index": 21,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_22",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "ring:\n\nCritical severity flagging for malicious packages with clear \"MAL-\" identifiers for immediate recognition.\n\nCritical severity flagging for malicious packages with clear \"MAL-\" identifiers for immediate recognition.\n\nDetection of credential theft, data exfiltration, botnet, and database corruption attack vectors.\n\nDetection of credential theft, data exfiltration, botnet, and database corruption attack vectors.\n\nIntegration with vulnerability reports and dependency lists for unified security visibility.\n\nIntegration with vulnerability reports and dependency lists for unified security visibility.\n\nPolicy support for automatic blocking of malicious packages in merge requests.\n\nPolicy support for automatic blocking of malicious packages in merge requests.\n\nIncremental scanning for Advanced SAST\n\nIncremental scanning for Advanced SAST\n\nAdvanced SAST analysis in large repositories can exceed pipeline job time limits. Incremental scanning will cache results from previous scans and only analyze changed code, significantly reducing scan time while producing accurate results. This is a separate performance initiative from Advanced SAST's backwards slicing work. This optimization is meant to:\n\nCache results from computationally expensive analysis tasks.\n\nCache results from computationally expensive analysis tasks.\n\nReduce scan time for repositories with incremental changes.\n\nReduce scan time for repositories with incremental changes.\n\nProduce accurate results equivalent to non-incremental scans.\n\nProduce accurate results equivalent to non-incremental scans.",
+    "chunk_index": 22,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_23",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "sis tasks.\n\nCache results from computationally expensive analysis tasks.\n\nReduce scan time for repositories with incremental changes.\n\nReduce scan time for repositories with incremental changes.\n\nProduce accurate results equivalent to non-incremental scans.\n\nProduce accurate results equivalent to non-incremental scans.\n\nSupport large repository adoption of Advanced SAST.\n\nSupport large repository adoption of Advanced SAST.\n\nPDF export for security dashboard\n\nPDF export for security dashboard\n\nSecurity dashboards need exportable formats for stakeholder communication and compliance documentation. PDF export will replicate dashboard panels with applied filters and group-by configurations for offline sharing and archival. This export is being created to:\n\nCover vulnerability counts, trends, risk scores, and age metrics.\n\nCover vulnerability counts, trends, risk scores, and age metrics.\n\nHonor applied filters and group-by configurations at export time.\n\nHonor applied filters and group-by configurations at export time.\n\nInclude table of contents and explanatory content for each module.\n\nInclude table of contents and explanatory content for each module.\n\nProduce an email-ready format for stakeholder distribution.\n\nProduce an email-ready format for stakeholder distribution.\n\nSLSA verification and container image signing\n\nSLSA verification and container image signing",
+    "chunk_index": 23,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_24",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "explanatory content for each module.\n\nInclude table of contents and explanatory content for each module.\n\nProduce an email-ready format for stakeholder distribution.\n\nProduce an email-ready format for stakeholder distribution.\n\nSLSA verification and container image signing\n\nSLSA verification and container image signing\n\nOrganizations need to prove the provenance and integrity of their artifacts across the supply chain. Attestation APIs, UI integration, and GitLab CLI (glab) commands for verification will validate artifacts, while container image signing and verification extends this to the container ecosystem. We are working to:\n\nProvide attestations API for consumer lookup and verification.\n\nProvide attestations API for consumer lookup and verification.\n\nIntegrate UI linking attestations to builds with project-level views.\n\nIntegrate UI linking attestations to builds with project-level views.\n\nSupport container image signing and verification for supply chain integrity.\n\nSupport container image signing and verification for supply chain integrity.\n\nOffer GitLab CLI (glab) attestation verification for command-line workflows.\n\nOffer GitLab CLI (glab) attestation verification for command-line workflows.\n\nGranular permissions for Personal Access Tokens\n\nGranular permissions for Personal Access Tokens\n\nBroad PAT scopes like read_api and api create excessive blast radius if tokens are compromised. Fine-grained permissions will scope tokens to specific resources and operations, restricted to specific projects and groups. We are working on:",
+    "chunk_index": 24,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_25",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "ons for Personal Access Tokens\n\nGranular permissions for Personal Access Tokens\n\nBroad PAT scopes like read_api and api create excessive blast radius if tokens are compromised. Fine-grained permissions will scope tokens to specific resources and operations, restricted to specific projects and groups. We are working on:\n\nReplacing broad scope categories with resource-specific permissions.\n\nReplacing broad scope categories with resource-specific permissions.\n\nRestricting token boundaries to specific projects and groups.\n\nRestricting token boundaries to specific projects and groups.\n\nEnforcement across REST and GraphQL APIs with documented permission requirements.\n\nEnforcement across REST and GraphQL APIs with documented permission requirements.\n\nProviding credential inventory visibility for applied permissions.\n\nProviding credential inventory visibility for applied permissions.\n\nGitLab Secrets Manager\n\nGitLab Secrets Manager\n\nTeams using CI variables for secrets lack proper lifecycle management, rotation reminders, and granular access control. GitLab Secrets Manager will provide purpose-built secrets storage with expiration management, environment/branch scoping, and role-based permissions. This manager is being expanded to:\n\nSupport secret creation with expiration and environment/branch scoping.\n\nSupport secret creation with expiration and environment/branch scoping.\n\nProvide rotation reminders for proactive credential management.\n\nProvide rotation reminders for proactive credential management.\n\nOffer granular CRUD permissions at project and group level.",
+    "chunk_index": 25,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_26",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "creation with expiration and environment/branch scoping.\n\nSupport secret creation with expiration and environment/branch scoping.\n\nProvide rotation reminders for proactive credential management.\n\nProvide rotation reminders for proactive credential management.\n\nOffer granular CRUD permissions at project and group level.\n\nOffer granular CRUD permissions at project and group level.\n\nReduce reliance on third-party secrets managers for CI workflows.\n\nReduce reliance on third-party secrets managers for CI workflows.\n\nSecurity policy integration with security attributes\n\nSecurity policy integration with security attributes\n\nThe security attributes introduced for tagging and filtering will extend into the policy engine. Security teams will be able to write policies that reference custom security attributes for fine-grained governance rules. Hereâs what we are working on:\n\nConnecting security policies to business-context attributes like business impact, application, and business unit.\n\nConnecting security policies to business-context attributes like business impact, application, and business unit.\n\nSupporting targeted policy enforcement scoped to specific asset classifications.\n\nSupporting targeted policy enforcement scoped to specific asset classifications.\n\nValidating policy-attribute combinations through initial testing.\n\nValidating policy-attribute combinations through initial testing.\n\nScheduled Pipeline Execution Policies\n\nScheduled Pipeline Execution Policies",
+    "chunk_index": 26,
+    "total_chunks": 28
+  },
+  {
+    "chunk_id": "aa8e8702d4cb_27",
+    "url": "https://about.gitlab.com/direction",
+    "title": "What's new",
+    "source": "direction",
+    "headings": [
+      "What's new",
+      "GitLab monthly releases",
+      "Upcoming",
+      "Agentic Core",
+      "From intelligent coding assistants to orchestrated AI across the entire software lifecycle"
+    ],
+    "text": "fic asset classifications.\n\nSupporting targeted policy enforcement scoped to specific asset classifications.\n\nValidating policy-attribute combinations through initial testing.\n\nValidating policy-attribute combinations through initial testing.\n\nScheduled Pipeline Execution Policies\n\nScheduled Pipeline Execution Policies\n\nSecurity teams will be able to enforce scheduled scans (nightly DAST, weekly dependency scanning) via policy, ensuring continuous compliance without developer action. This policy is intended to:\n\nEnforce scheduled security scans via policy without requiring developer pipeline configuration.\n\nEnforce scheduled security scans via policy without requiring developer pipeline configuration.\n\nProvide continuous compliance coverage for security-critical scan types.\n\nProvide continuous compliance coverage for security-critical scan types.\n\nEnsure organizations maintain scanning cadence regardless of development activity.\n\nEnsure organizations maintain scanning cadence regardless of development activity.\n\nBuild on test-run validation capabilities for confidence before production rollout.\n\nBuild on test-run validation capabilities for confidence before production rollout.\n\nStay updated with new releases",
+    "chunk_index": 27,
+    "total_chunks": 28
+  }
+]

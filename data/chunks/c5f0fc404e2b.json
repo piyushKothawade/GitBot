@@ -1,0 +1,322 @@
+[
+  {
+    "chunk_id": "c5f0fc404e2b_0",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "Security Review Framework\n\nSecurity Review Framework\n\n[!WARNING]\nThis process is in DRAFT and is subject to change. For security review requests, please use the AppSec review process .\n\n[!WARNING]\nThis process is in DRAFT and is subject to change. For security review requests, please use the AppSec review process .\n\nThis security review framework empowers GitLab Product teams with a streamlined approach to security evaluations, making it easier to engage with\nthe right security partners based on your feature’s needs, risk profile, and Go-to-market tier .\nDesigned to maintain your development velocity while ensuring appropriate security coverage, the framework begins with a simple\nteam routing process that connects you directly with the most relevant security experts—whether that’s Secure Design and Development or Infrastructure Security with additional specialized support from Security Platforms and Architecture (SPA) and Data Security teams for features\nwith High or Critical risk scores. This focused approach ensures you receive timely, targeted security guidance without unnecessary process overhead.\n\nThe security review framework is designed to work in tandem with the Product Development Flow .\nThe ideal trigger point for a security review of a feature is during the Design phase\n( Validation phase 4: Design indicated in\nissue by workflow::design label).\nThe key-participants involved in Design phase are encouraged\nto engage with the security review framework to determine whether the feature requires a security review.\n\nEnd to End Security review of a feature",
+    "chunk_index": 0,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_1",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "a feature is during the Design phase\n( Validation phase 4: Design indicated in\nissue by workflow::design label).\nThe key-participants involved in Design phase are encouraged\nto engage with the security review framework to determine whether the feature requires a security review.\n\nEnd to End Security review of a feature\n\nAs a Product Designer, you want to make sure the design of the new feature has taken into consideration all the security best practices.\n\nAs a Developer creating a potential design for implementing the new feature, you like to confirm whether it will lead to loss of\nconfidentiality and integrity of the customer data or have a negative impact on the availability of GitLab instance.\n\nAs an Engineering manager reviewing the new design of a feature, you suspect a design choice might result in a security issue and would like to\nverify it with the security team.\n\nAs an Product Manager, working on the a GTM Tier-0 feature,\nyou want to make sure the feature does not introduce any security risks to customers.\n\nFollowing type of requests are out of scope of SRF\n\nAd-hoc MR review requests (unless the feature is already reviewed by SRF)\n\nGeneral application security questions\n\nHow the security review framework fits into a product teams’ workflows is visualized in the following\nsection.\n\nIdentify which GitLab features needs a security review from the Product Security teams.\n\nWhich type of security review is needed, from the Product Security teams.\n\nWhich Product Security team(s) needs to be engaged for the security review.",
+    "chunk_index": 1,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_2",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "rk fits into a product teams’ workflows is visualized in the following\nsection.\n\nIdentify which GitLab features needs a security review from the Product Security teams.\n\nWhich type of security review is needed, from the Product Security teams.\n\nWhich Product Security team(s) needs to be engaged for the security review.\n\nWhich deliverables Product and Engineering can expect from the various reviews types of security reviews.\n\nTeam Responsibilities\n\nSecure Design and Development\n\nCode vulnerabilities, threat modeling, developer education, authentication, authorization, input validation\n\nSensitive data handling, auth changes, new technologies, third-party integrations, customer-facing features\n\nInfrastructure Security\n\nInfrastructure configurations, network security, deployment, cloud security, container orchestration, infrastructure-as-code\n\nNew infrastructure, deployment changes, network modifications, cloud provider configuration, container security\n\nData access controls, data infrastructure, data lifecycle, cryptography, key management, third-party services\n\nEngage on any high-risk or complex change involving our focus areas. If unsure, tag us or reach out and ask in #security-datasec\n\nSystem design, data flows, architectural patterns, trust boundaries, component interactions",
+    "chunk_index": 2,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_3",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "controls, data infrastructure, data lifecycle, cryptography, key management, third-party services\n\nEngage on any high-risk or complex change involving our focus areas. If unsure, tag us or reach out and ask in #security-datasec\n\nSystem design, data flows, architectural patterns, trust boundaries, component interactions\n\nEscalated reviews from InfraSec and SD&D Team in case of: - Major architectural changes that systematically impact how we develop, build, deploy or run our product (e.g., Dedicated, Cells, Runway) - Significant modifications to Authentication/Authorization at application or infrastructure level - Changes to build/distribution practices that substantially impact the software supply chain - Architectural changes for features that are fundamental to annual business goals\n\n1: Security Team Routing\n\nThe first step is to determine which security team(s) should be engaged for the security review of the feature. This routing happens before the\ndetailed risk assessment to ensure teams only answer questions relevant to their domain.\n\nInitial Triage Questions\n\nWhen a product team initiates a feature , they complete an initial triage to determine team routing:\n\nSecure Design and Development Triggers\n\nDoes this feature handle customer repositories, credentials, PII data? (Y/N)\n\nDoes this feature add or modify any core mechanisms related to authentication, authorization or cryptography? (Y/N)\n\nDoes this feature interact with third-party services? (Y/N)\n\nDoes this feature add a new service component ? (Y/N)",
+    "chunk_index": 3,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_4",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "Triggers\n\nDoes this feature handle customer repositories, credentials, PII data? (Y/N)\n\nDoes this feature add or modify any core mechanisms related to authentication, authorization or cryptography? (Y/N)\n\nDoes this feature interact with third-party services? (Y/N)\n\nDoes this feature add a new service component ? (Y/N)\n\nDoes this change have an indirect impact on core mechanisms related to authentication, authorization or cryptography ? (Y/N)\n\nInfrastructure Security Triggers\n\nDoes this feature require new cloud infrastructure components? (Y/N)\n\nDoes this feature modify containerization or orchestration configurations? (Y/N)\n\nDoes this feature change network architecture or security groups? (Y/N)\n\nDoes this feature alter infrastructure-as-code implementations? (Y/N)\n\nDoes this feature modify production deployment processes? (Y/N)\n\nDoes this feature introduce any new data stores (e.g. cloud storage bucket, database, cache)? (Y/N)\n\nDoes this feature modify secrets management or credential handling ? (Y/N)\n\nBased on the responses to these triage questions, the system routes the review to the appropriate team(s):\n\nMultiple teams may be engaged for complex features that have triggers across multiple domains.\n\n2: Team-Specific Risk Assessment Models\n\nAfter identifying which team(s) need to be engaged, each engaged team conducts their domain-specific risk assessment to determine review depth.\n\nSecure Design and Development Risk Dimensions\n\nData Processing Impact\n\nLevel of sensitive data access or processing\n\nHow widely accessible the feature is",
+    "chunk_index": 4,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_5",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "sk Assessment Models\n\nAfter identifying which team(s) need to be engaged, each engaged team conducts their domain-specific risk assessment to determine review depth.\n\nSecure Design and Development Risk Dimensions\n\nData Processing Impact\n\nLevel of sensitive data access or processing\n\nHow widely accessible the feature is\n\nDegree of changes to the system architecture\n\nImplementation Complexity\n\nTechnical complexity of the implementation\n\nLaunch tier indicates what kind of announcements will be accompanied with the feature launch\n\nWhether this feature was involved in past security issues\n\nInfrastructure Security Risk Dimensions\n\nBreadth of infrastructure affected\n\nEnvironment Criticality\n\nCriticality of affected environments\n\nConfiguration Complexity\n\nComplexity of infrastructure changes\n\nLevel of infrastructure automation\n\nLaunch tier indicates what kind of announcements will be accompanied with the feature launch\n\nDetailed Scoring Criteria\n\nSecure Design and Development Risk Dimensions\n\n4: Direct access/modification to customer repositories, credentials, PII data.\n\n3: Processes untrusted data, even if it is coming from a trusted component\n\n2: Access to metadata about projects/pipelines\n\n1: No sensitive data access or display-only features\n\n5: Public-facing API or web interface accessible without authentication\n\n4: Features available to all authenticated users\n\n3: Features behind proper role permissions but widely used\n\n2: Admin-only features or limited to specific user roles\n\n1: Internal tooling not exposed to customers",
+    "chunk_index": 5,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_6",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "a access or display-only features\n\n5: Public-facing API or web interface accessible without authentication\n\n4: Features available to all authenticated users\n\n3: Features behind proper role permissions but widely used\n\n2: Admin-only features or limited to specific user roles\n\n1: Internal tooling not exposed to customers\n\n4: Changes to core authentication, authorization, or system architecture\n\n3: New service (GitLab or third-party) integrations that are outside the trust boundary of the current application\n\n2: Feature additions within the trust boundary of the current application.\n\n1: UI changes with no backend implications\n\n3: New feature implementation\n\n2: Enhancements to an existing feature\n\nNote: Launch tier is different from GitLab tiers (Free/Premium/Ultimate). Launch tier indicates what kind of events/announcements will be accompanied\nwith the feature launch. Definitions can be found in this Google Sheet (Internal).\n\nNote: A combination of ~\"group::[group-name]\" , ~\"severity::1/2/3\" and ~\"bug::vulnerability\" labels can be used to search in\nproject’s issue tracker to identify this.\n\nInfrastructure Security Risk Dimensions\n\n5: Affects production infrastructure that is used by multiple product offerings\n\n4: Affects production infrastructure that is used by one product offering\n\n3: Affects parts of the production infrastructure of one product offering that have minimal customer impact\n\n2: Affects non-production infrastructure that other systems depend on (e.g. automated testing environments)",
+    "chunk_index": 6,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_7",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "multiple product offerings\n\n4: Affects production infrastructure that is used by one product offering\n\n3: Affects parts of the production infrastructure of one product offering that have minimal customer impact\n\n2: Affects non-production infrastructure that other systems depend on (e.g. automated testing environments)\n\n1: Affects non-production infrastructure that no other systems depend on (e.g. sandbox environments)\n\n5: Production environment component with customer data\n\n4: Production environment component without direct customer data\n\n3: Pre-production/staging environment\n\n2: Testing environment\n\n1: Development environment only\n\n4: Complex infrastructure-as-code with multiple services\n\n3: Moderate infrastructure changes with some dependencies\n\n2: Simple infrastructure changes\n\n1: Configuration file changes only\n\n3: Manual infrastructure changes required\n\n2: Partially automated infrastructure changes\n\n1: Fully automated infrastructure-as-code implementation\n\nNote: Launch tier is different from GitLab tiers (Free/Premium/Ultimate). Launch tier indicates what kind of events/announcements will be\naccompanied with the feature launch. Definitions can be found in this Google Sheet .\n\nRisk Score Calculation\n\nEach engaged team calculates their risk score using their domain-specific dimensions:\n\nEach team categorizes risk based on their domain-specific score:\n\nSecure Design and Development\n\nScore ≥ 15: Critical Risk\n\nScore 12-14: High Risk\n\nScore 8-11: Medium Risk\n\nSecurity review process for each risk level is detailed in Secure Design and Development Review Process section.",
+    "chunk_index": 7,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_8",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "their domain-specific dimensions:\n\nEach team categorizes risk based on their domain-specific score:\n\nSecure Design and Development\n\nScore ≥ 15: Critical Risk\n\nScore 12-14: High Risk\n\nScore 8-11: Medium Risk\n\nSecurity review process for each risk level is detailed in Secure Design and Development Review Process section.\n\nInfrastructure Security\n\nScore ≥ 15: Critical Risk\n\nScore 12-14: High Risk\n\nScore 8-11: Medium Risk\n\nSecurity review process for each risk level is detailed in Infrastructure Security Review Process section.\n\nSecurity Review Priority\n\nPriority of a Security review is determined by taking into account roadmap priority of the feature ( Interlock Priority::P1 , Interlock Priority::P2 , Interlock Priority::P3 ) and the feature risk score\n\n(Risk score) Critical\n\n(Roadmap priority) P1\n\nSPA and Data Security team engagement criteria\n\nFor Secure Design and Development Review\n\nThe feature is flagged for a Architecture review and/or Data Security review if there is a major Architecture Impact or Data Processing Impact identified during the Risk score calculation.\n\nWhen feature are flagged for SPA or Data Security review it will be indicated by a label that is added to the review request.\n\n3: Review Process by Team and Risk Level\n\nSecure Design and Development Review Process\n\nSDX Reviews DRI: SD&D Team\n\nData Security Review DRI: Data Security team. This review is will be conducted on a best effort basis since the team has resource constraints.",
+    "chunk_index": 8,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_9",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "be indicated by a label that is added to the review request.\n\n3: Review Process by Team and Risk Level\n\nSecure Design and Development Review Process\n\nSDX Reviews DRI: SD&D Team\n\nData Security Review DRI: Data Security team. This review is will be conducted on a best effort basis since the team has resource constraints.\n\nSPA Security Review DRI: SPA team. This review is will be conducted on a best effort basis since the team has resource constraints.\n\n[!WARNING]\nThe steps listed in the SDX Design review, SDX Code review, SDX Verify are subject to change based on the out come of https://gitlab.com/groups/gitlab-com/gl-security/product-security/appsec/-/epics/75 .\n\n[!WARNING]\nThe steps listed in the SDX Design review, SDX Code review, SDX Verify are subject to change based on the out come of https://gitlab.com/groups/gitlab-com/gl-security/product-security/appsec/-/epics/75 .\n\nThreat modeling DRI: SD&D Deliverable: Threat model with design level security assessment and identified threats.\n\nDeliverable: Threat model with design level security assessment and identified threats.\n\nFeature Design Review DRI: SD&D Deliverable: Design will be verified against best practices and recommendations will be provided.\n\nDeliverable: Design will be verified against best practices and recommendations will be provided.\n\nSPA review ( IF Architecture Impact >= 4 ) DRI: SPA Deliverable: System design, data flows, architectural patterns, trust boundaries, component interactions will be verified aganist best practices and recommendations will be provided.",
+    "chunk_index": 9,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_10",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "Design will be verified against best practices and recommendations will be provided.\n\nSPA review ( IF Architecture Impact >= 4 ) DRI: SPA Deliverable: System design, data flows, architectural patterns, trust boundaries, component interactions will be verified aganist best practices and recommendations will be provided.\n\nDeliverable: System design, data flows, architectural patterns, trust boundaries, component interactions will be verified aganist best practices and recommendations will be provided.\n\nData Security review ( IF Data Processing Impact >= 4 ) DRI: Data Security Deliverable: Data access controls, data infrastructure, data lifecycle, cryptography, key management, third-party services will be verified aganist best practices and recommendations will be provided.\n\nDeliverable: Data access controls, data infrastructure, data lifecycle, cryptography, key management, third-party services will be verified aganist best practices and recommendations will be provided.\n\nMerge request review DRI: SD&D Deliverable: MR will be reviewed for implementation level security issue.\n\nDeliverable: MR will be reviewed for implementation level security issue.\n\nVerify adherence to Secure Coding Guidelines DRI: SD&D Deliverable: MR will be reviewed to check if Secure Coding Guidelines is followed.\n\nDeliverable: MR will be reviewed to check if Secure Coding Guidelines is followed.\n\nStatic analysis DRI: SD&D Deliverable: SD&D will run Software composition analysis using Dependency scanning , Container Scanning tools and SAST tools .",
+    "chunk_index": 10,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_11",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "Deliverable: MR will be reviewed to check if Secure Coding Guidelines is followed.\n\nDeliverable: MR will be reviewed to check if Secure Coding Guidelines is followed.\n\nStatic analysis DRI: SD&D Deliverable: SD&D will run Software composition analysis using Dependency scanning , Container Scanning tools and SAST tools .\n\nDeliverable: SD&D will run Software composition analysis using Dependency scanning , Container Scanning tools and SAST tools .\n\nDynamic Analysis DRI: SD&D Deliverable: SD&D will run Dynamic Analysis using DAST tools\n\nDeliverable: SD&D will run Dynamic Analysis using DAST tools\n\nPenetration Testing DRI: SD&D Deliverable: SD&D will run a pen-testing and share identified issues.\n\nDeliverable: SD&D will run a pen-testing and share identified issues.\n\nCheck discovered issues DRI: SD&D Deliverable: Check whether critical vulnerabilities identified in other reviews are remediated.\n\nDeliverable: Check whether critical vulnerabilities identified in other reviews are remediated.\n\nChange focused Threat modeling DRI: SD&D Deliverable: Threat model with design level security assessment and identified threats.\n\nDeliverable: Threat model with design level security assessment and identified threats.\n\nChange focused Design Review DRI: SD&D Deliverable: Design will be verified against best practices and recommendations will be provided.\n\nDeliverable: Design will be verified against best practices and recommendations will be provided.",
+    "chunk_index": 11,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_12",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "verable: Threat model with design level security assessment and identified threats.\n\nChange focused Design Review DRI: SD&D Deliverable: Design will be verified against best practices and recommendations will be provided.\n\nDeliverable: Design will be verified against best practices and recommendations will be provided.\n\nSPA review ( IF Architecture Impact >= 4 ) DRI: SPA Deliverable: System design, data flows, architectural patterns, trust boundaries, component interactions will be verified aganist best practices and recommendations will be provided.\n\nDeliverable: System design, data flows, architectural patterns, trust boundaries, component interactions will be verified aganist best practices and recommendations will be provided.\n\nData Security review ( IF Data Processing Impact >= 4 ) DRI: Data Security Deliverable: Data access controls, data infrastructure, data life cycle, cryptography, key management, third-party services will be verified aganist best practices and recommendations will be provided.\n\nDeliverable: Data access controls, data infrastructure, data life cycle, cryptography, key management, third-party services will be verified aganist best practices and recommendations will be provided.\n\nMerge request review DRI: SD&D Deliverable: MR will be reviewed for implementation level security issue.\n\nDeliverable: MR will be reviewed for implementation level security issue.\n\nVerify adherence to Secure Coding Guidelines DRI: SD&D Deliverable: MR will be reviewed to check if Secure Coding Guidelines is followed.",
+    "chunk_index": 12,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_13",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "Merge request review DRI: SD&D Deliverable: MR will be reviewed for implementation level security issue.\n\nDeliverable: MR will be reviewed for implementation level security issue.\n\nVerify adherence to Secure Coding Guidelines DRI: SD&D Deliverable: MR will be reviewed to check if Secure Coding Guidelines is followed.\n\nDeliverable: MR will be reviewed to check if Secure Coding Guidelines is followed.\n\nStatic analysis DRI: SD&D Deliverable: SD&D will run Software composition analysis using Dependency scanning , Container Scanning tools and SAST tools.\n\nDeliverable: SD&D will run Software composition analysis using Dependency scanning , Container Scanning tools and SAST tools.\n\nDynamic Analysis DRI: SD&D Deliverable: SD&D will run Dynamic Analysis using DAST tools\n\nDeliverable: SD&D will run Dynamic Analysis using DAST tools\n\nPenetration Testing DRI: SD&D Deliverable: SD&D will run a pen-testing and share identified issues.\n\nDeliverable: SD&D will run a pen-testing and share identified issues.\n\nCheck discovered issues DRI: SD&D Deliverable: Check whether critical vulnerabilities identified in other reviews are remediated.\n\nDeliverable: Check whether critical vulnerabilities identified in other reviews are remediated.\n\nDeliverable: Check whether Security Standards are met. Check if Secure Coding Guidelines is followed.\n\nCheck whether Security Standards are met.\n\nCheck if Secure Coding Guidelines is followed.",
+    "chunk_index": 13,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_14",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "other reviews are remediated.\n\nDeliverable: Check whether critical vulnerabilities identified in other reviews are remediated.\n\nDeliverable: Check whether Security Standards are met. Check if Secure Coding Guidelines is followed.\n\nCheck whether Security Standards are met.\n\nCheck if Secure Coding Guidelines is followed.\n\nDeliverable: Remediate issues identified in Software composition analysis using Dependency scanning , Container Scanning Remediate issues identified by SAST tools are enabled. Remediate issues identified in Dynamic Analysis using tools like DAST tools\n\nRemediate issues identified in Software composition analysis using Dependency scanning , Container Scanning\n\nRemediate issues identified by SAST tools are enabled.\n\nRemediate issues identified in Dynamic Analysis using tools like DAST tools\n\nDeliverable: Check whether Security Standards are met. Check if Secure Coding Guidelines is followed.\n\nCheck whether Security Standards are met.\n\nCheck if Secure Coding Guidelines is followed.\n\nDeliverable: Remediate issues identified in Software composition analysis using Dependency scanning , Container Scanning Remediate issues identified by SAST tools are enabled. Remediate issues identified in Dynamic Analysis using tools like DAST tools\n\nRemediate issues identified in Software composition analysis using Dependency scanning , Container Scanning\n\nRemediate issues identified by SAST tools are enabled.\n\nRemediate issues identified in Dynamic Analysis using tools like DAST tools\n\nThese are initial estimates and are subjected to change as we adopt the framework.",
+    "chunk_index": 14,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_15",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "diate issues identified in Software composition analysis using Dependency scanning , Container Scanning\n\nRemediate issues identified by SAST tools are enabled.\n\nRemediate issues identified in Dynamic Analysis using tools like DAST tools\n\nThese are initial estimates and are subjected to change as we adopt the framework.\n\nNote: Low risk level is not mentioned here since Product team is the DRI for those reviews.\n\nSDX Code Review (May extend based on number of MRs)\n\nSecurity checklist completion\n\nHow early the review needs to be submitted ?\n\nReview requests received at least 10 calendar days before the next milestone starts will be scoped for next milestone.\n\nRequests received later than 10 days before the next milestone starts will be scoped for milestone+2.\n\nThe SLO will start from the date on which the planned milestone starts.\n\nInfrastructure Security Review Process\n\nNote: The list of reviews mentioned in this section are examples and not comprehensive nor do they always apply.\n\nInfraSec Reviews DRI: InfraSec Team\n\nData Security Review DRI: Data Security team. This review is will be conducted on a best effort basis since the team has resource constraints.\n\nSPA Security Review DRI: SPA team. This review is will be conducted on a best effort basis since the team has resource constraints.\n\nJoint architectural and infrastructure review\n\nComprehensive infrastructure security review\n\nCloud configuration audit\n\nNetwork security analysis\n\nContainer security review\n\nInfrastructure-as-code security analysis\n\nMultiple security engineers involved\n\nPost-implementation validation",
+    "chunk_index": 15,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_16",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "the team has resource constraints.\n\nJoint architectural and infrastructure review\n\nComprehensive infrastructure security review\n\nCloud configuration audit\n\nNetwork security analysis\n\nContainer security review\n\nInfrastructure-as-code security analysis\n\nMultiple security engineers involved\n\nPost-implementation validation\n\nTimeline: TBD (could span across multiple milestones since there could be gap between design and implementation of feature)\n\nJoint architectural review\n\nFocused infrastructure review\n\nKey configuration validation\n\nSecurity group analysis\n\nSecurity architect and infrastructure security engineer collaboration\n\nTimeline: TBD (could span across multiple milestones since there could be gap between design and implementation of feature)\n\nInfrastructure security checklist completion\n\nConfiguration validation of key components\n\nTimeline: 3-5 business days\n\nSelf-assessment against infrastructure security guidelines\n\nAutomated configuration checking using GitLab IaC scanning or Checkov\n\nThe Security Review Framework (SRF) is in a dry-run phase and has not been rolled out yet, so the exception workflow is currently not applicable. After the SRF is rolled out and before security reviews become mandatory for feature releases, an appropriate exception workflow will be added to the SRF to cover situations such as releasing features without completing the necessary security reviews.\n\nSecurity Review Phase 1: Initial Triage",
+    "chunk_index": 16,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_17",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "s currently not applicable. After the SRF is rolled out and before security reviews become mandatory for feature releases, an appropriate exception workflow will be added to the SRF to cover situations such as releasing features without completing the necessary security reviews.\n\nSecurity Review Phase 1: Initial Triage\n\nThe security review process begins with a product team requesting a security review for a feature. The ideal time for requesting a review would be during the design phase , when the design is ready (For any AppSec or InfraSec questions before design phase, please follow Contacting us and Working With Us respectively). This is done by adding a label SecurityReview::Requested to a feature issue or epic ( ~\"type::feature\" ).\n\nProdSec automation will then add the initial triage questionnaire\nto this feature issue, ping the review initiator for completion, and add the label initial-triage:pending-answers . The initial triage questionnaire is a set of Yes/No questions to determine whether this feature needs a review from Secure Design and Development (SD&D, SPA) or InfraSec.\n\nOnce the phase 1 questionnaire is completed, the review initiator removes the initial-triage:pending-answers label.\n\nSecurity Review Phase 2: Determine Risk Score",
+    "chunk_index": 17,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_18",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "iage questionnaire is a set of Yes/No questions to determine whether this feature needs a review from Secure Design and Development (SD&D, SPA) or InfraSec.\n\nOnce the phase 1 questionnaire is completed, the review initiator removes the initial-triage:pending-answers label.\n\nSecurity Review Phase 2: Determine Risk Score\n\nThe ProdSec automation will then run the Team Routing Logic to decide which teams need to perform the security review of the feature and add their\ncorresponding Risk Dimensions questionnaire to the feature issue. Review initiator is pinged  for completing the questions and the label risk-dimension:pending-answers is added to the issue as well.\n\nWhen the questionnaire is completed, the review initiator removes the risk-dimension:pending-answers label.\n\nThe ProdSec automation will then calculate the Risk Score, which determines the review type and recommended timeline. A Security Review request issue is then opened by ProdSec\nautomation in the ProdSec ingestion queue.\n\nThe Security Review request issue in the ProdSec ingestion queue will contain the following details and the ProdSec ingestion triage process can\nredirect the request to the team members.\n\nInitial triage questionnaire and its answers\n\nSecure Design and Development Risk Dimensions questionnaire and its answers\n\nInfrastructure Security Risk Dimensions and its answers (if applicable)\n\nSecure Design and Development risk score\n\nInfrastructure Security risk score (if applicable)\n\nRecommended Security review type\n\nRecommended Security review teams (SD&D, SPA, InfraSec)",
+    "chunk_index": 18,
+    "total_chunks": 20
+  },
+  {
+    "chunk_id": "c5f0fc404e2b_19",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-review-framework",
+    "title": "Security Review Framework",
+    "source": "handbook",
+    "headings": [
+      "Security Review Framework",
+      "Security Review Framework",
+      "Scope of SRF",
+      "Overall Process flow",
+      "Framework purpose"
+    ],
+    "text": "and Development Risk Dimensions questionnaire and its answers\n\nInfrastructure Security Risk Dimensions and its answers (if applicable)\n\nSecure Design and Development risk score\n\nInfrastructure Security risk score (if applicable)\n\nRecommended Security review type\n\nRecommended Security review teams (SD&D, SPA, InfraSec)\n\nSecurity Review Phase 3: Conduct Security Review\n\nBased on the risk score the ProdSec conducts Critical, High or Medium level Security review.",
+    "chunk_index": 19,
+    "total_chunks": 20
+  }
+]

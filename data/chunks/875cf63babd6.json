@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "875cf63babd6_0",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/services/helpdesk",
+    "title": "CorpSec Helpdesk",
+    "source": "handbook",
+    "headings": [
+      "CorpSec Helpdesk",
+      "Need Help?",
+      "Overview",
+      "Support Hours",
+      "Holiday Schedule"
+    ],
+    "text": "Visit the Corporate Security Support and/or Corporate Security Systems handbook page to get help.\n\nThis page provides the “what” and links to the services that we provide and our internal processes. The support page provides the “how” that you will find helpful.\n\nWe have 24x5 coverage provided by Helpdesk Support Analysts that can help you with access requests, account lockouts, authentication issues, laptop hardware, laptop software configuration problems, 1:1 training for unfamiliar technologies, and triage problems for any Corporate Security Systems .\n\nIdentity and Access Management Access Requests Account Password and 2FA Resets Career Mobility (Mover) and Role Changes Provisioning External Collaborators (Customers, Partners, Vendors) Onboarding (Joiner) Provisioning (Baseline Entitlements) and User Support Offboarding (Leaver) Deprovisioning Service Accounts Temporary Service Providers\n\nAccount Password and 2FA Resets\n\nCareer Mobility (Mover) and Role Changes Provisioning\n\nExternal Collaborators (Customers, Partners, Vendors)\n\nOnboarding (Joiner) Provisioning (Baseline Entitlements) and User Support\n\nOffboarding (Leaver) Deprovisioning\n\nTemporary Service Providers\n\nInfrastructure Management AWS GCP\n\nLaptops and Logistics\n\nTech Support for Team Members\n\nPlease ask for assistance in the #it_help Slack channel.\n\nFor systems not managed by Corporate Security, you can locate the owner in the tech stack . If you’re not sure where to ask, please ask in #it_help and we will redirect you to the right person or place.",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "875cf63babd6_1",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/services/helpdesk",
+    "title": "CorpSec Helpdesk",
+    "source": "handbook",
+    "headings": [
+      "CorpSec Helpdesk",
+      "Need Help?",
+      "Overview",
+      "Support Hours",
+      "Holiday Schedule"
+    ],
+    "text": "GCP\n\nLaptops and Logistics\n\nTech Support for Team Members\n\nPlease ask for assistance in the #it_help Slack channel.\n\nFor systems not managed by Corporate Security, you can locate the owner in the tech stack . If you’re not sure where to ask, please ask in #it_help and we will redirect you to the right person or place.\n\nWe provide support 24x5 to support standard working hours for our team members during the work week from Sunday 22:00 UTC to Friday 23:59 UTC. We do not provide support coverage on weekends.\n\nIn the event of an emergency or urgent request, #it_help is still the fastest and best place to ask.\n\nCourtesy Reminder: Our team members have scheduled on-call shifts, so we kindly ask that you ask in the channel and not send Slack direct messages to specific individuals (unless it’s for a sensitive matter) . There is no need to tag any group or person in the #it_help channel since your request will be responded to by the first available person .\n\n2024-12-25 (Wednesday)\n\n2025-01-01 (Wednesday)\n\nProjects/Provisioning Hours\n\nSteve Ladgrove Australia Eastern (UTC+10)\n\n22:00 to 06:00 UTC 3:00pm to 11:00pm PT\n\n22:00 to 06:00 UTC 3:00pm to 11:00pm PT\n\nMaximillian Hirata Japan (UTC+9)\n\n23:00 to 07:00 UTC 4:00pm to 12:00am PT\n\n23:00 to 07:00 UTC 4:00pm to 12:00am PT\n\nBruno Ferreira Ireland (UTC+1) 07:00 to 11:00 UTC 11:00pm to 3:00am PT 11:00 to 15:00 UTC 3:00am to 8:00am PT\n\n07:00 to 11:00 UTC 11:00pm to 3:00am PT\n\n11:00 to 15:00 UTC 3:00am to 8:00am PT\n\nEoghan Dunne Ireland (UTC+1)\n\n11:00 to 16:00 UTC 3:00am to 9:00am PT\n\n08:00 to 11:00 UTC 12:00am to 3:00am PT",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "875cf63babd6_2",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/services/helpdesk",
+    "title": "CorpSec Helpdesk",
+    "source": "handbook",
+    "headings": [
+      "CorpSec Helpdesk",
+      "Need Help?",
+      "Overview",
+      "Support Hours",
+      "Holiday Schedule"
+    ],
+    "text": "0pm to 12:00am PT\n\nBruno Ferreira Ireland (UTC+1) 07:00 to 11:00 UTC 11:00pm to 3:00am PT 11:00 to 15:00 UTC 3:00am to 8:00am PT\n\n07:00 to 11:00 UTC 11:00pm to 3:00am PT\n\n11:00 to 15:00 UTC 3:00am to 8:00am PT\n\nEoghan Dunne Ireland (UTC+1)\n\n11:00 to 16:00 UTC 3:00am to 9:00am PT\n\n08:00 to 11:00 UTC 12:00am to 3:00am PT\n\nAlex Krusiec AMER Pacific/Mountain (UTC-7)\n\n15:00 to 19:00 UTC 8:00am to 12:00pm PT\n\n19:00 to 23:00 UTC 12:00pm to 4:00pm PT\n\nMic Rohr AMER Central (UTC-5)\n\n16:00 to 21:00 UTC 5:00am to 10:00am PT\n\n21:00 to 23:59 UTC 10:00am to 1:00pm PT\n\nJenny Wong AMER Pacific (UTC-7)\n\n16:00 to 19:00 UTC 9:00am to 12:00pm PT\n\n19:00 to 23:59 UTC 12:00pm to 5:00pm PT\n\nJeff Ford AMER Pacific/Mountain (UTC-7)\n\n17:00 to 22:00 UTC 10:00am to 3:00pm PT\n\n22:00 to 01:00 UTC 3:00pm to 6:00pm PT",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

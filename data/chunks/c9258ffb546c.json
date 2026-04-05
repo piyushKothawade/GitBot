@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "c9258ffb546c_0",
+    "url": "https://handbook.gitlab.com/handbook/support/support-pods/kubernetes",
+    "title": "Kubernetes Support Pod",
+    "source": "handbook",
+    "headings": [
+      "Kubernetes Support Pod",
+      "Purpose",
+      "Current Objectives",
+      "Support Pod Members",
+      "Collaboration Channels"
+    ],
+    "text": "Kubernetes Support Pod\n\nA Support Pod for all things Kubernetes related: k8s, openshift, kas, agent, runner agent, k8s executor, CN Hybrid ref arch, helm, etc.\n\nCollaborate on tickets\n\nGain and share knowledge\n\nImprove documentation\n\nIdenify bugs, produce issues and MRs\n\nAssist in updating relevant Support Training modules\n\nServe as a resource for the greater Support team\n\nInfluence product based on our experiences\n\nDevelop tooling to aid in testing, troubleshooting, analysis, and learning\n\nExperiment with various deployment and architectural scenarios\n\nLead: Lewis Brown ( @lwbrown )\n\nJessie Lee ( @jessie )\n\nElif Munn ( @e_munn )\n\nAric Buerer ( @abuerer )\n\nSam Bernal-Damasco ( @definitelynotsam )\n\nLyle Kozloff ( @lyle )\n\nAndrew Winata ( @awinata )\n\nMario Mora ( @mmora )\n\nJulian Dasmarninas ( @jdasmarinas )\n\nBrie Carranza ( @bcarranza )\n\nChristopher Mutua ( @cmutua )\n\nMichelle Almendarez ( @malmendarez )\n\nCollaboration Channels\n\nSlack channel: #spt_pod_kubernetes\n\nEpic: https://gitlab.com/groups/gitlab-com/support/-/epics/145 https://gitlab.com/groups/gitlab-com/support/-/epics/191\n\nhttps://gitlab.com/groups/gitlab-com/support/-/epics/145\n\nhttps://gitlab.com/groups/gitlab-com/support/-/epics/191\n\nOpen Office and Pairing Sessions\n\nEMEA/AMER Pairing Session - Tuesday’s at 15:30 UTC\n\nSlack channels where k8s is frequently discussed\n\n#support_training-k8s\n\n#agile-architecture-cop\n\n#aws-quickstart-guides\n\n#cloud-native-strategy\n\n#f_agent_for_kubernetes\n\n#feedback_on_gitlab_k8s_agent_workshop\n\n#reference-architectures\n\n#gitlab_environment_toolkit",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

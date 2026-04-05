@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "509648f80141_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-1",
+    "title": "On-Call Processes and Policies - Tier 1",
+    "source": "handbook",
+    "headings": [
+      "On-Call Processes and Policies - Tier 1",
+      "Active Tier 1 Rotations",
+      "SRE EOC GitLab.com",
+      "GitLab Dedicated Platform",
+      "GitLab Dedicated PubSec"
+    ],
+    "text": "On-Call Processes and Policies - Tier 1\n\nTier 1 Rotations refer to on-call rotations that respond to pages from automated systems.\n\nActive Tier 1 Rotations\n\nRotation Leader: Sarah Walker\n\nIn addition to incident management responsibilities, the EOC also is responsible for time sensitive interrupt work required to support the production environment that is not owned by another team. This includes:\n\nFulfilling Security Incident Response Team (SIRT) requests\n\nFulfilling Legal Preservation requests\n\nReviewing and handling certain change requests (CRs). This includes: Reviewing CRs to ensure they do not conflict with any ongoing incidents or investigations Executing the CR directly if the author does not have the required permissions to make the change themselves (such as admin-level changes) Support during C1 CRs, such as database upgrades, that may occur on weekends\n\nReviewing CRs to ensure they do not conflict with any ongoing incidents or investigations\n\nExecuting the CR directly if the author does not have the required permissions to make the change themselves (such as admin-level changes)\n\nSupport during C1 CRs, such as database upgrades, that may occur on weekends\n\nHandling incident related teleport access requests\n\nApproving an exception for running ChatOps commands when they fail their safety checks\n\nInvestigating and fixing buggy/flapping alerts\n\nRemoving alerts that are no longer relevant\n\nCollecting production information when requested\n\nResponding to @sre-oncall Slack mentions\n\nAssisting Release Managers with deployment problems\n\nGitLab Dedicated Platform",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "509648f80141_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-1",
+    "title": "On-Call Processes and Policies - Tier 1",
+    "source": "handbook",
+    "headings": [
+      "On-Call Processes and Policies - Tier 1",
+      "Active Tier 1 Rotations",
+      "SRE EOC GitLab.com",
+      "GitLab Dedicated Platform",
+      "GitLab Dedicated PubSec"
+    ],
+    "text": "ing ChatOps commands when they fail their safety checks\n\nInvestigating and fixing buggy/flapping alerts\n\nRemoving alerts that are no longer relevant\n\nCollecting production information when requested\n\nResponding to @sre-oncall Slack mentions\n\nAssisting Release Managers with deployment problems\n\nGitLab Dedicated Platform\n\nRotation Leader: Florbela Viegas\n\nGitLab Dedicated PubSec\n\nRotation Leader: Florbela Viegas\n\nIncident Managers (aka IMOC)\n\nRotation Leader: Devin Sylva\n\nIncident manager rotation is staffed by certain team members in the Engineering Group .\n\nMore information regarding the Incident Manager role, including shift schedules, responsibilities can be found in the Incident Manager on-boarding page .",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

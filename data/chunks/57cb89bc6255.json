@@ -1,0 +1,17 @@
+[
+  {
+    "chunk_id": "57cb89bc6255_0",
+    "url": "https://handbook.gitlab.com/handbook/marketing/marketing-operations/marketo/tech-stack-guide-marketo",
+    "title": "Marketo Tech Stack Guide",
+    "source": "handbook",
+    "headings": [
+      "Marketo Tech Stack Guide",
+      "Integrations",
+      "Data Model",
+      "Key Reports / Dashboards"
+    ],
+    "text": "Marketo Tech Stack Guide\n\nNote: Refer to the Tech Stack Index to browse Apps and Tech Stack Applications to manage Apps.\n\nNote: Refer to the Tech Stack Index to browse Apps and Tech Stack Applications to manage Apps.\n\nTo see the different systems that are connected to Marketo, please visit the Marketo System Infrastructure Mapping FigJam .\n\nMarketo is a flat database that utilizes Email Address as the unique ID. The Person Object is the main object.\n\nKey Reports / Dashboards",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

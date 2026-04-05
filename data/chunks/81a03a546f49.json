@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "81a03a546f49_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/researching-customer-questions",
+    "title": "Researching Customer Questions",
+    "source": "handbook",
+    "headings": [
+      "Researching Customer Questions",
+      "Where to research customer questions",
+      "Google Search",
+      "Zendesk",
+      "Product groups and direction pages"
+    ],
+    "text": "Researching Customer Questions\n\nView the CSM Handbook homepage for additional CSM-related handbook pages.\n\nWhere to research customer questions\n\nThere are several ways you can research customer questions.\n\nOften it’s easiest to cast a wide net when searching customer questions by doing a Google (or another search engine) search. For example, if a customer is inquiring if GitLab does mobile application scanning, you can search “gitlab mobile application scanning” and see related blog posts, documentation, and GitLab issues related to the topic.\n\nEven if you know the answer lies in GitLab’s documentation, using the above search method is convenient to link you directly to where in the documentation to continue your research.\n\nThis method works amazingly due to GitLab’s Transparency value, where we make as much information public as possible.\n\nZendesk is a powerful avenue for researching customer questions because every support ticket has been archived and is searchable since GitLab implemented Zendesk many years ago.\n\nIf your customer is asking a question, likely, others have asked similar or the same question to our support team. Search Zendesk by keywords from your customer’s question to review related tickets. You may need to play around with different keywords until you find support tickets that match your customer’s inquiry. Often with a few minutes of researching prior support tickets, you can get a response to your customer quicker than them opening a new support ticket.",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "81a03a546f49_1",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/researching-customer-questions",
+    "title": "Researching Customer Questions",
+    "source": "handbook",
+    "headings": [
+      "Researching Customer Questions",
+      "Where to research customer questions",
+      "Google Search",
+      "Zendesk",
+      "Product groups and direction pages"
+    ],
+    "text": "our customer’s question to review related tickets. You may need to play around with different keywords until you find support tickets that match your customer’s inquiry. Often with a few minutes of researching prior support tickets, you can get a response to your customer quicker than them opening a new support ticket.\n\nNote: If the customer requires troubleshooting, you should notify the customer to open a new support ticket, as each inquiry should be treated as unique. What fixed one customer’s problem may not work for another, and the Support Team will perform their troubleshooting process.\n\nProduct groups and direction pages\n\nSometimes it’s best to get help from team members working directly in the product area of the question.\n\nHow to determine which product group is the right one?\n\nThere are a few ways to determine which product group works on which feature.\n\nSearch within the Product Categories handbook page. On this page, you can do a Command ⌘ + F search for the feature in question. For example, if the question is on Review Apps, you can do a Command ⌘ + F search to see that the Review Apps feature is under the Pipeline Security group. If the question is related to our product roadmap, you can review the direction page associated with each product group.",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "81a03a546f49_2",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/researching-customer-questions",
+    "title": "Researching Customer Questions",
+    "source": "handbook",
+    "headings": [
+      "Researching Customer Questions",
+      "Where to research customer questions",
+      "Google Search",
+      "Zendesk",
+      "Product groups and direction pages"
+    ],
+    "text": "d ⌘ + F search for the feature in question. For example, if the question is on Review Apps, you can do a Command ⌘ + F search to see that the Review Apps feature is under the Pipeline Security group. If the question is related to our product roadmap, you can review the direction page associated with each product group.\n\nSearch within the Product Categories handbook page. On this page, you can do a Command ⌘ + F search for the feature in question. For example, if the question is on Review Apps, you can do a Command ⌘ + F search to see that the Review Apps feature is under the Pipeline Security group. If the question is related to our product roadmap, you can review the direction page associated with each product group.\n\nSearch within the documentation. Let’s say you are wondering which product group could help with a question on GitLab’s Security Dashboard . If you scroll to the bottom of the page and click View page source , you’ll see which product Stage and Group the Security Dashboard rolls up to. In this case, it’s the Security Insights group.\n\nSearch within the documentation. Let’s say you are wondering which product group could help with a question on GitLab’s Security Dashboard . If you scroll to the bottom of the page and click View page source , you’ll see which product Stage and Group the Security Dashboard rolls up to. In this case, it’s the Security Insights group.",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "81a03a546f49_3",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/researching-customer-questions",
+    "title": "Researching Customer Questions",
+    "source": "handbook",
+    "headings": [
+      "Researching Customer Questions",
+      "Where to research customer questions",
+      "Google Search",
+      "Zendesk",
+      "Product groups and direction pages"
+    ],
+    "text": "the documentation. Let’s say you are wondering which product group could help with a question on GitLab’s Security Dashboard . If you scroll to the bottom of the page and click View page source , you’ll see which product Stage and Group the Security Dashboard rolls up to. In this case, it’s the Security Insights group.\n\nYou can also determine the right product group by reviewing epics/issues related to the feature. For example, when researching Customizable Roles and Permissions , you see on the right-hand side under labels that Authentication and Authorization is the appropriate group.\n\nYou can also determine the right product group by reviewing epics/issues related to the feature. For example, when researching Customizable Roles and Permissions , you see on the right-hand side under labels that Authentication and Authorization is the appropriate group.\n\nHow do I contact the product group for help?\n\nAfter finding the appropriate product group for your question, search Slack for the product group’s public Slack channel and post your question.\n\nIf it will help to connect your customer with someone in Product directly, provide as much detail as possible in a Collaboration Project issue and @ mention the Product Manager, whom you’ll find on the Product Categories page. Ask the Product Manager if someone on their team could assist with the inquiry.\n\nNote: Before involving others, please do your due diligence to research the answer based on the methods provided on this page and remember as part of GitLab’s values, we are biased towards asynchronous communication .",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "81a03a546f49_4",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/csm/researching-customer-questions",
+    "title": "Researching Customer Questions",
+    "source": "handbook",
+    "headings": [
+      "Researching Customer Questions",
+      "Where to research customer questions",
+      "Google Search",
+      "Zendesk",
+      "Product groups and direction pages"
+    ],
+    "text": "duct Categories page. Ask the Product Manager if someone on their team could assist with the inquiry.\n\nNote: Before involving others, please do your due diligence to research the answer based on the methods provided on this page and remember as part of GitLab’s values, we are biased towards asynchronous communication .\n\nSearching in Slack with keywords to your customer’s question is helpful to see if there has been a recent discussion thread you can join. Before posting a new question, search to see if the question has already been answered recently.\n\nGitLab.com top-level group\n\nSearching the GitLab.com top-level group is an excellent way to find related issues that will not appear in a Google search result, often within private collaboration projects.\n\nFirst, start in the https://gitlab.com/gitlab-com/ top-level group. Then, use the top search bar to search for results. For example, if a customer asks questions about Gerrit, a framework for teams to review code, you will type Gerrit and filter on the left side by Issues. You will see discussions GitLab team members and customers have had on the topic to help your research.\n\nHighspot and Google Drive\n\nHighspot provides access to approved customer-facing content, whether a presentation on GitLab Ultimate, competitive intelligence, whitepapers, and more.\n\nLearn more about Highspot at GitLab .\n\nAdditionally, searching Google Drive will allow you to see Google Presentations and Google Docs related to your search.",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "9ea89eb2c4f2_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab5",
+    "title": "GitLab Duo Principles - Hands-On Lab: Working with Security Vulnerabilities",
+    "source": "handbook",
+    "headings": [
+      "GitLab Duo Principles - Hands-On Lab: Working with Security Vulnerabilities",
+      "Objectives",
+      "Task A. Explaining a Security Vulnerability",
+      "Task B. Resolve the Vulnerability",
+      "Lab Guide Complete"
+    ],
+    "text": "GitLab Duo Principles - Hands-On Lab: Working with Security Vulnerabilities\n\nEstimated time to complete: 15 minutes\n\nEstimated time to complete: 15 minutes\n\nIn this lab, you will see how GitLab Duo can help with explaining and resolving security vulnerabilities.\n\nTask A. Explaining a Security Vulnerability\n\nNavigate to your GitLab Duo Principles Project.\n\nNavigate to your GitLab Duo Principles Project.\n\nSelect the .gitlab-ci.yml file.\n\nSelect the .gitlab-ci.yml file.\n\nSelect Edit > Edit in pipeline editor .\n\nSelect Edit > Edit in pipeline editor .\n\nRemove all previous YAML and add the following code. Your .gitlab-ci.yml should look as follows: stages : - test include : - component : $CI_SERVER_FQDN/components/sast/sast@3.0.1\n\nRemove all previous YAML and add the following code. Your .gitlab-ci.yml should look as follows:\n\nInput any Commit message, set the target branch to main , then select Commit changes .\n\nInput any Commit message, set the target branch to main , then select Commit changes .\n\nIn the left sidebar, select Code > Repository .\n\nIn the left sidebar, select Code > Repository .\n\nSelect Edit > Edit single file .\n\nSelect Edit > Edit single file .\n\nReplace all of your code with the following code: package main import ( \"net/http\" \"fmt\" ) func randomGitlab ( w http . ResponseWriter , r * http . Request ) { words := [] string { \"git\" , \"lab\" , \"repo\" , \"commit\" , \"branch\" } word := words [ rand . Intn ( len ( words ))] fmt . Fprintf ( w , word ) } func main () { http . HandleFunc ( \"/random\" , randomGitlab ) http . ListenAndServe ( \":8080\" , nil ) }",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "9ea89eb2c4f2_1",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab5",
+    "title": "GitLab Duo Principles - Hands-On Lab: Working with Security Vulnerabilities",
+    "source": "handbook",
+    "headings": [
+      "GitLab Duo Principles - Hands-On Lab: Working with Security Vulnerabilities",
+      "Objectives",
+      "Task A. Explaining a Security Vulnerability",
+      "Task B. Resolve the Vulnerability",
+      "Lab Guide Complete"
+    ],
+    "text": "t\" ) func randomGitlab ( w http . ResponseWriter , r * http . Request ) { words := [] string { \"git\" , \"lab\" , \"repo\" , \"commit\" , \"branch\" } word := words [ rand . Intn ( len ( words ))] fmt . Fprintf ( w , word ) } func main () { http . HandleFunc ( \"/random\" , randomGitlab ) http . ListenAndServe ( \":8080\" , nil ) }\n\nReplace all of your code with the following code:\n\nInput any Commit message, set the target branch to main , then select Commit changes .\n\nInput any Commit message, set the target branch to main , then select Commit changes .\n\nIn the left sidebar, select Build > Pipelines and wait for your pipeline to complete.\n\nIn the left sidebar, select Build > Pipelines and wait for your pipeline to complete.\n\nOnce the pipeline completes, in the left sidebar navigate to Secure > Vulnerability Report . You will see a single vulnerability, Slowloris displayed in your report.\n\nOnce the pipeline completes, in the left sidebar navigate to Secure > Vulnerability Report .\n\nYou will see a single vulnerability, Slowloris displayed in your report.\n\nYou will see a single vulnerability, Slowloris displayed in your report.\n\nSelect the vulnerability “Uncontrolled resource consumption…”. This will navigate you to the vulnerability overview page.\n\nSelect the vulnerability “Uncontrolled resource consumption…”.\n\nThis will navigate you to the vulnerability overview page.\n\nThis will navigate you to the vulnerability overview page.\n\nAt the top right of vulnerability overview, select the Explain or Resolve with AI dropdown.",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "9ea89eb2c4f2_2",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab5",
+    "title": "GitLab Duo Principles - Hands-On Lab: Working with Security Vulnerabilities",
+    "source": "handbook",
+    "headings": [
+      "GitLab Duo Principles - Hands-On Lab: Working with Security Vulnerabilities",
+      "Objectives",
+      "Task A. Explaining a Security Vulnerability",
+      "Task B. Resolve the Vulnerability",
+      "Lab Guide Complete"
+    ],
+    "text": "ate you to the vulnerability overview page.\n\nSelect the vulnerability “Uncontrolled resource consumption…”.\n\nThis will navigate you to the vulnerability overview page.\n\nThis will navigate you to the vulnerability overview page.\n\nAt the top right of vulnerability overview, select the Explain or Resolve with AI dropdown.\n\nAt the top right of vulnerability overview, select the Explain or Resolve with AI dropdown.\n\nSelect Explain with AI .\n\nSelect Explain with AI .\n\nReview the response generated by GitLab Duo to understand the vulnerability.\n\nReview the response generated by GitLab Duo to understand the vulnerability.\n\nTask B. Resolve the Vulnerability\n\nAdapt the suggestion from Duo chat to our main.go file.\n\nAdapt the suggestion from Duo chat to our main.go file.\n\nIt should look something like the following: package main import ( \"net/http\" \"fmt\" \"math/rand\" \"time\" ) func randomGitlab ( w http . ResponseWriter , r * http . Request ) { words := [] string { \"git\" , \"lab\" , \"repo\" , \"commit\" , \"branch\" } word := words [ rand . Intn ( len ( words ))] fmt . Fprintf ( w , word ) } func main () { http . HandleFunc ( \"/random\" , randomGitlab ) // Create a new HTTP server with timeout configurations server := & http . Server { Addr : \":8080\" , ReadTimeout : 10 * time . Second , WriteTimeout : 10 * time . Second , MaxHeaderBytes : 1 << 20 , // 1 MB } // Start the server server . ListenAndServe () }\n\nIt should look something like the following:\n\nRun the pipeline again to check for the resolved vulnerability.\n\nRun the pipeline again to check for the resolved vulnerability.",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "9ea89eb2c4f2_3",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab5",
+    "title": "GitLab Duo Principles - Hands-On Lab: Working with Security Vulnerabilities",
+    "source": "handbook",
+    "headings": [
+      "GitLab Duo Principles - Hands-On Lab: Working with Security Vulnerabilities",
+      "Objectives",
+      "Task A. Explaining a Security Vulnerability",
+      "Task B. Resolve the Vulnerability",
+      "Lab Guide Complete"
+    ],
+    "text": ": 10 * time . Second , WriteTimeout : 10 * time . Second , MaxHeaderBytes : 1 << 20 , // 1 MB } // Start the server server . ListenAndServe () }\n\nIt should look something like the following:\n\nRun the pipeline again to check for the resolved vulnerability.\n\nRun the pipeline again to check for the resolved vulnerability.\n\nYou have completed this lab exercise. You can view the other lab guides for this course .\n\nIf you’d like to suggest changes to the lab, please submit them via merge request.",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

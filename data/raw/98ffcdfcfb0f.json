@@ -1,0 +1,22 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/business-technology/enterprise-applications/entapps-crm",
+  "title": "Enterprise Applications - CRM Team",
+  "content": "Enterprise Applications - CRM Team\n\nOur mission is to deliver a robust, end-to-end solution that streamlines and enhances the customer lifecycle at every stage, including:\n\nLead Generation and Management: Providing tools and automations that drive efficient lead capture, nurturing, and conversion.\n\nSales Enablement: Optimizing sales cycles through simplified workflows and actionable insights.\n\nSubscription Management: Ensuring a seamless quote-to-cash process with Zuora’s subscription and billing capabilities.\n\nReal-Time Insights: Delivering data-driven insights that empower teams to make informed decisions and strengthen customer relationships.\n\nAutomate and Optimize: Eliminate manual bottlenecks, ensuring processes are efficient and error-free.\n\nScale with the Business: Build systems capable of supporting GitLab’s evolving needs as we grow.\n\nEmpower Teams: Equip internal teams with tools and knowledge to build stronger customer connections, increase operational efficiency, and accelerate growth.\n\nLearn more about our team and roles in supporting GitLab’s enterprise applications.\n\nSystem Integration and Optimization\n\nSeamlessly integrate Salesforce and Zuora, ensuring cohesive operations between CRM and subscription management platforms.\n\nDevelop scalable solutions that support global sales, marketing, and customer success teams.\n\nCreate automation that eliminates redundant tasks, accelerates sales cycles, and enhances data accuracy across systems.\n\nEnhancing the Customer Lifecycle\n\nEnable GitLab teams to deliver a superior customer experience through optimized lead management, seamless subscription workflows, and precise billing operations.\n\nBuild reporting and analytics capabilities that provide real-time visibility into customer behaviors, revenue trends, and operational metrics.\n\nOur team uses a flexible intake model to manage requests of varying complexity. This ensures that we can address both quick fixes and large-scale, multi-team projects efficiently.\n\nOperational Bugs or General Questions\n\nFor any operational bugs or general inquiries related to CRM systems, please submit a request via:\n\nHelpLab - IT Break / Fix Request\n\nSmall to Medium Feature Requests & Enhancements\n\nFor smaller feature requests or system enhancements:\n\nWeekly Intake Process:\n\nParticipate in our weekly intake meetings to present your request.\n\nEach department has designated representatives who will help channel requests effectively. You can reach out to them directly: Sales: RSOE Marketing: Marketing Operations Other Departments: Please reach out to the appropriate point of contact.\n\nMarketing: Marketing Operations\n\nOther Departments: Please reach out to the appropriate point of contact.\n\nSalesforce or Zuora Issues:\n\nIf your request is related to Salesforce or Zuora , please choose the “ CM: Configuration Change (Generic) ” template when submitting.\n\nLarge and Complex Projects\n\nFor larger, cross-functional projects requiring significant effort and resources:\n\nQuarterly PMO Intake Process:\n\nFor projects that span multiple teams or involve extensive development work, use the quarterly intake process to submit requests. This process ensures that projects are scoped, prioritized, and allocated resources appropriately.\n\nStrengthen Customer Relationships: Equip teams with tools that enable them to anticipate and exceed customer expectations.\n\nEnhance Operational Efficiency: Reduce time and resources spent on manual processes by implementing smart automation and integrations.\n\nAccelerate Revenue Growth: Support GitLab’s sales and finance teams with systems that ensure accurate and timely billing, seamless subscription management, and efficient deal closures.\n\nDrive Innovation: Continuously iterate and adopt industry best practices to maintain a cutting-edge CRM and billing ecosystem.",
+  "source": "handbook",
+  "headings": [
+    "Enterprise Applications - CRM Team",
+    "Mission",
+    "We Aim to",
+    "Our Team",
+    "What We Do",
+    "System Integration and Optimization",
+    "Automating Workflows",
+    "Enhancing the Customer Lifecycle",
+    "Delivering Insights",
+    "How we Operate",
+    "Operational Bugs or General Questions",
+    "Small to Medium Feature Requests & Enhancements",
+    "Large and Complex Projects",
+    "Our Commitment"
+  ]
+}

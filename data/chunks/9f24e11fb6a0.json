@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "9f24e11fb6a0_0",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack",
+    "title": "Business Technology - Tech Stack Details",
+    "source": "handbook",
+    "headings": [
+      "Business Technology - Tech Stack Details",
+      "Tech stack related processes",
+      "Update tech stack information",
+      "Request Access",
+      "Tech Stack Applications"
+    ],
+    "text": "Business Technology - Tech Stack Details\n\nThis is a listing of the applications we use at GitLab. If you’re looking for the technology used to deliver GitLab.com, please visit the Production Architecture page .\n\nTech stack related processes\n\nUpdate tech stack information\n\nPlease visit our Tech Stack main page for instructions on how to request updates to the Tech Stack information.\n\nIf you need to request access for any of the following tools, please refer to and follow the Access Request process .\n\nTech Stack Applications",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

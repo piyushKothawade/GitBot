@@ -1,0 +1,13 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/support/workflows/data_processing_addendums",
+  "title": "Processing Signed Data Processing Addendums (DPAs)",
+  "content": "Processing Signed Data Processing Addendums (DPAs)\n\nData Processing Addendums are available to paid subscribers of GitLab.com through their Sales representatives. This workflow details what to do with fully executed (signed) DPAs received from customers.\n\nNote: This workflow only applies if the user has a paid subscription for GitLab.com.\n\nNote: This workflow only applies if the user has a paid subscription for GitLab.com.\n\nLocate the customer’s Salesforce account. The correct string begins with 001 and can be found: under the Zendesk organization[1], linked in the automatic note posted to a Zendesk ticket[2], or in the Edit interface of the CustomersDot[3] ( screenshots provided below). The URL for the Salesforce account record will look like: https://gitlab.my.salesforce.com/0014M00001hHV5CQAW .\n\nLocate the customer’s Salesforce account. The correct string begins with 001 and can be found: under the Zendesk organization[1], linked in the automatic note posted to a Zendesk ticket[2], or in the Edit interface of the CustomersDot[3] ( screenshots provided below). The URL for the Salesforce account record will look like: https://gitlab.my.salesforce.com/0014M00001hHV5CQAW .\n\nUnder the section “Google Docs, Notes, & Attachments”, click “Attach File” and upload the file to the record.\n\nUnder the section “Google Docs, Notes, & Attachments”, click “Attach File” and upload the file to the record.\n\nShould you be unable to attach the file yourself, please forward it to [legal@gitlab.com](mailto: legal@gitlab.com ?subject=Signed DPA) with a link to the Salesforce account.\n\nShould you be unable to attach the file yourself, please forward it to [legal@gitlab.com](mailto: legal@gitlab.com ?subject=Signed DPA) with a link to the Salesforce account.\n\nhttps://gitlab.zendesk.com/agent/tickets/142052",
+  "source": "handbook",
+  "headings": [
+    "Processing Signed Data Processing Addendums (DPAs)",
+    "Overview",
+    "Workflow",
+    "Screenshots",
+    "Example Tickets"
+  ]
+}

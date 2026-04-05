@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "18828606dd39_0",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/okta/app/setup",
+    "title": "Okta Application Setup Guide",
+    "source": "handbook",
+    "headings": [
+      "Okta Application Setup Guide",
+      "Overview",
+      "Timeline Expectations",
+      "Configuration Updates",
+      "Access Requests"
+    ],
+    "text": "Okta Application Setup Guide\n\nAll SaaS and vendor software needs to go through the vendor onboarding process and added to the tech stack before we can go live in Okta.\n\nAs part of that procurement process, GitLab must verify that the application can be configured with Okta SSO using SAML or SCIM and has automatable user management for creation, updates, and deactivation.\n\nFinance Procurement Process\n\nOpen a new new corpsec issue and tag @gitlab-com/gl-security/corp/identity . Provide any documentation from the vendor regarding SSO.\n\nTimeline Expectations\n\nThe current SLA for new Okta applications is up to 4 weeks after the change management issue is created. Please create issues during the procurement process to get it in our queue for scheduling purposes.\n\nThe current SLA for new Okta applications is up to 4 weeks after the change management issue is created. Please create issues during the procurement process to get it in our queue for scheduling purposes.\n\nThe (future) tech stack application business owner or technical owner is responsible for creating the change management issue and providing approvals and technical review during the process.",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "18828606dd39_1",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/okta/app/setup",
+    "title": "Okta Application Setup Guide",
+    "source": "handbook",
+    "headings": [
+      "Okta Application Setup Guide",
+      "Overview",
+      "Timeline Expectations",
+      "Configuration Updates",
+      "Access Requests"
+    ],
+    "text": "management issue is created. Please create issues during the procurement process to get it in our queue for scheduling purposes.\n\nThe (future) tech stack application business owner or technical owner is responsible for creating the change management issue and providing approvals and technical review during the process.\n\nProcurement Discovery and PoC Verify Okta SAML/SCIM feature support: with vendor technical contact or in the product documentation. Complex Applications: For complex or mission critical applications, it is recommended to start an email or Slack thread to discuss in collaboration with the Corporate Security Identity team. It is always better to engage us early instead of waiting until a few weeks before you want to go live. PoC or Sandbox Instance: If you have a pre-procurement environment/instance, you can create a change management issue for a test application instance to be added. We do not have rushed timelines available, so please do not treat this as a blocker for your PoC to be completed.\n\nVerify Okta SAML/SCIM feature support: with vendor technical contact or in the product documentation.\n\nComplex Applications: For complex or mission critical applications, it is recommended to start an email or Slack thread to discuss in collaboration with the Corporate Security Identity team. It is always better to engage us early instead of waiting until a few weeks before you want to go live.",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "18828606dd39_2",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/okta/app/setup",
+    "title": "Okta Application Setup Guide",
+    "source": "handbook",
+    "headings": [
+      "Okta Application Setup Guide",
+      "Overview",
+      "Timeline Expectations",
+      "Configuration Updates",
+      "Access Requests"
+    ],
+    "text": "e product documentation.\n\nComplex Applications: For complex or mission critical applications, it is recommended to start an email or Slack thread to discuss in collaboration with the Corporate Security Identity team. It is always better to engage us early instead of waiting until a few weeks before you want to go live.\n\nPoC or Sandbox Instance: If you have a pre-procurement environment/instance, you can create a change management issue for a test application instance to be added. We do not have rushed timelines available, so please do not treat this as a blocker for your PoC to be completed.\n\nProcurement Negotiations Create the change management issue to get it the first in, first out queue. We cannot begin implementation or go live for users until the procurement process is completed. Add details about the expected Okta groups and users that should be assigned to the application. For complex applications, add details about roles and permissions for users. This impacts how we assign and/or create Okta groups for each role. This is usually discussed in depth during the discovery call.\n\nCreate the change management issue to get it the first in, first out queue. We cannot begin implementation or go live for users until the procurement process is completed.\n\nAdd details about the expected Okta groups and users that should be assigned to the application.\n\nFor complex applications, add details about roles and permissions for users. This impacts how we assign and/or create Okta groups for each role. This is usually discussed in depth during the discovery call.",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "18828606dd39_3",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/okta/app/setup",
+    "title": "Okta Application Setup Guide",
+    "source": "handbook",
+    "headings": [
+      "Okta Application Setup Guide",
+      "Overview",
+      "Timeline Expectations",
+      "Configuration Updates",
+      "Access Requests"
+    ],
+    "text": "is completed.\n\nAdd details about the expected Okta groups and users that should be assigned to the application.\n\nFor complex applications, add details about roles and permissions for users. This impacts how we assign and/or create Okta groups for each role. This is usually discussed in depth during the discovery call.\n\nVendor Onboarding Add the new application to the tech stack Update the change management issue with the tech stack details and comment that the procurement process is complete. The Corporate Security Identity Team will schedule a technical discovery call if it hasn’t happened already.\n\nAdd the new application to the tech stack\n\nUpdate the change management issue with the tech stack details and comment that the procurement process is complete.\n\nThe Corporate Security Identity Team will schedule a technical discovery call if it hasn’t happened already.\n\nApplication Creation See the change management issue for the process. This process can take 1-2 weeks with approvals and testing. The go live process is flexible and varies based on the application. Please comment in the change management issue with expectations and also discuss on the discovery call.\n\nSee the change management issue for the process. This process can take 1-2 weeks with approvals and testing.\n\nThe go live process is flexible and varies based on the application. Please comment in the change management issue with expectations and also discuss on the discovery call.\n\nConfiguration Updates\n\nAll configuration updates are managed using an Okta app change.\n\nOkta app change Issue template",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "18828606dd39_4",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/okta/app/setup",
+    "title": "Okta Application Setup Guide",
+    "source": "handbook",
+    "headings": [
+      "Okta Application Setup Guide",
+      "Overview",
+      "Timeline Expectations",
+      "Configuration Updates",
+      "Access Requests"
+    ],
+    "text": "ith approvals and testing.\n\nThe go live process is flexible and varies based on the application. Please comment in the change management issue with expectations and also discuss on the discovery call.\n\nConfiguration Updates\n\nAll configuration updates are managed using an Okta app change.\n\nOkta app change Issue template\n\nAll group and user updates are managed with access requests.",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

@@ -1,0 +1,354 @@
+[
+  {
+    "chunk_id": "24064653a46e_0",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "Account Deletion & Data Access Requests - Workflows\n\nThis is a Controlled Document\n\nThis document contains instructions on how to process each type of data subject request, including account deletion and data access. It is split into two stages; Submission Handling and Request Processing , to be followed in that order. All requests must be fulfilled within the legally permitted time frame according to the jurisdiction of the data subject.\n\nStage 1: Submission Handling\n\nWe are only able to process privacy requests if they are submitted through the Privacy Center . If a request is received via any other method, we will close it and direct the user to open a request through the Make a Privacy Request button on the Privacy Center. The Privacy Center is powered by Transcend and references to “the system” are references to the Transcend platform where privacy requests are ingested and processed.\n\nWhen a user submits a request through the Privacy Center, the system automatically creates a new request, even when no GitLab account exists . All communication with the user will take place within the privacy request.\n\nClick on the specific request from the Incoming Request view\n\nNavigate to the Messages tab\n\nClick on the blue Email icon on the left\n\nSelect the desired template from the Template dropdown box at the top\n\nMake any adjustments to the text of the email as necessary\n\nClick the Send button\n\nThe purpose of this stage is to instruct you on how to close out requests which are not submitted through the Privacy Center",
+    "chunk_index": 0,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_1",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "Click on the blue Email icon on the left\n\nSelect the desired template from the Template dropdown box at the top\n\nMake any adjustments to the text of the email as necessary\n\nClick the Send button\n\nThe purpose of this stage is to instruct you on how to close out requests which are not submitted through the Privacy Center\n\nWhen a request is received through Zendesk as a support ticket, do one the following:\n\nIf the ticket is regarding an Account Deletion request, apply the Support::SaaS::Gitlab.com::Account Deletion Instructions - GitLab.com macro, and mark the ticket as solved.\n\nIf the ticket is regarding an Account Deletion request, apply the Support::SaaS::Gitlab.com::Account Deletion Instructions - GitLab.com macro, and mark the ticket as solved.\n\nIf the ticket is regarding a Data Access request, redirect the user to submit their request on the GitLab Privacy Center , and mark the ticket as solved.\n\nIf the ticket is regarding a Data Access request, redirect the user to submit their request on the GitLab Privacy Center , and mark the ticket as solved.\n\nIf the ticket is regarding a Data Portability request, further clarify with the user. A portability request applies only when the user wants to migrate from GitLab to another platform; in which case GitLab provides instructions for self-service via the Project Import and Export functionality; the destination platform will typically provide the migration documentation a user needs to migrate or port from one platform to another.",
+    "chunk_index": 1,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_2",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "lies only when the user wants to migrate from GitLab to another platform; in which case GitLab provides instructions for self-service via the Project Import and Export functionality; the destination platform will typically provide the migration documentation a user needs to migrate or port from one platform to another.\n\nIf the ticket is regarding a Data Portability request, further clarify with the user. A portability request applies only when the user wants to migrate from GitLab to another platform; in which case GitLab provides instructions for self-service via the Project Import and Export functionality; the destination platform will typically provide the migration documentation a user needs to migrate or port from one platform to another.\n\nIf the ticket is regarding a Data Export request, this should be treated as an Access Request. Redirect the user to submit their request on the GitLab Privacy Center , and mark the ticket as solved.\n\nIf the ticket is regarding a Data Export request, this should be treated as an Access Request. Redirect the user to submit their request on the GitLab Privacy Center , and mark the ticket as solved.\n\nStage 2: Request Processing\n\nFind the appropriate workflow below to process privacy requests, based on the request type.\n\n[Data Portability Requests] (coming soon)\n\nThe following are the types of requests that a user can submit. Click the link for each to jump to the associated workflow for processing that request.",
+    "chunk_index": 2,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_3",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "d.\n\nStage 2: Request Processing\n\nFind the appropriate workflow below to process privacy requests, based on the request type.\n\n[Data Portability Requests] (coming soon)\n\nThe following are the types of requests that a user can submit. Click the link for each to jump to the associated workflow for processing that request.\n\nDeletion by an individual user (deletes the GitLab.com account, Zendesk, Customer Portal and all marketing system personal data)\n\nDeletion by an enterprise user (deletes the GitLab.com account, Zendesk, Customer Portal and all marketing system personal data; subject to Enterprise Account Owner authorization)\n\nCustomer Portal Account Deletion (deletes personal data in customers.gitlab.com only)\n\nDeletion for a Deceased User (deletes the GitLab.com account, Zendesk, Customer Portal and all marketing system personal data; must be submitted by an authorized agent)\n\nMarketing Deletion (deletes marketing and sales-related personal data only)\n\nCurrently, only deletions by an individual user or an enterprise user are validated with automated checks upon submission. Marketing deletions will automatically be processed. A deletion request for a deceased user will undergo additional verification steps due to legal requirements related to proof of authority to act.\n\nThis workflow applies to deletion requests where the data subject identifies themself as an individual user. The following form field entries are verified using built-in automated checks:\n\nEmail address (must exist)\n\nUsername (must exist)\n\nUsername and email must match for the same account",
+    "chunk_index": 3,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_4",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "o proof of authority to act.\n\nThis workflow applies to deletion requests where the data subject identifies themself as an individual user. The following form field entries are verified using built-in automated checks:\n\nEmail address (must exist)\n\nUsername (must exist)\n\nUsername and email must match for the same account\n\nAccount is not an Enterprise User .\n\nAfter submission, the automated checks will return a risk rating if a GitLab account is found. The risk rating is used to determine whether additional verification is needed to delete the user account. Support Engineers can review the method by which the risk rating is calculated in the Support Workflow page (internal only) . If the automated checks do not find a user account, the user will be notified via email message generated from the system.\n\nCheck for existing requests from the user by navigating to the Incoming Request view and searching using the core identifier. Should an existing request of the same type be listed, determine the progress of the original request by clicking into the request itself and reviewing the Status tab. Where an existing request is still moving through the compiling or deleting stage, close the subsequent duplicate request by sending the Duplicate Request message to the user.\n\nPLEASE NOTE: There are 2 separate tasks assigned to Support Engineers for deletion requests.\n\nSupport Engineer (GitLab Deletion) serves to determine whether a GitLab user account can be deleted and if so to perform the deletion. Currently the step-by-step actions are also visible in the email delivering the task.",
+    "chunk_index": 4,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_5",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "ser.\n\nPLEASE NOTE: There are 2 separate tasks assigned to Support Engineers for deletion requests.\n\nSupport Engineer (GitLab Deletion) serves to determine whether a GitLab user account can be deleted and if so to perform the deletion. Currently the step-by-step actions are also visible in the email delivering the task.\n\nSupport Engineer (Zendesk/cDot Deletion) serves to determine whether a customer portal account and/or Zendesk account exists for the user. No deletion takes place within this task. However, it serves as a trigger for subsequent tasks to be assigned to console engineers to perform the Zendsk deletion and to Support Readiness to delete the customer portal account.\n\n1.1. Is the account an Enterprise User\n\nOn the Details tab of the request, if the Data Subject type is Enterprise User AND the automated checks also indicate that the account is for an Enterprise User, STOP and move directly to Enterprise User Deletion .\n\n1.2 Review Risk Rating\n\nWhen a risk rating of medium or high is generated by the automated checks, the user should be sent either the Medium Risk GitLab Account Verification Question message or the High Risk GitLab Account Verification Question message ONLY IF the user has any private projects. If there are no private projects, do not send the additional verification questions. Users have 7 calendar days to respond to those questions. The Support Engineer (GitLab Deletion) task should remain open during this time.",
+    "chunk_index": 5,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_6",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "igh Risk GitLab Account Verification Question message ONLY IF the user has any private projects. If there are no private projects, do not send the additional verification questions. Users have 7 calendar days to respond to those questions. The Support Engineer (GitLab Deletion) task should remain open during this time.\n\nIf the user fails to respond within 7 calendar days, mark the task as an Exception and add a note that the user failed to respond to verification.\n\nIf the user account is not blocked or banned, skip this section.\n\nIf the user is blocked due to a user deleting their own account, send the Blocked Account Deletion Request message, then mark the Support Engineer (GitLab Deletion) task as Complete.\n\nIf the account is blocked or banned and additional verification questions are needed, once passing responses are validated, proceed to follow the reinstating a blocked account workflow. Generally a Trust and Safety issue will be required for evaluation. The Support Engineer (GitLab Deletion) task will need to remain open until a determination is made. You should add a note to the task to indicate that a security review has been requested. Send the Security Review Requested message to the data subject.\n\nIf the account is unblocked or unbanned, send the Security Review Complete message to the data subject, then follow the rest of the process as normal.\n\nIf the account remains blocked or banned, send the Security Review Denied message to the data subject, then mark the Support Engineer (GitLab Deletion) task as an Exception under Step 3.",
+    "chunk_index": 6,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_7",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "unblocked or unbanned, send the Security Review Complete message to the data subject, then follow the rest of the process as normal.\n\nIf the account remains blocked or banned, send the Security Review Denied message to the data subject, then mark the Support Engineer (GitLab Deletion) task as an Exception under Step 3.\n\nUnless the condition in Step 3.1 exists, perform the steps in 3.2 to delete the GitLab account.\n\n3.1 - Account Already Deleted\n\nIt is possible that the user may have deleted their GitLab account after submitting the request. In such cases it will not be possible to perform further account verification or progress the request. Send the Account Already Deleted message to the data subject and mark the Support Engineer (GitLab Deletion) task completed.\n\n3.2 - GitLab Account Deletion\n\nDelete any groups that are blocking deletion - such as groups where the user is the sole owner. There is a 30 day delay for group deletion on GitLab.com, so after deleting the group go to Advanced Settings and select Delete group immediately to complete the deletion.\n\nInitiate user deletion with Delete user and contributions . Note that this will not delete projects that the user has joined and the user is not the sole owner of. However it will delete any personal projects the user created.\n\nVerify the user has been fully deleted, as deletion can be delayed.\n\nAdd or edit an existing .csv to perform the deletion in the GitLab Data Platform, following only the Deleting Data section of the runbook .\n\nUpload the latest version of the .csv to the GDPR folder.",
+    "chunk_index": 7,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_8",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "will delete any personal projects the user created.\n\nVerify the user has been fully deleted, as deletion can be delayed.\n\nAdd or edit an existing .csv to perform the deletion in the GitLab Data Platform, following only the Deleting Data section of the runbook .\n\nUpload the latest version of the .csv to the GDPR folder.\n\n3.3 - In the Support Engineer (GitLab Deletion) task:\n\nMark as Complete when all of the user account deletion steps are completed.\n\nMark as an Exception if the user fails additional verification questions or the account cannot be unblocked or unbanned in order to be deleted. Add a note to the tasks to indicate why it is marked as an exception.\n\nIf an account is located in both systems, mark the Support Engineer (Zendesk/cDot Deletion) task as Complete.\n\nIf an account is not located in either system, mark the Support Engineer (Zendesk/cDot Deletion) task as Not Found.\n\nIf an account is found in only one of the systems, mark the Support Engineer (Zendesk/cDot Deletion) task as an Exception and add a note to indicate in which system an account was found.\n\nSupport Engineers do not perform the deletion of Zendesk or Customers Portal accounts. After the Support Engineer (Zendesk/cDot Deletion) task is resolved, a separate task will be triggered for a Console Engineer to delete the customers portal account and/or a Support Readiness Specialist to delete the Zendesk account.\n\nThe system will automatically send the user a message to inform them that their request has been fulfilled once all tasks are completed.",
+    "chunk_index": 8,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_9",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "task is resolved, a separate task will be triggered for a Console Engineer to delete the customers portal account and/or a Support Readiness Specialist to delete the Zendesk account.\n\nThe system will automatically send the user a message to inform them that their request has been fulfilled once all tasks are completed.\n\nThis workflow applies to deletion requests where the data subject identifies themself as an enterprise user. The following form entries are verified using built-in automated checks:\n\nEmail address (must exist)\n\nUsername (must exist)\n\nUsername and email must match for the same account\n\nAccount is an Enterprise User\n\nGitLab is not the Controller of enterprise users. Therefore, an Enterprise User account cannot be deleted without the permission of the enterprise account owner. However, upon submission the automated checks will run and return a risk rating if an account is found and confirmed to be an enterprise user. There may be instances where the request is submitted as an Enterprise User data subject type, but the automated checks verify the account is NOT an enterprise user; in which case the request should be treated as though it was submitted by an individual user. The risk rating is used to determine whether additional verification is needed to delete the user account. Support Engineers can review the method by which the risk rating and risk score are calculated in the Support Workflows (internal only) .\n\nIf the automated checks do not find a user account, the user will be notified via email message generated from the system.",
+    "chunk_index": 9,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_10",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "itional verification is needed to delete the user account. Support Engineers can review the method by which the risk rating and risk score are calculated in the Support Workflows (internal only) .\n\nIf the automated checks do not find a user account, the user will be notified via email message generated from the system.\n\nWhen a deletion request is for an enterprise user, send the Enterprise User message to the data subject. The data subject has 7 days to respond back and indicate if they want us to attempt to contact the organization system administrator.\n\nIf the data subject does not respond within 7 days AND the organization administrator has not provided written instructions to delete the account through a Support Ticket, send the No Enterprise Admin Permission-Deletion message and mark the task as an Exception.\n\nIf the data subject asks for us to attempt to contact the organization administrator to obtain permission to delete the account, this should be done utilizing this workflow for contacting the owner of an enterprise user account. Give the administrator 10 days to respond. If permission is granted, add a note to the Support Engineer (GitLab Deletion) task with a link to the Support Ticket, then proceed to delete the enterprise user account as below. If permission is not granted, add a note to the Support Engineer (GitLab Deletion) task with a link to the Support Ticket to document no permission was received, then mark the task as an Exception.",
+    "chunk_index": 10,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_11",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "eer (GitLab Deletion) task with a link to the Support Ticket, then proceed to delete the enterprise user account as below. If permission is not granted, add a note to the Support Engineer (GitLab Deletion) task with a link to the Support Ticket to document no permission was received, then mark the task as an Exception.\n\nIf permission is granted, add a note to the Support Engineer (GitLab Deletion) task with a link to the Support Ticket, then proceed to delete the enterprise user account as below.\n\nIf permission is not granted, add a note to the Support Engineer (GitLab Deletion) task with a link to the Support Ticket to document no permission was received, then mark the task as an Exception.\n\nUnless the condition in Step 2.1 exists, perform the steps in 2.2 to delete the Gitlab account:\n\n2.1 - Account already deleted\n\nIt is possible that the user may have deleted the account after submitting the request, or the enterprise admin was able to delete it. In such cases, it will not be possible to perform further account verificiation. Send the Account Already Deleted message, and mark the Support Engineer (GitLab Deletion) task complete.\n\n2.2 - GitLab Account Deletion\n\nDelete any groups that are blocking deletion - such as groups where the user is the sole owner. There is a 30 day delay for group deletion on GitLab.com, so after deleting the group go to Advanced Settings and select Delete group immediately to complete the deletion.",
+    "chunk_index": 11,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_12",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "tion) task complete.\n\n2.2 - GitLab Account Deletion\n\nDelete any groups that are blocking deletion - such as groups where the user is the sole owner. There is a 30 day delay for group deletion on GitLab.com, so after deleting the group go to Advanced Settings and select Delete group immediately to complete the deletion.\n\nInitiate user deletion with Delete user and contributions . Note that this will not delete projects that the user has joined and the user is not the sole owner of. However it will delete any personal projects the user created.\n\nVerify the user has been fully deleted, as deletion can be delayed.\n\nAdd or edit an existing .csv to perform the deletion in the GitLab Data Platform, following only the Deleting Data section of the runbook .\n\nUpload the latest version of the .csv to the GDPR folder.\n\nIf an account is located in both systems, mark the Support Engineer (Zendesk/cDot Deletion) task as Complete.\n\nIf an account is not located in either system, mark the Support Engineer (Zendesk/cDot Deletion) task as Not Found.\n\nIf an account is found in only one of the systems, mark the Support Engineer (Zendesk/cDot Deletion) task as an Exception and add a note to indicate in which system an account was found.\n\nSupport Engineers do not perform the deletion of Zendesk or Customers Portal accounts. After the Support Engineer (Zendesk/cDot Deletion) task is resolved, a separate task will be triggered for a Console Engineer to delete the customers portal account and/or a Support Readiness Specialist to delete the Zendesk account.",
+    "chunk_index": 12,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_13",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "Support Engineers do not perform the deletion of Zendesk or Customers Portal accounts. After the Support Engineer (Zendesk/cDot Deletion) task is resolved, a separate task will be triggered for a Console Engineer to delete the customers portal account and/or a Support Readiness Specialist to delete the Zendesk account.\n\nThe system will automatically send the user a message to inform them that their request has been fulfilled once all tasks are completed.\n\nSupport Enginers have no tasks in marketing deletion requests. No tasks should be assigned from the system to Support for this type of request.\n\nThis workflow applies to deletion requests where the data subject identifies themself as the owner of a customers portal account (customers.gitlab.com).\n\nIf a customers portal account is located, mark the Support Engineer (Zendesk/cDot Deletion) task as complete.\n\nIf a customers portal account is not located, mark the Support Engineer (Zendesk/cDot Deletion) task as not found.\n\nSupport Engineers do not perform the deletion of customers portal account. After the Support Engineer (Zendesk/cDot Deletion) task is resolved, a separate task will be triggered for a Console Engineer to delete the account.\n\nThe system will automatically send the user a message to inform them that their request has been fulfilled once all related tasks are completed.\n\nDeceased Account Owner Deletion",
+    "chunk_index": 13,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_14",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "he Support Engineer (Zendesk/cDot Deletion) task is resolved, a separate task will be triggered for a Console Engineer to delete the account.\n\nThe system will automatically send the user a message to inform them that their request has been fulfilled once all related tasks are completed.\n\nDeceased Account Owner Deletion\n\nThis workflow applies to deletion requests submitted by an authorized agent or a Designated Account Successor for an individual user. This workflow does not apply to a deletion request submitted by a Designated Account Manager, as that authority ceases upon the death of the account owner.\n\nThe following form entries are verified using built-in automated checks:\n\nEmail address (must exist)\n\nUsername (must exist)\n\nUsername and email must match for the same account\n\nAccount is not an Enterprise Account\n\nPlease Note: On the form we ask for the email address in a specific order of preference:\n\nPrimary or secondary email address on the account (used when the authorized agent has access to the account owner email)\n\nAccount Success email address (used when the authorized agent was added as a Designated Account Successor)\n\nEmail of the authorized agent (used when the authorized agent does not know what email was included when they were added as a Designated Account Successor, or if they do not know the email address connected to the account).",
+    "chunk_index": 14,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_15",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "cess email address (used when the authorized agent was added as a Designated Account Successor)\n\nEmail of the authorized agent (used when the authorized agent does not know what email was included when they were added as a Designated Account Successor, or if they do not know the email address connected to the account).\n\nAfter submission, the automated checks will return a risk rating if a GitLab account is found. Support Engineers can review the method by which the risk rating is calculated in the Support Workflow page (internal only) , however this risk calculation should only be considered AFTER the authority of the individual submitting the request has been validated by the Privacy Team.\n\nIf the automated checks do not find a user account, the requestor will be notified via email message generated from the system once all system tasks are completed.\n\nAs additional automation is added to the system, a deletion request submitted by an authorized agent or Designated Account Successor will be placed on hold until the Privacy Team validates that the legal requirements have been met. Once this validation is complete, the request will resume and should follow the Individual User Deletion workflow.\n\nThe system will automatically send the requestor a message to inform them that their request has been fulfilled once all tasks are completed.",
+    "chunk_index": 15,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_16",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "vacy Team validates that the legal requirements have been met. Once this validation is complete, the request will resume and should follow the Individual User Deletion workflow.\n\nThe system will automatically send the requestor a message to inform them that their request has been fulfilled once all tasks are completed.\n\nAn access request provides a data subjet with information about the personal data that GitLab processes about them. Only individual users may submit an access request. GitLab is not the Controller of personal data for enterprise users, therefore we are not able to fulfill an access request when the account is designated as an enterprise user. The following form entries are verified using built-in automated checks:\n\nEmail address (must exist)\n\nUsername (must exist)\n\nUsername and email must match for the same account\n\nAccount is not an enterprise user\n\nAfter submission, the automated checks will return a risk rating if a GitLab account is found. The risk rating is used to determine whether additional verification is needed to delete the user account. Support Engineers can review the method by which the risk rating is calculated in the Support Workflow page ( internal only ). If the automated checks do not find a user account, the user will be notified via email message generated from the system.\n\nThere is 1 task assigned to Support Engineers for access requests, however it combines querying and pulling data from two separate systems.\n\nWhen an account is identified in either system:",
+    "chunk_index": 16,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_17",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "only ). If the automated checks do not find a user account, the user will be notified via email message generated from the system.\n\nThere is 1 task assigned to Support Engineers for access requests, however it combines querying and pulling data from two separate systems.\n\nWhen an account is identified in either system:\n\nDownload the cDot/Zendesk Google sheet template from the Personal Data Requests shared drive folder and input the field values located in the system(s).\n\nEnsure you are downloading a blank sheet template and not saving a populated sheet in the shared drive.\n\nOnce populated, upload the sheet to the Support Engineer (Access) task and mark as complete.\n\nIf an account is not identified in either system, mark the Support Engineer (Access) task as not found.\n\nThe system will automatically send the user a message to inform them that their request has been fulfilled once all tasks are completed.\n\nData Export Requests (Right to Portability)\n\nThis workflow applies only for data export requests and NOT for data portability requests. Please note that this data subject request type is not currently available in the Privacy Center . It will likely be offered in FY27Q1. However a Support Ticket for a data export or data portability request should utilize this workflow for an individual GitLab account owner (free and paid).",
+    "chunk_index": 17,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_18",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "r data portability requests. Please note that this data subject request type is not currently available in the Privacy Center . It will likely be offered in FY27Q1. However a Support Ticket for a data export or data portability request should utilize this workflow for an individual GitLab account owner (free and paid).\n\nData Portability applies when the individual wishes to migrate from GitLab to another platform. At this time, GitLab only provides instructions for self-service via the Project Import and Export functionality; the destination platform provides the migration documentation a user will need to migrate or port from one platform to another. GitLab is unable to provide instruction or support for this.\n\nA Data Export request follows a similar workflow as an Access Request, with a narrowed scope. We can only take action on export requests for personal projects, or projects in groups where the user is the only member. This workflow cannot be completed if the request indicates the user’s country is Cuba, Iran, North Korea, Syria, Russia, Belarus, or the Crimea, Donetsk or Luhanks regions of Ukraine as these are embargoed countries and we are not permitted under Trade Compliance laws to engage with individuals in those locations. Reach out in the #privacy-team_help Slack channel if you have any questions.\n\nVerify that the user’s region is not one of the embargoed countries listed above. If it is, send the Embargoed Country message and mark the task as an exception.",
+    "chunk_index": 18,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_19",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "itted under Trade Compliance laws to engage with individuals in those locations. Reach out in the #privacy-team_help Slack channel if you have any questions.\n\nVerify that the user’s region is not one of the embargoed countries listed above. If it is, send the Embargoed Country message and mark the task as an exception.\n\nSend the user the Project Export Self-Serve message. The user has 7 days to respond with any issues using the self-service steps. The Support Engineer (Access) task should remain open during this time.\n\nIf the user does not respond after 7 days, add a note to the Support Engineer (Access) task that no response was received and mark as an exception.\n\nIf the user does seek further assistance AND the request has a medium or high risk rating, send either the Medium Risk GitLab Account Verification Question message (ONLY if the user has any private projects) or the High Risk GitLab Account Verification Question message to the data subject. Users have 7 calendar days to respond to those questions. The Support Engineer (Access) task should remain open during this time.\n\nPlease Note:  We cannot deny support to free users for exporting their data if they encounter problems exporting their data. However, all assistance and communication should be done within the privacy request and not through a Zendesk Support Ticket.\n\nOnce the user passes additional verification, where required, proceed to start the process to get the project exports.",
+    "chunk_index": 19,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_20",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "for exporting their data if they encounter problems exporting their data. However, all assistance and communication should be done within the privacy request and not through a Zendesk Support Ticket.\n\nOnce the user passes additional verification, where required, proceed to start the process to get the project exports.\n\nIf the user cannot sign in, export only personal namespace projects or projects in groups where the user is the only member using the UI or the API .\n\nIf there are errors, follow the project exports for customers workflow. If you need additional troubleshooting help or ideas you can search ZenDesk for examples of past project export tickets from paid customers.\n\nUpload the project export to the Support Engineer (Access) task and send the Project Export Complete message and mark the task as complete.\n\nWhile processing a request, certain scenarios may arise that necessitate the escalation of the request to the Privacy team. The most common of these scenarios can be found in the Privacy Escalation Meta Issue template. If a request needs to be escalated to the Privacy team, do the following:\n\nCreate a new related issue using the Privacy Escalation Meta Issue template.\n\nIf you’re ever unsure if a particular scenario requires escalating, reach out to the Privacy team via the #privacy-team_help Slack channel.",
+    "chunk_index": 20,
+    "total_chunks": 22
+  },
+  {
+    "chunk_id": "24064653a46e_21",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/account_deletion_access_request_workflows",
+    "title": "Account Deletion & Data Access Requests - Workflows",
+    "source": "handbook",
+    "headings": [
+      "Account Deletion & Data Access Requests - Workflows",
+      "Purpose",
+      "Procedure",
+      "Stage 1:Submission Handling",
+      "Stage 2:Request Processing"
+    ],
+    "text": "lation Meta Issue template. If a request needs to be escalated to the Privacy team, do the following:\n\nCreate a new related issue using the Privacy Escalation Meta Issue template.\n\nIf you’re ever unsure if a particular scenario requires escalating, reach out to the Privacy team via the #privacy-team_help Slack channel.\n\nA data subject can additionally request that their GitLab forum account be deleted. We can only delete users from the GitLab forum and have no control over the Discourse platform. This request type is currently not available via the Privacy Center however a request may come in through a support ticket. To delete a forum user:\n\nAsk the user for their user profile link, their forum username, and email address. The email address they are submitting from must match that of the username and they must have responded at least once.\n\nTag one of the forum admins in an internal comment on the issue and ask them to delete the user and relevant posts.\n\nComment back that the user has been removed.",
+    "chunk_index": 21,
+    "total_chunks": 22
+  }
+]

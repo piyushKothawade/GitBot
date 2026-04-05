@@ -1,0 +1,130 @@
+[
+  {
+    "chunk_id": "9a97b901d459_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/observability_performance",
+    "title": "Observability Based Performance Testing at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Observability Based Performance Testing at GitLab",
+      "Description",
+      "Approach",
+      "Key Components",
+      "Goals"
+    ],
+    "text": "Observability Based Performance Testing at GitLab\n\nObservability Based Performance Testing is a proactive approach to understanding system performance through comprehensive instrumentation and real-time data collection. Unlike traditional performance testing, which relies on specific test scenarios, observability testing provides deep visibility into application behavior under real-world conditions.\n\nObservability testing is actively making use of our Observability tools to detect trends that would develop into performance issues. A couple common approaches:\n\nHave the development teams monitor the dashboards on their components and proactively pickup performance concerns\n\nBuild dashboards/tooling that support doing exploratory testing on the Observability data, looking for linkages that may not be obvious (system A causes system B to slow down) Tools like the Performance Bar can enable someone to notice a performance oddity and start the investigation into the root cause\n\nTools like the Performance Bar can enable someone to notice a performance oddity and start the investigation into the root cause\n\nExtend existing Observability tooling to development/test environments This enables teams to get performance metrics earlier in the development process This increases team familiarity with the tooling which facilitates easier adoption/use\n\nThis enables teams to get performance metrics earlier in the development process\n\nThis increases team familiarity with the tooling which facilitates easier adoption/use",
+    "chunk_index": 0,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "9a97b901d459_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/observability_performance",
+    "title": "Observability Based Performance Testing at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Observability Based Performance Testing at GitLab",
+      "Description",
+      "Approach",
+      "Key Components",
+      "Goals"
+    ],
+    "text": "s to get performance metrics earlier in the development process This increases team familiarity with the tooling which facilitates easier adoption/use\n\nThis enables teams to get performance metrics earlier in the development process\n\nThis increases team familiarity with the tooling which facilitates easier adoption/use\n\nInstrumentation : Embedding traces, metrics, and structured logging across the application stack.\n\nReal-time Data Collection : Gathering performance data continuously during actual usage.\n\nHolistic Analysis : Examining the entire system to identify bottlenecks and patterns.\n\nEnhanced Performance Visibility : Increase team awareness of their work’s performance impact.\n\nProactive Issue Detection : Identify potential problems before they affect customers.\n\nTeam Empowerment : Provide accessible performance analysis tools that don’t require specialized expertise.\n\nReplace Load Testing : Observability-based testing complements, but does not replace, well-designed load tests like those using GPT .\n\nImplementation Approach\n\nPhase 1: Foundation Setting\n\nEducation & Documentation Add documentation on what this process is so teams understand it Create training to help teams understand and adopt Create guides to enable teams to build / use performance dashboards\n\nAdd documentation on what this process is so teams understand it\n\nCreate training to help teams understand and adopt\n\nCreate guides to enable teams to build / use performance dashboards",
+    "chunk_index": 1,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "9a97b901d459_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/observability_performance",
+    "title": "Observability Based Performance Testing at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Observability Based Performance Testing at GitLab",
+      "Description",
+      "Approach",
+      "Key Components",
+      "Goals"
+    ],
+    "text": "understand it Create training to help teams understand and adopt Create guides to enable teams to build / use performance dashboards\n\nAdd documentation on what this process is so teams understand it\n\nCreate training to help teams understand and adopt\n\nCreate guides to enable teams to build / use performance dashboards\n\nBaseline Assessment & Infrastructure There are a number of existing dashboards, identify existing ones that already cover what we need Identify gaps and develop plans to fill\n\nThere are a number of existing dashboards, identify existing ones that already cover what we need\n\nIdentify gaps and develop plans to fill\n\nPhase 2: Initial Implementation\n\nTeam Selection Select a single team to pair with Work with to identify / build dashboards for their use Integrate with their workflow\n\nSelect a single team to pair with\n\nWork with to identify / build dashboards for their use\n\nIntegrate with their workflow\n\nFeedback Loop & Documentation Bring lessons learned back into documentation for other teams\n\nBring lessons learned back into documentation for other teams\n\nPhase 3: Practice and Culture Building\n\nExpand to Early Adopters\n\nProcess Integration Document how to use in GitLab Dev workflows\n\nDocument how to use in GitLab Dev workflows\n\nPhase 4: Expansion and Maturity\n\nContinuous Improvement\n\nAdvanced Capabilities Machine Learning Integration : Implement ML algorithms to predict performance issues based on observability data patterns. Enhanced Developer Tools : Create IDE plugins that provide real-time performance insights during code writing.",
+    "chunk_index": 2,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "9a97b901d459_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/observability_performance",
+    "title": "Observability Based Performance Testing at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Observability Based Performance Testing at GitLab",
+      "Description",
+      "Approach",
+      "Key Components",
+      "Goals"
+    ],
+    "text": "kflows\n\nPhase 4: Expansion and Maturity\n\nContinuous Improvement\n\nAdvanced Capabilities Machine Learning Integration : Implement ML algorithms to predict performance issues based on observability data patterns. Enhanced Developer Tools : Create IDE plugins that provide real-time performance insights during code writing.\n\nMachine Learning Integration : Implement ML algorithms to predict performance issues based on observability data patterns.\n\nEnhanced Developer Tools : Create IDE plugins that provide real-time performance insights during code writing.\n\nCase Study 1: Scrum team using Observability Based Performance Testing\n\nThe team was building an ETL (Extract, Transform, Load) project with critical performance requirements. A few hours of system delay would create an insurmountable backlog in the ETL process, making performance monitoring essential to business operations. The team was small (9 developers, 2 QA, 1 Ops) and deployed to production every other week, adding a heavy weight process would of introduced a significant burden. So, we implemented using our existing Observability stack.\n\nObservability implementation\n\nWe implemented a three-tiered monitoring approach:\n\nUser Experience Monitoring Used existing Apdex-based dashboards for both production and test environments Tracked end-user performance metrics like page load times and API response times Set clear thresholds for acceptable performance levels\n\nUsed existing Apdex-based dashboards for both production and test environments\n\nTracked end-user performance metrics like page load times and API response times",
+    "chunk_index": 3,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "9a97b901d459_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/observability_performance",
+    "title": "Observability Based Performance Testing at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Observability Based Performance Testing at GitLab",
+      "Description",
+      "Approach",
+      "Key Components",
+      "Goals"
+    ],
+    "text": "and test environments Tracked end-user performance metrics like page load times and API response times Set clear thresholds for acceptable performance levels\n\nUsed existing Apdex-based dashboards for both production and test environments\n\nTracked end-user performance metrics like page load times and API response times\n\nSet clear thresholds for acceptable performance levels\n\nService-Level Monitoring Created detailed dashboards for key services showing: Resource utilization (CPU, memory, I/O) Service dependencies and their performance Queue lengths and processing rates Established KPI tracking for critical ETL operations\n\nCreated detailed dashboards for key services showing: Resource utilization (CPU, memory, I/O) Service dependencies and their performance Queue lengths and processing rates\n\nResource utilization (CPU, memory, I/O)\n\nService dependencies and their performance\n\nQueue lengths and processing rates\n\nEstablished KPI tracking for critical ETL operations\n\nError Tracking Implemented comprehensive error logging Created error pattern recognition dashboards Set up alerting for error rate thresholds\n\nImplemented comprehensive error logging\n\nCreated error pattern recognition dashboards\n\nSet up alerting for error rate thresholds\n\nDashboard Review (5 minutes in daily standup) Team reviewed all three dashboard tiers Focused on identifying patterns rather than immediate problem-solving Used a structured approach: Review user experience metrics Check service health indicators Examine error patterns\n\nTeam reviewed all three dashboard tiers",
+    "chunk_index": 4,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "9a97b901d459_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/observability_performance",
+    "title": "Observability Based Performance Testing at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Observability Based Performance Testing at GitLab",
+      "Description",
+      "Approach",
+      "Key Components",
+      "Goals"
+    ],
+    "text": "resholds\n\nDashboard Review (5 minutes in daily standup) Team reviewed all three dashboard tiers Focused on identifying patterns rather than immediate problem-solving Used a structured approach: Review user experience metrics Check service health indicators Examine error patterns\n\nTeam reviewed all three dashboard tiers\n\nFocused on identifying patterns rather than immediate problem-solving\n\nUsed a structured approach: Review user experience metrics Check service health indicators Examine error patterns\n\nReview user experience metrics\n\nCheck service health indicators\n\nExamine error patterns\n\nIssue Management Created issues for concerning patterns Prioritized performance issues alongside feature work Allocated dedicated investigation time in sprint planning\n\nCreated issues for concerning patterns\n\nPrioritized performance issues alongside feature work\n\nAllocated dedicated investigation time in sprint planning\n\nImplementation Challenges\n\nSmall team size and fast release cycle was a constraint on what we could deliver\n\nBalancing prioritizing performance investigation with new feature development was difficult Performance improvements often competed with feature deadlines Sometimes had to make trade-offs between immediate fixes and long-term solutions\n\nPerformance improvements often competed with feature deadlines\n\nSometimes had to make trade-offs between immediate fixes and long-term solutions",
+    "chunk_index": 5,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "9a97b901d459_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/observability_performance",
+    "title": "Observability Based Performance Testing at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Observability Based Performance Testing at GitLab",
+      "Description",
+      "Approach",
+      "Key Components",
+      "Goals"
+    ],
+    "text": "ture development was difficult Performance improvements often competed with feature deadlines Sometimes had to make trade-offs between immediate fixes and long-term solutions\n\nPerformance improvements often competed with feature deadlines\n\nSometimes had to make trade-offs between immediate fixes and long-term solutions\n\nIt took some trial and error to identify the right metrics/dashboard configuration for our team What we thought was the right metric to monitor proved not to be correct The infrastructure evolved incrementally so we had to evolve the dashboards to keep in sync\n\nWhat we thought was the right metric to monitor proved not to be correct\n\nThe infrastructure evolved incrementally so we had to evolve the dashboards to keep in sync\n\nMet performance KPIs consistently\n\nMaintained 99.999% uptime during 10x growth period Zero performance-related incidents No emergency load testing needed Proactively scaled based on observability data\n\nZero performance-related incidents\n\nNo emergency load testing needed\n\nProactively scaled based on observability data\n\nLessons Learned: Early warning from observability prevented major incidents Daily review habit kept performance top-of-mind Small, regular improvements are better than big reactive changes\n\nEarly warning from observability prevented major incidents\n\nDaily review habit kept performance top-of-mind\n\nSmall, regular improvements are better than big reactive changes\n\nTools and Technologies\n\n[Add other relevant tools used at GitLab]\n\nGitLab Handbook pages GitLab Performance Monitoring Observability for stage groups",
+    "chunk_index": 6,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "9a97b901d459_7",
+    "url": "https://handbook.gitlab.com/handbook/engineering/testing/observability_performance",
+    "title": "Observability Based Performance Testing at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Observability Based Performance Testing at GitLab",
+      "Description",
+      "Approach",
+      "Key Components",
+      "Goals"
+    ],
+    "text": "y warning from observability prevented major incidents\n\nDaily review habit kept performance top-of-mind\n\nSmall, regular improvements are better than big reactive changes\n\nTools and Technologies\n\n[Add other relevant tools used at GitLab]\n\nGitLab Handbook pages GitLab Performance Monitoring Observability for stage groups\n\nGitLab Performance Monitoring\n\nObservability for stage groups\n\n[Link to related blog posts or external resources]\n\n[Information on available training or workshops]",
+    "chunk_index": 7,
+    "total_chunks": 8
+  }
+]

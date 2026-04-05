@@ -1,0 +1,706 @@
+[
+  {
+    "chunk_id": "8cb2cc99d5d1_0",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "Organizational Structure\n\nOn this page we plan to take you through the organizational structure, layers and Job Frameworks that build GitLab as a company. We are working with two Job Frameworks, one for Individual Contributors and one for People Managers. We aim to explain how we use those frameworks, other projects and further considerations in GitLab’s Organizational Structure.\n\nYou can see who reports to whom in the most up-to-date organization chart by logging into Workday, choosing the Profile section, and select Team from the left sidebar to view Org Chart. Our HRIS is the Single Source of Truth for team member and organizational information.\n\nLevel (People Manager/IC)\n\nChief Executive Officer\n\nGitLab Global Organization\n\nChief People Officer and Chief Technology Officer\n\nVP of Global Channels\n\nSenior Director, Engineering\n\nDevelops the framework and strategy\n\nDirector/ Distinguished\n\nDirector of Customer Success Operations\n\nSub-department/multiple teams\n\nDrives the framework, strategy and plans\n\nSenior Manager/Principal\n\nAcross Sub-departments\n\nSenior People Operations Specialist\n\nCross functional work\n\nIntermediate Backend Engineer\n\nGitLab has at most eight layers in the company structure (Associate/Intermediate/Senior, Manager, Senior Manager, Director, Senior Director and/or VP, Executives, CEO). You can skip layers but you generally never have someone reporting to the same layer (Example of a VP reporting to a VP).\n\nDual Career Path at GitLab",
+    "chunk_index": 0,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_1",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "GitLab has at most eight layers in the company structure (Associate/Intermediate/Senior, Manager, Senior Manager, Director, Senior Director and/or VP, Executives, CEO). You can skip layers but you generally never have someone reporting to the same layer (Example of a VP reporting to a VP).\n\nDual Career Path at GitLab\n\nA dual career path is a career path that allows upward mobility for team members without requiring that they be placed into a People Manager position. This structure serves as a way to advance team members who have deep specialist/technical skills but who are either 1) not interested or inclined to pursue a People Manager position and rather work as an Individual Contributor (IC), or 2) there is not sufficient business need to add additional layers of people management into a team at this time.\nWhile today the dual-career path is most built out in our Engineering division, other divisions across the company have began to build these out as well where structure and business need permits. The fork between specialist/technical work and the People Manager track is generally above the Senior level. Once someone reaches a Senior-level role, and wants to progress, they will need to decide whether they want to remain purely specialist/technical or pursue a People Manager role. Their manager can provide opportunities to try tasks from both tracks if they wish. In most cases, the IC track and the people management path compensation bands align. Team members can review compensation details in our compensation page .",
+    "chunk_index": 1,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_2",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "hey want to remain purely specialist/technical or pursue a People Manager role. Their manager can provide opportunities to try tasks from both tracks if they wish. In most cases, the IC track and the people management path compensation bands align. Team members can review compensation details in our compensation page .\n\nWe’ve developed Job frameworks to provide clarity and consistency in our expectations for each job level at GitLab. There are two Job Frameworks: one for Individual Contributors and one for People Managers which are available to internal GitLab team members only, that map to the levels outlined in our job levels . If we make any updates to the frameworks we will always communicate that broadly. If you as a team member want to propose any changes we recommend that you to open a confidential issue in the People Business Partner project .\n\nGoals of the Job Frameworks\n\nThe Job frameworks will help team members understand the career level at which they’re contributing and understand the skills required for higher levels within the organization. Team members will also more easily see what skills are required of them at the next level in order to be ready to progress, when the business need supports the additional scope.\n\nThis guidance will better equip managers to have more productive conversations about performance expectations and career progression, enable them to support their team members in setting personal development goals and creating shared expectations, and ensure consistency in our expectations for different levels across the organization.",
+    "chunk_index": 2,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_3",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "ll better equip managers to have more productive conversations about performance expectations and career progression, enable them to support their team members in setting personal development goals and creating shared expectations, and ensure consistency in our expectations for different levels across the organization.\n\nHaving Job frameworks that managers and team members share will help us make things more transparent, consistent, actionable, and equitable.  Departments leads can work with their People Business Partner to build out specific functional frameworks with job-specific competencies beyond the general frameworks provided here.\n\nHow to use Job Frameworks\n\nWe are using the Job Frameworks in the following programs:\n\nPromotion Process Here the review of the Job Framework will be required ahead of the quarterly Department Promotion Calibrations. The Job Framework will help provide focus for the promotion document to ensure core areas of performance at the next level are captured consistently across the company\n\nHere the review of the Job Framework will be required ahead of the quarterly Department Promotion Calibrations.\n\nThe Job Framework will help provide focus for the promotion document to ensure core areas of performance at the next level are captured consistently across the company",
+    "chunk_index": 3,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_4",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "ptured consistently across the company\n\nHere the review of the Job Framework will be required ahead of the quarterly Department Promotion Calibrations.\n\nThe Job Framework will help provide focus for the promotion document to ensure core areas of performance at the next level are captured consistently across the company\n\nCareer Development Conversations Both managers and team members can leverage the frameworks in their conversations. The frameworks drive transparency of the competencies and job criteria of different levels at GitLab. When aligned with the Career Development goals of the team member, the team member and manager can collaborate on developing these competencies by leveraging Learning & Development Programs\n\nBoth managers and team members can leverage the frameworks in their conversations.\n\nThe frameworks drive transparency of the competencies and job criteria of different levels at GitLab. When aligned with the Career Development goals of the team member, the team member and manager can collaborate on developing these competencies by leveraging Learning & Development Programs\n\nOrganizational Design and Headcount Planning The frameworks will support Leadership and hiring teams in identifying the appropriate levels for to be opened roles. For expanding and introducing new job levels we will leverage the frameworks to review what distinctive competencies are that we would need.\n\nThe frameworks will support Leadership and hiring teams in identifying the appropriate levels for to be opened roles.",
+    "chunk_index": 4,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_5",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "n identifying the appropriate levels for to be opened roles. For expanding and introducing new job levels we will leverage the frameworks to review what distinctive competencies are that we would need.\n\nThe frameworks will support Leadership and hiring teams in identifying the appropriate levels for to be opened roles.\n\nFor expanding and introducing new job levels we will leverage the frameworks to review what distinctive competencies are that we would need.\n\nTalent Assessment : Job frameworks should be leveraged in the Talent Assessment program for both the self-assessment and the manager assessment in evaluating a team member against the competencies for their grade level. In a review of the competencies per level, strengths and development opportunities may surface which can help with content for the review that can lead to discussions with the team member and their manager on future development and career opportunities.\n\nJob frameworks should be leveraged in the Talent Assessment program for both the self-assessment and the manager assessment in evaluating a team member against the competencies for their grade level. In a review of the competencies per level, strengths and development opportunities may surface which can help with content for the review that can lead to discussions with the team member and their manager on future development and career opportunities.\n\nSuccession Planning : We leverage Job Frameworks in Succession planning as we assess requirements for each role level.",
+    "chunk_index": 5,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_6",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "and development opportunities may surface which can help with content for the review that can lead to discussions with the team member and their manager on future development and career opportunities.\n\nSuccession Planning : We leverage Job Frameworks in Succession planning as we assess requirements for each role level.\n\nWe leverage Job Frameworks in Succession planning as we assess requirements for each role level.\n\nFor each Job Framework we have identified categories for describing competencies we expect to see at each level. Below we describe the definitions of each category:\n\nScope & Influence : The scope of the responsibilities and ways each job influences product, team members or company strategy.\nThis ranges from focus on own work to cross-company and external influence in terms of product, team members, customers or company strategy.\n\nComplexity & Problem solving : The level of complexity and problem-solving skills in day-to-day responsibilities and projects.\nThis ranges from low/moderate complexity and problem solving to highly complex issues that influence the accomplishment of long-term goals of GitLab.\n\nLeadership & People Management/Communication : The level of leadership they display and how they communicate within the organization. We expect that individual contributors also show leadership in their roles.\nThis ranges from within their team to executives and board members.\n\nHigh Performing Teams : Each characteristic of high performance is broken into 3 indicators to help you recognize and measure success.",
+    "chunk_index": 6,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_7",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "hey communicate within the organization. We expect that individual contributors also show leadership in their roles.\nThis ranges from within their team to executives and board members.\n\nHigh Performing Teams : Each characteristic of high performance is broken into 3 indicators to help you recognize and measure success.\n\nValues Competencies : Competencies that are aligned with our CREDIT Values .\n\nRemote Working Competencies : Competencies that are aligned with our Remote working competencies.\n\nFunctional Competencies : Competencies that are specific per function. These are built out by each function themselves.\n\nBesides the above competency categories we have added two categories to the Job Frameworks:\n\nTypical Reporting Structure : This shows the typical reporting structure for that Job level.\n\nDistinction with next level : This is a brief statement of what distinguishes one level from the next level.\n\nIndividual Contributor Job Framework\n\nIndividual contributors are Managers of One . ICs make up the majority of the GitLab team members. The Job Framework for ICs is a high level guide that describes the minimum competencies we expect at each level of an IC. For exact requirements and responsibilities per level team members should refer to the Job Family page of each job.\n\nPeople Managers Job Framework\n\nYou can find the Job Framework for People Managers in the tab here . Below we will describe each level and their reporting structure.\n\nGeneral Expectations of all People Managers",
+    "chunk_index": 7,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_8",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "act requirements and responsibilities per level team members should refer to the Job Family page of each job.\n\nPeople Managers Job Framework\n\nYou can find the Job Framework for People Managers in the tab here . Below we will describe each level and their reporting structure.\n\nGeneral Expectations of all People Managers\n\nFor all People Managers we have general expectations in behavior which we describe below . These are not captured in the Job Framework but rather can be used as a guide on how we expect people managers to behave and interact with their team/peers. The difference with the Job Framework is that it doesn’t describe high level competencies but rather sets very concrete expectations and GitLab basics.\n\nManagers belong to the Management Group . You can view the Job Framework for expectations per competency category. Typically a Manager reports to a Senior Manager or Director.\n\nSenior Managers belong to the Management Group . Furthermore you can view the Job Framework for expectations per competency category. Typically a Senior Manager reports to a Director or above.",
+    "chunk_index": 8,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_9",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "view the Job Framework for expectations per competency category. Typically a Manager reports to a Senior Manager or Director.\n\nSenior Managers belong to the Management Group . Furthermore you can view the Job Framework for expectations per competency category. Typically a Senior Manager reports to a Director or above.\n\nDirectors are typically managers of managers. They make up the Director Group . In some cost center, Directors map to departments. For example, under the G&A Division, Business Operations is a department led by a Director. This is not a hard-and-fast rule, though, as under G&A, People is all under one department.\nMembers of the director group are expected to demonstrate leadership in the way all members of the management group are, plus the additional competencies you can find in the Job Framework. Typically a Director reports to a Senior Director or above.\n\nMembers of the director group are expected to demonstrate leadership in the way all members of the management group are, plus:\n\nThey have the ability to align the day-to-day execution to the top objectives of the company, and they are responsible for making sure the top objectives are well communicated to team members.\n\nThey work peer-to-peer and sponsor healthy conflict amongst the team to resolve issues quickly, escalating only when all options are exhausted.\n\nThey ambitiously define roles for, grow and hire their teams for what is needed from the business in the next 3-4 years.\n\nThey coach their teams to work within the communication guidelines and lead by example.",
+    "chunk_index": 9,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_10",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "healthy conflict amongst the team to resolve issues quickly, escalating only when all options are exhausted.\n\nThey ambitiously define roles for, grow and hire their teams for what is needed from the business in the next 3-4 years.\n\nThey coach their teams to work within the communication guidelines and lead by example.\n\nSlack channel: #directors-and-above (private)\n\nSenior Directors and VPs\n\nSenior leaders are defined as Senior Directors or VPs.\n\nSenior Directors are typically managers of Managers and/or Directors. In some divisions, senior leaders map to departments in the cost center structure. Typically a Senior Director reports to a VP or above.\n\nVP’s are typically managers of Senior Directors and/or Directors. Similar to Senior Directors they map to departments. Typically a VP reports to an Executive.\n\nSenior leaders are expected to demonstrate leadership in the way all members of the director group are, plus the additional competencies you can find in the Job Framework:\n\nThey have significant strategic and functional responsibility.\n\nThey have significant operating budget responsibility (things like compensation planning, budget allocation, negotiation, investment tradeoff decisions).\n\nThey have leverage and influence over the performance and success of large teams (both reporting directly and indirectly) and their success will result in increased success across large numbers of people.\n\nThe impact of their decisions are broad and significant.",
+    "chunk_index": 10,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_11",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "allocation, negotiation, investment tradeoff decisions).\n\nThey have leverage and influence over the performance and success of large teams (both reporting directly and indirectly) and their success will result in increased success across large numbers of people.\n\nThe impact of their decisions are broad and significant.\n\nSome of them have critical external responsibility to represent the company and make decisions and statements for which the company is accountable.\n\nVP-Directs are a subset of GitLab VPs who report directly to a member of E-Group. They are members of the VP-Directs Group.\n\nThe executive layer is structured as follows. R&D focused executives include the Chief Product Officer (CPO), Chief Information Security Officer (CISO) and the Chief Technology Officer (CTO).\nGo-to-market focused executives include the Chief Revenue Officer (CRO) and Chief Marketing Officer (CMO).\nThe three enabling functions, legal, finance and people, also each have a C-level executive, the Chief Legal Officer (CLO), Chief Financial Officer (CFO) and Chief People Officer (CPO).\n\nTogether, these executives consist of the E-group They meet weekly, attend quarterly board meetings, have a public Slack channel #e-group for most discussion topics, as well as a private one for rare confidential matters.\n\nExcept for Sales and Marketing, there are usually multiple executives to a cost center . For example, CLO, CFO, CEO, and CPO all fall under the G&A (General & Administrative Expenses) Cost Center.",
+    "chunk_index": 11,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_12",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": ", have a public Slack channel #e-group for most discussion topics, as well as a private one for rare confidential matters.\n\nExcept for Sales and Marketing, there are usually multiple executives to a cost center . For example, CLO, CFO, CEO, and CPO all fall under the G&A (General & Administrative Expenses) Cost Center.\n\nMembers of the E-group are expected to demonstrate leadership in the way all members of the Senior Directors and VPs are, plus:\n\nThey suggest relevant, ambitious, and quantifiable OKRs and achieve 70% of them.\n\nThey are reliable and ensure their teams complete what they agreed to do.\n\nThey are proactive about detecting and communicating problems in their functions before other departments even notice them.\n\nThey hire and retain leaders that perform better in their functional areas.\n\nThey create roles and set requirements for what is needed 3-4 years out and hire for that profile.\n\nThey get a huge amount of things done by iterating quickly and training their department in iteration.\n\nThey define and communicate the business strategy and vision, instead of being overly tactical in the business.\n\nThey share insights about other functional areas that make others better at their job.\n\nThey suggest and implement improvements to our cross-functional processes.\n\nThey frequently help achieve results outside their function.\n\nThey make other executives better in their discipline\n\nSlack channels: #e-group (public), and a private channel for confidential matters",
+    "chunk_index": 12,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_13",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "areas that make others better at their job.\n\nThey suggest and implement improvements to our cross-functional processes.\n\nThey frequently help achieve results outside their function.\n\nThey make other executives better in their discipline\n\nSlack channels: #e-group (public), and a private channel for confidential matters\n\nMembers of the management group are expected to demonstrate leadership in the way all GitLab team members are , plus:\n\nEnsuring team members feel included and valued is one of the most important tasks of a manager. Proactively create psychological safety with your team members so that diverse perspectives can be heard and everyone can communicate and contribute authentically and creatively.\n\nEnsuring team members understand what is expected of them in their roles is a critical role that managers have to ensure company success. Managers should ensure job families include specific performance indicators and that is clearly communicated to each team member.\n\nManaging underperformance is another important task of a manager.\n\nWhen times are great, be a voice of moderation. When times are bad, be a voice of hope. In order to effectively be the voice of hope, managers should make sure they understand the company mission, goals, and leadership decisions. If managers have concerns about leadership decisions, they should voice them to leaders in order to understand the context, share key insights from their team members to ensure we make sound decisions, and then be able to explain context to their team members.",
+    "chunk_index": 13,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_14",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "stand the company mission, goals, and leadership decisions. If managers have concerns about leadership decisions, they should voice them to leaders in order to understand the context, share key insights from their team members to ensure we make sound decisions, and then be able to explain context to their team members.\n\nTo maintain an effective organization, a manager’s span of control should be around 7 people, ranging anywhere from 4 to 10. Below this range the inefficiency of an extra organizational layer is larger than the benefit of a specialized group. Above this range, the manager doesn’t have time to do proper 1:1s anymore.\n\nThe span of control is the same at every level of the organization. This prevents the organization from having an additional layer that adds cost and reduces decision making speed. To increase the number of reports you can handle increase delegation to the directly responsible individual who can be a manager. Size the number of reports on where you expect the organization to be in 6 months from now.\n\nWhen you praise someone, try to do it publicly and in front of an audience . When you give suggestions to improve, do it privately 1 on 1 . A Harvard study has shown that the ideal ratio of positive to negative feedback for high-performing teams is nearly 6:1. Be generous with your positive feedback.",
+    "chunk_index": 14,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_15",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "months from now.\n\nWhen you praise someone, try to do it publicly and in front of an audience . When you give suggestions to improve, do it privately 1 on 1 . A Harvard study has shown that the ideal ratio of positive to negative feedback for high-performing teams is nearly 6:1. Be generous with your positive feedback.\n\nExpress gratitude in team meetings, group conversations, and other communications to people who constructively challenge your opinions and ask difficult questions. This helps create psychological safety, promote our values, and prevent the five dysfunctions .\n\nUnderstand that there are different ways to get to the same goal. There are different perspectives, and discussions need to happen.\n\nWhen someone says they are considering quitting, drop everything and listen to them. Ask questions to find out what their concerns are. If you delay, the person will not feel valued and the decision will be irreversible.\n\nIn addition to announcing new team member arrivals, departures are also announced in the #team-member-updates chat channel (but only after the Google/Slack accounts are revoked, see the offboarding page and the offboarding checklist for details). We must respect the privacy of the individual concerned. If you are asked why someone has left or is leaving, please refer that person to the general guidelines section of the handbook where we describe what can and cannot be shared.",
+    "chunk_index": 15,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_16",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "unts are revoked, see the offboarding page and the offboarding checklist for details). We must respect the privacy of the individual concerned. If you are asked why someone has left or is leaving, please refer that person to the general guidelines section of the handbook where we describe what can and cannot be shared.\n\nPeople should not be given a raise or a title because they ask for it or threaten to quit. We should pro-actively give raises and promote people without people asking. If you do it when people ask, you are being unfair to people that don’t ask and you’ll end up with many more people asking.\n\nDon’t refer to GitLab as a family . It is great that our team feels like a close-knit group and we should encourage that, as this builds a stronger team. But families and teams are different. Families come together for the relationship and do what is critical to retain it. Teams are assembled for the task and do what is required to complete it. Don’t put the relationship above the task. Besides, families don’t have an offboarding process . Families should have unconditional love, while teams have conditional love. The best companies are supporters of families. . The idea that your team is your family can lead to unwarranted pressure: “this office is like a family… in that there is vague pressure to be here on holidays” . You are the CEO of your own career, treat GitLab as a customer.",
+    "chunk_index": 16,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_17",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "onal love, while teams have conditional love. The best companies are supporters of families. . The idea that your team is your family can lead to unwarranted pressure: “this office is like a family… in that there is vague pressure to be here on holidays” . You are the CEO of your own career, treat GitLab as a customer.\n\nPraise and credit the work of your reports to the rest of the company, never present it as your own. This and many other great lessons can be found in an Ask MetaFilter thread worth reading.\n\nTry to be aware of your cognitive biases .\n\nCombine consistency and agility .\n\nConsider maintaining a README file for your teams which documents your expectations and working style. Encourage MRs to it.\n\nAlthough our time scales are shorter, there is a great article about how to think about PIPs .\n\nDo everything to unblock people. If someone has a question that is keeping them from being productive, try to answer the question yourself or find someone who can.\n\nCommunicate in a professional manner as though your words will be shared widely (e.g. published in a newspaper).\n\nEmploy multimodal communication to broadcast important decisions.\n\nYou are expected to respond on social media . If you have questions, please seek counsel in the #social_media chat channel.\n\nMake sure your reports experience a sense of progress in their work.",
+    "chunk_index": 17,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_18",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "rds will be shared widely (e.g. published in a newspaper).\n\nEmploy multimodal communication to broadcast important decisions.\n\nYou are expected to respond on social media . If you have questions, please seek counsel in the #social_media chat channel.\n\nMake sure your reports experience a sense of progress in their work.\n\nA tweet by Sam Altman combined with a reply by Paul Graham says it best: “People either get shit done or they don’t. And it’s easy to be tricked because they can be smart but never actually do anything.” Watch for results instead of articulate answers to questions, otherwise you’ll take too much time identifying under-performers.\n\nGitLab Contribute (formerly GitLab summits) is meant for informal communication and bonding across the company. There is a limited time for business activities during GitLab Contribute so all our regular meetings should happen outside of it. We want informal, cross team, and open-ended meetings that include individual contributors. For example, inviting everyone to suggest currently missing functionality in GitLab.\n\nNever delay a decision until GitLab Contribute. Instead, use them as a deadline to get things done earlier.\n\nWe don’t have explicit 20% time at GitLab. We measure impact and not activity . If people are getting good results in the work that is assigned to them they are free to contribute to other parts of the company or work on a pet project. Don’t say, “Your work on that pet project is hurting your performance.” Instead, say, “We agreed to get X done but it is delayed, what happened and how can I help?”",
+    "chunk_index": 18,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_19",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "If people are getting good results in the work that is assigned to them they are free to contribute to other parts of the company or work on a pet project. Don’t say, “Your work on that pet project is hurting your performance.” Instead, say, “We agreed to get X done but it is delayed, what happened and how can I help?”\n\nPick a metric before launching something new. 9 out of 10 launches fail. If a project is not working out shut it down completely. Starving a team of headcount to have it die a slow death is not frugal nor motivating. Fund the winners which will still take years to break even.\n\nDo not discuss raises in advance because the salary calculator may change before the amount of the raise is decided.\n\nDo not discuss promotions, salary increases, or bonuses until the changes have gone through the entire approval process. People Ops will inform the manager when they can inform the team member of the promotion and increase.\n\nInstead of prescribing a direction to your reports, it is best to ask questions following the Socratic method until you’re happy with the direction. Your reports will have deeper knowledge in a more narrow area, so it is easy to draw different conclusions because they base theirs on different data. That is why the questions are so important.\n\nFollow Berkshire’s common injunction : “Always tell us the bad news promptly. It is only the good news that can wait.” Make sure to inform your manager of bad news as quickly as possible. Promptly reporting bad news is essential to preserving the trust that is needed to recover from it.",
+    "chunk_index": 19,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_20",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "the questions are so important.\n\nFollow Berkshire’s common injunction : “Always tell us the bad news promptly. It is only the good news that can wait.” Make sure to inform your manager of bad news as quickly as possible. Promptly reporting bad news is essential to preserving the trust that is needed to recover from it.\n\nTry to avoid military analogies and imagery. We’re not an army, we’re not at war, there is no battle, we’re not killing anyone, and we don’t have weapons. Military language is not inclusive and can lead to zero sum thinking. We take competing and winning very seriously, but there is no need to describe things using vocabulary of physical violence. Similarly, non-collaborative and aggressive terms like “rock star” and “badass” put up walls between people. If a term is standard in the industry, for example killing a Unix process , it is acceptable to use it because that is more efficient. Do use “primary-secondary” instead of “master-slave” for replication mechanisms.\n\nComplain up and explain down. Raise concerns you hear to your manager. When peers or reports complain, explain why a decision was made. If you don’t understand why, ask your manager.",
+    "chunk_index": 20,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_21",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "is acceptable to use it because that is more efficient. Do use “primary-secondary” instead of “master-slave” for replication mechanisms.\n\nComplain up and explain down. Raise concerns you hear to your manager. When peers or reports complain, explain why a decision was made. If you don’t understand why, ask your manager.\n\nCreate empathy for decisions from other leaders that negatively impact your team by explaining the reasons behind them. Organize a recorded AMA session with your team and the other leaders and encourage your team (as well as yourself) to ask any unanswered questions. Lead by example by ensuring that the discussion exposes what is best for the organization as a whole . Never present yourself as protecting the team from the rest of the organization; this creates a siege mentality and hinders collaboration .\n\nCoach team members to establish good remote work practices , by encouraging asynchronous communication , being handbook-first , communicating poor audio or video quality , or pointing out an open microphone.\n\nEnsuring that GitLab’s policies are upheld is an essential part of a manager’s responsibility. Managers have an obligation to look out for both their team members and the business’s best interest. If a manager becomes aware that a team member is in violation of a GitLab policy (including but not limited to the GitLab Code of Business Conduct and Ethics and Relocation policy as examples), it is their responsibility to communicate this to the aligned People Business Partner or Legal team immediately.",
+    "chunk_index": 21,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_22",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "est interest. If a manager becomes aware that a team member is in violation of a GitLab policy (including but not limited to the GitLab Code of Business Conduct and Ethics and Relocation policy as examples), it is their responsibility to communicate this to the aligned People Business Partner or Legal team immediately.\n\nSlack channels: #managers , #people-managers-and-above (private)\n\nBoard Members serve on the GitLab board and participate in board meetings and board committees, as well as other responsibilities.\n\nYou may occasionally hear of the E-Group hosting an “CEO Skips” call or meeting.\nThe CEO Skips group is made up of anyone who reports directly to the e-group. It also includes People Business Partners, Chief of Staffs, and internal communications.\nIt is made up of some ICs, some managers, some directors, and some senior leaders.\n\nFunctional Leaders include all CEO Skips and a small number of other team members who are invited by E-Group members.\n\nThis group is called on to help provide input and communicate messaging when appropriate.\n\nAs an example, the Functional Leaders meets after every e-group offsite .\n\nSlack channel: #functional-leaders (private)\n\nDirects-Group is a group made up of a senior leader from each function. These leaders operate as extensions of E-Group and support key initiatives within a six to nine month rotation. The Office of the CEO is responsible for organizing and orienting this group in collaboration with the cohorts E-Group Sponsor.\n\nDirects-Group Program Objectives",
+    "chunk_index": 22,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_23",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "made up of a senior leader from each function. These leaders operate as extensions of E-Group and support key initiatives within a six to nine month rotation. The Office of the CEO is responsible for organizing and orienting this group in collaboration with the cohorts E-Group Sponsor.\n\nDirects-Group Program Objectives\n\nGive greater exposure to E-Group and E-Group decision making to develop leaders with C-level potential\n\nEnlist a larger group of people to help drive and inform key initiatives\n\nSupport cascade of information from E-Group within their teams and functions. This would include cascading to peers on their functional leadership team.\n\nDirects-Group Responsibilities\n\nAttend portions of and contribute in designated meetings with E-Group and E-Group Offsites\n\nParticipate in onboarding, offboarding, regularly scheduled Directs-Group syncs, professional development programming, and ramping of the next cohort\n\nSupport communication cascading and initiative support resulting from your engagement in Directs-Group\n\nServe in this role while managing existing responsibilities\n\nContribute to the cohort project\n\nDirects-Group Selection Process\n\nThe Office of the CEO kicks off the selection process three months in advance of every cohort end date to allow adequate time for Directs-Group identification and onboarding in advance of first E-Group Offsite and appropriate transition from one Directs group to another.\n\nEach E-Group member identifies first and second choice candidates. E-Group will discuss if TMRG criteria is not met within first choice candidate selections.",
+    "chunk_index": 23,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_24",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "w adequate time for Directs-Group identification and onboarding in advance of first E-Group Offsite and appropriate transition from one Directs group to another.\n\nEach E-Group member identifies first and second choice candidates. E-Group will discuss if TMRG criteria is not met within first choice candidate selections.\n\nCandidates will be identified and notified at least 45 days before the start of the new cohort in which they would serve in the role.\n\nIf a candidate declines their nomination, the function leader can nominate a new candidate for consideration.\n\nDirects-Group Selection Criteria\n\nEach Directs-Group cohort must meet the following criteria:\n\nHigh growth and high performing team members in good standing\n\nDirector + who are direct reports to an E-Group member\n\nFolks who consistently demonstrate CREDIT Values\n\n⅓ or more of each cohort needs to be comprised of members from underrepresented groups\n\nInclude someone who is based outside of the United States\n\nDirects-Group leadership\n\nDuring the Directs-Group nomination process, E-Group will nominate a person to lead the cohort. Ideally this person comes from the previous cohort so they have experience. It is this person’s responsibility to:\n\nGet agreement between E-Group and Directs-Group on key deliverables\n\nEnsure that the group functions well\n\nBe an official member of the incoming cohort\n\nHelp ramp up the incoming cohort\n\nCoordinate incoming team activities and deliverables\n\nServe as a cohort representative with E-Group",
+    "chunk_index": 24,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_25",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "this person’s responsibility to:\n\nGet agreement between E-Group and Directs-Group on key deliverables\n\nEnsure that the group functions well\n\nBe an official member of the incoming cohort\n\nHelp ramp up the incoming cohort\n\nCoordinate incoming team activities and deliverables\n\nServe as a cohort representative with E-Group\n\nEnsure that the group, in collaboration with the E-Group sponsor, achieves success in at least one cohort project\n\nThis person will be selected based on:\n\nTheir demonstrated ability to lead a cross-functional leadership team\n\nAbility to make this additional time commitment\n\nThe cohorts span six to nine months aligning with two to three quarters in GitLab’s fiscal calendar. Specific start dates are timed to align with E-Group Offsites.\n\nE-Group Sponsor for Directs-Group\n\nEach cohort will have an E-Group sponsor for the duration of the cohort. This person will attend Directs-Group Meetings and serve as a formal link to the broader E-Group. This person will be a stable counterpart to the Directs-Group Leader. The E-Group sponsor and Directs-Group Leader will come from different functions. The Sponsor will also assist Directs-Group in identifying at least one area in which they can contribute as a cohort. During Directs-Group meetings, the Sponsor will check on initiative status and offer feedback.\n\nDirects-Group Participants\n\nPast, present and future Directs-Group Participants will be listed here.\n\nDirects-Group Cohort Members\n\nUrja Patel, Matt Taylor, Rob Allen, Melissa Smolenksy, Christopher Lefelhocz, Kenny Johnston, Justin Farris",
+    "chunk_index": 25,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_26",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "Group meetings, the Sponsor will check on initiative status and offer feedback.\n\nDirects-Group Participants\n\nPast, present and future Directs-Group Participants will be listed here.\n\nDirects-Group Cohort Members\n\nUrja Patel, Matt Taylor, Rob Allen, Melissa Smolenksy, Christopher Lefelhocz, Kenny Johnston, Justin Farris\n\nJim Gladen, Pattie Egan, Dave Steer, Hillary Benson, Eliran Mesika (cohort lead), Stan Hu, Christie Lenneville, Ryan O’Nell, Joaquin Fuentes, Sid Sijbrandij (E-Group Sponsor)\n\nEach Directs-Group will have at least one cohort project. Cohort projects should be cross-functional initiatives designed to improve GitLab in someway. At least one cohort project should be identified within the first month of the cohort. Selection should involve Directs-Group and the E-Group Sponsor. Cohorts can recommend project ideas for incoming cohorts.\n\n2022-01 to 2022-10 : Stop Initiative , Internal Handbook updates\n\n2022-11 to 2023-08 : Strategic plan refresh\n\nVP-Directs Group is largely made up of VP-Directs, VPs who report directly to members of E-Group. This is a senior group of leaders who are able to assist in the cascading of critical communications, support change management, ensure our mission & vision continues to be thoroughly understood at all levels of the organization, support in top priority cross-functional activities, and act as a gauge of company sentiment & engagement. In cases in which a function has 0-2 VP-Directs, an E-Group member may nominate 1 or 2 additional people from within the function to help represent the function.\n\nVP-Directs Group Objectives",
+    "chunk_index": 26,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_27",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "s of the organization, support in top priority cross-functional activities, and act as a gauge of company sentiment & engagement. In cases in which a function has 0-2 VP-Directs, an E-Group member may nominate 1 or 2 additional people from within the function to help represent the function.\n\nVP-Directs Group Objectives\n\nThrough monthly meetings and a Slack channel, this group will be engaged to:\n\nCascade information: E-Group has a specific message that the organization needs to absorb and understand and senior leaders can help in communicating the message. This is particularly important when heavy change management is required for a specific issue or challenge and E-Group needs broader leadership support. We’d ask this group to absorb it and drive the change through their organizations.\n\nProvide information and share perspectives: This group can be a senior sounding board as decisions are made or actions are being taken. For example, this group could be engaged when E-Group has identified a need for a strategic organizational pivot and broader senior level input is desired.\n\nProvide cross-functional initiative leadership: E-Group may ask this group to take on specific cross-functional initiatives. For example, this group could play a role in addressing feedback from the Employee Engagement Survey (alongside all functional leaders) or support strategic planning activities.",
+    "chunk_index": 27,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_28",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "nput is desired.\n\nProvide cross-functional initiative leadership: E-Group may ask this group to take on specific cross-functional initiatives. For example, this group could play a role in addressing feedback from the Employee Engagement Survey (alongside all functional leaders) or support strategic planning activities.\n\nHear from customers: We’ll invite customers to speak to this group, so we can, as a leadership group, understand their perspective on GitLab and our challenges and opportunities and continue to drive customer-centricity throughout the organization.\n\nVP-Directs Group Commitment\n\nParticipate in monthly meeting, synchronously when possible (recorded meeting, if appropriate)\n\nMonitor the Slack channel\n\nShare input on proposals and plan\n\nReach out to program managers with any ideas on what should be discussed or how to improve group effectiveness\n\nVP-Directs Group Management\n\nInitial management will include:\n\nRotating E-Group sponsor: formal E-Group representative\n\nThe Chief of Staff to the CEO: owns E-Group interlock, partners with sponsor\n\nVP of Talent and Engagement: Owns team engagement and partners with VP of Global communications on internal communications. VP of Global communications owns broader communication where necessary.\nThis initial management team will be responsible for getting the group up and running and starting to establish rigor & routine. We can iterate from this model as we better understand this\nThe management team will:\n\nCoordinate with the EBA team to ensure that invite series are sent and established",
+    "chunk_index": 28,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_29",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "tion where necessary.\nThis initial management team will be responsible for getting the group up and running and starting to establish rigor & routine. We can iterate from this model as we better understand this\nThe management team will:\n\nCoordinate with the EBA team to ensure that invite series are sent and established\n\nEnsure appropriate actions are noted and followed up on, hold accountability where necessary\n\nServe as an intersection between E-Group and VP Group to ensure that meetings have a clear purpose, information is being effectively shared, and group goals are being met\n\nOrganizational Structure\n\nDivisions: the area under one executive. e.g. the Engineering division.\n\nDepartments: lead by Directors or VPs and comprise multiple teams or sub-departments e.g. the Infrastructure department within the Engineering division\n\nSub-departments: lead by Directors or Senior Managers and comprised of multiple teams e.g. the Enablement Sub-department within the Development department\n\nCompartments: lead by Senior Managers and comprised of multiple teams where the Sub-department structure is already used e.g. the Manage Compartment with the Dev Sub-department\n\nTeams: constitute departments  and are made of a line manager and their direct reports e.g. the Security operations team within the Security Department\n\nNote - within the Engineering and Product divisions we try to maintain a close relationship between our organizational structure and our Product Hierarchy in order to maintain stable counterparts in our organizational structure.",
+    "chunk_index": 29,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_30",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "and their direct reports e.g. the Security operations team within the Security Department\n\nNote - within the Engineering and Product divisions we try to maintain a close relationship between our organizational structure and our Product Hierarchy in order to maintain stable counterparts in our organizational structure.\n\nFinance also has a notion called “departments” for financial planning purposes. But these do not align with our organizational departments. For instance the finance department “product development” rolls up both the PM and Engineering functions. But it excludes the Support department, which is part of the engineering function, but a different budget. This name collision should probably be resolved in the future. For further reference see our department roll up structure for accounting purposes.\n\nWe try our best to keep our handbook and documentation up to date, but certain terms used in the past have been updated through time. The term Functional Group is no longer used, and it currently is encompassed by the term Departments . The term Functional Group leader is no longer used, and it is currently encompassed by the term E-group leaders.\n\nIn many ways, we are organized by output.\nThis way  we can ensure that responsibilities don’t overlap.\nWe also ensure every division has a clear priority.\n\nPrioritize development\n\nOur engineering organization is directly aligned to groups as defined in product category hierarchy .\nOur groups operate on the principle of stable counterparts from multiple functions.",
+    "chunk_index": 30,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_31",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "s way  we can ensure that responsibilities don’t overlap.\nWe also ensure every division has a clear priority.\n\nPrioritize development\n\nOur engineering organization is directly aligned to groups as defined in product category hierarchy .\nOur groups operate on the principle of stable counterparts from multiple functions.\n\nFor example, we have a Product Manager, Product Marketing Manager, Engineering Manager, Content Marketer, Backend Developers, Frontend Developers, and Product Designers that are all dedicated to a group called “Package”. Collectively, these individuals form the “Package group”. The word “Package” appears in their titles as a specialty, and in some cases, their team name.\n\nWe distinguish between types of stable counterparts to these Product Groups with:\n\nPrimary Stable Counterparts - Team members assigned to our Product hierarchy (typically groups) from Product, Development, and Product Design.\n\nComplete Stable Counterparts - All team members assigned to product hierarchy from functions outside of the primary functions and defined in our product categories page . For example - we assign stable counterparts from Support, Product Marketing and Customer Success who are all considered part of the complete stable counterparts.\n\nA group has no reporting lines because we don’t want a matrix organization .\nInstead, we rely on stable counterparts to make a group function well.\nIn some shared functions, like design, technical writing and quality individuals are paired to one or more stages so that there are stable counterparts.",
+    "chunk_index": 31,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_32",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "able counterparts.\n\nA group has no reporting lines because we don’t want a matrix organization .\nInstead, we rely on stable counterparts to make a group function well.\nIn some shared functions, like design, technical writing and quality individuals are paired to one or more stages so that there are stable counterparts.\n\nWhile everyone can contribute, the scope of a group should be non-overlapping and not a required dependency for other groups to deliver value to users.\nThis facilitates results , iteration and efficiency .\n\nInternal platform groups (those focused on a non-user facing part of our product, like a set of internal APIs) tend to create heavy coordination costs on other groups which depend on platform improvements to deliver valuable features to users. In order to stay efficient, it is important to ensure each group is non-blocking and is able to deliver value to users directly. This is why we avoid internal platform groups.\n\nIt is also important to ensure a group doesn’t have a scope definition that is shared across multiple groups. Here are two examples:\n\nWe don’t have an internationalization group.\nThat responsibility is shared across many groups.\nWe might instead have an internationalization tooling group.\n\nWe don’t have a performance group.\nEnsuring GitLab is performant is the responsibility of all groups.\nWe might instead have a performance tooling group.\n\nWe do have the Application Performance group and Database group whose charters involve consulting and providing frameworks for other teams, but are considered non-blocking.",
+    "chunk_index": 32,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_33",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "’t have a performance group.\nEnsuring GitLab is performant is the responsibility of all groups.\nWe might instead have a performance tooling group.\n\nWe do have the Application Performance group and Database group whose charters involve consulting and providing frameworks for other teams, but are considered non-blocking.\n\nThe Application Performance group is focused on identifying systemic performance bottlenecks, creating documentation, and tooling to assist other groups in understanding and improving the performance of their features.\n\nThe Database group is focused on the specifics of database management/scaling and to provide consulting for development teams in need of database development guidance.  While database related merge requests still require approval from a database maintainer our database review process has necessarily scaled beyond just the members of the database team.\n\nProduct Group health Assessment\n\nThe ability to execute the product roadmaps is dependent on the health of the product groups. Rather than rely on intuition, forceful personalities, or other ad-hoc methods, there are frameworks, such as the Drexler-Sibbet model , for developing high-performance teams. Furthermore, team health can be measured and improvements made systematically. For example, the Spotify Health Check model is a lightweight method of visualizing what can be improved within a team.",
+    "chunk_index": 33,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_34",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": ", or other ad-hoc methods, there are frameworks, such as the Drexler-Sibbet model , for developing high-performance teams. Furthermore, team health can be measured and improvements made systematically. For example, the Spotify Health Check model is a lightweight method of visualizing what can be improved within a team.\n\nThe goal of product group health assessment is to enable groups to identify improvement areas. If they are used to gauge the relative “maturity” of the group, it creates a perverse incentive for groups to stack the results to make them look as good as possible. As a result, it is important that health assessments should not be used by management to compare and contrast product groups against each other. Instead, the leaders of the product group are the DRIs to manage assessments and iterate on improvement over time.\n\nTo get started, feel free to make a copy of the Team Health Survey Template and edit to suit your development group’s needs.\n\nThe Learning & Development team can facilitate a live learning session with product groups to enable high performance . The Drexler-Sibbet model is a framework to lead teams through stages towards high performance. During the live learning session, a L&D facilitator will collaborate with a product group to define activities to align team members on what needs to occur to achieve high performance. If interested in scheduling a session, contact #learninganddevelopment to learn more.\n\nSetting Product Group for Team Members",
+    "chunk_index": 34,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_35",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "formance. During the live learning session, a L&D facilitator will collaborate with a product group to define activities to align team members on what needs to occur to achieve high performance. If interested in scheduling a session, contact #learninganddevelopment to learn more.\n\nSetting Product Group for Team Members\n\nBecause it is our single source of truth (SSOT) for employee data, Workday serves as the SSOT for product group assignment. Each team member in R&D functions (Product/Engineering) is assigned a specialty field in their team.yml entry. While this entry is editable in the www-gitlab-com project , any adjustments will be over-written by a daily sync from Workday. In order to adjust a team members specialty their manager must initiate a Job Information Change .\n\nWhen designating a team members specialty we use the smallest unit of our Product hierarchy and their designated names . So for example:\n\nA team member who is a stable counterpart in the Code Review group in the Create stage would have the specialty designation of Create: Code Review\n\nA team member who is a stable counterpart to the entire Verify stage would have a specialty designation of Verify\n\nA team member who is a stable counterpart to the Access and Import groups in the Manage stage, and the Gitaly group in the Create stage would have specialty designations of Manage: Access , Manage: Import , and Create: Gitaly .\n\nSingle-Engineer Groups",
+    "chunk_index": 35,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_36",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "he entire Verify stage would have a specialty designation of Verify\n\nA team member who is a stable counterpart to the Access and Import groups in the Manage stage, and the Gitaly group in the Create stage would have specialty designations of Manage: Access , Manage: Import , and Create: Gitaly .\n\nSingle-Engineer Groups\n\nThe goal of a Single-Engineer Group (SEG) is to initiate GitLab into a planned or minimal category within the GitLab project. The single-engineer group is not to invest in an existing viable or complete category.  Here is a list of product ideas that are candidates for a SEG to work on.\n\nAt GitLab, we believe in the power of a single engineer to accomplish amazing feats.  Many open source projects started with a single engineer’s  decision to build around a problem they personally experienced. For instance, Continuous Integration by DZ and GitLab Runner by Kamil . We want to create room for this energy.\n\nOur belief is that we can guarantee a higher rate of success by incubating ideas inside our larger organization and existing code base while limiting the negative aspects of friction that come from a larger organization. A few benefits of SEG include:\n\nThere are lots of decisions to be made, which happen more effectively in a single brain.\n\nThere is not enough code for multiple people to work on without running into merge conflicts.\n\nStarting work earlier allows for more time for other people to contribute. We need to have a head start many years ahead of commercialization.",
+    "chunk_index": 36,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_37",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "re lots of decisions to be made, which happen more effectively in a single brain.\n\nThere is not enough code for multiple people to work on without running into merge conflicts.\n\nStarting work earlier allows for more time for other people to contribute. We need to have a head start many years ahead of commercialization.\n\nAs a matter of process, we require that Single-engineer groups take part in our Software Demo Process as a way to collaborate asynchronously with stakeholders, get iterative feedback, and maintain at least minimal alignment with the rest of GitLab while keeping their autonomy\n\nIf the group finds great success, as measured by adoption, and needs to further evolve that area of the product, then the next step is to consider forming a multi-person group. Sometimes the category is complete and the group can successfully dissolve. There are other times when the category does not yield the adoption. We will gather the lessons learned and consider either dissolving the group or investing further based on the learnings.\n\nWe have a huge opportunity in front of us and we want to be ambitious. Therefore over time we want to invest 10% of our R&D to continue to pursue these. However, in the spirit of iteration, we will start with only a handful of Single-engineer groups. As we learn more, and we get more dollars to invest, we will gradually add more SEGs.",
+    "chunk_index": 37,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_38",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "pportunity in front of us and we want to be ambitious. Therefore over time we want to invest 10% of our R&D to continue to pursue these. However, in the spirit of iteration, we will start with only a handful of Single-engineer groups. As we learn more, and we get more dollars to invest, we will gradually add more SEGs.\n\nThe success of the Engineer relates to getting a rapid, high-quality answer to the question of product-market fit. That answer can absolutely be “no”, so performance is not contingent on the group graduating to a larger, multi-person group. The measure of this is GMAU .\n\nAnyone at GitLab can propose the creation of a single-engineer group.\n\nThe single-engineer group is prioritized just like any other new investment and needs to get approval from\n\nChief Product Officer\n\nIf the SEG is in the Development Department, the VP of Development is responsible for deciding the reporting structure for the engineer while they are a single-engineer group.\n\nCriteria for the engineer:\n\nThe engineer must be a senior engineer (or above)\n\nThey must be passionate about the subject matter\n\nThey must be excited about the ability to work independently, or have prior success in a similar model\n\nBeing a prior company technical co-founder\n\nBeing an early contributor to a successful open source project\n\nWorking successfully on a prior single-engineer group",
+    "chunk_index": 38,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_39",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "ve)\n\nThey must be passionate about the subject matter\n\nThey must be excited about the ability to work independently, or have prior success in a similar model\n\nBeing a prior company technical co-founder\n\nBeing an early contributor to a successful open source project\n\nWorking successfully on a prior single-engineer group\n\nThere are no stable counterparts for a single-engineer group. The best way to think of this is a community contribution. The selection criteria is setup to select engineers that can work independently without stable counterparts. This setup is to avoid the following undesirable side effects.\n\nInadvertently asking other team members to contribute when they have their full-time responsibilities in their home group can lead to burnout and more investment than single-engineer groups are modeled to invest.\n\nEngineer losing the freedom because other stable counterparts may insist on more rigor around problem validation and/or solution validation.\n\nThe MR describes an example of how to create a single-engineer group.\n\nA working group is a specific type of group that assembles for a period of time to accomplish a business goal. Working groups have defined responsibilities and meet regularly. Ideally a working group can disband when the goal is complete to avoid accrued bureaucracy.\n\nMiddle managers are team members who do not report to the CEO and have managers of people reporting to them.\nIt is not defined by someone’s title or their place in the org chart, but by these two criteria.",
+    "chunk_index": 39,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_40",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "s and meet regularly. Ideally a working group can disband when the goal is complete to avoid accrued bureaucracy.\n\nMiddle managers are team members who do not report to the CEO and have managers of people reporting to them.\nIt is not defined by someone’s title or their place in the org chart, but by these two criteria.\n\nPeople can be a specialist in one thing and be an expert in multiple things. These are listed on the team page .\n\nSpecialists carry responsibility for a certain topic.\nThey keep track of issues in this topic and/or spend the majority of their time there.\nSometimes there is a lead in this topic that they report to.\nYou can be a specialist in only one topic.\nThe specialist description is a paragraph in the job description for a certain title.\nA specialist is listed after a title, for example: Developer, database specialist (do not shorten it to Developer, database).\nMany specialties represent stable counterparts. For instance, a “Software Engineer in Test, Create” specializes in the “Create” stage group and is dedicated to that group.\nIf you can have multiple ones and/or if you don’t spend the majority of your time there it is probably an expertise .\nSince a specialist has the same job description as others with the title they have the same career path and compensation.",
+    "chunk_index": 40,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_41",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "Create” specializes in the “Create” stage group and is dedicated to that group.\nIf you can have multiple ones and/or if you don’t spend the majority of your time there it is probably an expertise .\nSince a specialist has the same job description as others with the title they have the same career path and compensation.\n\nExpert means you have above average experience with a certain topic.\nCommonly, you’re expert in multiple topics after working at GitLab for some time.\nThis helps people in the company to quickly find someone who knows more.\nPlease add these labels to yourself and assign the merge request to your manager.\nAn expertise is not listed in a role description, unlike a specialist .\n\nFor Production Engineers, a listing as “Expert” can also mean that the individual\nis actively embedded with another team.\nFollowing the period of being embedded, they are experts in the regular sense\nof the word described above.\n\nDevelopers focused on Reliability and Production Readiness are named Reliability Expert .\n\nWhereas an expert might assist you with an individual issue or problem, mentorship is about helping someone grow their career, functional skills, and/or soft skills. It’s an investment in someone else’s growth.\n\nSome people think of expertise as hard skills (Ruby, International Employment Law, etc) rather than soft skills (managing through conflict, navigating career development in a sales organization, etc).",
+    "chunk_index": 41,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_42",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": "helping someone grow their career, functional skills, and/or soft skills. It’s an investment in someone else’s growth.\n\nSome people think of expertise as hard skills (Ruby, International Employment Law, etc) rather than soft skills (managing through conflict, navigating career development in a sales organization, etc).\n\nIf you would like to be a mentor in a certain area, please add the information to the team page. It is important to note whether you would like to be a mentor internally and/or externally at GitLab. Examples of how to specify in the expertise section of the team page: Mentor - Marketing, Internal to GitLab or Mentor - Development (Ruby), External and Internal to GitLab .\n\nThe word “Manager” in a title doesn’t imply people management or structure\n\nSome of individual contributors (without any direct reports) have manager in their title without a comma after it. These titles are not considered a people manager in our company structure nor salary calculator, examples are product manager, accounting manager, account manager, channel sales manager, technical account manager, field marketing managers, online marketing manager, and product marketing manager. People with manager and then a comma are a people manager in our company structure.\n\n“Team”, “team member”, and “community” terminology\n\nThe term “team” is reserved for the smallest group. A team is defined as a manager and their reports. “Team” does not refer to a group or department .",
+    "chunk_index": 42,
+    "total_chunks": 44
+  },
+  {
+    "chunk_id": "8cb2cc99d5d1_43",
+    "url": "https://handbook.gitlab.com/handbook/company/structure",
+    "title": "Organizational Structure",
+    "source": "handbook",
+    "headings": [
+      "Organizational Structure",
+      "Introduction",
+      "Organizational chart",
+      "Layers",
+      "Dual Career Path at GitLab"
+    ],
+    "text": ", and product marketing manager. People with manager and then a comma are a people manager in our company structure.\n\n“Team”, “team member”, and “community” terminology\n\nThe term “team” is reserved for the smallest group. A team is defined as a manager and their reports. “Team” does not refer to a group or department .\n\nWe refer to all the people working for the company as “team members”. This is a bit confusing, given that “team” refers to a small group, but we believe “team member” is preferable over all the alternatives we considered:\n\nWe don’t use the term “employees” because we have many contractors working for GitLab Inc.\n\n“Staff” appears on our user profile if we work for GitLab Inc. , but this is confusing because it’s also an engineering level .\n\n“Gitlabbers” is no longer used, because it isn’t inclusive of the wider community.\n\nWe considered calling team members “Tanuki” (referring to our logo), but it is confusing to refer to humans with an animal species .\n\nGitLab is a project bigger than GitLab the company. It is really important that we see the community around GitLab as something that includes the people at the company. Therefore, when you use the term “community,” you should be referring to all GitLab users and contributors - including team members.\n\nTo refer to users and contributors who are not team members, use “wider community.”\n\nFor more, please see the GitLab writing guidelines .",
+    "chunk_index": 43,
+    "total_chunks": 44
+  }
+]

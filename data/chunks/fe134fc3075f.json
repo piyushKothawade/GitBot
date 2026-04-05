@@ -1,0 +1,146 @@
+[
+  {
+    "chunk_id": "fe134fc3075f_0",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4",
+    "title": "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Component",
+      "Task B. Publishing the Component"
+    ],
+    "text": "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components\n\nEstimated time to complete: 15 minutes\n\nEstimated time to complete: 15 minutes\n\nAs Tanuki Enterprises scaled from one project to dozens, your team discovered they were copying and pasting the same CI/CD configurations across every repository. The problems multiplied quickly:\n\nConfiguration Drift : Each project has slightly different versions of the same jobs, making it impossible to maintain consistency\n\nMaintenance Nightmare : When a security update requires changing a configuration, teams must manually update dozens of .gitlab-ci.yml files\n\nNo Standardization : New projects reinvent the wheel, with each developer writing their own version of common tasks\n\nKnowledge Silos : Best practices from one team don’t propagate to others because there’s no central way to share CI/CD patterns\n\nWasted Effort : Developers spend hours configuring pipelines instead of focusing on application code\n\nIn this lab, you’ll learn to create reusable CI/CD components that can be shared across projects and teams. You’ll build a component catalog that allows Tanuki Enterprises to standardize their pipeline configurations, maintain them centrally, and version them just like application code.\n\nTask A. Creating a Component\n\nLet’s create a component to use in our GitLab project.\n\nNavigate to your My Test Group by clicking it in the breadcrumb at the top of the page.\n\nNavigate to your My Test Group by clicking it in the breadcrumb at the top of the page.\n\nFrom your My Test Group in GitLab, click the New project button.",
+    "chunk_index": 0,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "fe134fc3075f_1",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4",
+    "title": "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Component",
+      "Task B. Publishing the Component"
+    ],
+    "text": "Creating a Component\n\nLet’s create a component to use in our GitLab project.\n\nNavigate to your My Test Group by clicking it in the breadcrumb at the top of the page.\n\nNavigate to your My Test Group by clicking it in the breadcrumb at the top of the page.\n\nFrom your My Test Group in GitLab, click the New project button.\n\nFrom your My Test Group in GitLab, click the New project button.\n\nClick the Create blank project tile.\n\nClick the Create blank project tile.\n\nName your project Tanuki App Component .\n\nName your project Tanuki App Component .\n\nLeave all other values as their default, and click the Create project button and wait for GitLab to redirect you to the new project’s main page. Now, we need to set up the configuration for the component.\n\nLeave all other values as their default, and click the Create project button and wait for GitLab to redirect you to the new project’s main page.\n\nNow, we need to set up the configuration for the component.\n\nIn the repository of your Example Component project, click the + button, then click the New Directory option.\n\nIn the repository of your Example Component project, click the + button, then click the New Directory option.\n\nFor the directory name, type in templates . Make sure that it is in lower case.\n\nFor the directory name, type in templates . Make sure that it is in lower case.\n\nClick the Commit changes button, and commit it to the main branch.\n\nClick the Commit changes button, and commit it to the main branch.\n\nEnsure you are now in the new templates directory. Click on the + button, then click the New file button.",
+    "chunk_index": 1,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "fe134fc3075f_2",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4",
+    "title": "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Component",
+      "Task B. Publishing the Component"
+    ],
+    "text": "r the directory name, type in templates . Make sure that it is in lower case.\n\nClick the Commit changes button, and commit it to the main branch.\n\nClick the Commit changes button, and commit it to the main branch.\n\nEnsure you are now in the new templates directory. Click on the + button, then click the New file button.\n\nEnsure you are now in the new templates directory. Click on the + button, then click the New file button.\n\nType in sample-template.yml as the file name.\n\nType in sample-template.yml as the file name.\n\nIn the body of the file, copy the following text to create your sample component: spec : inputs : stage : default : test --- component-job : script : echo \"The Tanuki Component is live\" stage : $[[ inputs.stage ]] Here, we are creating a component with an input called stage . The stage input has a default value of ’test’, which we will override in our other project.\n\nIn the body of the file, copy the following text to create your sample component:\n\nHere, we are creating a component with an input called stage . The stage input has a default value of ’test’, which we will override in our other project.\n\nClick Commit changes , and then click Commit changes in the pop-up screen. Now we have a component file, but in order for the component to be accessible by other projects, we need to publish the component. Note that since the project is private, it will only be accessible by you.\n\nClick Commit changes , and then click Commit changes in the pop-up screen.",
+    "chunk_index": 2,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "fe134fc3075f_3",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4",
+    "title": "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Component",
+      "Task B. Publishing the Component"
+    ],
+    "text": "k Commit changes in the pop-up screen. Now we have a component file, but in order for the component to be accessible by other projects, we need to publish the component. Note that since the project is private, it will only be accessible by you.\n\nClick Commit changes , and then click Commit changes in the pop-up screen.\n\nNow we have a component file, but in order for the component to be accessible by other projects, we need to publish the component. Note that since the project is private, it will only be accessible by you.\n\nTask B. Publishing the Component\n\nOn the lefthand toolbar, select Settings > General .\n\nOn the lefthand toolbar, select Settings > General .\n\nAll components require a project description. Write in your project description section, “This component is an example component, and is meant for demonstration purposes only.”\n\nAll components require a project description. Write in your project description section, “This component is an example component, and is meant for demonstration purposes only.”\n\nClick Save changes to save your description.\n\nClick Save changes to save your description.\n\nExpand Visibility, project features, permissions .\n\nExpand Visibility, project features, permissions .\n\nTurn on the CI/CD Catalog project toggle. Click Save changes . This will now make the project a CI/CD Catalog project. Any templates in the templates directory will now be available to any project, provided we make a release. Next we will use a component to make a release on our new custom component.\n\nTurn on the CI/CD Catalog project toggle. Click Save changes .",
+    "chunk_index": 3,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "fe134fc3075f_4",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4",
+    "title": "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Component",
+      "Task B. Publishing the Component"
+    ],
+    "text": "ck Save changes . This will now make the project a CI/CD Catalog project. Any templates in the templates directory will now be available to any project, provided we make a release. Next we will use a component to make a release on our new custom component.\n\nTurn on the CI/CD Catalog project toggle. Click Save changes .\n\nThis will now make the project a CI/CD Catalog project. Any templates in the templates directory will now be available to any project, provided we make a release. Next we will use a component to make a release on our new custom component.\n\nIn the repository of your Example Component project, click the + button, then click the New File option.\n\nIn the repository of your Example Component project, click the + button, then click the New File option.\n\nTitle the file .gitlab-ci.yml .\n\nTitle the file .gitlab-ci.yml .\n\nIn the .gitlab-ci.yml file, add the following code snippet. stages : - release release component : stage : release image : registry.gitlab.com/gitlab-org/release-cli:latest script : - echo \"Releasing the latest version of our component.\" release : tag_name : '1.0.$CI_PIPELINE_IID' description : 'The latest component release.' rules : - if : $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH This code looks similar to our release job we made in a similar lab, but there is one key difference - component releases require a release format in semantic versioning (Major.Minor.Patch). We use the Patch version to differentiate between each commit.\n\nIn the .gitlab-ci.yml file, add the following code snippet.",
+    "chunk_index": 4,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "fe134fc3075f_5",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4",
+    "title": "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Component",
+      "Task B. Publishing the Component"
+    ],
+    "text": "RANCH This code looks similar to our release job we made in a similar lab, but there is one key difference - component releases require a release format in semantic versioning (Major.Minor.Patch). We use the Patch version to differentiate between each commit.\n\nIn the .gitlab-ci.yml file, add the following code snippet.\n\nThis code looks similar to our release job we made in a similar lab, but there is one key difference - component releases require a release format in semantic versioning (Major.Minor.Patch). We use the Patch version to differentiate between each commit.\n\nClick Commit changes , and then click Commit changes in the pop-up screen.\n\nClick Commit changes , and then click Commit changes in the pop-up screen.\n\nWait for the pipeline to complete.\n\nWait for the pipeline to complete.\n\nTo verify that the release has successfully completed, navigate to Deploy > Releases to see the released version of your component.\n\nTo verify that the release has successfully completed, navigate to Deploy > Releases to see the released version of your component.\n\nTask C. Adding the Created Component to our Project\n\nNavigate to your CI/CD Catalog by clicking on the search bar, and then clicking the Explore option.\n\nNavigate to your CI/CD Catalog by clicking on the search bar, and then clicking the Explore option.\n\nClick on the CI/CD Catalog option on the left.\n\nClick on the CI/CD Catalog option on the left.\n\nClick on the Example component component. This component will be only visible to you.\n\nClick on the Example component component. This component will be only visible to you.",
+    "chunk_index": 5,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "fe134fc3075f_6",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4",
+    "title": "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Component",
+      "Task B. Publishing the Component"
+    ],
+    "text": "search bar, and then clicking the Explore option.\n\nClick on the CI/CD Catalog option on the left.\n\nClick on the CI/CD Catalog option on the left.\n\nClick on the Example component component. This component will be only visible to you.\n\nClick on the Example component component. This component will be only visible to you.\n\nCopy the include statement in the component. It should look similar to this: include : - component : $CI_SERVER_FQDN/training-users/session-0a9ee9b9/iuhrhhmd/example-component/sample-template@v0.4.0\n\nCopy the include statement in the component. It should look similar to this:\n\nNavigate to your CI/CD project by clicking on the Tanuki logo in the top left corner of the page, then click on your project name.\n\nNavigate to your CI/CD project by clicking on the Tanuki logo in the top left corner of the page, then click on your project name.\n\nSelect Build > Pipeline Editor .\n\nSelect Build > Pipeline Editor .\n\nAt the top of your file, below the image, add in the custom component we created earlier. The top of the .gitlab-ci.yml file should look like this: workflow : rules : - if : $CI_COMMIT_TAG when : never - when : always default : image : golang include : - component : $CI_SERVER_FQDN/training-users/session-0a9ee9b9/iuhrhhmd/example-component/sample-template@v0.4.0\n\nAt the top of your file, below the image, add in the custom component we created earlier.\n\nThe top of the .gitlab-ci.yml file should look like this:\n\nSelect Commit changes .\n\nSelect Commit changes .",
+    "chunk_index": 6,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "fe134fc3075f_7",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4",
+    "title": "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Component",
+      "Task B. Publishing the Component"
+    ],
+    "text": "nclude : - component : $CI_SERVER_FQDN/training-users/session-0a9ee9b9/iuhrhhmd/example-component/sample-template@v0.4.0\n\nAt the top of your file, below the image, add in the custom component we created earlier.\n\nThe top of the .gitlab-ci.yml file should look like this:\n\nSelect Commit changes .\n\nSelect Commit changes .\n\nAfter committing your changes, navigate to the pipeline created for your commit. You will now see a new job named component-job . This job is the custom job we have imported using the include keyword.\n\nAfter committing your changes, navigate to the pipeline created for your commit. You will now see a new job named component-job . This job is the custom job we have imported using the include keyword.\n\nLet’s try overriding the stage to instead run in the build stage by adding the following to the .gitlab-ci.yml file: include : - component : $CI_SERVER_FQDN/training-users/session-0a9ee9b9/iu6t0rjr/example-component/sample-template@v0.36.0 inputs : stage : build\n\nLet’s try overriding the stage to instead run in the build stage by adding the following to the .gitlab-ci.yml file:\n\nSelect Commit changes , and watch as your component-job now runs in the build stage.\n\nSelect Commit changes , and watch as your component-job now runs in the build stage.",
+    "chunk_index": 7,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "fe134fc3075f_8",
+    "url": "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4",
+    "title": "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+    "source": "handbook",
+    "headings": [
+      "GitLab CI/CD - Hands-On Lab: Working with CI/CD Components",
+      "Preface",
+      "Objectives",
+      "Task A. Creating a Component",
+      "Task B. Publishing the Component"
+    ],
+    "text": "v0.36.0 inputs : stage : build\n\nLet’s try overriding the stage to instead run in the build stage by adding the following to the .gitlab-ci.yml file:\n\nSelect Commit changes , and watch as your component-job now runs in the build stage.\n\nSelect Commit changes , and watch as your component-job now runs in the build stage.\n\nDue to you implementing CI/CD components, Tanuki Enterprises transformed their pipeline infrastructure from fragmented to standardized. Your team can now create a central component catalog where reusable pipeline configurations are published, versioned, and shared across all projects. When a security update or best practice change is needed, they now update a single component and bump the version—projects automatically receive the improvements by updating their component reference. The inputs feature allows your team to customize components for their specific needs while maintaining the core standardized logic, striking the perfect balance between flexibility and consistency. This approach reduced pipeline configuration time for new projects by 80%, ensured consistent security and quality standards across all repositories, and freed your team to focus on building features rather than maintaining CI/CD boilerplate.\n\nYou have completed this lab exercise. You can view the other lab guides for this course .\n\nIf you wish to make a change to the lab, please submit your changes via Merge Request.",
+    "chunk_index": 8,
+    "total_chunks": 9
+  }
+]

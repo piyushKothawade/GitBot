@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "c82e84e05a97_0",
+    "url": "https://handbook.gitlab.com/handbook/legal/legalops",
+    "title": "Stategy & Legal Operations",
+    "source": "handbook",
+    "headings": [
+      "Stategy & Legal Operations",
+      "Objectives",
+      "Legal Billing Process",
+      "Accruals Process",
+      "Legal & Corporate Affairs Expenditure Request Process"
+    ],
+    "text": "Stategy & Legal Operations\n\nThe Strategy & Legal Ops team promotes and institutes streamlined processes, efficient tools, and centralized program management to ensure LACA remains agile and able to support every area of GitLab’s business.\n\nCheck out our issue board to learn more about what we’re working on.\n\nStrategic Planning and Financials: Build, execute, and iterate on a best-in-class strategic plan, including management of LACA’s budget from planning through forecasting and reporting.\n\nLegal Operations: Optimize LACA operations through tools, processes, and operational capabilities. Drive enhancements to the LACA tech stack .\n\nProgram and Project Management: Define and drive initiatives spanning across LACA and GitLab. Examples include: vendor management, billing and accruals , designated insiders and pre-clearance process , tool administration, and team member engagement activities.\n\nLegal Billing Process\n\nGitLab uses Brightflag’s Legal Spend Management platform to process and review legal invoices and accruals.\n\nSee the Brightflag invoicing process in the internal handbook.\n\nAccruals submission reminder notifications are automatically sent through Brightflag to ensure vendors submit their accruals on time.\n\nLaw firms with active matters will receive two automated reminder emails at 06:15 UTC on the following days: First Reminder : Five calendar days before the deadline. Final Reminder : On the day of the deadline.\n\nFirst Reminder : Five calendar days before the deadline.\n\nFinal Reminder : On the day of the deadline.",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "c82e84e05a97_1",
+    "url": "https://handbook.gitlab.com/handbook/legal/legalops",
+    "title": "Stategy & Legal Operations",
+    "source": "handbook",
+    "headings": [
+      "Stategy & Legal Operations",
+      "Objectives",
+      "Legal Billing Process",
+      "Accruals Process",
+      "Legal & Corporate Affairs Expenditure Request Process"
+    ],
+    "text": "ime.\n\nLaw firms with active matters will receive two automated reminder emails at 06:15 UTC on the following days: First Reminder : Five calendar days before the deadline. Final Reminder : On the day of the deadline.\n\nFirst Reminder : Five calendar days before the deadline.\n\nFinal Reminder : On the day of the deadline.\n\nIf the deadline falls on a weekend, the email will be sent on that weekend day.\n\nIf accruals are submitted on all matters before the deadline for a given vendor office, the notification emails will not be sent to that vendor.\n\nLegal & Corporate Affairs Expenditure Request Process\n\nThis process is designed to enable LACA team members to submit requests related to attending events/conferences, furthering development, or purchasing tools/software funded by LACA. This process does not apply to equipment , Individual Use Software or other personal reimbursement requests.\n\nAll expenses / reimbursements must be in accordance with GitLab’s Travel & Expense Policy .\n\nAll requests for use of LACA funds require approval from applicable stakeholders within the LACA Expenditure Request Issue Template.\n\nRequests must be submitted, (i) no less than ninety (90) days prior to the event/purchase request date, and (ii) no more than once per year.\n\nFor conferences or development requests, team members are expected to share materials and insight with others within LACA (and GitLab).\n\nTypes of Expenditures",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "c82e84e05a97_2",
+    "url": "https://handbook.gitlab.com/handbook/legal/legalops",
+    "title": "Stategy & Legal Operations",
+    "source": "handbook",
+    "headings": [
+      "Stategy & Legal Operations",
+      "Objectives",
+      "Legal Billing Process",
+      "Accruals Process",
+      "Legal & Corporate Affairs Expenditure Request Process"
+    ],
+    "text": "st Issue Template.\n\nRequests must be submitted, (i) no less than ninety (90) days prior to the event/purchase request date, and (ii) no more than once per year.\n\nFor conferences or development requests, team members are expected to share materials and insight with others within LACA (and GitLab).\n\nTypes of Expenditures\n\nGrowth & Development: Team members can review the Growth & Development Fund and  various options available to GitLab team members. Note: The program would not cover costs associated with travel & expenses, which would be allocated to the LACA budget.\n\nTools / Software: For requests related to new tools or software, a LACA Expenditure Request Issue Template is required.\n\nExpenditure Process Overview\n\nLACA team members must first communicate their intended request with their manager.\n\nIf supported by their manager, the team member will complete the “laca-travel-and-expense-request” template .\n\nIncluded within the LACA Expenditure Request Issue Template are details that the team member must complete.\n\nUpon being submitted, the request will be reviewed internally by LACA leadership.\n\nIf approved, the request will then be assigned to Finance to ensure applicable funds are available.\n\nRequests are considered fully approved only when all stakeholder checkboxes have been completed. Please note, all expenses tied to the request must be submitted in accordance with GitLab’s Travel & Expense Policy .",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

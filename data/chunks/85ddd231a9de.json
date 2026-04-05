@@ -1,0 +1,17 @@
+[
+  {
+    "chunk_id": "85ddd231a9de_0",
+    "url": "https://handbook.gitlab.com/handbook/security/threat-management",
+    "title": "Security Threat Management",
+    "source": "handbook",
+    "headings": [
+      "Security Threat Management",
+      "Security Threat Management Sub-Department",
+      "Security Threat Management Mission",
+      "Teams"
+    ],
+    "text": "Security Threat Management\n\nSecurity Threat Management Sub-Department\n\nThe Security Threat Management sub-department is responsible for identifying and remediating vulnerabilities or threats that may impact GitLab, our Team Members or our Customers and the community at large.\n\nSecurity Threat Management Mission\n\nThe Security Threat Management sub-department’s mission is to support the business and our overall security efforts by ensuring that we are focused on real world threats and vulnerabilities that impact us. We accomplish this by:\n\nworking closely with engineering, product, infrastructure, and other security department teams\n\ndesigning and deploying vulnerability and threat management processes\n\nconducting in-depth security related research and assessments\n\ntransparently communicating important information externally to customers and the community alike\n\nThe Security Threat Management sub-department includes the following teams. Learn more about each by visiting their Handbook pages.\n\nSecurity Identity Engineering leads the technical strategy and automation implementation of next-generation identity and access management (IAM), role-based access control (RBAC), and administrative access controls for internal GitLab systems, cloud infrastructure, and tech stack applications.",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

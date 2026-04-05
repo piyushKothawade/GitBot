@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "184747be4021_0",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/cloud-native-tool-strategy",
+    "title": "Cloud Native Tools Strategy Working Group",
+    "source": "handbook",
+    "headings": [
+      "Cloud Native Tools Strategy Working Group",
+      "Attributes",
+      "Business Goals",
+      "Protocols and Processes",
+      "Exit Criteria"
+    ],
+    "text": "Cloud Native Tools Strategy Working Group\n\n#wg_cloud-native-tools (only accessible by GitLab team members)\n\nWorking Group Agenda (only accessible by GitLab team members)\n\nMain Epic / Issue Board\n\nGitLab group for working group\n\nProtocols and Processes\n\nWe will have a recurring weekly sync with the working group\n\nWe will use a issue board for assigning tasks and delegating efforts across the working group\n\nWe will track efforts in phases, which will be broken up into epics\n\nRoles and Responsibilities\n\nVP, Product Management\n\nGroup Manager, Products\n\nSenior Director of Product, Ops\n\nDirector of Engineering, Ops\n\nMeetings are recorded and available on\nYouTube in the Cloud Native Tools playlist. The playlist is public, although, some meetings maybe private due to the nature of the material covered in the call.",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

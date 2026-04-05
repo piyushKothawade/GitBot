@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "eda3a5f44257_0",
+    "url": "https://handbook.gitlab.com/handbook/product",
+    "title": "Product Handbook",
+    "source": "handbook",
+    "headings": [
+      "Product Handbook",
+      "Welcome to the Product Team Handbook",
+      "Product Team Functions",
+      "Product Team Mission",
+      "Contributing to the Product Handbook"
+    ],
+    "text": "Welcome to the Product Team Handbook\n\nThe Product Team is led by Manav Khurana .\n\nThe Product Handbook focuses on how we do product at GitLab.\n\nPlease see Product Direction to learn about what the Product Team plans to build.\n\nProduct Team Functions\n\nWe create products and experiences that customers love and value.\n\nConsistency wins as you scale . Our organizational goal is to create a Product Manager (PM) system that maximizes the chances of success across new products, new features, and new team members.\n\nWe are shipping an experience , and not just a product. Don’t forget about the links between the product and the website, pricing & packaging, documentation, sales, support, etc.\n\nIt’s about our customers and doing a job for them , not the product itself. Think externally about customer problems, not internally about the technology.\n\nIt’s about love AND value . Will customers value what we are building? We need to make sure what we build helps build and extract customer value.\n\nContributing to the Product Handbook\n\nThe product handbook is widely referenced by product managers and cross-functional team members. Therefore, we want to follow a consistent change management process so all affected collaborators are aligned and informed when there are changes (specially new requirements, processes, meetings, etc.) that affect their workflow.\n\nIt is helpful to indicate which type of change you are suggesting:\n\nSmall improvement (typos, clarifications, etc.)\n\nModifying existing section\n\nDocumenting a new process\n\nAdding a new page or directory",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "eda3a5f44257_1",
+    "url": "https://handbook.gitlab.com/handbook/product",
+    "title": "Product Handbook",
+    "source": "handbook",
+    "headings": [
+      "Product Handbook",
+      "Welcome to the Product Team Handbook",
+      "Product Team Functions",
+      "Product Team Mission",
+      "Contributing to the Product Handbook"
+    ],
+    "text": "informed when there are changes (specially new requirements, processes, meetings, etc.) that affect their workflow.\n\nIt is helpful to indicate which type of change you are suggesting:\n\nSmall improvement (typos, clarifications, etc.)\n\nModifying existing section\n\nDocumenting a new process\n\nAdding a new page or directory\n\nFor a small improvement, please feel free to merge the MR yourself. Otherwise, please tag the appropriate code owner for review and approval. The guidance below should be followed for driving awareness:\n\nInforming team members about the changes\n\nIt is your responsibility to communicate with relevant team members about your merge request. Here are some best practices to follow:\n\nFor significant changes affecting the whole Product or Engineering team, consult your manager or product leader for the best communication strategy.\n\nFor changes specific to product management, tag @gl-product-pm in the merge request before merging.\n\nIndicate in the comment whether you are requesting contributions and feedback or simply providing information.\n\nFor changes relevant to other teams, tag department leads such as the VP of UX, VP of Development, or the Director of Quality Engineering in the merge request before merging.\n\nShare and cross-post the merge request link with a brief description in relevant channels such as Slack #product , #product-leadership , #eng-managers , and #ux-managers .\n\nFor more guidance on communication, refer to the GitLab Communication tips and best practices .\n\nIf you’d like to collaborate with product management see How to Engage guide.",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "eda3a5f44257_2",
+    "url": "https://handbook.gitlab.com/handbook/product",
+    "title": "Product Handbook",
+    "source": "handbook",
+    "headings": [
+      "Product Handbook",
+      "Welcome to the Product Team Handbook",
+      "Product Team Functions",
+      "Product Team Mission",
+      "Contributing to the Product Handbook"
+    ],
+    "text": "rge request link with a brief description in relevant channels such as Slack #product , #product-leadership , #eng-managers , and #ux-managers .\n\nFor more guidance on communication, refer to the GitLab Communication tips and best practices .\n\nIf you’d like to collaborate with product management see How to Engage guide.\n\nThe Product Principles section is where you can learn about our strategy and philosophy regarding product development here at GitLab.\n\nFor a detailed view on how we do Product Development, read up on our established Product Processes .\n\nProduct sections, stages, groups, and categories\n\nTo learn how the GitLab product and our Teams are organized review our Product Categorization section .\n\nAbout the GitLab Product\n\nLearn about GitLab as a product , including what does it mean to be a single application, our subscription tiers and pricing model, and the basics of permissions in the platform.\n\nProduct Manager Responsibilities\n\nUnderstand the roles and responsibilities of product managers .\n\nBeing a Product Manager at GitLab\n\nWant to know more on what being a Product Manager at GitLab is like? Checkout our Product Management guide for helpful information like our Career Development Framework and learning/development resources.\n\nProduct Performance Indicators\n\nLearn how we measure success in Product via our Product KPIs , which are tracked in our Product project . For best practices and guidance on how to add instrumentation for features please review our Analytics Instrumentation workflow .\n\nOur Product Leadership Team",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "eda3a5f44257_3",
+    "url": "https://handbook.gitlab.com/handbook/product",
+    "title": "Product Handbook",
+    "source": "handbook",
+    "headings": [
+      "Product Handbook",
+      "Welcome to the Product Team Handbook",
+      "Product Team Functions",
+      "Product Team Mission",
+      "Contributing to the Product Handbook"
+    ],
+    "text": "development resources.\n\nProduct Performance Indicators\n\nLearn how we measure success in Product via our Product KPIs , which are tracked in our Product project . For best practices and guidance on how to add instrumentation for features please review our Analytics Instrumentation workflow .\n\nOur Product Leadership Team\n\nLearn about our Product Leadership Team and learn about them via their personal README’s.\n\nCommunicating with the Product Division\n\nBelow are team emails and handles that can be used for different departments and sub-departments in the Product Division. These groups are used for internal communication and the @mention can only be used by project members. Please remember that tagging @mention on issues will generate in-product to-do items and email notifications to all team members in that project, so use it only when you need to communicate with the entire team. For communication specifically for product managers, please leverage How to Engage .\n\n@gl-product-leadership tags all group managers, directors and VPs in the Product Division\n\n@gl-product-plt tags all direct reports to the VP Product in the Product Division\n\n@gl-product-pm tags to all members of Product Management, Product Monetization and Program Managers in the Product Division\n\n@gl-product tags to all members in the Product Division: Product Management, Product Monetization, Program Management, Product Design, User Research, and Technical Writing\n\nproduct@gitlab.com emails all members of Product Management, Product Monetization and Program Management in the Product Division",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "eda3a5f44257_4",
+    "url": "https://handbook.gitlab.com/handbook/product",
+    "title": "Product Handbook",
+    "source": "handbook",
+    "headings": [
+      "Product Handbook",
+      "Welcome to the Product Team Handbook",
+      "Product Team Functions",
+      "Product Team Mission",
+      "Contributing to the Product Handbook"
+    ],
+    "text": "Product Division\n\n@gl-product tags to all members in the Product Division: Product Management, Product Monetization, Program Management, Product Design, User Research, and Technical Writing\n\nproduct@gitlab.com emails all members of Product Management, Product Monetization and Program Management in the Product Division\n\nux-department@gitlab.com emails all members of UX (UX Research, Technical Writing and Product Design) in the Product Division\n\n@gitlab-com/gitlab-ux tags all members of UX (UX Research, Technical Writing and Product Design) in the Product Division\n\n@gitlab-com/gitlab-ux/managers tags all people managers within UX (UX Research, Technical Writing, and Product Design)\n\n@gitlab-com/gitlab-ux/designers tags all Product Designers and Design Managers in UX\n\n@gl-docsteam for all Technical Writers in UX\n\n‘#technical-program-management’ a place to reach the entire TPgM team across organizations\n\nWhen you are tagging @mention :\n\nClearly state why you are tagging the entire product team and what action you need product team members to take.\n\nWrite a short summary in the same comment so team members can quickly understand the necessary context.\n\nReview the issue title and description to ensure it has relevant details other product team members need BEFORE submitting the comment. The issue title will be the subject of email notifications and in-product to-do items.\n\nIf asking team members to review a change, please directly link to the specific page on the review app and any relevant issues or MRs.",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

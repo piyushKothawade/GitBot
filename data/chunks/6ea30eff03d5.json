@@ -1,0 +1,226 @@
+[
+  {
+    "chunk_id": "6ea30eff03d5_0",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "Satisfaction (CES) review and responding (for Managers)\n\nTo understand the factors contributing to Support Satisfaction ,\nwe review feedback received for support tickets. Issues are automatically\ncreated in the Feedback issue tracker (internal only) for all Support Satisfaction feedback received and assigned to the manager of the person who assigned to the ticket.\n\nNOTE: The following categories of tickets do not receive surveys:\n\nSpam tickets (ones marked as spam and suspended)\n\nFree user tickets (ones containing the tag free_customer )\n\nEmbargo tickets (ones containing the tag com_embargo )\n\nTickets with the organization GitLab or DigitalOcean Support\n\nWhat the customer receives\n\nWhen a ticket is solved the customer receives an email inviting them to complete a survey by answering one simple question:\n\nThinking about your recent experience of creating and working on a ticket, how easy was it to work with GitLab Customer Support?\n\nChoice of rating range from Extremely Easy to Extremely Difficult with 5 intermediate options. The resulting feedback issue will identify these as ratings 7 down to 1\n\nAn optional second question asks:\n\nWhat would make working on a ticket with GitLab Customer Support easier?\n\nIf the customer opts out of completing this section the resulting feedback issue will contain ‘User did not leave a comment’\n\nThe forms are located here\n\nSubscribing to Customer Feedback Issues",
+    "chunk_index": 0,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_1",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "ings 7 down to 1\n\nAn optional second question asks:\n\nWhat would make working on a ticket with GitLab Customer Support easier?\n\nIf the customer opts out of completing this section the resulting feedback issue will contain ‘User did not leave a comment’\n\nThe forms are located here\n\nSubscribing to Customer Feedback Issues\n\nIf you’d like to subscribe to CESs submitted by customers from a certain\nterritory, you can subscribe to the appropriate OrganizationRegion scoped\nlabel through the Feedback project labels page .\n\nThese labels are applied based on organization information synced to Zendesk from SFDC.\n\nEurope, Middle East and Africa\n\nLatin America (includes all of Central & South America)\n\nNorth, Central, South America (legacy region being phased out)\n\nThe single source of truth for these definitions can be found in the Go to Market Glossary handbook page.\n\nWho is responsible for reviewing Support Satisfaction feedback\n\nEach Support Engineering Manager is responsible for reviewing and actioning feedback for their reports. Issues will be directly assigned to managers, and should be addressed within 7 days.\n\nThis CES data will be reviewed by Senior Leaders and presented in Monthly region reviews.\n\nThe manager of the person to whom a ticket is assigned is responsible for reviewing customer feedback on that ticket. Feedback issues\nare assigned to the managers automatically. The manager receives email notification from GitLab and a To-Do item.",
+    "chunk_index": 1,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_2",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "be reviewed by Senior Leaders and presented in Monthly region reviews.\n\nThe manager of the person to whom a ticket is assigned is responsible for reviewing customer feedback on that ticket. Feedback issues\nare assigned to the managers automatically. The manager receives email notification from GitLab and a To-Do item.\n\nSupport Managers On-call are responsible for initial triage of mid-ticket feedback received during their shift. Notifications are posted in the #support_ticket-attention-requests channel.\n\nCurrently, the following methods create feedback issues for review:\n\nAutomatic email survey – sent to customers when tickets are solved.\n\nMid-ticket feedback link – each Public Comment from a GitLab Support Engineer or Manager has a link to a form where a customer can provide feedback or request contact from a manager while the ticket is open (introduced in issue 2913 ). This feedback form creates issues in the customer feedback project, with a subject format of Positive/Negative/Neutral feedback for ticket nnnnnn , and is automatically assigned to the Support Manager On-call and the manager of the Support Engineer assigned to the ticket. If the feedback is negative, there is an option to request manager contact (within 48hrs Mon-Fri). If this option is chosen, a Slack notification is sent to the #support_ticket-attention-requests channel. The On Call Manager should promptly follow the guidance in Handling mid ticket feedback requesting manager contact during business hours .",
+    "chunk_index": 2,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_3",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "tive, there is an option to request manager contact (within 48hrs Mon-Fri). If this option is chosen, a Slack notification is sent to the #support_ticket-attention-requests channel. The On Call Manager should promptly follow the guidance in Handling mid ticket feedback requesting manager contact during business hours .\n\nThis feedback form creates issues in the customer feedback project, with a subject format of Positive/Negative/Neutral feedback for ticket nnnnnn , and is automatically assigned to the Support Manager On-call and the manager of the Support Engineer assigned to the ticket.\n\nIf the feedback is negative, there is an option to request manager contact (within 48hrs Mon-Fri). If this option is chosen, a Slack notification is sent to the #support_ticket-attention-requests channel. The On Call Manager should promptly follow the guidance in Handling mid ticket feedback requesting manager contact during business hours .\n\nGitLab team members (such as CSMs and Sales team) can open an Indirect Feedback issue with details they received from the customer.\n\nAny issue requiring contact can also be identified by applying the SSAT::Contact label. In the Description or in a Comment, specify that manager contact was requested.\n\nWhat does success look like?\n\nWithin 7 days, for each of your Support Engineers who receive feedback:\n\nYou should have performed the triage work described in the handling “Good” and “Bad” sections\nfor each feedback issue assigned to you.\n\nYou should have initiated any customer or GitLab group contact.",
+    "chunk_index": 3,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_4",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "t was requested.\n\nWhat does success look like?\n\nWithin 7 days, for each of your Support Engineers who receive feedback:\n\nYou should have performed the triage work described in the handling “Good” and “Bad” sections\nfor each feedback issue assigned to you.\n\nYou should have initiated any customer or GitLab group contact.\n\nYou should have closed all feedback issues assigned to you that have\nno outstanding dependencies on other groups or on the customer.\n\nHow fast do I need to respond?\n\nCurrently there is no SLA for responding to Feedback Issues, but if you follow\nthe process defined on this page, you should send an initial response to each\nissue within 7 days of its creation.\n\nWorkflows for reviewing feedback\n\nOur Feedback and Complaints handbook page provides general guidance on assessing and responding to feedback.\n\nHandling “Good” Reviews - Customer Effort Scores 5,6 or 7\n\nFor each feedback issue labeled “satisfaction::good”:\n\nread through the feedback and check for anything actionable - sometimes customers provide really good actionable feedback in positive reviews\n\nconsider sharing the feedback in the Support Week in Review document (see below)\n\nif no further action is needed, /close the Feedback Issue.\n\nNote: Support Engineers can see the Feedback comments on their tickets, and get notified by Zendesk when a Feedback comment is added. You do not need to notify them or their managers.\n\nNote: After 7 days of inactivity, the GitLab Support Bot closes “satisfaction::good” issues.\n\nSharing positive feedback in Support Week in Review (SWIR)",
+    "chunk_index": 4,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_5",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "ineers can see the Feedback comments on their tickets, and get notified by Zendesk when a Feedback comment is added. You do not need to notify them or their managers.\n\nNote: After 7 days of inactivity, the GitLab Support Bot closes “satisfaction::good” issues.\n\nSharing positive feedback in Support Week in Review (SWIR)\n\nTo share positive feedback in the Support Week in Review, each week an issue will be created in the Support Week In Review Tracker and tagged with ~\"SWIR::SSAT\" .\n\nAnything you add to the body of this issue will be included in the SWIR digest for the week. No further action is required other than having the body of the issue updated. Please do be aware of some considerations in formatting feedback in the SWIR issue .\n\nYou only need update the SWIR issue for feedback you want to be sure makes it in. SWIR hosts will select some positive feedback each week to share with the team.\n\nDue Date : the cut off for content for the SWIR is close of business on your Thursday. Plan to add any ticket feedback before this time. Anything you want to add after this time needs to be added to the content for the following week, to ensure it is included in the audio recording.\n\nGuidance for SWIR Hosts\n\nEach week, take note of any positive feedback included by managers in the ~SWIR::SSAT issue and be sure to include it.\n\nWhen selecting additional feedback to share, you don’t need to share every piece of positive feedback. Consider the following when choosing what to share:\n\nComments that stand out to you - the ones that you dwell on and smile as you read them",
+    "chunk_index": 5,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_6",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "ack included by managers in the ~SWIR::SSAT issue and be sure to include it.\n\nWhen selecting additional feedback to share, you don’t need to share every piece of positive feedback. Consider the following when choosing what to share:\n\nComments that stand out to you - the ones that you dwell on and smile as you read them\n\nThe customer has taken the time to name the individual(s) they appreciated\n\nThe customer has described why they were satisfied or how our support improved their day (we get some great stories!)\n\nIf there are general sentiments or themes, feel free to congratulate the whole team. For example, if we were praised for our overall approach to support, speed, clarity, etc.\n\nIs the feedback definitely positive?  Sometimes comments in positive feedback can be neutral or even negative. For example “I would have liked a quicker response”, or “I was satisfied” are valuable to us, but they don’t really encourage the team when shared in the SWIR.\n\nFormatting feedback in SWIR issue\n\nWhen adding the comment to the CES issue in the support-week-in-review tracker, feel free to use markdown formatting. If you wish to use headers ( # ) please\n\nuse H4 ( #### ) or lower\n\nbe aware that headers will be included in the table of contents in the issue\n\nGenerally, include the ticket number with a link to the ticket, the comment from the customer, and where applicable @ mention the person (or people) who primarily worked the ticket.\n\nAutomatically collecting positive feedback",
+    "chunk_index": 6,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_7",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "#### ) or lower\n\nbe aware that headers will be included in the table of contents in the issue\n\nGenerally, include the ticket number with a link to the ticket, the comment from the customer, and where applicable @ mention the person (or people) who primarily worked the ticket.\n\nAutomatically collecting positive feedback\n\nThe populate_ssat job in the support-week-in-review tracker will automatically collect open issues labeled with ~\"satisfaction::good\" and append a nicely formatted version to the open CES issue.\n\n[Run a manual pipeline] ( https://docs.gitlab.com/ci/pipelines/#run-a-pipeline-manually ) and run the populate_ssat job.\n\nYou can safely re-run this task as many times as you’d like as it will append to the issue.\n\nHandling “Bad” Reviews - Customer Effort Scores 1,2,3 or 4\n\nFor feedback issues labeled “satisfaction::bad”, click through to the ticket, and review it to determine the following:\n\nWhy the feedback was given\n\nIf further action needs to be taken\n\nIf the customer should be contacted to discuss the feedback given\n\nIf the feedback should be discussed with a CSM\n\nYou should document your finding and any follow-up actions taken in the issue.\nYou may use the following template to add a comment to the feedback issue (NOT the\nticket!):\n\nThe above text will be automatically added as a comment to “bad” reviews. You might also consider adding the above snippet to a comment template for quick use.\n\nIf no action needs to be taken, and the customer does not need to be contacted to discuss the ticket, /close the Feedback Issue.",
+    "chunk_index": 7,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_8",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "back issue (NOT the\nticket!):\n\nThe above text will be automatically added as a comment to “bad” reviews. You might also consider adding the above snippet to a comment template for quick use.\n\nIf no action needs to be taken, and the customer does not need to be contacted to discuss the ticket, /close the Feedback Issue.\n\nWhen you see “bad” feedback on an apparently successful ticket\n\nSometimes, when you review the ticket, you will see that the ticket seems to have been resolved successfully. The customer may have even said something like “thank you, you can close the ticket”. We strongly encourage you to contact the customer when this happens. If the ticket is still in Solved (but not Closed ) status, the customer can change their rating, if they did not mean to mark it “bad”.\n\nUnderstanding the customer’s reason\n\nMany customers do not provide a reason for the “bad” review they submit. Even if a\nreason is provided, it may not be clear why the customer was dissatisfied. The\nreviewing manager should carefully review the ticket and seek to understand why\na bad review was given. If necessary, contact the customer to learn more.\n\nOnce the reason behind the “bad” review is understood, apply the feedback scoped label that best describes the situation:\n\n~feedback::customer-resolved\n\nThe customer resolved the ticket\n\n~feedback::docs-new-issue\n\nEncountered Documentation problem; new Issue and/or MR filed\n\n~feedback::docs-not-helpful\n\nDocumentation unhelpful to customer and/or Support Engineer\n\n~feedback::known-issue\n\nKnown issue with Issue already created\n\n~feedback::new-product-issue",
+    "chunk_index": 8,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_9",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "omer-resolved\n\nThe customer resolved the ticket\n\n~feedback::docs-new-issue\n\nEncountered Documentation problem; new Issue and/or MR filed\n\n~feedback::docs-not-helpful\n\nDocumentation unhelpful to customer and/or Support Engineer\n\n~feedback::known-issue\n\nKnown issue with Issue already created\n\n~feedback::new-product-issue\n\nEncountered Product problem; new Issue and/or MR filed\n\n~feedback::missing-info-from-customer\n\nCustomer did not supply enough information for investigation\n\n~feedback::missing-info-by-engineer\n\nSupport Engineer did not provide adequate information to customer\n\n~feedback::outside-support\n\nProblem internal to GitLab but not directly by Support\n\n~feedback::process-confusing-customer\n\nCustomer found support process confusing or unclear\n\n~feedback::process-engineer-not-followed\n\nSupport Engineer did not follow documented support process\n\n~feedback::process-does-not-exist\n\nProblem does not have an existing Support process\n\n~feedback::process-sfdc\n\nProblem caused by Zendesk-Salesforce integration (includes delays due to needs-org, incorrect contact info/matching in SFDC, unable to validate subscription)\n\n~feedback::soft-skills\n\nSupport Engineer responses unhelpful or customer expectations mishandled\n\n~feedback::technical-skills-engineer\n\nSupport Engineer lacks skills or permissions to troubleshoot or resolve problem\n\n~feedback::technical-skills-customer\n\nCustomer lacks skills or permissions to troubleshoot or resolve problem\n\n~feedback::unable-to-fulfil-customer-expectations\n\nSupport unable to fulfil the request according to the customer’s expectations",
+    "chunk_index": 9,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_10",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "Support Engineer lacks skills or permissions to troubleshoot or resolve problem\n\n~feedback::technical-skills-customer\n\nCustomer lacks skills or permissions to troubleshoot or resolve problem\n\n~feedback::unable-to-fulfil-customer-expectations\n\nSupport unable to fulfil the request according to the customer’s expectations\n\n~ffeedback::extended-TTR-due-to-troubleshooting\n\nThe ticket time to resolve was extended due to troubleshooting requirements of the issue\n\n~feedback::extended-TTR-caused by-technical-complexity\n\nThe ticket time to resolve was extended due to the technical complexity of the issue\n\nNote: For the full list of feedback labels and their descriptions, visit the labels page in the support-feedback project .\n\nThis is important to help Support understand and respond to Support Satisfaction\ntrends.\n\nIf there is action to be taken\n\nDetermine the course of action and tag appropriate people. Note that indirect feedback received from a customer/prospect will typically have the next action chosen for us.\n\nExamples of possible actions:\n\nContact the customer (see below )\n\nCreate a new Issue to discuss the feedback in support-team-meta (cross-link the Feedback Issue as related)\n\nTag the manager of the person or people who participated in the ticket to discuss in a 1:1\n\nTag a product group for awareness (some negative feedback is product related)\n\nIf further discussion is warranted, leave the Feedback Issue open. Otherwise, /close it.\n\nIf the customer should be contacted\n\nWhen the customer requests contact via a mid ticket feedback request:",
+    "chunk_index": 10,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_11",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "ticipated in the ticket to discuss in a 1:1\n\nTag a product group for awareness (some negative feedback is product related)\n\nIf further discussion is warranted, leave the Feedback Issue open. Otherwise, /close it.\n\nIf the customer should be contacted\n\nWhen the customer requests contact via a mid ticket feedback request:\n\nThe On call manager is responsible for the follow up.\n\nIf you believe the customer should be contacted following completion of a closed ticket survey:\n\nDetermine the best way to reach out. Some options are: Sending the customer an email from your GitLab email address. This should\nbe the appropriate option in the majority of cases. Responding directly on the Zendesk ticket. This is appropriate if you\ndetermine that the ticket was not adequately resolved and work should be\ncontinued. If reopening a ticket, make sure that you assign and brief a support\nengineer (typically the existing assignee) on the next actions to be\ntaken. Note that reopening a closed or solved ticket affects\nmeasurements of reopen rate and time to resolution.\n\nSending the customer an email from your GitLab email address. This should\nbe the appropriate option in the majority of cases.\n\nResponding directly on the Zendesk ticket. This is appropriate if you\ndetermine that the ticket was not adequately resolved and work should be\ncontinued. If reopening a ticket, make sure that you assign and brief a support\nengineer (typically the existing assignee) on the next actions to be\ntaken. Note that reopening a closed or solved ticket affects\nmeasurements of reopen rate and time to resolution.",
+    "chunk_index": 11,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_12",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "the ticket was not adequately resolved and work should be\ncontinued. If reopening a ticket, make sure that you assign and brief a support\nengineer (typically the existing assignee) on the next actions to be\ntaken. Note that reopening a closed or solved ticket affects\nmeasurements of reopen rate and time to resolution.\n\nIf reopening a ticket, make sure that you assign and brief a support\nengineer (typically the existing assignee) on the next actions to be\ntaken.\n\nNote that reopening a closed or solved ticket affects\nmeasurements of reopen rate and time to resolution.\n\nWhen reaching out to the customer, make sure you do the following: introduce yourself, describing who you are and your role at GitLab note the specifics of the situation, including ticket ID - you can include a link using the format https://support.gitlab.com/hc/requests/<ticket number> restate and validate the customer’s comments offer any apologies or clarifications required, including links to relevant documentation offer your Calendly link to schedule a video call\n\nintroduce yourself, describing who you are and your role at GitLab\n\nnote the specifics of the situation, including ticket ID - you can include a link using the format https://support.gitlab.com/hc/requests/<ticket number>\n\nrestate and validate the customer’s comments\n\noffer any apologies or clarifications required, including links to relevant documentation\n\noffer your Calendly link to schedule a video call",
+    "chunk_index": 12,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "6ea30eff03d5_13",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/how-to-respond-to-feedback",
+    "title": "Satisfaction (CES) review and responding (for Managers)",
+    "source": "handbook",
+    "headings": [
+      "Satisfaction (CES) review and responding (for Managers)",
+      "What the customer receives",
+      "Subscribing to Customer Feedback Issues",
+      "By territory",
+      "Who is responsible for reviewing Support Satisfaction feedback"
+    ],
+    "text": "the situation, including ticket ID - you can include a link using the format https://support.gitlab.com/hc/requests/<ticket number>\n\nrestate and validate the customer’s comments\n\noffer any apologies or clarifications required, including links to relevant documentation\n\noffer your Calendly link to schedule a video call\n\nUpdate the Feedback Issue as follows: Add the text of your email as a comment in the Feedback Issue. Apply the label ~ssat-manager-contacted-customer . /close the Feedback Issue; followup continues via email. After closing the Issue, if there are any additional actions that arise from your interaction with the customer, go back and note them in the Feedback Issue.\n\nAdd the text of your email as a comment in the Feedback Issue.\n\nApply the label ~ssat-manager-contacted-customer .\n\n/close the Feedback Issue; followup continues via email.\n\nAfter closing the Issue, if there are any additional actions that arise from your interaction with the customer, go back and note them in the Feedback Issue.",
+    "chunk_index": 13,
+    "total_chunks": 14
+  }
+]

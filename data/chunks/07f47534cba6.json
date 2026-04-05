@@ -1,0 +1,98 @@
+[
+  {
+    "chunk_id": "07f47534cba6_0",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/issue-boards",
+    "title": "Issue boards",
+    "source": "handbook",
+    "headings": [
+      "Issue boards",
+      "Understanding issue boards",
+      "What are issue boards",
+      "Current issue boards",
+      "Stages"
+    ],
+    "text": "Understanding issue boards\n\nWhat are issue boards\n\nIssue boards provide a visual way to manage and track work in GitLab. Issue boards: Display issues as cards in customizable lists based on labels, milestones, or assignees. Track issues through different stages of your workflow. Support agile methodologies like Kanban and Scrum. Organize multiple boards for different teams and projects. Visualize workload and progress across your entire process.\n\nIssue boards provide a visual way to manage and track work in GitLab. Issue boards:\n\nDisplay issues as cards in customizable lists based on labels, milestones, or assignees.\n\nTrack issues through different stages of your workflow.\n\nSupport agile methodologies like Kanban and Scrum.\n\nOrganize multiple boards for different teams and projects.\n\nVisualize workload and progress across your entire process.\n\nCustomer Support Operations uses our issue boards to:\n\nget an overview of issues we have to work\n\nmove issues quickly between stages\n\nplan upcoming workloads and iterations\n\nCustomer Support Operations use issues boards to get a quick overview of our workload. Here we detail the primary ones we use and how they are setup.\n\nThis is the primary board the Customer Support Operations team works from. It shows all non-closed issues grouped together by the Stage scoped label.\n\nConfiguration Title: Stages List options Show the Open list Show the Closed list Scope Milestones: Don’t filter milestones Iteration: Any iteration Labels: Any label Assignee: Any assignee Weight: Any weight\n\nList options Show the Open list Show the Closed list",
+    "chunk_index": 0,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "07f47534cba6_1",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/issue-boards",
+    "title": "Issue boards",
+    "source": "handbook",
+    "headings": [
+      "Issue boards",
+      "Understanding issue boards",
+      "What are issue boards",
+      "Current issue boards",
+      "Stages"
+    ],
+    "text": "closed issues grouped together by the Stage scoped label.\n\nConfiguration Title: Stages List options Show the Open list Show the Closed list Scope Milestones: Don’t filter milestones Iteration: Any iteration Labels: Any label Assignee: Any assignee Weight: Any weight\n\nList options Show the Open list Show the Closed list\n\nScope Milestones: Don’t filter milestones Iteration: Any iteration Labels: Any label Assignee: Any assignee Weight: Any weight\n\nMilestones: Don’t filter milestones\n\nIteration: Any iteration\n\nAssignee: Any assignee\n\nLists Stage::Triage Label: Stage::Triage Work in progress limit: None Stage::Planning Label: Stage::Planning Work in progress limit: None Stage::Scheduling Label: Stage::Scheduling Work in progress limit: None Stage::Queued Label: Stage::Queued Work in progress limit: None Stage::Deployment Label: Stage::Deployment Work in progress limit: None Stage::Validation Label: Stage::Validation Work in progress limit: None Stage::Implementation Label: Stage::Implementation Work in progress limit: None Stage::Blocked Label: Stage::Blocked Work in progress limit: None Stage::Backlogged Label: Stage::Backlogged Work in progress limit: None\n\nStage::Triage Label: Stage::Triage Work in progress limit: None\n\nWork in progress limit: None\n\nStage::Planning Label: Stage::Planning Work in progress limit: None\n\nLabel: Stage::Planning\n\nWork in progress limit: None\n\nStage::Scheduling Label: Stage::Scheduling Work in progress limit: None\n\nLabel: Stage::Scheduling\n\nWork in progress limit: None\n\nStage::Queued Label: Stage::Queued Work in progress limit: None",
+    "chunk_index": 1,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "07f47534cba6_2",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/issue-boards",
+    "title": "Issue boards",
+    "source": "handbook",
+    "headings": [
+      "Issue boards",
+      "Understanding issue boards",
+      "What are issue boards",
+      "Current issue boards",
+      "Stages"
+    ],
+    "text": "one\n\nStage::Planning Label: Stage::Planning Work in progress limit: None\n\nLabel: Stage::Planning\n\nWork in progress limit: None\n\nStage::Scheduling Label: Stage::Scheduling Work in progress limit: None\n\nLabel: Stage::Scheduling\n\nWork in progress limit: None\n\nStage::Queued Label: Stage::Queued Work in progress limit: None\n\nWork in progress limit: None\n\nStage::Deployment Label: Stage::Deployment Work in progress limit: None\n\nLabel: Stage::Deployment\n\nWork in progress limit: None\n\nStage::Validation Label: Stage::Validation Work in progress limit: None\n\nLabel: Stage::Validation\n\nWork in progress limit: None\n\nStage::Implementation Label: Stage::Implementation Work in progress limit: None\n\nLabel: Stage::Implementation\n\nWork in progress limit: None\n\nStage::Blocked Label: Stage::Blocked Work in progress limit: None\n\nLabel: Stage::Blocked\n\nWork in progress limit: None\n\nStage::Backlogged Label: Stage::Backlogged Work in progress limit: None\n\nLabel: Stage::Backlogged\n\nWork in progress limit: None\n\nThis is a less used board by Customer Support Operations. It shows all non-closed issues grouped together by the Customer scoped label.\n\nConfiguration Title: Customers List options Show the Open list Show the Closed list Scope Milestones: Don’t filter milestones Iteration: Any iteration Labels: Any label Assignee: Any assignee Weight: Any weight\n\nList options Show the Open list Show the Closed list\n\nScope Milestones: Don’t filter milestones Iteration: Any iteration Labels: Any label Assignee: Any assignee Weight: Any weight\n\nMilestones: Don’t filter milestones\n\nIteration: Any iteration",
+    "chunk_index": 2,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "07f47534cba6_3",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/issue-boards",
+    "title": "Issue boards",
+    "source": "handbook",
+    "headings": [
+      "Issue boards",
+      "Understanding issue boards",
+      "What are issue boards",
+      "Current issue boards",
+      "Stages"
+    ],
+    "text": ": Any iteration Labels: Any label Assignee: Any assignee Weight: Any weight\n\nList options Show the Open list Show the Closed list\n\nScope Milestones: Don’t filter milestones Iteration: Any iteration Labels: Any label Assignee: Any assignee Weight: Any weight\n\nMilestones: Don’t filter milestones\n\nIteration: Any iteration\n\nAssignee: Any assignee\n\nLists Customer::Support Label: Customer::Support Work in progress limit: None Customer::ETA Label: Customer::ETA Work in progress limit: None Customer::Security Label: Customer::Security Work in progress limit: None Customer::Engineering Label: Customer::Engineering Work in progress limit: None Customer::Field Label: Customer::Field Work in progress limit: None Customer::Finance Label: Customer::Finance Work in progress limit: None Customer::Marketing Label: Customer::Marketing Work in progress limit: None Customer::People Label: Customer::People Work in progress limit: None\n\nCustomer::Support Label: Customer::Support Work in progress limit: None\n\nLabel: Customer::Support\n\nWork in progress limit: None\n\nCustomer::ETA Label: Customer::ETA Work in progress limit: None\n\nWork in progress limit: None\n\nCustomer::Security Label: Customer::Security Work in progress limit: None\n\nLabel: Customer::Security\n\nWork in progress limit: None\n\nCustomer::Engineering Label: Customer::Engineering Work in progress limit: None\n\nLabel: Customer::Engineering\n\nWork in progress limit: None\n\nCustomer::Field Label: Customer::Field Work in progress limit: None\n\nLabel: Customer::Field\n\nWork in progress limit: None",
+    "chunk_index": 3,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "07f47534cba6_4",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/issue-boards",
+    "title": "Issue boards",
+    "source": "handbook",
+    "headings": [
+      "Issue boards",
+      "Understanding issue boards",
+      "What are issue boards",
+      "Current issue boards",
+      "Stages"
+    ],
+    "text": "Label: Customer::Security\n\nWork in progress limit: None\n\nCustomer::Engineering Label: Customer::Engineering Work in progress limit: None\n\nLabel: Customer::Engineering\n\nWork in progress limit: None\n\nCustomer::Field Label: Customer::Field Work in progress limit: None\n\nLabel: Customer::Field\n\nWork in progress limit: None\n\nCustomer::Finance Label: Customer::Finance Work in progress limit: None\n\nLabel: Customer::Finance\n\nWork in progress limit: None\n\nCustomer::Marketing Label: Customer::Marketing Work in progress limit: None\n\nLabel: Customer::Marketing\n\nWork in progress limit: None\n\nCustomer::People Label: Customer::People Work in progress limit: None\n\nLabel: Customer::People\n\nWork in progress limit: None\n\nThis is a less used board by Customer Support Operations. It shows all non-closed issues grouped together by various labels we use to indicate the type of request.\n\nConfiguration Title: Request Type List options Show the Open list Show the Closed list Scope Milestones: Don’t filter milestones Iteration: Any iteration Labels: Any label Assignee: Any assignee Weight: Any weight\n\nList options Show the Open list Show the Closed list\n\nScope Milestones: Don’t filter milestones Iteration: Any iteration Labels: Any label Assignee: Any assignee Weight: Any weight\n\nMilestones: Don’t filter milestones\n\nIteration: Any iteration\n\nAssignee: Any assignee",
+    "chunk_index": 4,
+    "total_chunks": 6
+  },
+  {
+    "chunk_id": "07f47534cba6_5",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/issue-boards",
+    "title": "Issue boards",
+    "source": "handbook",
+    "headings": [
+      "Issue boards",
+      "Understanding issue boards",
+      "What are issue boards",
+      "Current issue boards",
+      "Stages"
+    ],
+    "text": "Any label Assignee: Any assignee Weight: Any weight\n\nList options Show the Open list Show the Closed list\n\nScope Milestones: Don’t filter milestones Iteration: Any iteration Labels: Any label Assignee: Any assignee Weight: Any weight\n\nMilestones: Don’t filter milestones\n\nIteration: Any iteration\n\nAssignee: Any assignee\n\nLists RequestType::Bug Label: RequestType::Bug Work in progress limit: None RequestType::Incident Label: RequestType::Incident Work in progress limit: None RequestType::Feature Label: RequestType::Feature Work in progress limit: None RequestType::Administrative Label: RequestType::Administrative Work in progress limit: None\n\nRequestType::Bug Label: RequestType::Bug Work in progress limit: None\n\nLabel: RequestType::Bug\n\nWork in progress limit: None\n\nRequestType::Incident Label: RequestType::Incident Work in progress limit: None\n\nLabel: RequestType::Incident\n\nWork in progress limit: None\n\nRequestType::Feature Label: RequestType::Feature Work in progress limit: None\n\nLabel: RequestType::Feature\n\nWork in progress limit: None\n\nRequestType::Administrative Label: RequestType::Administrative Work in progress limit: None\n\nLabel: RequestType::Administrative\n\nWork in progress limit: None",
+    "chunk_index": 5,
+    "total_chunks": 6
+  }
+]

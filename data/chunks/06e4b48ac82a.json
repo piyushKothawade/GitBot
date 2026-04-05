@@ -1,0 +1,306 @@
+[
+  {
+    "chunk_id": "06e4b48ac82a_0",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "How to be a Support Manager On-call\n\nThe Support Manager On-call helps coordinate responses to urgent and important situations that arise within the scope of delivering a quality\nexperience to GitLab customers.\n\nThe Support Manager On-call is one of the rotations that make up GitLab Support On-call .\n\nExpectations for Support Manager On-call\n\nAs part of GitLab Support on-call , Support Managers serve in a rotation. The support manager on-call is responsible generally for:\n\nEnsuring customer emergencies are handled promptly and accurately , according to SLAs\n\nHandling Support Ticket Attention Requests during Global Support Hours\n\nActing as a notification point for security incidents\n\nFinding a Support Manager DRI for an Account Escalation\n\nHelp avoid SLA breaches. See Working on Tickets for details.\n\nNote: You (or the CMOC/CEOC) may sometimes be required to contact GitLab users on behalf of another GitLab team (such as the SIRT team). Please follow the Sending Notices workflow to action these requests.\n\nHandling customer emergencies and incidents\n\nThe Support Engineer on-call is the first responder for customer emergencies. Managers support this work as follows:\n\nAct as the next-tier escalation point for emergency pages that get missed (you will be notified automatically by PagerDuty).\n\nRespond to new emergency requests by helping the on-call engineer triage the emergency request .\n\nAssist the on-call engineer in difficult communications with the customer,\nsuch as telling them that their request does not qualify as an emergency",
+    "chunk_index": 0,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_1",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "pages that get missed (you will be notified automatically by PagerDuty).\n\nRespond to new emergency requests by helping the on-call engineer triage the emergency request .\n\nAssist the on-call engineer in difficult communications with the customer,\nsuch as telling them that their request does not qualify as an emergency\n\nBe aware of ongoing emergencies and assist or lead in our initial response as appropriate\n\nDuring an emergency: find additional staff for subject-matter expertise; replace the on-call engineer if needed; lead any Zoom call(s) as needed; hand off the emergency to the next on-call manager.\n\nFind additional staff when there are multiple emergencies .\n\nConvert customer emergencies into Account Escalations as needed.\n\nThe CMOC should coordinate a Support Response when an incident requires a non-standard workflow or communication from Support. Support the CMOC by ensuring there is clarity and communication with relevant decision-makers in Support or other teams. You can also create the Support Response issue if this has not yet been done.\n\nSituations that Might or Might not Be Emergencies",
+    "chunk_index": 1,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_2",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "cident requires a non-standard workflow or communication from Support. Support the CMOC by ensuring there is clarity and communication with relevant decision-makers in Support or other teams. You can also create the Support Response issue if this has not yet been done.\n\nSituations that Might or Might not Be Emergencies\n\nAt times, an emergency page may come in for a situation that is not quite yet an emergency, but may quickly become one. In this situation, we want to assist the customer in preventing the situation from becoming an emergency. If this situation arises during working hours, the Support Engineer on-call may reach out for assistance. The on-call manager should respond by finding additional staff to handle the request as a high priority ticket that requires an immediate response. If this situation arises on a weekend, the Support Engineer on-call will reach out to the manager on-call if they are handling another emergency. In that case, the manager on-call should assist or attempt to find additional staff to assist.\n\nSee more examples of situations that might be emergencies and situations that are not emergencies .\n\nPaging backup engineers on weekends in APAC\n\nThe APAC region has a pool of backup engineers that are available to reach out to during the weekend on-call hours, in the event that a concurrent emergency occurs.",
+    "chunk_index": 2,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_3",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "assist.\n\nSee more examples of situations that might be emergencies and situations that are not emergencies .\n\nPaging backup engineers on weekends in APAC\n\nThe APAC region has a pool of backup engineers that are available to reach out to during the weekend on-call hours, in the event that a concurrent emergency occurs.\n\nIf you are the Support Manager on-call and a concurrent emergency occurs, you will be paged by the Support Engineer On-call escalated via Pagerduty. You will then be responsible for checking the current situation and determining if the backup engineers need to be paged. If so, the Support Manager will then manually page the backup engineers . At this point, the backup engineers are all pinged. Only one backup engineer needs to acknowledge the page and lend assistance, and there is no expectation that backup engineers will be available to respond to a page.\n\nTo page the backup pool, you can:\n\nUse the /pd trigger command in any Slack channel to create a new incident to notify the current list of support engineers; or\n\nCreate a + New Incident directly in PagerDuty.\n\nWhen prompted, update:\n\nImpacted Service: Customer Emergencies - APAC Backup Pool\n\nTitle: Duplicate emergency - ZD#123456\n\nDescription: Provide a brief summary of the emergency.\n\nLeave Assign To: and Priority: blank.\n\nFor further details, please refer to STM#4583 .\n\nHandling Support Ticket Attention Requests during business hours\n\nSTARs ( Support Ticket Attention Requests ) are handled by the Support Manager on-call.\n\nYour responsibilities are as follows:",
+    "chunk_index": 3,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_4",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "vide a brief summary of the emergency.\n\nLeave Assign To: and Priority: blank.\n\nFor further details, please refer to STM#4583 .\n\nHandling Support Ticket Attention Requests during business hours\n\nSTARs ( Support Ticket Attention Requests ) are handled by the Support Manager on-call.\n\nYour responsibilities are as follows:\n\nTriage and investigate customer tickets and Internal Requests that are announced in the #support_ticket-attention-requests Slack channel.\n\nEstablish ownership and assignment for starred tickets.\n\nYou can use Support Team Skills by Subject to find appropriate engineers to assign.\n\nA very high percentage of starred tickets involve licenses and renewals. For guidance in handling these, please see the Workflow for handling Plan/License Ticket Attention Requests .\n\nNOTE: GitLab team members may attempt to draw attention to tickets in regular support Slack channels ( #support_self-managed , #support_gitlab-com , #support_leadership ). Redirect the team member by responding to their post with only the :escalate: emoji , which will send an automated and anonymous reply describing the correct process.\n\nNOTE: There are two other distinct situations, not discussed on this page:\n\nAccount Escalations / Escalated Customers\n\nEmergencies that become Account Escalations\n\nMechanics of handling starred tickets\n\nSome steps of STAR treatment are handled by bots and auto-responders. The text **BOT** is used below to show these steps.",
+    "chunk_index": 4,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_5",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": ": There are two other distinct situations, not discussed on this page:\n\nAccount Escalations / Escalated Customers\n\nEmergencies that become Account Escalations\n\nMechanics of handling starred tickets\n\nSome steps of STAR treatment are handled by bots and auto-responders. The text **BOT** is used below to show these steps.\n\nWhen someone initiates a STAR using the STAR Form : BOT : Creates a new Issue in the STAR issue tracker . BOT : Slack announcement is posted to #support_ticket-attention-requests , with an @mention of the current on-call Support Manager’s name. In many cases BOT adds an internal note to the Zendesk ticket and STAR Issue.\n\nBOT : Creates a new Issue in the STAR issue tracker .\n\nBOT : Slack announcement is posted to #support_ticket-attention-requests , with an @mention of the current on-call Support Manager’s name.\n\nIn many cases BOT adds an internal note to the Zendesk ticket and STAR Issue.\n\nAdd the :eyes: emoji to the Slack thread to acknowledge you are looking at the STAR.\n\nIn the Zendesk ticket, use the Support::Managers::STAR Escalated Ticket macro to crosslink the STAR Issue and discussion thread, and tag the ticket.\n\nAssess the ticket, and the business case justifying the request (triage). Questions to the initiator can be put in Slack (synchronous) or in the STAR Issue (asynchronous). Final dispensation should be documented in the STAR Issue, because Slack history disappears.\n\nQuestions to the initiator can be put in Slack (synchronous) or in the STAR Issue (asynchronous).",
+    "chunk_index": 5,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_6",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "stifying the request (triage). Questions to the initiator can be put in Slack (synchronous) or in the STAR Issue (asynchronous). Final dispensation should be documented in the STAR Issue, because Slack history disappears.\n\nQuestions to the initiator can be put in Slack (synchronous) or in the STAR Issue (asynchronous).\n\nFinal dispensation should be documented in the STAR Issue, because Slack history disappears.\n\nIf you need input or help from engineers, initiate a new thread in #support_gitlab-com , #support_self-managed or #support_licensing-subscription . @ mention the assigned engineer and any engineer who previously replied in the ticket, if they are working this day Then return to the thread in #support_ticket-attention-requests and comment that all technical discussion is happening in the ticket (or in the new thread). This helps ensure all technical discussion stays in one channel/thread. When seeking an engineer to act as the DRI or otherwise move the ticket forward, it is best to identify a Support Engineer who is not on-call or already working on a starred ticket. This helps to ensure that the engineer who assists with the new starred ticket has enough bandwidth to prioritize it.\n\n@ mention the assigned engineer and any engineer who previously replied in the ticket, if they are working this day\n\nThen return to the thread in #support_ticket-attention-requests and comment that all technical discussion is happening in the ticket (or in the new thread). This helps ensure all technical discussion stays in one channel/thread.",
+    "chunk_index": 6,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_7",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "gineer and any engineer who previously replied in the ticket, if they are working this day\n\nThen return to the thread in #support_ticket-attention-requests and comment that all technical discussion is happening in the ticket (or in the new thread). This helps ensure all technical discussion stays in one channel/thread.\n\nWhen seeking an engineer to act as the DRI or otherwise move the ticket forward, it is best to identify a Support Engineer who is not on-call or already working on a starred ticket. This helps to ensure that the engineer who assists with the new starred ticket has enough bandwidth to prioritize it.\n\nResolve the STAR thread .\n\nUnstarring a ticket - rejecting the request for additional attention\n\nThere are times when a STAR does not meet the threshold for additional attention. See the main STAR page for details. In such situations, return to the thread in #support_ticket-attention-requests and notify the initiator.\n\nA STAR is considered resolved when the correct next-step is identified and underway; it does not require the Zendesk ticket to be Solved or Closed.\n\nWhen a STAR is resolved:\n\nApply a :green-check-mark: emoji to the notification in #support_ticket-attention-requests .\n\nUpdate the associated STAR Issue with an appropriate comment, and Close it.",
+    "chunk_index": 7,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_8",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "olved when the correct next-step is identified and underway; it does not require the Zendesk ticket to be Solved or Closed.\n\nWhen a STAR is resolved:\n\nApply a :green-check-mark: emoji to the notification in #support_ticket-attention-requests .\n\nUpdate the associated STAR Issue with an appropriate comment, and Close it.\n\nConsider applying an appropriate label, such as one of the scoped label examples below, to help categorize and track trends. ~Escalation::License-Issue : Identifies the core issue at hand resolves around licensing / subscriptions ~Escalation::Response-Time : Useful when the purpose of the request is to expedite a response to an issue or case\n\n~Escalation::License-Issue : Identifies the core issue at hand resolves around licensing / subscriptions\n\n~Escalation::Response-Time : Useful when the purpose of the request is to expedite a response to an issue or case\n\nFinding a Support Manager DRI for an Account Escalation\n\nIn case an Account Escalation opens where support involvement is needed, it is the responsibility of the support manager on-call to find a Lead Support Manager. In case this is an ASE account (you can find this in the org notes) please ping Lissa Roberts (AMER), Ilia Kosenko (EMEA) or Wei Meng Lee (APAC).\n\nHandling mid-ticket feedback requesting manager contact during business hours",
+    "chunk_index": 8,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_9",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "needed, it is the responsibility of the support manager on-call to find a Lead Support Manager. In case this is an ASE account (you can find this in the org notes) please ping Lissa Roberts (AMER), Ilia Kosenko (EMEA) or Wei Meng Lee (APAC).\n\nHandling mid-ticket feedback requesting manager contact during business hours\n\nMid-ticket feedback link – each Public Comment from a GitLab Support Engineer or Manager has a link to a form where a customer can provide feedback or request contact from a manager while the ticket is open (introduced in issue 2913 ).\nThis feedback form creates issues in the customer feedback project, with a subject format of Positive/Negative/Neutral feedback for ticket nnnnnn , and is automatically assigned to the manager of the engineer assigned to the ticket, or to Val Parsons as Support Director when there is no assignee. In addition to the issue, there is a Slack notification sent to the #support_ticket-attention-requests channel.\nThe following action should be taken promptly by the Support Manager On-call:\n\nIf the feedback related to an existing ticket:\n\nReview feedback and ticket information and consider how urgent a reply is required. Replying as soon as possible could prevent further customer frustration and a STAR or emergency situation.\n\nKeeping urgency in mind, decide if action should be taken by the manager of the assigned engineer or by the Manager On-Call.\n\nIf the feedback needs immediate attention, reply via the ticket or email, as appropriate, share next steps and offer your Calendly link to schedule a video call.",
+    "chunk_index": 9,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_10",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "a STAR or emergency situation.\n\nKeeping urgency in mind, decide if action should be taken by the manager of the assigned engineer or by the Manager On-Call.\n\nIf the feedback needs immediate attention, reply via the ticket or email, as appropriate, share next steps and offer your Calendly link to schedule a video call.\n\nRemain as DRI until the ticket is back on track.\n\nUpdate the Feedback Issue as follows: Add the text of any communication as a comment in the Feedback Issue. Apply the label ~ssat-manager-contacted-customer. /close the Feedback Issue; followup continues via previously chosen communication method. After closing the Issue, if there are any additional actions that arise from your interaction with the customer, go back and note them in the Feedback Issue.\n\nAdd the text of any communication as a comment in the Feedback Issue.\n\nApply the label ~ssat-manager-contacted-customer.\n\n/close the Feedback Issue; followup continues via previously chosen communication method.\n\nAfter closing the Issue, if there are any additional actions that arise from your interaction with the customer, go back and note them in the Feedback Issue.\n\nIf there is no ticket link and it is general support feedback:\n\nThe issue will automatically be assigned to Val Parsons - please re-assign it to yourself as DRI.\n\nReview feedback and consider next best action.\n\nIf customer would like a call, offer your Calendly link to schedule a video call.\n\nIf the feedback is for Product or other teams, share it in the appropriate channel.",
+    "chunk_index": 10,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_11",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "back:\n\nThe issue will automatically be assigned to Val Parsons - please re-assign it to yourself as DRI.\n\nReview feedback and consider next best action.\n\nIf customer would like a call, offer your Calendly link to schedule a video call.\n\nIf the feedback is for Product or other teams, share it in the appropriate channel.\n\nIf there are any additional actions that arise from your interaction with the customer, go back and note them in the Feedback Issue.\n\nAct as a notification point for security incidents\n\nWhen GitLab experiences a security incident , the Support Manager on-call is responsible for triaging and responding to customer communications stemming from the security incident. This may include involving the CMOC .\n\nUpgrade assistance requests are currently triaged by engineers as part of the Working on Tickets but in some cases the triaging agent(s) may need assistance from Support management.\n\nExample situations and potential solutions\n\nUser requesting Upgrade Assistance outside of GitLab Support Hours Reach out to your reports to determine whether any individuals would be open to shifting their working hours to accommodate the day/time being requested Work with the end user to reschedule for another date/time that is more amenable to support staffing\n\nReach out to your reports to determine whether any individuals would be open to shifting their working hours to accommodate the day/time being requested\n\nWork with the end user to reschedule for another date/time that is more amenable to support staffing",
+    "chunk_index": 11,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_12",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "for another date/time that is more amenable to support staffing\n\nReach out to your reports to determine whether any individuals would be open to shifting their working hours to accommodate the day/time being requested\n\nWork with the end user to reschedule for another date/time that is more amenable to support staffing\n\nLast minute change in assignee availability Work with available team members to determine if the upgrade assistance can be transferred to a new engineer and communicate the change(s) to the end user for awareness\n\nWork with available team members to determine if the upgrade assistance can be transferred to a new engineer and communicate the change(s) to the end user for awareness\n\nReassigning or swapping your on-call shift\n\nIf you will be unable to handle on-call for a few hours on a weekday due to being engaged in a customer call or otherwise, arrange for another manager to handle on-call responsibilities temporarily:\n\nAsk a specific manager to cover; if that doesn’t work,\n\nPost a request in #support_leadership for any manager to volunteer to cover.\n\nTo swap your on-call duty with someone, follow the steps listed under Swapping on-call duty .\n\nManually triggering a PagerDuty notification\n\nAt times, you may receive an escalation where the customer is reporting a situation that qualifies for emergency support under our definitions of support impact . In such cases you may elect to trigger an emergency directly, rather than asking the customer to open a new emergency ticket.",
+    "chunk_index": 12,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_13",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "ering a PagerDuty notification\n\nAt times, you may receive an escalation where the customer is reporting a situation that qualifies for emergency support under our definitions of support impact . In such cases you may elect to trigger an emergency directly, rather than asking the customer to open a new emergency ticket.\n\nYou can trigger a PagerDuty notification by using the Support::Managers::Trigger manual emergency macro in Zendesk.\n\nAlternatively, you can manually trigger a PagerDuty notification through PagerDuty itself.\n\nLogin to gitlab.pagerduty.com and select + New Incident from the upper right corner. Then fill out the form as follows:\n\nImpacted Service : Customer Support\n\nAssign to : Customer Emergency Rotation\n\nTitle : Add the Zendesk ticket number here\n\nNo other fields need to be filled out, therefore you may then click Create Incident\n\nSpecial Handling Notes\n\nSpecial handling notes are documented on the customer emergencies on-call workflow . As a Support Manager, you are empowered to handle these (and other) unique situations\naccording to your judgment. If you need help or advice, don’t hesitate to escalate to unblock .\n\nCompromised instances\n\nWe advise Support Engineers to contact a Support Manager before offering a call in the case of a compromised instance .",
+    "chunk_index": 13,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_14",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "Support Manager, you are empowered to handle these (and other) unique situations\naccording to your judgment. If you need help or advice, don’t hesitate to escalate to unblock .\n\nCompromised instances\n\nWe advise Support Engineers to contact a Support Manager before offering a call in the case of a compromised instance .\n\nSupport’s role in these cases is to help the customer get to a good, known working state as quickly as possible. The fastest route will be to restore to a previously known good state (most often by restoring from a backup). Customers with an instance in this state will have other concerns though, and likely be in a heightened emotional state:\n\nHow did this happen? (Which we may or may not easily be able to answer, and they should do this forensic analysis after they have restored.)\n\nHow can we recover from this without restoring? (They can’t “safely”. We advise a restore to have 100% confidence in their environment.)\n\nWhat data was accessed? (This is always a challenging question, and if the compromise was led by a human, they may have covered their tracks. We may never have full knowledge. They should start restoring ASAP, and do forensics after.)\n\nIf moving towards a call is the right thing to do, consider joining the call before (or instead of) the engineer to communicate the scope of what can be accomplished.\n\nExample framework for a call we establish (or a bridge call the customer is leading):",
+    "chunk_index": 14,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_15",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "ledge. They should start restoring ASAP, and do forensics after.)\n\nIf moving towards a call is the right thing to do, consider joining the call before (or instead of) the engineer to communicate the scope of what can be accomplished.\n\nExample framework for a call we establish (or a bridge call the customer is leading):\n\nHi customer . Based on the ticket it sounds likely that your instance is compromised. In cases like these we’ve prepared a set of best practices ( GitLab internal link ) to help you get back up and running as quickly as possible. We’re here to support and advise where GitLab is concerned. Unfortunately, GitLab cannot provide a one-size-fits-all solution or comprehensive checklist to completely secure a server that has been compromised. GitLab recommends following your organization’s established incident response plan whenever possible. The first step is to shut down the instance, create a new one at the same version, and restore your most recent backup. This ensures you are operating on a “clean” environment, where you have confidence that all the software installed is unmodified. Please get that process started;  we are monitoring this ticket with HIGH priority. If you have any problems getting set up or restoring, please let us know in the ticket immediately. After your new instance is set up, you need to upgrade to a more recent version of GitLab before you expose this server to the public Internet. If you have any trouble with the upgrade process, let us know in the ticket immediately. Finally, as described in the recovery guide previously sent (should have been shared in the ticket via the Compromised Instance Zendesk macro , you should do an audit of the integrity of GitLab itself: checking for any users, code, webhooks, runners or other settings that you did not enable yourselves. If you have any questions, please let us know in the ticket.",
+    "chunk_index": 15,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_16",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "previously sent (should have been shared in the ticket via the Compromised Instance Zendesk macro , you should do an audit of the integrity of GitLab itself: checking for any users, code, webhooks, runners or other settings that you did not enable yourselves. If you have any questions, please let us know in the ticket.\n\nI’m going to leave the call now, but rest assured that we’re on standby and ready to help as you work through this.",
+    "chunk_index": 16,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_17",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "audit of the integrity of GitLab itself: checking for any users, code, webhooks, runners or other settings that you did not enable yourselves. If you have any questions, please let us know in the ticket.\n\nI’m going to leave the call now, but rest assured that we’re on standby and ready to help as you work through this.\n\nHi customer . Based on the ticket it sounds likely that your instance is compromised. In cases like these we’ve prepared a set of best practices ( GitLab internal link ) to help you get back up and running as quickly as possible. We’re here to support and advise where GitLab is concerned. Unfortunately, GitLab cannot provide a one-size-fits-all solution or comprehensive checklist to completely secure a server that has been compromised. GitLab recommends following your organization’s established incident response plan whenever possible. The first step is to shut down the instance, create a new one at the same version, and restore your most recent backup. This ensures you are operating on a “clean” environment, where you have confidence that all the software installed is unmodified. Please get that process started;  we are monitoring this ticket with HIGH priority. If you have any problems getting set up or restoring, please let us know in the ticket immediately. After your new instance is set up, you need to upgrade to a more recent version of GitLab before you expose this server to the public Internet. If you have any trouble with the upgrade process, let us know in the ticket immediately. Finally, as described in the recovery guide previously sent (should have been shared in the ticket via the Compromised Instance Zendesk macro , you should do an audit of the integrity of GitLab itself: checking for any users, code, webhooks, runners or other settings that you did not enable yourselves. If you have any questions, please let us know in the ticket.",
+    "chunk_index": 17,
+    "total_chunks": 19
+  },
+  {
+    "chunk_id": "06e4b48ac82a_18",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/support_manager-on-call",
+    "title": "How to be a Support Manager On-call",
+    "source": "handbook",
+    "headings": [
+      "How to be a Support Manager On-call",
+      "Introduction",
+      "Expectations for Support Manager On-call",
+      "Handling customer emergencies and incidents",
+      "Situations that Might or Might not Be Emergencies"
+    ],
+    "text": "previously sent (should have been shared in the ticket via the Compromised Instance Zendesk macro , you should do an audit of the integrity of GitLab itself: checking for any users, code, webhooks, runners or other settings that you did not enable yourselves. If you have any questions, please let us know in the ticket.\n\nI’m going to leave the call now, but rest assured that we’re on standby and ready to help as you work through this.",
+    "chunk_index": 18,
+    "total_chunks": 19
+  }
+]

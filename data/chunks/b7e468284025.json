@@ -1,0 +1,338 @@
+[
+  {
+    "chunk_id": "b7e468284025_0",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "This page focuses on how to edit the handbook.\nPlease see the handbook usage page for how and why we use the handbook, and other docs pages for further reference.\n\nThis page is intended to be complementary to Using GitLab at GitLab .\n\nHave your own practical Handbook editing tips? Drop a video below!\n\nTip Use AI to edit the handbook faster, and learn about Anthropic Claude and GitLab Duo .\n\nTip Use AI to edit the handbook faster, and learn about Anthropic Claude and GitLab Duo .\n\nAdd yourself to the team page\n\nFor how to add yourself to the team page, see the add yourself to team guide .\n\nFor how to format markdown in the handbook, see the markdown style guide ,\nwhich includes how to embed videos.\n\nUse the Web IDE to edit the handbook\n\nA typical workflow to edit the handbook:\n\nUse the Web IDE to make changes .\n\nCreate a merge request , assign reviewers .\n\nApply suggestions if any, or make further changes if needed.\n\n“Set to auto-merge”, or merge once all suggestions are resolved and you have the necessary approvals.\n\nWeb IDE steps to create a new MR\n\nNavigate to the handbook page you want to edit. At the bottom, or on the right, click on the URL Edit this page to open the new Web IDE. Alternatively, open the public handbook project and select Web IDE from the edit actions. This requires you to navigate into the source tree where the handbook files are located.\n\nNavigate to the handbook page you want to edit. At the bottom, or on the right, click on the URL Edit this page to open the new Web IDE.",
+    "chunk_index": 0,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_1",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "DE. Alternatively, open the public handbook project and select Web IDE from the edit actions. This requires you to navigate into the source tree where the handbook files are located.\n\nNavigate to the handbook page you want to edit. At the bottom, or on the right, click on the URL Edit this page to open the new Web IDE.\n\nAlternatively, open the public handbook project and select Web IDE from the edit actions. This requires you to navigate into the source tree where the handbook files are located.\n\nFamiliarize yourself with the Web IDE : The menu sections are located on the left The explorer section provides the file tree for the project, which is opened automatically when editing a handbook file. (keyboard shortcut: Shift+Cmd+E ) The editing view is on the right side. On top, there are tabs to organize open files. Additional meta information is provided at the bottom. Git branch, problems, current line number, spaces for indentation, encoding, end-of-line sequence, language mode, layout, notifications. Tip: Hover over the menu sections and items to learn more about their purpose and keyboard shortcuts.\n\nFamiliarize yourself with the Web IDE :\n\nThe menu sections are located on the left\n\nThe explorer section provides the file tree for the project, which is opened automatically when editing a handbook file. (keyboard shortcut: Shift+Cmd+E )\n\nThe editing view is on the right side. On top, there are tabs to organize open files.",
+    "chunk_index": 1,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_2",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "iarize yourself with the Web IDE :\n\nThe menu sections are located on the left\n\nThe explorer section provides the file tree for the project, which is opened automatically when editing a handbook file. (keyboard shortcut: Shift+Cmd+E )\n\nThe editing view is on the right side. On top, there are tabs to organize open files.\n\nAdditional meta information is provided at the bottom. Git branch, problems, current line number, spaces for indentation, encoding, end-of-line sequence, language mode, layout, notifications.\n\nTip: Hover over the menu sections and items to learn more about their purpose and keyboard shortcuts.\n\nEdit the selected file, and try the Markdown preview. Cmd+Shift+P on macOS opens the Web IDE command palette to search for commands. For example, type Markdown , select Markdown: Open Preview to the Side and try the preview. Note that the handbook markdown engine supports more rendering features than the Web IDE preview based on VS Code , and some items won’t be rendered properly. Commit and create a draft merge request to view the handbook review apps to preview the page, such as to verify embedded images.\n\nEdit the selected file, and try the Markdown preview. Cmd+Shift+P on macOS opens the Web IDE command palette to search for commands. For example, type Markdown , select Markdown: Open Preview to the Side and try the preview.",
+    "chunk_index": 2,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_3",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "quest to view the handbook review apps to preview the page, such as to verify embedded images.\n\nEdit the selected file, and try the Markdown preview. Cmd+Shift+P on macOS opens the Web IDE command palette to search for commands. For example, type Markdown , select Markdown: Open Preview to the Side and try the preview.\n\nNote that the handbook markdown engine supports more rendering features than the Web IDE preview based on VS Code , and some items won’t be rendered properly. Commit and create a draft merge request to view the handbook review apps to preview the page, such as to verify embedded images.\n\nUpload new files by right-clicking and selecting Upload... for example images into static/images/handbook/ and the corresponding file tree, following the handbook directories. Note the images section in the markdown guide.\n\nUpload new files by right-clicking and selecting Upload... for example images into static/images/handbook/ and the corresponding file tree, following the handbook directories.\n\nNote the images section in the markdown guide.\n\nOpen the Source Control icon on the left menu which has a colored marker for counting the file changes. Tip: Keyboard shortcut Ctrl+Shift+G .\n\nOpen the Source Control icon on the left menu which has a colored marker for counting the file changes. Tip: Keyboard shortcut Ctrl+Shift+G .\n\nReview the changed files, and once ready, specify a Git commit message. The message should be a brief (less than 120 characters) description of your changes.",
+    "chunk_index": 3,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_4",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "cut Ctrl+Shift+G .\n\nOpen the Source Control icon on the left menu which has a colored marker for counting the file changes. Tip: Keyboard shortcut Ctrl+Shift+G .\n\nReview the changed files, and once ready, specify a Git commit message. The message should be a brief (less than 120 characters) description of your changes.\n\nReview the changed files, and once ready, specify a Git commit message. The message should be a brief (less than 120 characters) description of your changes.\n\nClick on the ⋁ on the right side of the Commit and push button, and choose the Create new branch and commit option. Keyboard shortcut: Cmd+Enter .\n\nClick on the ⋁ on the right side of the Commit and push button, and choose the Create new branch and commit option. Keyboard shortcut: Cmd+Enter .\n\nSpecify a new Git branch name (optional). Press Enter to continue. This action pushes the changes into the Git repository. The changes are persisted on the GitLab server and are immediately visible in the project view.\n\nSpecify a new Git branch name (optional). Press Enter to continue. This action pushes the changes into the Git repository. The changes are persisted on the GitLab server and are immediately visible in the project view.\n\nCheck the pop-up at the bottom right, and click Create Merge Request to open the GitLab MR tab. Tip: The notification bell icon at the bottom brings back the notification, if accidentally dismissed.",
+    "chunk_index": 4,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_5",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "into the Git repository. The changes are persisted on the GitLab server and are immediately visible in the project view.\n\nCheck the pop-up at the bottom right, and click Create Merge Request to open the GitLab MR tab. Tip: The notification bell icon at the bottom brings back the notification, if accidentally dismissed.\n\nCheck the pop-up at the bottom right, and click Create Merge Request to open the GitLab MR tab. Tip: The notification bell icon at the bottom brings back the notification, if accidentally dismissed.\n\nFill in the MR template, provide why the merge request is created, add labels (optionally using quick actions, /label ~handbook ), assign yourself ( /assign me ), and set the branch to delete when merged. Optionally, use the draft option to prevent merging until ready.\n\nFill in the MR template, provide why the merge request is created, add labels (optionally using quick actions, /label ~handbook ), assign yourself ( /assign me ), and set the branch to delete when merged. Optionally, use the draft option to prevent merging until ready.\n\nTip : Practice the keyboard shortcuts for your workflows: After making changes, Control+Shift+G to commit, Cmd+Enter , Cursor to select the branch, Enter , etc.\n\nNote: The Cmd+w keyboard shortcut to close a file tab in the Web IDE gets overridden by the Chrome browser to close the browser tab. This is a known problem , use this shortcut carefully.\n\nWeb IDE steps to edit an existing MR",
+    "chunk_index": 5,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_6",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "ing changes, Control+Shift+G to commit, Cmd+Enter , Cursor to select the branch, Enter , etc.\n\nNote: The Cmd+w keyboard shortcut to close a file tab in the Web IDE gets overridden by the Chrome browser to close the browser tab. This is a known problem , use this shortcut carefully.\n\nWeb IDE steps to edit an existing MR\n\nIf you are editing an existing merge request (MR), there are 2 main differences from creating a new MR:\nwhere to open the editor, and where to commit to.\n\nMake additional changes to the MR: Select Code > Open in Web IDE on the upper right menu. This opens the Web IDE again to make changes. All changed files are opened automatically.\n\nMake additional changes to the MR: Select Code > Open in Web IDE on the upper right menu. This opens the Web IDE again to make changes. All changed files are opened automatically.\n\nMake changes (see previous section for details), go to the Source Control area, add a commit message, and click on the Commit and push button. If you create a new branch, you will end up with a new MR instead of editing the existing one.\n\nMake changes (see previous section for details), go to the Source Control area, add a commit message, and click on the Commit and push button. If you create a new branch, you will end up with a new MR instead of editing the existing one.\n\nOptional: Follow the pop-up notification to navigate back to the MR. Alternatively, close the editor tab if you did not close the MR tab.\n\nOptional: Follow the pop-up notification to navigate back to the MR. Alternatively, close the editor tab if you did not close the MR tab.",
+    "chunk_index": 6,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_7",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "ew MR instead of editing the existing one.\n\nOptional: Follow the pop-up notification to navigate back to the MR. Alternatively, close the editor tab if you did not close the MR tab.\n\nOptional: Follow the pop-up notification to navigate back to the MR. Alternatively, close the editor tab if you did not close the MR tab.\n\nVideo: Editing using the Web IDE and single file editor\n\nNote: The video shows the old www-gitlab-com project. The editing process, however, is the same.\n\nEditing the marketing handbook as example\n\nEdit this page action using the Web IDE, overview walkthrough, editing the handbook, again creating a merge request with the same actions.\n\nPractical handbook edit tips shown in this handbook.\n\nIn these videos, we run through the GitLab Handbook with experts, uncovering how to best use the handbook in our day-to-day work, and learning best-practices for handbook editing along the way. They are meant to be helpful to understand generally how GitLab works, but the instructions cannot be followed exactly since the editor and repository in GitLab has changed .\n\nCreating new handbook pages and multimedia embedding best-practices\n\nHow to move the location of a handbook page\n\nChanging a page name and subsequent updates\n\nCreating mermaid diagrams\n\nCreating issue templates\n\nAdding images to the handbook and handbook analytics\n\nHow to add a new directory and page to the handbook\n\nHow to rebase to fix a failing pipeline after fix is merged to main\n\nWhy a handbook pipeline is failing\n\nHow to identify why a pipeline is failing\n\nEditing the handbook locally",
+    "chunk_index": 7,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_8",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "diagrams\n\nCreating issue templates\n\nAdding images to the handbook and handbook analytics\n\nHow to add a new directory and page to the handbook\n\nHow to rebase to fix a failing pipeline after fix is merged to main\n\nWhy a handbook pipeline is failing\n\nHow to identify why a pipeline is failing\n\nEditing the handbook locally\n\nSet up an SSH key to use with GitLab, if you have not previously done so.\n\nSet up Git and clone the appropriate repository, such as the public handbook .\n\nUse your editor of choice to make changes. If you use Visual Studio Code optionally along with the GitLab Workflow extension for VS Code , you can follow the Web IDE editing instructions .\n\nPush the changes to GitLab .\n\nCreate a merge request.\n\nWe don’t need .gitkeep files in our handbook, they make it harder to quickly open a file in editors. Don’t add them, and delete them when you see them.\n\nIf you want to install a local version of the website to test and preview things locally,\nsee the handbook development page for instructions on how to set it up.\n\nPreview changes on GitLab\n\nTo preview your changes, deploy the review app:\n\nWait for the pipeline on the merge request (MR) to complete.\n\nEither on the “Pipelines” tab, or in the pipeline widget on the “Overview” tab of the MR, click on the circles that denote the different pipeline stages until you find the Stage:deploy and the pages job.\n\nNext to the pages job name, click on the “play” button.\n\nOnce two pages jobs complete, in the pipeline widget on the “Overview” tab of the MR, click on the “View app” button.",
+    "chunk_index": 8,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_9",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "the “Overview” tab of the MR, click on the circles that denote the different pipeline stages until you find the Stage:deploy and the pages job.\n\nNext to the pages job name, click on the “play” button.\n\nOnce two pages jobs complete, in the pipeline widget on the “Overview” tab of the MR, click on the “View app” button.\n\nYou may need to navigate to your page by going to any page, then using the left navigation tree. Do not use the search for this. If you prefer to edit the URL, note that the review app uses a .html ending, so if your page is content/handbook/path/to/page.md , the URL will be review/app/public/handbook/path/to/path.html .\n\nIf you prefer to edit the URL, note that the review app uses a .html ending, so if your page is content/handbook/path/to/page.md , the URL will be review/app/public/handbook/path/to/path.html .\n\nIf you need the review app deployed after every change on a MR, you can add the ~\"deploy-review-app-always\" label to always trigger the job, including on MR creation.\n\nFor more information about how the review apps are configuration for the handbook projects, please see the Handbook Pages Deployment .\n\nNaming pages and folder structure\n\nThe site uses the concept of page bundles, sections, and leaf pages.  A section can have multiple leaf pages, which requires a _index.md for the section.  A page bundle is a single page with a group of images, which can be an index.md .\n\nIn general, Handbook URLs should describe their content and be as clean and easy to remember as possible.",
+    "chunk_index": 9,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_10",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "pt of page bundles, sections, and leaf pages.  A section can have multiple leaf pages, which requires a _index.md for the section.  A page bundle is a single page with a group of images, which can be an index.md .\n\nIn general, Handbook URLs should describe their content and be as clean and easy to remember as possible.\n\nDirectories (folders) and pages should use lowercase a-z , hyphen - , and underscore _ .\nWhile Git and Hugo allow any UTF-8 character to be used in the file path, using other characters (such as a space) can cause issues with the pipeline, and thus, disallowed.\n\nSection with a page bundle:\n\nMoving, deleting, or renaming a page\n\nIf you delete, rename, or move a page, you should:\n\nupdate all existing links in the handbook and internal handbook. Note: When searching for links, use the page name. Sometimes links use page-relative links, meaning it doesn’t use the full path. Please also consider searching for and updating handbook links in other places, such as docs and project templates in gitlab-com and gitlab-org .\n\nNote: When searching for links, use the page name. Sometimes links use page-relative links, meaning it doesn’t use the full path.\n\nPlease also consider searching for and updating handbook links in other places, such as docs and project templates in gitlab-com and gitlab-org .\n\nEditing page maintainers\n\nOn the right side of the page, there is a list “Maintainers”.\n\nThe list is generated from the CODEOWNERS file in the relevant repository, such as in the handbook repository :\n\nOnly specific users are listed. Members of a group are not listed.",
+    "chunk_index": 10,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_11",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "d project templates in gitlab-com and gitlab-org .\n\nEditing page maintainers\n\nOn the right side of the page, there is a list “Maintainers”.\n\nThe list is generated from the CODEOWNERS file in the relevant repository, such as in the handbook repository :\n\nOnly specific users are listed. Members of a group are not listed.\n\nOnly specific users are listed. Members of a group are not listed.\n\nThe list is generated based on the most specific path: If users are specified for a directory and then for a specific page in that directory,\nthe list only includes the users for the specific page. If groups or subgroups are listed for a specific page without any specific users,\nthe list of maintainers is empty.\n\nThe list is generated based on the most specific path:\n\nIf users are specified for a directory and then for a specific page in that directory,\nthe list only includes the users for the specific page.\n\nIf groups or subgroups are listed for a specific page without any specific users,\nthe list of maintainers is empty.\n\nChanges to the .gitlab/CODEOWNERS file require approval.\nReview the bot comment for instructions on how to get the appropriate approval.\n\nEditing content from shortcodes\n\nWhen trying to edit content, you may encounter content that is “built” using shortcodes and data files.\nShortcodes look similar to {{ % performance-indicators \"ux_department\" % }} .\n\nWhen you encounter content in a shortcode and want to edit it:\n\nLook for the shortcode in the shortcodes folder . In the above example, it’s performance-indicators .\n\nIn the above example, it’s performance-indicators .",
+    "chunk_index": 11,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_12",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "tcodes and data files.\nShortcodes look similar to {{ % performance-indicators \"ux_department\" % }} .\n\nWhen you encounter content in a shortcode and want to edit it:\n\nLook for the shortcode in the shortcodes folder . In the above example, it’s performance-indicators .\n\nIn the above example, it’s performance-indicators .\n\nAt the top of the shortcode file should be a comment on where to look for the relevant data file. Ensure you’re using “Display source” to view the file. For example, look in https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/data/performance_indicators for the ux_department file. If there is no comment, you can post in #handbook to get help, and make a MR to add it.\n\nFor example, look in https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/data/performance_indicators for the ux_department file.\n\nIf there is no comment, you can post in #handbook to get help, and make a MR to add it.\n\nEdit the file , being careful to match the existing formatting.\n\nTeam member merge requests being labeled as Community contributions\n\nIf you recently created a merge request that was labeled as a Community contribution, you can fix this mislabeling issue going forward by updating the GitLab username in your personal entry in the team member directory to match the GitLab account you use for work.\n\nUse the team page editing instructions to find your team page entry file, and update the gitlab attribute (typically found on line 10) to be an exact match for the GitLab.com username you use for work.\n\n404 errors with edit action",
+    "chunk_index": 12,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_13",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "ersonal entry in the team member directory to match the GitLab account you use for work.\n\nUse the team page editing instructions to find your team page entry file, and update the gitlab attribute (typically found on line 10) to be an exact match for the GitLab.com username you use for work.\n\n404 errors with edit action\n\nWhen clicking on Edit this page in the upper right corner on a handbook page in your browser, you might get a 404 error in the GitLab Web IDE.\n\nAs a team member, this problem can be related to an expired SAML session for your GitLab.com profile. In order to mitigate and solve the problem, click on View page source to trigger the SAML authentication with Okta again.\n\nAlternatively, navigate into our GitLab.com profile into your To-Do list , or try to open a confidential issue, to trigger the authentication.\n\nIt can also be browser related: Try clearing the cache, open an incognito window (on macOS: cmd shift n ), or use a different browser to test.\n\nIf a new page is created as part of a merge request, but the page is not showing up on the site,\ncheck the file name.\n\nThe most common issue is using index.md instead of _index.md in a folder that has other pages.\nThe other pages will not display.\n\nSee pages and folder structure for more information.\n\nImages not loading properly\n\nIf you added new images and they are not loading properly in your review app, please review the Images section of the markdown guide .\n\nTo see why your pipeline is failing, there are two main places to look:",
+    "chunk_index": 13,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_14",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "ther pages will not display.\n\nSee pages and folder structure for more information.\n\nImages not loading properly\n\nIf you added new images and they are not loading properly in your review app, please review the Images section of the markdown guide .\n\nTo see why your pipeline is failing, there are two main places to look:\n\nThe latest comment by the bot on your merge request. It should have a list of all linter errors. However, build errors do not generate a comment.\n\nIndividual failed jobs. On the MR > “Pipelines” tab > select any red circle > select a failed job. Error messages are near the bottom of the job log and start with Error .\n\nIn the job log, error messages typically provide you:\n\nthe file where the error occurred\n\nthe character number (where on the line it is)\n\nFor example: Error: error building site: assemble: \"/builds/gitlab-com/content-sites/handbook/content/handbook/security/security-assurance/field-security/trust_center_guide.md:1:2\": closing tag for shortcode 'details' does not match start tag\n\nFile: content/handbook/security/security-assurance/field-security/trust_center_guide.md\n\nTo fix markdown errors, review the message. Alternatively, review the relevant section in the markdown style guide .\n\nFor all other errors, the error message should provide the information necessary to fix it.\n\nSee the below sections for more details on how to resolves specific types of issues.\n\nIf the problem was on the main branch, you may need to rebase .\n\nIf you’re unsure, you can reach out for help .\n\nLink and anchor errors",
+    "chunk_index": 14,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_15",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "de .\n\nFor all other errors, the error message should provide the information necessary to fix it.\n\nSee the below sections for more details on how to resolves specific types of issues.\n\nIf the problem was on the main branch, you may need to rebase .\n\nIf you’re unsure, you can reach out for help .\n\nLink and anchor errors\n\nThere is a linter (Hugolint) that validates links and anchors across the handbook. If your change introduces new broken links, then the pipeline job will fail. Follow the instructions in the previous failing pipelines section for how to find the list of errors.\n\nThere are two main reasons it will fail:\n\nContent added in the MR includes a broken link.\n\nContent changed in the MR breaks an existing link.\n\nHere’s an example of a failed hugolint job error message when viewed in the job log:\n\nThe error starts with the file where the broken link is present, followed by the line number.\n(For example, file path - content/handbook/security/product-security/_index.md , line number: 43.)\n\nNext, the error indicates which link is broken. (For example, architecture/ is the broken link destination.)",
+    "chunk_index": 15,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_16",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "in the job log:\n\nThe error starts with the file where the broken link is present, followed by the line number.\n(For example, file path - content/handbook/security/product-security/_index.md , line number: 43.)\n\nNext, the error indicates which link is broken. (For example, architecture/ is the broken link destination.)\n\nFor broken or non-existent anchor links (for example, #panther ): Did the MR change a heading that is being linked to? If so, you’ll need to update the linked anchor to match the new heading. If you’re linking to a heading, does it exists? Check the file in the repository instead of on the website. The links are checked pre-build, so generated content (from shortcodes and includes) don’t “exist” for the link checker. If the page you’re linking to has a large amount of generated content (such as performance indicator pages), you can add an exclusion to hugolint in the relevant configuration file.\n\nDid the MR change a heading that is being linked to? If so, you’ll need to update the linked anchor to match the new heading.\n\nIf you’re linking to a heading, does it exists? Check the file in the repository instead of on the website. The links are checked pre-build, so generated content (from shortcodes and includes) don’t “exist” for the link checker. If the page you’re linking to has a large amount of generated content (such as performance indicator pages), you can add an exclusion to hugolint in the relevant configuration file.",
+    "chunk_index": 16,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_17",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "f on the website. The links are checked pre-build, so generated content (from shortcodes and includes) don’t “exist” for the link checker. If the page you’re linking to has a large amount of generated content (such as performance indicator pages), you can add an exclusion to hugolint in the relevant configuration file.\n\nIf the page you’re linking to has a large amount of generated content (such as performance indicator pages), you can add an exclusion to hugolint in the relevant configuration file.\n\nCommunity contributions\n\nPipelines for community contributions to the handbook from private forks will fail.\nContributors should use a public fork, or preferably the community fork .\n\nFixing default branch errors\n\nMR pipelines should catch almost all errors before they are merged into the relevant repository.\nThe handbook projects also pull data from www-gitlab-com yml files.\n\nIf the default branch main (for public and internal handbook) or master (for www-gitlab-com )\nis “broken” and pipelines are failing for everyone, the root issue is most likely a data file error.\n\nCheck the error message.\n\nIf it mentions an error in building the site, or rendering something, follow the trace.\n\nIn the layout file, if it’s failing on displaying on something\nthat starts with site.Data.public. , then it’s a data file issue.",
+    "chunk_index": 17,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_18",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "are failing for everyone, the root issue is most likely a data file error.\n\nCheck the error message.\n\nIf it mentions an error in building the site, or rendering something, follow the trace.\n\nIn the layout file, if it’s failing on displaying on something\nthat starts with site.Data.public. , then it’s a data file issue.\n\nThere are two ways to fix. Either: Make the code itself more robust to deal with the types of values it may encounter.\nHowever, not everyone knows Go and Hugo well enough to do that quickly.\nIf needed, create a “Handbook::Operations” “type::bug” issue in the handbook repository to document the problem\nafter fixing the pipeline issue. Edit the data file to have values the build won’t fail on.\n\nMake the code itself more robust to deal with the types of values it may encounter.\nHowever, not everyone knows Go and Hugo well enough to do that quickly.\nIf needed, create a “Handbook::Operations” “type::bug” issue in the handbook repository to document the problem\nafter fixing the pipeline issue.\n\nEdit the data file to have values the build won’t fail on.\n\nExample: Fixing broken main on tech writing shortcode\n\nConsider this example error :\n\nFollowing the error trace, notice that the last error with a full path and line number is: failed to process shortcode: \"/builds/gitlab-com/content-sites/handbook/layouts/shortcodes/tech-writing.html:16:28\" .\n\nLooking at the tech-writing shortcode ,\nthe issue is an unexpected value in printf \"/handbook/product/categories#%s-section\" $section ,\nwhich matches the last part of the error message.",
+    "chunk_index": 18,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_19",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "line number is: failed to process shortcode: \"/builds/gitlab-com/content-sites/handbook/layouts/shortcodes/tech-writing.html:16:28\" .\n\nLooking at the tech-writing shortcode ,\nthe issue is an unexpected value in printf \"/handbook/product/categories#%s-section\" $section ,\nwhich matches the last part of the error message.\n\nFrom there, line 11 of the tech-writing shortcode tells us that the data is from site.Data.public.stages.stages \"section\" .\n\nIf you have a local build of the site, you can find all the data files in the data/public folder.\nThe relevant file (usually a yml file) should tell you at the top where to find the original.\n\nIf you do not have a local build, you can still likely find it in the www-gitlab-com data folder .\n\nBased on the code, you can figure out the filename. site.Data.public.stages.stages means it’s\nin data/public and the file is stages.yml .\n\nThe last parts .stages \"section\" means it’s inside of stages: and it’s pulling data from\neach section: line.\n\nYou can check the most recent changes to the file, and/or compare it to when main started failing.\n\nIn this case, an empty section: line was the issue.\n\nThe quick and easy fix is to add text to the empty section: line, merge it, and run a new pipeline\nin the public handbook project.\n\nIn this case, the handbook code was made more robust .\n\nPrettier is formatting markdown files",
+    "chunk_index": 19,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "b7e468284025_20",
+    "url": "https://handbook.gitlab.com/handbook/about/editing-handbook",
+    "title": "Editing the Handbook",
+    "source": "handbook",
+    "headings": [
+      "Editing the Handbook",
+      "Add yourself to the team page",
+      "Markdown formatting",
+      "Use the Web IDE to edit the handbook",
+      "Web IDE steps to create a new MR"
+    ],
+    "text": "compare it to when main started failing.\n\nIn this case, an empty section: line was the issue.\n\nThe quick and easy fix is to add text to the empty section: line, merge it, and run a new pipeline\nin the public handbook project.\n\nIn this case, the handbook code was made more robust .\n\nPrettier is formatting markdown files\n\nIf you have prettier set up in VS Code and it is formatting the .md files when they are not supposed to, check if you have Prettier set to be your default formatter with \"editor.defaultFormatter\": \"esbenp.prettier-vscode\" in your user settings.\n\nAdditionally, consider using the Glob Pattern in the extension settings to specify which files to prettify automatically.\n\nFor additional tips, such as how to replace strings in files, refer to the practical handbook edits examples .\n\nIf you run into trouble editing the GitLab Handbook, help is available.\n\nTeam members, referred to as MR Buddies , are available to help you create a merge request or debug any problems you might run into while updating the GitLab Handbook. Some common questions are covered in the videos in the MR Buddies playlist . Post your request with a link in the #mr-buddies Slack channel.\n\nFor general questions about the handbook, post in the handbook Slack channel .\n\nFor more serious problems, especially ones that are time sensitive or prohibiting access to important information, there is an escalation process to reach out to team members who are able to help resolve the problem.",
+    "chunk_index": 20,
+    "total_chunks": 21
+  }
+]

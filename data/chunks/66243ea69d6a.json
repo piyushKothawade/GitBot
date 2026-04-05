@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "66243ea69d6a_0",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/workflows-tools/common-room",
+    "title": "Common Room workflows",
+    "source": "handbook",
+    "headings": [
+      "Common Room workflows",
+      "Accessing Common Room",
+      "Temporary access",
+      "GitLab Data",
+      "Resources"
+    ],
+    "text": "Common Room workflows\n\nCommon Room is a community growth platform that helps manage, engage, and grow digital communities by integrating data across different platforms, identifying members, and reporting trends and sentiment.\n\nThe Developer Relations team uses Common Room to aggregate, review, and take action on insights from across our community platforms. It is also used to track trends and community sentiment.\n\nAccessing Common Room\n\nAccess is granted through Okta and is billed per individual seat. Currently, there are no available open seats. Additional seats can be purchased via a Zip request.\n\nTo request access to Common Room,\n\nAdd your business case and description to this handbook page.\n\nOnce the MR is merged, open an Access Request for Common Room using the Individual_Bulk_Access_Request template.\n\nIn Step 2, for Justification for this access , please describe and link to your business case for using Common Room.\n\nTemporary access is available for evaluating the potential purchase of a seat for a duration of 3 months. It requires meeting with Common Room for a 30 minute onboarding.\n\nOpen an Access Request using the Individual_Bulk_Access_Request template. Specify that this is a temporary seat for 3 months.\n\nOpen a confidential issue in Developer Evangelism Meta to document temporary seat expiration date.\n\n@sugaroverflow will schedule a mandatory onboarding meeting with Common Room and deprovision seat in 3 months.\n\nCommon Room doesn’t natively integrate with GitLab.\nWe have a custom Ruby script which runs via a scheduled pipeline to injest data.",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "66243ea69d6a_1",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/workflows-tools/common-room",
+    "title": "Common Room workflows",
+    "source": "handbook",
+    "headings": [
+      "Common Room workflows",
+      "Accessing Common Room",
+      "Temporary access",
+      "GitLab Data",
+      "Resources"
+    ],
+    "text": "e in Developer Evangelism Meta to document temporary seat expiration date.\n\n@sugaroverflow will schedule a mandatory onboarding meeting with Common Room and deprovision seat in 3 months.\n\nCommon Room doesn’t natively integrate with GitLab.\nWe have a custom Ruby script which runs via a scheduled pipeline to injest data.\n\nCommon Room’s getting started documentation .\n\nCommon Room’s playbooks for nurturing community .\n\nBusiness Cases for Developer Relations\n\nSupporting GitLab Contributors and Super Users\n\nDRI : Developer Relations Engineering team\n\nMonitor segments Heroes, Core Team, and MVPs.\n\nSee what topics are trending and track negative sentiment in those segments.\n\nSpot potential new contributors based on their activity.\n\nNumber of active contributors and engagement rate in each segment.\n\nBetter understanding of the activities and interests of our top contributors, super users, and new, potential super users.\n\nInsight into various types of contributions.\n\nCommunity Engagement Tracking\n\nDRI : Fatima Sarah Khalid\n\nReview popular discussions across all community platforms.\n\nConduct analysis and reporting by creating custom dashboards or exporting reports.\n\nTrack negative sentiments and trending topics.\n\nNumber of active participants and engagement (posts/comments/reactions) across community platforms.\n\nOverall sentiment analysis of the community.\n\nCommunity response rates.\n\nUnderstanding the level and types of engagement on our community platforms.\n\nHighlight popular trends and negative sentiment early.\n\nPrompt discussions or strategies around low activity or engagement.",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "66243ea69d6a_2",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/workflows-tools/common-room",
+    "title": "Common Room workflows",
+    "source": "handbook",
+    "headings": [
+      "Common Room workflows",
+      "Accessing Common Room",
+      "Temporary access",
+      "GitLab Data",
+      "Resources"
+    ],
+    "text": "mments/reactions) across community platforms.\n\nOverall sentiment analysis of the community.\n\nCommunity response rates.\n\nUnderstanding the level and types of engagement on our community platforms.\n\nHighlight popular trends and negative sentiment early.\n\nPrompt discussions or strategies around low activity or engagement.\n\nIdentifying and Monitoring Keyword Trends for Thought Leadership\n\nDRI : Developer Advocacy Description :\n\nTrack trending keywords and conversations via team alerts.\n\nEvaluate the relevance of these keywords to our community and goals.\n\nCreate and update a keyword bank for reference and future content creation for thought leadership.\n\nNumber and frequency of trending keywords.\n\nStay informed about the trending topics within the community.\n\nGuide content creation based on trending topics and community interest.\n\nIdentifying Opportunities for Open Source Program\n\nDRI : Developer Relations Programs\n\nMonitor potential organizations for the Open Source program .\n\nReview the activities, trending keywords, and sentiment of existing partners (via segment) to identify potential collaborations.\n\nPercentage of active participation from existing partner organizations.\n\nIdentify potential members and activities for the OSS program.\n\nIncrease the number and quality of collaborations by proactively identifying opportunities.\n\nNew Member Onboarding (Discord)\n\nDRI : Fatima Sarah Khalid\n\nAutomatically identify new members in the community and send a welcome message, including key resources and community guidelines. Includes options for an automated follow-up.",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "66243ea69d6a_3",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/workflows-tools/common-room",
+    "title": "Common Room workflows",
+    "source": "handbook",
+    "headings": [
+      "Common Room workflows",
+      "Accessing Common Room",
+      "Temporary access",
+      "GitLab Data",
+      "Resources"
+    ],
+    "text": "e the number and quality of collaborations by proactively identifying opportunities.\n\nNew Member Onboarding (Discord)\n\nDRI : Fatima Sarah Khalid\n\nAutomatically identify new members in the community and send a welcome message, including key resources and community guidelines. Includes options for an automated follow-up.\n\nNumber of new members onboarded and engagement rates.\n\nRetention rate of new members.\n\nSmooth transition for new members into the community.\n\nPotential increase in engagement and retention rates.\n\nRequesting information from Common Room\n\nFor requests to extract information from Common Room, you can open a confidential issue in the Developer Advocacy Meta project with the details of your request and assign it to @sugaroverflow . The DevRel team can then execute the query and export the report as a PDF to the issue.\n\nRequests can be for the export of information or for setting up a team alert to Slack. You can learn more about the types of reporting in Common Room’s documentation .\n\nHere are some request-based business cases:\n\nTracking specific customer engagement\n\nDescription :\nSales may wish to gain key information or context on a specific customer. They would like to see a customer’s interaction patterns in the community - posts, comments, key areas of interest, and any queries they may have raised on our community platforms.\n\nEnhanced understanding of customer behavior within the community.\n\nSupport the sales pipeline generation process by providing key contextual information from the community.",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

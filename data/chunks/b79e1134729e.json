@@ -1,0 +1,130 @@
+[
+  {
+    "chunk_id": "b79e1134729e_0",
+    "url": "https://handbook.gitlab.com/handbook/marketing/localization",
+    "title": "Localization",
+    "source": "handbook",
+    "headings": [
+      "Localization",
+      "Introduction",
+      "Meet our team",
+      "Localization Technology Management",
+      "Localization Program Management"
+    ],
+    "text": "Localization team collaborates with the Marketing, Sales, Product and Engineering divisions , as well as external partners (vendors) and the wider community of translators, to enable GitLab’s global  reach and user experience across key pillars: Marketing (about.gitlab.com), Editorial (blogs), Product, Documentation, and Enablement (support, customer success, etc.).\n\nThe team’s key initiatives include increasing our non-English blog publishing cadence and performance, localizing the marketing website pages, enabling the localization of docs.gitlab.com, launching the terminology management system, deploying cutting-edge Generative AI and machine translation solutions, expanding into customer-facing programs such as localization of Support content and training & certification materials, and supporting all of the above by the localization technology platform and tooling.\n\nOur ability to support regional teams with localized product documentation, marketing content, and customer success materials directly impacts GitLab’s ability to grow in global markets.\n\nDaniel Sullivan , Director, Globalization & Localization\n\nOleksandr Pysaryuk , Senior Manager, Globalization Technology\n\nMaría José Salmerón Ibanez , Senior Localization Program Manager\n\nMegumi Uchikawa , Senior Localization Content Manager\n\nMaud Leuenberger , Senior Localization Content Manager, French\n\nHendrik Breuer , Senior Localization Content Manager, German\n\nRasam Hossain , Senior Fullstack Engineer\n\nLauren Barker , Staff Fullstack Engineer\n\nEmi Kimura , English-Japanese Linguist*",
+    "chunk_index": 0,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b79e1134729e_1",
+    "url": "https://handbook.gitlab.com/handbook/marketing/localization",
+    "title": "Localization",
+    "source": "handbook",
+    "headings": [
+      "Localization",
+      "Introduction",
+      "Meet our team",
+      "Localization Technology Management",
+      "Localization Program Management"
+    ],
+    "text": "ogram Manager\n\nMegumi Uchikawa , Senior Localization Content Manager\n\nMaud Leuenberger , Senior Localization Content Manager, French\n\nHendrik Breuer , Senior Localization Content Manager, German\n\nRasam Hossain , Senior Fullstack Engineer\n\nLauren Barker , Staff Fullstack Engineer\n\nEmi Kimura , English-Japanese Linguist*\n\nYuko Yamamoto , Localization Specialist, Japanese*\n\n*temporary service provider\n\nLocalization Technology Management\n\nThe Localization team is managing the diverse technology stack consisting of several purpose-built solutions, as well as commercial Language Technology Platforms (LTPs) for managing the localization of GitLab product UI, marketing website and GitLab product documentation:\n\nGitLab Translation Agent is our GitLab Duo Chat powered AI translation assistant that is optimized for GitLab’s internal localization workflow. GitLab Translation Agent uses the GitLab Duo Agent Translation Platform to produce translations for GitLab marketing content, such as website pages and blogs in German, French, Italian, Japanese, Portuguese (Brazilian), and Spanish. The translation output is reviewed and edited by GitLab’s localization Content Managers before publication.\n\nThe Localization Request Management system and its suite of integrations and microservices, aka Argo\n\nThe GitLab Translation Service aka Argo GitLab Integration\n\nArgo integrations and automations between LTPs (language technology platforms), such as TranslationOS and Phrase TMS , and GitLab projects and systems, such as Decap CMS",
+    "chunk_index": 1,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b79e1134729e_2",
+    "url": "https://handbook.gitlab.com/handbook/marketing/localization",
+    "title": "Localization",
+    "source": "handbook",
+    "headings": [
+      "Localization",
+      "Introduction",
+      "Meet our team",
+      "Localization Technology Management",
+      "Localization Program Management"
+    ],
+    "text": "ation Request Management system and its suite of integrations and microservices, aka Argo\n\nThe GitLab Translation Service aka Argo GitLab Integration\n\nArgo integrations and automations between LTPs (language technology platforms), such as TranslationOS and Phrase TMS , and GitLab projects and systems, such as Decap CMS\n\nPurpose-built custom AI-powered solutions for machine translation and localization-adjacent tasks for GitLab product documentation. See project Tech Docs AI-powered translation\n\nPurpose-built custom solutions for context-enhanced localization of GitLab product UI, using Crowdin . See project GitLab String Search , epic Implement and launch the string search context-enhancement solution as Pages website , project Crowdin Automation , and project crowdin-translation-sync\n\nArgo GitLab Agent , a purpose-built service as a  component of the Argo ecosystem for specialized localization-related tasks, such as file pre- / post-processing, etc.\n\nTerminology management system - Kalcium Quickterm\n\nLocalization Program Management\n\nThe Localization team manages general localization-related, language-specific and partner-spacfic Slack channels:\n\n#localization : Central channel for translation and localization questions, requests, and collaboration with the Localization team.\n\n#tech-docs-localization : Channel for quick communication and interactions between, mainly, the Localization team and the Technical Writing team.\n\n#blog-localization-content : Channel for communication around our international blogs",
+    "chunk_index": 2,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b79e1134729e_3",
+    "url": "https://handbook.gitlab.com/handbook/marketing/localization",
+    "title": "Localization",
+    "source": "handbook",
+    "headings": [
+      "Localization",
+      "Introduction",
+      "Meet our team",
+      "Localization Technology Management",
+      "Localization Program Management"
+    ],
+    "text": "on and localization questions, requests, and collaboration with the Localization team.\n\n#tech-docs-localization : Channel for quick communication and interactions between, mainly, the Localization team and the Technical Writing team.\n\n#blog-localization-content : Channel for communication around our international blogs\n\n#translated-team : For communication with our language services provider, Translated .\n\n#spartan-software : For communication with our technology partner, Spartan Software .\n\n#oban-international : For communication with our copywriting and digital marketing agency, Oban International .\n\n#crowdin_gitlab : For communication with our technology provider for product UI text localization, Crowdin .\n\n#argos_multilingual : For communication with Argos Multilingual , our language services, solutions and technology provider for product and technical documentation.\n\n#terminology : For communication with our terminology consultant, vendors (Translated and Argos Multilingual) and the technology provider of the terminology management system, Kaleidoscope .\n\nChannels for collaboration between GitLab stakeholders and Localization team on language-specific initiatives:\n\n#japan_localization_gitlab\n\n#italian-localization\n\n#portuguese-brazil-localization\n\n#spanish-localization\n\nLocalization request status labels\n\nTo triage localization requests or initiatives\n\nL10n-status::New Request\n\nTo indicate a new localization request\n\nL10n-status:in progress\n\nTo indicate that a localization request is in progress\n\nL10n-status:Completed",
+    "chunk_index": 3,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b79e1134729e_4",
+    "url": "https://handbook.gitlab.com/handbook/marketing/localization",
+    "title": "Localization",
+    "source": "handbook",
+    "headings": [
+      "Localization",
+      "Introduction",
+      "Meet our team",
+      "Localization Technology Management",
+      "Localization Program Management"
+    ],
+    "text": "calization\n\n#portuguese-brazil-localization\n\n#spanish-localization\n\nLocalization request status labels\n\nTo triage localization requests or initiatives\n\nL10n-status::New Request\n\nTo indicate a new localization request\n\nL10n-status:in progress\n\nTo indicate that a localization request is in progress\n\nL10n-status:Completed\n\nTo indicate that a localization request is completed\n\nTo indicate that a localization request is under localization quality assurance (LQA)\n\nTo indicate that the localization request is blocked\n\nL10n:: business owner review\n\nTo indicate that the requesting team/person is reviewing the translations. Also used when an Internal Reviews is happening\n\nFor tracking issues in our backlog\n\nLabels for our main localization pillars\n\nfor work on marketing localization\n\nfor work on our localization infrastructure and technology\n\nrelated to learning everything about localization at GitLab\n\nfor tracking work vendor related\n\nfor tracking work related to the localization of GitLab documentation\n\nfor tracking work related to the localization GitLab product UI\n\nL10n-terminology-mngmnt\n\nWork related to terminology management processes, terminology management system implementation, glossary work on Crowdin for product translations, etc.\n\ntracking content and localization work in French\n\ntracking content and localization work in German\n\ntracking content and localization work in Spanish\n\ntracking content and localization work in Japanese\n\ntracking content and localization work in Brazilian Portuguese\n\ntracking content and localization work in Italian",
+    "chunk_index": 4,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b79e1134729e_5",
+    "url": "https://handbook.gitlab.com/handbook/marketing/localization",
+    "title": "Localization",
+    "source": "handbook",
+    "headings": [
+      "Localization",
+      "Introduction",
+      "Meet our team",
+      "Localization Technology Management",
+      "Localization Program Management"
+    ],
+    "text": "c.\n\ntracking content and localization work in French\n\ntracking content and localization work in German\n\ntracking content and localization work in Spanish\n\ntracking content and localization work in Japanese\n\ntracking content and localization work in Brazilian Portuguese\n\ntracking content and localization work in Italian\n\nHow to submit translation requests to the Localization team\n\nPrimary method Submit an issue through our Localization Issue Tracker when your content is ready for localization or review.\n\nNote: While you can contact the Translated or Argos Multilingual team directly via Slack in #translated-team or #argos_multilingual , we prefer submission through the Issue Tracker.\n\nAdditional support For general localization questions:\n\nJoin our #localization Slack channel\n\nAdd the L10n-attention label to issues, epics, or merge requests\n\nHere you can view the status of current localization requests: Issue Tracker Board\n\nWhen to engage with us\n\nWe recommend connecting with the Localization team early in your planning, especially for global initiatives affecting users across all regions that have a specific timeline. While we can’t begin translations until content is finalized and approved, early collaboration during planning and design will ensure success.",
+    "chunk_index": 5,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b79e1134729e_6",
+    "url": "https://handbook.gitlab.com/handbook/marketing/localization",
+    "title": "Localization",
+    "source": "handbook",
+    "headings": [
+      "Localization",
+      "Introduction",
+      "Meet our team",
+      "Localization Technology Management",
+      "Localization Program Management"
+    ],
+    "text": "s\n\nWe recommend connecting with the Localization team early in your planning, especially for global initiatives affecting users across all regions that have a specific timeline. While we can’t begin translations until content is finalized and approved, early collaboration during planning and design will ensure success.\n\nWe are managing the internal review process by working with language leads and contractors, so that our in-market GitLab teams can focus on their normal duties. Please note, however, that we may need to engage the internal review team from time to time, as our new teams ramp up and build the context they need to successfully localize our content in a way that aligns to GitLab and local expectations.\n\nOur internal reviewers are volunteer GitLab employees. We completely appreciate that this task is on top of your day job and will continue to respect that. Both translation and reviews are conducted in Translated tooling; processes for review are currently a work in progress.\n\nLocalization of GitLab product documentation site (docs.gitlab.com)\n\nWe are working on localizing GitLab product documentation. To learn more, go to the Localization of GitLab Product Documentation Handbook page, see the Docs Site Localization project and follow the Localization of GitLab Product Documentation epic .\n\nMarketing Localization",
+    "chunk_index": 6,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b79e1134729e_7",
+    "url": "https://handbook.gitlab.com/handbook/marketing/localization",
+    "title": "Localization",
+    "source": "handbook",
+    "headings": [
+      "Localization",
+      "Introduction",
+      "Meet our team",
+      "Localization Technology Management",
+      "Localization Program Management"
+    ],
+    "text": "product documentation site (docs.gitlab.com)\n\nWe are working on localizing GitLab product documentation. To learn more, go to the Localization of GitLab Product Documentation Handbook page, see the Docs Site Localization project and follow the Localization of GitLab Product Documentation epic .\n\nMarketing Localization\n\nGitLab marketing website is being continuously localized and maintained in 6 languages. GitLab’s international blog is available in Japanese, French and German, with a dedicated content manager. To learn more, go to the Marketing Localization Handbook page.",
+    "chunk_index": 7,
+    "total_chunks": 8
+  }
+]

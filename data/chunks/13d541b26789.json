@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "13d541b26789_0",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/runway-guidelines",
+    "title": "Runway guidelines",
+    "source": "handbook",
+    "headings": [
+      "Runway guidelines",
+      "Runway tooling guidelines",
+      "What is Runway ?",
+      "Why Runway?",
+      "How to start with Runway?"
+    ],
+    "text": "Runway tooling guidelines\n\nThis runbook is intended to help determine whether a tool is a good fit for Runway . In certain cases, it may be beneficial to use Runway to ease tooling integration work .\n\nThe proposal of the design document sums up what Runway seems to be today:\n\nRunway is a means for deploying a service, packaged up as a Docker image to a production environment. It leverages GitLab CI/CD as well as other GitLab product features to do this.\n\nRunway is a means for deploying a service, packaged up as a Docker image to a production environment. It leverages GitLab CI/CD as well as other GitLab product features to do this.\n\nThe executive summary of the Runway blueprint gives a good explanation on the motivation behind it.",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "13d541b26789_1",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/runway-guidelines",
+    "title": "Runway guidelines",
+    "source": "handbook",
+    "headings": [
+      "Runway guidelines",
+      "Runway tooling guidelines",
+      "What is Runway ?",
+      "Why Runway?",
+      "How to start with Runway?"
+    ],
+    "text": "r GitLab product features to do this.\n\nRunway is a means for deploying a service, packaged up as a Docker image to a production environment. It leverages GitLab CI/CD as well as other GitLab product features to do this.\n\nThe executive summary of the Runway blueprint gives a good explanation on the motivation behind it.\n\nThis document proposes a service-integration approach to setting up infrastructure to allow teams within GitLab to build new application features that leverage AI, ML, and data technologies at a rapid pace. […] The current application architecture runs most GitLab application features in Ruby. However, many ML/AI experiments require different resources and tools, implemented in different languages, with huge libraries that do not always play nicely together, and have different hardware requirements. Adding all these features to the existing infrastructure will increase the size of the GitLab application container rapidly, resulting in slower startup times, increased number of dependencies, security risks, negatively impacting development velocity, and increasing complexity due to different hardware requirements. As an alternative, the proposal suggests adding services to avoid overloading GitLabs main workloads. These services will run independently with isolated resources and dependencies. By adding services, GitLab can maintain the availability and security of GitLab.com, and enable engineers to rapidly iterate on new ML/AI experiments.",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "13d541b26789_2",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/runway-guidelines",
+    "title": "Runway guidelines",
+    "source": "handbook",
+    "headings": [
+      "Runway guidelines",
+      "Runway tooling guidelines",
+      "What is Runway ?",
+      "Why Runway?",
+      "How to start with Runway?"
+    ],
+    "text": "ative, the proposal suggests adding services to avoid overloading GitLabs main workloads. These services will run independently with isolated resources and dependencies. By adding services, GitLab can maintain the availability and security of GitLab.com, and enable engineers to rapidly iterate on new ML/AI experiments.\n\nThis document proposes a service-integration approach to setting up infrastructure to allow teams within GitLab to build new application features that leverage AI, ML, and data technologies at a rapid pace. […] The current application architecture runs most GitLab application features in Ruby. However, many ML/AI experiments require different resources and tools, implemented in different languages, with huge libraries that do not always play nicely together, and have different hardware requirements. Adding all these features to the existing infrastructure will increase the size of the GitLab application container rapidly, resulting in slower startup times, increased number of dependencies, security risks, negatively impacting development velocity, and increasing complexity due to different hardware requirements. As an alternative, the proposal suggests adding services to avoid overloading GitLabs main workloads. These services will run independently with isolated resources and dependencies. By adding services, GitLab can maintain the availability and security of GitLab.com, and enable engineers to rapidly iterate on new ML/AI experiments.",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "13d541b26789_3",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/runway-guidelines",
+    "title": "Runway guidelines",
+    "source": "handbook",
+    "headings": [
+      "Runway guidelines",
+      "Runway tooling guidelines",
+      "What is Runway ?",
+      "Why Runway?",
+      "How to start with Runway?"
+    ],
+    "text": "ative, the proposal suggests adding services to avoid overloading GitLabs main workloads. These services will run independently with isolated resources and dependencies. By adding services, GitLab can maintain the availability and security of GitLab.com, and enable engineers to rapidly iterate on new ML/AI experiments.\n\nIf we extract away the ML/AI parts to any tools that requires different resources and tools than Ruby for its function, it becomes clear that an advantage of Runway is being able to use different technologies than what is typically used within GitLab when appropriate.\nThe goals section of the design document of Runway gives the following:\n\nDevelopment teams aiming to deploy their service without having to worry too much about managing the infrastructure, scaling, monitoring.\nWe are focusing on satellite services that are stateless and thus can be autoscaled to meet demand.\nWe aim to integrate with existing GitLab features and tooling to provide a streamlined experience.\n\nDevelopment teams aiming to deploy their service without having to worry too much about managing the infrastructure, scaling, monitoring.\nWe are focusing on satellite services that are stateless and thus can be autoscaled to meet demand.\nWe aim to integrate with existing GitLab features and tooling to provide a streamlined experience.\n\nThe following list of questions can help determine if a tool may be a potential fit for Runway:\n\nIs the tool stateless and does it benefit from being auto scaled?\n\nDoes it require an infrastructure that does not fit into GitLab?",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "13d541b26789_4",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/runway-guidelines",
+    "title": "Runway guidelines",
+    "source": "handbook",
+    "headings": [
+      "Runway guidelines",
+      "Runway tooling guidelines",
+      "What is Runway ?",
+      "Why Runway?",
+      "How to start with Runway?"
+    ],
+    "text": "o integrate with existing GitLab features and tooling to provide a streamlined experience.\n\nThe following list of questions can help determine if a tool may be a potential fit for Runway:\n\nIs the tool stateless and does it benefit from being auto scaled?\n\nDoes it require an infrastructure that does not fit into GitLab?\n\nIs there some complexity to managing the infrastructure of the tool that would justify it being outside of GitLab’s monolith?\n\nAre we adding another layer of complexity by having that infrastructure outside GitLab’s monolith, and if so is it higher or lower than managing that?\n\nDo we require Runway features that are not in the list of supported features ?\n\nIn terms of tooling handover , does the team have any experience with Runway and are they willing to take it over if it is deployed using that method?\n\nWhich can be visualized as the following mermaid diagram:\n\nHow to start with Runway?\n\nIf the Candidate Services for Runway Deployment issue is still around, comment on it and set up a chat with the team to discuss whether Runway would actually be a good fit for the intended purpose. Then the docs offer a good onboarding guide to get started.\n\nA conversation should be started with the team that will own the tool down the road about using Runway as a tool as part of the tooling handover epic .",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

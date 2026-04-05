@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "f2cb656e32bf_0",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/end-user-services/supported-apps/google-workspace/google-calendar",
+    "title": "Google Calendar",
+    "source": "handbook",
+    "headings": [
+      "Google Calendar",
+      "Index",
+      "Calendar Access Requests",
+      "Create a Calendar Event",
+      "Create Out of Office Events"
+    ],
+    "text": "Google Calendar is our primary tool for scheduling meetings and events. You can access the app via the G Suite SSO Calendar tile in your Okta Dashboard or by directly going to the Calendar page .\n\nThis page aims to provide solutions for some of the most commonly asked questions we have received. For more in-depth support, please visit the official Calendar support page .\n\nCalendar Access Requests\n\nCreate a Calendar Event\n\nCreate Out of Office Events\n\nAccess Permissions for Events\n\nSet Up Calendar Delegation\n\nSubscribe to Calendars\n\nCalendar Access Requests\n\nYou can use this AR template to request the following:\n\nDeletion of a calendar event\n\nAccess to someone’s calendar\n\nCreate a Calendar Event\n\nOn the top-left of the screen, click on the + Create button, followed by Event Alternatively you can also click directly on the time-slot where you’d like to schedule the event\n\nAlternatively you can also click directly on the time-slot where you’d like to schedule the event\n\nCustomize the event by specifying a title, adding guests, and selecting which video conferencing option you’d like to use Please see our Google Calendar Zoom extension guide for more details\n\nPlease see our Google Calendar Zoom extension guide for more details\n\nCreate Out of Office Events\n\nOn the top-left of the screen, click on the + Create button, followed by Out of office\n\nSpecify the timeframe for the Out of office event\n\nSpecify how you would like to handle meeting invites while you are out of office\n\nAccess Permissions for Events",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "f2cb656e32bf_1",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/end-user-services/supported-apps/google-workspace/google-calendar",
+    "title": "Google Calendar",
+    "source": "handbook",
+    "headings": [
+      "Google Calendar",
+      "Index",
+      "Calendar Access Requests",
+      "Create a Calendar Event",
+      "Create Out of Office Events"
+    ],
+    "text": "r Zoom extension guide for more details\n\nCreate Out of Office Events\n\nOn the top-left of the screen, click on the + Create button, followed by Out of office\n\nSpecify the timeframe for the Out of office event\n\nSpecify how you would like to handle meeting invites while you are out of office\n\nAccess Permissions for Events\n\nOpen the Settings by clicking on the gear icon near the top-right of the screen, followed by Settings\n\nOn the left-hand-side, under Settings for my calendars select the calendar you want to modify the visibility settings for\n\nClick on Calendar settings followed by + Add people and groups\n\nUnder Access permissions for events you can modify how people inside of GitLab and external partners can view your events\n\nIt is not possible to share a detailed view of your primary calendar's events with people outside of GitLab (i.e no @gitlab.com email address)\n\nSet Up Calendar Delegation\n\nOpen the Settings by clicking on the gear icon near the top-right of the screen, followed by Settings\n\nOn the left-hand-side, under Settings for my calendars select the calendar you want to delegate access to\n\nClick on Shared with followed by + Add people and groups\n\nSelect the people our groups you would like to add as delegates and the permission level they should have\n\nSubscribe to Calendars\n\nLocate the Other calendars section on the left of the screen\n\nClick the + button and select Subscribe to calendars\n\nEnter the email address of the user or group whose calendar you’d like to subscribe to",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

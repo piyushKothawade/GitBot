@@ -1,0 +1,16 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/company/working-groups/demo-test-data",
+  "title": "Demo & Test data working group",
+  "content": "Demo & Test data working group\n\n#wg_demo-test-data (only accessible from within the company)\n\nIssue List / Issue Board\n\nThe efficiency of both demo and test data is key to moving our business faster. We have fragmented locations where these data resides and are provisioned. There is also a knowledge gap between what is used in technical sales and what is used in test and validation.\n\nWe will benefit from tooling efficiency together and broaden visiblity of demo data in the field and test data in Engineering.\n\nExit Criteria (100% completed)\n\nIdentify differences and gaps between demo and test data\n\nProvide ability to seed demo data on-demand\n\nDelivery of first iteration of working demo data usable by SAs in the field\n\nDefine “beautiful test data” for SAs to use in the field\n\nDeliver MVP based on the defined set of “beautiful test data”\n\nDelivery of second iteration of working demo data more easily usable by SAs in the field\n\nRename AwesomeCo to GitLab Data Seeder\n\nPublish GitLab Data Seeder Handbook Page\n\nRoles and Responsibilities\n\nStaff Software Engineer in Test\n\nSenior Manager, Solutions Architects\n\nSenior Manager, Quality Engineering\n\nStaff Software Engineer in Test\n\nPrincipal, Strategy and Operations (Technical)\n\nSenior Director of Engineering\n\nSenior Product Manager\n\nStaff Federal Solution Architect\n\nStaff Solutions Architect\n\nSenior Solutions Architect\n\nThe GitLab Data Seeder was created as a result of this working group.\n\nAn internal Slack channel was created.\n\nA video showing demo data was created.\n\nFuture iterations and known issues\n\nAt the time of closing this Working Group, the following tasks are still outstanding.\n\nPerform a live demo using seeded data\n\nImport should render URLs correctly. ( example )\n\nAllow multi-user setup and for ownership to be defined for issues/comments/etc. This will become more important as our “New UI” comes out.\n\nExtend YAML parsing to allow raw ruby objects\n\nBetter Documentation that is generated from the spec\n\nAllow seed-wide variables\n\nImplement a button on GitLab UI for Group Seeding\n\nComplete stretch goals for what good looks like (Beautiful Data)\n\nFor a complete list, see the Data Seeder Issue Tracker .\n\nFor any questions, issues, or feedback, please reach out to #data-seeder , create an issue with the label ~\"data seeder\" , or add a comment to the feedback issue .",
+  "source": "handbook",
+  "headings": [
+    "Demo & Test data working group",
+    "Attributes",
+    "Business Goal",
+    "Exit Criteria (100% completed)",
+    "Roles and Responsibilities",
+    "Result",
+    "Future iterations and known issues",
+    "Feedback"
+  ]
+}

@@ -1,0 +1,178 @@
+[
+  {
+    "chunk_id": "e4451fd81a0a_0",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/incident-io",
+    "title": "Incident.io",
+    "source": "handbook",
+    "headings": [
+      "Incident.io",
+      "Understanding Incident.io",
+      "What is Incident.io",
+      "How we manage items in Incident.io",
+      "Accessing the Customer Support Operations status page"
+    ],
+    "text": "Deployment type: Ad-hoc\n\nUnderstanding Incident.io\n\nAs per the description on Incident.io’s homepage :\n\nincident.io is an all-in-one incident management platform unifying on-call scheduling, real-time incident response, and integrated status pages – helping teams resolve issues faster and reduce downtime.\n\nincident.io is an all-in-one incident management platform unifying on-call scheduling, real-time incident response, and integrated status pages – helping teams resolve issues faster and reduce downtime.\n\nHow we manage items in Incident.io\n\nWe currently manage all Incident.io items within Incident.io itself.\n\nAccessing the Customer Support Operations status page\n\nTo access our status page:\n\nNavigate to the status page at https://statuspage.incident.io/cust-support-ops/main\n\nEnter your work email Note this does require the use of a gitlab.com email address for authentication\n\nNote this does require the use of a gitlab.com email address for authentication\n\nCheck your email inbox Subject should be Log in to Customer Support Operations\n\nSubject should be Log in to Customer Support Operations\n\nClick the Log in to Customer Support Operations status page button\n\nCustomer Support Operations setup\n\nSource: Customer Support Operations components\n\nThese reflect the items that can have incidents or maintenances on them. Think of it as the items within a status page itself.\n\nDue to the extensive list of items contained in this, please see the source link above.\n\nSource: Customer Support Operations groups\n\nThese are items that group together components.",
+    "chunk_index": 0,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e4451fd81a0a_1",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/incident-io",
+    "title": "Incident.io",
+    "source": "handbook",
+    "headings": [
+      "Incident.io",
+      "Understanding Incident.io",
+      "What is Incident.io",
+      "How we manage items in Incident.io",
+      "Accessing the Customer Support Operations status page"
+    ],
+    "text": "components\n\nThese reflect the items that can have incidents or maintenances on them. Think of it as the items within a status page itself.\n\nDue to the extensive list of items contained in this, please see the source link above.\n\nSource: Customer Support Operations groups\n\nThese are items that group together components.\n\nWe currently only utilize one group:\n\nSource: Customer Support Operations Status\n\nThis is our actual status page. It uses the group (and the components within said group).\n\nBasic settings Basic settings Page title: Customer Support Operations Base URL: https://statuspage.incident.io/cust-support-ops Customization Support URL: none Google Analytics tag: none Privacy policy: none Terms of service: none\n\nBasic settings Page title: Customer Support Operations Base URL: https://statuspage.incident.io/cust-support-ops\n\nPage title: Customer Support Operations\n\nBase URL: https://statuspage.incident.io/cust-support-ops\n\nCustomization Support URL: none Google Analytics tag: none Privacy policy: none Terms of service: none\n\nGoogle Analytics tag: none\n\nTerms of service: none\n\nCustomer pages Customer pages Customer Support Operations for Main Disabled sub-pages: none\n\nCustomer pages Customer Support Operations for Main\n\nCustomer Support Operations for Main\n\nDisabled sub-pages: none\n\nPage setup Theming Dark mode Date view: Calendar\n\nTheming Dark mode Date view: Calendar\n\nComponents Component uptimes: Coloured bars and uptime percentage\n\nComponent uptimes: Coloured bars and uptime percentage\n\nCustom domain Custom domain: none",
+    "chunk_index": 1,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e4451fd81a0a_2",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/incident-io",
+    "title": "Incident.io",
+    "source": "handbook",
+    "headings": [
+      "Incident.io",
+      "Understanding Incident.io",
+      "What is Incident.io",
+      "How we manage items in Incident.io",
+      "Accessing the Customer Support Operations status page"
+    ],
+    "text": "for Main\n\nCustomer Support Operations for Main\n\nDisabled sub-pages: none\n\nPage setup Theming Dark mode Date view: Calendar\n\nTheming Dark mode Date view: Calendar\n\nComponents Component uptimes: Coloured bars and uptime percentage\n\nComponent uptimes: Coloured bars and uptime percentage\n\nCustom domain Custom domain: none\n\nAll tasks should only be done if there is a corresponding request issue (Feature Request, Administrative, Bug, etc.). If one does not exist, you should first create one (and let it go through the standard process before working it).\n\nAll tasks are tailored specifically to the Customer Support Operations team and do not reflect how other teams may perform their administrator tasks\n\nManaging component catalogs\n\nCreating a component catalog\n\nAs we manage all Incident.io items within Incident.io itself, you will need to create the component catalog in the system itself. To create a component catalog:\n\nLogin to Incident.io (via Okta)\n\nClick Add a custom type\n\nUnder Categories click + Services\n\nEnsure Are entries of this type ranked? checkbox is checked\n\nEnsure Reference entries by name checkbox is checked\n\nClick Save at bottom-right\n\nEditing a component catalog\n\nAs we manage all Incident.io items within Incident.io itself, you will need to edit the component catalog in the system itself. To edit a component catalog:\n\nLogin to Incident.io (via Okta)\n\nClick the component catalog to edit\n\nClick Edit type at the top-right of the page\n\nMake the needed changes\n\nClick Save at bottom-right\n\nAdding a component to a component catalog",
+    "chunk_index": 2,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e4451fd81a0a_3",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/incident-io",
+    "title": "Incident.io",
+    "source": "handbook",
+    "headings": [
+      "Incident.io",
+      "Understanding Incident.io",
+      "What is Incident.io",
+      "How we manage items in Incident.io",
+      "Accessing the Customer Support Operations status page"
+    ],
+    "text": "nt.io itself, you will need to edit the component catalog in the system itself. To edit a component catalog:\n\nLogin to Incident.io (via Okta)\n\nClick the component catalog to edit\n\nClick Edit type at the top-right of the page\n\nMake the needed changes\n\nClick Save at bottom-right\n\nAdding a component to a component catalog\n\nAs we manage all Incident.io items within Incident.io itself, you will need to add the component to the component catalog in the system itself. To to add the component to the component catalog:\n\nLogin to Incident.io (via Okta)\n\nClick the component catalog to add a component to\n\nClick Create entry at the top-right of the page\n\nEnter the Name of the new component\n\nClick Create at bottom-right\n\nDeleting a component catalog\n\nAs we manage all Incident.io items within Incident.io itself, you will need to delete the component catalog in the system itself. To delete a component catalog:\n\nLogin to Incident.io (via Okta)\n\nClick Add a custom type\n\nClick the component catalog to delete\n\nClick Delete type at the top-right of the page\n\nType the name of the component catalog you are deleting in the text box of the popup modal\n\nClick Continue at bottom-right of the popup modal\n\nManaging group catalogs\n\nCreating a group catalog\n\nThis is the same process as Creating a component catalog .\n\nEditing a group catalog\n\nThis is the same process as Editing a component catalog .\n\nAdding a group to a group catalog",
+    "chunk_index": 3,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e4451fd81a0a_4",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/incident-io",
+    "title": "Incident.io",
+    "source": "handbook",
+    "headings": [
+      "Incident.io",
+      "Understanding Incident.io",
+      "What is Incident.io",
+      "How we manage items in Incident.io",
+      "Accessing the Customer Support Operations status page"
+    ],
+    "text": "ting in the text box of the popup modal\n\nClick Continue at bottom-right of the popup modal\n\nManaging group catalogs\n\nCreating a group catalog\n\nThis is the same process as Creating a component catalog .\n\nEditing a group catalog\n\nThis is the same process as Editing a component catalog .\n\nAdding a group to a group catalog\n\nAs we manage all Incident.io items within Incident.io itself, you will need to add the group to the group catalog in the system itself. To to add the group to the group catalog:\n\nLogin to Incident.io (via Okta)\n\nClick the component catalog to add a group to\n\nClick Create entry at the top-right of the page\n\nEnter the Name of the new component\n\nPopulate the list of components for the group in the Components area\n\nEnter an Email domain of gitlab.com\n\nClick Create at bottom-right\n\nAdding a component to a group catalog\n\nThis is done by Editing a group .\n\nDeleting a group catalog\n\nThis is the same process as Deleting a component catalog .\n\nThis is done by Adding a group to a group catalog .\n\nAs we manage all Incident.io items within Incident.io itself, you will need to edit the group in the system itself. To edit the group:\n\nLogin to Incident.io (via Okta)\n\nClick the catalog the group is within\n\nLocate the group to edit in question and click on it\n\nClick the pencil icon in the top-right of the right-hand sidebar\n\nClick Save on the bottom-right of the right-hand sidebar\n\nAs we manage all Incident.io items within Incident.io itself, you will need to delete the group in the system itself. To delete a group:\n\nLogin to Incident.io (via Okta)",
+    "chunk_index": 4,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e4451fd81a0a_5",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/incident-io",
+    "title": "Incident.io",
+    "source": "handbook",
+    "headings": [
+      "Incident.io",
+      "Understanding Incident.io",
+      "What is Incident.io",
+      "How we manage items in Incident.io",
+      "Accessing the Customer Support Operations status page"
+    ],
+    "text": "question and click on it\n\nClick the pencil icon in the top-right of the right-hand sidebar\n\nClick Save on the bottom-right of the right-hand sidebar\n\nAs we manage all Incident.io items within Incident.io itself, you will need to delete the group in the system itself. To delete a group:\n\nLogin to Incident.io (via Okta)\n\nClick the catalog the group is within\n\nLocate the group to edit in question and click on it\n\nClick the trashcan icon in the top-right of the right-hand sidebar\n\nClick the Confirm button to confirm the deletion\n\nAll components we use should align with the item in Customer Support Operations System Criticality .\n\nThis is done by Adding a component to a component catalog .\n\nAs we manage all Incident.io items within Incident.io itself, you will need to edit the component in the system itself. To edit the component:\n\nLogin to Incident.io (via Okta)\n\nClick the catalog the component is within\n\nLocate the component to edit in question and click on it\n\nClick the pencil icon in the top-right of the right-hand sidebar\n\nClick Save on the bottom-right of the right-hand sidebar\n\nAs we manage all Incident.io items within Incident.io itself, you will need to delete the component in the system itself. To delete the component:\n\nLogin to Incident.io (via Okta)\n\nClick the catalog the component is within\n\nLocate the component to edit in question and click on it\n\nClick the trashcan icon in the top-right of the right-hand sidebar\n\nClick the Confirm button to confirm the deletion\n\nManaging status pages\n\nCreating a status page",
+    "chunk_index": 5,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e4451fd81a0a_6",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/incident-io",
+    "title": "Incident.io",
+    "source": "handbook",
+    "headings": [
+      "Incident.io",
+      "Understanding Incident.io",
+      "What is Incident.io",
+      "How we manage items in Incident.io",
+      "Accessing the Customer Support Operations status page"
+    ],
+    "text": "delete the component:\n\nLogin to Incident.io (via Okta)\n\nClick the catalog the component is within\n\nLocate the component to edit in question and click on it\n\nClick the trashcan icon in the top-right of the right-hand sidebar\n\nClick the Confirm button to confirm the deletion\n\nManaging status pages\n\nCreating a status page\n\nAs we manage all Incident.io items within Incident.io itself, you will need to create the status page in the system itself. To create the status page:\n\nLogin to Incident.io (via Okta)\n\nClick Create customer page\n\nEnter Status page URL (if you want to change the auto-generated one)\n\nUnder Customer pages Click Use an existing catalog type Set Which catalog type defines the customers you'd like to create? to the group catalog you wish to use Set Which catalog attribute represents your components? to Components Set Which catalog attribute represents allowed email domains? to Email domains\n\nClick Use an existing catalog type\n\nSet Which catalog type defines the customers you'd like to create? to the group catalog you wish to use\n\nSet Which catalog attribute represents your components? to Components\n\nSet Which catalog attribute represents allowed email domains? to Email domains\n\nUnder Pages Set the Page name Set the URL\n\nUnder Page setup Set Theming to Dark mode Select a Company logo (if desired) Select a Favicon (if desired)\n\nSet Theming to Dark mode\n\nSelect a Company logo (if desired)\n\nSelect a Favicon (if desired)\n\nClick Create status page at the bottom-right of the page\n\nEditing a status page",
+    "chunk_index": 6,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e4451fd81a0a_7",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/incident-io",
+    "title": "Incident.io",
+    "source": "handbook",
+    "headings": [
+      "Incident.io",
+      "Understanding Incident.io",
+      "What is Incident.io",
+      "How we manage items in Incident.io",
+      "Accessing the Customer Support Operations status page"
+    ],
+    "text": "er Pages Set the Page name Set the URL\n\nUnder Page setup Set Theming to Dark mode Select a Company logo (if desired) Select a Favicon (if desired)\n\nSet Theming to Dark mode\n\nSelect a Company logo (if desired)\n\nSelect a Favicon (if desired)\n\nClick Create status page at the bottom-right of the page\n\nEditing a status page\n\nAs we manage all Incident.io items within Incident.io itself, you will need to edit the status page in the system itself. To edit the status page:\n\nLogin to Incident.io (via Okta)\n\nClick the name of the status page to edit\n\nClick the Settings tab\n\nMake the changes needed for the section you need to change (and click Save to implement the changes)\n\nAdding a component to a status page\n\nThis is done by Adding a component to a group catalog .\n\nDeleting a status page\n\nAs we manage all Incident.io items within Incident.io itself, you will need to delete the status page in the system itself. To delete the status page:\n\nLogin to Incident.io (via Okta)\n\nClick the name of the status page to edit\n\nClick the Settings tab\n\nScroll to the bottom of the page and click Delete status page\n\nType the name of your status page\n\nClick Delete status page\n\nTo create an incident:\n\nLogin to Incident.io (via Okta)\n\nNavigate to Status pages\n\nClick on the status page you want to make an incident on\n\nClick Publish incident at the top-right\n\nFill out a meaningful Name",
+    "chunk_index": 7,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e4451fd81a0a_8",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/incident-io",
+    "title": "Incident.io",
+    "source": "handbook",
+    "headings": [
+      "Incident.io",
+      "Understanding Incident.io",
+      "What is Incident.io",
+      "How we manage items in Incident.io",
+      "Accessing the Customer Support Operations status page"
+    ],
+    "text": "e bottom of the page and click Delete status page\n\nType the name of your status page\n\nClick Delete status page\n\nTo create an incident:\n\nLogin to Incident.io (via Okta)\n\nNavigate to Status pages\n\nClick on the status page you want to make an incident on\n\nClick Publish incident at the top-right\n\nFill out a meaningful Name\n\nSet the Status of the incident Investigating: Report an incident This is normally what you would use as the starting point Identified: Problem has been determined and a fix is being made Monitoring: Fix is implemented and we are monitoring the situation Resolved: Everything is good to go\n\nInvestigating: Report an incident This is normally what you would use as the starting point\n\nThis is normally what you would use as the starting point\n\nIdentified: Problem has been determined and a fix is being made\n\nMonitoring: Fix is implemented and we are monitoring the situation\n\nResolved: Everything is good to go\n\nSet a meaningful Message for the incident You should include a link to your incident issue here\n\nYou should include a link to your incident issue here\n\nSet the level of impact on Affected components (the value needed depends on the impact of the incident) No impact: The incident does not impact this component Degraded performance: The component is working but at lower than standard performance levels Partial outage: Significant parts of the component are not working Full outage: The component is hard down\n\nNo impact: The incident does not impact this component\n\nDegraded performance: The component is working but at lower than standard performance levels",
+    "chunk_index": 8,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e4451fd81a0a_9",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/incident-io",
+    "title": "Incident.io",
+    "source": "handbook",
+    "headings": [
+      "Incident.io",
+      "Understanding Incident.io",
+      "What is Incident.io",
+      "How we manage items in Incident.io",
+      "Accessing the Customer Support Operations status page"
+    ],
+    "text": "ponent is working but at lower than standard performance levels Partial outage: Significant parts of the component are not working Full outage: The component is hard down\n\nNo impact: The incident does not impact this component\n\nDegraded performance: The component is working but at lower than standard performance levels\n\nPartial outage: Significant parts of the component are not working\n\nFull outage: The component is hard down\n\nClick Review incident\n\nReview all information for accuracy\n\nClick Publish incident\n\nTo update an incident:\n\nLogin to Incident.io (via Okta)\n\nNavigate to Status pages\n\nClick on the status page the incident is on\n\nClick on the incident in question\n\nClick the top-right status bar (says what the current status is)\n\nSelect the new Status Identified: Problem has been determined and a fix is being made Monitoring: Fix is implemented and we are monitoring the situation Resolved: Everything is good to go\n\nIdentified: Problem has been determined and a fix is being made\n\nMonitoring: Fix is implemented and we are monitoring the situation\n\nResolved: Everything is good to go\n\nEnter a meaningful message\n\nReview all information for accuracy\n\nCreating a maintenance event\n\nTo create a maintenance event:\n\nLogin to Incident.io (via Okta)\n\nNavigate to Status pages\n\nClick on the status page you want to make an incident on\n\nClick Schedule maintenance at the top-right of the page\n\nFill out a meaningful Name\n\nEnsure Automatically update status is checked\n\nSet the Impact window (keep in mind it is using local time)\n\nSet a meaningful Message",
+    "chunk_index": 9,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "e4451fd81a0a_10",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/incident-io",
+    "title": "Incident.io",
+    "source": "handbook",
+    "headings": [
+      "Incident.io",
+      "Understanding Incident.io",
+      "What is Incident.io",
+      "How we manage items in Incident.io",
+      "Accessing the Customer Support Operations status page"
+    ],
+    "text": "ent.io (via Okta)\n\nNavigate to Status pages\n\nClick on the status page you want to make an incident on\n\nClick Schedule maintenance at the top-right of the page\n\nFill out a meaningful Name\n\nEnsure Automatically update status is checked\n\nSet the Impact window (keep in mind it is using local time)\n\nSet a meaningful Message\n\nSet the level of impact on Affected components No impact: The maintenance does not impact this component Under maintenance: The maintenance does impact this component\n\nNo impact: The maintenance does not impact this component\n\nUnder maintenance: The maintenance does impact this component\n\nReview all information for accuracy\n\nClick Publish maintenance\n\nUpdating a maintenance event\n\nTo update a maintenance event:\n\nLogin to Incident.io (via Okta)\n\nNavigate to Status pages\n\nClick on the status page you want to make an incident on\n\nClick the maintenance in question\n\nClick the top-right status bar (says what the current status is)\n\nSelect the new Status\n\nEnter a meaningful message\n\nReview all information for accuracy",
+    "chunk_index": 10,
+    "total_chunks": 11
+  }
+]

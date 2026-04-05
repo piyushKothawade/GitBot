@@ -1,0 +1,146 @@
+[
+  {
+    "chunk_id": "0d54dfbe34b1_0",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates",
+    "title": "Product Release Updates",
+    "source": "handbook",
+    "headings": [
+      "Product Release Updates",
+      "Current updates",
+      "Internal: Contribute 2021",
+      "14.1–14.4 Sales enablement",
+      "Commit Virtual 2021: Product sessions"
+    ],
+    "text": "Product Release Updates\n\nInternal: Contribute 2021\n\nFor GitLab team members only, Product leadership presented a Product Keynote 2021-11-16 at Contribute 2021, with a recording of the video available in EdCast .\n\nthe deck presented, also internal:\n\n14.1–14.4 Sales enablement\n\nSee also: upcoming sessions in the Sales Enablement handbook. The Q3 FY22 Product Update was 2021-11-04, and embedded below are internal versions of the video and deck presented . Here are links to the external versions of: the video recording and the deck presented .\n\nCovering these releases:\n\n2021-10-22 GitLab 14.4 released with Scheduled DAST scans and Integrated error tracking\n\n2021-09-22 GitLab 14.3 releases Project Security Policies & Next Gen SAST\n\n2021-08-22 GitLab 14.2 released with the Build Cloud for macOS beta and Markdown preview\n\n2021-07-22 GitLab 14.1 released with Helm Chart Registry and Escalation Policies\n\nCommit Virtual 2021: Product sessions\n\nProduct Keynote: Innovating Together on the Next Generation of DevOps , (deck, GitLab-internal) , 2021-08-04\n\nThe Next Iteration of DevOps, GitLab CEO Keynote with Sid Sijbrandij, 2021-08-03\n\nWhat the ML is up with DevOps and AI? A ModelOps Overview , 2021-08-04\n\nFor a list of all release posts including patch releases, see this blog category, ‘releases’ .\n\nFind future releases, with their most important features flagged, on Product’s upcoming releases page . You can also see upcoming features for paid product tiers, listed by tier .\n\nInformation about the release currently running on GitLab SaaS is at the GitLab SaaS release page .",
+    "chunk_index": 0,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "0d54dfbe34b1_1",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates",
+    "title": "Product Release Updates",
+    "source": "handbook",
+    "headings": [
+      "Product Release Updates",
+      "Current updates",
+      "Internal: Contribute 2021",
+      "14.1–14.4 Sales enablement",
+      "Commit Virtual 2021: Product sessions"
+    ],
+    "text": ", see this blog category, ‘releases’ .\n\nFind future releases, with their most important features flagged, on Product’s upcoming releases page . You can also see upcoming features for paid product tiers, listed by tier .\n\nInformation about the release currently running on GitLab SaaS is at the GitLab SaaS release page .\n\n13.8–14.0, GitLab 14 Sales enablement\n\nThe Q2 FY22 Product Update was 2021-07-08:\n\nWe focused on GitLab 14 but covered all versions since SKO, with this presentation :\n\nCovering these releases:\n\n2021-06-22 GitLab 14.0 released with a celebration of GitLab 14\n\n2021-05-22 GitLab 13.12 released with On-Demand DAST and Deployment Frequency Chart\n\n2021-04-22 GitLab 13.11 released with Kubernetes Agent and Pipeline Compliance\n\n2021-03-22 GitLab 13.10 released with Admin Enhancements and Vulnerability Management\n\n2021-02-22 GitLab 13.9 released with a Security Alert Dashboard and Maintenance Mode\n\n2021-01-22 GitLab 13.8 released with a Pipeline Editor and DORA metrics\n\n13.4–13.7 SKO Product Keynote\n\nThe SKO Product Keynote video and the deck presented in 2021-02 are GitLab-internal only.\n\nThere was a focus on these releases, along with more from fiscal 21 and a look ahead:\n\n2020-12-22 GitLab 13.7 released with merge request reviewers and automatic rollback upon failure\n\n2020-11-22 GitLab 13.6 released with Auto Deploy to EC2 and Usage Trends Dashboard\n\n2020-10-22 GitLab 13.5 released with Mobile App Sec, Group Wikis, and more!\n\n2020-09-22 GitLab 13.4 released with Vault for CI variables and Kubernetes Agent\n\n13.0–13.3 Sales enablement",
+    "chunk_index": 1,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "0d54dfbe34b1_2",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates",
+    "title": "Product Release Updates",
+    "source": "handbook",
+    "headings": [
+      "Product Release Updates",
+      "Current updates",
+      "Internal: Contribute 2021",
+      "14.1–14.4 Sales enablement",
+      "Commit Virtual 2021: Product sessions"
+    ],
+    "text": "est reviewers and automatic rollback upon failure\n\n2020-11-22 GitLab 13.6 released with Auto Deploy to EC2 and Usage Trends Dashboard\n\n2020-10-22 GitLab 13.5 released with Mobile App Sec, Group Wikis, and more!\n\n2020-09-22 GitLab 13.4 released with Vault for CI variables and Kubernetes Agent\n\n13.0–13.3 Sales enablement\n\nThe Q3 FY21 Product Release Update was 2020-08-20:\n\nThe content was updated with more information on use of the GitLab Value Framework, including in this presentation :\n\nCovering these releases:\n\n2020-08-22 GitLab 13.3 released with coverage-guided fuzz testing and a build matrix for CI/CD\n\n2020-07-22 GitLab 13.2 released with Planning Iterations and Load Performance Testing\n\n2020-06-22 GitLab 13.1 released with Alert Management and Code Quality Enhancements\n\n2020-05-22 GitLab 13.0 released with Gitaly Clusters, Epic Hierarchy on Roadmaps, and Auto Deploy to ECS\n\n12.9–13.0 Sales enablement\n\nThe Q2 FY21 Product Release Update was 2020-06-04:\n\nWith this presentation:\n\nCovering these releases:\n\n2020-05-22 GitLab 13.0 released with Gitaly Clusters, Epic Hierarchy on Roadmaps, and Auto Deploy to ECS\n\n2020-04-22 GitLab 12.10 released with Requirements Management and Autoscaling CI on AWS Fargate\n\n2020-03-22 GitLab 12.9 released with Vault App, Code Quality Reports and Group Deploy Tokens\n\nGitLab 13.0 was launched on 2020-05-22 with this release blog post . The major release launch featured this video of Scott Williamson, then CPO, sharing 13.0 highlights and insight into key drivers of our product strategy:\n\nVersion 12 Year in Review",
+    "chunk_index": 2,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "0d54dfbe34b1_3",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates",
+    "title": "Product Release Updates",
+    "source": "handbook",
+    "headings": [
+      "Product Release Updates",
+      "Current updates",
+      "Internal: Contribute 2021",
+      "14.1–14.4 Sales enablement",
+      "Commit Virtual 2021: Product sessions"
+    ],
+    "text": "released with Vault App, Code Quality Reports and Group Deploy Tokens\n\nGitLab 13.0 was launched on 2020-05-22 with this release blog post . The major release launch featured this video of Scott Williamson, then CPO, sharing 13.0 highlights and insight into key drivers of our product strategy:\n\nVersion 12 Year in Review\n\nLeading into the GitLab 13.0 launch, this blog post, including a video and slide deck reviewed versions 12.0–12.10.\n\nMajor product themes are more apparent over this year of GitLab versions than they generally are in one month or quarter. For GitLab 12.x, these include “treating developers, security, and operations alike as first-class citizens in DevOps” and expanding the definition of DevOps and its practitioners, for example by building in Design Management and Requirements Management.\n\n12.3–12.8 Sales enablement\n\nThis product release update covered 12.3–12.8 for FY21 Q1 and FY20 Q4, and was delivered 2020-02-27:\n\nWith this presentation:\n\nAnd in these meeting notes , covering these six releases:\n\n2020-02-22 GitLab 12.8 released with Log Explorer, NuGet, and Compliance\n\n2020-01-22 GitLab 12.7 released with Parent-Child Pipelines and Windows Shared Runners Beta\n\n2019-12-22 GitLab 12.6 released with Security Scorecard and Release Evidence\n\n2019-11-22 GitLab 12.5 released with EKS Cluster Creation & Environments Dashboard\n\n2019-10-22 GitLab 12.4 released with improved Merge Request Dependencies and Audit API\n\n2019-09-22 GitLab 12.3 released with Web Application Firewall and Productivity Analytics\n\n12.0–12.2 Sales enablement",
+    "chunk_index": 3,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "0d54dfbe34b1_4",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates",
+    "title": "Product Release Updates",
+    "source": "handbook",
+    "headings": [
+      "Product Release Updates",
+      "Current updates",
+      "Internal: Contribute 2021",
+      "14.1–14.4 Sales enablement",
+      "Commit Virtual 2021: Product sessions"
+    ],
+    "text": "Scorecard and Release Evidence\n\n2019-11-22 GitLab 12.5 released with EKS Cluster Creation & Environments Dashboard\n\n2019-10-22 GitLab 12.4 released with improved Merge Request Dependencies and Audit API\n\n2019-09-22 GitLab 12.3 released with Web Application Firewall and Productivity Analytics\n\n12.0–12.2 Sales enablement\n\nOur first-ever quarterly, sales-focused product release update covered 12.0–12.2 for FY20 Q3 in 2019-08. This recording on GitLab Unfiltered shares highlights and analysis from the shared notes document .\n\nIn addition to product highlights, the session called out new business value and selling opportunities in Ultimate or Premium, along with what to expect in GitLab 12.3–12.5.\n\n2019-08-22 GitLab 12.2 released with Directed Acyclic Graphs for Pipelines and Design Management\n\n2019-07-22 GitLab 12.1 released with Parallel Merge Trains and Merge Requests for Confidential Issues\n\n2019-06-22 GitLab 12.0 released with Visual Reviews and Dependency List\n\nThe GitLab 12.0 launch included a livestreamed program: 11.0 to 12.0: How we got to DevSecOps in a single application , and in that, an Ask Me Anything featuring GitLab CEO Sid Sijbrandij.\n\nGitLab 12.0 marks a key step in our journey to create an inclusive approach to DevSecOps, empowering ’everyone to contribute’. We believe everyone can contribute, and we’ve enabled cross-team collaboration, faster delivery of great code, and bringing together Dev, Ops, and Security.\n\nGitLab 12.0 marks a key step in our journey to create an inclusive approach to DevSecOps, empowering ’everyone to contribute’.",
+    "chunk_index": 4,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "0d54dfbe34b1_5",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates",
+    "title": "Product Release Updates",
+    "source": "handbook",
+    "headings": [
+      "Product Release Updates",
+      "Current updates",
+      "Internal: Contribute 2021",
+      "14.1–14.4 Sales enablement",
+      "Commit Virtual 2021: Product sessions"
+    ],
+    "text": "mpowering ’everyone to contribute’. We believe everyone can contribute, and we’ve enabled cross-team collaboration, faster delivery of great code, and bringing together Dev, Ops, and Security.\n\nGitLab 12.0 marks a key step in our journey to create an inclusive approach to DevSecOps, empowering ’everyone to contribute’.\n\nWe believe everyone can contribute, and we’ve enabled cross-team collaboration, faster delivery of great code, and bringing together Dev, Ops, and Security.\n\nRead more in the 12.0 release blog post: GitLab 12.0 released with Visual Reviews and Dependency List .\n\nVersion 11 Year in Review\n\nGitLab’s Version 11 year in review provided an overview of what we released, 11.0 to 12.0 as we moved into DevSecOps:\n\nThe theme of our 11.0 launch was Auto DevOps (as it had been for 10.0):\n\nBeyond making it easy to host and collaborate on public and private repositories, GitLab also simplifies the rest of the process by offering the whole delivery toolchain, built in. And now, it’s not only built in, it’s automated. Simply commit your code and Auto DevOps can do the rest. Auto DevOps is a pre-built, fully featured CI/CD pipeline that automates the entire delivery process.\n\nBeyond making it easy to host and collaborate on public and private repositories, GitLab also simplifies the rest of the process by offering the whole delivery toolchain, built in. And now, it’s not only built in, it’s automated. Simply commit your code and Auto DevOps can do the rest. Auto DevOps is a pre-built, fully featured CI/CD pipeline that automates the entire delivery process.",
+    "chunk_index": 5,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "0d54dfbe34b1_6",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates",
+    "title": "Product Release Updates",
+    "source": "handbook",
+    "headings": [
+      "Product Release Updates",
+      "Current updates",
+      "Internal: Contribute 2021",
+      "14.1–14.4 Sales enablement",
+      "Commit Virtual 2021: Product sessions"
+    ],
+    "text": "repositories, GitLab also simplifies the rest of the process by offering the whole delivery toolchain, built in. And now, it’s not only built in, it’s automated. Simply commit your code and Auto DevOps can do the rest. Auto DevOps is a pre-built, fully featured CI/CD pipeline that automates the entire delivery process.\n\nRead more in the 11.0 release blog post: GitLab 11.0 released with Auto DevOps and License Management .\n\nThe theme of our 10.0 launch was Auto DevOps :\n\nFrom the formulation of an idea to executing and monitoring it in production, DevOps establishes a culture and environment where developing, testing, and releasing software can happen quickly, frequently, and more reliably. GitLab 10.0 delivers a hands-free DevOps environment with the introduction of Auto DevOps, allowing your team to easily configure and adopt modern development practices in your workflow.\n\nFrom the formulation of an idea to executing and monitoring it in production, DevOps establishes a culture and environment where developing, testing, and releasing software can happen quickly, frequently, and more reliably.\n\nGitLab 10.0 delivers a hands-free DevOps environment with the introduction of Auto DevOps, allowing your team to easily configure and adopt modern development practices in your workflow.\n\nRead more in the 10.0 release blog post: GitLab 10.0 released with Auto DevOps and Group Issue Boards .",
+    "chunk_index": 6,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "0d54dfbe34b1_7",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates",
+    "title": "Product Release Updates",
+    "source": "handbook",
+    "headings": [
+      "Product Release Updates",
+      "Current updates",
+      "Internal: Contribute 2021",
+      "14.1–14.4 Sales enablement",
+      "Commit Virtual 2021: Product sessions"
+    ],
+    "text": "quently, and more reliably.\n\nGitLab 10.0 delivers a hands-free DevOps environment with the introduction of Auto DevOps, allowing your team to easily configure and adopt modern development practices in your workflow.\n\nRead more in the 10.0 release blog post: GitLab 10.0 released with Auto DevOps and Group Issue Boards .\n\nProduct Marketing delivers quarterly product release update Sales enablement sessions. These are aligned with the product year, beginning with annual, major releases like 14.0 on 2021-06-22, which dovetailed with the GitLab 14 product launch. Major releases and launches may include looks back and forward, such as a “year in review” blog post.\n\nMonthly release blog posts continue to announce monthly releases with Product Marketing support, though the introductions to release posts are now brief. Customer value-add is now described in the content blocks for headline and key features, in the body of each release post.\n\nVersion 14 enablements will include a GitLab 14 internal session for the Field, public Commit Virtual 2021 keynotes and talks that are product-related, a 14.1–14.4 quarterly session, and the FY23 SKO product keynote. We may also have an FY23Q2 session leading into the launch of GitLab 15.\n\nGitLab’s annual, major release may move a month forward or back as needed. We moved Version 13 forward one month, leaving Version 12’s last release as 12.10 rather than 12.11, to track our product year quarters with those of our fiscal year. We later added version 13.12 to the product year, shipped on 2021-05-22 and moving 14.0 back to 2021-06-22.",
+    "chunk_index": 7,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "0d54dfbe34b1_8",
+    "url": "https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates",
+    "title": "Product Release Updates",
+    "source": "handbook",
+    "headings": [
+      "Product Release Updates",
+      "Current updates",
+      "Internal: Contribute 2021",
+      "14.1–14.4 Sales enablement",
+      "Commit Virtual 2021: Product sessions"
+    ],
+    "text": "e may move a month forward or back as needed. We moved Version 13 forward one month, leaving Version 12’s last release as 12.10 rather than 12.11, to track our product year quarters with those of our fiscal year. We later added version 13.12 to the product year, shipped on 2021-05-22 and moving 14.0 back to 2021-06-22.\n\nProduct Marketing delivers quarterly and annual, sales-centric updates of:\n\nHow recent product releases enhance GitLab’s value proposition for solving customers’ business problems\n\nHow these releases enhance the value of Premium and Ultimate\n\nWhat is coming in the next quarter\n\nThis page merges release resources from Product and Marketing with related Sales Enablement pages, videos, and presentations. A “ handbook-first ” approach makes resources more findable and usable by Sales or anyone interested, and provides a stronger foundation for learning.",
+    "chunk_index": 8,
+    "total_chunks": 9
+  }
+]

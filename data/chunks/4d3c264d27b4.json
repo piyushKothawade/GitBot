@@ -1,0 +1,338 @@
+[
+  {
+    "chunk_id": "4d3c264d27b4_0",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "Day In The Life of a Developer\n\nEvery company is developing software. Whether it is external facing applications, or internal applications, or both.  Every company wants to be more efficient at developing software, as it has a direct correlation with the company’s success.  GitLab is positioned to help every company create better applications by providing capabilities throughout the application delivery process including development, operations and security.  In the past, there was not one solution to help companies develop software from idea to deployment.  Companies relied on purchasing specific products for specific capabilities, and/or used manual methods such as email, spreadsheets, and documents to keep track of their development.\n\nThe purpose of the Day In The Life of a Developer is to understand the company’s current development process, look for opportunities for improvement, and relay those findings back to our stakeholders.  These improvement opportunities can then be communicated back in the form of an executive brief where prescriptive guidance can be shared, providing an explanation of where, how, and at what level of effort may be required as we partner with the customer to make those improvements.\n\nA Day In The Life of a Developer is a demonstration by the company that allows for deeper discovery around how the process currently works and where areas can be improved.  The demonstration usually can be done within a 90 minute meeting, with appropriate attendees, and active discussion regarding the process.",
+    "chunk_index": 0,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_1",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "ements.\n\nA Day In The Life of a Developer is a demonstration by the company that allows for deeper discovery around how the process currently works and where areas can be improved.  The demonstration usually can be done within a 90 minute meeting, with appropriate attendees, and active discussion regarding the process.\n\nQualify the Opportunity for a Day In The Life of a Developer\n\nEducate potential participants and obtain commitment to the workshop\n\nPrepare for the Day In The Life of a Developer\n\nInitial customer pitch\n\nPlan the Day In The Life of a Developer\n\nDay In The Life of a Developer Demonstration\n\nExecutive Briefing - Summarize the findings\n\nContribute back to this framework\n\nDay In The Life of a Developer requires commitment by both the GitLab field teams and our prospects and customers. To ensure the appropriate return on this investment of time, the opportunities should meet the following criteria:\n\nThe account has a total addressable market of at least 100 GitLab users\n\nThe prospect or customer is focused on improving their software delivery performance\n\nWe have a relationship with the economic buyer\n\nWe have identified and established a relationship with the champion\n\nWe suggest pitching a Day In The Life of a Developer prior to a Proof of Value (PoV) to understand bottlenecks and development opportunities important to the company’s stakeholders. This also gives us an opportunity to agree upon success criteria for value drivers if a PoV is required for deal closure.",
+    "chunk_index": 1,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_2",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "th the champion\n\nWe suggest pitching a Day In The Life of a Developer prior to a Proof of Value (PoV) to understand bottlenecks and development opportunities important to the company’s stakeholders. This also gives us an opportunity to agree upon success criteria for value drivers if a PoV is required for deal closure.\n\nIn case a Day In The Life of a Developer is conducted by a customer success manager (CSM), the following criteria should be met:\n\nWe have identified and established a relationship with the champion\n\nThe account has a total addressable market of at least 100 GitLab users\n\nThe customer has expressed a strong desire to improving their software delivery performance\n\nKey indicators that the opportunity is well-suited include:\n\nThere is a specific initiative to accomplish one or more of the following by a specific date Modernize a specific application or applications Deliver a new critical application to the market Transform or objectively improve their ability to deliver software Modernize their DevOps capabilities\n\nModernize a specific application or applications\n\nDeliver a new critical application to the market\n\nTransform or objectively improve their ability to deliver software\n\nModernize their DevOps capabilities\n\nThe customer is currently using some features of GitLab and is interested in how leveraging more of the platform will drive software delivery outcomes",
+    "chunk_index": 2,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_3",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "applications\n\nDeliver a new critical application to the market\n\nTransform or objectively improve their ability to deliver software\n\nModernize their DevOps capabilities\n\nThe customer is currently using some features of GitLab and is interested in how leveraging more of the platform will drive software delivery outcomes\n\nFor customer success, a Day In The Life of a Developer should help uncover opportunities to expand into new use cases or improve current adoption by identifying bottlenecks in the current software delivery process\n\nAn existing customer shows interest in adopting our Day In The Life of a Developer approach to drive software delivery performance\n\nThe scope of a Day In The Life of a Developer should always be clearly defined. A clearly defined scope ensures that the correct people are being included in the team and reduces the risk of time lost agreeing what should be focused on. For this reason, the scope of a GitLab facilitated assessment must always be within the DevSecOps space.\n\nEducation and Commitment\n\nA successful Day In The Life of a Developer requires a commitment by the software delivery stakeholders and the personnel experienced with the various processes that constitute their development process. Without understanding the assessment process and its value to their organization, key participants will lack the commitment to ensure a successful Day In The Life of a Developer. Educate the prospect or customer on the benefits, process details, and the required commitment.",
+    "chunk_index": 3,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_4",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "es that constitute their development process. Without understanding the assessment process and its value to their organization, key participants will lack the commitment to ensure a successful Day In The Life of a Developer. Educate the prospect or customer on the benefits, process details, and the required commitment.\n\nWhile a Day In The Life of a Developer is an advanced discovery workshop, it’s expected that initial opportunity discovery and technical discovery have been conducted.\n\nDiscovery and documentation of the Day In The Life of a Developer or “path to production” currently in place Establish an agreed upon baseline from which to measure the progress of software delivery performance Identify manual configuration touchpoints and handoffs and other bottlenecks Create a process improvement roadmap Understand the return on investment of a value delivery platform Promote collaboration amongst traditionally siloed functions within the DevSecOps lifecycle\n\nEstablish an agreed upon baseline from which to measure the progress of software delivery performance\n\nIdentify manual configuration touchpoints and handoffs and other bottlenecks\n\nCreate a process improvement roadmap\n\nUnderstand the return on investment of a value delivery platform\n\nPromote collaboration amongst traditionally siloed functions within the DevSecOps lifecycle",
+    "chunk_index": 4,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_5",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "the progress of software delivery performance\n\nIdentify manual configuration touchpoints and handoffs and other bottlenecks\n\nCreate a process improvement roadmap\n\nUnderstand the return on investment of a value delivery platform\n\nPromote collaboration amongst traditionally siloed functions within the DevSecOps lifecycle\n\nAfter the prospect or customer understands the process and its benefits, confirm commitment from the stakeholders and workshop participants by scheduling the facilitated workshop and/or interviews. Estimate the duration of the assessment and set the expectation that the documented software development process, recommendations, and readout will be delivered.\n\nWhat is The Required Time Commitment?\n\nFocusing on the goals and benefits listed above, the time required to complete a minimally viable Day In The Life of a Developer will vary from organization to organization. The workshop should NOT require exhaustive discussion and research. Depending on the availability and commitment of the various participants and stakeholders, the practice will take 90 minutes to two hours for a demonstration and discovery to take place.\n\nPrior to the pitch, the account team should:\n\nIdentify executive sponsor, stakeholders and participants\n\nIdentify business objectives",
+    "chunk_index": 5,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_6",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "epending on the availability and commitment of the various participants and stakeholders, the practice will take 90 minutes to two hours for a demonstration and discovery to take place.\n\nPrior to the pitch, the account team should:\n\nIdentify executive sponsor, stakeholders and participants\n\nIdentify business objectives\n\nIdentify an application/project for the Day In The Life demo. This is an important step as it focuses the discovery on a single flow where there is a clear beginning and end that has the potential to be measured for delays. The project should reflect a critical or typical development process, spanning idea to deployment, that the business is looking to improve.\n\nUsually, through discovery, there is some level of knowledge of customer goals and the current development process from a development perspective.  The goal of the Day In The Life is to understand the entire development process from idea to deployment to production, and to look for areas of improvement throughout.\n\nPrepare for the Day In The Life of a Developer, by organizing the information we already have about the customer and identifying areas we want to learn more about. This should include GitLab’s goals for the meeting, which should align with the Customer Success Plan.\n\nPrepare questions in advance for the list of things we want to learn. Questions can be drawn from the GitLab Value Framework .\n\nChoose an internal communications medium (ex. Google Doc or Slack) for real-time communication during the workshop. This will help the team with coordinating questions.",
+    "chunk_index": 6,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_7",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "Customer Success Plan.\n\nPrepare questions in advance for the list of things we want to learn. Questions can be drawn from the GitLab Value Framework .\n\nChoose an internal communications medium (ex. Google Doc or Slack) for real-time communication during the workshop. This will help the team with coordinating questions.\n\nThe initial customer pitch, delivered by the SA, allows us to identify key stakeholders & get their buy in. The customer pitch should include:\n\nWhat is a Day In The Life of a Developer?\n\nWhat does a Day In The Life of a Developer entail?\n\nWho are the key participants involved in the Day In The Life of a Developer?\n\nWhat are some of the expected outcomes of a Day In The Life of a Developer for them?\n\nHere are some resources that can be used as starting point for the pitch:\nCustomer pitch deck Internal pitch deck\n\nPlanning meeting with customer\n\nPlanning a Day In The Life of a Developer can be done within an hour or less, given the right expectation, focus and people involved.  Below are aspects to be considered when planning the Day In The Life of a Developer.\n\nDefine a Day In The Life Of A Developer\n\nWho are the members of the team involved in developing an application?\n\nWhat application will be demonstrated to highlight development from idea to deployment?\n\nWhat context or conditions are being considered?\n\nWhat triggering event initiates the work flowing through the development process?\n\nDay In The Life of a Developer Demonstration",
+    "chunk_index": 7,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_8",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "s of the team involved in developing an application?\n\nWhat application will be demonstrated to highlight development from idea to deployment?\n\nWhat context or conditions are being considered?\n\nWhat triggering event initiates the work flowing through the development process?\n\nDay In The Life of a Developer Demonstration\n\nIn order to help facilitate a Day In The Life of a Developer, a number of GitLab team members will be required to take part. The roles of these members generally fall into the following:\n\nFacilitator - A team member fully versed in the software development process who is responsible for leading the session; ensuring that discussion is staying on-topic, at the right level and at the required pace.\n\nAccount Leader - The account leader’s responsibility is to ensure that the long term strategic vision for the customer/prospect is considered when discussing desired future state and they can also provide additional context to the current state.\n\nScribe - A team member who’s primary purpose is to document the session, capture key metrics as they emerge which will later be used to create a current state schematic diagram.\n\nThe process which we will go through, at a high level, is as follows:\n\nWhy we are here? (champion led)\n\nRe-iterate expectations set in the planning meeting Start and end points for the Day In The Life of a Developer\n\nStart and end points for the Day In The Life of a Developer",
+    "chunk_index": 8,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_9",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "create a current state schematic diagram.\n\nThe process which we will go through, at a high level, is as follows:\n\nWhy we are here? (champion led)\n\nRe-iterate expectations set in the planning meeting Start and end points for the Day In The Life of a Developer\n\nStart and end points for the Day In The Life of a Developer\n\nCurrent state Initial process “walk-through” for the prospect or customer to demonstrate - A best practice is to share a current state diagram based on our (possibly limited) understanding of the customer’s environment to facilitate the Day in the Life discussion Capture people, processes and technology Analyze and identify bottlenecks and improvement areas. Time is limited - Use the list of discovery questions selected during prep and focus/“double click” on the areas where GitLab can help - avoid delving deep into areas that GitLab cannot affect\n\nInitial process “walk-through” for the prospect or customer to demonstrate - A best practice is to share a current state diagram based on our (possibly limited) understanding of the customer’s environment to facilitate the Day in the Life discussion Capture people, processes and technology\n\nCapture people, processes and technology\n\nAnalyze and identify bottlenecks and improvement areas. Time is limited - Use the list of discovery questions selected during prep and focus/“double click” on the areas where GitLab can help - avoid delving deep into areas that GitLab cannot affect",
+    "chunk_index": 9,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_10",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "le, processes and technology\n\nCapture people, processes and technology\n\nAnalyze and identify bottlenecks and improvement areas. Time is limited - Use the list of discovery questions selected during prep and focus/“double click” on the areas where GitLab can help - avoid delving deep into areas that GitLab cannot affect\n\nTime is limited - Use the list of discovery questions selected during prep and focus/“double click” on the areas where GitLab can help - avoid delving deep into areas that GitLab cannot affect\n\nDesign future state Review the expectations, to align the team on the target they are aiming to create Determine “right work” (which processes and steps are required for the future state to be optimal) Remove processes and process steps when they are truely unnecessary Add processes and process steps when they can optimize overall process time and lead time Creating an optimized work flow Aim to reduce the lead time (LT), process time (PT) and achieve a higher percent complete and accurate (%C&A) for every process block where prossible Utilize and leverage GitLab capabilities to improve the development process where applicable Use Lean countermeasures and improvement tools Ask the customer to prioritize what we’ve learned and ask if there’s anything we’ve missed\n\nReview the expectations, to align the team on the target they are aiming to create",
+    "chunk_index": 10,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_11",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "sible Utilize and leverage GitLab capabilities to improve the development process where applicable Use Lean countermeasures and improvement tools Ask the customer to prioritize what we’ve learned and ask if there’s anything we’ve missed\n\nReview the expectations, to align the team on the target they are aiming to create\n\nDetermine “right work” (which processes and steps are required for the future state to be optimal) Remove processes and process steps when they are truely unnecessary Add processes and process steps when they can optimize overall process time and lead time\n\nRemove processes and process steps when they are truely unnecessary\n\nAdd processes and process steps when they can optimize overall process time and lead time\n\nCreating an optimized work flow Aim to reduce the lead time (LT), process time (PT) and achieve a higher percent complete and accurate (%C&A) for every process block where prossible Utilize and leverage GitLab capabilities to improve the development process where applicable Use Lean countermeasures and improvement tools\n\nAim to reduce the lead time (LT), process time (PT) and achieve a higher percent complete and accurate (%C&A) for every process block where prossible\n\nUtilize and leverage GitLab capabilities to improve the development process where applicable\n\nUse Lean countermeasures and improvement tools\n\nAsk the customer to prioritize what we’ve learned and ask if there’s anything we’ve missed",
+    "chunk_index": 11,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_12",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "a higher percent complete and accurate (%C&A) for every process block where prossible\n\nUtilize and leverage GitLab capabilities to improve the development process where applicable\n\nUse Lean countermeasures and improvement tools\n\nAsk the customer to prioritize what we’ve learned and ask if there’s anything we’ve missed\n\nDevelop transformation plan (likely completed async) At the end of the Day In The Life session, be ready to provide a date for the review of the draft output but avoid committing to a date for the final readout. Honoring timelines is important to maintain momentum in the opportunity and for the credibility of our champion. In some cases, feedback received from the customer has led to a complete rethink of the readout which can take longer than originally planned. Create a day In The Life Readout to present to the customer.  The readout will include a review of their current development process and suggestions for how their process can be improved. For each process block transformation, capture the measurable target, proposed countermeasures, execution method, owner and timeline (later, status as well)\n\nAt the end of the Day In The Life session, be ready to provide a date for the review of the draft output but avoid committing to a date for the final readout. Honoring timelines is important to maintain momentum in the opportunity and for the credibility of our champion. In some cases, feedback received from the customer has led to a complete rethink of the readout which can take longer than originally planned.",
+    "chunk_index": 12,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_13",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "aft output but avoid committing to a date for the final readout. Honoring timelines is important to maintain momentum in the opportunity and for the credibility of our champion. In some cases, feedback received from the customer has led to a complete rethink of the readout which can take longer than originally planned.\n\nCreate a day In The Life Readout to present to the customer.  The readout will include a review of their current development process and suggestions for how their process can be improved.\n\nFor each process block transformation, capture the measurable target, proposed countermeasures, execution method, owner and timeline (later, status as well)",
+    "chunk_index": 13,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_14",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "Readout to present to the customer.  The readout will include a review of their current development process and suggestions for how their process can be improved.\n\nFor each process block transformation, capture the measurable target, proposed countermeasures, execution method, owner and timeline (later, status as well)\n\nRemote: Zoom, MS Teams, or Google Meet Diagramming tools FigJam or LucidChart for Current State and Future State visualization FigJam is not yet connected to Okta. Login using your Google account. Make sure you have a Full FigJam license with read-write access. (if you’re in read-only mode, you need to request a full license) LucidChart is an IT-managed application. If you are unsure if you have LucidChart access, go to the Okta interface in your browser, then select “Search Your Apps” and see if LucidChart SSO is available. If yes, LucidChart has been assigned to you and you can launch it from Okta and collaborate on any LucidChart Documents your team has shared with you. If no, then LucidChart SSO has not been assigned to you yet. If you do not have LucidChart SSO assigned to you in Okta, please navigate to the “access-requests” Project and submit an Issue requesting “Lucid Chart”. Assign the Issue to your Manager and add the IT::to do label. See example Access Request Issue. If your Access Request is urgent, paste the link to your Access Request Issue into the #it_help Slack channel and @ mention it-help with a note on why it is urgent.\n\nZoom, MS Teams, or Google Meet",
+    "chunk_index": 14,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_15",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "e requesting “Lucid Chart”. Assign the Issue to your Manager and add the IT::to do label. See example Access Request Issue. If your Access Request is urgent, paste the link to your Access Request Issue into the #it_help Slack channel and @ mention it-help with a note on why it is urgent.\n\nZoom, MS Teams, or Google Meet\n\nFigJam or LucidChart for Current State and Future State visualization FigJam is not yet connected to Okta. Login using your Google account. Make sure you have a Full FigJam license with read-write access. (if you’re in read-only mode, you need to request a full license) LucidChart is an IT-managed application. If you are unsure if you have LucidChart access, go to the Okta interface in your browser, then select “Search Your Apps” and see if LucidChart SSO is available. If yes, LucidChart has been assigned to you and you can launch it from Okta and collaborate on any LucidChart Documents your team has shared with you. If no, then LucidChart SSO has not been assigned to you yet. If you do not have LucidChart SSO assigned to you in Okta, please navigate to the “access-requests” Project and submit an Issue requesting “Lucid Chart”. Assign the Issue to your Manager and add the IT::to do label. See example Access Request Issue. If your Access Request is urgent, paste the link to your Access Request Issue into the #it_help Slack channel and @ mention it-help with a note on why it is urgent.",
+    "chunk_index": 15,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_16",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "ests” Project and submit an Issue requesting “Lucid Chart”. Assign the Issue to your Manager and add the IT::to do label. See example Access Request Issue. If your Access Request is urgent, paste the link to your Access Request Issue into the #it_help Slack channel and @ mention it-help with a note on why it is urgent.\n\nFigJam is not yet connected to Okta. Login using your Google account. Make sure you have a Full FigJam license with read-write access. (if you’re in read-only mode, you need to request a full license)\n\nLucidChart is an IT-managed application. If you are unsure if you have LucidChart access, go to the Okta interface in your browser, then select “Search Your Apps” and see if LucidChart SSO is available. If yes, LucidChart has been assigned to you and you can launch it from Okta and collaborate on any LucidChart Documents your team has shared with you. If no, then LucidChart SSO has not been assigned to you yet.\n\nIf you do not have LucidChart SSO assigned to you in Okta, please navigate to the “access-requests” Project and submit an Issue requesting “Lucid Chart”. Assign the Issue to your Manager and add the IT::to do label. See example Access Request Issue.\n\nIf your Access Request is urgent, paste the link to your Access Request Issue into the #it_help Slack channel and @ mention it-help with a note on why it is urgent.\n\nOnsite: Stickies Pens Large whiteboard\n\nResponse to Production Incident\n\nToolchain Upgrading and Maintenance\n\nExecutive Briefing - Summarize the Findings",
+    "chunk_index": 16,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_17",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "If your Access Request is urgent, paste the link to your Access Request Issue into the #it_help Slack channel and @ mention it-help with a note on why it is urgent.\n\nOnsite: Stickies Pens Large whiteboard\n\nResponse to Production Incident\n\nToolchain Upgrading and Maintenance\n\nExecutive Briefing - Summarize the Findings\n\nThe final meeting as part of the Day in the Life of a Developer process is the findings and next steps presentation (though it’s called an executive presentation, it’s expected to be a two-way discussion). The high level topics of this meeting are:\n\nSummary of planning outcomes; what process was to be mapped and what target goals were created\n\nSummary of the current state mapping\n\nSummary of the proposed future state mapping\n\nHighlight the key differences, expected process and business benefits\n\nWalkthrough of recommendations\n\nWalkthrough and gain agreement for the transformation plan. The transformation plan should be built in conjunction with professional services to yield best results. Please read how to position professional services in an opportunity here\n\nDefine next steps and suggest a review date\n\nExample template of the executive briefing can be found here . Please modify accordingly to suit your customer’s need.\n\nIt is recommended to review the executive briefing with your champion, key stakeholder before the final meeting to collect additional feedback. The goal is to then deliver it jointly to the broader team to gain agreement.\n\nFAQs from customers/prospects",
+    "chunk_index": 17,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_18",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "und here . Please modify accordingly to suit your customer’s need.\n\nIt is recommended to review the executive briefing with your champion, key stakeholder before the final meeting to collect additional feedback. The goal is to then deliver it jointly to the broader team to gain agreement.\n\nFAQs from customers/prospects\n\nWhat’s in it for me - the customer? Free, hands-on consultative analysis of their software delivery lifecycle, including their current state, future state, and areas of improvements. Competitive analysis of where they are compared to their peers in the industry. This report contains the most recent benchmark values for the four DORA metrics (widely regarded as good measures of DevOps performance) State of DevOps Report 2024 . Recommendations on how to overcome visible or invisible challenges with a strategic plan to help them reach their future state.\n\nWhat’s in it for me - the customer?\n\nFree, hands-on consultative analysis of their software delivery lifecycle, including their current state, future state, and areas of improvements.\n\nCompetitive analysis of where they are compared to their peers in the industry. This report contains the most recent benchmark values for the four DORA metrics (widely regarded as good measures of DevOps performance) State of DevOps Report 2024 .\n\nRecommendations on how to overcome visible or invisible challenges with a strategic plan to help them reach their future state.\n\nWhat are typical outcomes for a customer? TBD\n\nWhat are typical outcomes for a customer?",
+    "chunk_index": 18,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_19",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "r DORA metrics (widely regarded as good measures of DevOps performance) State of DevOps Report 2024 .\n\nRecommendations on how to overcome visible or invisible challenges with a strategic plan to help them reach their future state.\n\nWhat are typical outcomes for a customer? TBD\n\nWhat are typical outcomes for a customer?\n\nWhich teams are typically involved? We start with application development team, quality engineering team, application security, then operations.\n\nWhich teams are typically involved?\n\nWe start with application development team, quality engineering team, application security, then operations.\n\nWhat’s the best place to start? Pick the most business critical application or a representative application that has faster time to market requirement.\n\nWhat’s the best place to start?\n\nPick the most business critical application or a representative application that has faster time to market requirement.\n\nThat’s a lot of time investment from our teams Or Our teams are busy with other projects. It takes approximately 1.5 hrs demonstration to do a focused discovery for a Day In The Life Of A Developer.\n\nThat’s a lot of time investment from our teams Or Our teams are busy with other projects.\n\nIt takes approximately 1.5 hrs demonstration to do a focused discovery for a Day In The Life Of A Developer.\n\nTraining and Enablement\n\nIn the spirit of collaboration and iteration, please help to continuously improve this framework. Ways to contribute include:\n\nCreate a merge request to improve this page",
+    "chunk_index": 19,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "4d3c264d27b4_20",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/day-in-the-life",
+    "title": "Day In The Life of a Developer",
+    "source": "handbook",
+    "headings": [
+      "Day In The Life of a Developer",
+      "Process",
+      "Qualify",
+      "Education and Commitment",
+      "Prepare"
+    ],
+    "text": "her projects.\n\nIt takes approximately 1.5 hrs demonstration to do a focused discovery for a Day In The Life Of A Developer.\n\nTraining and Enablement\n\nIn the spirit of collaboration and iteration, please help to continuously improve this framework. Ways to contribute include:\n\nCreate a merge request to improve this page\n\nShare your experiences in the #customer-success and #solutions-architects slack channels\n\nProvide feedback and/or updates to the pitch deck or provide links to your own variations\n\nProvide links to your facilitation recordings, summary documentation, and/or other artifacts to this page\n\nCollaborate in the #value-stream-discovery slack channel",
+    "chunk_index": 20,
+    "total_chunks": 21
+  }
+]

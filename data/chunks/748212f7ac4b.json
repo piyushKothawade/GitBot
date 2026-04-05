@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "748212f7ac4b_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/ai-prompts",
+    "title": "Production Engineering Networking and Incident Management Team AI prompts",
+    "source": "handbook",
+    "headings": [
+      "Production Engineering Networking and Incident Management Team AI prompts",
+      "Networking and Incident Management Common AI Prompts",
+      "Announcement authoring",
+      "Fix linting errors",
+      "Triage incoming requests"
+    ],
+    "text": "Production Engineering Networking and Incident Management Team AI prompts\n\nNetworking and Incident Management Common AI Prompts\n\nAnnouncement authoring\n\nNetworking and Incident Management builds platforms and manages tools that other teams throughout GitLab use. For example, we manage the incident management tooling and processes around incident management. We also build frameworks for adopting standardized networking infrastructure throughout engineering.\n\nWhenever we roll out changes to a process or framework, it is important to communicate those changes and ensure they are discoverable by everyone who will need to use and know about them.\n\nThis prompt helps write a slack announcement for a given issue or merge request.\n\nIn the handbook and other markdown-based projects and files, it’s easy to make linting mistakes, especially when working in the Web IDE. Use this prompt to have Duo Agent fix the changes for you.\n\nTriage incoming requests\n\nBeing a Production Engineering team, we often have issues being opened from a variety of departments requesting changes to our Networking architecture. When triaging these issues, it is helpful to know if similar work has been completed in the past.\n\nThe history of our infrastructure and production environments is long and combined with the changing of teams and projects over time, it can be difficult to understand why some decisions were made or why certain things are the way they are. Use this prompt to find details about a historic discussion or decision.\n\nMap Service Dependencies for Incident Response",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "748212f7ac4b_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/ai-prompts",
+    "title": "Production Engineering Networking and Incident Management Team AI prompts",
+    "source": "handbook",
+    "headings": [
+      "Production Engineering Networking and Incident Management Team AI prompts",
+      "Networking and Incident Management Common AI Prompts",
+      "Announcement authoring",
+      "Fix linting errors",
+      "Triage incoming requests"
+    ],
+    "text": "duction environments is long and combined with the changing of teams and projects over time, it can be difficult to understand why some decisions were made or why certain things are the way they are. Use this prompt to find details about a historic discussion or decision.\n\nMap Service Dependencies for Incident Response\n\nA prompt template for GitLab SREs to map service dependencies across GitLab’s distributed architecture and understand failure cascades for effective incident response.\n\nPrepare MRs for Review\n\nBefore submitting MRs for code review, use this prompt to have Duo give it a prereview, helping to reduce the back-and-forth with reviewers.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

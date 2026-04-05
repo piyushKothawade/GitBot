@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "404a774af293_0",
+    "url": "https://handbook.gitlab.com/handbook/support/license-and-renewals/workflows/working_with_reseller_related_requests",
+    "title": "Working with reseller related requests",
+    "source": "handbook",
+    "headings": [
+      "Working with reseller related requests",
+      "Overview",
+      "Identifying whether a customer purchased through reseller",
+      "Requests to update end-user contact information",
+      "Handling reseller customers’ requests for direct renewal"
+    ],
+    "text": "Working with reseller related requests\n\nReseller is another word for Channel Partner .\nNote that an Alliance Partner is different from a Channel Partner, and is not a reseller. See the GitLab Alliances Handbook Page and the Internal Alliances Handbook Page for more on alliances.\n\nWhen a customer purchases through a reseller we follow different workflows than\nwe do for WebDirect or Sales Assisted purchases. Note the following for a customer purchase through a reseller:\n\nThe customer will have access to customersDot, but cannot modify their subscription in any way, nor view invoices.\n\nAdditions, modifications, or renewals must go through the reseller.\n\nNote: Users may see a message in their portal, or on their GitLab.com group, warning that their subscription is “read-only”.  This is only in reference of the inability to modify the subscription directly, but has no impact whatsoever on the functionality of the subscription itself\n\nIdentifying whether a customer purchased through reseller\n\nZuora is the single source of truth for whether a purchase was made via a reseller, however this information can be viewed via either Zuora or SalesForce. Authorised resellers are listed on the GitLab Partner directory .\n\nCheck if a subscription was purchased through a reseller by locating the Invoice Owner in the customer account on Zuora.\n\nFirst login to CustomerDot\n\nSelect the tab Customers and enter the customers contact details into the search text field box\n\nOnce you have identified the customer, click on the Show button (represented by an i) which will provide details on the customer",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "404a774af293_1",
+    "url": "https://handbook.gitlab.com/handbook/support/license-and-renewals/workflows/working_with_reseller_related_requests",
+    "title": "Working with reseller related requests",
+    "source": "handbook",
+    "headings": [
+      "Working with reseller related requests",
+      "Overview",
+      "Identifying whether a customer purchased through reseller",
+      "Requests to update end-user contact information",
+      "Handling reseller customers’ requests for direct renewal"
+    ],
+    "text": "r by locating the Invoice Owner in the customer account on Zuora.\n\nFirst login to CustomerDot\n\nSelect the tab Customers and enter the customers contact details into the search text field box\n\nOnce you have identified the customer, click on the Show button (represented by an i) which will provide details on the customer\n\nClick on the Zuora Subscriptions tab and then the subscription name (i.e. A-S000860000)\n\nThis will launch the associated subscription page in Zuora\n\nLook under Basic Information and the reseller should be listed in the Invoice Owner field in the subscription page\n\nYou can also search the Zuora Subscription page for the text SSPChannel which will have the text value Reseller\n\nNote:  Sometimes you can also see Partners section in the end-user’s SFDC account.\n\nOpen a quote that has its Status set as Sent to Z-Billing for an opportunity\n\nWait for the Zuora iframe to load\n\nIf the subscription was purchased via a reseller, the GitLab partner details will be listed in the iframe table under the Customer Account Details section as the Resale Partner . The Resale Partner may also be listed in the Required Approvals From VP of Channel notes.\n\nThe Resale Partner may also be listed in the Required Approvals From VP of Channel notes.\n\nRequests to update end-user contact information\n\nImportant: Do not send a license file to the reseller partner.\n\nIf a reseller partner needs to have the end-user contact details updated (who should receive the license), you have the following options:",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "404a774af293_2",
+    "url": "https://handbook.gitlab.com/handbook/support/license-and-renewals/workflows/working_with_reseller_related_requests",
+    "title": "Working with reseller related requests",
+    "source": "handbook",
+    "headings": [
+      "Working with reseller related requests",
+      "Overview",
+      "Identifying whether a customer purchased through reseller",
+      "Requests to update end-user contact information",
+      "Handling reseller customers’ requests for direct renewal"
+    ],
+    "text": "also be listed in the Required Approvals From VP of Channel notes.\n\nRequests to update end-user contact information\n\nImportant: Do not send a license file to the reseller partner.\n\nIf a reseller partner needs to have the end-user contact details updated (who should receive the license), you have the following options:\n\nHave the current Sold-To contact file a support ticket with us, following the workflow Add subscription management contact workflow\n\nThe reseller partner must attach a copy of the subscription invoice to verify any contact change requested on an end-user’s behalf\n\nHandling reseller customers’ requests for direct renewal\n\nTo assist a customer who requests to renew their subscription directly with GitLab instead of through their reseller, follow the working with sales workflow and ensure you mention that the customer first had a Reseller purchase.\n\nIf a customer with a reseller purchase decides to make a new purchase on a different account, their subscription would be a new purchase instead of a renewal. The license generated would therefore not include the previous subscription counts. Follow the troubleshooting license upload errors workflow to move the ticket forward.\n\nMore Reseller Workflows\n\nAssociating purchases - ownership verification\n\nPass to Sales - reseller exemption request\n\nPass to Sales - reseller subscription change or question\n\nNot-for-Resale (NFR) program and policy",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "chunk_id": "57735470d446_0",
+    "url": "https://handbook.gitlab.com/handbook/support/knowledge-base/knowledge-base-training",
+    "title": "Knowledge Base Training Resources",
+    "source": "handbook",
+    "headings": [
+      "Knowledge Base Training Resources"
+    ],
+    "text": "Knowledge Base Training Resources\n\nThe following resources are available.\n\nCreating a Knowledge Article in the Sync repo\n\nLink: https://levelup.edcast.com/insights/ECL-a5671246-4a5e-4321-b30b-cf3f397c196a\n\nHow to Link a knowledge article to a Support Ticket in Zendesk\n\nLink: https://levelup.edcast.com/insights/ECL-1fac4c9d-bf93-461e-a256-4ba6bde3d450\n\nHow to Create a knowledge article if you are NOT in Zendesk or a Light agent\n\nLink: https://levelup.edcast.com/insights/how-to-create-a-knowledge-article-if-you-are-not-in-zendesk\n\nGitLab University (GLU)\n\nLink: https://university.gitlab.com/courses/gitlab-support-portal-redesign-00\n\nKCS (Knowledge Centered Service)\n\nConsortium for Service Innovation Videos\n\nVideo: Multiple videos\n\nLink: https://www.youtube.com/c/ConsortiumforServiceInnovation",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

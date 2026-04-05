@@ -1,0 +1,13 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/company/infrastructure-standards/realms/saas/labels-tags",
+  "title": "GitLab.com SaaS Realm Labels and Tags",
+  "content": "GitLab.com SaaS Realm Labels and Tags\n\nInfrastructure Standards - Sandbox Realm Documentation\n\nInfrastructure Standards - Global Labels and Tags Standards\n\nInfrastructure Standards - Policies\n\nInfrastructure Standards - Tutorials\n\nInfrastructure Standards - Helpdesk\n\nWe use the gl_ prefix for all labels and tags. All keys use underscores ( snake_case ). All values should use hyphens ( alpha-dash for slug’d values), however underscores are allowed.\n\nSee the list of global labels and tags that should be applied to each resource.\n\nThere are no labels and tags specific to this realm yet.",
+  "source": "handbook",
+  "headings": [
+    "GitLab.com SaaS Realm Labels and Tags",
+    "Quick Links",
+    "Quick Reference",
+    "Global Labels/Tags",
+    "Realm Labels/Tags"
+  ]
+}

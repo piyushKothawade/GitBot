@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "c3dd6ba6467d_0",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/functional-analytics-center-of-excellence",
+    "title": "Functional Analytics Center of Excellence",
+    "source": "handbook",
+    "headings": [
+      "Functional Analytics Center of Excellence",
+      "Welcome to the FACE of Data Handbook",
+      "Context",
+      "FACE Teams: what functional analytics teams are participating?",
+      "Objectives of the FACE"
+    ],
+    "text": "Functional Analytics Center of Excellence\n\nWelcome to the FACE of Data Handbook\n\nThe enterprise data team serves as the hub for all of our “spoke” functional analytical teams ; however, we have an opportunity to establish connectivity between the spokes. Enter: the creation of the functional analytics center of excellence (FACE).\n\nFACE Teams: what functional analytics teams are participating?\n\nAll functional analytics teams are welcome to participate. We regularly see engagement from each of the following analytics teams:\n\nProduct Data Insights\n\nObjectives of the FACE\n\nEfficiency : it is not uncommon for our teams to be asked similar questions (for example how are trials converting) but it is inefficient and duplicative for each team to tackle these questions on our own.\n\nAlignment : in cases where we are tackling similar questions, we need alignment of the assumptions and methodology we are using to answer those questions. The FACE ensures we all deliver cohesive data stories.\n\nKnowledge Share : this forum will give us a formal venue to learn from one another as opposed waiting for organic moments of knowledge sharing.\n\nCadence : our teams will meet at least once every month if not more. We will knowledge share, align on joint quarterly projects, and develop/prioritize joint asks we have of the enterprise data team. We will also have fun #StaySpoke.",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "c3dd6ba6467d_1",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/functional-analytics-center-of-excellence",
+    "title": "Functional Analytics Center of Excellence",
+    "source": "handbook",
+    "headings": [
+      "Functional Analytics Center of Excellence",
+      "Welcome to the FACE of Data Handbook",
+      "Context",
+      "FACE Teams: what functional analytics teams are participating?",
+      "Objectives of the FACE"
+    ],
+    "text": "o learn from one another as opposed waiting for organic moments of knowledge sharing.\n\nCadence : our teams will meet at least once every month if not more. We will knowledge share, align on joint quarterly projects, and develop/prioritize joint asks we have of the enterprise data team. We will also have fun #StaySpoke.\n\nConsolidated asks to enterprise data team : we have an opportunity to streamline, consolidate, and prioritize our asks to the enterprise data team. We also partner with the enterprise data team on data program-level evaluations and decisions (for example BI tooling).\n\nSubject Matter Expert Lookup : we will develop a documented list of people and their associated areas of expertise. SME’s will also be able to document their source of truth resources (for example snippets, dashboards, reports).\n\nQuarterly Projects : we will propose and pick cross-functional projects for us to work on quarterly. This will make us all more efficient by assigning 1 DRI with 2 or more code reviewers.\n\nPeer Review + Assumptions Approval : as a part of the quarterly projects, we will establish a code peer review and assumptions approval process that will ensure we will all be enthusiastic adopters of the ultimate output.\n\nCode Repo : after a project has gone through the peer review and assumptions approval process, we will commit it to a repository that any data person can leverage in their work.\n\nExamples: what are the types problems the FACE tackles?\n\nHow do free and trial sign-ups convert?\n\nHow do we link namespaces to Salesforce accounts?",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "c3dd6ba6467d_2",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/functional-analytics-center-of-excellence",
+    "title": "Functional Analytics Center of Excellence",
+    "source": "handbook",
+    "headings": [
+      "Functional Analytics Center of Excellence",
+      "Welcome to the FACE of Data Handbook",
+      "Context",
+      "FACE Teams: what functional analytics teams are participating?",
+      "Objectives of the FACE"
+    ],
+    "text": "epo : after a project has gone through the peer review and assumptions approval process, we will commit it to a repository that any data person can leverage in their work.\n\nExamples: what are the types problems the FACE tackles?\n\nHow do free and trial sign-ups convert?\n\nHow do we link namespaces to Salesforce accounts?\n\nHow do we link leads/INQ to Salesforce accounts?\n\nHow do we identify business emails v. junk account emails?\n\nTurn and Share Meetings\n\nIn line with our Collaboration value, Turn & Share sessions are a way for us to share our work with other analysts (or anyone at GitLab who is interested). These sessions began in October of 2023. More details on these sessions are outlined below:\n\nOverall Goal : Encourage each of the analytic teams at GitLab to reach out to each other for data resources and ideas on how to solve reporting, statistical, and data science problems of various complexity levels.\n\nGeneral Guidelines for Discussions\n\nWork does not need to be completed or in a finished state to be presented.\n\nSlides are not always necessary, unless that is easier for the presenter to share their thoughts.\n\nActive participation during sessions is what we’re striving for. Questions at the time of presentation can be very helpful for all, especially the presenter.\n\nNote : Goal is not to solve the problems we have in the meeting, rather to discuss and share ideas and thoughts. For deep discussions, follow-up meetings should be scheduled with interested Team Members.",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "c3dd6ba6467d_3",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/functional-analytics-center-of-excellence",
+    "title": "Functional Analytics Center of Excellence",
+    "source": "handbook",
+    "headings": [
+      "Functional Analytics Center of Excellence",
+      "Welcome to the FACE of Data Handbook",
+      "Context",
+      "FACE Teams: what functional analytics teams are participating?",
+      "Objectives of the FACE"
+    ],
+    "text": "at we’re striving for. Questions at the time of presentation can be very helpful for all, especially the presenter.\n\nNote : Goal is not to solve the problems we have in the meeting, rather to discuss and share ideas and thoughts. For deep discussions, follow-up meetings should be scheduled with interested Team Members.\n\nWe strive to meet every three weeks, alternating between AMER and APAC time zones to facilitate consistent knowledge sharing and collaboration across functional analysts.\n\nSign Up for Presenters\n\nWe will collect sign ups and coordinate meeting schedules & facilitators in this sheet\n\nMeeting Documentation\n\nAgenda We collect notes, presentations, and Q&A during sessions.\n\nWe collect notes, presentations, and Q&A during sessions.\n\nRecordings Meeting recordings are appended to the agenda post-session. To view these recordings you must be logged into the GitLab Unfiltered YouTube account\n\nMeeting recordings are appended to the agenda post-session.\n\nTo view these recordings you must be logged into the GitLab Unfiltered YouTube account\n\nAt times, presentations will contain data that is considered SAFE . If this is the case it is important to take the following into considerations:\n\nIs everyone present able to see SAFE data? If the answer is no then it would be best to not share the visuals or create “mock data” that can be used for demonstration purposes.",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "c3dd6ba6467d_4",
+    "url": "https://handbook.gitlab.com/handbook/enterprise-data/how-we-work/functional-analytics-center-of-excellence",
+    "title": "Functional Analytics Center of Excellence",
+    "source": "handbook",
+    "headings": [
+      "Functional Analytics Center of Excellence",
+      "Welcome to the FACE of Data Handbook",
+      "Context",
+      "FACE Teams: what functional analytics teams are participating?",
+      "Objectives of the FACE"
+    ],
+    "text": "imes, presentations will contain data that is considered SAFE . If this is the case it is important to take the following into considerations:\n\nIs everyone present able to see SAFE data? If the answer is no then it would be best to not share the visuals or create “mock data” that can be used for demonstration purposes.\n\nIs this being recorded? If the demo includes SAFE data, then the parts of the demo that include SAFE data should not be recorded. Even if everyone present can view SAFE data, visualized data cannot be recorded as the recordings are shared with a wider audience. It is best to stop the recording before sharing screen with the SAFE data in view or not record at all.\n\nSlack channel: #functional_analytics_center_of_excellence\n\nOpen an issue in our Functional Analytics Center of Excellence project\n\nJoin our monthly project turn and shares: ask in our Slack channel or view upcoming events in the Data Calendar\n\nRead our meeting notes and watch meeting recordings [access required]",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

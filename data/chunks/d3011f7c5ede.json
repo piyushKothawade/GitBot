@@ -1,0 +1,114 @@
+[
+  {
+    "chunk_id": "d3011f7c5ede_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/project-plans/secrets-manager",
+    "title": "Secrets Manager - Weekly Project Plan",
+    "source": "handbook",
+    "headings": [
+      "Secrets Manager - Weekly Project Plan",
+      "Secrets Manager - Weekly Project Plan",
+      "Milestone 16.9 (January 15, 2024 - February 9, 2024)",
+      "Week of  January 29, 2024 (Milestone 16.9)",
+      "Week of  February 5, 2024 (Milestone 16.9)"
+    ],
+    "text": "Secrets Manager - Weekly Project Plan\n\nSecrets Manager - Weekly Project Plan\n\nMilestone 16.9 (January 15, 2024 - February 9, 2024)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424457 Create the index page for the secrets manager (Frontend)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424458 Create form for adding secrets (Frontend)\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Begin work on backend POC for client authentication\n\nWeek of  January 29, 2024 (Milestone 16.9)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424457 Finish the MR for the secrets manager index page\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424458 Finish the MR for the add/edit secrets form\n\nWeek of  February 5, 2024 (Milestone 16.9)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424457 Merge the MR for the secrets manager index page\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424458 Merge the MR for the add/edit secrets form\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Begin work on backend POC for client authentication\n\nMilestone 16.10 (February 12, 2024 - March 8, 2024)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/434233 Check that secret exists before viewing details\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424460 Create secret details page\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Present backend demo POC for client authentication\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Begin work on backend POC for GCP idententies\n\nWeek of  February 12, 2024 (Milestone 16.9)",
+    "chunk_index": 0,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "d3011f7c5ede_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/project-plans/secrets-manager",
+    "title": "Secrets Manager - Weekly Project Plan",
+    "source": "handbook",
+    "headings": [
+      "Secrets Manager - Weekly Project Plan",
+      "Secrets Manager - Weekly Project Plan",
+      "Milestone 16.9 (January 15, 2024 - February 9, 2024)",
+      "Week of  January 29, 2024 (Milestone 16.9)",
+      "Week of  February 5, 2024 (Milestone 16.9)"
+    ],
+    "text": "://gitlab.com/gitlab-org/gitlab/-/issues/424460 Create secret details page\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Present backend demo POC for client authentication\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Begin work on backend POC for GCP idententies\n\nWeek of  February 12, 2024 (Milestone 16.9)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/434233 Begin work on checking that secret exists before viewing details\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424460 Begin work on create secret details page\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Present backend demo POC for client authentication\n\nWeek of  February 19, 2024 (Milestone 16.9)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/434233 Complete MR for checking that secret exists before viewing details\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424460 Complete MR for create secret details page\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Begin work on backend POC for GCP idententies\n\nMilestone 16.11 (March 11, 2024 - April 12, 2024)\n\nMilestone 17.0 (April 15, 2024 - May 10, 2024)\n\nWeek of August 14, 2023 (Milestone 16.3 ending)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/421626+ Determine how we want to handle encryption.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/416701 Create an initial outline for architecture design for backend.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/415936+ Create first iteration issue for frontend MVC work.\n\nWeek of August 21, 2023 (Milestone 16.4 begins)",
+    "chunk_index": 1,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "d3011f7c5ede_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/project-plans/secrets-manager",
+    "title": "Secrets Manager - Weekly Project Plan",
+    "source": "handbook",
+    "headings": [
+      "Secrets Manager - Weekly Project Plan",
+      "Secrets Manager - Weekly Project Plan",
+      "Milestone 16.9 (January 15, 2024 - February 9, 2024)",
+      "Week of  January 29, 2024 (Milestone 16.9)",
+      "Week of  February 5, 2024 (Milestone 16.9)"
+    ],
+    "text": "26+ Determine how we want to handle encryption.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/416701 Create an initial outline for architecture design for backend.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/415936+ Create first iteration issue for frontend MVC work.\n\nWeek of August 21, 2023 (Milestone 16.4 begins)\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/10691 Write up a technical proposal for the POC and create iterative issues.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/416701 Fill in details on the foundational elements of the architecture design for backend.\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/10723 Begin work for first iteration of frontend MVC work.\n\nWeek of  August 28, 2023 (Milestone 16.4)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/416701 Meet with security engineers to discuss our backend architecture proposal.\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11373 Create the frontend issues for the MVC work.\n\nhttps://gitlab.com/gitlab-org/ux-research/-/issues/2470 Send out invitations for feedback based on initial UX research about secret names.\n\nWeek of September 4, 2023 (Milestone 16.4)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/416701 Make adjustments to our backend architecture design based on security feedback.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/416701 Start the threat model process.\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11373 Finalize the frontend issues for the MVC work.\n\nhttps://gitlab.com/gitlab-org/ux-research/-/issues/2470 Report on feedback from interviews.\n\nWeek of September 11, 2023 (Milestone 16.4)",
+    "chunk_index": 2,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "d3011f7c5ede_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/project-plans/secrets-manager",
+    "title": "Secrets Manager - Weekly Project Plan",
+    "source": "handbook",
+    "headings": [
+      "Secrets Manager - Weekly Project Plan",
+      "Secrets Manager - Weekly Project Plan",
+      "Milestone 16.9 (January 15, 2024 - February 9, 2024)",
+      "Week of  January 29, 2024 (Milestone 16.9)",
+      "Week of  February 5, 2024 (Milestone 16.9)"
+    ],
+    "text": "ttps://gitlab.com/gitlab-org/gitlab/-/issues/416701 Start the threat model process.\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11373 Finalize the frontend issues for the MVC work.\n\nhttps://gitlab.com/gitlab-org/ux-research/-/issues/2470 Report on feedback from interviews.\n\nWeek of September 11, 2023 (Milestone 16.4)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/416701 Finish first draft of backend architecture design.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/416701 Work with appsec to continue the threat model process.\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11373 Begin working on the first frontend iteration for the MVC.\n\nhttps://gitlab.com/gitlab-org/ux-research/-/issues/2470 Iterate on early designs based on feedback.\n\nMilestone 16.5 (September 18, 2023 - October 16, 2023)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/416701 Complete the threat model process.\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11373 Create an MR for the first frontend iteration for the MVC.\n\nhttps://gitlab.com/gitlab-org/ux-research/-/issues/2470 Present new design changes.\n\nWeek of  October 2, 2023 (Milestone 16.5)\n\nhttps://gitlab.com/gitlab-com/gl-security/product-security/appsec/threat-models/-/issues/34 Initialize the threat model process.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424452 Merge MR which creates feature flag and base page for the frontend.\n\nhttps://gitlab.com/gitlab-org/ux-research/-/issues/2470 Continue receiving assignment 2 feedback.\n\nWeek of  October 9, 2023 (Milestone 16.5)",
+    "chunk_index": 3,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "d3011f7c5ede_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/project-plans/secrets-manager",
+    "title": "Secrets Manager - Weekly Project Plan",
+    "source": "handbook",
+    "headings": [
+      "Secrets Manager - Weekly Project Plan",
+      "Secrets Manager - Weekly Project Plan",
+      "Milestone 16.9 (January 15, 2024 - February 9, 2024)",
+      "Week of  January 29, 2024 (Milestone 16.9)",
+      "Week of  February 5, 2024 (Milestone 16.9)"
+    ],
+    "text": "-models/-/issues/34 Initialize the threat model process.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424452 Merge MR which creates feature flag and base page for the frontend.\n\nhttps://gitlab.com/gitlab-org/ux-research/-/issues/2470 Continue receiving assignment 2 feedback.\n\nWeek of  October 9, 2023 (Milestone 16.5)\n\nhttps://gitlab.com/gitlab-com/gl-security/product-security/appsec/threat-models/-/issues/34 Complete the threat model process.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424453 Create an MR for creating the root Vue component.\n\nhttps://gitlab.com/gitlab-org/ux-research/-/issues/2470 Present feedback findings from assignment 2.\n\nWeek of  October 16, 2023 (Milestone 16.5 and 16.6)\n\nhttps://gitlab.com/gitlab-com/gl-security/product-security/appsec/threat-models/-/issues/34 Address feedback from the threat model process.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424453 Merge MR for creating the root Vue component.\n\nhttps://gitlab.com/gitlab-org/ux-research/-/issues/2470 Present new design changes.\n\nWeek of  October 23, 2023 (Milestone 16.6)\n\nhttps://gitlab.com/gitlab-com/gl-security/product-security/appsec/threat-models/-/issues/34 Complete the threat model process.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/416701 Create an MR with updated architecture design based on feedback from threat model.\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Begin working on first backend POC for using GCP key management for key storage.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424452 Merge MR which creates feature flag and base page for the frontend",
+    "chunk_index": 4,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "d3011f7c5ede_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/project-plans/secrets-manager",
+    "title": "Secrets Manager - Weekly Project Plan",
+    "source": "handbook",
+    "headings": [
+      "Secrets Manager - Weekly Project Plan",
+      "Secrets Manager - Weekly Project Plan",
+      "Milestone 16.9 (January 15, 2024 - February 9, 2024)",
+      "Week of  January 29, 2024 (Milestone 16.9)",
+      "Week of  February 5, 2024 (Milestone 16.9)"
+    ],
+    "text": "h updated architecture design based on feedback from threat model.\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Begin working on first backend POC for using GCP key management for key storage.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424452 Merge MR which creates feature flag and base page for the frontend\n\nWeek of  October 30, 2023 (Milestone 16.6)\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Complete first backend POC for using GCP key management for key storage.\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424453 Create an MR for creating the root Vue component\n\nWeek of  November 6, 2023 (Milestone 16.6)\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Present findings from first backend POC for using GCP key management for key storage.\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Begin work on backend POC for client authentication\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424453 Merge the MR for creating the root Vue component\n\nMilestone 16.7 (November 13, 2023 - December 15, 2023)\n\nCreate the secrets manager index page\n\nCreate the add/edit secrets form ### Milestone 16.7 (November 13, 2023 - December 15, 2023)\n\nWeek of  November 13, 2023 (Milestone 16.6)\n\nhttps://gitlab.com/groups/gitlab-org/-/epics/11776 Complete work on backend POC for client authentication\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424457 Begin work on the secrets managemer index page\n\nWeek of  November 20, 2023 (Milestone 16.7)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424457 Begin development for the secrets manager index page",
+    "chunk_index": 5,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "d3011f7c5ede_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/project-plans/secrets-manager",
+    "title": "Secrets Manager - Weekly Project Plan",
+    "source": "handbook",
+    "headings": [
+      "Secrets Manager - Weekly Project Plan",
+      "Secrets Manager - Weekly Project Plan",
+      "Milestone 16.9 (January 15, 2024 - February 9, 2024)",
+      "Week of  January 29, 2024 (Milestone 16.9)",
+      "Week of  February 5, 2024 (Milestone 16.9)"
+    ],
+    "text": "/epics/11776 Complete work on backend POC for client authentication\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424457 Begin work on the secrets managemer index page\n\nWeek of  November 20, 2023 (Milestone 16.7)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424457 Begin development for the secrets manager index page\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424458 Begin the development for the add/edit secrets form\n\nWeek of  November 27, 2023 (Milestone 16.7)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424457 Create an MR for the secrets manager index page\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424458 Begin the MR for the add/edit secrets form\n\nWeek of  December 4, 2023 (Milestone 16.7)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424457 Review the MR for the secrets manager index page\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424458 Review the MR for the add/edit secrets form\n\nWeek of  December 11, 2023 (Milestone 16.7)\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424457 Merge the MR for the secrets manager index page\n\nhttps://gitlab.com/gitlab-org/gitlab/-/issues/424458 Merge the MR for the add/edit secrets form",
+    "chunk_index": 6,
+    "total_chunks": 7
+  }
+]

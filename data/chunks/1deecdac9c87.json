@@ -1,0 +1,162 @@
+[
+  {
+    "chunk_id": "1deecdac9c87_0",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/security-architecture",
+    "title": "Security Architecture",
+    "source": "handbook",
+    "headings": [
+      "Security Architecture",
+      "Team Information",
+      "Overview",
+      "Objectives",
+      "Scope of Application Security Architecture"
+    ],
+    "text": "Security Architecture\n\nTeam Pages Handbook Page GitLab Sub-Group\n\nContact Info Slack Channels #security-discuss : main channel to engage with the team Tag on GitLab: @gitlab-com/gl-security/security-architecture\n\nSlack Channels #security-discuss : main channel to engage with the team\n\n#security-discuss : main channel to engage with the team\n\nTag on GitLab: @gitlab-com/gl-security/security-architecture\n\nApplication Security Architects are the\ntrusted security advisors of GitLab Engineering. Security Architecture is a natural extension of the\ngreater Architecture initiative at GitLab. It is the\npreliminary and necessary work to build software with security considerations.\n\nSecurity Architecture protects the organization from cyber harm, and support present and future\nbusiness needs by:\n\nPreventing Security from being an afterthought\n\nDefining Security Architecture Principles\n\nAligning with our security sub-departments requirements and expectations\n\nAssisting other departments in the design and architect of new features, services, products.\n\nIdentifying the right SMEs and DRIs on the security side\n\nDriving security initiatives and features\n\nThe process is designed with these constraints in mind:\n\naligned with our values\n\nself-service as much as possible\n\navoid being a bottleneck in the software development life cycle\n\ndeliberately simple and concise\n\nautomated as much as possible\n\nDRY with strong notes\n\nScope of Application Security Architecture",
+    "chunk_index": 0,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "1deecdac9c87_1",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/security-architecture",
+    "title": "Security Architecture",
+    "source": "handbook",
+    "headings": [
+      "Security Architecture",
+      "Team Information",
+      "Overview",
+      "Objectives",
+      "Scope of Application Security Architecture"
+    ],
+    "text": "features\n\nThe process is designed with these constraints in mind:\n\naligned with our values\n\nself-service as much as possible\n\navoid being a bottleneck in the software development life cycle\n\ndeliberately simple and concise\n\nautomated as much as possible\n\nDRY with strong notes\n\nScope of Application Security Architecture\n\nAny change in our product offering (whether it is a feature, a service, or an acquisition), that\nwould impact our security posture. Our security posture is defined by:\n\nthe components we build upon\n\nthe components we embed\n\nsoftware architecture\n\nreference architectures\n\nAs of December 2025, we have decentralized Security Architecture across Product Security to reduce unnecessary cross-team dependencies.\n\nApplication Security Architecture (previously “Security Architecture”) sits within Security Platforms and Architecture and focuses on application-layer concerns\n\nInfrastructure Security Architecture is a new function that sits within Infrastructure Security\n\nSecurity Architecture Requirements\n\nThe Application Security team provides guidelines and requirements to follow during all the life\ncycle of source code:\n\nAppSec projects policies\n\nSecurity Requirements for Development and Deployment\n\nFor additional guidance, reach out to Infrastructure Security\n\nGitLab Audit Logging Policy\n\nDo not roll your own crypto (also one of our Security Architecture Principles )\n\nReference our GitLab Cryptography Standard\n\nSecurity Architecture Principles\n\nThe Security Architecture Principles are not requirements nor decisions, but something in between.",
+    "chunk_index": 1,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "1deecdac9c87_2",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/security-architecture",
+    "title": "Security Architecture",
+    "source": "handbook",
+    "headings": [
+      "Security Architecture",
+      "Team Information",
+      "Overview",
+      "Objectives",
+      "Scope of Application Security Architecture"
+    ],
+    "text": "h out to Infrastructure Security\n\nGitLab Audit Logging Policy\n\nDo not roll your own crypto (also one of our Security Architecture Principles )\n\nReference our GitLab Cryptography Standard\n\nSecurity Architecture Principles\n\nThe Security Architecture Principles are not requirements nor decisions, but something in between.\n\nOur principles are based on two simple pillars:\n\nThey are detailed below with the principles taken from the book Software Systems Architecture (see references ) and this ACCU 2019 related video . These are very close to the OWASP Security Design Principles but are easier to understand and apply.\n\nAssign the least privilege possible\n\nBroad privileges allow malicious or accidental access to protected resources.\n\nGive only the minimum level of access rights (privileges) that is necessary to a user or service\nto complete an assigned operation. This right must be given only for a minimum amount of time that\nis necessary to complete the operation.\n\nDo not use administrative accounts for application access\n\nUse separate accounts for sensitive data\n\nRun service processes as their own users with exactly the set of privileges they require\n\nGrant read-only permissions when no updates are required\n\nWhen updates are required, limit to the scope to the target resource only\n\nhttps://owasp.org/www-community/Access_Control#principle-of-least-privilege\n\nhttps://csrc.nist.gov/glossary/term/least_privilege\n\nhttps://handbook.gitlab.com/handbook/security/security-and-technology-policies/access-management-policy/\n\nSeparate responsibilities",
+    "chunk_index": 2,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "1deecdac9c87_3",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/security-architecture",
+    "title": "Security Architecture",
+    "source": "handbook",
+    "headings": [
+      "Security Architecture",
+      "Team Information",
+      "Overview",
+      "Objectives",
+      "Scope of Application Security Architecture"
+    ],
+    "text": "required, limit to the scope to the target resource only\n\nhttps://owasp.org/www-community/Access_Control#principle-of-least-privilege\n\nhttps://csrc.nist.gov/glossary/term/least_privilege\n\nhttps://handbook.gitlab.com/handbook/security/security-and-technology-policies/access-management-policy/\n\nSeparate responsibilities\n\nLimit the blast radius of successful attacks: When one part of the system is compromised, the whole\nsystem is not.\n\nMake attacks less attractive.\n\nCompartmentalize responsibilities and privileges\n\nSeparation of duties: the successful completion of a single task is dependent upon two or more\nconditions\n\nDon’t store secrets along with other non-sensitive data (like settings), even if secrets are\nfiltered out\n\nA system/service that only needs to read git commits should not be able to access user data\n\nGitLab team members don’t have access to billing data, nor anything else classified red data\n\nOWASP Access Control Models\n\nhttps://en.wikipedia.org/wiki/Compartmentalization_%28information_security%29\n\nMany security problems caused by inserting malicious intermediaries in communication path\n\nAssume unknown entities are untrusted\n\nHave a clear process to establish trust\n\nValidate who or what is connecting\n\nAlways use a kind of authentication (certificate, password, …)\n\nDo not dynamically load 3rd party code\n\nServices can’t be considered as secure as soon as they are not exposed to the Internet. SSRF can let attackers freely access\nthem.",
+    "chunk_index": 3,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "1deecdac9c87_4",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/security-architecture",
+    "title": "Security Architecture",
+    "source": "handbook",
+    "headings": [
+      "Security Architecture",
+      "Team Information",
+      "Overview",
+      "Objectives",
+      "Scope of Application Security Architecture"
+    ],
+    "text": "trusted\n\nHave a clear process to establish trust\n\nValidate who or what is connecting\n\nAlways use a kind of authentication (certificate, password, …)\n\nDo not dynamically load 3rd party code\n\nServices can’t be considered as secure as soon as they are not exposed to the Internet. SSRF can let attackers freely access\nthem.\n\nThe best way to authenticate users is to apply this general security principle: Provide something\nyou know (ex: password), and something you own (ex: certificate). This is what we apply with MFA,\nfor example by providing a password you know, along with a TOTP that is generated by an\napplication.\n\nDownloading 3rd party libraries or scripts at runtime can lead to many security issues, including\ncache poisoning, XSS, and whatnot. Without checking the integrity of the external asset, malicious\nactors can tamper the files, like this example of BGP Hijacking\n\nSimplest solution possible\n\nSimple solutions are easier to deploy, maintain, and secure\n\nAligned with our Iteration and Efficiency values\n\nSecurity requires understanding of the design\n\nComplexity increases exponentially\n\nAttack-ability or attack surface of the software is reduced\n\nAvoid complex failure modes, implicit behaviours, unnecessary features\n\nUse well-known, tested, and proven components\n\nAvoid over-engineering and strive for MVCs instead\n\nIntroducing a new server in GitLab means updating Omnibus builds, Helm charts, our reference\narchitectures, our docs, and so on. This is something to balance carefully against the benefits of\nadding a component which seem to be a perfect fit.",
+    "chunk_index": 4,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "1deecdac9c87_5",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/security-architecture",
+    "title": "Security Architecture",
+    "source": "handbook",
+    "headings": [
+      "Security Architecture",
+      "Team Information",
+      "Overview",
+      "Objectives",
+      "Scope of Application Security Architecture"
+    ],
+    "text": "d, and proven components\n\nAvoid over-engineering and strive for MVCs instead\n\nIntroducing a new server in GitLab means updating Omnibus builds, Helm charts, our reference\narchitectures, our docs, and so on. This is something to balance carefully against the benefits of\nadding a component which seem to be a perfect fit.\n\nKeep it simple, stupid\n\nComplexity and exponential change\n\nAudit sensitive events\n\nProvide record of activity\n\nProvide a log to construct that past\n\nProvide a monitoring point\n\nRecord all security significant events in a tamper-resistant store\n\nProvide notifications for all sensitive events\n\nEnable GuardDuty in AWS or Cloud Audit Logs in GCP to record activity and detect malicious\nintent.\n\nLeverage a SIEM (Devo for gitlab.com) to collect, normalize, and analyze logs.\n\nProvide notifications to users when: Changes to their accounts New keys generated or added to their accounts\n\nChanges to their accounts\n\nNew keys generated or added to their accounts\n\nGenerate security events (could be Slack notifications) for unusual activity: Signal passing a threshold (rate limiting in action) Component signature not matching Unauthorized access to sensitive resources\n\nSignal passing a threshold (rate limiting in action)\n\nComponent signature not matching\n\nUnauthorized access to sensitive resources\n\nFail securely & use secure defaults\n\nDefault passwords, ports and rules are “open doors”\n\nFailure and restart states often default to “insecure”\n\nForce changes to security sensitive parameters\n\nThink through failures - to be secure but recoverable",
+    "chunk_index": 5,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "1deecdac9c87_6",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/security-architecture",
+    "title": "Security Architecture",
+    "source": "handbook",
+    "headings": [
+      "Security Architecture",
+      "Team Information",
+      "Overview",
+      "Objectives",
+      "Scope of Application Security Architecture"
+    ],
+    "text": "nent signature not matching\n\nUnauthorized access to sensitive resources\n\nFail securely & use secure defaults\n\nDefault passwords, ports and rules are “open doors”\n\nFailure and restart states often default to “insecure”\n\nForce changes to security sensitive parameters\n\nThink through failures - to be secure but recoverable\n\nUnless a subject is given explicit access to an object, it should be denied access to that object,\naka Fail Safe Defaults.\n\nDo not trust invalid/expired TLS certificates\n\nSome components like Grafana come with a default admin/admin user/password .\n\nRelated to above, some components might fail over to a plain user/password authentication (with\ndefault credentials) under certain conditions, like a service not reachable.\n\nSome frameworks tend to render error pages with details that should not be shared, like hostnames\nand paths, when they cannot connect to some resources.\n\nhttps://owasp.org/www-community/Fail_securely\n\nNever rely upon obscurity\n\nHiding things is difficult, someone is going to find them, accidentally or on purpose\n\nWe’re a very transparent company and are more likely to share\nimplementation details, sometimes leaking something sensitive.\n\nOffboarded employees leave with sensitive knowledge. While tokens can be rotated, we can’t ensure\nthis knowledge won’t leak\n\nAssume attacker with perfect knowledge\n\nRecon can help attackers find servers that are not publicly documented. These servers could expose\nvulnerable components, and lead to east-west movement.\n\nChanging the path to a admin section won’t prevent attackers from finding it eventually.",
+    "chunk_index": 6,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "1deecdac9c87_7",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/security-architecture",
+    "title": "Security Architecture",
+    "source": "handbook",
+    "headings": [
+      "Security Architecture",
+      "Team Information",
+      "Overview",
+      "Objectives",
+      "Scope of Application Security Architecture"
+    ],
+    "text": "’t ensure\nthis knowledge won’t leak\n\nAssume attacker with perfect knowledge\n\nRecon can help attackers find servers that are not publicly documented. These servers could expose\nvulnerable components, and lead to east-west movement.\n\nChanging the path to a admin section won’t prevent attackers from finding it eventually.\n\nhttps://securitytrails.com/blog/security-through-obscurity\n\nImplement defense in depth\n\nSystems do get attacked, breaches do happen, mistakes are made\n\nMinimize blast radius: One component compromised should not compromise the whole system\n\nDon’t rely on a single point/layer of security: Secure every level Stop failures at one level propagating\n\nStop failures at one level propagating\n\nEncrypt data at rest and in transit (according to GitLab’s encryption policy )\n\nUse vulnerability scanners\n\nClose unnecessary ports and disable unused features\n\nA resource is well protected when accessed with the UI, but could be more exposed through the API.\n\nAccounts are locked when too many attempts, in order to avoid brute-force attacks.\n\nOS execution can lead to bypass all application security layers, because the execution occurs\noutside of the application.\n\nUnnecessary open ports and enabled features may lead to authentication bypass and other weaknesses. They increase the exposure of an application.\n\nhttps://en.wikipedia.org/wiki/Defense_in_depth_(computing)\n\nNever invent security technology\n\nSecurity technology is difficult to create, and avoiding vulnerabilities is difficult\n\nIt takes years to secure and mature new security technologies",
+    "chunk_index": 7,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "1deecdac9c87_8",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/security-architecture",
+    "title": "Security Architecture",
+    "source": "handbook",
+    "headings": [
+      "Security Architecture",
+      "Team Information",
+      "Overview",
+      "Objectives",
+      "Scope of Application Security Architecture"
+    ],
+    "text": "n bypass and other weaknesses. They increase the exposure of an application.\n\nhttps://en.wikipedia.org/wiki/Defense_in_depth_(computing)\n\nNever invent security technology\n\nSecurity technology is difficult to create, and avoiding vulnerabilities is difficult\n\nIt takes years to secure and mature new security technologies\n\nThey are expected to be perfect (sort of)\n\n[Do not roll your own crypto]\n\nUse well-known and proven components\n\nIn doubt, always involve the right SMEs\n\nDo not implement SSO from scratch\n\nRainbow tables are used to cache the output of\ncryptographic hash functions, which can be used\nfor cracking password hashes.\n\nPerils of the default bcrypt cost factor :\nEven when using a famous crypto library, its configuration can lead to weaknesses.\n\nFind the weakest link\n\nA system is just as secure as its weakest link\n\nOver time, new vulnerabilities are discovered, and a component might suddenly become the new\nweak link\n\nThreat model the system, repeat, iterate.\n\nIdentify central components that share more privileges than the others have more connections to other components are entrypoints (login modules, APIs, …)\n\nshare more privileges than the others\n\nhave more connections to other components\n\nare entrypoints (login modules, APIs, …)\n\nRun Dependency Scanning\n\nAvoid weak ciphers and algorithms\n\nSometimes consider the humans (users) as the weakest link. Phishing is still widely used for a\ngood reason",
+    "chunk_index": 8,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "1deecdac9c87_9",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/security-architecture",
+    "title": "Security Architecture",
+    "source": "handbook",
+    "headings": [
+      "Security Architecture",
+      "Team Information",
+      "Overview",
+      "Objectives",
+      "Scope of Application Security Architecture"
+    ],
+    "text": "nts (login modules, APIs, …)\n\nshare more privileges than the others\n\nhave more connections to other components\n\nare entrypoints (login modules, APIs, …)\n\nRun Dependency Scanning\n\nAvoid weak ciphers and algorithms\n\nSometimes consider the humans (users) as the weakest link. Phishing is still widely used for a\ngood reason\n\nSome resources are very well protected in the UI, and never exposed to unauthorized users. Yet, if\nthe API is not correctly implementing security controls, these resources could be passed as raw\nmodels without filtering sensitive data.\n\nData encrypted in transit but not at rest.\n\nThe weakest link could also be a user. Not enforcing strong passwords and MFA could lead to\nsensitive data exposure, but users can also do harmful actions without being aware of it.\n\nOS (system) commands often leads to bypassing most, if not all, the security controls of an\napplication. It is a common vector for RCEs and should be avoided as much as possible.\n\nRCE when removing metadata with ExifTool\n\nLog4Shell: RCE 0-day exploit found in log4j 2, a popular Java logging package\n\nTODO (discussed in https://gitlab.com/gitlab-com/gl-security/product-security/security-architecture/general/-/issues/49 )\n\nSoftware Systems Architecture (ISBN-13: 978-0321718334)\n\nCIS Critical Security Controls\n\nAWS Well Architected Framework\n\nOWASP Developer Guide Reboot\n\nGoogle Cloud: Optimize your system design using Architecture Framework Principles",
+    "chunk_index": 9,
+    "total_chunks": 10
+  }
+]

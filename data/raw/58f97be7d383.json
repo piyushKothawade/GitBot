@@ -1,0 +1,19 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/security/security-and-technology-policies/access-management-policy",
+  "title": "Access Management Policy",
+  "content": "Access Management Policy\n\nThis is a Controlled Document\n\nThis policy is intended to outline the access management controls implemented by GitLab.\n\nThese controls apply to information and information processing systems at the application and operating system layers, including networks and network services.\n\nRoles & Responsibilities\n\nResponsible for implementing and executing this policy\n\nBusiness or System Owners\n\nAlignment to this policy and any related standards\n\nSecurity Assurance Management (Code Owners)\n\nResponsible for approving significant changes and exceptions to this policy\n\nResponsible for adhering to the requirements of this policy\n\nAccess requests and reviews\n\nAccess requests are opened for all new or changing access. (AC-2)\n\nAccess requests are approved prior to making access changes. (AC-2)\n\nAccess requests and reviews are documented. (AC-2, AC-6(7))\n\nAn exception process exists for access requests.\n\nAccess is deprovisioned upon cessation of employment. (AC-2(3))\n\nAccess is deprovisioned or provisioned upon job transfer, as appropriate for the transfer. (AC-2, AC-2(3))\n\nAccess reviews are performed to confirm existing access. (AC-6(7))\n\nAccess Management Standard\n\nFor further details on GitLab’s access management processes, please review the Access Management Standard in the Internal Handbook.\n\nExceptions to this policy will be tracked as per the Security and Technology Policy Exception Management Process .",
+  "source": "handbook",
+  "headings": [
+    "Access Management Policy",
+    "Purpose",
+    "Scope",
+    "Roles & Responsibilities",
+    "Policy",
+    "Access requests and reviews",
+    "Access revocation",
+    "Job transfers",
+    "Access reviews",
+    "Access Management Standard",
+    "Exceptions"
+  ]
+}

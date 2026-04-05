@@ -1,0 +1,178 @@
+[
+  {
+    "chunk_id": "2f01cba5aae9_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/backend",
+    "title": "Create:Code Review BE Team",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review BE Team",
+      "Team Vision & Mission",
+      "Core Responsibilities",
+      "Group Members",
+      "Stable Counterparts"
+    ],
+    "text": "Create:Code Review BE Team\n\nTeam Vision & Mission\n\nPlease refer to the category directions for Code Review Workflow and GitLab CLI for the current strategy and 1 year plan for these products.\n\nCore Responsibilities\n\nThe Create:Code Review BE team is responsible for all backend aspects of the product categories that fall under the Code Review group of the Create stage of the DevOps lifecycle :\n\nCode Review Workflow , mainly the Merge Requests features\n\nThe following people are permanent members of the Create:Code Review Group:\n\nEngineering Manager, Create:Code Review\n\nSenior Backend Engineer , Create:Code Review\n\nSenior Backend Engineer , Create:Code Review\n\nSenior Backend Engineer , Create:Code Review\n\nSenior Backend Engineer , Create:Code Review\n\nStaff Backend Engineer , Create:Code Review\n\nStaff Fullstack Engineer , Create:Code Review\n\nBackend Engineer , Create:Code Review\n\nStaff Frontend Engineer, Create:Code Review\n\nSenior Frontend Engineer , Create:Code Review\n\nBackend Engineer , Create:Code Review\n\nThe following members of other functional teams are our stable counterparts:\n\nSenior Engineering Manager , Create:Source Code, Create:Code Review\n\nPrincipal Product Manager , Create:Code Review\n\nStaff Product Designer , Create:Code Review\n\nGitLab Team Handle: @code-review-be\n\nSlack Channel: #g_create_code-review\n\nSlack Handle: @code_review_be\n\nIssue Tracker: create-stage/code-review-be\n\nCommonly Monitored Issue Lists\n\nWorkflow Board (be sure to add a milestone filter)\n\nYou can find our dashboards here:\n\nCentralized Engineering Metrics",
+    "chunk_index": 0,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "2f01cba5aae9_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/backend",
+    "title": "Create:Code Review BE Team",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review BE Team",
+      "Team Vision & Mission",
+      "Core Responsibilities",
+      "Group Members",
+      "Stable Counterparts"
+    ],
+    "text": "Create:Code Review\n\nGitLab Team Handle: @code-review-be\n\nSlack Channel: #g_create_code-review\n\nSlack Handle: @code_review_be\n\nIssue Tracker: create-stage/code-review-be\n\nCommonly Monitored Issue Lists\n\nWorkflow Board (be sure to add a milestone filter)\n\nYou can find our dashboards here:\n\nCentralized Engineering Metrics\n\nSee the work section of the main Code Review page.\n\nWorking with our team\n\nAs stewards for some of the more high profile features - Merge Request pages, Approval Rules, etc - we receive a large number of inquires and requests for assistance or information about them, as well as the dependent features that it encompasses. We welcome them, as issues or Slack inquires, and we strive to be responsive to these, in the interest of Collaboration and Results , but we also must balance the value of Efficiency .\n\nOur target is to respond to incoming requests within 2 working days, although we will frequently respond more quickly, depending on team member availability, experience, and workload.\n\nTo contact the Code Review BE team in GitLab, you can use the @code-review-be handle.\n\nTo facilitate the distribution of information across the team and increase transparency, we use announcement issues instead of Slack to share team-wide messages. These issues are sent whenever needed rather than on a fixed cadence.\n\nAnnouncement issues are labeled with ~Announcements and typically target backend engineers plus the Engineering Manager. The announcement issue template provides options to also notify the Product Manager and/or stable counterparts.",
+    "chunk_index": 1,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "2f01cba5aae9_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/backend",
+    "title": "Create:Code Review BE Team",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review BE Team",
+      "Team Vision & Mission",
+      "Core Responsibilities",
+      "Group Members",
+      "Stable Counterparts"
+    ],
+    "text": "m-wide messages. These issues are sent whenever needed rather than on a fixed cadence.\n\nAnnouncement issues are labeled with ~Announcements and typically target backend engineers plus the Engineering Manager. The announcement issue template provides options to also notify the Product Manager and/or stable counterparts.\n\nAnyone on the team can share announcements using this format. Minor or repetitive announcements may still be sent via Slack (e.g., milestone reminders for PTO).\n\nYou will begin to collect follow-up issues when you’ve worked on something in a release but have tasks leftover, such as technical debt, feature flag rollouts or removals, or non-blocking work for the issue. For these, you can address them in at least 2 ways:\n\nAdd an appropriate future milestone to the follow-up issue(s) with a weight and good description on the importance of working this issue\n\nAdd the issue(s) to the relevant planning issue\n\nYou should generally take on follow-up work that is part of our definition of done , preferably in the same milestone as the original work, or the one immediately following. If this represents a substantial amount of work, bring it to your manager’s attention, as it may affect scheduling decisions.\n\nIf there are many follow-up issues, consider creating an epic.\n\nBackend and Frontend issues\n\nMany issues require work on both the backend and frontend, but the weight of that work may not be the same. Since an issue can only have a single weight set on it, we use scoped labels instead when this is the case: ~backend-weight::<number> and ~frontend-weight::<number> .",
+    "chunk_index": 2,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "2f01cba5aae9_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/backend",
+    "title": "Create:Code Review BE Team",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review BE Team",
+      "Team Vision & Mission",
+      "Core Responsibilities",
+      "Group Members",
+      "Stable Counterparts"
+    ],
+    "text": "eating an epic.\n\nBackend and Frontend issues\n\nMany issues require work on both the backend and frontend, but the weight of that work may not be the same. Since an issue can only have a single weight set on it, we use scoped labels instead when this is the case: ~backend-weight::<number> and ~frontend-weight::<number> .\n\nThe primary source for things to work on is the Code Review Release board for the current iteration cycle, which\nlists all of the Deliverable and Stretch issues scheduled for this cycle.\n\nThe lists are compiled by the Product Manager and Engineering Managers following the milestone planning process ,\nwith input from the team and other stakeholders.\nThe iteration cycle start on the Monday before the 3rd Thursday of the month,\nand is identified by the GitLab version set to be released.\n\nThere is also the Code Review backend assignment issue board ,\nwhich shows the same Deliverable\nand Stretch issues, now grouped by assignee, with the left-most list listing\nissues not currently assigned to any backend engineer.\n\nWhat to work on first\n\nDeliverables are considered top priority and are expected to be done by the end\nof the iteration cycle on the Friday before the 3rd Thursday of the month,\nin time for the monthly release .",
+    "chunk_index": 3,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "2f01cba5aae9_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/backend",
+    "title": "Create:Code Review BE Team",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review BE Team",
+      "Team Vision & Mission",
+      "Core Responsibilities",
+      "Group Members",
+      "Stable Counterparts"
+    ],
+    "text": "grouped by assignee, with the left-most list listing\nissues not currently assigned to any backend engineer.\n\nWhat to work on first\n\nDeliverables are considered top priority and are expected to be done by the end\nof the iteration cycle on the Friday before the 3rd Thursday of the month,\nin time for the monthly release .\n\nThese top priority issues are assigned to engineers on or ahead of the start of the\nmilestone, and it is their responsibility\nto make a best effort to get them done during that cycle, and to inform their\nengineering manager if anything is standing in the way of their success.\nYou can find the issues assigned to you on the Code Review backend assignment issue board .\n\nMany things can happen during a month that can result in a deliverable\nnot actually being completed by the end of a cycle, and while this usually\nindicates that the engineering manager was too optimistic in their estimation\nof the issue’s weight, or that an engineer’s other responsibilities ended up\ntaking up more time than expected, this should never come as a surprise to the\nengineering manager.",
+    "chunk_index": 4,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "2f01cba5aae9_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/backend",
+    "title": "Create:Code Review BE Team",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review BE Team",
+      "Team Vision & Mission",
+      "Core Responsibilities",
+      "Group Members",
+      "Stable Counterparts"
+    ],
+    "text": "lly being completed by the end of a cycle, and while this usually\nindicates that the engineering manager was too optimistic in their estimation\nof the issue’s weight, or that an engineer’s other responsibilities ended up\ntaking up more time than expected, this should never come as a surprise to the\nengineering manager.\n\nThe sooner this potential outcome is anticipated and communicated, the more time\nthere is to see if anything can be done to prevent it, like reducing the scope\nof the deliverable, or finding a different engineer who may have more time to\nfinish a deliverable that hasn’t been started yet.\nIf this outcome cannot be averted and the deliverable ends up missing the\ncycle, it will simply be moved to the next cycle to be finished up, and the\nengineer and engineering manager will have a chance to\nretrospect and learn from what happened.\n\nGenerally, your deliverables are expected to take up about 75% of the\ntime you spend working in a month. The other 25% is set aside for other\nresponsibilities (code review, community merge request coaching, helping people out in Slack, participating in discussions in issues ,\netc), as well as urgent issues that come up during the month and need someone\nworking on them immediately (regressions, security issues, customer issues, etc).\n\nIf you have time to spare after finishing your deliverables and other\nactivities, you can spend the remaining time working on Stretch issues, which\ncan be found on the same issue boards.",
+    "chunk_index": 5,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "2f01cba5aae9_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/backend",
+    "title": "Create:Code Review BE Team",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review BE Team",
+      "Team Vision & Mission",
+      "Core Responsibilities",
+      "Group Members",
+      "Stable Counterparts"
+    ],
+    "text": "ues that come up during the month and need someone\nworking on them immediately (regressions, security issues, customer issues, etc).\n\nIf you have time to spare after finishing your deliverables and other\nactivities, you can spend the remaining time working on Stretch issues, which\ncan be found on the same issue boards.\n\nThese lower priority issues are not expected to be done by the end of the\niteration cycle, but are to be Deliverables in the next cycle, so any progress\nmade on them ahead of time is a bonus.\n\nStretch issues are usually not directly assigned to people, except in cases\nwhere there is clearly a most appropriate person to work on them, like in the\ncase of technical debt, bugs related to work someone did recently, or issues\nsomeone started on before but hasn’t had a chance to finish yet.\n\nIf no Stretch issues are assigned to you yet, you can find new ones to pick up\nby filtering the Code Review Release board\n\nIf anything is blocking you from getting started on an issue immediately,\nlike unanswered questions or unclear requirements, you can skip it and consider\nanother issue, as long as you put your findings and questions in the\nissue, so that the next engineer who comes around may find it in a better state.",
+    "chunk_index": 6,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "2f01cba5aae9_7",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/backend",
+    "title": "Create:Code Review BE Team",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review BE Team",
+      "Team Vision & Mission",
+      "Core Responsibilities",
+      "Group Members",
+      "Stable Counterparts"
+    ],
+    "text": "w Release board\n\nIf anything is blocking you from getting started on an issue immediately,\nlike unanswered questions or unclear requirements, you can skip it and consider\nanother issue, as long as you put your findings and questions in the\nissue, so that the next engineer who comes around may find it in a better state.\n\nInstead of picking up Stretch issues, you may also choose to spend any\nspare time working on anything else that you believe will have a significant\npositive impact on the product or the company in general.\nAs the general guidelines state, “we recognize that inspiration is\nperishable, so if you’re enthusiastic about something that generates great\nresults in relatively little time feel free to work on that.”\n\nWe expect people to be managers of one and prefer responsibility over rigidity ,\nso there’s no need to ask for permission if you\ndecide to work on something that’s not on the issue board, but please keep your\nother responsibilities in mind, and make sure that there is an issue, you are\nassigned to it, and consider sharing it in #g_create_code-review .\n\nThe groups in the Create stage organize regular Deep Dive sessions to share our domain specific knowledge with others in the stage, the organization,\nand the wider community. All existing Deep Dives can be found on GitLab Unfiltered with slides and recordings in the descriptions. For Create specific Deep Dives, there is a different playlist . To find more information on upcoming sessions,\nor to propose a new topic, please see the epic .\n\nMonitoring availability and performance",
+    "chunk_index": 7,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "2f01cba5aae9_8",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/backend",
+    "title": "Create:Code Review BE Team",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review BE Team",
+      "Team Vision & Mission",
+      "Core Responsibilities",
+      "Group Members",
+      "Stable Counterparts"
+    ],
+    "text": "er community. All existing Deep Dives can be found on GitLab Unfiltered with slides and recordings in the descriptions. For Create specific Deep Dives, there is a different playlist . To find more information on upcoming sessions,\nor to propose a new topic, please see the epic .\n\nMonitoring availability and performance\n\nThe Create:Code Review BE team is responsible for keeping some API endpoints and\ncontroller actions available (i.e. not emitting errors/500s) and performant (i.e. below our latency targets).\n\nAvailability dashboards\n\nWe use the following dashboards to monitor and identify issues impacting our error budget and users of our features:\n\n(Grafana) Code Review: group error budget detail (internal only)\n\n(Sentry) Code Review Workflow - Users experiencing errors (internal only)\n\n(Sentry) MR Homepage - Users experiencing errors (internal only)\n\nFor root cause analysis, we explore if site-wide / infrastructure instability may be causing issues, by:\n\nChecking if other stage groups experience the same apdex/error patterns: stage groups\n\nChecking system-specific dashboards for impact: sidekiq: Overview sidekiq: Shard detail\n\nsidekiq: Shard detail\n\nSearching through recent incidents in gitlab-com/gl-infra/production/-/issues\n\nMonitoring automation\n\nAlerts for events impacting our feature category are posted to the #g_create_code-review_alerts Slack channel:\n\nPrometheus SLO violation alerts ( configuration )\n\nSentry alerts for users experiencing errors: All Code Review Workflow errors ( configuration ) MR homepage API errors ( configuration )",
+    "chunk_index": 8,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "2f01cba5aae9_9",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/backend",
+    "title": "Create:Code Review BE Team",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review BE Team",
+      "Team Vision & Mission",
+      "Core Responsibilities",
+      "Group Members",
+      "Stable Counterparts"
+    ],
+    "text": "onitoring automation\n\nAlerts for events impacting our feature category are posted to the #g_create_code-review_alerts Slack channel:\n\nPrometheus SLO violation alerts ( configuration )\n\nSentry alerts for users experiencing errors: All Code Review Workflow errors ( configuration ) MR homepage API errors ( configuration )\n\nAll Code Review Workflow errors ( configuration )\n\nMR homepage API errors ( configuration )\n\nEvery Monday, the 7-day error budget for the past week is automatically posted in #g_create_code-review .\n\nIssues are created automatically for the following database problems:\n\nTable growth anomalies\n\nTable size approaching or above limits\n\nPerformance dashboards\n\nKibana dashboards grouped by the endpoint/action and sorted by P90 (slowest first):\n\nCreate::Code Review Controller Actions (internal only)\n\nCreate::Code Review: API Endpoints (internal only)\n\nCreate::Code Review: Sidekiq Workers (internal only)\n\ngeneral: Application SLI Violations : apdex and error rate per endpoint\n\nstage-groups: Code Review: Group dashboard : more specific details about each actions and endpoints\n\nWe also have a dashboard specifically for monitoring AI features: Create: Code Review: AI Features (internal only). This dashboard monitors the performance of code review AI features, specifically tracking P50 (median) duration for both Sidekiq and GraphQL operations.\n\nIssue identification process\n\nIf the 7-day error budget for the past week is red, we create an investigation issue to identify the root cause ( example )",
+    "chunk_index": 9,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "2f01cba5aae9_10",
+    "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/code-review/backend",
+    "title": "Create:Code Review BE Team",
+    "source": "handbook",
+    "headings": [
+      "Create:Code Review BE Team",
+      "Team Vision & Mission",
+      "Core Responsibilities",
+      "Group Members",
+      "Stable Counterparts"
+    ],
+    "text": "ernal only). This dashboard monitors the performance of code review AI features, specifically tracking P50 (median) duration for both Sidekiq and GraphQL operations.\n\nIssue identification process\n\nIf the 7-day error budget for the past week is red, we create an investigation issue to identify the root cause ( example )\n\nIf we identify an endpoint or worker that contributes significantly to the error budget, we create an issue (if not created already) and label it based on our severity and priority criteria If an issue is already created, check whether the severity/priority needs to be updated\n\nIf an issue is already created, check whether the severity/priority needs to be updated\n\nPerformance issues are surfaced during planning automatically using a dedicated GLQL view, to priorize them accordingly\n\nEngineering Onboarding\n\nOpen an issue using the Code Review onboarding template for Backend Engineers to get started with onboarding.\n\nCreate:Code Review BE Engineer Resources , e.g. team building and career development\n\nCreate:Code Review BE Engineering Manager Responsibilities , e.g. milestone planning, talent assessment, and project management\n\nCreate:Code Review AI prompts , common prompts we use to be more efficient.",
+    "chunk_index": 10,
+    "total_chunks": 11
+  }
+]

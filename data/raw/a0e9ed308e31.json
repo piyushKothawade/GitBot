@@ -1,0 +1,11 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/customer-success/csm/gainsight/dashboards-overview",
+  "title": "CSM Dashboard Overview",
+  "content": "CSM Dashboard Overview\n\nFor an overview of Gainsight, and information about how to login, please refer to the Gainsight Overview Page .\n\nFor an overview of how CSMs use Gainsight, please refer to the Gainsight CSM Overview Page\n\nWhen logging in, CSMs will begin on their dashboard. Gainsight’s homepage will show a “My Portfolio” Dashboard which is a full list and overview of each CSM’s customers. This dashboard defaults to show the book of business for the current user but can be filtered and configured in a variety of ways to view the information for specific CSMs, teams, etc.\n\nThis view is likely to be a CSM’s most-frequented page, as it shows a summary of their entire book of business, including last activity dates, health scores, at-risk customers, upcoming renewals , stage adoption statistics, and more.\n\nThere are also other dashboards available to CSMs to look at, including the CS Leadership Dashboard which reviews aspects of all CSM-supported accounts.\n\nWhen hovering on the far left of the screen, a sidebar will pop up that has a few options:\n\nTimeline - this Timeline view shows all customers, rather than an individual customer which can be found on a Customer 360 .\n\nCockpit - the Cockpit is where CTAs live; this Cockpit view shows all CTAs for all of your customers, including success plan objectives.\n\nFurther detail on specific dashboards\n\nCSM Burn-Down Dashboard\n\nCSM Key Metrics Dashboard",
+  "source": "handbook",
+  "headings": [
+    "CSM Dashboard Overview",
+    "Gainsight dashboard",
+    "Further detail on specific dashboards"
+  ]
+}

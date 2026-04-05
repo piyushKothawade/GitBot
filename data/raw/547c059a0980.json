@@ -1,0 +1,19 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/engineering/architecture/abstractions/candidate/sidekiq",
+  "title": "Sidekiq - Background Processing",
+  "content": "Sidekiq - Background Processing\n\nCandidate - Under consideration for approval\n\nSidekiq is a background job processing framework for Ruby applications that uses Redis for job storage and queuing.\n\nWhy This Should Be a Key Abstraction\n\nSidekiq is being considered as the standard background processing system for GitLab because:\n\nProven at Scale : Successfully handles millions of jobs across GitLab.com\n\nRuby Native : Seamlessly integrates with GitLab’s Rails application\n\nSelf-Managed Compatible : Works reliably in all GitLab deployment environments\n\nStandard background job processing\n\nAsynchronous task execution\n\nScheduled jobs and cron-like tasks\n\nAny feature that needs to work in self-managed instances (SMF/SMA)\n\nCore GitLab functionality requiring background processing\n\nConsider alternatives for:\n\nVery high throughput scenarios : Use NATS (candidate key abstraction) for extreme throughput requirements\n\nReal-time event streaming : NATS may be more appropriate for under 1ms latency requirements\n\nWhen implementing background processing for new features:\n\nDefault to Sidekiq : Unless you have specific performance requirements, use Sidekiq\n\nMeasure First : If you think you need NATS, gather performance data first\n\nConsider Self-Managed : If the feature must work for self-managed customers, use Sidekiq\n\nFollow Patterns : Use established Sidekiq patterns and worker conventions in the GitLab codebase\n\nRelated Key Abstractions\n\nNATS - Alternative for very high throughput scenarios\n\nRedis - Required dependency for Sidekiq\n\nPostgreSQL - Often used alongside Sidekiq for persistent data storage\n\nSupport and Resources\n\nGitLab Sidekiq development documentation\n\nSidekiq development configuration and operator configuration\n\nInternal monitoring dashboards and runbooks\n\nInfrastructure team office hours and Slack channels",
+  "source": "handbook",
+  "headings": [
+    "Sidekiq - Background Processing",
+    "Status",
+    "Owner",
+    "Description",
+    "Why This Should Be a Key Abstraction",
+    "Use Cases",
+    "Do Not Use For",
+    "Integration Guidance",
+    "For New Features",
+    "Related Key Abstractions",
+    "Support and Resources"
+  ]
+}

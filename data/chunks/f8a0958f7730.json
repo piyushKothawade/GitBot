@@ -1,0 +1,32 @@
+[
+  {
+    "chunk_id": "f8a0958f7730_0",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/risk-register/well-articulated-prodsec-risks",
+    "title": "Well-Articulated Product Security Risks Guide",
+    "source": "handbook",
+    "headings": [
+      "Well-Articulated Product Security Risks Guide",
+      "What Makes a Well-Articulated Risk",
+      "What a Well-Articulated Risk is NOT",
+      "Additional Guidance"
+    ],
+    "text": "Well-Articulated Product Security Risks Guide\n\nIf you believe you have identified a systemic product or platform security risk in GitLab, the first step is to document the problem statement in the form of a Well-Articulated Risk. Only after a Well-Articulated Risk is documented can Product Security begin the process to triage, assess, prioritize, and treat it. Those downstream processes are out of scope for initial risk documentation.\n\nWhat Makes a Well-Articulated Risk\n\nA well-articulated product security risk clearly communicates:\n\nProblem Statement : A specific, concise description of the security vulnerability, design weakness, functional logical issue, or capability gap that exposes GitLab (the product) to compromise.\n\nPotential Impact : Clear explanation of the potential harm to GitLab and/or its customers if the risk remains unaddressed, including possible business impacts, data compromise scenarios, service or operational disruptions, etc.\n\nSupporting Evidence : Concrete trends, data points, or proofs of concept that substantiate the risk is real and not merely theoretical that can help inform prioritization.\n\nScope and Scale : Information about how widespread the risk is and what parts of the product or infrastructure are affected.\n\nIf the risk you are describing is complex, consider including a flowchart or diagram to explain it effectively.",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "f8a0958f7730_1",
+    "url": "https://handbook.gitlab.com/handbook/security/product-security/security-platforms-architecture/risk-register/well-articulated-prodsec-risks",
+    "title": "Well-Articulated Product Security Risks Guide",
+    "source": "handbook",
+    "headings": [
+      "Well-Articulated Product Security Risks Guide",
+      "What Makes a Well-Articulated Risk",
+      "What a Well-Articulated Risk is NOT",
+      "Additional Guidance"
+    ],
+    "text": "the risk is real and not merely theoretical that can help inform prioritization.\n\nScope and Scale : Information about how widespread the risk is and what parts of the product or infrastructure are affected.\n\nIf the risk you are describing is complex, consider including a flowchart or diagram to explain it effectively.\n\nWhen you are initially reporting a risk, you may have ideas about possible solutions, or you may already know of challenges or blockers that need to be addressed. That’s great! After you have created your Well-Articulated Risk, add those to the Issue as comments. Those will feed into the downstream risk treatment planning process.\n\nWhat a Well-Articulated Risk is NOT\n\nA Solution Statement : “We need to implement X technology” or “build Y feature” without explaining the underlying risk.\n\nA Feature Request : Describing desired functionality without connecting it to an actual security exposure.\n\nAn Individual Vulnerability : Specific CVEs or component-based vulnerabilities belonging elsewhere.\n\nA Vague or Generalized Problem : “Our security posture is weak” without specific details.\n\nIf you need help drafting an initial risk, see this Risk Drafting Guidance from our Security Risk Team. Alternatively, reach out to the Security Platforms and Architecture Team in Slack in #security-spa.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

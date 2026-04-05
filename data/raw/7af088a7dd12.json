@@ -1,0 +1,13 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/sales/field-operations/finding-seat-counts",
+  "title": "Growth Resources",
+  "content": "Finding Customer Seat Counts\n\nSeat expansion is at the heart of our revenue growth. This has a strong impact on IACV and both Net and Gross Retention. There are various ways to determine the seat counts for a subscription:\n\nThe best way to view Seat Counts for a GitLab.com customer is to access the Customers Portal admin section.\n\nGo to https://customers.gitlab.com/admins/sign_in\n\nSign in with Okta If you don’t have access, open an Access Request\n\nIf you don’t have access, open an Access Request\n\nOnce logged in, go to the Customers option in the left-hand menu\n\nIn the Filter text field, enter in the company name or email address associated with the subscription\n\nOnce the results are loaded, select the “i” icon from the right-hand section\n\nOn the Details page that loads, go to GitLab Groups\n\nHere is where you should see the Namespace and corresponding subscription with seat counts Seats in Subscription is what was paid for Seats Currently in Use is what is active\n\nSeats in Subscription is what was paid for\n\nSeats Currently in Use is what is active\n\nIt’s important to note that ultimately the Customer Portal admin will have the most accurate and up-to-date view of this information.\n\nThe best way to understand seat utilization for self-managed customers is by using the License Usage Salesforce App\n\nAn alternative to License Usage Salesfore App is the Version App . You will need developer access to this application to log in. Once logged in navigate to the Hosts tab. There you will be able to filter by license tier and see active user counts, historical max user counts, and other important information including last usage ping and version.\n\nCommunicating Number of Seats Owed / Helping Customers Find Information - GitLab.com\n\nSometimes customers can get confused as to what they owe because they have both a personal subscription and a group subscription. To make it easy for them to find the correct group billing information, you can send them a link with a URL in this format:\n\nhttps://gitlab.com/groups/[group-path-name]/-/billings\n\nTo find the group-path-name , go to the GitLab Groups page in the Customers Portal admin (see instructions above) and copy the value under the Path column.",
+  "source": "handbook",
+  "headings": [
+    "Growth Resources",
+    "Finding Customer Seat Counts",
+    "GitLab.com",
+    "Self-managed",
+    "Communicating Number of Seats Owed / Helping Customers Find Information - GitLab.com"
+  ]
+}

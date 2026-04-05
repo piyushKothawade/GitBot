@@ -1,0 +1,14 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/security/corporate/end-user-services/laptop-management/laptop-security/browsers",
+  "title": "Laptop Web Browsers",
+  "content": "We use Google Chrome as our primary web browser since many of our collaboration and security tools are natively integrated with Google.\n\nWe do not recommend or support using other browsers such as Firefox, Safari, etc. While we recognize that there are scenarios where alternate browsers are needed eventually all access to GitLab resources will require Google Chrome.\n\nVendor Docs - Install Chrome\n\nVendor Docs - Chrome Profiles\n\nEnterprise Browser Management\n\nChrome Enterprise Browser Management is a service that allows Corporate Security system administrators to achieve the following benefits:\n\nEffective management and security reports\n\nImprove the user experience and implement standardized configurations\n\nImplement quick and effective patching for outdated or vulnerable Chrome versions\n\nManagement of Chrome extensions and versions, including allowlist and blocklist\n\nImplementation of Chrome policies\n\nChanges are managed using standard Change Management processes, including testing with designated alpha and beta testing users for feedback prior to organization rollouts. All significant changes are announced in company-wide channels.\n\nDo not allow the Chrome, Safari, or Firefox web browser to save your passwords. Do not use a personal password manager (Bitwarden, LastPass, etc.) or personal 1Password account to store your work credentials. This presents an unnecessary risk.\n\nWe use 1Password Business and the 1Password Chrome Extension for storing and autofilling all passwords, passkeys, and 2FA One Time Password (OTP) codes.\n\n1Password Setup Guide\n\nConfigurations are in place to prevent using personal Google Chrome profiles to login to GitLab.com Google resources. These controls only impact GitLab-issued laptops.\n\nConfigurations are in place to prevent using personal Google Chrome profiles to login to GitLab.com Google resources. These controls only impact GitLab-issued laptops.",
+  "source": "handbook",
+  "headings": [
+    "Laptop Web Browsers",
+    "Overview",
+    "Configuration Steps",
+    "Enterprise Browser Management",
+    "Password Management",
+    "Personal Use"
+  ]
+}

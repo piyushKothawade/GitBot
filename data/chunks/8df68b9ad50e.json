@@ -1,0 +1,338 @@
+[
+  {
+    "chunk_id": "8df68b9ad50e_0",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "Security Vision and Mission\n\nOur vision is to transparently lead the world to secure outcomes.\n\nOur mission is to enable everyone to innovate and succeed on a safe, secure, and trusted DevSecOps platform. This will be achieved through 5 security operating principles:\n\nAccelerate business success with a focus on: Prioritize ‘boring’, iterative solutions that minimize risk Find ways to say Yes Understand goals before recommending solutions Use GitLab first\n\nPrioritize ‘boring’, iterative solutions that minimize risk\n\nUnderstand goals before recommending solutions\n\nEfficient operations with a focus on: Technical controls over handbook rules Leverage automation first (robots over humans) Responsible decisions (Spending, Tooling, Staffing, etc) over low ROI (return on investment) decisions Reusable or repeatable over singular solutions\n\nTechnical controls over handbook rules\n\nLeverage automation first (robots over humans)\n\nResponsible decisions (Spending, Tooling, Staffing, etc) over low ROI (return on investment) decisions\n\nReusable or repeatable over singular solutions\n\nTransparency with a focus on: Responsible protection of MNPI (material non-public information) Evangelize dogfooding of GitLab publicly Lead with metrics Balance security with usefulness\n\nResponsible protection of MNPI (material non-public information)\n\nEvangelize dogfooding of GitLab publicly\n\nBalance security with usefulness",
+    "chunk_index": 0,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_1",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "ency with a focus on: Responsible protection of MNPI (material non-public information) Evangelize dogfooding of GitLab publicly Lead with metrics Balance security with usefulness\n\nResponsible protection of MNPI (material non-public information)\n\nEvangelize dogfooding of GitLab publicly\n\nBalance security with usefulness\n\nRisk Reduction with a focus on: Secure by default Preventative controls over detective controls Solving root causes over treating symptoms Visibility through Coverage, Discoverability, Observability\n\nPreventative controls over detective controls\n\nSolving root causes over treating symptoms\n\nVisibility through Coverage, Discoverability, Observability\n\nCollaborative Culture with a focus on: Working together on common solutions Solve shared problems with shared solutions Simplifying language for everyone to understand Avoiding security jargon Seek opportunities to help others succeed\n\nWorking together on common solutions\n\nSolve shared problems with shared solutions\n\nSimplifying language for everyone to understand\n\nAvoiding security jargon\n\nSeek opportunities to help others succeed\n\nThe Security Division provides essential security operational services, is directly engaged in the development and release processes, and offers consultative and advisory services to better enable the business to function while minimising risk.\n\nTo reflect this, we have structured the Security Division around four key tenets, which drive the structure and the activities of our group. These are :",
+    "chunk_index": 1,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_2",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "ectly engaged in the development and release processes, and offers consultative and advisory services to better enable the business to function while minimising risk.\n\nTo reflect this, we have structured the Security Division around four key tenets, which drive the structure and the activities of our group. These are :\n\nApplication Security Infrastructure Security Security Platforms and Architecture Vulnerability Management Data Security\n\nInfrastructure Security\n\nSecurity Platforms and Architecture\n\nVulnerability Management\n\nSecurity Incident Response Team (SIRT) Trust and Safety Red Team Threat Intelligence Signals Engineering Security Logging\n\nSecurity Incident Response Team (SIRT)\n\nCorporate Security Helpdesk Support Tech Stack Systems Engineering Teams\n\nField Security Security Compliance Security Governance Security Risk\n\nSecure the Product - The Product Security Department\n\nThe Product Security Department is primarily focused on Securing the Product. This reflects the Security Division’s current efforts to be involved in the Application development and Release cycle for Security Releases, Infrastructure Security, and our HackerOne bug bounty program.",
+    "chunk_index": 2,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_3",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "uct - The Product Security Department\n\nThe Product Security Department is primarily focused on Securing the Product. This reflects the Security Division’s current efforts to be involved in the Application development and Release cycle for Security Releases, Infrastructure Security, and our HackerOne bug bounty program.\n\nThe term “Product” is interpreted broadly and includes the GitLab application itself and all other integrations and code that is developed internally to support the GitLab application for the multi-tenant SaaS. Our responsibility is to ensure all aspects of GitLab that are exposed to customers or that host customer data are held to the highest security standards, and to be proactive and responsive to ensure world-class security in anything GitLab offers.\n\nProtect the Company - The Security Operations Department\n\nSecurity Operations Department teams are primarily focused on protecting GitLab the business and GitLab’s platform. This encompasses protecting company property as well as to prevent, detect and respond to risks and events targeting the business and our platform. This department includes the Security Incident Response Team (SIRT) and the Trust and Safety team.\n\nThese functions have the responsibility of shoring up and maintaining the security posture of GitLab’s platform to ensure enterprise-level security is in place to protect our new and existing customers.\n\nLead with Data - The Threat Management Department",
+    "chunk_index": 3,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_4",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "rity Incident Response Team (SIRT) and the Trust and Safety team.\n\nThese functions have the responsibility of shoring up and maintaining the security posture of GitLab’s platform to ensure enterprise-level security is in place to protect our new and existing customers.\n\nLead with Data - The Threat Management Department\n\nThreat Management Department teams are cross-functional. They are responsible for collaborating across the Security Division to identify, communicate, and remediate threats or vulnerabilities that may impact GitLab, our Team Members or our users and the community at large.\n\nAssure the Customer - The Security Assurance Department\n\nThe Security Assurance Department is comprised of the teams noted above. They target Customer Assurance projects among their responsibilities. This reflects the need for us to provide resources to our customers to assure them of the security and safety of GitLab as an application to use within their organisation and as a enterprise-level SaaS. This also involves providing appropriate support, services and resources to customers so that they trust GitLab as a Secure Company, as a Secure Product, and Secure SaaS\n\nProtect the Organization - Corporate Security",
+    "chunk_index": 4,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_5",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "and safety of GitLab as an application to use within their organisation and as a enterprise-level SaaS. This also involves providing appropriate support, services and resources to customers so that they trust GitLab as a Secure Company, as a Secure Product, and Secure SaaS\n\nProtect the Organization - Corporate Security\n\nGitLab is both a company and a product. The Corporate Security department focuses on implementing and protecting the information technology (IT) related systems that the company uses to conduct business internally, and provides the hardware, software, and tools that our team members and 3rd party service providers (aka contractors) need to be productive and get their job done efficiently. The configurations that we implement for team members internally are designed to protect our customers and their data.\n\nWe have a 24x5 technical support helpdesk for team members and have engineers that configure and maintain many of our company-wide tech stack applications .\n\nWe invest heavily in device trust, identity management, and infrastructure governance to provide the highest level of security assurance for the administrators of our product and ensure all appropriate controls are in place when handling customer data.\n\nOther groups and individuals\n\nIn keeping with our core values and the belief that everyone can contribute , the Security Division is committed to dogfooding and contributing to the development of the GitLab product.\n\nReporting vulnerabilities and security issues",
+    "chunk_index": 5,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_6",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "riate controls are in place when handling customer data.\n\nOther groups and individuals\n\nIn keeping with our core values and the belief that everyone can contribute , the Security Division is committed to dogfooding and contributing to the development of the GitLab product.\n\nReporting vulnerabilities and security issues\n\nFor information regarding GitLab’s HackerOne bug bounty program , and creating and scheduling security issues, please see our engaging with security page and our Responsible Disclosure Policy .\n\nReporting an Incident\n\nIf an urgent security incident has been identified or you suspect an incident may have occurred, please refer to Engaging the Security Engineer On-Call .  Examples include, but are not limited to:\n\nLost or stolen devices\n\nEndpoint compromise or infection\n\nExposure of sensitive GitLab data\n\nGitLab provides a panic@gitlab.com email address for team members to use in situations when Slack is inaccessible and immediate security response is required.\n\nThis email address is only accessible to GitLab team members and can be reached from their gitlab.com or personal email address as listed in Workday. Using this address provides an excellent way to limit the damage caused by a loss of one of these devices.\n\nAdditionally if a GitLab team member experiences a personal emergency the People Group also provides an emergency contact email .\n\nSub-groups and projects\n\nMany teams follow a convention of having a GitLab group team-name-team with a primary project used for issue tracking underneath team-name or similar.",
+    "chunk_index": 6,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_7",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "ese devices.\n\nAdditionally if a GitLab team member experiences a personal emergency the People Group also provides an emergency contact email .\n\nSub-groups and projects\n\nMany teams follow a convention of having a GitLab group team-name-team with a primary project used for issue tracking underneath team-name or similar.\n\n@gitlab-com/gl-security is used for @‘mentioning the entire Security Division\n\n@gitlab-com/gl-security/security-managers is used for @‘mentioning all managers in the Security Division\n\nSecurity Division Meta is for Security Division initiatives, ~meta and backend tasks, and catch all for anything not covered by other projects\n\nSecurity Assurance (@gitlab-com/gl-security/security-assurance) @gitlab-com/gl-security/security-assurance/sec-compliance @gitlab-com/gl-security/security-assurance/field-security-team @gitlab-com/gl-security/security-assurance/security-risk-team @gitlab-com/gl-security/security-assurance/governance\n\n@gitlab-com/gl-security/security-assurance/sec-compliance\n\n@gitlab-com/gl-security/security-assurance/field-security-team\n\n@gitlab-com/gl-security/security-assurance/security-risk-team\n\n@gitlab-com/gl-security/security-assurance/governance",
+    "chunk_index": 7,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_8",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "urance/security-risk-team @gitlab-com/gl-security/security-assurance/governance\n\n@gitlab-com/gl-security/security-assurance/sec-compliance\n\n@gitlab-com/gl-security/security-assurance/field-security-team\n\n@gitlab-com/gl-security/security-assurance/security-risk-team\n\n@gitlab-com/gl-security/security-assurance/governance\n\nProduct Security (@gitlab-com/gl-security/product-security) Product Security Meta For department wide management and planning issues. @gitlab-com/gl-security/product-security/appsec is the primary group for @‘mentioning the Application Security team. @gitlab-com/gl-security/product-security/appsec/psirt-group is the primary group for @‘mentioning the Product Security Incident Response Team (PSIRT) @gitlab-com/gl-security/security-research @gitlab-com/gl-security/threatmanagement/vulnerability-management\n\nProduct Security Meta For department wide management and planning issues.\n\n@gitlab-com/gl-security/product-security/appsec is the primary group for @‘mentioning the Application Security team.\n\n@gitlab-com/gl-security/product-security/appsec/psirt-group is the primary group for @‘mentioning the Product Security Incident Response Team (PSIRT)\n\n@gitlab-com/gl-security/security-research\n\n@gitlab-com/gl-security/threatmanagement/vulnerability-management",
+    "chunk_index": 8,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_9",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "imary group for @‘mentioning the Application Security team.\n\n@gitlab-com/gl-security/product-security/appsec/psirt-group is the primary group for @‘mentioning the Product Security Incident Response Team (PSIRT)\n\n@gitlab-com/gl-security/security-research\n\n@gitlab-com/gl-security/threatmanagement/vulnerability-management\n\nSecurity Operations (@gitlab-com/gl-security/security-operations) Security Operations Department @gitlab-com/gl-security/security-operations/sirt is the primary group for @‘mentioning the Security Incident Response Team (SIRT). SIRT (private) for SIRT issues. @gitlab-com/gl-security/security-operations/trust-and-safety is the primary group for @‘mentioning the Trust & Safety team. @gitlab-com/gl-security/security-operations/redteam\n\n@gitlab-com/gl-security/security-operations/sirt is the primary group for @‘mentioning the Security Incident Response Team (SIRT). SIRT (private) for SIRT issues.\n\nSIRT (private) for SIRT issues.\n\n@gitlab-com/gl-security/security-operations/trust-and-safety is the primary group for @‘mentioning the Trust & Safety team.\n\n@gitlab-com/gl-security/security-operations/redteam",
+    "chunk_index": 9,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_10",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "he primary group for @‘mentioning the Security Incident Response Team (SIRT). SIRT (private) for SIRT issues.\n\nSIRT (private) for SIRT issues.\n\n@gitlab-com/gl-security/security-operations/trust-and-safety is the primary group for @‘mentioning the Trust & Safety team.\n\n@gitlab-com/gl-security/security-operations/redteam\n\nCorporate Security (@gitlab-com/gl-security/corp) Functional Teams Org Chart Issue Tracker @gitlab-com/gitlab-com/gl-security/corp/managers - Management Team @gitlab-com/gitlab-com/gl-security/corp/helpdesk - End User Services Helpdesk Team (see Support Handbook Page ) @gitlab-com/gitlab-com/gl-security/corp/logistics - Laptop and Phone Logistics @gitlab-com/gitlab-com/gl-security/corp/code - Code Platforms Engineering @gitlab-com/gitlab-com/gl-security/corp/device - Device Trust Engineering @gitlab-com/gitlab-com/gl-security/corp/identity - Identity Engineering @gitlab-com/gitlab-com/gl-security/corp/infra - Infrastructure Governance Engineering @gitlab-com/gitlab-com/gl-security/corp/saas - SaaS and Tech Stack Engineering (shared responsibility handled by Device Trust and Identity Teams) @gitlab-com/gitlab-com/gl-security/corp/dept - Entire Department\n\nFunctional Teams Org Chart\n\n@gitlab-com/gitlab-com/gl-security/corp/managers - Management Team\n\n@gitlab-com/gitlab-com/gl-security/corp/helpdesk - End User Services Helpdesk Team (see Support Handbook Page )\n\n@gitlab-com/gitlab-com/gl-security/corp/logistics - Laptop and Phone Logistics\n\n@gitlab-com/gitlab-com/gl-security/corp/code - Code Platforms Engineering",
+    "chunk_index": 10,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_11",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "tlab-com/gl-security/corp/managers - Management Team\n\n@gitlab-com/gitlab-com/gl-security/corp/helpdesk - End User Services Helpdesk Team (see Support Handbook Page )\n\n@gitlab-com/gitlab-com/gl-security/corp/logistics - Laptop and Phone Logistics\n\n@gitlab-com/gitlab-com/gl-security/corp/code - Code Platforms Engineering\n\n@gitlab-com/gitlab-com/gl-security/corp/device - Device Trust Engineering\n\n@gitlab-com/gitlab-com/gl-security/corp/identity - Identity Engineering\n\n@gitlab-com/gitlab-com/gl-security/corp/infra - Infrastructure Governance Engineering\n\n@gitlab-com/gitlab-com/gl-security/corp/saas - SaaS and Tech Stack Engineering (shared responsibility handled by Device Trust and Identity Teams)\n\n@gitlab-com/gitlab-com/gl-security/corp/dept - Entire Department\n\n#security_help : The catch-all channel for security questions that are not direct support requests. If you’re not sure where to go, start here.\n\n#it_help : For all your internal end user support needs and CorpSec support needs. All support related questions and requests should be directed here.\n\n#security_discuss : Security discussions, announcements, and regular updates from the security teams. This is a good channel for cross-function collaboration with internal transparency.\n\n#abuse : Used for reporting suspected abusive activity/content ( GitLab Internal ) as well as general discussions regarding anti-abuse efforts. Use @trust-and-safety in the channel to alert the team to anything urgent.\n\n#ciso : For general communication from our CISO and CISO Directs. Team and division updates and other topics.",
+    "chunk_index": 11,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_12",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "Used for reporting suspected abusive activity/content ( GitLab Internal ) as well as general discussions regarding anti-abuse efforts. Use @trust-and-safety in the channel to alert the team to anything urgent.\n\n#ciso : For general communication from our CISO and CISO Directs. Team and division updates and other topics.\n\nThe following group tags can help you get the attention of a specific department, team, or specialty:\n\nPrimary Security departments :\n\n@security-assurance : Contains all members of the Security Assurance department.\n\n@security-corpsec : Contains all members of the Corporate Security department.\n\n@security-prodsec : Contains all members for the Product Security department.\n\n@security-operations : Contains all members of the Security Operations department. If you need to open a security incident, please use the Slack slash command /security instead of a tag.\n\nLeadership and program support :\n\n@security-leadership : All Security people-managers\n\n@security-program-mgmt : All security program management team members\n\nSpecific teams and specialties :\n\n@fedramp-compliance : All SecAssurance members that support FedRAMP\n\n@security-governance : All members of the Security Governance team\n\n@sirt-members : All members of the Security Incident Response Team (SIRT)\n\n@sec-assurance-team : All members of the Security Compliance, Risk, and Governance & Field Security teams\n\n@field-security : All members of the Field Security team\n\n@appsec-team : All members of the Application Security team\n\n@trust-and-safety : All members of the Trust & Safety team",
+    "chunk_index": 12,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_13",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "rity Incident Response Team (SIRT)\n\n@sec-assurance-team : All members of the Security Compliance, Risk, and Governance & Field Security teams\n\n@field-security : All members of the Field Security team\n\n@appsec-team : All members of the Application Security team\n\n@trust-and-safety : All members of the Trust & Safety team\n\n@security-identity : All members of the Identity team\n\n@red-team : All members of GitLab’s Red Team\n\n@threat-intelligence : All members of GitLab’s Threat Intelligence team\n\nDivision, Department, and Team updates\n\nWe believe it is important to share regular updates at various levels of the Security Division, and we use Slack as the primary mechanism for providing these updates. Our updates are open to all GitLab team members using the following process:\n\nStart of each month: A thread per-department is started in #security_discuss by each department leader (CorpSec, ProdSec, SecAssurance, SecOps). These threads are pinned for the duration of the month. Thread template: <MONTH> <DEPARMENT> Weekly Updates Example: August Product Security Weekly Updates\n\nThread template: <MONTH> <DEPARMENT> Weekly Updates Example: August Product Security Weekly Updates\n\n<MONTH> <DEPARMENT> Weekly Updates\n\nExample: August Product Security Weekly Updates",
+    "chunk_index": 13,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_14",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "ned for the duration of the month. Thread template: <MONTH> <DEPARMENT> Weekly Updates Example: August Product Security Weekly Updates\n\nThread template: <MONTH> <DEPARMENT> Weekly Updates Example: August Product Security Weekly Updates\n\n<MONTH> <DEPARMENT> Weekly Updates\n\nExample: August Product Security Weekly Updates\n\nWeekly: At least once a week, teams provide updates they wish to share within the appropriate thread. For example, updates from Vulnerability Management would be placed in the Product Security thread for the given month. These weekly updates, while highly encouraged, are strictly optional and should represent content that ICs and managers feel should be highlighted. Teams are encouraged to define processes and DRIs around these updates that work for them. Individuals providing the weekly updates are encouraged to use the “Also send to #security_discuss” option within the thread to increase visibility.\n\nThese weekly updates, while highly encouraged, are strictly optional and should represent content that ICs and managers feel should be highlighted. Teams are encouraged to define processes and DRIs around these updates that work for them.\n\nIndividuals providing the weekly updates are encouraged to use the “Also send to #security_discuss” option within the thread to increase visibility.",
+    "chunk_index": 14,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_15",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "and should represent content that ICs and managers feel should be highlighted. Teams are encouraged to define processes and DRIs around these updates that work for them.\n\nIndividuals providing the weekly updates are encouraged to use the “Also send to #security_discuss” option within the thread to increase visibility.\n\nEnd of each month: Departmental leaders prepare a monthly update, including no more than three updates per team , and post it in #ciso within the first week of the following month. Each monthly update should include a brief preface written by the departmental leader covering any notable themes or other strategic updates. Each of the three updates per-team should be no more than 2-3 sentences and include at least one link to allow readers to gain additional context. Links should be to GitLab Issues or Epics wherever possible. If information is confidential and not able to be added to an Issue or Epic, a note should be added indicating this. It is recommended that departmental leaders build their monthly update over the course of the month via a GitLab issue ( see an example ) in collaboration with their managers and senior ICs.\n\nEach monthly update should include a brief preface written by the departmental leader covering any notable themes or other strategic updates.",
+    "chunk_index": 15,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_16",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "nded that departmental leaders build their monthly update over the course of the month via a GitLab issue ( see an example ) in collaboration with their managers and senior ICs.\n\nEach monthly update should include a brief preface written by the departmental leader covering any notable themes or other strategic updates.\n\nEach of the three updates per-team should be no more than 2-3 sentences and include at least one link to allow readers to gain additional context. Links should be to GitLab Issues or Epics wherever possible. If information is confidential and not able to be added to an Issue or Epic, a note should be added indicating this.\n\nIt is recommended that departmental leaders build their monthly update over the course of the month via a GitLab issue ( see an example ) in collaboration with their managers and senior ICs.\n\nTwice-Monthly Security Leadership Meetings\n\nSecurity Leadership meets twice a month over Zoom to discuss division-wide topics. Individual contributors from across the security organization are invited to present their work, ideas, or projects to this leadership forum.\n\nIf you’re interested in presenting:\n\nDiscuss the topic with your manager first\n\nYour manager will help you: Add your topic to the agenda with supporting materials Request an appropriate time slot (5-25 minutes) Coordinate scheduling your presentation\n\nAdd your topic to the agenda with supporting materials\n\nRequest an appropriate time slot (5-25 minutes)\n\nCoordinate scheduling your presentation",
+    "chunk_index": 16,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_17",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "st\n\nYour manager will help you: Add your topic to the agenda with supporting materials Request an appropriate time slot (5-25 minutes) Coordinate scheduling your presentation\n\nAdd your topic to the agenda with supporting materials\n\nRequest an appropriate time slot (5-25 minutes)\n\nCoordinate scheduling your presentation\n\nNote that these meetings are not on the general Security calendar. Your manager will ensure you receive the meeting invitation for your scheduled time.\n\nWe encourage all team members to take advantage of this opportunity to share your work and insights with security leadership.\n\nFor an overview of the communication and response process for a suspected ransomware attack, please see our Responding to Ransomware page.\n\nThe following best practices will help ensure tokens are handled appropriately at GitLab. For detailed requirements regarding the use of tokens at GitLab, please see our token management standard .\n\nWhen creating a Personal Access Token , be sure to choose the appropriate scopes that only have the permissions that are absolutely necessary.\n\nOftentimes a Project Access Token might be sufficient instead of a Personal Access Token. Project Access Tokens have a much more limited scope and should be preferred over Personal Access Tokens whenever possible.\n\nAlways set an expiration for your tokens when creating them. Tokens should preferably expire in a matter of hours or a day.",
+    "chunk_index": 17,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_18",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "ct Access Token might be sufficient instead of a Personal Access Token. Project Access Tokens have a much more limited scope and should be preferred over Personal Access Tokens whenever possible.\n\nAlways set an expiration for your tokens when creating them. Tokens should preferably expire in a matter of hours or a day.\n\nBe mindful to keep these personal access tokens secret. Be particularly careful not to accidentally commit them in configuration files, paste them into issue or merge request comments, or otherwise expose them.\n\nPlease consider periodically reviewing your currently active Personal Access Tokens and revoking any that are no longer needed.\n\nPersonal Access Tokens will be highly discouraged within the GitLab production environment, and disallowed/disabled wherever possible. Existing tokens shall remain, but additional issuance will not be permissible/possible.\n\nIf you believe a personal access token has been leaked, revoke it immediately (if possible) and contact the security team using the /security Slack command.\n\nReceive notification of security releases\n\nTo receive security release blog notifications delivered to your inbox, visit our contact us page.\n\nTo receive release notifications via RSS, subscribe to our security release RSS feed or our RSS feed for all releases .\n\nFor additional information regarding security releases, please visit the Delivery Team’s security releases page.",
+    "chunk_index": 18,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_19",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "curity release blog notifications delivered to your inbox, visit our contact us page.\n\nTo receive release notifications via RSS, subscribe to our security release RSS feed or our RSS feed for all releases .\n\nFor additional information regarding security releases, please visit the Delivery Team’s security releases page.\n\nIncident-Tools (private) for working scripts and other code during or while remediating an incident.\nIf the tool is applicable outside of the GitLab.com environment, consider\nif it’s possible to release when the ~security issue becomes\nnon-confidential. This group can also be used for private demonstration projects for\nsecurity issues.\n\nsecurity-tools (mostly private) contains some\noperational tools used by the security teams. Contents and/or configurations\nrequire that most of these projects remain private.\n\nWe welcome GitLab team members to join meetings that are on our shared Security Calendar .\n\nOther Frequently Used GitLab.com Projects\n\nSecurity crosses many teams in the company, so you will find ~security labeled\nissues across all GitLab projects, especially:\n\nWhen opening issues, please follow the Creating New Security Issues process for using labels and the confidential flag.\n\nOther Resources for GitLab Team Members\n\nSecurity Best Practices, using 1Password and similar tools, are documented\non their own security best practices page.\n\nSecure Coding Training .\n\nGitLab.com data breach notification policy .\n\nGitLab Internal Acceptable Use Policy .",
+    "chunk_index": 19,
+    "total_chunks": 21
+  },
+  {
+    "chunk_id": "8df68b9ad50e_20",
+    "url": "https://handbook.gitlab.com/handbook/security",
+    "title": "Security at GitLab",
+    "source": "handbook",
+    "headings": [
+      "Security at GitLab",
+      "Security Vision and Mission",
+      "Division Structure",
+      "Product development",
+      "Contacting the Team"
+    ],
+    "text": "ess for using labels and the confidential flag.\n\nOther Resources for GitLab Team Members\n\nSecurity Best Practices, using 1Password and similar tools, are documented\non their own security best practices page.\n\nSecure Coding Training .\n\nGitLab.com data breach notification policy .\n\nGitLab Internal Acceptable Use Policy .\n\nFor GitLab.com, we have developed a Google Cloud Platform (GCP) Security Guidelines Policy document, which outlines recommended best practices, and is enforced through\nour security automation initiatives.\n\nGitLab Security Tanuki for use on security release blogs, social media and security related swag as appropriate: Web-RGB Print-CMYK and one exclusively for stickers .\n\nand one exclusively for stickers .\n\nContributing to GitLab the product as a Security team member",
+    "chunk_index": 20,
+    "total_chunks": 21
+  }
+]

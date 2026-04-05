@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "a17daab767c7_0",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/dedicated_runners",
+    "title": "Hosted runners for GitLab Dedicated",
+    "source": "handbook",
+    "headings": [
+      "Hosted runners for GitLab Dedicated",
+      "Hosted runners",
+      "Who is using Hosted Runners?",
+      "Viewing Logs",
+      "Monitoring"
+    ],
+    "text": "Hosted runners for GitLab Dedicated\n\nHosted Runners for GitLab Dedicated is a product first offered to GitLab Dedicated customers\nfor beta testing in Q4 FY25, with a general availability target of Q2 FY26.\n\nWho is using Hosted Runners?\n\nTo identify if a customer is using Hosted Runners, use Switchboard.\n\nLog in to Switchboard – all Support Engineers can access Switchboard\n\nClick Manage next to the tenant that you’re interested in\n\nLook for Hosted runners at the top (If you do not see Hosted runners , that tenant isn’t using Hosted runners for GitLab Dedicated)\n\ngitlab-runner and systemd logs are available in OpenSearch\nalongside the GitLab Dedicated application logs .\n\nTo view on Runner-related logs only:\n\nFilter generally with fluentd_tag:cloudwatch.*\n\nObtain the more exact fluentd_tag:cloudwatch.<name>-fleeting-logs ,\nfrom the _source column of initial results, and apply it.\nThe <name> is a customer-specific value (attribute of CommonProperties on Runner Model ),\nbut is not yet available in Switchboard.\n\nUsing that same prefix based on cloudwatch.<name> manager-logs are available as well.\n\nFor job logs reach out to the customer.\n\nMonitoring Hosted Runners is done in Grafana. Details on how to access Grafana are available in GitLab Dedicated Observability and Monitoring (Grafana) .\n\nOnce in Grafana, go to Dashboards and search the Hosted Runner(s) Overview dashboard. This dashboard has plots on different runner metrics.\nThe dashboard is available for all tenants but is only populated if Hosted Runners are being used by the customer.",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "a17daab767c7_1",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/dedicated_runners",
+    "title": "Hosted runners for GitLab Dedicated",
+    "source": "handbook",
+    "headings": [
+      "Hosted runners for GitLab Dedicated",
+      "Hosted runners",
+      "Who is using Hosted Runners?",
+      "Viewing Logs",
+      "Monitoring"
+    ],
+    "text": "ble in GitLab Dedicated Observability and Monitoring (Grafana) .\n\nOnce in Grafana, go to Dashboards and search the Hosted Runner(s) Overview dashboard. This dashboard has plots on different runner metrics.\nThe dashboard is available for all tenants but is only populated if Hosted Runners are being used by the customer.\n\nGitLab Hosted Runners are created on ec2 AWS instances.\n\nDedicated team Hosted Runner Model\n\nDedicated team Hosted Runner technical document",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

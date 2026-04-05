@@ -1,0 +1,130 @@
+[
+  {
+    "chunk_id": "b2f9d308b118_0",
+    "url": "https://handbook.gitlab.com/handbook/product/cross-stage-features/work-items",
+    "title": "Collaboration on work items framework",
+    "source": "handbook",
+    "headings": [
+      "Collaboration on work items framework",
+      "Background",
+      "Why use the work items framework?",
+      "What functionality is available?",
+      "Where is the work items framework used?"
+    ],
+    "text": "Collaboration on work items framework\n\nA work item is a discrete task or unit of work that needs to be completed as part of a larger project or workflow. It represents a discrete piece of work that contributes to achieving a goal or delivering a desired outcome. Work items are part of many use cases like Agile Planning, ITSM, and Security Management.\nPreviously, GitLab had different implementations for work items. Examples include Epics, Issues, Requirements, Incidents, and Vulnerabilities. This approach led to frustration from users due to the inconsistent experience, and the Plan stage decided to build a framework to support all work items in GitLab. This guide describes the functionality available, how to use it, and the best approach to contribute to the framework.\n\nWhy use the work items framework?\n\nThe work items framework provides a consistent approach to creating work item objects for teams to plan and organize their work in GitLab. Consumers of the framework will benefit from the efficiency of using a framework with comprehensive out of the box functionality that is easily extendable.\n\nWhat functionality is available?\n\nThe work items framework provides a base work item object with options to extend functionality using widgets . Additional work item data and functionality is encapsulated within a widget. For example, the WorkItemWidgetAssignees enables user assignment.\n\nYou can see the list of available widgets here . Each widget, except for the core work item object, can be turned on or off for each work item type.",
+    "chunk_index": 0,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b2f9d308b118_1",
+    "url": "https://handbook.gitlab.com/handbook/product/cross-stage-features/work-items",
+    "title": "Collaboration on work items framework",
+    "source": "handbook",
+    "headings": [
+      "Collaboration on work items framework",
+      "Background",
+      "Why use the work items framework?",
+      "What functionality is available?",
+      "Where is the work items framework used?"
+    ],
+    "text": "nctionality using widgets . Additional work item data and functionality is encapsulated within a widget. For example, the WorkItemWidgetAssignees enables user assignment.\n\nYou can see the list of available widgets here . Each widget, except for the core work item object, can be turned on or off for each work item type.\n\nThe work items framework also provides an out-of-the-box work item detail view and work items can be displayed in the Issues list if desired.\n\nWhere is the work items framework used?\n\nThe work items framework is currently used in several features; including Tasks and OKRs .\n\nWork is ongoing to convert existing objects to Work Item Types, and implement new ones; for example Issues and Epics .\n\nA comprehensive list of Work Item Types currently implemented and being implemented is available in the Architecture Blueprint .\n\nWhat functionality is on the roadmap for the work items framework?\n\nYou can see new functionality planned in the Plan stage direction page and in our GitLab issue tracker .\n\nWhat is out of scope for the work items framework?\n\nOur goal is to increase the consistency in GitLab, so all work items should use the same work item detail view.\n\nWe want to encourage teams to contribute to the framework directly instead of building separate views or extensions.\n\nFirst, you will need to consider whether the work items framework is right for your feature, including your users and the experience they require. You can read about that process here .",
+    "chunk_index": 1,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b2f9d308b118_2",
+    "url": "https://handbook.gitlab.com/handbook/product/cross-stage-features/work-items",
+    "title": "Collaboration on work items framework",
+    "source": "handbook",
+    "headings": [
+      "Collaboration on work items framework",
+      "Background",
+      "Why use the work items framework?",
+      "What functionality is available?",
+      "Where is the work items framework used?"
+    ],
+    "text": "em detail view.\n\nWe want to encourage teams to contribute to the framework directly instead of building separate views or extensions.\n\nFirst, you will need to consider whether the work items framework is right for your feature, including your users and the experience they require. You can read about that process here .\n\nAll contributions begin with the Validation backlog and Problem validation phases. During these phases, the Plan stage PMs should be Informed of upcoming validation activities and Consulted during problem validation. These are critical opportunities to collaborate with us and ensure that your ask is not overlapping with future roadmap items and is not against the guiding principles.\n\nWhat do R, A, C, and I mean?\n\nYour group has the appropriate freedom as Responsible and Accountable , as it’s too early to know if a problem is worth solving through the work items framework. But, in the cases where your group assumes that the work items framework could be the right avenue to address the problem at hand, we only ask to be Informed , so one-way communication.\n\nWe’re Consulted , meaning that we can point you to existing research, similar problems, and more. We care about this phase because it’s our chance to influence how much of the work items framework could be affected by potential solutions. Depending on the nature of the functionality being built, one GM/PM from the Plan stage will be selected as DRI for collaboration.\n\nAt the end of this phase, we will work with your group to determine a contribution model.",
+    "chunk_index": 2,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b2f9d308b118_3",
+    "url": "https://handbook.gitlab.com/handbook/product/cross-stage-features/work-items",
+    "title": "Collaboration on work items framework",
+    "source": "handbook",
+    "headings": [
+      "Collaboration on work items framework",
+      "Background",
+      "Why use the work items framework?",
+      "What functionality is available?",
+      "Where is the work items framework used?"
+    ],
+    "text": "chance to influence how much of the work items framework could be affected by potential solutions. Depending on the nature of the functionality being built, one GM/PM from the Plan stage will be selected as DRI for collaboration.\n\nAt the end of this phase, we will work with your group to determine a contribution model.\n\nIf you decide to use the work items framework this will usually mean that you’re creating a new work item type and/or creating new widgets. Sometimes, all functionality you need will already be in the framework. Hooray! If not, you can contribute to the framework to extend it for your use case .\n\nWe’re Consulted , meaning that we want to involved in shaping the solution. Plan team members have a broader view of the problems and use cases that the work items framework is solving. The PM and UX team can help shape the solution so that it is as generic as possible and can provide value to more than one use case.\n\nWe strive to build a framework that can easily be built upon and we only need to be Informed during this phase. However, we are here to help with implementation if your team needs support.\n\nCreating a new work item type\n\nIf your group would like a particular work item type to describe your user’s work, you can create a new work item type. Creating a new work item type sets the foundation for adding widgets that are specific to data and behavior for your use case. For example, OKRs have a progress widget that is not present in other work item types.",
+    "chunk_index": 3,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b2f9d308b118_4",
+    "url": "https://handbook.gitlab.com/handbook/product/cross-stage-features/work-items",
+    "title": "Collaboration on work items framework",
+    "source": "handbook",
+    "headings": [
+      "Collaboration on work items framework",
+      "Background",
+      "Why use the work items framework?",
+      "What functionality is available?",
+      "Where is the work items framework used?"
+    ],
+    "text": "would like a particular work item type to describe your user’s work, you can create a new work item type. Creating a new work item type sets the foundation for adding widgets that are specific to data and behavior for your use case. For example, OKRs have a progress widget that is not present in other work item types.\n\nYou can see an example of the solution validation and build planning process in this epic . Here the PM defined the data elements and behavior desired in the Objective and Key Result work item type.\n\nFor details on the technical implementation process, please refer to our documentation . You can see an example of the implementation in the introduction of OKRs:\n\nBackend Work to add Objective and Key Result Work Item Types\n\nBackend work to support creation of objectives behind feature flag\n\nFrontend work to support creation of Objectives & include them in Issue lists\n\nContributing to the Work Items framework\n\nThe Work Items framework is at the core of planning and collaboration in GitLab, and we welcome contributions from other teams. To help you integrate new widgets or data elements successfully, this page outlines the main considerations. Depending on the scope of your contribution, you might not need to address every point. However, reviewing them all ensures that your feature is robust, user-friendly, and consistent with the rest of GitLab. Tip: Follow GitLab’s work items architecture vision and engineering best practices to ensure architectural alignment.\n\nGeneral considerations",
+    "chunk_index": 4,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b2f9d308b118_5",
+    "url": "https://handbook.gitlab.com/handbook/product/cross-stage-features/work-items",
+    "title": "Collaboration on work items framework",
+    "source": "handbook",
+    "headings": [
+      "Collaboration on work items framework",
+      "Background",
+      "Why use the work items framework?",
+      "What functionality is available?",
+      "Where is the work items framework used?"
+    ],
+    "text": "r contribution, you might not need to address every point. However, reviewing them all ensures that your feature is robust, user-friendly, and consistent with the rest of GitLab. Tip: Follow GitLab’s work items architecture vision and engineering best practices to ensure architectural alignment.\n\nGeneral considerations\n\n• Quick actions : Ensure the widget can be updated via quick actions • GraphQL API integration : Provide queries and mutations for programmatic access • Bulk editing support : Verify your widget can be included in bulk edits (e.g., for issues)\n\n• Inclusion in global search : Make it discoverable via GitLab’s global search (Open an global search feature request issue and add applicable details) • Filtering/sorting options : Where applicable, add filter/sort options for boards, lists, or roadmaps • Indexing : Confirm that data is indexed for quick retrieval • GLQL : Ensure your widget can be used as a filter option, where applicable, in GitLab Query Language (GLQL)\n\n• Lists and Boards : If recommended by UX, display widget info in lists and boards; provide sidebar editing and list creation capabilities • Roadmaps and Detail Pages : Include the widget on roadmap cards and in appropriate sections of work item detail pages (including child/linked items)\n\nRollup and Aggregation",
+    "chunk_index": 5,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b2f9d308b118_6",
+    "url": "https://handbook.gitlab.com/handbook/product/cross-stage-features/work-items",
+    "title": "Collaboration on work items framework",
+    "source": "handbook",
+    "headings": [
+      "Collaboration on work items framework",
+      "Background",
+      "Why use the work items framework?",
+      "What functionality is available?",
+      "Where is the work items framework used?"
+    ],
+    "text": "GLQL)\n\n• Lists and Boards : If recommended by UX, display widget info in lists and boards; provide sidebar editing and list creation capabilities • Roadmaps and Detail Pages : Include the widget on roadmap cards and in appropriate sections of work item detail pages (including child/linked items)\n\nRollup and Aggregation\n\n• Hierarchical rollup : Define if the widget’s values roll up to parent items (e.g., weight, progress) • Aggregation rules : Decide on summing, averaging, or other calculations; respect plan-based licensing rules • Summary views : Show aggregated data clearly on roadmaps, boards, or summary widgets\n\n• Interaction with other widgets : Specify if it affects or is affected by other widgets • Behavior on closure : Decide if it locks when a work item is closed • Data retention on cloning/moving : Define whether data persists when a work item is cloned or moved\n\n• Audit trail : Any changes to the widget should create system notes (epics, issues, tasks, etc.)\n\n• Handling of widget data : Decide how data is treated in group/project imports, transfers, or issue imports/exports\n\n• Live syncing : Changes to the widget should appear immediately in relevant views without requiring manual refreshes\n\nPermissions and Roles\n\n• Access levels : Ensure the widget respects role-based access (Guest, Reporter, Developer, Maintainer, Owner)\n\n• Ensure the widget is enabled by default for the corresponding work item types (unless the design calls for an opt-in behavior)",
+    "chunk_index": 6,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "b2f9d308b118_7",
+    "url": "https://handbook.gitlab.com/handbook/product/cross-stage-features/work-items",
+    "title": "Collaboration on work items framework",
+    "source": "handbook",
+    "headings": [
+      "Collaboration on work items framework",
+      "Background",
+      "Why use the work items framework?",
+      "What functionality is available?",
+      "Where is the work items framework used?"
+    ],
+    "text": "ly in relevant views without requiring manual refreshes\n\nPermissions and Roles\n\n• Access levels : Ensure the widget respects role-based access (Guest, Reporter, Developer, Maintainer, Owner)\n\n• Ensure the widget is enabled by default for the corresponding work item types (unless the design calls for an opt-in behavior)\n\nTip: If you’re unsure whether a particular item applies to your contribution, or if you need clarification on design, consult the Plan UX team and the Work Items PM. We’re here to help you ship features that delight GitLab users and fit seamlessly into the Work Items framework.\n\nCreating or modifying widgets\n\nWidgets encompass the specific data and behaviors that differentiate work items from each other. If you need to modify or add a new work item widget, refer to this page for the technical details on how to achieve this.\nYou can see an example of the implementation in the introduction of the dates widget . Note that this widget is planned to be used across several work item types.\n\nSometimes, your team will not have the capacity or expertise to contribute to the framework. That is OK! We still want to hear from you. Please create an issue describing your needs and tag the @gweaver, and @amandarueda.",
+    "chunk_index": 7,
+    "total_chunks": 8
+  }
+]

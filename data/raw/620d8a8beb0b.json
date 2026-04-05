@@ -1,0 +1,21 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/software-supply-chain-security/oncall/coverage-and-scheduling",
+  "title": "Coverage and Scheduling",
+  "content": "Coverage and Scheduling\n\nWhere Do I Find My Schedule?\n\nYour on-call schedule lives in Incident.io . This is our central source of truth.\n\nGo to Rotations or Schedule\n\nFind the SSCS team rotation\n\nFilter to see only your shifts (look for the filter option)\n\nSet calendar notifications\n\nSee who’s on-call this week, next week, and beyond\n\nA typical schedule shows:\n\nYour name or initials when you’re on-call\n\nThe dates and times of your shift\n\nYour rotation “slot” (which week you’re covering)\n\nWho’s on-call before and after you (helpful for handoffs)\n\nYour timezone coverage (APAC, EMEA, or AMER)\n\nUnderstanding the SSCS 24x5 Coverage Model\n\n24x5 (24 hours, 5 days)\n\nThe SSCS rotation provides coverage Monday-Friday, 24 hours each day. Coverage is split into three 8-hour regional blocks:\n\nAPAC (Best effort basis): UTC 23:00 - 07:00\n\nEMEA : UTC 07:00 - 15:00\n\nAMER : UTC 15:00 - 23:00\n\nYou’re expected to respond during your assigned 8-hour block, which should align closely with your normal work hours.\nBased on your residence (APAC, EMEA or AMER), you’ll be assigned to the region that matches your timezone.\nThis ensures someone knowledgeable is always available during their normal working hours.\n\nThe SSCS rotation covers three domains:\n\nAuthentication (group::authentication)\n\nAuthorization (group::authorization)\n\nPipeline Security (group::pipeline security)\n\nWhile you may specialize in one domain, you’re expected to provide initial triage for all SSCS issues and escalate to domain specialists as needed.\n\nThere are multiple types of rotations:\n\nTier 2 On Call — Tier 2 SME on Call specific to SSCS\n\nIMOC — Incident Manager On Call\n\nDev OnCall — Dev On Call\n\nThese should NOT be simultaneous . If you are in the IMOC rotation you should not be in the Tier 2 rotation and the reverse is also true.\n\nAre You in Multiple Rotations?\n\nIf you are currently in the IMOC rotation and you have been selected for Tier 2 do the following:\n\nConfirm with the tier2-sme-rollout slack channel that your offboarding will not negatively impact the IMOC rotation, if it does not then proceed with Offboarding from the IMOC rotation\n\nOnboard into the Tier 2 rotation\n\nHow Shifts Are Distributed Fairly\n\nYour rotation leader considers:\n\nEqual frequency — Everyone gets roughly the same number of shifts\n\nPredictability — Publishing schedules far in advance so you can plan\n\nHistorical load — Not putting the same person on-call too many times in a row\n\nRegional balance — Ensuring fair distribution within each timezone\n\nWhat If My Shift Gets Reassigned?\n\nOccasionally, circumstances require a change:\n\nSomeone calls out sick and needs coverage\n\nBusiness priorities shift\n\nThere’s an error in the schedule\n\nYou’ll get notified (usually by Slack or your rotation leader)\n\nYou might swap with someone else\n\nOr an override might be created to reassign that period\n\nYou should receive reasonable notice unless it’s an emergency\n\nViewing Future Coverage\n\nYou can typically see your on-call schedule:\n\n3-6 months in advance in Incident.io\n\nThis helps you plan vacation, major projects, etc.\n\nIf you have conflicts, let your rotation leader know early\n\nJoining and Leaving the Rotation — Understand rotation frequency by region\n\nTime Off and Holidays — Manage your scheduled time off\n\nRotation Leader — Contact your rotation leader about schedule changes",
+  "source": "handbook",
+  "headings": [
+    "Coverage and Scheduling",
+    "Where Do I Find My Schedule?",
+    "How to Access It",
+    "Reading the Schedule",
+    "Understanding the SSCS 24x5 Coverage Model",
+    "24x5 (24 hours, 5 days)",
+    "Domain Coverage",
+    "Multiple Rotations",
+    "Are You in Multiple Rotations?",
+    "How Shifts Are Distributed Fairly",
+    "What If My Shift Gets Reassigned?",
+    "Viewing Future Coverage",
+    "Related Pages"
+  ]
+}

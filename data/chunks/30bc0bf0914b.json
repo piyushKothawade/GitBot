@@ -1,0 +1,130 @@
+[
+  {
+    "chunk_id": "30bc0bf0914b_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/environments",
+    "title": "Infrastructure Environments",
+    "source": "handbook",
+    "headings": [
+      "Infrastructure Environments",
+      "Environments",
+      "Development",
+      "Demo",
+      ".org"
+    ],
+    "text": "Infrastructure Environments\n\nThe Terraform configuration for the environments can be found in config-mgmt .\n\nWe have a WIP initiative to iterate on our company-wide infrastructure standards. You can learn more about this on the infrastructure standards handbook page . This page will be refactored incrementally as the standards are documented, implemented, and changes to environments take place.\n\nWe have a WIP initiative to iterate on our company-wide infrastructure standards. You can learn more about this on the infrastructure standards handbook page .\n\nThis page will be refactored incrementally as the standards are documented, implemented, and changes to environments take place.\n\nDevelopment happens on a local machine. Therefore there is no way to provide any SLA. Access is to the individual dev. This could be either EE/CE depending on what the developer is working on.\n\n“GitLab Sales Demo Domains - Internal only” (found on the google drive)\n\nThis should be a fully featured version of the current EE release. The high SLA and tightened access is to ensure it is always available for sales. There are no features (feature flags/canary/etc) that we do not ship.\n\nProduction and build team\n\nThe main uses for the .org environment:\n\nBuilding official artifacts\n\nProviding build isolation for SOX compliance (located on different instance and infrastructure)\n\nCertifying SBOM and provenance\n\nControlling publishing of releases\n\nControlling synchronization with Canonical after publishing",
+    "chunk_index": 0,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "30bc0bf0914b_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/environments",
+    "title": "Infrastructure Environments",
+    "source": "handbook",
+    "headings": [
+      "Infrastructure Environments",
+      "Environments",
+      "Development",
+      "Demo",
+      ".org"
+    ],
+    "text": "roduction and build team\n\nThe main uses for the .org environment:\n\nBuilding official artifacts\n\nProviding build isolation for SOX compliance (located on different instance and infrastructure)\n\nCertifying SBOM and provenance\n\nControlling publishing of releases\n\nControlling synchronization with Canonical after publishing\n\nEnsuring the ability to release GitLab for Self-Managed customers in case of a total outage of GitLab.com\n\nThis is a critical piece of infrastructure that is always growing in size due to build artifacts. There are discussions to make a new build server where nightly CE/EE builds can be deployed or to move the infra repos to a new host that would be a separate (not gitlab.com) EE instance. Although the environment has dev in its domain name, don’t refer to it as dev, since that could be confused with a local development environment.\n\nGitLab.com Operations\n\nThe ops environment hold all infrastructure that is critical for managing GitLab.com infrastructure.\n\nAt this time it includes:\n\nProxy for ElasticCloud.\n\nInternal monitoring infrastructure that serves dashboards.gitlab.net\n\nAn isolated GitLab deployment that serves as a backup for all operations related GitLab repositories.\n\nCICD jobs for critical operations tasks such as backups and maintenance.\n\nRunners that need to connect to production infrastructure, such as GitLab chatops.\n\nProduction will be full scale and size with the ability to have a canary deploy. Production has limited access.\nIt consists of two stages:",
+    "chunk_index": 1,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "30bc0bf0914b_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/environments",
+    "title": "Infrastructure Environments",
+    "source": "handbook",
+    "headings": [
+      "Infrastructure Environments",
+      "Environments",
+      "Development",
+      "Demo",
+      ".org"
+    ],
+    "text": "d GitLab repositories.\n\nCICD jobs for critical operations tasks such as backups and maintenance.\n\nRunners that need to connect to production infrastructure, such as GitLab chatops.\n\nProduction will be full scale and size with the ability to have a canary deploy. Production has limited access.\nIt consists of two stages:\n\nThe canary stage is a subset of infrastructure that reaches a limited number of members of the community. We deploy to this stage first. For more information see covering the canary stage and how to use it\n\nThe main stage serves the remaining traffic for the wider GitLab community.\n\nCanary for Production\n\nProduction-Canary is a environment subset or deployment “stage” in the Production environment, sharing most of the same infrastructure as Production. This additional stage is designed to assist us with rolling out new releases to end users in a more controlled fashion, hoping\nto catch issues affecting users in a way that minimises impact.\n\nInformation on how to access production-canary, use it, and what services it covers is documented in our handbook page on canary stage environments .\n\nPre-production testing\n\nPseudonymization of prod\n\nStaging has the same topology as Production and includes the same components, since they share the same Terraform configuration .",
+    "chunk_index": 2,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "30bc0bf0914b_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/environments",
+    "title": "Infrastructure Environments",
+    "source": "handbook",
+    "headings": [
+      "Infrastructure Environments",
+      "Environments",
+      "Development",
+      "Demo",
+      ".org"
+    ],
+    "text": "n on how to access production-canary, use it, and what services it covers is documented in our handbook page on canary stage environments .\n\nPre-production testing\n\nPseudonymization of prod\n\nStaging has the same topology as Production and includes the same components, since they share the same Terraform configuration .\n\nIt has a canary environment similar to production, and new releases are deployed and validated in that environment first before going any further. The Staging-Canary environment has some additional features to take note of when it comes to deployment and usage that are detailed in its own environment entry.\n\nStaging deployments precede production deployments as described in releases , but Staging is deployed a lot more frequently (at least every few hours, given the build is green). This would be a static environment with an pseudonymized production database. The DB is a snapshot of the production DB (updated only often enough to keep migration times to a minimum).\n\nIf you need an account to test QA issues assigned to you on Staging, you may already have an account as Production accounts are brought across to Staging. Otherwise, if you require an account to be created, create an issue in the access-request project and assign to your manager for review. Requests for access to database and server environments require the approval of your manager as well as that of one of the Infrastructure managers. The same access-request tracker should be used to request this type of access.\n\nPre-production testing\n\nPseudonymization of prod",
+    "chunk_index": 3,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "30bc0bf0914b_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/environments",
+    "title": "Infrastructure Environments",
+    "source": "handbook",
+    "headings": [
+      "Infrastructure Environments",
+      "Environments",
+      "Development",
+      "Demo",
+      ".org"
+    ],
+    "text": "ject and assign to your manager for review. Requests for access to database and server environments require the approval of your manager as well as that of one of the Infrastructure managers. The same access-request tracker should be used to request this type of access.\n\nPre-production testing\n\nPseudonymization of prod\n\nStaging-Canary is an environment subset or deployment “stage” in the Staging environment, sharing most of the same infrastructure as Staging. This additional stage is designed to assist us with capturing issues arising due to mixed deployments, where we have multiple versions of one or more components of GitLab that share services such as the database. Information on how to access it, use it, and what services it covers is documented in our handbook page on canary stage environments .\n\nStaging-Canary deployments precede Staging deployments as described in releases , with deployments occurring with the same frequency of Staging. It is important to note that there are two sets of blocking smoke test suite that are executed on deployment. One set of tests targets Staging-Canary specifically. The other set targets Staging. Both sets of tests must pass for the Staging-Canary deployment to succeed. This is designed specifically to help flush out issues that occur from mixed version deployment environments. You can determine which environment tests are failing in by examining the Downstream QA pipelines.\n\nstaging-ref.gitlab.com\n\nPre-production testing",
+    "chunk_index": 4,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "30bc0bf0914b_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/environments",
+    "title": "Infrastructure Environments",
+    "source": "handbook",
+    "headings": [
+      "Infrastructure Environments",
+      "Environments",
+      "Development",
+      "Demo",
+      ".org"
+    ],
+    "text": "f tests must pass for the Staging-Canary deployment to succeed. This is designed specifically to help flush out issues that occur from mixed version deployment environments. You can determine which environment tests are failing in by examining the Downstream QA pipelines.\n\nstaging-ref.gitlab.com\n\nPre-production testing\n\nStaging Ref is a sandbox environment used for pre-production testing of the latest Staging Canary code. It is a 3k Cloud Native Hybrid Reference Architecture environment. Staging Ref is being deployed in parallel with Staging Canary using Deployer and GitLab Environment Toolkit . The environment can be destroyed and rebuilt automatically if needed. Initial test data is being populated during deployment. Refer to Staging Ref documentation to learn more.\n\nIf you need an account to test QA issues assigned to you on Staging Ref, you can log in using your Production account. Otherwise, if you require an account to be created, create an issue in the access-request project and assign to your manager for review. Requests for access to database and server environments require the approval of your manager and one of the Infrastructure managers. The same access-request tracker should be used to request this type of access.\n\nThe pre environment is an environment used for validating release candidates used to prepare final self-managed releases and production patches. It does not have a full production HA topology or a\ncopy of the production database.",
+    "chunk_index": 5,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "30bc0bf0914b_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/environments",
+    "title": "Infrastructure Environments",
+    "source": "handbook",
+    "headings": [
+      "Infrastructure Environments",
+      "Environments",
+      "Development",
+      "Demo",
+      ".org"
+    ],
+    "text": "managers. The same access-request tracker should be used to request this type of access.\n\nThe pre environment is an environment used for validating release candidates used to prepare final self-managed releases and production patches. It does not have a full production HA topology or a\ncopy of the production database.\n\nIn addition, the pre environment is also used by SREs to validate infrastructure\nchanges, so it is important for the environment to match the configuration of staging and production .\n\nDeploying self-managed releases\n\nFinal monthly, patch and security releases\n\nThe release environment is an environment used for validating security releases, self-managed final monthly and patch versions. It does not have a full production HA topology or a\ncopy of the production database.\n\nThe release environment receives and tests every package of the current milestone, i.e., every 16.1.X package until we tag 16.2.0.\n\nGitLab support testing\n\nGitLab support testing\n\nSRE and support owner\n\nPajamas / Design website\n\nGitLab documentation site\n\nThe GitLab Team Services Environment is a group of services for different sites run for GitLab.  It comprises the sites listed above.  These are not controlled in Terraform and seek to dogfood GitLab features such as Auto DevOps or GitLab Pages.\n\nGitLab support testing\n\nGitLab support testing\n\nSRE and support owner\n\nGitLab support testing\n\nSRE and support owner",
+    "chunk_index": 6,
+    "total_chunks": 8
+  },
+  {
+    "chunk_id": "30bc0bf0914b_7",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/environments",
+    "title": "Infrastructure Environments",
+    "source": "handbook",
+    "headings": [
+      "Infrastructure Environments",
+      "Environments",
+      "Development",
+      "Demo",
+      ".org"
+    ],
+    "text": "roup of services for different sites run for GitLab.  It comprises the sites listed above.  These are not controlled in Terraform and seek to dogfood GitLab features such as Auto DevOps or GitLab Pages.\n\nGitLab support testing\n\nGitLab support testing\n\nSRE and support owner\n\nGitLab support testing\n\nSRE and support owner\n\nThe GitLap environment is an older domain primarily used for support testing.\nAll DNS records under *.dev.gitlap.com and *.do.gitlap.com are controlled\nvia Terraform in the dev-resources repository .\n\nThe only important system is gitlab-runner-builder.gitlap.com which is used\nas a CI runner by the gitlab-runner project .\n\nThis environment is used as a genesis project from which all other GCP projects used to\nsupport/manage/host gitlab.com are provisioned. No compute resources are present in the project, and\nit is used solely to provide a mechanism for centrally managing GCP projects, provisioning IAM\nroles/service accounts for infrastructure deployments within those projects, and controlling which\nAPIs are enabled for each GCP project via Infrastructure as Code (Terraform).\n\nReference: https://ops.gitlab.net/gitlab-com/gl-infra/config-mgmt/-/tree/main/environments/env-projects\n\nSelf hosted versions of CE & EE\n\nThese are environments that are run on-premises by the end-user. We have no influence, access or control of these environments.",
+    "chunk_index": 7,
+    "total_chunks": 8
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "d0c2245fcd19_0",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/diy",
+    "title": "Trust & Safety, Do It Yourself",
+    "source": "handbook",
+    "headings": [
+      "Trust & Safety, Do It Yourself",
+      "Self-managed customers: preventing, detecting and mitigating spam",
+      "2FA",
+      "Authentication restrictions",
+      "Harden your instance"
+    ],
+    "text": "Trust & Safety, Do It Yourself\n\nIf you are running your own GitLab CE or EE instance with public registration on you’ve most likely encountered some form of abuse of your own. This could range from bots or people spamming your Issue trackers, creating spam profiles, distributing malware or obscene content.\n\nLucky for you, you’re not the first and we have some knowledge to share.\n\nNot all of this might be a applicable to your situation, so use what works for you leave the rest.\n\nIf you know something we don’t or just want to share your solution to abuse prevention solution, feel free to open an MR to add to this page!\n\nSelf-managed customers: preventing, detecting and mitigating spam\n\nGitLab uses Spamcheck to check for spam when users create issues and reCaptcha as an added level of spam and abuse prevention.\n\nThis tooling helps respond to the symptoms of abuse, but the root of the problem remains: malicious actors register new accounts, or take over existing accounts and then use the accounts to spam and abuse instances and projects.\n\nSo, what more can you self-managed Admins do to prevent and mitigate spam?\n\nHosted instances of GitLab can reduce spam by making it more difficult for bots to automate account creation or takeover. Requiring 2FA for all users is one way to prevent legitimate users from having their accounts taken over and used to create spam.\n\nAuthentication restrictions\n\nSign-up restrictions will allow self-managed Admins to:\n\nDisable new sign-ups.\n\nRequire Admin approval for new sign-ups.\n\nRequire user email confirmation.",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "d0c2245fcd19_1",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/diy",
+    "title": "Trust & Safety, Do It Yourself",
+    "source": "handbook",
+    "headings": [
+      "Trust & Safety, Do It Yourself",
+      "Self-managed customers: preventing, detecting and mitigating spam",
+      "2FA",
+      "Authentication restrictions",
+      "Harden your instance"
+    ],
+    "text": "over. Requiring 2FA for all users is one way to prevent legitimate users from having their accounts taken over and used to create spam.\n\nAuthentication restrictions\n\nSign-up restrictions will allow self-managed Admins to:\n\nDisable new sign-ups.\n\nRequire Admin approval for new sign-ups.\n\nRequire user email confirmation.\n\nDenylist or allowlist email addresses belonging to specific domains.\n\nIn fact, for customers running public-facing GitLab instances, we highly recommend that you consider disabling new sign-ups if you do not expect public users to sign up for an account. Sign in restrictions allow self-managed Admins to customize authentication restrictions for web interfaces as well as Git over HTTP(S). These settings will allow you to enforce:\nMandatory 2FA for new users; this makes it more difficult for bots to surpass and prevents legitimate users from getting pwned via single factor auth + weak password combinations.\nEmail confirmation on sign-up; making it more difficult for bots to register new spam accounts.\n\nCustomizing your instance configuration can go a long way to discouraging and reducing spam and abuse. This includes defining how users access your instance and who can have access .\n\nUnderstand how abuse is reported and managed by self-managed Admins\n\nIt’s also key to understand how users can report abuse from other GitLab users to GitLab self-managed Administrators , the actions that self-managed Admins can take against abusers and how abuse reports are managed and resolved by Admins .",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "d0c2245fcd19_2",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations/trustandsafety/diy",
+    "title": "Trust & Safety, Do It Yourself",
+    "source": "handbook",
+    "headings": [
+      "Trust & Safety, Do It Yourself",
+      "Self-managed customers: preventing, detecting and mitigating spam",
+      "2FA",
+      "Authentication restrictions",
+      "Harden your instance"
+    ],
+    "text": "e access .\n\nUnderstand how abuse is reported and managed by self-managed Admins\n\nIt’s also key to understand how users can report abuse from other GitLab users to GitLab self-managed Administrators , the actions that self-managed Admins can take against abusers and how abuse reports are managed and resolved by Admins .\n\nFinally, if you’re in the midst of spam abuse you can impose rate limits to help respond to the increased loads. You can also limit rates on issue creation and impose rate limits on User and IPs .\n\nSuggest an Abuse Prevention Feature\n\nFor any abuse prevention feature requests and suggestions for CE and EE, please create a Feature proposal Issue from the provided templates in the GitLab Project and add the ~“Abuse Prevention” label. Feel free to us for additional input @gitlab-com/gl-security/security-operations/trust-and-safety or if you have any questions.\n\nOpen Source Program Partners, Premium and Ultimate Customers\n\nPlease see the Contact Us section on out Team page for details on reaching us.",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

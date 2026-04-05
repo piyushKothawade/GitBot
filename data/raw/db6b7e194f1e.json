@@ -1,0 +1,20 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk/metrics-definitions",
+  "title": "Metrics definitions",
+  "content": "This guide defines common Zendesk ticket metrics. These metrics track ticket lifecycle timing and are used in SLA policies, reporting, and performance measurement.\n\nNote: These are Zendesk’s official definitions. GitLab may use slightly different calculations or definitions for internal reporting. For more information on SLA policies, please see our documentation .\n\nFirst Reply Time (FRT)\n\nThis is the time a ticket spent from creation until it received its first public reply from an agent.\n\nNext Reply Time (NRT)\n\nThis is the time a ticket spent from a public reply from an end-user until it received a public reply from an agent.\n\nPurpose: Measures how long customers wait for agent action (including time waiting on outside sources).\n\nThis is the total time a ticket spent in the following statuses:\n\nPurpose: Measures how long tickets spent waiting for direct agent action.\n\nThis is the total time a ticket spent in the following statuses:\n\nPurpose: Measures how long tickets spent waiting for customers to respond.\n\nThis is the total time a ticket spent in the following statuses:\n\nPurpose: Measures how long tickets spent waiting for outside sources (i.e. not agent or customer).\n\nThis is the total time a ticket spent in the following statuses:\n\nTotal resolution time\n\nPurpose: Measures how long tickets from creation to being solved.\n\nThis is the total time a ticket spent in the following statuses:\n\nPurpose: Measures the time a ticket spends between public agent replies.\n\nPurpose: Measures the time a ticket spent between public agent replies.\n\nThis is the time a ticket spends between public agent replies while in the following statuses:\n\nTo illustrate how these metrics work together, consider this ticket lifecycle:\n\nTicket #12345 timeline:\n\nCustomer creates ticket\n\nAgent replies publicly\n\nAgent replies publicly\n\nAgent needs info from Engineering\n\nEngineering provides answer\n\nAgent replies publicly\n\nMon 9:00 AM → Mon 2:00 PM (first agent reply)\n\nMon 3:30 PM → Mon 4:00 PM (agent reply after customer response)\n\nTime in New + Open + On-hold • New: 5 hours • Open: 8.5 hours total • On-hold: 27.5 hours\n\nTime in New + Open • New: 5 hours • Open: 8.5 hours\n\nTime in Pending • Mon 4:00 PM → Tue 10:00 AM\n\nTime in On-hold • Tue 11:00 AM → Wed 2:00 PM\n\nTotal resolution time\n\nMon 9:00 AM → Wed 2:30 PM (New + Open + Pending + On-hold)\n\nTime between any agent public replies • Mon 2:00 PM → Mon 4:00 PM = 2 hours • Mon 4:00 PM → Wed 2:30 PM = 46.5 hours\n\nTime between agent replies while in New/Open/On-hold • Mon 2:00 PM → Mon 4:00 PM (in Open) = 2 hours • Tue 10:00 AM → Wed 2:30 PM (in Open + On-hold) = 28.5 hours\n\nKey differences explained:\n\nPeriodic update counts ALL time between agent replies, including Pending status (when waiting for customer)\n\nPausable update EXCLUDES Pending status, only counting time in New/Open/On-hold (when ticket is on agent/company side)\n\nTotal resolution time (53.5 hours) = Agent work (13.5h) + Agent wait (18h) + On-hold (27.5h) - some overlap adjusted\n\nRequester wait time (41 hours) = All time customer is waiting for us (New + Open + On-hold)\n\nUnderstanding which SLA metrics you can measure\n\nAbout native Support time duration metrics",
+  "source": "handbook",
+  "headings": [
+    "Metrics definitions",
+    "First Reply Time (FRT)",
+    "Next Reply Time (NRT)",
+    "Requester wait time",
+    "Agent work time",
+    "Agent wait time",
+    "On-hold time",
+    "Total resolution time",
+    "Periodic update",
+    "Pausable update",
+    "Detailed example",
+    "Further reading"
+  ]
+}

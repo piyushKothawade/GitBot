@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "b286d1b8bc92_0",
+    "url": "https://handbook.gitlab.com/handbook/marketing/journeys",
+    "title": "Journeys",
+    "source": "handbook",
+    "headings": [
+      "Journeys",
+      "Introduction",
+      "Contributor journey",
+      "User journey",
+      "User adoption journey"
+    ],
+    "text": "As a company we have to be great at providing multiple journeys.\nThe contributor, user, and buyer journey involve different people going through them, different metrics, different hand-offs, and different teams providing them.\nMost companies never master a journey, a few companies master one: Ubuntu mastered the contributor journey, Atlassian the user journey, and Oracle the buyer journey.\nOur ambition is to master all three.\n\nThe hard thing is that during a journey you have multiple hand-offs between departments and teams.\nThese hand-off points need to be well defined and work for both teams.\nIt is essential to measure all steps of the journey to see where an improvement would have the greatest effect.\n\nA contributor is someone who contributed to GitLab with code, documentation, a blog article, a tweet, a talk, a meetup, and/or helping on the issue tracker/forum/irc.\n\nFind GitLab (technical blog post)\n\nReach out to GitLab on social media (social media response)\n\nFind information about contributing (contributor landing pages)\n\nStart installation of GDK (multiple good options to run)\n\nFinish installation of GDK (error free, good troubleshooting)\n\nSubmit a merge request (good documentation)\n\nGet acknowledged (find first contributor)\n\nFinish merge request (acknowledge first contribution, merge request coach)\n\nHelp someone else (forum, issue tracker)\n\nGet recognized for a large contribution (named swag)\n\nGet recognized as an core contributor (core contributor program, we need to know their location, maybe do this as part our forum)",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "b286d1b8bc92_1",
+    "url": "https://handbook.gitlab.com/handbook/marketing/journeys",
+    "title": "Journeys",
+    "source": "handbook",
+    "headings": [
+      "Journeys",
+      "Introduction",
+      "Contributor journey",
+      "User journey",
+      "User adoption journey"
+    ],
+    "text": "irst contributor)\n\nFinish merge request (acknowledge first contribution, merge request coach)\n\nHelp someone else (forum, issue tracker)\n\nGet recognized for a large contribution (named swag)\n\nGet recognized as an core contributor (core contributor program, we need to know their location, maybe do this as part our forum)\n\nGet invited to an event (match contributors with incoming requests for speakers, meetup organization, speaker content)\n\nWrite a blog post (help with editing)\n\nGet activated after being inactive for a while (reactivation program)\n\nPeople might skip parts of this journey, for example by never contributing code. That is perfectly fine.\n\nSingle User Experience\n\n? Product & Marketing\n\nInvite Other Departments\n\nUser adoption journey\n\nOur customers get the most value out of the GitLab product when they use multiple stages. The user adoption journey covers the most common path our users follow to adopt GitLab’s product stages.\n\nImpressions/Share of Voice\n\nBlog, SEO, Ads, Campaign, AR, PR\n\nTrial, chat, or contact sales\n\nInitial Qualifying Meeting\n\nPipeline stage movement\n\nProgress through pipeline stages\n\nDollar amount in contract\n\nSales, Finance, Legal\n\nSign our paper/submit PO\n\nUsage ping of different DevOps stages\n\nScale of reference-ability: e.g. more points for video; then blog; public reference; private reference\n\nPublished material or entry to reference database\n\nMore than a reference, the customer contributes to the GitLab project or community\n\nCode; feature requests; Advisory and Executive customer programs\n\nBuyer’s journey content stages",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "b286d1b8bc92_2",
+    "url": "https://handbook.gitlab.com/handbook/marketing/journeys",
+    "title": "Journeys",
+    "source": "handbook",
+    "headings": [
+      "Journeys",
+      "Introduction",
+      "Contributor journey",
+      "User journey",
+      "User adoption journey"
+    ],
+    "text": "nce-ability: e.g. more points for video; then blog; public reference; private reference\n\nPublished material or entry to reference database\n\nMore than a reference, the customer contributes to the GitLab project or community\n\nCode; feature requests; Advisory and Executive customer programs\n\nBuyer’s journey content stages\n\nRefer to our handbook page on buyer’s journey definitions for a more detailed explanation.\n\nAwareness (Beginning stage)\n\nUsers and buyers realize that they have a problem or challenge which could be solved through some sort of outside software or service.  At this stage, they are trying to define the scope and the relative impact and size of the problem.\n\nThe focus is on educating potential buyers about the problems they are facing, the business impact of their problems, and the reality that others are successfully solving the same problem .\n\nConsideration (Middle stage)\n\nUsers and buyers understand the problem they are trying to solve and the business impact/value of addressing the problem and are now actively seeking and evaluating potential remedies to their business issue. In this stage they are focused on identifying options that meet their specific requirements and needs.\n\nThe focus is on positioning GitLab as a viable and compelling solution to a potential buyer’s specific problem .\n\nDecision/Purchase (Later stage)",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "b286d1b8bc92_3",
+    "url": "https://handbook.gitlab.com/handbook/marketing/journeys",
+    "title": "Journeys",
+    "source": "handbook",
+    "headings": [
+      "Journeys",
+      "Introduction",
+      "Contributor journey",
+      "User journey",
+      "User adoption journey"
+    ],
+    "text": "ely seeking and evaluating potential remedies to their business issue. In this stage they are focused on identifying options that meet their specific requirements and needs.\n\nThe focus is on positioning GitLab as a viable and compelling solution to a potential buyer’s specific problem .\n\nDecision/Purchase (Later stage)\n\nUsers and buyers have concluded that they need to invest in solving a specific business problem and are now comparing and evaluating specific options.  In this stage, they are evaluating and comparing different options in order to identify the ideal solution for their specific situation.\n\nThe focus is on key information that a buyer needs to justify GitLab as their chosen solution .",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "d58da65b0cfa_0",
+    "url": "https://handbook.gitlab.com/handbook/security/planning",
+    "title": "Security Planning",
+    "source": "handbook",
+    "headings": [
+      "Security Planning",
+      "Security Planning",
+      "Workflow",
+      "Tips",
+      "Plans"
+    ],
+    "text": "The Security Planning page catalogs the planning work prior to\nimplementation offSecurity Department initiatives and projects that span\nmultiple security teams and projects, or across the entire GitLab\norganization. This includes things from high level architecture designs for\ntools used by the Security to developing new or maturing organizational\nprocesses.\n\nA Security Plan is done when the text is sufficient to create Epics,\nMilestones, and Issues with a enough detail to begin work. Requiring further\nwork in the form of proof-of-concepts or spikes may also be an outcome of a\n“complete” Plan.\n\nSecurity Plans are not meant to be the single-source-of-truth (SSOT) once\nimplementation begins. Non-planning handbook pages, runbooks, and system\ndocumentation in related source repositories should be kept up-to-date and\ncontinue to be iterated on.\n\nIt is suggested to associate a Security Plan with a single Epic and maintain\na link to that Epic in this page. All created issues can be associated with\nthat Epic as an alternative to providing links in the Security Plan\n\nSecurity Plans begin with an Epic or other action item that does not have\nenough detail to begin an iteration or develop on MVC:\n\nIf source is an issue, promote it to an Epic.\n\nCreate a new Security Plan in this directory and link to the Epic.\n\nUse MR comments to draw particular attention to any areas you would like\nspecific feedback.\n\nIssues can start being created from the Plan at any time.\n\nOnce the MR is merged, create issues for any remaining work that is not\ncovered.",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "d58da65b0cfa_1",
+    "url": "https://handbook.gitlab.com/handbook/security/planning",
+    "title": "Security Planning",
+    "source": "handbook",
+    "headings": [
+      "Security Planning",
+      "Security Planning",
+      "Workflow",
+      "Tips",
+      "Plans"
+    ],
+    "text": "ote it to an Epic.\n\nCreate a new Security Plan in this directory and link to the Epic.\n\nUse MR comments to draw particular attention to any areas you would like\nspecific feedback.\n\nIssues can start being created from the Plan at any time.\n\nOnce the MR is merged, create issues for any remaining work that is not\ncovered.\n\nUse headers ( #### ) or manually create anchors ( [](){: name=\"hello-world\"} )\nto make it easier to refer to particular section of the Plan from GitLab.\n\nOther Resources and Links\n\nSecurity Requirements for Development and Deployment",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

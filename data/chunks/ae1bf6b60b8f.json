@@ -1,0 +1,14 @@
+[
+  {
+    "chunk_id": "ae1bf6b60b8f_0",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/end-user-services/laptop-management/laptop-security",
+    "title": "Laptop Security Configuration Standards",
+    "source": "handbook",
+    "headings": [
+      "Laptop Security Configuration Standards"
+    ],
+    "text": "Laptop Security Configuration Standards\n\nAll laptops should be configured with security in mind. See the linked configuration guides and policies below.\n\nDo not install software with many known security vulnerabilities.\n\nFollow the Third Party Risk Management Procedure for review of services individually deployed on endpoint devices. After a decision regarding deployment of an endpoint management solution is made the process will be redesigned accordingly and services, where applicable, will be retroactively reviewed. Please ensure you continue to follow the requirements defined in the acceptable use policy .\n\nUsing iOS or Android? See the Mobile Devices (Phones and Tablets) page. Using Linux? See the Linux Desktop Security Standards page.\n\nUsing iOS or Android? See the Mobile Devices (Phones and Tablets) page.\n\nUsing Linux? See the Linux Desktop Security Standards page.",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

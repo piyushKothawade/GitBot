@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "4d1bb881082a_0",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/disaster-recovery",
+    "title": "Disaster Recovery Working Group",
+    "source": "handbook",
+    "headings": [
+      "Disaster Recovery Working Group",
+      "Attributes",
+      "Scope and Definitions",
+      "Goals",
+      "Roles and Responsibilities"
+    ],
+    "text": "Disaster Recovery Working Group\n\n#wg_disaster-recovery (only accessible from within the company)\n\nWorking Group Agenda (only accessible from within the company)\n\nScope and Definitions\n\nIn the context of this working group:\n\nRecovery Point Objective (RPO) : maximum duration of time in which data might be lost due to an incident.\n\nRecovery Time Objective (RTO) : maximum duration of time that a service is unavailable due to an incident.\n\nThe working group exists to coordinate the delivery of cross-team efforts that improve both the values and the confidence in our RTO and RPO targets.\n\nThe exit criteria and target goals for the working group are defined here in the internal handbook.\n\nRoles and Responsibilities\n\nEngineering Manager, Gitaly\n\nProduct Management DRI\n\nSenior Product Manager, Gitaly\n\nGerardo Lopez-Fernandez\n\nEngineering Fellow, Infrastructure\n\nDirector of Engineering, Enablement\n\nEngineering Manager, Geo\n\nSenior Product Manager, Geo\n\nStaff SRE, Infrastructure\n\nEngineering Manager, Delivery\n\nSenior Backend Engineer, Gitaly\n\nDirector of Product Management, Enablement\n\nSenior SRE, Infrastructure\n\nDirector of Product Management, SaaS Platforms\n\nSenior Software Engineer in Test, Geo\n\nBackup and recovery of gitlab.com\n\n(internal handbook) gitlab.com Disaster Recovery including RTO/RPO targets\n\nGitLab Dedicated Disaster Recovery Plan\n\nFollowup: Align on the Performance Indicator for Disaster Recovery capabilities for GitLab.com and GitLab Dedicated",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

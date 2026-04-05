@@ -1,0 +1,19 @@
+{
+  "url": "https://handbook.gitlab.com",
+  "title": "Welcome to the GitLab Handbook",
+  "content": "Welcome to the GitLab Handbook\n\nAs an all-remote company, GitLab takes a handbook-first approach. You can explore the handbook to learn more about how we run our company.\n\nLearning & Development\n\nCustomer Support Department\n\nDevelopment Department\n\nInfrastructure Platforms Department\n\nEnterprise Technology & AI\n\nBrand and Product Marketing\n\nMarketing Operations and Analytics\n\nCorporate Communications\n\nCustomer Success Management\n\nSolutions Architecture\n\nFinancial Planning & Analysis\n\nLegal & Corporate Affairs\n\nCorporate Development\n\nEnvironment, Social, and Governance (ESG)\n\nRisk Management and Dispute Resolution\n\nTake GitLab for a spin\n\nSee what your team could do with The DevSecOps Platform.\n\nHave a question? We're here to help.",
+  "source": "handbook",
+  "headings": [
+    "Welcome to the GitLab Handbook",
+    "Company",
+    "People Group",
+    "Product",
+    "Engineering",
+    "Enterprise Technology & AI",
+    "Security",
+    "Marketing",
+    "Sales",
+    "Finance",
+    "Legal & Corporate Affairs"
+  ]
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "chunk_id": "ec5871988022_0",
+    "url": "https://handbook.gitlab.com/handbook/support/support-incident-response",
+    "title": "Support Incident Response Framework",
+    "source": "handbook",
+    "headings": [
+      "Support Incident Response Framework",
+      "Support Incident Response Framework",
+      "In Scope",
+      "Out of Scope",
+      "Integration Points"
+    ],
+    "text": "Support Incident Response Framework\n\nSupport Incident Response Framework\n\nSupport Engineers regularly encounter customer-facing incidents that require rapid, coordinated responses while maintaining technical excellence. The Support Incident Response Framework provides structure for these critical moments, helping us balance customer advocacy with effective problem-solving. It provides a structured approach that complements broader organisational incident processes while focusing on the unique requirements of customer advocacy and technical problem-solving in support contexts.\n\nThe framework delivers practical benefits through clear processes, defined roles, and systematic knowledge sharing. By transforming individual experiences into team wisdom, it reduces cognitive load during stressful situations and improves our coordination. This ultimately leads to faster resolutions for our customers while supporting our professional growth as Support Engineers.\n\nIf you are seeking information to help GitLab ensure incidents are reported, investigated and handled, you might be looking for the Incident Response Guidance .\n\nIf an incident requires a non-standard workflow or communication from Support, create the Support Response issue if this has not yet been done.\n\nIf you are looking for details about being on-call in Support, you might find what you need here: GitLab Support On-Call Guide\n\nCustomer-reported production emergencies\n\nGitLab.com service disruptions requiring support coordination\n\nSecurity incidents requiring support response\n\nMass-impact product issues",
+    "chunk_index": 0,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "ec5871988022_1",
+    "url": "https://handbook.gitlab.com/handbook/support/support-incident-response",
+    "title": "Support Incident Response Framework",
+    "source": "handbook",
+    "headings": [
+      "Support Incident Response Framework",
+      "Support Incident Response Framework",
+      "In Scope",
+      "Out of Scope",
+      "Integration Points"
+    ],
+    "text": "t been done.\n\nIf you are looking for details about being on-call in Support, you might find what you need here: GitLab Support On-Call Guide\n\nCustomer-reported production emergencies\n\nGitLab.com service disruptions requiring support coordination\n\nSecurity incidents requiring support response\n\nMass-impact product issues\n\nPost-release customer impact scenarios\n\nPure infrastructure incidents without customer impact\n\nInternal system outages\n\nIndividual customer service requests\n\nFeature requests and bug reports\n\nNon-emergency support inquiries\n\nWorking principles are behaviors that empower team members to carry out incident response work in alignment with the needs of our customers and our wider business Incident Response. They help illustrate what applying GitLab’s core values and operating principles to your work as a Support Engineering Incident Responder will look like. These working principles are complementary to, and should be subordinate to, GitLab’s core values and operating principles. In case of a conflict between the two, please create an MR to propose a change to or removal of the working principles.\n\nCustomer-First Response\n\nIncident decisions prioritize customer impact above technical considerations. Customer experience metrics serve as primary success indicators. Response strategies target minimal workflow disruption and fastest path to resolution. Resource allocation focuses on customer-impacting components first.",
+    "chunk_index": 1,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "ec5871988022_2",
+    "url": "https://handbook.gitlab.com/handbook/support/support-incident-response",
+    "title": "Support Incident Response Framework",
+    "source": "handbook",
+    "headings": [
+      "Support Incident Response Framework",
+      "Support Incident Response Framework",
+      "In Scope",
+      "Out of Scope",
+      "Integration Points"
+    ],
+    "text": "stomer-First Response\n\nIncident decisions prioritize customer impact above technical considerations. Customer experience metrics serve as primary success indicators. Response strategies target minimal workflow disruption and fastest path to resolution. Resource allocation focuses on customer-impacting components first.\n\nIncidents operate with defined RACI matrices and explicit role assignments. Decision authority follows documented hierarchies to prevent ambiguity. Escalation thresholds trigger specific notification protocols. Critical path tasks maintain designated owners throughout incident lifecycle.\n\nContinuous Improvement\n\nIncidents generate standardized postmortem analysis with tracked action items. Process reviews occur at scheduled intervals with defined completion criteria. Performance metrics drive framework enhancements through data validation. Process changes undergo controlled testing before full implementation.\n\nIncident Response Guidance\n\nThis Support Incident Response Framework is designed to complement existing organisational security and infrastructure incident response processes and should branch off established organisational workflows defined in the Incident Response Guidance .\n\nAs improvement efforts progress across the organisation, any content that appears duplicated between the Support Incident Response Framework and other incident frameworks will be identified. When duplication is detected, please create a Merge Request (MR) to remove the duplicated content from this framework and integrate it into the wider organisational incident framework.",
+    "chunk_index": 2,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "ec5871988022_3",
+    "url": "https://handbook.gitlab.com/handbook/support/support-incident-response",
+    "title": "Support Incident Response Framework",
+    "source": "handbook",
+    "headings": [
+      "Support Incident Response Framework",
+      "Support Incident Response Framework",
+      "In Scope",
+      "Out of Scope",
+      "Integration Points"
+    ],
+    "text": ", any content that appears duplicated between the Support Incident Response Framework and other incident frameworks will be identified. When duplication is detected, please create a Merge Request (MR) to remove the duplicated content from this framework and integrate it into the wider organisational incident framework.\n\nThis consolidation effort aims to create a unified approach to incident management while preserving the specialised workflows needed for customer-facing Support incidents. The Support Incident Response Framework will evolve accordingly, with emphasis on the unique aspects of customer support during incidents rather than replicating general incident procedures.\n\nIf you notice areas of duplication or opportunities for integration, please create an issue or MR in the appropriate project to help facilitate this alignment work.\n\nKey Roles and Their Responsibilities\n\nThe Role Structure and Responsibilities component defines who does what during customer-impacting incidents, establishing clear lines of authority, communication paths, and accountabilities.\n\nClearly defining these roles, responsibilities, and interfaces, eliminates confusion during critical incidents and high-pressure situations, ensures comprehensive coverage of all necessary functions, and provides a foundation for continuous improvement in our incident response.\n\nSupport-Specific Roles\n\nCMOC (Communications Manager On-call)\n\nPrimary Focus: Customer impact management and support coordination\n\nHandbook: CMOC Workflows\n\nAssess the scope and nature of customer impact through tickets and monitoring",
+    "chunk_index": 3,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "ec5871988022_4",
+    "url": "https://handbook.gitlab.com/handbook/support/support-incident-response",
+    "title": "Support Incident Response Framework",
+    "source": "handbook",
+    "headings": [
+      "Support Incident Response Framework",
+      "Support Incident Response Framework",
+      "In Scope",
+      "Out of Scope",
+      "Integration Points"
+    ],
+    "text": "ions, and provides a foundation for continuous improvement in our incident response.\n\nSupport-Specific Roles\n\nCMOC (Communications Manager On-call)\n\nPrimary Focus: Customer impact management and support coordination\n\nHandbook: CMOC Workflows\n\nAssess the scope and nature of customer impact through tickets and monitoring\n\nCoordinate support team resource allocation based on incident severity\n\nDevelop and execute the customer communications strategy\n\nReview and approve all customer-facing messaging for clarity and accuracy\n\nCreate and apply incident-specific tags in Zendesk for tracking\n\nHandle bulk ticket responses for incident-related inquiries\n\nManage support documentation and macros specific to the incident\n\nCoordinate with regional support teams to ensure 24/7 coverage\n\nTrack evolving customer impact patterns throughout the incident\n\nSMOC (Support Manager On-Call)\n\nPrimary Focus: Escalation management and support team resource coordination\n\nHandbook: Support Manager On-Call\n\nHandle Support Ticket Attention Requests during incidents\n\nMake definitive determinations on emergency qualification\n\nFind additional coverage when multiple emergencies occur simultaneously\n\nAct as notification point for security incidents affecting support\n\nLead emergency calls with customers when needed\n\nAssist with particularly difficult customer communications\n\nPrevent SLA breaches through proactive intervention\n\nFind Support Manager DRI for Account Escalations\n\nReview and validate support team response strategies\n\nCross-Functional Coordination",
+    "chunk_index": 4,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "ec5871988022_5",
+    "url": "https://handbook.gitlab.com/handbook/support/support-incident-response",
+    "title": "Support Incident Response Framework",
+    "source": "handbook",
+    "headings": [
+      "Support Incident Response Framework",
+      "Support Incident Response Framework",
+      "In Scope",
+      "Out of Scope",
+      "Integration Points"
+    ],
+    "text": "dents affecting support\n\nLead emergency calls with customers when needed\n\nAssist with particularly difficult customer communications\n\nPrevent SLA breaches through proactive intervention\n\nFind Support Manager DRI for Account Escalations\n\nReview and validate support team response strategies\n\nCross-Functional Coordination\n\nThese roles are described in further detail in various handbook pages. The definitions below provide summary context for Support Engineering team members.\n\nIncident Manager On-Call (IMOC)\n\nCoordinates overall incident response and technical aspects\n\nManages status.io updates and public communications\n\nFacilitates cross-team collaboration during resolution\n\nDetermines incident severity and closure timing\n\nProvides technical resolution for platform issues\n\nGives technical status updates to support teams\n\nEstimates resolution timeframes for customer communications\n\nCollaborates on post-incident analysis\n\nCustomer Success Team\n\nManages communications with strategic customers\n\nProvides context on customer-specific needs\n\nJoins customer calls when appropriate\n\nHelps measure post-incident customer satisfaction\n\nAssists with product-specific incidents and bugs\n\nProvides product expertise for customer communications\n\nPrioritizes fixes based on customer impact data\n\nCollaborates on bug-related messaging\n\nSecurity Incident Response Team (SIRT)\n\nProvides security expertise during security-related incidents\n\nDetermines appropriate information disclosure restrictions\n\nGuides support messaging for security incidents\n\nReviews security-related customer communications",
+    "chunk_index": 5,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "ec5871988022_6",
+    "url": "https://handbook.gitlab.com/handbook/support/support-incident-response",
+    "title": "Support Incident Response Framework",
+    "source": "handbook",
+    "headings": [
+      "Support Incident Response Framework",
+      "Support Incident Response Framework",
+      "In Scope",
+      "Out of Scope",
+      "Integration Points"
+    ],
+    "text": "ustomer impact data\n\nCollaborates on bug-related messaging\n\nSecurity Incident Response Team (SIRT)\n\nProvides security expertise during security-related incidents\n\nDetermines appropriate information disclosure restrictions\n\nGuides support messaging for security incidents\n\nReviews security-related customer communications\n\nRole Interfaces and Handoffs\n\nThe framework defines clear interaction points between roles:\n\nIMOC provides technical status for customer communications\n\nCMOC provides customer impact details to inform technical priorities\n\nJoint approval of public-facing status updates\n\nRegular sync points at defined intervals based on severity\n\nSMOC provides guidance on complex support scenarios\n\nCMOC escalates resource needs and complex customer situations\n\nJoint decisions on emergency qualification\n\nCollaboration on support team resource allocation\n\nIMOC provides technical context for support escalations\n\nSMOC provides support impact details to inform response\n\nCollaboration on incident severity determinations\n\nJoint review of customer impact assessment\n\nDefined documentation requirements for cross-region transfers\n\nStructured handoff calls at region boundaries\n\nCommon tools and templates for consistency\n\nClear escalation paths across time zones\n\nSupport-Role Engagement and Exit\n\nCMOC: Multiple customers affected OR bulk communications needed OR support resource coordination required\n\nSMOC: Complex customer impact OR resource conflicts OR SLA risk OR SIRT involvement\n\nCustomer communications stable\n\nSupport queue normalized\n\nNo new impact patterns",
+    "chunk_index": 6,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "ec5871988022_7",
+    "url": "https://handbook.gitlab.com/handbook/support/support-incident-response",
+    "title": "Support Incident Response Framework",
+    "source": "handbook",
+    "headings": [
+      "Support Incident Response Framework",
+      "Support Incident Response Framework",
+      "In Scope",
+      "Out of Scope",
+      "Integration Points"
+    ],
+    "text": "s time zones\n\nSupport-Role Engagement and Exit\n\nCMOC: Multiple customers affected OR bulk communications needed OR support resource coordination required\n\nSMOC: Complex customer impact OR resource conflicts OR SLA risk OR SIRT involvement\n\nCustomer communications stable\n\nSupport queue normalized\n\nNo new impact patterns\n\nRegular ticket flow resumed\n\nDocumented final status\n\nHandback to regular support flow\n\nFuture considerations\n\nPROPOSED: Each role has specific KPIs to evaluate performance | ISSUE: TBC\n\nTime to first customer communication\n\nCustomer satisfaction during incidents\n\nCommunication consistency across incidents\n\nSupport resource utilization efficiency\n\nTime to resolve escalations\n\nResource allocation effectiveness\n\nSLA compliance during incidents\n\nEscalation appropriateness\n\nPROPOSED | ISSUE: TBC\n\nRole-specific training curricula\n\nRegular simulation exercises\n\nShadowing opportunities for new team members\n\nContinuous skill development pathways\n\nPROPOSED | ISSUE: TBC\n\nResponse Time Description: Time from detection to initial response Target: < ____ minutes for SEV1/SEV2\n\nDescription: Time from detection to initial response\n\nTarget: < ____ minutes for SEV1/SEV2\n\nResolution Time Description: Time from detection to resolution Target: Varies by severity\n\nDescription: Time from detection to resolution\n\nTarget: Varies by severity\n\nCustomer Satisfaction Description: CSAT scores for incident handling Target: > 90%\n\nCustomer Satisfaction\n\nDescription: CSAT scores for incident handling\n\nHandover Summary Templates",
+    "chunk_index": 7,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "ec5871988022_8",
+    "url": "https://handbook.gitlab.com/handbook/support/support-incident-response",
+    "title": "Support Incident Response Framework",
+    "source": "handbook",
+    "headings": [
+      "Support Incident Response Framework",
+      "Support Incident Response Framework",
+      "In Scope",
+      "Out of Scope",
+      "Integration Points"
+    ],
+    "text": "Time from detection to resolution Target: Varies by severity\n\nDescription: Time from detection to resolution\n\nTarget: Varies by severity\n\nCustomer Satisfaction Description: CSAT scores for incident handling Target: > 90%\n\nCustomer Satisfaction\n\nDescription: CSAT scores for incident handling\n\nHandover Summary Templates\n\nSummary templates as code blocks for various communication scenarios where CMOC and SMOC roles need to share information with other stakeholders in Slack channels, and/or issues.\n\nCMOC Communication Templates\n\nInitial Status Update Template\n\nRegular Status Update Template\n\nResolution Update Template\n\nRegional Handoff Template\n\nSMOC Communication Templates\n\nSupport Resource Allocation Template\n\nCustomer Impact Report Template\n\nCMOC Activation Template\n\nPost-Incident Support Summary Template\n\nCross-Functional Templates\n\nTechnical-to-Support Handoff Template\n\nExecutive Update Template\n\nThese templates provide structured frameworks for different types of communications that CMOC and SMOC roles would need to share with stakeholders during an incident. They’re designed to be clear, actionable, and adaptable to different incident scenarios while maintaining consistency in format.",
+    "chunk_index": 8,
+    "total_chunks": 9
+  }
+]

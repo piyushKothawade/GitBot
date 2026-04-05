@@ -1,0 +1,15 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/sales/field-operations",
+  "title": "Field Operations",
+  "content": "Welcome to the Field Operations Handbook\n\n“Manage field business processes, systems, architecture, enablement, champion data integrity, provide insights and predictability through analytics”\n\nThe term “sales” refers to the Sales Team and “field” includes the Customer Success, Channel, and Alliances Teams.\n\nClarity : for definitions, processes and events Predictability : of the business by leveraging data and systems Scalability : for processes and systems that allows for growth\n\nSales Operations Deal Desk Order Management Sales Commissions Data Intelligence\n\nCustomer Success Operations\n\nCustomer Success Strategy & Analytics\n\nRSOE Growth & Development\n\nFor guidance and resources on RSOE Career Growth & Development\n\nField Operations Calendar\n\nField Operations utilizes a team calendar to communicate team member availability as well as office hour meetings.\n\nHow to add the Field Operations Calendar\n\nTo add the Field Operations Calendar to your Google Calendar click on the + Next to Other Calendars on the bottom left hand side of you Google Calendar.\n\nFrom there type in Field Operations into the search box and the Field Operation calendar should be the only calendar available to select.\n\nWhat are Office Hours?\n\nOffice hours is a weekly meeting that is set up where the hosting team is available to field questions from individuals who they may not generally sync with. The goal is to offer wider availability and support to the greater operations teams and to GitLab as a whole. Office hours are NOT a dedicated time for team members to join to check in on the status of a project or to be used as a recurring project meeting.\n\nSales Systems currently holds office hours every Wednesday at 10:30 AM PST\n\nField Operations Releases and Changelog\n\nField Operations works to deliver Field Ops changes related to Sales Ops, CS Ops, Channel Ops & Deal Desk (QTC) in a batched, bi-weekly release cadence. To learn more, see the Field Ops Release Schedule page .\n\nFor a running log of Field Ops changes related to Sales Ops, CS Ops, Channel Ops & Deal Desk since Q3-FY22, see the Field Ops Changelog page .",
+  "source": "handbook",
+  "headings": [
+    "Field Operations",
+    "Welcome to the Field Operations Handbook",
+    "Key Tenets",
+    "Teams",
+    "RSOE Growth & Development",
+    "Field Operations Calendar",
+    "Field Operations Releases and Changelog"
+  ]
+}

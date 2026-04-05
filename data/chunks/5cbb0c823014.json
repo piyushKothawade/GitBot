@@ -1,0 +1,242 @@
+[
+  {
+    "chunk_id": "5cbb0c823014_0",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "This page documents the workflow for working issues in the Customer Support Operations team. It covers the stages an issue progresses through from creation to completion, including triage, planning, development, validation, and implementation.\n\nUnderstanding this workflow helps team members know what to expect at each stage, who is responsible, and what actions are required to move issues forward.\n\nA standard progression for an issue will look like this:\n\nThe work to be done on an issue largely depends on the stage the issue is in. Please note the assignee on an issue will change frequently as it moves from stage to stage.\n\nA quick reference to the stages used is:\n\nFeature, Administrative\n\nSecondary DRI: Alyssa\n\nSLA target: 1-2 business days\n\nRequest types that use this stage: Administrative Bugs Features\n\nPurpose Determine non-technical validity/feasibility of request Determine if more information is needed before proceeding Verify required approvals are present Add labels for customer type, system impacted, priority, and roadmap alignment\n\nDetermine non-technical validity/feasibility of request\n\nDetermine if more information is needed before proceeding\n\nVerify required approvals are present\n\nAdd labels for customer type, system impacted, priority, and roadmap alignment\n\nKey activities Gather necessary information from requester Validate approvals based on roadmap alignment and complexity Move to Planning stage or close if unable to proceed Move to Blocked stage if insufficient detail has been provided in original request\n\nGather necessary information from requester",
+    "chunk_index": 0,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_1",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "roadmap alignment\n\nKey activities Gather necessary information from requester Validate approvals based on roadmap alignment and complexity Move to Planning stage or close if unable to proceed Move to Blocked stage if insufficient detail has been provided in original request\n\nGather necessary information from requester\n\nValidate approvals based on roadmap alignment and complexity\n\nMove to Planning stage or close if unable to proceed\n\nMove to Blocked stage if insufficient detail has been provided in original request\n\ngather the needed information from the request (if required)\n\ndetermine if we can move forward on the issue\n\ndetermine if the issue is valid (submitted by correct person, is feasible, etc.)\n\nAfter doing so, the DRI needs to:\n\nensure a priority label is present on the issue\n\nensure a customer label is present on the issue\n\nensure a roadmap label is present on the issue (if the issue is tied to a roadmap item)\n\nWith that in place, the DRI will then move the issue to the next stage depending the request type:\n\nFor Administrative issues, it is moved to the Scheduling stage\n\nFor Bug or Feature issues, it is moved to the Planning stage\n\nThis can be done in one comment using quickactions , like so:\n\nYou can also use the following group comment templates to generate a quickactions comment to assist you:\n\nTriage -> Development\n\nClosing a triage issue\n\nIf the DRI has determine we cannot proceed on an issue, the DRI should take the following actions:\n\ncomment stating why we will not be proceeding\n\nset the issue status to Won't do",
+    "chunk_index": 1,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_2",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "use the following group comment templates to generate a quickactions comment to assist you:\n\nTriage -> Development\n\nClosing a triage issue\n\nIf the DRI has determine we cannot proceed on an issue, the DRI should take the following actions:\n\ncomment stating why we will not be proceeding\n\nset the issue status to Won't do\n\nThis can be done in one comment using quickactions , like so:\n\nSLA target: 5 business days\n\nRequest types that use this stage: Bugs Features\n\nPurpose Determine technical validity/feasibility Determine if more information is needed Generate implementation gameplan Determine rough estimate of workload\n\nDetermine technical validity/feasibility\n\nDetermine if more information is needed\n\nGenerate implementation gameplan\n\nDetermine rough estimate of workload\n\nKey activities Write detailed gameplan Work with requester to resolve blockers Determine issue weight score Move to Scheduling stage when complete\n\nWrite detailed gameplan\n\nWork with requester to resolve blockers\n\nDetermine issue weight score\n\nMove to Scheduling stage when complete\n\nwrite up a gameplan for the issue (and post it on the issue as a comment)\n\ndetermine technical feasibility of the request\n\ndetermine a rough estimate of the work timelines needed (excluding validation time)\n\ndetermine the RICE score\n\nAfter doing so, the DRI needs to:\n\nAdd a weight value to the issue (use the RICE score )\n\nAdd an iteration and milestone to the issue (for Bug issues only)\n\nWith that in place, the DRI will then move the issue to the next stage depending the request type:",
+    "chunk_index": 2,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_3",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "es needed (excluding validation time)\n\ndetermine the RICE score\n\nAfter doing so, the DRI needs to:\n\nAdd a weight value to the issue (use the RICE score )\n\nAdd an iteration and milestone to the issue (for Bug issues only)\n\nWith that in place, the DRI will then move the issue to the next stage depending the request type:\n\nFor Bug issues, it is moved to the Development stage\n\nFor Feature issues, it is moved to the Scheduling stage\n\nYou can also use the following group comment templates to generate a quickactions comment to assist you:\n\nPlanning -> Development\n\nPlanning -> Scheduling\n\nCustomer Support Operations uses a modified version of the RICE Framework on our Feature issues.\n\nA breakdown of possible values for our modified version is:\n\nImpacts one region of agents\n\nImpacts a small group of agents\n\nMinimal or no real impact\n\nDirectly impacts GitLab’s revenue\n\nSignificant impact to support workflows\n\nSlight impact to support workflows\n\nMinimal or no real impact\n\nWe take the scores from the above values and use the following equation to calculate a RICE score:\n\n(Reach × Impact × Confidence) / Effort\n\nYou can use this calculator (requires GitLab Google account access) to quickly generate a RICE score.\n\nClosing a planning issue\n\nIf the DRI has determine we cannot proceed on an issue, the DRI should take the following actions:\n\ncomment stating why we will not be proceeding\n\nset the issue status to Won't do\n\nThis can be done in one comment using quickactions , like so:\n\nPrimary DRI: Dylan and Jason\n\nSLA target: Addressed on weekly cadence (within a week)",
+    "chunk_index": 3,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_4",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "I has determine we cannot proceed on an issue, the DRI should take the following actions:\n\ncomment stating why we will not be proceeding\n\nset the issue status to Won't do\n\nThis can be done in one comment using quickactions , like so:\n\nPrimary DRI: Dylan and Jason\n\nSLA target: Addressed on weekly cadence (within a week)\n\nRequest types that use this stage: Features\n\nPurpose Determine bandwidth validity/feasibility Assign iteration(s) and milestone(s) Assign Development DRI\n\nDetermine bandwidth validity/feasibility\n\nAssign iteration(s) and milestone(s)\n\nAssign Development DRI\n\nKey activities Discuss development timelines (weekly cadence) Add iteration and milestone to issue If current iteration: Move to Development stage If future iteration: Move to Queued stage\n\nDiscuss development timelines (weekly cadence)\n\nAdd iteration and milestone to issue\n\nIf current iteration: Move to Development stage\n\nIf future iteration: Move to Queued stage\n\nHere the DRIs will discuss development timelines for the changes. This is done on a weekly cadence.\n\nOnce determined, the DRIs will do the following on the issue:\n\nset an iteration on the issue\n\nset a milestone on the issue\n\nset the DRI for the issue moving forward\n\nAfter doing so, the DRIs will move the issue to the next stage depending on the timeline for work to begin:\n\nif the timeline for work to begin is the current iteration, the issue is moved to the Development stage\n\nif the timeline for work to begin is a future iteration, the issue is moved to the Queued stage",
+    "chunk_index": 4,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_5",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "g forward\n\nAfter doing so, the DRIs will move the issue to the next stage depending on the timeline for work to begin:\n\nif the timeline for work to begin is the current iteration, the issue is moved to the Development stage\n\nif the timeline for work to begin is a future iteration, the issue is moved to the Queued stage\n\nYou can also use the following group comment templates to generate a quickactions comment to assist you:\n\nScheduling -> Development\n\nPrimary DRI: Dylan and Jason\n\nRequest types that use this stage: Features\n\nPurpose Indicate request is ready but waiting for assigned iteration to begin\n\nIndicate request is ready but waiting for assigned iteration to begin\n\nKey activities Monitor iteration schedules When iteration begins: Assign Development DRI and move to Development stage\n\nMonitor iteration schedules\n\nWhen iteration begins: Assign Development DRI and move to Development stage\n\nIssues will sit here until their iteration has begun. Once the iteration has begun, the DRIs should move the issue to the Development stage .\n\nYou can also use the following group comment template to generate a quickactions comment to assist you:\n\nQueued -> Development\n\nSLA target: Based on gameplan timeline (typically 1-3 weeks)\n\nRequest types that use this stage: Administrative Bugs Features\n\nPurpose Implement changes in staging/sandbox Perform testing Prepare environments for validation\n\nImplement changes in staging/sandbox\n\nPrepare environments for validation",
+    "chunk_index": 5,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_6",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "ueued -> Development\n\nSLA target: Based on gameplan timeline (typically 1-3 weeks)\n\nRequest types that use this stage: Administrative Bugs Features\n\nPurpose Implement changes in staging/sandbox Perform testing Prepare environments for validation\n\nImplement changes in staging/sandbox\n\nPrepare environments for validation\n\nKey activities Implement changes in appropriate environment Test implementation Move to Validation stage to get validation Moves to Implementation stage instead if validation is not required\n\nImplement changes in appropriate environment\n\nMove to Validation stage to get validation Moves to Implementation stage instead if validation is not required\n\nMoves to Implementation stage instead if validation is not required\n\nIn this stage the DRI will perform any needed setup to enable testing and validation (normally in sandboxes). As the DRI makes changes for the setup, they should add comments indicating what has been done. While there is not a set format that has to be used, the general recommendation would look like:\n\nOnce you have done all the need setup, you need to perform a test suite based on what you have changed. The exact contents of the test suite is going to vary from issue to issue. While there is not a set format that has to be used, the general recommendation would look like:\n\nAs tests are performed, update the comment to indicate the results and state of the test. If tests fail, add notes or comments on what you noticed and if any changes need to be made.",
+    "chunk_index": 6,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_7",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "e is going to vary from issue to issue. While there is not a set format that has to be used, the general recommendation would look like:\n\nAs tests are performed, update the comment to indicate the results and state of the test. If tests fail, add notes or comments on what you noticed and if any changes need to be made.\n\nOnce all testing and development have been completed, you will need to move the issue to the next stage. The exact stage to use depends on the type of issue being worked:\n\nfor Administrative issues, move to the Implementation stage If doing this manually, make sure to add the label Validation::Skipped when moving to the new stage\n\nIf doing this manually, make sure to add the label Validation::Skipped when moving to the new stage\n\nfor Bug and Feature issues, move to the Validation stage\n\nYou can also use the following group comment templates to generate a quickactions comment to assist you in moving to the new stage:\n\nDevelopment -> Validation\n\nDevelopment -> Implementation\n\nSLA target: Varies (dependent on requester availability and change complexity, typically 3-5 business days)\n\nRequest types that use this stage: Bugs Features\n\nPurpose Obtain requester validation\n\nObtain requester validation\n\nKey activities Get validation from requester (if required) Move to Implementation stage once validation is received\n\nGet validation from requester (if required)\n\nMove to Implementation stage once validation is received\n\nHere, the DRI will ask the requester of the issue to validate what has been setup aligns with expectations.",
+    "chunk_index": 7,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_8",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "ivities Get validation from requester (if required) Move to Implementation stage once validation is received\n\nGet validation from requester (if required)\n\nMove to Implementation stage once validation is received\n\nHere, the DRI will ask the requester of the issue to validate what has been setup aligns with expectations.\n\nYou should do this by making a comment asking the request for validation, making sure to include all information the requester might need to validate the changes.\n\nYou can use the Request validation group comment template to generate a quickactions comment to assist you in this.\n\nAt this juncture, the issue waits for a comment from the validator indicating the status of their validation. Your actions depend on what they come back with:\n\nIf the requester validate the change(s): Add the label Validation::Received Move the issue to the Implementation stage\n\nAdd the label Validation::Received\n\nMove the issue to the Implementation stage\n\nIf the requester rejects the change(s): Add the label Validation::Rejected Move the issue to the Development stage\n\nAdd the label Validation::Rejected\n\nMove the issue to the Development stage\n\nYou can also use the following group comment templates to generate a quickactions comment to assist you in moving to the new stage:\n\nSLA target: Varies (dependent on changes being implemented, typically 3-5 business days)\n\nRequest types that use this stage: Administrative Bugs Features\n\nPurpose Generate technical blueprint Implement changes in production/merge changes Confirm deployment dates\n\nGenerate technical blueprint",
+    "chunk_index": 8,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_9",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "n moving to the new stage:\n\nSLA target: Varies (dependent on changes being implemented, typically 3-5 business days)\n\nRequest types that use this stage: Administrative Bugs Features\n\nPurpose Generate technical blueprint Implement changes in production/merge changes Confirm deployment dates\n\nGenerate technical blueprint\n\nImplement changes in production/merge changes\n\nConfirm deployment dates\n\nKey activities Create comprehensive technical blueprint with MR links and change details Implement via MRs or other appropriate methods Once all tasks completed (MR merged for deployment items), move to Completed stage\n\nCreate comprehensive technical blueprint with MR links and change details\n\nImplement via MRs or other appropriate methods\n\nOnce all tasks completed (MR merged for deployment items), move to Completed stage\n\nHere you will generate a technical blueprint and implement the changes (either by merging MRs or making changes directly in systems).\n\nA technical blueprint should go over, in detail, everything that was changed. Anyone looking at the blueprint should be able to perfectly reproduce what you did. This means linking to all created MRs, detailing any non-MR changes made, etc.\n\nOnce all implementation tasks are completed (for items using deployments, merging the MR is sufficient), change the issue to the Completed stage .\n\nSLA target: 2 business days to close issue\n\nRequest types that use this stage: Administrative Bugs Features\n\nPurpose Indicate all work is finished\n\nIndicate all work is finished",
+    "chunk_index": 9,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_10",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "all implementation tasks are completed (for items using deployments, merging the MR is sufficient), change the issue to the Completed stage .\n\nSLA target: 2 business days to close issue\n\nRequest types that use this stage: Administrative Bugs Features\n\nPurpose Indicate all work is finished\n\nIndicate all work is finished\n\nKey activities Verify all production changes are complete or queued for deployment Close the issue\n\nVerify all production changes are complete or queued for deployment\n\nThe DRI will add a comment indicating all work is completed (and what date it will be live if part of a deployment cycle) and then close out the issue.\n\nWhen closing out the issue, make sure to set the status of the issue to Complete .\n\nThis can be done in one comment using quickactions , like so:\n\nYou can also use the following group comment templates to generate a quickactions comment to assist you:\n\nClose out a completed issue\n\nPrimary DRI: Dylan and Jason\n\nPurpose Indicate issue is blocked Document blocking reason and previous stage Monitor block status\n\nIndicate issue is blocked\n\nDocument blocking reason and previous stage\n\nKey activities Monitor blocking condition weekly When unblocked: Return to previous stage\n\nMonitor blocking condition weekly\n\nWhen unblocked: Return to previous stage\n\nThis is a special stage that is used when something has blocked all movement on an issue. This could be related to missing approvals, waiting on a tool to be procured, etc.\n\nThe DRIs will review these issues weekly (during planning cadences) to determine if they need an update or can be “unblocked”.",
+    "chunk_index": 10,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_11",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "to previous stage\n\nThis is a special stage that is used when something has blocked all movement on an issue. This could be related to missing approvals, waiting on a tool to be procured, etc.\n\nThe DRIs will review these issues weekly (during planning cadences) to determine if they need an update or can be “unblocked”.\n\nIf all unblocked criteria have been met, the DRI will then move the issue back to the stage it was originally in.\n\nIf it has been a week since the last update and the issue is still not able to be unblocked, the DRIs will follow the escalation protocol: 1 week without it being unblocked: Ping the blocking party for an update 2 weeks without it being unblocked: Ping the leadership of the previous person pinged for an update 3 weeks without it being unblocked: Ping the leadership of the previous person pinged for an update 4 weeks without it being unblocked: Add a comment stating this has been blocked for 4 weeks without an update Close the issue\n\n1 week without it being unblocked: Ping the blocking party for an update\n\n2 weeks without it being unblocked: Ping the leadership of the previous person pinged for an update\n\n3 weeks without it being unblocked: Ping the leadership of the previous person pinged for an update\n\n4 weeks without it being unblocked: Add a comment stating this has been blocked for 4 weeks without an update Close the issue\n\nAdd a comment stating this has been blocked for 4 weeks without an update\n\nExamples of escalation protocols:",
+    "chunk_index": 11,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_12",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "it being unblocked: Ping the leadership of the previous person pinged for an update\n\n4 weeks without it being unblocked: Add a comment stating this has been blocked for 4 weeks without an update Close the issue\n\nAdd a comment stating this has been blocked for 4 weeks without an update\n\nExamples of escalation protocols:\n\nExample 1: Requester is a Support Engineer 1st week without an update, we ping the requester 2nd week without an update, we ping a Support Manager 3rd week without an update, we ping a Support Director 4th week without an update, the issue is closed\n\n1st week without an update, we ping the requester\n\n2nd week without an update, we ping a Support Manager\n\n3rd week without an update, we ping a Support Director\n\n4th week without an update, the issue is closed\n\nExample 2: Requester is a Support Manager 1st week without an update, we ping the requester 2nd week without an update, we ping a Support Director 3rd week without an update, we ping a VP of Support 4th week without an update, the issue is closed\n\n1st week without an update, we ping the requester\n\n2nd week without an update, we ping a Support Director\n\n3rd week without an update, we ping a VP of Support\n\n4th week without an update, the issue is closed\n\nExample 3: Requester is a Support Director 1st week without an update, we ping the requester 2nd week without an update, we ping a VP of Support 3rd week without an update, we ping the CTO 4th week without an update, the issue is closed\n\n1st week without an update, we ping the requester\n\n2nd week without an update, we ping a VP of Support",
+    "chunk_index": 12,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_13",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "is a Support Director 1st week without an update, we ping the requester 2nd week without an update, we ping a VP of Support 3rd week without an update, we ping the CTO 4th week without an update, the issue is closed\n\n1st week without an update, we ping the requester\n\n2nd week without an update, we ping a VP of Support\n\n3rd week without an update, we ping the CTO\n\n4th week without an update, the issue is closed\n\nNote: These escalation paths assume the standard organizational hierarchy. Adjust as needed based on the specific blocking party’s reporting structure.\n\nMoving an issue to the Blocked stage\n\nTo move an issue to the Blocked stage, do the following:\n\nindicate the issue is being moved to blocked\n\nnote the current stage the issue is in (so it can be moved back)\n\nnote the criteria needed to unblock the issue\n\nindicate what actions should be taken when the criteria is met\n\nYou can also use the following group comment templates to generate a quickactions comment to assist you:\n\nMove issue to blocked stage\n\nPrimary DRI: Dylan and Jason\n\nPurpose Indicate issue is deferred to an unknown date Generally reserved for lower priority, CustSuppOps oriented tasks\n\nIndicate issue is deferred to an unknown date\n\nGenerally reserved for lower priority, CustSuppOps oriented tasks\n\nKey activities When ready to resume: Return to most appropriate stage\n\nWhen ready to resume: Return to most appropriate stage",
+    "chunk_index": 13,
+    "total_chunks": 15
+  },
+  {
+    "chunk_id": "5cbb0c823014_14",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/gitlab/issues/working-issues",
+    "title": "Working issues",
+    "source": "handbook",
+    "headings": [
+      "Working issues",
+      "Issue flowchart",
+      "Stages",
+      "Triage",
+      "Planning"
+    ],
+    "text": "unknown date Generally reserved for lower priority, CustSuppOps oriented tasks\n\nIndicate issue is deferred to an unknown date\n\nGenerally reserved for lower priority, CustSuppOps oriented tasks\n\nKey activities When ready to resume: Return to most appropriate stage\n\nWhen ready to resume: Return to most appropriate stage\n\nThis is a special stage that is used when an issue is backlogged. This normally means that while there is a desire to work it, it is to be handled in the far future (beyond the next 10 iterations) or at an unknown future date.\n\nThe DRIs will review these issues weekly (during planning cadences) to determine if they can be scheduled.\n\nIf they can be scheduled, it is moved to the Scheduling stage\n\nIf they cannot be scheduled, they stay in the Backlogged stage\n\nIssue is not appearing on issue boards\n\nThat indicates the issue itself is missing required labels for the board (such as a stage label, customer label, etc.).\n\nAdd the label Stage::Triage and assign it to Dylan so the issue can be properly triaged.\n\nMissing required information\n\nIf you realize required information is missing mid-workflow:\n\nAdd a comment requesting the information\n\nConsider moving to Blocked stage if the delay will exceed 1 week\n\nTag the requester and any relevant stakeholders",
+    "chunk_index": 14,
+    "total_chunks": 15
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "chunk_id": "9ed2514a2f8e_0",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/looking_up_customer_technical_details",
+    "title": "Looking up customer technical details",
+    "source": "handbook",
+    "headings": [
+      "Looking up customer technical details",
+      "Within Zendesk",
+      "Within GitLab.com"
+    ],
+    "text": "Looking up customer technical details\n\nWhile troubleshooting customer issues in tickets, you may find yourself needing\nadditional context – a gitlab.rb file, an architectural diagram, or anything\nwhich will help you move forward with your investigation.\n\nThere are a few places where you can find this information.\n\nInternal comment with Organization Notes\n\nWhen a new ticket comes in and there is an organization attach to this ticket,\nthere will be a Zendesk automation trigger\n( Ticket::Internal Comment::Organization Info )\nthat puts an internal comment to the ticket. This internal comment will include\norganization notes if it exists. These organization notes are saved within Zendesk, visible to\nagents only, not to end-users.\n\nDuring your work on the ticket, if you have additional information worth noting\nabout the organization, you can add them by following the editing organizations .\n\nYou may also consider updating the Customer Collaboration Projects within GitLab.com describe below.\n\nBrowse previous tickets\n\nYou can browse other tickets submitted by people from the customer’s organization\nfor relevant context! Often forgotten in the heat of the moment.\n\nJust click on the organization name at the top of the ticket to view all other\ntickets associated with that organization.\n\nAlternatively, you can do a search for organization:<$ORG_NAME> search query ,\nwhich may get you the information you want. Try \"gitlab.rb\" or gitlabsos for your search!\n\nIn both cases, you can click on Requested or Updated to sort by most recent\nso that you’ll be sure to have fresher information.",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "9ed2514a2f8e_1",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/looking_up_customer_technical_details",
+    "title": "Looking up customer technical details",
+    "source": "handbook",
+    "headings": [
+      "Looking up customer technical details",
+      "Within Zendesk",
+      "Within GitLab.com"
+    ],
+    "text": "th that organization.\n\nAlternatively, you can do a search for organization:<$ORG_NAME> search query ,\nwhich may get you the information you want. Try \"gitlab.rb\" or gitlabsos for your search!\n\nIn both cases, you can click on Requested or Updated to sort by most recent\nso that you’ll be sure to have fresher information.\n\nArchitecture diagram and Customer Collaboration Project\n\nThe Architecture Diagrams app automatically checks for the presence of the\nrelevant diagram if the customer has a Customer Collaboration Project URL entered in\nSalesforce.\n\nClick on “Apps” in the top right of the Zendesk UI\n\nClick on “Apps” in the top right of the Zendesk UI\n\nLook for the Architecture Diagrams app and expand it if closed\n\nLook for the Architecture Diagrams app and expand it if closed\n\nOne other place to check for customer technical details is the Account Management group on\nGitLab.com. Just search by customer name and in the parent group and you should\nfind the Customer Collaboration Project . Most, but not all, premium and ultimate customers\nshould have one present.\n\nPlease note that these projects are most likely shared with the end customers as\nwell so updates on these projects are visible to the end-users, unlike the organization notes within Zendesk\nmentioned above.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

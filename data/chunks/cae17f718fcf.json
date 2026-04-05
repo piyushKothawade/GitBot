@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "cae17f718fcf_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/cost-management/learning",
+    "title": "Learning Resources",
+    "source": "handbook",
+    "headings": [
+      "Learning Resources",
+      "Vendor Specific Learning",
+      "Cloud Cost Buckets",
+      "General Cloud Cost Optimizations",
+      "Compute Optimizations"
+    ],
+    "text": "Vendor Specific Learning\n\nThe first thing to understand about infrastructure cost is that you can generally categorize it into a few main areas of focus. The areas are listed below in descending order of how much the bucket contributes to overall infra cost in general for most company’s. Cloud Provider services may provide abstractions of these buckets, for instance serverless computing, but at their core each service can still be categorized into one of these 3 buckets of infra spend.\n\nCompute server running cost, includes cpu/ram cost of the hardware used to run these services.\n\nserver running cost, includes cpu/ram cost of the hardware used to run these services.\n\nStorage cost of storing data, generally refers to Object Storage in cloud, but can refer aso refer to physical disk storage, database storage, etc.\n\ncost of storing data, generally refers to Object Storage in cloud, but can refer aso refer to physical disk storage, database storage, etc.\n\nNetworking cost of sending data back and forth between customers or services\n\ncost of sending data back and forth between customers or services\n\nGeneral Cloud Cost Optimizations\n\nThere are some basic cloud optimizations that apply to all resources, regardless of what service is running. Further optimizations or taking action on these recommendations may require more detailed understanding of the application or service running.\n\nCompute Optimizations\n\nturn off un-needed resources\n\ndownsize over-provisioned resources\n\nrightsize servers to make most efficient use of their performance characteristics (cpu v ram v storage)",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "cae17f718fcf_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/cost-management/learning",
+    "title": "Learning Resources",
+    "source": "handbook",
+    "headings": [
+      "Learning Resources",
+      "Vendor Specific Learning",
+      "Cloud Cost Buckets",
+      "General Cloud Cost Optimizations",
+      "Compute Optimizations"
+    ],
+    "text": "ions or taking action on these recommendations may require more detailed understanding of the application or service running.\n\nCompute Optimizations\n\nturn off un-needed resources\n\ndownsize over-provisioned resources\n\nrightsize servers to make most efficient use of their performance characteristics (cpu v ram v storage)\n\nprefer using newer instance types generally newer instance types will have better cost/performance\n\ngenerally newer instance types will have better cost/performance\n\nStorage Optimizations\n\nuse storage lifecycle policies to reduce cost by archiving un-accessed but needed data\n\ndelete unnecessary data\n\nNetworking Optimizations\n\nTake the most direct network path traffic sent between providers/continents/regions is the most expensive, avoid this when possible\n\ntraffic sent between providers/continents/regions is the most expensive, avoid this when possible\n\nAvoid network hairpinning\n\nThere are generic cost dimensions that apply to all company’s, as well as some specific dimensions that are similar to other company’s, but we define below.\n\nGeneric Cost Dimensions\n\nThis could also be called a “product”, the two are interchangeable, and this can refer to internal or external services.\n\nN1 Predefine Instance Core running in Americas\n\nStandard Storage US Multi-region\n\nGitLab Specific Dimensions\n\nGitaly Dedicated Nodes\n\nMultiCloud Service Comparison",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

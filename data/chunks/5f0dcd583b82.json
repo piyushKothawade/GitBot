@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "5f0dcd583b82_0",
+    "url": "https://handbook.gitlab.com/handbook/security/security-operations",
+    "title": "Security Operations",
+    "source": "handbook",
+    "headings": [
+      "Security Operations",
+      "Vision",
+      "Mission",
+      "Contacting Security Operations",
+      "Common Links"
+    ],
+    "text": "Protect company property by identifying, preventing, detecting and responding to risks and security events targeting the business and GitLab.com and its users. We are at the forefront of GitLab’s security.\n\nThe Security Operations department focuses on the operational aspect of security. Our department consists of experienced breakers, builders, and defenders from all walks of life and geographic locations. We are responsible for improving GitLab’s security capabilities, metrics in the areas of security anomaly/event detection, incident response and abuse mitigation of GitLab.com.\n\nOur department consists of:\n\nSecurity Incident Response Team (SIRT) - Security incident response and forensic analysis\n\nTrust & Safety - Prevention and mitigation of abuse of the GitLab.com platform\n\nRed Team - Adversary emulation\n\nThreat Intelligence - Actionable insights on real-world threats\n\nSignals Engineering - Detection Engineering\n\nSecurity Logging - SIEM and logging management\n\nContacting Security Operations\n\nSlack channel to interact with the Security Operations Department #security-help and tag @security-operations\n\nThe Security Operations department follows the Security Team On-Call Rotation with more details available in Security Operations On-Call\n\nHow to Engage the Security Engineer On-Call\n\nGitLab Security Division Group (GitLab)\n\nGitLab Security Operations Department Group (GitLab)",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

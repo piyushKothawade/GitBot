@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "333e1693c31b_0",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/all-customer-csat-cs",
+    "title": "All-Customer CSAT Survey (CS)",
+    "source": "handbook",
+    "headings": [
+      "All-Customer CSAT Survey (CS)",
+      "What is the “All-Customer CSAT Survey?\"",
+      "Send Schedules",
+      "About",
+      "Subject line"
+    ],
+    "text": "All-Customer CSAT Survey (CS)\n\nWhat is the “All-Customer CSAT Survey?\"\n\nAdministered by the Customer Success team via Gainsight to a larger audience, these surveys assess customer satisfaction with GitLab’s overall support, service levels, and customer experience. Further, this survey represents a macro-level baseline for Customer Satisfaction Scoring, not drive customer-level interactions and escalation.\n\nOn send date, customers will receive an email link to our CSAt survey. The survey should take no more than 5 min to complete, and the feedback will be a direct input into new internal initiatives and product roadmap recommendations.\n\nHow satisfied are you with GitLab?\n\nHow satisfied are you with your teams’ adoption of GitLab?\n\nHow satisfied are you with your experience working with the GitLab team?\n\nHow satisfied are you with the business value provided by GitLab?\n\nWhat could we be doing better? Note: Open text field\n\nNote: Open text field\n\nSelect a role that you most closely identify with: Developer or Engineer Administrator Team Lead or Manager Security Product Manager Billing or Procurement Executive Sponsor\n\nDeveloper or Engineer\n\nBilling or Procurement\n\nContributions like yours directly shape the future of our product. Are you open to a brief chat with our team to learn more about your GitLab experience? Yes / No\n\nIn order to target leaders and decision-makers on accounts, the following customer personas will receive an invitation to a survey:\n\nGitLab admin contacts\n\nSold-To Billing Contact (if no GitLab Admin exists)\n\nGitLab.com Owner role",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "333e1693c31b_1",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/all-customer-csat-cs",
+    "title": "All-Customer CSAT Survey (CS)",
+    "source": "handbook",
+    "headings": [
+      "All-Customer CSAT Survey (CS)",
+      "What is the “All-Customer CSAT Survey?\"",
+      "Send Schedules",
+      "About",
+      "Subject line"
+    ],
+    "text": "open to a brief chat with our team to learn more about your GitLab experience? Yes / No\n\nIn order to target leaders and decision-makers on accounts, the following customer personas will receive an invitation to a survey:\n\nGitLab admin contacts\n\nSold-To Billing Contact (if no GitLab Admin exists)\n\nGitLab.com Owner role\n\nEmail: An email containing the CSAT survey is sent to an identified contact within the customer’s organization.\n\nReminders: If the customer hasn’t responded within 3 days, a gentle reminder email is sent. If there’s still no response after 10 days, a final reminder email is sent. Additionally, the Success teams will directly contact their assigned customers to drive engagement, if there is a lack of response from the automated email.\n\nSurvey Closure: The survey remains open for 30 days to allow for any account teams to encourage customers to complete it.\n\nSurvey results are analyzed and made available in the following formats:\n\nTableau Dashboards: Created from Snowflake data, these dashboards provide a visual representation of overall CSAT trends, key metrics, and actionable insights.\n\nGainsight: CSAT scores are comprehensively tracked in the Customer 360, providing a detailed view of customer satisfaction over time. Additionally, a universal dashboard offers a consolidated overview of all CSAT surveys sent, enabling easy monitoring and analysis.\n\nSalesforce: Survey responses can also be found in the embedded Gainsight widget on any account page in Salesforce.",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "333e1693c31b_2",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/all-customer-csat-cs",
+    "title": "All-Customer CSAT Survey (CS)",
+    "source": "handbook",
+    "headings": [
+      "All-Customer CSAT Survey (CS)",
+      "What is the “All-Customer CSAT Survey?\"",
+      "Send Schedules",
+      "About",
+      "Subject line"
+    ],
+    "text": "tomer 360, providing a detailed view of customer satisfaction over time. Additionally, a universal dashboard offers a consolidated overview of all CSAT surveys sent, enabling easy monitoring and analysis.\n\nSalesforce: Survey responses can also be found in the embedded Gainsight widget on any account page in Salesforce.\n\nEach question is scored by dividing the total number of customers who select “Very Satisfied” (5) or “Satisfied” (4) by the total number of responses, then multiplied by 100.\n\nGainsight, SalesForce\n\nGainsight: CSAT scores are written to a scorecard in the Customer 360. For an overview of how CSMs use Customer360 (or C360), please refer to the Gainsight CSM C360 Overview Page\n\nSalesForce : Survey responses can also be found in the embedded Gainsight widget on any account page in Salesforce.\n\nIn customer success, the primary teams in Customer Success who action survey feedback are Customer Success Managers (CSM) and Customer Success Engineers (CSE) .\n\nCustomer Success Managers:\n\nPre-send: Proactively create awareness of the survey through ongoing customer conversations, emphasizing the importance of their feedback.\n\nPost-send: Follow up on survey responses, address any concerns or issues raised by customers, and ensure that their needs are met. Automated CTAs (calls to action) will be created in Gainsight to guide Customer Success Managers (CSMs) in their follow-up efforts.\n\nCustomer Success Engineers:\n\nPre-send: Create awareness of the survey through one-to-many event invites and targeted conversations with customers.",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "333e1693c31b_3",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/all-customer-csat-cs",
+    "title": "All-Customer CSAT Survey (CS)",
+    "source": "handbook",
+    "headings": [
+      "All-Customer CSAT Survey (CS)",
+      "What is the “All-Customer CSAT Survey?\"",
+      "Send Schedules",
+      "About",
+      "Subject line"
+    ],
+    "text": "rs, and ensure that their needs are met. Automated CTAs (calls to action) will be created in Gainsight to guide Customer Success Managers (CSMs) in their follow-up efforts.\n\nCustomer Success Engineers:\n\nPre-send: Create awareness of the survey through one-to-many event invites and targeted conversations with customers.\n\nPost-send: Automatic email follow-ups are sent to customers who have provided feedback, inviting them to schedule a follow-up meeting with a Customer Success Engineer (CSE). This is particularly important for customers who may be dissatisfied, as it allows us to proactively address their concerns and explore potential solutions. Customers can conveniently book a meeting time using Calendly.\n\nPre-send: Create awareness of the survey through one-to-many event invites.\n\nPost-send: Automatic email follow-ups are sent to customers who have provided feedback, inviting them to email their SMB Advocate team. This is particularly important for customers who may be dissatisfied, as it allows us to proactively address their concerns and explore potential solutions. When a customer sends an email to their SMB Advocate it automatically generates a SFDC Case for the team to follow-up on.\n\nCustomer Success Leadership:",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "333e1693c31b_4",
+    "url": "https://handbook.gitlab.com/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/all-customer-csat-cs",
+    "title": "All-Customer CSAT Survey (CS)",
+    "source": "handbook",
+    "headings": [
+      "All-Customer CSAT Survey (CS)",
+      "What is the “All-Customer CSAT Survey?\"",
+      "Send Schedules",
+      "About",
+      "Subject line"
+    ],
+    "text": "ocate team. This is particularly important for customers who may be dissatisfied, as it allows us to proactively address their concerns and explore potential solutions. When a customer sends an email to their SMB Advocate it automatically generates a SFDC Case for the team to follow-up on.\n\nCustomer Success Leadership:\n\nCustomer Success leadership (both CSM and CSE) will schedule calls with customers, focusing on those who score as dissatisfied responses to understand where the customer experience is insufficient and what improvements we can make. Future state: there will be a formal program to track and manage customer programs that are born as a direct result of customer feedback (likely in FY26 Q1).\n\nFuture state: there will be a formal program to track and manage customer programs that are born as a direct result of customer feedback (likely in FY26 Q1).\n\nThe CSSO team will provide resources and guidance for CS leaders and their teams to ensure that they have the tools and knowledge necessary to effectively manage CSAT surveys and leverage customer feedback to improve GitLab’s products and services.",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

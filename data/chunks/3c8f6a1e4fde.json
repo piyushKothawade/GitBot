@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "3c8f6a1e4fde_0",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/runtime-update-process",
+    "title": "Runtime Update Process",
+    "source": "handbook",
+    "headings": [
+      "Runtime Update Process",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (0% completed)"
+    ],
+    "text": "Runtime Update Process\n\n#wg-runtime-update-process\n\nWe need to streamline the language framework (version) update process. Language framework updates are driven by multiple teams, cumbersome, and the processes are inconsistent between the multiple frameworks we use today. In the case of Go, a half dozen or more teams are involved. The current upgrade process is difficult to execute at scale and requires manual intervention with a high degree of complexity. Goals include, but are not limited to:\n\nCreate a streamlined Golang runtime (version) update process or possibly a language framework agnostic process\n\nReduce update process complexity\n\nCreate documentation around the update process to improve efficiency\n\nIncrease developer and management efficiency\n\nProgress will be tracked on the Working Group issue board using the following labels:\n\n~“workflow::In dev” The issue is currently in progress and actively being worked on\n\nThe issue is currently in progress and actively being worked on\n\n~“workflow::In review” The issue is currently being reviewed by broader Engineering Team\n\nThe issue is currently being reviewed by broader Engineering Team\n\n~“workflow::blocked” The issue is blocked by another issue.  Please refer to the blocking issue.\n\nThe issue is blocked by another issue.  Please refer to the blocking issue.\n\n~“workflow::production” The issue has been completed and should be closed.\n\nThe issue has been completed and should be closed.\n\nExit Criteria (0% completed)\n\nTarget Completion Date",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "3c8f6a1e4fde_1",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/runtime-update-process",
+    "title": "Runtime Update Process",
+    "source": "handbook",
+    "headings": [
+      "Runtime Update Process",
+      "Attributes",
+      "Business Goal",
+      "Tracking Progress",
+      "Exit Criteria (0% completed)"
+    ],
+    "text": "locked by another issue.  Please refer to the blocking issue.\n\nThe issue is blocked by another issue.  Please refer to the blocking issue.\n\n~“workflow::production” The issue has been completed and should be closed.\n\nThe issue has been completed and should be closed.\n\nExit Criteria (0% completed)\n\nTarget Completion Date\n\nBuild and document a repeatable upgrade process that’s applicable to our major platforms such as Go, Ruby, Rails, and Vue.\n\nEvaluate a second framework for an upgrade such as Ruby, Python, or Node\n\nUpgrade a second framework to validate our process\n\nRoles and Responsibilities\n\nChristopher Lefelhocz\n\nEngineering Manager, Create\n\nDirector of Engineering, Enablement\n\nSenior Engineering Manager, Secure\n\nSenior Backend Engineer, Create",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

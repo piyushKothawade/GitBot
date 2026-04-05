@@ -1,0 +1,17 @@
+[
+  {
+    "chunk_id": "c2cef0a6219e_0",
+    "url": "https://handbook.gitlab.com/handbook/solutions-architects/sa-practices/communities-of-practice",
+    "title": "Solution Architect (SA) Communities of Practice",
+    "source": "handbook",
+    "headings": [
+      "Solution Architect (SA) Communities of Practice",
+      "Stages",
+      "Contribution Guidelines",
+      "How can I contribute? What should be included in the topic?"
+    ],
+    "text": "Solution Architect (SA) Communities of Practice\n\nThis is a collection of best practices collected from working with customers on each stage of the Software Development Lifecycle (SDLC).\n\nThis list is not exhaustive but provides the Solution Architect (SA) with a few good pointers when preparing for a meeting with a prospect asking about industry best practices surronding a topic or stage.\n\nIntegration Technologies\n\n1. Elasticsearch: Advanced Searching\n\nContribution Guidelines\n\nHow can I contribute? What should be included in the topic?\n\nThe write-up should not be lengthy and emphasises the value of why this best practice should be adopted by other organizations.\n\nAn topic to highlight a certain value should include the following:",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

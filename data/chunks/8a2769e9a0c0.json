@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "8a2769e9a0c0_0",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/programs",
+    "title": "Developer Relations Programs",
+    "source": "handbook",
+    "headings": [
+      "Developer Relations Programs",
+      "About Developer Relations Programs",
+      "What are we working on?",
+      "Active programs",
+      "Education"
+    ],
+    "text": "Developer Relations Programs\n\nAbout Developer Relations Programs\n\nThe Developer Relations Programs team designs, builds, manages and optimises programs that empower people to learn, use, contribute, and advocate for GitLab and its ecosystem. We provide structure and support to ensure that Developer Relations programs are consistent, measurable, scalable, and aligned with organisational goals.\n\nOur programs are the tactical execution of the Developer Relations strategic vision, driving its OKRs and contributing to its KPIs .\n\nWe work in collaboration with:\n\nProduct and Engineering teams to ensure users’ needs are represented on the GitLab roadmap.\n\nMarketing to showcase our members’ success through featured content and events.\n\nSales to provide smooth pathways for adoption that support revenue growth.\n\nOur main responsibilities are:\n\nDefining our portfolio of programs\n\nDefine and curate programs, including scope, objectives, metrics, and requirements\n\nAct as the DRI of our programs, identifying, prioritizing and driving the specific activities that contribute to its success\n\nOversee the GitLab Ultimate license entitlement process for the GitLab for Education|Open Source programs\n\nProvide program support to the members of a program through Service Desk\n\nPlease see the Developer Relations Program Manager Job Family for more details about individual roles on the team.\n\nWhat are we working on?\n\nFor visibility into our ongoing work please refer to the Developer Relations Programs - Epic board .",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "8a2769e9a0c0_1",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/programs",
+    "title": "Developer Relations Programs",
+    "source": "handbook",
+    "headings": [
+      "Developer Relations Programs",
+      "About Developer Relations Programs",
+      "What are we working on?",
+      "Active programs",
+      "Education"
+    ],
+    "text": "ams\n\nProvide program support to the members of a program through Service Desk\n\nPlease see the Developer Relations Program Manager Job Family for more details about individual roles on the team.\n\nWhat are we working on?\n\nFor visibility into our ongoing work please refer to the Developer Relations Programs - Epic board .\n\nWe receive support requests through email (see table below). Email requests are private to maintain confidentiality.\nCustomer account teams can view our support queues by using the following links:\n\nTriage: Support Issue Tracking\n\nGitLab for Education Program: Support queue\n\nGitLab for Open Source Program: Support queue\n\nWe manage programs and initiatives that expand GitLab’s impact in key strategic areas: Education, Open Source and Contributors. For more information about each program please check the handbook pages below.\n\nEnabling educational institutions to build the next generation of developers\n\nFostering thriving open source ecosystems. Landing Website .\n\nGitLab for Open Source\n\nGitLab for Open Source\n\nopensource@gitlab.com\n\nEmpowering the individual contributors who drive innovation across GitLab’s software development landscape.\n\ncontributors@gitlab.com\n\ncontributors@gitlab.com\n\nNon Developer Relations programs\n\nThe following GitLab programs are not part of the Developer Relations Programs. For more information about these programs, please refer to their handbook pages:\n\nGitLab for Non-Profits Program : Handbook Managed by GitLab Environment, Social, and Governance (ESG)\n\nGitLab for Startups : Handbook",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

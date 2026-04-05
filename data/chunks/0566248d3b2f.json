@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "0566248d3b2f_0",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/system-checkers/calendly",
+    "title": "Calendly",
+    "source": "handbook",
+    "headings": [
+      "Calendly",
+      "Understanding the Calendly system checker",
+      "What is the Calendly system checker",
+      "How does it work",
+      "Changing the Calendly system checker"
+    ],
+    "text": "Introduced via gitlab-com/support/support-ops/support-ops-project#1892\n\nDeployment type: Ad-hoc\n\nProject repo: gitlab-support-readiness/system-checkers/calendly\n\nUnderstanding the Calendly system checker\n\nWhat is the Calendly system checker\n\nThe Calendly system checker is a setup using scheduled pipelines to check the status of Calendly. It posts to the #feed_status-calendly Slack channel .\n\nAt the top of every hour UTC ( 0 * * * * ), a scheduled pipeline causes the bin/run script to execute. This does the following:\n\nGathers the current Calendly status information from https://www.calendlystatus.com/history.rss\n\nCompares the current Calendly status information for incidents to that of the stored information from data/incidents.yaml If the Calendly status information for an incident is not within the stored information (and it is not already resolved), the information is stored as a new incident If the Calendly status information for an incident is within the stored information (but there are differences between the two), the information is stored as an updated incident If the update is it being resolved, the item will later be deleted from the data/incidents.yaml file\n\nIf the Calendly status information for an incident is not within the stored information (and it is not already resolved), the information is stored as a new incident",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "0566248d3b2f_1",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/system-checkers/calendly",
+    "title": "Calendly",
+    "source": "handbook",
+    "headings": [
+      "Calendly",
+      "Understanding the Calendly system checker",
+      "What is the Calendly system checker",
+      "How does it work",
+      "Changing the Calendly system checker"
+    ],
+    "text": "o), the information is stored as an updated incident If the update is it being resolved, the item will later be deleted from the data/incidents.yaml file\n\nIf the Calendly status information for an incident is not within the stored information (and it is not already resolved), the information is stored as a new incident\n\nIf the Calendly status information for an incident is within the stored information (but there are differences between the two), the information is stored as an updated incident If the update is it being resolved, the item will later be deleted from the data/incidents.yaml file\n\nIf the update is it being resolved, the item will later be deleted from the data/incidents.yaml file\n\nCompares the current Calendly status information for maintenances to that of the stored information from data/maintenances.yaml If the Calendly status information for a maintenance is not within the stored information (and it is not already completed), the information is stored as a new maintenance If the Calendly status information for a maintenance is within the stored information (but there are differences between the two), the information is stored as an updated maintenance If the update is it being resolved, the item will later be deleted from the data/incidents.yaml file\n\nIf the Calendly status information for a maintenance is not within the stored information (and it is not already completed), the information is stored as a new maintenance",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "0566248d3b2f_2",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/system-checkers/calendly",
+    "title": "Calendly",
+    "source": "handbook",
+    "headings": [
+      "Calendly",
+      "Understanding the Calendly system checker",
+      "What is the Calendly system checker",
+      "How does it work",
+      "Changing the Calendly system checker"
+    ],
+    "text": "nformation is stored as an updated maintenance If the update is it being resolved, the item will later be deleted from the data/incidents.yaml file\n\nIf the Calendly status information for a maintenance is not within the stored information (and it is not already completed), the information is stored as a new maintenance\n\nIf the Calendly status information for a maintenance is within the stored information (but there are differences between the two), the information is stored as an updated maintenance If the update is it being resolved, the item will later be deleted from the data/incidents.yaml file\n\nIf the update is it being resolved, the item will later be deleted from the data/incidents.yaml file\n\nCreates a new commit to the project updating the data/incidents.yaml and data/maintenances.yaml files (if there are any new or updated items)\n\nMakes posts to the #feed_status-calendly Slack channel detailing any new or updated items\n\nChanging the Calendly system checker\n\nThis requires at least Developer access to the project.\n\nThis should only be done if there is a corresponding request issue (Feature Request, Administrative, Bug, etc.). If one does not exist, you should first create one (and let it go through the standard process before working it).\n\nTo make changes to the Calendly system checker, you will need to create a MR in the project repo. The exact changes being made will depend on the request itself.\n\nAfter a peer reviews and approves your MR, you can merge the MR (which will have them applied on the next triggered run).\n\nCommon issues and troubleshooting",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "0566248d3b2f_3",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/system-checkers/calendly",
+    "title": "Calendly",
+    "source": "handbook",
+    "headings": [
+      "Calendly",
+      "Understanding the Calendly system checker",
+      "What is the Calendly system checker",
+      "How does it work",
+      "Changing the Calendly system checker"
+    ],
+    "text": "To make changes to the Calendly system checker, you will need to create a MR in the project repo. The exact changes being made will depend on the request itself.\n\nAfter a peer reviews and approves your MR, you can merge the MR (which will have them applied on the next triggered run).\n\nCommon issues and troubleshooting\n\nThis is a living section that will have items added to it as needed.",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

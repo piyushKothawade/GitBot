@@ -1,0 +1,178 @@
+[
+  {
+    "chunk_id": "c046335b56b4_0",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/quantitative-data",
+    "title": "Using quantitative data to find insights",
+    "source": "handbook",
+    "headings": [
+      "Using quantitative data to find insights",
+      "What is quantitative data/research?",
+      "What can quantitative data tell us?",
+      "What can’t quantitative data tell us?",
+      "When to consider using quantitative data?"
+    ],
+    "text": "Using quantitative data to find insights\n\nThis page defines quantitative data, describes the primary advantages and disadvantages of using quantitative data in UX research, describes best practices, and provides examples for quantitative analysis.\n\nWhat is quantitative data/research?\n\nQuantitative data is any kind of data that can be quantified through counting or measuring . In contrast, qualitative data is descriptive and not easily distilled into a number. In the context of UX research, quantitative data usually is one of two types:\n\nUsage related data, such as clicks on features within GitLab.\n\nSurvey data of volume (at least a sample size of 30).\n\nWhat can quantitative data tell us?\n\nQuantitative data can tell us more about the who, what, when, and sometimes how of our\nproduct’s usage. As an example, quantitative data can answer the following research questions:\n\nHow many users engage with CI Pipeline templates?\n\nWhich GitLab features are used by Executives? (for users who provide their role)\n\nWhat can’t quantitative data tell us?\n\nQuantitative data cannot tell us the “why” , because there are always aspects of a user’s situation that aren’t understood or under our control. For example:\n\nImagine two users. One is a student who has been following some tutorials they found online to learn how repositories work. The other user is a software engineer who uses GitLab occasionally on their freelance projects. Both users use the same features at around the same time, and neither have their profile information filled out.",
+    "chunk_index": 0,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c046335b56b4_1",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/quantitative-data",
+    "title": "Using quantitative data to find insights",
+    "source": "handbook",
+    "headings": [
+      "Using quantitative data to find insights",
+      "What is quantitative data/research?",
+      "What can quantitative data tell us?",
+      "What can’t quantitative data tell us?",
+      "When to consider using quantitative data?"
+    ],
+    "text": "users. One is a student who has been following some tutorials they found online to learn how repositories work. The other user is a software engineer who uses GitLab occasionally on their freelance projects. Both users use the same features at around the same time, and neither have their profile information filled out.\n\nFrom this point of view, there is no way to tell the difference in use cases through usage analytics, and over time these users will end up being misrepresented in the product. While quantitative data is powerful, it’s important to recognize the limitations of what it can provide.\n\nWhen to consider using quantitative data?\n\nIf your hypotheses and research questions are similar to the examples below, then quantitative data may be one tool you consider using. Remember, this doesn’t mean that quantitative data is the only tool to use, because there are still limitations as to what analytics can tell us.\n\nExamples of questions that point towards using quantitative data:\n\nWhat do users click on when they are on a certain page?\n\nHow many users begin and finish a process?\n\nHow does the usage of one feature compare to another?\n\nWhen is a certain feature used?\n\nHow often is a feature used?\n\nWhich different types of options do users select?\n\nYou can usually spot these questions, as they tend to start with “what,” “how,” or “when.” Here is a walkthrough of how designers are using data to make decisions.\n\nWhat is the process of conducting quantitative research?\n\nThe typical process is as follows:",
+    "chunk_index": 1,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c046335b56b4_2",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/quantitative-data",
+    "title": "Using quantitative data to find insights",
+    "source": "handbook",
+    "headings": [
+      "Using quantitative data to find insights",
+      "What is quantitative data/research?",
+      "What can quantitative data tell us?",
+      "What can’t quantitative data tell us?",
+      "When to consider using quantitative data?"
+    ],
+    "text": "ture used?\n\nWhich different types of options do users select?\n\nYou can usually spot these questions, as they tend to start with “what,” “how,” or “when.” Here is a walkthrough of how designers are using data to make decisions.\n\nWhat is the process of conducting quantitative research?\n\nThe typical process is as follows:\n\nForm questions and hypotheses that can be answered by quantitative research\n\nInterpret/analyze the data\n\nWhy do I need to generate questions and hypotheses prior to conducting quantitative research?\n\nBefore starting any kind of quantitative research, it is important to identify your hypotheses and questions to avoid the problem of “data snooping.” In data snooping, a lack of defined hypotheses/questions leads you to find results that seem meaningful, but are actually misleading and misrepresentative of the user population. Hypotheses/questions serve as an anchor for your overall analysis.\n\nHow do I collect data?\n\nAt GitLab, there are two main approaches to collecting data: 1) querying from usage data in Snowflake or Tableau - see this handbook page for more information on GitLab’s data sources - and/or 2) using survey data.\n\nYou can use these two data sources to build a comprehensive understanding of your problem. For example, you might use usage data to first understand the user population you are looking at and then identify where you will need to go to get more data. Once you understand your user population, you might use a survey to uncover additional insights.\n\nHow do I look at/interpret quantitative data?",
+    "chunk_index": 2,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c046335b56b4_3",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/quantitative-data",
+    "title": "Using quantitative data to find insights",
+    "source": "handbook",
+    "headings": [
+      "Using quantitative data to find insights",
+      "What is quantitative data/research?",
+      "What can quantitative data tell us?",
+      "What can’t quantitative data tell us?",
+      "When to consider using quantitative data?"
+    ],
+    "text": "of your problem. For example, you might use usage data to first understand the user population you are looking at and then identify where you will need to go to get more data. Once you understand your user population, you might use a survey to uncover additional insights.\n\nHow do I look at/interpret quantitative data?\n\nOne way to look at data is with data visualizations. Data visualizations are graphical representations of data, commonly seen as charts or tables. Data visualizations are used to represent a trend in your data, or display a summary of your data.\n\nThere are many types of visualizations, and each one may suit a particular situation better than another. Below is an overview of common visualizations using example charts driven by SUS data, but you may also want to visit this helpful blog post for additional examples.\n\nTables are good to use when you want to summarize a portion of your data or display aggregations.\n\nPie charts are used to compare data in different categories.\n\nBar charts are used to compare data across distinct categories, like fiscal quarters.\n\nLine charts can be used to see trends. Time series are a type of line chart where the x-axis is always time.\n\nScatter plots are used when comparing two numeric variables. These charts can have some of the most flexibility, but that also comes with the risk of creating overly complex visualizations.\n\nWhat should you avoid when creating visualizations?\n\nThere are dozens of ways to lie with visualizations , even by accident. Some tips when creating your visualizations:",
+    "chunk_index": 3,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c046335b56b4_4",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/quantitative-data",
+    "title": "Using quantitative data to find insights",
+    "source": "handbook",
+    "headings": [
+      "Using quantitative data to find insights",
+      "What is quantitative data/research?",
+      "What can quantitative data tell us?",
+      "What can’t quantitative data tell us?",
+      "When to consider using quantitative data?"
+    ],
+    "text": "o numeric variables. These charts can have some of the most flexibility, but that also comes with the risk of creating overly complex visualizations.\n\nWhat should you avoid when creating visualizations?\n\nThere are dozens of ways to lie with visualizations , even by accident. Some tips when creating your visualizations:\n\nVisualizations should be quick and easy to interpret. The visualization should not result in more questions than answers.\n\nEach of your axes should be understandable and practical: Always start your axis at 0. Do not skip or remove large sections of your data by limiting the axis. Do not use double Y axes unless absolutely necessary. If you are comparing two graphs, ensure the axes are on the same scale and range.\n\nAlways start your axis at 0.\n\nDo not skip or remove large sections of your data by limiting the axis.\n\nDo not use double Y axes unless absolutely necessary.\n\nIf you are comparing two graphs, ensure the axes are on the same scale and range.\n\nFor chronological studies, always put time on the X axis.\n\nKeep it simple. Titles should be clear and concise, and there should be enough context for a team member unfamiliar with the topic to understand the message.\n\nState the limitations, including the date the data was pulled, and where it was pulled from. Use subtitles for references when needed.\n\nConsider your audience’s familiarity with the data set. A simple and informative graph can often have more impact on your audience than a “flashy” graph with multiple groupings and axes.\n\nSummarizing quantitative data",
+    "chunk_index": 4,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c046335b56b4_5",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/quantitative-data",
+    "title": "Using quantitative data to find insights",
+    "source": "handbook",
+    "headings": [
+      "Using quantitative data to find insights",
+      "What is quantitative data/research?",
+      "What can quantitative data tell us?",
+      "What can’t quantitative data tell us?",
+      "When to consider using quantitative data?"
+    ],
+    "text": "the date the data was pulled, and where it was pulled from. Use subtitles for references when needed.\n\nConsider your audience’s familiarity with the data set. A simple and informative graph can often have more impact on your audience than a “flashy” graph with multiple groupings and axes.\n\nSummarizing quantitative data\n\nThis section covers how to read visualizations, look for trends, and turn the results into insights. Start by looking for any kind of patterns. Some examples are:\n\nCyclic patterns based on time\n\nSimilarities or differences when comparing across one category or more\n\nData that is consistently increasing or decreasing.\n\nTwo variables that are correlated with each other. The correlation could look like: As one metric goes up/down, another metric cosistently goes up/down with it. As one metric goes up/down, another metric consistently does the opposite.\n\nAs one metric goes up/down, another metric cosistently goes up/down with it.\n\nAs one metric goes up/down, another metric consistently does the opposite.\n\nOnce you have identified patterns, summarize those patterns as best you can while considering your original hypotheses/questions.\n\nAn example of quantitative data summary\n\nThe following is an example of using quantitative data to investigate Actionable Insights (AI) . The research question was, “What are the potential factors in whether an (AI) issue is successfully completed or not?” First, the researcher pulled usage data in Sisense related to GitLab issues with the Actionable Insight label. Then, they created these charts:",
+    "chunk_index": 5,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c046335b56b4_6",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/quantitative-data",
+    "title": "Using quantitative data to find insights",
+    "source": "handbook",
+    "headings": [
+      "Using quantitative data to find insights",
+      "What is quantitative data/research?",
+      "What can quantitative data tell us?",
+      "What can’t quantitative data tell us?",
+      "When to consider using quantitative data?"
+    ],
+    "text": "antitative data to investigate Actionable Insights (AI) . The research question was, “What are the potential factors in whether an (AI) issue is successfully completed or not?” First, the researcher pulled usage data in Sisense related to GitLab issues with the Actionable Insight label. Then, they created these charts:\n\nBased on these charts, it is evident that there is a huge decline in issues closed after 7 months. So the finding were presented as, “If Actionable Insight issues are not addressed within 7 months of creation, they are likely to be left open.”\n\nAdditional examples of Product Designers using data for decisions\n\nState the limitations of your data\n\nWhen sharing your research, state what you believe are the limitations that may have impacted your results. For example, if your data:\n\nIs missing a collection of users\n\nIncludes usage from only the last 3 months\n\nHas concerns about its accuracy\n\nDoes not directly measure your research topic\n\nBe sure to include a description of the limitations in your summary. This information is just as relevant to the research as the metrics, and it provides context to the data. In some cases, you may decide it is not worth presenting the data, because of multiple problems.\n\nUsing quantitative data to track the success of a feature\n\nTracking key metrics that are formed through analytics can help you understand how a feature is performing in production over time.\n\nConsider adding analytics to features as they are developed and improved. This will enable you to track how successful the design or new feature was.",
+    "chunk_index": 6,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c046335b56b4_7",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/quantitative-data",
+    "title": "Using quantitative data to find insights",
+    "source": "handbook",
+    "headings": [
+      "Using quantitative data to find insights",
+      "What is quantitative data/research?",
+      "What can quantitative data tell us?",
+      "What can’t quantitative data tell us?",
+      "When to consider using quantitative data?"
+    ],
+    "text": "ta to track the success of a feature\n\nTracking key metrics that are formed through analytics can help you understand how a feature is performing in production over time.\n\nConsider adding analytics to features as they are developed and improved. This will enable you to track how successful the design or new feature was.\n\nUsing quantitative data alone\n\nThere are some instances where you can use quantitative data alone. Some examples are:\n\nAre users finding a new feature?\n\nWhich pages are visited the most?\n\nWhich browser types do users use to access our application?\n\nAre more users accessing a page now compared to last quarter?\n\nWhile the examples above can be answered solely with quantitative data, pairing with qualitative data will provide you with a more complete analysis. That’s because qualitative data helps you to understand the “why” behind what’s happening.\n\nThe perfect combination: quantitative and qualitative data together\n\nSome of the most useful research designs come from mixed methods. Both quantitative and qualitative methods have their limitations, but you can use them together to answer complex questions and provide a more complete story. By combining methods, you are able to answer both the “why” and the “how” or “what” of the problem.\n\nExample 1: Understand how users interact with a specific page.\n\nUse analytics to find out how many users visited a specific page and which features they used on that page. Focus on general characteristics of those users (account age, stages they visit, and so on).",
+    "chunk_index": 7,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c046335b56b4_8",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/quantitative-data",
+    "title": "Using quantitative data to find insights",
+    "source": "handbook",
+    "headings": [
+      "Using quantitative data to find insights",
+      "What is quantitative data/research?",
+      "What can quantitative data tell us?",
+      "What can’t quantitative data tell us?",
+      "When to consider using quantitative data?"
+    ],
+    "text": "both the “why” and the “how” or “what” of the problem.\n\nExample 1: Understand how users interact with a specific page.\n\nUse analytics to find out how many users visited a specific page and which features they used on that page. Focus on general characteristics of those users (account age, stages they visit, and so on).\n\nLaunch qualitative research that includes personas with any chance of overlapping with your page/feature. Be sure to expand your sample to more than just your analytics, remembering that our analytics aren’t always comprehensive (for example, we have limited data on Self Managed users). Use subject matter knowledge to see the possible gaps in your data, making sure to advocate for the hidden use cases.\n\nUse interviews or walkthroughs to understand user motivations.\n\nIncorporate your enhanced understanding in the proposed solution.\n\nExample 2: Finding areas for improvement of a new feature for future iterations.\n\nMonitor usage analytics with the feature flag after launching the new feature. Examine things like time on page and how many users interacted with other features during the workflow.\n\nUnderstand high-level goals by interviewing users with personas that have any chance of interacting with the new feature, as well as any persona identified in the usage data.\n\nPair usage analytics and the interview insights to visualize workflows that interact with other features.\n\nInclude priorities based on user input and time-on-page trends.\n\nUse those insights to help map future iterations in the roadmap.\n\nWhat do you do when you don’t have enough quantitative data?",
+    "chunk_index": 8,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c046335b56b4_9",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/quantitative-data",
+    "title": "Using quantitative data to find insights",
+    "source": "handbook",
+    "headings": [
+      "Using quantitative data to find insights",
+      "What is quantitative data/research?",
+      "What can quantitative data tell us?",
+      "What can’t quantitative data tell us?",
+      "When to consider using quantitative data?"
+    ],
+    "text": "d in the usage data.\n\nPair usage analytics and the interview insights to visualize workflows that interact with other features.\n\nInclude priorities based on user input and time-on-page trends.\n\nUse those insights to help map future iterations in the roadmap.\n\nWhat do you do when you don’t have enough quantitative data?\n\nThere are many common scenarios where you might not have enough data. For example:\n\nA new metric was implemented, but you only have a month’s worth of data.\n\nData is only reported from SaaS users and not self-managed.\n\nThere was an error/bug in data scrubbing, and you are missing a period of time.\n\nThere are a couple of different ways you might address this.\n\n(1) Expand research by supplementing your quantitative data with qualitative research. For example:\n\nDuring a quantitative investigation of a navigation element, you see an incredibly small number of users who consistently click on a different element than other users.\n\nAfter more investigation, you connect several character demographics and possible user personas to this user group. However, this research is unable to answer the question of why those users behave the way they do.\n\nTo attempt to answer this, you launch user interviews using the personas you found. After summarizing the interviews, you see that the users had a small set of overlapping use cases due to their shared industry, which leads to a newly identified JTBD for those personas.\n\n(2) Continue forward with the current product roadmap while summarizing your insights and the possible shortcomings. For example:",
+    "chunk_index": 9,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c046335b56b4_10",
+    "url": "https://handbook.gitlab.com/handbook/product/ux/experience-research/quantitative-data",
+    "title": "Using quantitative data to find insights",
+    "source": "handbook",
+    "headings": [
+      "Using quantitative data to find insights",
+      "What is quantitative data/research?",
+      "What can quantitative data tell us?",
+      "What can’t quantitative data tell us?",
+      "When to consider using quantitative data?"
+    ],
+    "text": "d. After summarizing the interviews, you see that the users had a small set of overlapping use cases due to their shared industry, which leads to a newly identified JTBD for those personas.\n\n(2) Continue forward with the current product roadmap while summarizing your insights and the possible shortcomings. For example:\n\nDuring problem validation, you find some data that points in the opposite direction of your hypothesis and assumptions and may contradict parts of your product roadmap. However, the data has a low sample size and perhaps leaves out some context in the workflow.\n\nWhen writing the results, speak to the facts of the data and your possible assumptions or biases. Explain how the data does point to one direction, but there is not enough evidence to suggest changing the roadmap.\n\nAdditionally, determine whether the insights are worth preserving and investigating more if an opportunity arises.\n\nIt is NOT recommended to fill your analysis with data from another project. This can create problems due to sample sizes from different populations making the data look different than reality.",
+    "chunk_index": 10,
+    "total_chunks": 11
+  }
+]

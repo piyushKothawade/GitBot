@@ -1,0 +1,9 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production-engineering/foundations",
+  "title": "Production Engineering Foundations Team",
+  "content": "Production Engineering Foundations Team\n\nSee Networking & Incident Management for topics related to cloud networking such as Cloudflare, rate limiting, and DNS.\n\nSee Runway for topics related to Fleet Management such as Kubernetes workloads, Chef, and ArgoCD.",
+  "source": "handbook",
+  "headings": [
+    "Production Engineering Foundations Team"
+  ]
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "dc14fe76406e_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/security-insights/ve_vr_troubleshooting",
+    "title": "Vulnerability Explanation and Vulnerability Resolution troubleshooting",
+    "source": "handbook",
+    "headings": [
+      "Vulnerability Explanation and Vulnerability Resolution troubleshooting",
+      "Troubleshooting Resource Guide for VE and VR",
+      "CWE Support",
+      "Dashboard to see logs",
+      "Monitoring VR alerts"
+    ],
+    "text": "Vulnerability Explanation and Vulnerability Resolution troubleshooting\n\nTroubleshooting Resource Guide for VE and VR\n\nWhen working with Vulnerability Resolution and Vulnerability Explanation, you might run into an error. Most commons\nproblems are documented in this section.\nIf you find an undocumented issue, you should document it in this section after\nyou find a solution.\n\nIf you need help developing or testing locally, please see the setup guide .\n\nFor availability of these features please first check the prerequisites listed here: vulnerability explanation and vulnerability resolution .\n\nAlso check: VR troubleshooting guide .\n\nDuo / VR features aren’t available\n\nThe group/project may not have assigned Duo Seats. Follow the Duo subscription add-ons instructions .\n\nUpstream errors such as “The upstream AI provider request timed out without responding”\n\nThis may indicate an issue with our third-party AI. This could be Anthropic outage - check status .\n\nSpecific recurring errors like “an unexpected error has occurred”\n\nThis may indicate an issue with the creation of the diff patch or MR. Refer to Error handling code\n\nFalse positive errors\n\nWe handle empty responses and empty <fixed_code> as false positives. Documentation , Response modifier code\n\nIf you see that the VR button is disabled, that means that the CWE is not part of the supported list at this time.\n\nFeature coverage restriction: VR is available for a set of CWEs, check SSOT documentaton and spreadsheet .\n\nQuery custom errors in Elastic\n\nCheck this dashboard for further investigation.\n\nVulnerability Explaination",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "dc14fe76406e_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/security-insights/ve_vr_troubleshooting",
+    "title": "Vulnerability Explanation and Vulnerability Resolution troubleshooting",
+    "source": "handbook",
+    "headings": [
+      "Vulnerability Explanation and Vulnerability Resolution troubleshooting",
+      "Troubleshooting Resource Guide for VE and VR",
+      "CWE Support",
+      "Dashboard to see logs",
+      "Monitoring VR alerts"
+    ],
+    "text": "that the VR button is disabled, that means that the CWE is not part of the supported list at this time.\n\nFeature coverage restriction: VR is available for a set of CWEs, check SSOT documentaton and spreadsheet .\n\nQuery custom errors in Elastic\n\nCheck this dashboard for further investigation.\n\nVulnerability Explaination\n\nVulnerability Explaination is enabled for all SAST vulnerabilities.\n\nVulnerability Resolution\n\nVulnerability Resolution is enabled for SAST vulnerabilities, only for a specific set of CWEs documented at Supported vulnerabilities for Vulnerability Resolution .\n\nWe determine whether a vulnerability supports Vulnerability Resolution based on its CWE identifier. This support is tracked using two mechanisms:\n\nDatabase field on vulnerability records has_vulnerability_resolution The database field is populated and backfilled during ingestion , meaning any successful pipeline run on the default branch after a CWE list update will ensure it contains the latest values. This field is used, for example, in: The Vulnerability Report (for filtering and display) Vulnerability Details (e.g., availability of “Resolve with AI”) Attention: Background migrations aren’t strictly required to backfill this value, but they are currently an established part of our workflow (see example migration ). Any changes to this process must be clearly documented.\n\nDatabase field on vulnerability records has_vulnerability_resolution",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "dc14fe76406e_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/security-insights/ve_vr_troubleshooting",
+    "title": "Vulnerability Explanation and Vulnerability Resolution troubleshooting",
+    "source": "handbook",
+    "headings": [
+      "Vulnerability Explanation and Vulnerability Resolution troubleshooting",
+      "Troubleshooting Resource Guide for VE and VR",
+      "CWE Support",
+      "Dashboard to see logs",
+      "Monitoring VR alerts"
+    ],
+    "text": "ility of “Resolve with AI”) Attention: Background migrations aren’t strictly required to backfill this value, but they are currently an established part of our workflow (see example migration ). Any changes to this process must be clearly documented.\n\nDatabase field on vulnerability records has_vulnerability_resolution\n\nThe database field is populated and backfilled during ingestion , meaning any successful pipeline run on the default branch after a CWE list update will ensure it contains the latest values.\n\nThis field is used, for example, in:\n\nThe Vulnerability Report (for filtering and display)\n\nVulnerability Details (e.g., availability of “Resolve with AI”)\n\nAttention: Background migrations aren’t strictly required to backfill this value, but they are currently an established part of our workflow (see example migration ). Any changes to this process must be clearly documented.\n\nAttention: Background migrations aren’t strictly required to backfill this value, but they are currently an established part of our workflow (see example migration ). Any changes to this process must be clearly documented.\n\nHardcoded list Used for pipeline findings (e.g., in merge requests), meaning they haven’t been fully ingested as vulnerability records yet and the has_vulnerability_resolution field in the database remains unset.\n\nUsed for pipeline findings (e.g., in merge requests), meaning they haven’t been fully ingested as vulnerability records yet and the has_vulnerability_resolution field in the database remains unset.",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "dc14fe76406e_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/security-insights/ve_vr_troubleshooting",
+    "title": "Vulnerability Explanation and Vulnerability Resolution troubleshooting",
+    "source": "handbook",
+    "headings": [
+      "Vulnerability Explanation and Vulnerability Resolution troubleshooting",
+      "Troubleshooting Resource Guide for VE and VR",
+      "CWE Support",
+      "Dashboard to see logs",
+      "Monitoring VR alerts"
+    ],
+    "text": "een fully ingested as vulnerability records yet and the has_vulnerability_resolution field in the database remains unset.\n\nUsed for pipeline findings (e.g., in merge requests), meaning they haven’t been fully ingested as vulnerability records yet and the has_vulnerability_resolution field in the database remains unset.\n\nNote: Unsupported CWEs may be tested by enabling the ignore_supported_cwe_list_check feature flag at the project level ( MR )\n\nNote: Unsupported CWEs may be tested by enabling the ignore_supported_cwe_list_check feature flag at the project level ( MR )\n\nDashboard to see logs\n\nProduction log dashboard - shows request/response/error as well as p50/p90/p99 for the timings of the duo request\n\nStaging log dashboard\n\nSlack channel to see alerts: #g_srm_security_insights_ai_error_alerts\n\nElastic logs used in watcher: https://log.gprd.gitlab.net/app/r/s/foNLr\n\nError watcher in IaC repo: https://gitlab.com/gitlab-com/runbooks/-/blob/master/elastic/managed-objects/log_gprd/watches/test_g_srm_security_insights_ai_error_watcher.jsonnet\n\nAlert threshold for this watcher is 5 errors over last 90 minutes. If needed the watcher can be deactivated from this page . The threshold value can be changed from the edit page .\n\nDocumentation Vulnerability Resolution Vulnerability Resolution in the MR\n\nVulnerability Resolution\n\nVulnerability Resolution in the MR\n\nLLM Prompts for VE and RV",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

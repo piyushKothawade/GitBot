@@ -1,0 +1,47 @@
+[
+  {
+    "chunk_id": "546e5084aa63_0",
+    "url": "https://handbook.gitlab.com/handbook/support/partnerships/select",
+    "title": "Select Partners",
+    "source": "handbook",
+    "headings": [
+      "Select Partners",
+      "Contacting Support",
+      "File uploads",
+      "Examples of Support Ticket Submission and Handling for Select Partners"
+    ],
+    "text": "Select partners are by invitation only and are reserved for partners that make\na greater investment in GitLab expertise, develop services practices around\nGitLab and are expected to drive greater GitLab product recurring revenues.\n\nSelect Partners and their end customers can contact us by submitting a ticket through the Submit a Request form. To ensure efficient ticket handling and prevent any delays in receiving the first response, they have two options:\n\nSelect Partners: If the Select Partner is opening a ticket on behalf of a customer or themselves then they can use the Submit a Request page and select the appropriate form for their problem.\n\nIf the Select Partner is opening a ticket on behalf of a customer or themselves then they can use the Submit a Request page and select the appropriate form for their problem.\n\nEnd Customers of Partners: If the end customers would prefer to open a ticket directly with GitLab Support then they can also use the Submit a Request page and select the appropriate form for their problem.\n\nEnd Customers of Partners:\n\nIf the end customers would prefer to open a ticket directly with GitLab Support then they can also use the Submit a Request page and select the appropriate form for their problem.\n\nThe only requirement for submitting a new ticket is that you must first register on the GitLab Support Portal .\n\nNote to Support : Never associate a customer to a Select Partner’s organization, or vice-versa!\n\nWhen Select Partners needs to send support files, we have 2 current methods\navailable to accomodate this:\n\nStandard ticket uploads (20MB max)",
+    "chunk_index": 0,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "546e5084aa63_1",
+    "url": "https://handbook.gitlab.com/handbook/support/partnerships/select",
+    "title": "Select Partners",
+    "source": "handbook",
+    "headings": [
+      "Select Partners",
+      "Contacting Support",
+      "File uploads",
+      "Examples of Support Ticket Submission and Handling for Select Partners"
+    ],
+    "text": "ting a new ticket is that you must first register on the GitLab Support Portal .\n\nNote to Support : Never associate a customer to a Select Partner’s organization, or vice-versa!\n\nWhen Select Partners needs to send support files, we have 2 current methods\navailable to accomodate this:\n\nStandard ticket uploads (20MB max)\n\nExamples of Support Ticket Submission and Handling for Select Partners\n\nSupport provided to Select Partners and their customers will vary depending on\nthe circumstances under which a ticket is raised. Some examples are:\n\nA Select Partner creates a ticket to address a GitLab concern brought to\nthem by their customer. The Select Partner will manage the ticket and\nserve as the go-between for the customer and GitLab Support. We will deliver Priority Support regardless of the customer’s subscription .\n\nA Select Partner creates a ticket to address a GitLab concern brought to\nthem by their customer. The Select Partner will manage the ticket and\nserve as the go-between for the customer and GitLab Support. We will deliver Priority Support regardless of the customer’s subscription .\n\nA Select Partner is doing commercial work for a customer and raises a\nticket. They should do so under their own account using a subscription\nthey have purchased for themselves. We will deliver support based on the\nsubscription the partner has purchased .",
+    "chunk_index": 1,
+    "total_chunks": 3
+  },
+  {
+    "chunk_id": "546e5084aa63_2",
+    "url": "https://handbook.gitlab.com/handbook/support/partnerships/select",
+    "title": "Select Partners",
+    "source": "handbook",
+    "headings": [
+      "Select Partners",
+      "Contacting Support",
+      "File uploads",
+      "Examples of Support Ticket Submission and Handling for Select Partners"
+    ],
+    "text": "ver Priority Support regardless of the customer’s subscription .\n\nA Select Partner is doing commercial work for a customer and raises a\nticket. They should do so under their own account using a subscription\nthey have purchased for themselves. We will deliver support based on the\nsubscription the partner has purchased .\n\nA Select Partner is doing commercial work for a customer and raises a\nticket. They should do so under their own account using a subscription\nthey have purchased for themselves. We will deliver support based on the\nsubscription the partner has purchased .\n\nA Select Partner is doing internal training, testing or knowledge\nbuilding. They should raise a ticket under their account using their NFR licences .\n\nA Select Partner is doing internal training, testing or knowledge\nbuilding. They should raise a ticket under their account using their NFR licences .\n\nThese examples are not exhaustive. If in doubt, ask questions about the\nsituation under which the ticket is being raised.",
+    "chunk_index": 2,
+    "total_chunks": 3
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "chunk_id": "4a8a227760dd_0",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/communication-tips",
+    "title": "Communication tips",
+    "source": "handbook",
+    "headings": [
+      "Communication tips",
+      "Slack reactions",
+      "Tickets"
+    ],
+    "text": "This page is intended to provide general communication tips for the GitLab Support\nDepartment. Anything related to communication useful for this department is\nwelcome here. It is meant to be an extension of the GitLab Communication handbook page .\n\nHow can a Support Engineer efficiently talk to other Support Engineers via\nSlack, Zoom or e-mail?\n\nHow can a Support Engineer get the most out of their interaction with a\nteam members posting in support Slack channels?\n\nIn addition to the :white_check_mark: emoji that is mentioned in General Guidelines for Communication at GitLab and Slack Workflows ,\nconsider utilizing the following emoji within Support Slack channels as well.\n\n:idontknow: - when another Support Engineer is asking a question to which\nyou don’t know the answer\n\n:red_circle: - when another Support Engineer is asking for something and\nyou are unable to do it due to conflicts or time constraints, such as being\nunable to cover someone else’s on-call shift because you’ll be unavailable\nduring the shift time.\nNote: We should avoid using this emoji when responding to high priority requests (emergencies, customer escalations, STARs).\n\n:eyes: - to signal that you are looking into the request. It serves as an\nindication that someone is acting upon the request, and prevents duplication\nof effort. If you were unable to answer the request you should remove the :eyes: so other people know the request is not yet handled.",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "4a8a227760dd_1",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/communication-tips",
+    "title": "Communication tips",
+    "source": "handbook",
+    "headings": [
+      "Communication tips",
+      "Slack reactions",
+      "Tickets"
+    ],
+    "text": "ies, customer escalations, STARs).\n\n:eyes: - to signal that you are looking into the request. It serves as an\nindication that someone is acting upon the request, and prevents duplication\nof effort. If you were unable to answer the request you should remove the :eyes: so other people know the request is not yet handled.\n\nNote that it is better to send some signal, even though it might indicate that\nyou cannot help, than to ignore the message that has been sent. This helps the\nperson who started the thread as it prevents them from holding on to the hope\nthat someone will chime in and makes them focus on searching for help elsewhere.\n\nOf course, whenever you can, share the idea you have in your mind no matter how\ntrivial you consider it to be, as you never know what can lead someone else in\nthe right direction.\n\nWhenever there is a discussion in Slack regarding a ticket, please remember to\nadd a link to the discussion as an internal note on the ticket. Because all\nSlack posts are removed after 90 days, please either summarize the Slack\ndiscussion in that internal note or, if it’s not too long, simply paste it in.\nThese actions make it possible for others to use the information from the\ndiscussion to help themselves to contribute to the ticket, or simply to learn\nfrom it.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

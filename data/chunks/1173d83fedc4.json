@@ -1,0 +1,34 @@
+[
+  {
+    "chunk_id": "1173d83fedc4_0",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/okta/app/scim",
+    "title": "Creating SCIM Applications",
+    "source": "handbook",
+    "headings": [
+      "Creating SCIM Applications",
+      "Overview",
+      "Application Type Preference",
+      "1. Use OIN App Where Possible",
+      "2. SWA App (If OIN Not Available)"
+    ],
+    "text": "Creating SCIM Applications\n\nThis guide outlines best practices for creating SCIM applications in Okta.\n\nApplication Type Preference\n\nWhen creating a new application in Okta, follow this order of preference:\n\n1. Use OIN App Where Possible\n\nAlways check the Okta Integration Network (OIN) first for a pre-built integration. OIN applications provide:\n\nPre-configured SAML/SCIM settings\n\nTested and maintained integrations\n\nSimplified setup process\n\nIf an OIN application is available for your vendor, use it.\n\n2. SWA App (If OIN Not Available)\n\nIf an OIN application is not available, create a Secure Web Authentication (SWA) application.\n\nSWA Application Configuration\n\nWhen configuring the SWA application, use the following sign-on settings:\n\nApp Sign-On URL : https://localhost\n\nApp visibility : Enable: Do not display application icon to users\n\nCredential Management\n\nUse the correct SWA credential setting:\n\nSetting : Administrator sets username & password\n\nThis setting ensures proper credential management and security.\n\nOnce the app has been created, navigate to the “General” tab and select “Edit”.\n\nAssignment and Password Security\n\nWhen assigning SWA applications to users using the recommended configuration, both assignment methods minimize the risk of password exposure in Okta.\n\nGroup-Level Assignment\n\nAt the group level, there is no risk of password exposure because:\n\nThe password field is not available when assigning at the group level\n\nPasswords cannot be set or stored in Okta through group assignments\n\nThis is how most access is assigned\n\nIndividual Assignment",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "1173d83fedc4_1",
+    "url": "https://handbook.gitlab.com/handbook/security/corporate/systems/okta/app/scim",
+    "title": "Creating SCIM Applications",
+    "source": "handbook",
+    "headings": [
+      "Creating SCIM Applications",
+      "Overview",
+      "Application Type Preference",
+      "1. Use OIN App Where Possible",
+      "2. SWA App (If OIN Not Available)"
+    ],
+    "text": "f password exposure in Okta.\n\nGroup-Level Assignment\n\nAt the group level, there is no risk of password exposure because:\n\nThe password field is not available when assigning at the group level\n\nPasswords cannot be set or stored in Okta through group assignments\n\nThis is how most access is assigned\n\nIndividual Assignment\n\nAt the individual level, there is no risk of password exposure when you:\n\nLeave the password field blank during assignment\n\nThis leaves the password unset in Okta\n\nNo credentials are stored in Okta\n\nBoth assignment methods result in no password storage in Okta, ensuring credential security.",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

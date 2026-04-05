@@ -1,0 +1,226 @@
+[
+  {
+    "chunk_id": "267cc180b22a_0",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "Tech Stack Applications\n\nTech Stack Process Has Now Moved to HelpLab\n\nThe entire Tech Stack management process has officially transitioned to HelpLab on Wednesday, October 22nd .\n\nTech Stack on HelpLab is located here . It’s also available via the “Application Tech Stack” app in Okta.\n\nHave an existing Merge Request?\n\nNo need to worry. Depending on the progress, we will complete and replicate the change onto Tech Stack on HelpLab .\n\nPlanning to Create a New Merge Request?\n\nPlease use the new Tech Stack Update Form instead of submitting an MR:\n\nUse the Tech Stack Update Form in HelpLab:\n\nOkta > HelpLab > IT > Tech Stack Update\n\nDefinition and Access\n\nThe Tech Stack is a list of all the technology that GitLab currently uses to support the business. It includes systems, applications, tools, and data used across all departments, along with details such as the business purpose/description, owners, provisioners, access teams, and other relevant attributes.\n\nThe Tech Stack in HelpLab is now the official single source of truth for all system information and changes. You can access it through:\n\nOkta → HelpLab → IT → Tech Stack Update\n\nBy searching for the “Application Tech Stack” app in Okta Dashboard.\n\nDirect link: Tech Stack on HelpLab\n\nMany applications have a Tech Stack Guide to help you understand how each app is used and implemented.\n\nThis Jupyter Notebook view of the Tech Stack allows filtering and exporting CSV, JSON, or Markdown versions of the data.\n\nRoles and Responsibilities\n\nBusiness and Technical Owners of Systems",
+    "chunk_index": 0,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_1",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "k: Tech Stack on HelpLab\n\nMany applications have a Tech Stack Guide to help you understand how each app is used and implemented.\n\nThis Jupyter Notebook view of the Tech Stack allows filtering and exporting CSV, JSON, or Markdown versions of the data.\n\nRoles and Responsibilities\n\nBusiness and Technical Owners of Systems\n\nAccountable for completeness and accuracy of Tech Stack data; Process Tech Stack updates ; Primary contacts for system-related inquiries and administration.\n\nIT Business Technology\n\nCode Owners of Tech Stack; Advise Business and Technical Owners in supporting systems.\n\nHelp facilitate Tech Stack updates, including the Business Impact Analysis for new and existing systems.\n\nTech Stack Definitions\n\nBusiness Owner : The Business Owner is the individual(s) responsible for all budget and decision making around the tool. They should define how the tool is used and by whom. This person(s) usually has login access to the tool as Owner but login access isn’t necessary in all cases. Please make sure you list individual people in this field, rather than teams.",
+    "chunk_index": 1,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_2",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "the individual(s) responsible for all budget and decision making around the tool. They should define how the tool is used and by whom. This person(s) usually has login access to the tool as Owner but login access isn’t necessary in all cases. Please make sure you list individual people in this field, rather than teams.\n\nTechnical Owner : This may be the same as the Business Owner based on the nature of the system, for instance, if the system isn’t centrally managed and or/requires little to no configuration. For systems that are centrally managed and/or heavily configured, the Technical Owner is someone with understanding of the application’s architecture, functionality (including types of data involved), and overall criticality/impact to GitLab. Technical Owner(s) are typically administrators of a tool. This includes everyone with the administrative clearance to provision and deprovision access of a tool and/or as the technical expertise needed to manage it.\n\nProvisioner/Deprovisioner : People in charge of granting and removing team member access to a tool. At least two provisioners/deprovisioners should be named for every tool in the handbook. Provisioners can be contacted as a group in Slack using the @provisioners handle and in GitLab using the @tech-stack-provisioner handle.\n\nAll Tech Stack changes must now be submitted using the Tech Stack Update Form in HelpLab.\n\nHow to Submit a Tech Stack Update Request\n\nGo to HelpLab → IT → Tech Stack Update (Okta path: Okta → HelpLab → IT → Tech Stack Update)",
+    "chunk_index": 2,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_3",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "Slack using the @provisioners handle and in GitLab using the @tech-stack-provisioner handle.\n\nAll Tech Stack changes must now be submitted using the Tech Stack Update Form in HelpLab.\n\nHow to Submit a Tech Stack Update Request\n\nGo to HelpLab → IT → Tech Stack Update (Okta path: Okta → HelpLab → IT → Tech Stack Update)\n\nGo to HelpLab → IT → Tech Stack Update (Okta path: Okta → HelpLab → IT → Tech Stack Update)\n\nIn HelpLab, open the Tech Stack Update form under the IT section.\n\nIn HelpLab, open the Tech Stack Update form under the IT section.\n\nOnce the form loads, select the relevant option under “What can we help you with?” The applicable follow-up questions will automatically appear.\n\nOnce the form loads, select the relevant option under “What can we help you with?” The applicable follow-up questions will automatically appear.\n\nFill in all required details and submit the request.\n\nFill in all required details and submit the request.\n\nProcessing & Workflow\n\nAll requests will be routed through HelpLab.\n\nThe HelpLab Team / IT EntApps Team will review, validate, and update entries accordingly.\n\nOwnership roles remain unchanged — you will still identify the Business Owner, Technical Owner, and Provisioners for each system.\n\nWhat data lives in the Tech Stack?\n\nPlease ensure that whenever you update the tech stack, you follow the instructions below and use the right type of data in each field.\n\nResponsible for filling out information",
+    "chunk_index": 3,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_4",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "unchanged — you will still identify the Business Owner, Technical Owner, and Provisioners for each system.\n\nWhat data lives in the Tech Stack?\n\nPlease ensure that whenever you update the tech stack, you follow the instructions below and use the right type of data in each field.\n\nResponsible for filling out information\n\nThe name of the system you are adding to the tech stack. Please enter the full and correct brand name associated with the tool. Example: “ Zendesk , not ZenDesk.”\n\nMR Author and contributors\n\nteam_member_baseline_entitlement\n\nA baseline entitlement is a system that ALL GitLab Team Members get access to. Example: “Zoom”. Most systems in our Tech Stack are not baseline entitlements.\n\nMR Author and contributors\n\nBusiness Purpose of the system. Please add links to handbook pages or websites that can provide people with more information on what the system is used for. Example: “ ContractWorks is a contract managing software. This process is used to file contract or related vendor documents after they are fully executed.”\n\nMR Author and contributors\n\nDefine which individuals or teams need access to this system. Example: Strategic Marketing and Product Managers\n\nMR Author and contributors\n\nText in single quotes, GitLab Username\n\nAdd the username of the people in charge of provisioning access to this system, separated by commas. We require at least 2 people to be listed as provisioners of a tool. Example: ‘ @username , @username1 ’\n\nMR Author and contributors\n\nText in single quotes, GitLab Username",
+    "chunk_index": 4,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_5",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "utors\n\nText in single quotes, GitLab Username\n\nAdd the username of the people in charge of provisioning access to this system, separated by commas. We require at least 2 people to be listed as provisioners of a tool. Example: ‘ @username , @username1 ’\n\nMR Author and contributors\n\nText in single quotes, GitLab Username\n\nAdd the username of the people in charge of removing access to this system, separated by commas. We require at least 2 people to be listed as deprovisioners of a tool. Team members can serve as both provisioners and deprovisioners of a tool. Example: ‘ @username , @username1 ’\n\nMR Author and contributors\n\nAdd the group owner of the tool (team/department/function). Example: Infrastructure\n\nMR Author and contributors\n\ngroup_owner_slack_channel\n\nAdd the Slack channel where the group owner  can be reached out for help. Example: #infrastructure-lounge\n\nMR Author and contributors\n\nThe Business Owner is the individual(s) responsible for all budget and decision making around the tool. They should define how the tool is used and by whom. This person(s) usually has login access to the tool as Owner but login access isn’t necessary in all cases. Please make sure you list individual people in this field, rather than teams. Example: Jane Doe, John Doe\n\nMR Author and contributors",
+    "chunk_index": 5,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_6",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "n making around the tool. They should define how the tool is used and by whom. This person(s) usually has login access to the tool as Owner but login access isn’t necessary in all cases. Please make sure you list individual people in this field, rather than teams. Example: Jane Doe, John Doe\n\nMR Author and contributors\n\nThe Technical Owner(s) all the administrators of a tool. This includes everyone with the administrative clearance to provision and deprovision access of a tool and/or as the technical expertise needed to manage it. Example: Jane Doe, John Doe. See guidance above for instances where a system does not require/have an administrator function\n\nMR Author and contributors\n\nText (Red, Orange, Yellow, Green) or Unknown**\n\nDecided upon by the Security team, please leave as null while this process is completed. More information on Data Classification Standards .\n\nauthentication_method\n\nText (Okta SWA, Okta SAML, ID and password, other) or Unknown**\n\nAuthentication method used to access the system. It can be SWA , SAML or other such as direct access (email and password login).\n\nMR Author and contributors\n\ncritical_systems_tier\n\nText (Tier 1 Mission Critical, Tier 2 Business Critical, Tier 3 Business Operational, Tier 4 Administrative, TBD) or Unknown**",
+    "chunk_index": 6,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_7",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "r Unknown**\n\nAuthentication method used to access the system. It can be SWA , SAML or other such as direct access (email and password login).\n\nMR Author and contributors\n\ncritical_systems_tier\n\nText (Tier 1 Mission Critical, Tier 2 Business Critical, Tier 3 Business Operational, Tier 4 Administrative, TBD) or Unknown**\n\nThis field classifies the system based on GitLab’s Critical System Tier Definitions . The assignment of a critical system tier is dependent on the completion of a Business Impact Analysis (BIA) questionnaire. The Security Risk Team will coordinate the completion of a BIA if it has not yet been completed at the time a system is being added to the Tech Stack.\n\nData that is collected by the tool\n\nMR Author and contributors\n\nemployee_or_customer_facing_app\n\nText (employee, customer)\n\nIf access is limited to GitLab team members, then please add the employee word. If access can be granted to external parties, then add customer\n\nMR Author and contributors\n\nAdditional relevant information about the system that is not captured in any other field. Examples include the GitLab Epic for implementation and rollout.\n\nOptional, MR Author and contributors\n\nText/Markdown or Unknown**\n\nLink to the Tech Stack Guide handbook page that includes function and system information.  Example: “The Marketing handbook contains the Marketo Tech Stack Guide .”\n\nOptional, MR Author and contributors\n\nText/Markdown or Unknown**\n\nLink to the app’s primary website. Example: “ ContractWorks ”\n\nOptional, MR Author and contributors",
+    "chunk_index": 7,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_8",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "Tech Stack Guide handbook page that includes function and system information.  Example: “The Marketing handbook contains the Marketo Tech Stack Guide .”\n\nOptional, MR Author and contributors\n\nText/Markdown or Unknown**\n\nLink to the app’s primary website. Example: “ ContractWorks ”\n\nOptional, MR Author and contributors\n\nGoogle group being used to manage access to the systems through Okta\n\nOptional, MR Author and contributors\n\nDoes the application support accessibility features? Select Yes or No. (Existing applications have been temporarily updated with “TBD”)\n\nMR Author and contributor\n\naccessibility_description\n\nDocument instructions to enable or submit a request to activate the accessibility feature. (May include the link to a handbook page or request ingestion point)\n\nMR Author and contributor\n\nIntegration ID for ServiceNow. Please leave blank for EntApps Engineer to Complete\n\nContributor, Service Now Engineer\n\n*For Booleans, you need to type out either true or false .\n\n**Unknown: If information is unknown, please don’t leave the field empty, type null instead.\n\nAdding a New System to the Tech Stack\n\nThe process for adding a new system to the tech stack has fully moved to HelpLab. Instead of creating a merge request in the tech_stack.yml file, follow the process below:\n\nGo to HelpLab → IT → Tech Stack Update (Okta path: Okta → HelpLab → IT → Tech Stack Update)\n\nGo to HelpLab → IT → Tech Stack Update (Okta path: Okta → HelpLab → IT → Tech Stack Update)",
+    "chunk_index": 8,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_9",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "o the tech stack has fully moved to HelpLab. Instead of creating a merge request in the tech_stack.yml file, follow the process below:\n\nGo to HelpLab → IT → Tech Stack Update (Okta path: Okta → HelpLab → IT → Tech Stack Update)\n\nGo to HelpLab → IT → Tech Stack Update (Okta path: Okta → HelpLab → IT → Tech Stack Update)\n\nOpen the form and select Add a New System . The form will automatically display all required fields such as system description, ownership, provisioners, access details, data classification, and other relevant attributes.\n\nOpen the form and select Add a New System . The form will automatically display all required fields such as system description, ownership, provisioners, access details, data classification, and other relevant attributes.\n\nFill out the details and submit the request.\n\nFill out the details and submit the request.\n\nNote: Legal, IT Compliance, Internal Audit, Security Risk, and Business Systems will be automatically involved in the workflow to complete their respective sections before the request is finalized.\n\nNote: Legal, IT Compliance, Internal Audit, Security Risk, and Business Systems will be automatically involved in the workflow to complete their respective sections before the request is finalized.\n\nUpdating an Existing System in Tech Stack\n\nAll system updates must now be made through HelpLab. Instead of creating a merge request in the tech_stack.yml file, follow the process below:\n\nNavigate to HelpLab → IT → Tech Stack Update and select Update an Existing System .\n\nChoose the system you want to modify.",
+    "chunk_index": 9,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_10",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "inalized.\n\nUpdating an Existing System in Tech Stack\n\nAll system updates must now be made through HelpLab. Instead of creating a merge request in the tech_stack.yml file, follow the process below:\n\nNavigate to HelpLab → IT → Tech Stack Update and select Update an Existing System .\n\nChoose the system you want to modify.\n\nThe form will automatically display follow-up questions based on the type of update.\n\nProvide the necessary changes and submit the form.\n\nThe appropriate reviewer groups will validate and process the update as part of the HelpLab workflow.\n\nRemoving a System from Tech Stack\n\nTo remove a system from the tech stack, use the Tech Stack Update form instead of submitting a merge request to the tech_stack.yml file.\n\nGo to HelpLab → IT → Tech Stack Update and select Remove a System .\n\nProvide context for the deprecation or offboarding, along with any required details to initiate the process.\n\nAs part of this workflow, the Business Owner must coordinate with Legal and IT Compliance to ensure data deletion and contractual requirements are fully addressed.\n\nOnce all steps are completed and verified, the HelpLab Team / EntApps Team will remove the system from the tech stack.\n\nOccasionally, systems listed in our tech stack will be deprecated. If a system is being offboarded (no longer used or being replaced), please submit a Remove a System request through the Tech Stack Update workflow in HelpLab.",
+    "chunk_index": 10,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_11",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "ted and verified, the HelpLab Team / EntApps Team will remove the system from the tech stack.\n\nOccasionally, systems listed in our tech stack will be deprecated. If a system is being offboarded (no longer used or being replaced), please submit a Remove a System request through the Tech Stack Update workflow in HelpLab.\n\nAs part of this process, the Business Owner must collaborate with Legal and IT Compliance to ensure that all data deletion and contractual requirements are completed according to the vendor agreement. Once all steps are validated, the system will be removed from the Tech Stack through the HelpLab workflow.\n\nOther Related Processes\n\nPlease review our Access Requests handbook page to find more information on how to request access to systems. Choose the right template for your use case and follow the instructions.\n\nDo you want to procure a new application/system? Visit the Procurement handbook page to find out more information on how to get started. Only applications which go through this process can be added to the tech stack.\n\nAre you experiencing issues with an application/system? Visit our Tech Stack YAML and under Group Owner/Slack Channel , you can find out what Slack channel you need to reach out to request support.\n\nMany applications listed in the Tech Stack are in-scope for regulatory or other compliance activities. For more information please reach out to the DRIs listed below:\n\nFedRAMP: Corey Oas (@corey-oas), Security Compliance\n\nGitLab SaaS SOC2: Liz Coleman (@lcoleman), Security Compliance",
+    "chunk_index": 11,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_12",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "d to reach out to request support.\n\nMany applications listed in the Tech Stack are in-scope for regulatory or other compliance activities. For more information please reach out to the DRIs listed below:\n\nFedRAMP: Corey Oas (@corey-oas), Security Compliance\n\nGitLab SaaS SOC2: Liz Coleman (@lcoleman), Security Compliance\n\nGitLab Dedicated SOC2: Corey Oas (@corey-oas), Security Compliance\n\nISO 27001: Liz Coleman (@lcoleman), Security Compliance\n\nSOX: Sean Brown (@sbrown10), Internal Audit\n\nUpdating the Offboarding Templates\n\nThe offboarding templates need to be updated when a new system is added to the Tech Stack in order for GitLab to be compliant and remove Team Members from systems once they leave GitLab. There are two different ways to update the offboarding templates.  Pick the option which best suits the usage of the new system. Once the MR is ready to be merged, tag the People Operations team - @gl-people-ops-team - for approval and merge.\n\nUpdate the main Team Member Offboarding template.\n\nThe main template is divided into two sections.  The first section is the Offboarding Tasks section.  This section is applicable to all GitLab Team Members and is performed by the Manager, People, Business Technology, and Finance/Accounting teams.\n\nThe second section is the Tech Stack System Deprovisioning / Offboarding section.  Update this section with the new system being added to the Tech Stack.  Use the format below to make the update:\n\nWhen finished, link the MR in the “Access Tasks” section of the ‘Tech Stack - Add New System’ MR.",
+    "chunk_index": 12,
+    "total_chunks": 14
+  },
+  {
+    "chunk_id": "267cc180b22a_13",
+    "url": "https://handbook.gitlab.com/handbook/business-technology/tech-stack-applications",
+    "title": "Tech Stack Applications",
+    "source": "handbook",
+    "headings": [
+      "Tech Stack Applications",
+      "Tech Stack Process Has Now Moved to HelpLab",
+      "Have an existing Merge Request?",
+      "Planning to Create a New Merge Request?",
+      "Definition and Access"
+    ],
+    "text": "inance/Accounting teams.\n\nThe second section is the Tech Stack System Deprovisioning / Offboarding section.  Update this section with the new system being added to the Tech Stack.  Use the format below to make the update:\n\nWhen finished, link the MR in the “Access Tasks” section of the ‘Tech Stack - Add New System’ MR.\n\nUpdate the department-level Offboarding template within this directory.\n\nUsing the link above, locate the template of the department owning the new system and update it. Example: If only the Security team will have access to a new system, locate the Security template and add the new system to that template following this format:\n\n- [ ]  @usernameofdeprovisioner @usernameofdeprovisioner2: Remove the team member from System name\n\nWhen finished, link the MR in the “Access Tasks” section of the ‘Tech Stack - Add New System’ MR.\n\nThere are exceptions to adding technologies to the Tech Stack which are handled on a case-by-case basis.",
+    "chunk_index": 13,
+    "total_chunks": 14
+  }
+]

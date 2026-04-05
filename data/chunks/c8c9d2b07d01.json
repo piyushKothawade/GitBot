@@ -1,0 +1,32 @@
+[
+  {
+    "chunk_id": "c8c9d2b07d01_0",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk",
+    "title": "Zendesk",
+    "source": "handbook",
+    "headings": [
+      "Zendesk",
+      "Instances",
+      "Zendesk Global",
+      "Zendesk US Government"
+    ],
+    "text": "This is our main (and first) Zendesk instance. Most people interacting with GitLab Support will use this instance.\n\nAccessible by: Everyone\n\nProduction domain: gitlab Portal access: https://support.gitlab.com/hc Agent access: https://gitlab.zendesk.com/agent Internal brand access: https://gitlab-internal.zendesk.com/hc NOTE: Must sign-in to the agent access link first\n\nPortal access: https://support.gitlab.com/hc\n\nAgent access: https://gitlab.zendesk.com/agent\n\nInternal brand access: https://gitlab-internal.zendesk.com/hc NOTE: Must sign-in to the agent access link first\n\nNOTE: Must sign-in to the agent access link first\n\nSandbox domain: gitlab1707170878 Portal access: https://gitlab1707170878.zendesk.com/hc Agent access: https://gitlab1707170878.zendesk.com/agent Internal brand access: https://gitlab1707170878-internal.zendesk.com/hc NOTE: Must sign-in to the agent access link first\n\nPortal access: https://gitlab1707170878.zendesk.com/hc\n\nAgent access: https://gitlab1707170878.zendesk.com/agent\n\nInternal brand access: https://gitlab1707170878-internal.zendesk.com/hc NOTE: Must sign-in to the agent access link first\n\nNOTE: Must sign-in to the agent access link first\n\nZendesk US Government\n\nThis is a Zendesk instance made specifically with Self-Managed public sector users in mind. It has many restrictions and is not generally usable without pre-approval.\n\nAccessible by: US Citizens only",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "c8c9d2b07d01_1",
+    "url": "https://handbook.gitlab.com/handbook/security/customer-support-operations/zendesk",
+    "title": "Zendesk",
+    "source": "handbook",
+    "headings": [
+      "Zendesk",
+      "Instances",
+      "Zendesk Global",
+      "Zendesk US Government"
+    ],
+    "text": ": Must sign-in to the agent access link first\n\nNOTE: Must sign-in to the agent access link first\n\nZendesk US Government\n\nThis is a Zendesk instance made specifically with Self-Managed public sector users in mind. It has many restrictions and is not generally usable without pre-approval.\n\nAccessible by: US Citizens only\n\nProduction domain: gitlab-federal-support Portal access: https://federal-support.gitlab.com/hc Agent access: https://gitlab-federal-support.zendesk.com/agent Internal brand access: https://gitlab-federal-internal.zendesk.com/hc NOTE: Must sign-in to the agent access link first\n\nPortal access: https://federal-support.gitlab.com/hc\n\nAgent access: https://gitlab-federal-support.zendesk.com/agent\n\nInternal brand access: https://gitlab-federal-internal.zendesk.com/hc NOTE: Must sign-in to the agent access link first\n\nNOTE: Must sign-in to the agent access link first\n\nSandbox domain: gitlabfederalsupport1585318082 Portal access: https://gitlabfederalsupport1585318082.zendesk.com/hc Agent access: https://gitlabfederalsupport1585318082.zendesk.com/agent Internal brand access: https://gitlabfederalsupport1585318082-internal.zendesk.com/hc NOTE: Must sign-in to the agent access link first\n\nPortal access: https://gitlabfederalsupport1585318082.zendesk.com/hc\n\nAgent access: https://gitlabfederalsupport1585318082.zendesk.com/agent\n\nInternal brand access: https://gitlabfederalsupport1585318082-internal.zendesk.com/hc NOTE: Must sign-in to the agent access link first\n\nNOTE: Must sign-in to the agent access link first",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

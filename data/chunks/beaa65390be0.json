@@ -1,0 +1,114 @@
+[
+  {
+    "chunk_id": "beaa65390be0_0",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/mentoring-coaching",
+    "title": "Developer Advocacy: Mentoring and Coaching",
+    "source": "handbook",
+    "headings": [
+      "Developer Advocacy: Mentoring and Coaching",
+      "Introduction",
+      "Mentoring",
+      "Finding a mentor",
+      "Resources"
+    ],
+    "text": "Developer Advocacy: Mentoring and Coaching\n\nThis handbook page documents best practices how Developer Advocates can help wider community members with mentoring and coaching.\n\nGitLab Developer Advocates actively engage with mentoring wider community members. The team’s time is limited with our many activities , please understand when we decline a request. Polywork and other platforms can help finding mentors.\n\nReview the process and tips in Mentoring at GitLab\n\nHow to be a mentor: 4 ways to change someone’s life\n\nIf the career path is to becoming a Developer Advocate, the Developer Advocacy handbook provides many resources.\n\nEngineering and coding sessions depend on the knowledge and focus area of the mentor .\n\nOpen Source contributions, code reviews, building communities, etc.\n\nPersonal brand, thought leadership, speaking, content creation, developer advocacy\n\nShare career ambitions and thoughts where you want to be.\n\nThink of your personal challenges, and ask for familiarities and advice\n\nCreate a tag cloud of topics you’d like to ask your mentor in the future (Observability, Cloud-Native, etc.)\n\nTake notes (pen and paper, whiteboard with post-its, GitLab issues, Notion, etc.)\n\nAsk questions, share notes and code\n\nDefine time commitment, and how much you can invest into the mentorship.\n\nDocument your learnings, and become a future mentor yourself.\n\nLearning a new technology\n\nDefine goals ambitiously but do not overload yourself\n\nRecap what you have learned, write a monthly blog post and use other methods to document your success and learnings",
+    "chunk_index": 0,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "beaa65390be0_1",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/mentoring-coaching",
+    "title": "Developer Advocacy: Mentoring and Coaching",
+    "source": "handbook",
+    "headings": [
+      "Developer Advocacy: Mentoring and Coaching",
+      "Introduction",
+      "Mentoring",
+      "Finding a mentor",
+      "Resources"
+    ],
+    "text": "mmitment, and how much you can invest into the mentorship.\n\nDocument your learnings, and become a future mentor yourself.\n\nLearning a new technology\n\nDefine goals ambitiously but do not overload yourself\n\nRecap what you have learned, write a monthly blog post and use other methods to document your success and learnings\n\nAdjust the goals if they feel reached too early.\n\nDefine your knowledge and set expectations.\n\nDefine goals and success.\n\nListen with empathy, cheer and encourage.\n\nDiscuss career and learning goals and progress.\n\nTake action Burnout: Feeling tired, not sharing good vibes, only work topics, etc. Blockers: Ask for the problem and google together in a screen share.\n\nBurnout: Feeling tired, not sharing good vibes, only work topics, etc.\n\nBlockers: Ask for the problem and google together in a screen share.\n\nProvide access to resources and people.\n\nTurn learning sessions into fun pair programming and optionally record for later.\n\nDocument feedback and learnings in the handbook.\n\nSchedule regular chats\n\nMake it a coffee chat with an agenda, following GitLab communication best practices .\n\nOffer a monthly chat, for example on the first Tuesday of the month, time XY.\n\nCreate a 1:1 Google doc with an agenda Document all URLs shared in the chat, share async “as you see them” Write down thoughts and ideas\n\nDocument all URLs shared in the chat, share async “as you see them”\n\nWrite down thoughts and ideas\n\nLearn together in public GitLab groups and projects",
+    "chunk_index": 1,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "beaa65390be0_2",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/mentoring-coaching",
+    "title": "Developer Advocacy: Mentoring and Coaching",
+    "source": "handbook",
+    "headings": [
+      "Developer Advocacy: Mentoring and Coaching",
+      "Introduction",
+      "Mentoring",
+      "Finding a mentor",
+      "Resources"
+    ],
+    "text": "uesday of the month, time XY.\n\nCreate a 1:1 Google doc with an agenda Document all URLs shared in the chat, share async “as you see them” Write down thoughts and ideas\n\nDocument all URLs shared in the chat, share async “as you see them”\n\nWrite down thoughts and ideas\n\nLearn together in public GitLab groups and projects\n\nCreate a public group and projects for code snippets, learning projects, etc. in the EveryoneCanContribute DevRel group on GitLab.com Organize learning activities in a group epic for one year ( example for FY24 (Feb 2023 - Jan 2024) ).\n\nOrganize learning activities in a group epic for one year ( example for FY24 (Feb 2023 - Jan 2024) ).\n\nRe-use best practices from Developer Advocate workflows\n\nUse GitLab for learning technologies, practice CI/CD and DevSecOps, and create talk demos\n\nExample in FY23: Julia Furst Morgado changes careers to learn DevRel, related technologies (cloud native, Kubernetes, etc.) and CFP talk submissions.\n\nExample in FY24: Aakansha Priya learns DevRel, works on Linux, container, Kubernetes, cloud-native topics, and learns the DevSecOps journey. Created epics and issues to organize tasks and goals:\n\nDevSecOps journey epic\n\nCloud-native journey epic\n\nMaintain a templates project for the DevRel group , which provides issue/MR templates in a single source of truth . Edit new projects in Settings > Default description template for issues with the following text: <!-- Please choose a description template from the dropdown above to continue. Accept to override this text. -->",
+    "chunk_index": 2,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "beaa65390be0_3",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/mentoring-coaching",
+    "title": "Developer Advocacy: Mentoring and Coaching",
+    "source": "handbook",
+    "headings": [
+      "Developer Advocacy: Mentoring and Coaching",
+      "Introduction",
+      "Mentoring",
+      "Finding a mentor",
+      "Resources"
+    ],
+    "text": "ain a templates project for the DevRel group , which provides issue/MR templates in a single source of truth . Edit new projects in Settings > Default description template for issues with the following text: <!-- Please choose a description template from the dropdown above to continue. Accept to override this text. -->\n\nEdit new projects in Settings > Default description template for issues with the following text: <!-- Please choose a description template from the dropdown above to continue. Accept to override this text. -->\n\nTalks and Call for Papers\n\nStart drafting talk ideas in a dedicated Google doc for each topic, and discuss the story and technologies in 1:1s. Add thoughts async, and share suggestions directly.\n\nOrganisation and workflow tips:\n\nCreate a calendar with events in the coming year, and keep track of Call for Paper due dates. Use cfps.dev (link no longer available) by Brendan.\n\nCopy the Developer Advocate CFP workflow with issues and scoped labels into a new group/project for CFPs. Example for KubeCon EU 2023 .\n\nAdd issue references to Developer Advocate CFP issue tracking to coordinate efforts.\n\nReview the talk title and abstract in the Gdoc async or sync. As a mentor, change to suggesting mode in the Gdoc and provide suggestions with all thoughts. Encourage the mentee to review the suggestions, and accept if reasonable. This workflow will enable mentees to take feedback from everyone in the future.",
+    "chunk_index": 3,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "beaa65390be0_4",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/mentoring-coaching",
+    "title": "Developer Advocacy: Mentoring and Coaching",
+    "source": "handbook",
+    "headings": [
+      "Developer Advocacy: Mentoring and Coaching",
+      "Introduction",
+      "Mentoring",
+      "Finding a mentor",
+      "Resources"
+    ],
+    "text": "efforts.\n\nReview the talk title and abstract in the Gdoc async or sync. As a mentor, change to suggesting mode in the Gdoc and provide suggestions with all thoughts. Encourage the mentee to review the suggestions, and accept if reasonable. This workflow will enable mentees to take feedback from everyone in the future.\n\nEncourage social shares when the CFP has been submitted. Start without the talk title, later encourage to add the topic that has been submitted. Example from Julia Furst Morgado in this tweet for KubeCon EU 2023.\n\nTip : Talks are stories that evolve each time they are told. Think of a rock band giving a concert, each song is a little different when played live. The same applies to a talk story - iterate on talk questions and feedback, and also add new learnings and technologies over time. Events that accept a talk do not have the same audience and new folks can learn from talks.\n\nEvents and CFP forms collect different information, and also have different character limits for abstracts, etc. Iterate on collecting all details in a Google doc for the abstract as a single source of truth.\n\nContext (inspiration sources, other talks, community feedback)\n\nSubmissions (list of events with URLs into CFP issues, acceptance state with emoji)\n\nAbstract 1000 chars (fits KubeCon) Less than 900 chars Less than 700 chars\n\n1000 chars (fits KubeCon)\n\nEcosystem benefits (KubeCon)\n\nBio/CV (add URL to speaker’s SSoT website/Gdoc)\n\nCFP template Google doc .\n\nBiography template Google doc",
+    "chunk_index": 4,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "beaa65390be0_5",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/mentoring-coaching",
+    "title": "Developer Advocacy: Mentoring and Coaching",
+    "source": "handbook",
+    "headings": [
+      "Developer Advocacy: Mentoring and Coaching",
+      "Introduction",
+      "Mentoring",
+      "Finding a mentor",
+      "Resources"
+    ],
+    "text": "missions (list of events with URLs into CFP issues, acceptance state with emoji)\n\nAbstract 1000 chars (fits KubeCon) Less than 900 chars Less than 700 chars\n\n1000 chars (fits KubeCon)\n\nEcosystem benefits (KubeCon)\n\nBio/CV (add URL to speaker’s SSoT website/Gdoc)\n\nCFP template Google doc .\n\nBiography template Google doc\n\nMentoring usually happens in 1:1 conversations, building trust and relationships, with optional public sharing. Coaching can happen in private and public, and can involve different types of short or long term help.\n\nEngage with public replies in Twitter threads, LinkedIn posts, etc. and offer coffee chats or private conversations to wider community members who seek for advice. Listening to the story and plans helps with making suggestions efficiently, and builds trust and relationships too.\n\nDeveloper Advocates are encouraged to help with\n\nReview talk abstracts and slide decks\n\nSocial media best practices\n\nHelp with advice on detecting and preventing burnout Twitter Thread as a response to the question How do I know when I'm showing signs of burnout?\n\nTwitter Thread as a response to the question How do I know when I'm showing signs of burnout?\n\nGetting Started with Cloud-Native Help\n\nGetting started in the cloud-native community with a huge landscape of tools to understand can be overwhelming. Learning technologies and frameworks, from Kubernetes to beyond, requires guidance and a plan for individual growth.",
+    "chunk_index": 5,
+    "total_chunks": 7
+  },
+  {
+    "chunk_id": "beaa65390be0_6",
+    "url": "https://handbook.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/mentoring-coaching",
+    "title": "Developer Advocacy: Mentoring and Coaching",
+    "source": "handbook",
+    "headings": [
+      "Developer Advocacy: Mentoring and Coaching",
+      "Introduction",
+      "Mentoring",
+      "Finding a mentor",
+      "Resources"
+    ],
+    "text": "n How do I know when I'm showing signs of burnout?\n\nGetting Started with Cloud-Native Help\n\nGetting started in the cloud-native community with a huge landscape of tools to understand can be overwhelming. Learning technologies and frameworks, from Kubernetes to beyond, requires guidance and a plan for individual growth.\n\nMichael had a coffee chat with Edidiong Asikpo who started her cloud-native journey as Developer Advocate at AmbassadorLabs in 2021. They discussed a learning plan as a DevRel in cloud-native, and shared ideas on demo deployments, learning with Observability, and also looked into the Developer Advocacy social media handbook .\n\nIn 2022, Edidiong shared her promotion to Senior Developer Advocate, responding to Michael’s wishes :\n\nThe conversation we had when I started my journey in the Cloud Native space gave me the context I needed to learn and improve my skills. Thank you.\n\nThe conversation we had when I started my journey in the Cloud Native space gave me the context I needed to learn and improve my skills. Thank you.",
+    "chunk_index": 6,
+    "total_chunks": 7
+  }
+]

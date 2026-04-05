@@ -1,0 +1,171 @@
+:root {
+  /* Fonts */
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --font-serif: 'Fraunces', Georgia, serif;
+  
+  /* Colors */
+  --orange: #fc6d26;
+  --orange-dim: rgba(252, 109, 38, 0.12);
+  --orange-glow: rgba(252, 109, 38, 0.3);
+  --green: #2ea04b;
+  --red: #e74c3c;
+  
+  /* Text */
+  --text-primary: #2d2d30;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  
+  /* Backgrounds */
+  --bg-base: #ffffff;
+  --bg-surface: #f9fafb;
+  --bg-elevated: #f3f4f6;
+  
+  /* Borders */
+  --border: #e5e7eb;
+  --border-bright: #d1d5db;
+  
+  /* Radius */
+  --radius: 6px;
+  --radius-lg: 12px;
+  
+  /* Transitions */
+  --transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #e5e7eb;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    --bg-base: #1f2937;
+    --bg-surface: #111827;
+    --bg-elevated: #374151;
+    --border: #4b5563;
+    --border-bright: #6b7280;
+    --orange-dim: rgba(252, 109, 38, 0.15);
+    --orange-glow: rgba(252, 109, 38, 0.4);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-bright);
+}
+
+/* Markdown styling */
+.markdown-body {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.markdown-body p {
+  margin-bottom: 0.5em;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body li {
+  margin-bottom: 0.25em;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.markdown-body em {
+  font-style: italic;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid var(--orange);
+  padding-left: 1em;
+  margin: 0.5em 0;
+  opacity: 0.8;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.5em 0;
+  font-size: 0.9em;
+}
+
+.markdown-body th, .markdown-body td {
+  border: 1px solid var(--border);
+  padding: 0.5em;
+  text-align: left;
+}
+
+.markdown-body th {
+  background: var(--bg-elevated);
+  font-weight: 600;
+}
+
+/* Focus styles */
+button:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+
+textarea:focus-visible {
+  outline: none;
+}

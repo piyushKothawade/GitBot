@@ -1,0 +1,146 @@
+[
+  {
+    "chunk_id": "71b28a742873_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-performance-testing",
+    "title": "Secret push protection performance testing",
+    "source": "handbook",
+    "headings": [
+      "Secret push protection performance testing",
+      "When to use this runbook?",
+      "Prerequisites",
+      "Running GPT tests",
+      "Setting up a GET"
+    ],
+    "text": "Secret push protection performance testing\n\nWhen to use this runbook?\n\nUse this runbook for:\n\nRunning GPT tests - for running tests and comparing with previous benchmarks\n\nDeploying a new version of GitLab to GET - for updating a GET instance, most likely to test out changes related to secret push protection\n\nSetting up a new GET environment - for testing different reference architectures\n\ngcloud ( official instructions ) - for running various commands, and for logging in to the test runner vm\n\nThe Static Analysis GCP Project (see Resources section ) - access required to make changes to the infrastructure\n\nGet the url and password for the root user from 1password by searching for Static Analysis in the Engineering Vault. Please don’t delete projects, groups, or users, but feel free to create any of those, or anything else you’d like to test with.\n\nRunning automated tests (via GCP VM)\n\nOptions for logging in to the VM:\n\nSSH in to the VM: gcloud compute ssh --zone us-west1-c gpt-test-runner-2 --project dev-sast-prereceive-8a4574ec\n\nOr, go to The Static Analysis GCP Project: dev-sast-prereceive-8a4574ec , click Compute Engine , find gpt-test-runner-2 , and click SSH . This will launch a web-based SSH session.\n\nOne time setup (required by everyone running the tests from the VM):\n\ngit clone https://gitlab.com/gitlab-org/quality/performance.git\n\nCopy the gcp-2k.json file from this MR to the performance directory\n\nCreate a .tool-versions file and add ruby 3.2.2 to it (or whatever the latest is)\n\nCheck out our branch secret-detection",
+    "chunk_index": 0,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "71b28a742873_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-performance-testing",
+    "title": "Secret push protection performance testing",
+    "source": "handbook",
+    "headings": [
+      "Secret push protection performance testing",
+      "When to use this runbook?",
+      "Prerequisites",
+      "Running GPT tests",
+      "Setting up a GET"
+    ],
+    "text": "time setup (required by everyone running the tests from the VM):\n\ngit clone https://gitlab.com/gitlab-org/quality/performance.git\n\nCopy the gcp-2k.json file from this MR to the performance directory\n\nCreate a .tool-versions file and add ruby 3.2.2 to it (or whatever the latest is)\n\nCheck out our branch secret-detection\n\nGet the glpat token from 1password by searching for Static Analysis in the Engineering Vault\n\nEnsure you are in the performance directory\n\nTo run just the git_secret_detection.js test (as an example): ACCESS_TOKEN=glpat-REDACTED SD_PUSH_CHECK_ENABLED=true SD_FILES_PER_COMMIT=4 GPT_DEBUG=true SD_FILE_SIZES=\"10kb\" GPT_SKIP_RETRY=true ./bin/run-k6 --environment gcp-2k.json --options 60s_40rps.json --unsafe --tests k6/tests/git/pre-receive/git_secret_detection.js\n\nTo run all the tests: ACCESS_TOKEN=glpat-REDACTED SD_PUSH_CHECK_ENABLED=true ./bin/run-k6 --environment gcp-2k.json --options 60s_40rps.json\n\nRunning automated tests (via Docker)\n\nGet the glpat token (ACCESS_TOKEN) from 1password by searching for Static Analysis in the Engineering Vault\n\nGPT tests can be ran from any directory that contains an environments directory\n\nOpen a local terminal and git clone https://gitlab.com/gitlab-org/quality/performance.git\n\nCreate environments directory at the root\n\nCopy the gcp-2k.json file from this MR to that environments directory\n\nRename the gcp-2k.json file as necassary, as well as changing the name and url values",
+    "chunk_index": 1,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "71b28a742873_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-performance-testing",
+    "title": "Secret push protection performance testing",
+    "source": "handbook",
+    "headings": [
+      "Secret push protection performance testing",
+      "When to use this runbook?",
+      "Prerequisites",
+      "Running GPT tests",
+      "Setting up a GET"
+    ],
+    "text": "ns an environments directory\n\nOpen a local terminal and git clone https://gitlab.com/gitlab-org/quality/performance.git\n\nCreate environments directory at the root\n\nCopy the gcp-2k.json file from this MR to that environments directory\n\nRename the gcp-2k.json file as necassary, as well as changing the name and url values\n\nTo run just the git_secret_detection.js test (as an example): docker run -it -e ACCESS_TOKEN=glpat-REDACTED -v $PWD:/config gitlab/gitlab-performance-tool SD_PUSH_CHECK_ENABLED=true SD_FILES_PER_COMMIT=4 GPT_DEBUG=true SD_FILE_SIZES=\"10kb\" GPT_SKIP_RETRY=true --environment gcp-2k.json --options 60s_40rps.json --tests git_secret_detection.js\n\nTo run all the tests: docker run -it -e ACCESS_TOKEN=glpat-REDACTED -v $PWD:/config gitlab/gitlab-performance-tool --environment gcp-2k.json --options 60s_40rps.json\n\nA GCP environment has been set up under The Static Analysis GCP Project: dev-sast-prereceive-8a4574ec with GET using a 2k reference architecture with a prefix of gcp-2k .\n\nBootstrapping a new environment\n\nNote: The following steps are written from the perspective of setting up\nanother 2k reference architecture. If you need to set up something like\na 25k reference architecture, you may need to change things that are not\ncovered in this guide. Alternate reference architectures can be found here .\n\nClone the GET repo and cd into it\n\nCopy bootstrap.sh from this MR to the root and update it as necessary\n\nYou may need to make it executable: chmod +x bootstrap.sh",
+    "chunk_index": 2,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "71b28a742873_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-performance-testing",
+    "title": "Secret push protection performance testing",
+    "source": "handbook",
+    "headings": [
+      "Secret push protection performance testing",
+      "When to use this runbook?",
+      "Prerequisites",
+      "Running GPT tests",
+      "Setting up a GET"
+    ],
+    "text": "like\na 25k reference architecture, you may need to change things that are not\ncovered in this guide. Alternate reference architectures can be found here .\n\nClone the GET repo and cd into it\n\nCopy bootstrap.sh from this MR to the root and update it as necessary\n\nYou may need to make it executable: chmod +x bootstrap.sh\n\nNote, bootstrap.sh has steps that only need to be ran once, as well as\nsteps that need to be ran for setting up a new $GCP_ENV_PREFIX , and they\nstill need to be separated.\n\nSteps to add a new $GCP_ENV_PREFIX :\n\nUse Provisioning the environment with Terraform as guide for setting up Terraform, ignoring the AWS steps as we are using GCP\n\nMake sure you are within your cloned GET repo\n\nUpdate the variables in bootstrap.sh as necessary\n\nNote the ip address at the end\n\nNote the username created when the ssh key is added to the service account (will be used later)\n\nRun mkdir -p terraform/environments/$GCP_ENV_PREFIX\n\nCopy over environment.tf , main.tf , and variables.tf from this MR into the corresponding directory\n\nUpdate those *.tf files as necessary Add the ip address you obtained earlier in variables.tf under external_ip Add a proper service account prefix in environment.tf Update prefix in main.tf to match the value of $GCP_ENV_PREFIX\n\nAdd the ip address you obtained earlier in variables.tf under external_ip\n\nAdd a proper service account prefix in environment.tf\n\nUpdate prefix in main.tf to match the value of $GCP_ENV_PREFIX\n\nCd to /terraform/environments/$GCP_ENV_PREFIX",
+    "chunk_index": 3,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "71b28a742873_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-performance-testing",
+    "title": "Secret push protection performance testing",
+    "source": "handbook",
+    "headings": [
+      "Secret push protection performance testing",
+      "When to use this runbook?",
+      "Prerequisites",
+      "Running GPT tests",
+      "Setting up a GET"
+    ],
+    "text": "n environment.tf Update prefix in main.tf to match the value of $GCP_ENV_PREFIX\n\nAdd the ip address you obtained earlier in variables.tf under external_ip\n\nAdd a proper service account prefix in environment.tf\n\nUpdate prefix in main.tf to match the value of $GCP_ENV_PREFIX\n\nCd to /terraform/environments/$GCP_ENV_PREFIX\n\nUse Configuring the environment with Ansible as guide for setting up Ansible, ignoring the AWS steps as we are using GCP\n\nCd to the root directory of the GET repo\n\nRun mkdir -p ansible/environments/$GCP_ENV_PREFIX/files/gitlab_configs\n\nRun mkdir -p ansible/environments/$GCP_ENV_PREFIX/files/gitlab_tasks\n\nRun mkdir -p ansible/environments/$GCP_ENV_PREFIX/inventory\n\nFrom the MR we referenced earlier , copy environments/gcp-2k/files/gitlab_configs/gitlab_rails.rb.j2 to ansible/environments/$GCP_ENV_PREFIX/files/gitlab_configs – this is necessary for the license to be added correctly when the configuration is applied\n\nCopy over vars.yml , and gcp_2k.gcp.yml from the MR into that /inventory directory\n\nRename gcp_2k.gcp.yml to match $GCP_ENV_PREFIX (but use underscores) and update both *.yml files as necessary\n\nCopy over monitor.yml to ansible/environments/$GCP_ENV_PREFIX/files/gitlab_tasks\n\nIf you would like to setup monitoring, you may need to copy other files and folders as well: Copy over dashboards.yml to ansible/environments Copy over datasources.yml to ansible/environments Copy over linux-package folder to ansible/environments\n\nCopy over dashboards.yml to ansible/environments\n\nCopy over datasources.yml to ansible/environments",
+    "chunk_index": 4,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "71b28a742873_5",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-performance-testing",
+    "title": "Secret push protection performance testing",
+    "source": "handbook",
+    "headings": [
+      "Secret push protection performance testing",
+      "When to use this runbook?",
+      "Prerequisites",
+      "Running GPT tests",
+      "Setting up a GET"
+    ],
+    "text": "monitoring, you may need to copy other files and folders as well: Copy over dashboards.yml to ansible/environments Copy over datasources.yml to ansible/environments Copy over linux-package folder to ansible/environments\n\nCopy over dashboards.yml to ansible/environments\n\nCopy over datasources.yml to ansible/environments\n\nCopy over linux-package folder to ansible/environments\n\nNothing needs to change in monitor.yml , but be sure grafana_password is set in vars.yml\n\nAdd the username obtained earlier (when running .bootstrap.sh ) to the vars.yml file as ansible_user\n\nMake sure to configure other variables like passwords/secrets when necessary (depends on the reference architecture but at least the gitlab_root_password , postgres_password , gitaly_token and redis_password will be required)\n\nYou will likely also have to update the prefix , external_url and uncomment a few lines like gitlab_license_file\n\nConsult the documentation and other reference architecture files (e.g. the one for 25k ref architecture ) for other variables you may need to update\n\nAcquire a new Ultimate license using the Support Super Form\n\nAdd the license file (without renaming it) to /ansible/environments/$GCP_ENV_PREFIX/files\n\nFrom the root directory, follow the steps in Installing Ansible with a Virtual Environment\n\nCd to the ansible directory\n\nRun ansible-playbook -i environments/$GCP_ENV_PREFIX/inventory playbooks/all.yml\n\nAfter logging in to the instance, if the Ultimate license doesn’t apply, you may have to manually upload the license\n\nSetting up an existing environment ($GCP_ENV_PREFIX)",
+    "chunk_index": 5,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "71b28a742873_6",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-performance-testing",
+    "title": "Secret push protection performance testing",
+    "source": "handbook",
+    "headings": [
+      "Secret push protection performance testing",
+      "When to use this runbook?",
+      "Prerequisites",
+      "Running GPT tests",
+      "Setting up a GET"
+    ],
+    "text": "ng Ansible with a Virtual Environment\n\nCd to the ansible directory\n\nRun ansible-playbook -i environments/$GCP_ENV_PREFIX/inventory playbooks/all.yml\n\nAfter logging in to the instance, if the Ultimate license doesn’t apply, you may have to manually upload the license\n\nSetting up an existing environment ($GCP_ENV_PREFIX)\n\nClone the GET repo , if it doesn’t already exist, and cd into it\n\nRun mkdir terraform/environments/$GCP_ENV_PREFIX\n\nRun mkdir -p ansible/environments/$GCP_ENV_PREFIX/files/gitlab_tasks\n\nNavigate to https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs (pending merge of this MR )\n\nCopy the configs/$GCP_ENV_PREFIX/terraform/*.tf files into the terraform/environments/$GCP_ENV_PREFIX directory\n\nCopy the configs/$GCP_ENV_PREFIX/ansible/*.yml files into the ansible/environments/$GCP_ENV_PREFIX directory\n\nFrom the root directory, follow the steps in Installing Ansible with a Virtual Environment\n\nCd to the ansible directory\n\nRun ansible-playbook -i environments/$GCP_ENV_PREFIX/inventory playbooks/all.yml\n\nSplit the importing of data into the following two steps\n\nThis command will most likely time out, but if it shows as importing in\nthe browser, just wait for it to finish importing.\n\nRe-deploying a new build\n\nThere are prerequisite steps that will be covered in the Setting up a GET section in the future\n\nNavigate to your cloned GET repo and cd into it\n\nIf not already activated for your terminal, run . ./get-python-env/bin/activate\n\ncd into the ansible directory of your cloned GET repo",
+    "chunk_index": 6,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "71b28a742873_7",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-performance-testing",
+    "title": "Secret push protection performance testing",
+    "source": "handbook",
+    "headings": [
+      "Secret push protection performance testing",
+      "When to use this runbook?",
+      "Prerequisites",
+      "Running GPT tests",
+      "Setting up a GET"
+    ],
+    "text": "h importing.\n\nRe-deploying a new build\n\nThere are prerequisite steps that will be covered in the Setting up a GET section in the future\n\nNavigate to your cloned GET repo and cd into it\n\nIf not already activated for your terminal, run . ./get-python-env/bin/activate\n\ncd into the ansible directory of your cloned GET repo\n\nCheck ansible/environments/$GCP_ENV_PREFIX/inventory/vars.yml to see which of the 3 methods of deployment we are\ntargeting, and if anything needs to be changed before deploying\n\nRedeploy with the same ansible command from the setup steps: ansible-playbook -i environments/$GCP_ENV_PREFIX/inventory playbooks/all.yml\n\nThe Grafana dashboards can be found at /-/grafana/dashboards/ . Login credentials can be found in 1password under “Static Analysis - 2K GCP Grafana”.\n\nSetting up the environment is covered in previous sections, but the\nfiles necessary to make this work are as follows:\n\nansible/environments/gcp-2k/files/gitlab_tasks/monitor.yml\n\nansible/environments/linux_package/server-performance.json\n\nansible/environments/dashboards.yaml\n\nansible/environments/datasources.yaml\n\nThese files can be found in this MR .\n\nSee the Custom Tasks section of the GET docs for more info.\n\nGitLab Environment Toolkit (GET)\n\nGitLab Performance Tool (GPT)\n\nThe Static Analysis GCP Project: dev-sast-prereceive-8a4574ec\n\nGCP - Google Cloud Platform\n\nSecret Push Protection documentation\n\nMost examples throughout the runbook have been added using the gcp-2k environment as their basis.\n\nRails console and checking feature flags",
+    "chunk_index": 7,
+    "total_chunks": 9
+  },
+  {
+    "chunk_id": "71b28a742873_8",
+    "url": "https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-performance-testing",
+    "title": "Secret push protection performance testing",
+    "source": "handbook",
+    "headings": [
+      "Secret push protection performance testing",
+      "When to use this runbook?",
+      "Prerequisites",
+      "Running GPT tests",
+      "Setting up a GET"
+    ],
+    "text": "ment Toolkit (GET)\n\nGitLab Performance Tool (GPT)\n\nThe Static Analysis GCP Project: dev-sast-prereceive-8a4574ec\n\nGCP - Google Cloud Platform\n\nSecret Push Protection documentation\n\nMost examples throughout the runbook have been added using the gcp-2k environment as their basis.\n\nRails console and checking feature flags\n\nSSH in to a rails server: gcloud compute ssh --zone us-west1-c gcp-2k-gitlab-rails-1 --project dev-sast-prereceive-8a4574ec\n\nSSH in to a rails server: gcloud compute ssh --zone us-west1-c gcp-2k-gitlab-rails-1 --project dev-sast-prereceive-8a4574ec\n\nLaunch a rails console: sudo gitlab-rails console (it will take a bit to connect)\n\nLaunch a rails console: sudo gitlab-rails console (it will take a bit to connect)\n\nCheck the status of the push check feature for a project: Feature.enabled?(:pre_receive_secret_detection_push_check, Project.find(123))\n\nCheck the status of the push check feature for a project: Feature.enabled?(:pre_receive_secret_detection_push_check, Project.find(123))\n\nEnabling the Application Setting\n\nVia the web, enable the feature instance-wide by navigating to /admin/application_settings/security_and_compliance\n\nVia the rails console:\n\nDetermining current version\n\nTo see the current version of GitLab running on the instance, login and then go to /help .",
+    "chunk_index": 8,
+    "total_chunks": 9
+  }
+]

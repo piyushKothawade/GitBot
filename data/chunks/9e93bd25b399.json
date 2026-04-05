@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "9e93bd25b399_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/service-level-agreement",
+    "title": "Availability Measurement for GitLab SaaS Services",
+    "source": "handbook",
+    "headings": [
+      "Availability Measurement for GitLab SaaS Services",
+      "GitLab Service Level Agreement - Availability Definition",
+      "Service Availability Commitment",
+      "Covered Experiences",
+      "Downtime Minute Definition"
+    ],
+    "text": "Availability Measurement for GitLab SaaS Services\n\nThis is a Controlled Document\n\nGitLab Service Level Agreement - Availability Definition\n\nThe following service level agreement applies to SaaS Software purchased or renewed as Ultimate tier on or after 2026-01-01.\n\nService Availability Commitment\n\nGitLab commits to make the Covered Experiences available with a Monthly Uptime Percentage of at least 99.9% during each calendar month.\n\nThe following GitLab features and services are covered under this SLA (“Covered Experiences”):\n\nIssues and Merge Requests\n\nGit Operations (push, pull, clone via HTTPS and SSH)\n\nContainer Registry operations\n\nPackage Registry operations\n\nAPI Requests (limited to the above Covered Experiences only)\n\nDowntime Minute Definition\n\nA “Downtime Minute” occurs when:\n\nThe Service experiences degraded availability, meaning 5% or more of Valid Customer Requests to Covered Experiences in a given minute result in server errors\n(defined as HTTP 5xx status codes or connection timeouts exceeding 30 seconds)\nas determined by GitLab’s internal and external monitoring systems.\n\nDowntime Minutes do not include any Excluded Minutes as defined in this document.\n\nValid Request Definition\n\n“Valid Request” means a request that meets all of the following criteria:\n\nProperly authenticated and authorized - The request includes valid authentication\ncredentials and the user has appropriate permissions for the requested operation",
+    "chunk_index": 0,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "9e93bd25b399_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/service-level-agreement",
+    "title": "Availability Measurement for GitLab SaaS Services",
+    "source": "handbook",
+    "headings": [
+      "Availability Measurement for GitLab SaaS Services",
+      "GitLab Service Level Agreement - Availability Definition",
+      "Service Availability Commitment",
+      "Covered Experiences",
+      "Downtime Minute Definition"
+    ],
+    "text": "clude any Excluded Minutes as defined in this document.\n\nValid Request Definition\n\n“Valid Request” means a request that meets all of the following criteria:\n\nProperly authenticated and authorized - The request includes valid authentication\ncredentials and the user has appropriate permissions for the requested operation\n\nProperly authenticated and authorized - The request includes valid authentication\ncredentials and the user has appropriate permissions for the requested operation\n\nCorrectly formed - The request: Uses documented API endpoints, parameters, and methods Follows GitLab’s published API specifications and documentation Contains syntactically correct Git commands (for Git operations) Includes required headers and properly formatted request bodies\n\nCorrectly formed - The request:\n\nUses documented API endpoints, parameters, and methods\n\nFollows GitLab’s published API specifications and documentation\n\nContains syntactically correct Git commands (for Git operations)\n\nIncludes required headers and properly formatted request bodies\n\nWithin usage limits - The request: Does not exceed documented rate limits Does not exceed size limits (e.g., file size, repository size, payload size) Originates from non-blocked IP addresses or users Complies with fair use policies\n\nWithin usage limits - The request:\n\nDoes not exceed documented rate limits\n\nDoes not exceed size limits (e.g., file size, repository size, payload size)\n\nOriginates from non-blocked IP addresses or users\n\nComplies with fair use policies",
+    "chunk_index": 1,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "9e93bd25b399_2",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/service-level-agreement",
+    "title": "Availability Measurement for GitLab SaaS Services",
+    "source": "handbook",
+    "headings": [
+      "Availability Measurement for GitLab SaaS Services",
+      "GitLab Service Level Agreement - Availability Definition",
+      "Service Availability Commitment",
+      "Covered Experiences",
+      "Downtime Minute Definition"
+    ],
+    "text": "Originates from non-blocked IP addresses or users Complies with fair use policies\n\nWithin usage limits - The request:\n\nDoes not exceed documented rate limits\n\nDoes not exceed size limits (e.g., file size, repository size, payload size)\n\nOriginates from non-blocked IP addresses or users\n\nComplies with fair use policies\n\nNon-malicious - The request: Does not attempt to exploit security vulnerabilities Does not contain malicious code or payloads Is not part of a DDoS or other attack pattern Does not attempt to circumvent access controls\n\nNon-malicious - The request:\n\nDoes not attempt to exploit security vulnerabilities\n\nDoes not contain malicious code or payloads\n\nIs not part of a DDoS or other attack pattern\n\nDoes not attempt to circumvent access controls\n\nSupported operations - The request: Targets features included in the customer’s subscription tier Uses generally available features (not experimental/beta)\n\nSupported operations - The request:\n\nTargets features included in the customer’s subscription tier\n\nUses generally available features (not experimental/beta)\n\nThe following are excluded from Valid Requests:\n\nRequests that receive HTTP 4xx errors due to client-side issues\n\nRequests to deprecated API endpoints after the deprecation date\n\nRequests from automated testing or monitoring tools not operated by GitLab\n\nPreflight/OPTIONS requests\n\nHealth check or status endpoint requests\n\nThe following minutes are excluded from being counted as Downtime Minutes:\n\nScheduled Maintenance windows\n\nEmergency maintenance necessary to address critical security or data integrity issues",
+    "chunk_index": 2,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "9e93bd25b399_3",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/service-level-agreement",
+    "title": "Availability Measurement for GitLab SaaS Services",
+    "source": "handbook",
+    "headings": [
+      "Availability Measurement for GitLab SaaS Services",
+      "GitLab Service Level Agreement - Availability Definition",
+      "Service Availability Commitment",
+      "Covered Experiences",
+      "Downtime Minute Definition"
+    ],
+    "text": "mated testing or monitoring tools not operated by GitLab\n\nPreflight/OPTIONS requests\n\nHealth check or status endpoint requests\n\nThe following minutes are excluded from being counted as Downtime Minutes:\n\nScheduled Maintenance windows\n\nEmergency maintenance necessary to address critical security or data integrity issues\n\nForce Majeure events or general Internet connectivity issues\n\nIssues caused by Customer’s use of the Service in violation of the Terms of Service\n\nIssues caused by equipment, software, or services not provided or controlled by GitLab\n\nFeatures or services explicitly labeled as Alpha, Beta, or Preview\n\nCalculating Monthly Uptime Percentage\n\n“Monthly Uptime Percentage” is calculated as:\n\n“Total Minutes in Month” = Total number of minutes in the calendar month\n\n“Downtime Minutes” = Total number of minutes in a calendar month when\nCovered Experiences met the Downtime Minute definition,\nexcluding any Excluded Minutes\n\nIf the Monthly Uptime Percentage falls below 99.9%, GitLab Ultimate tier Customers may request (defined below) Service Credits according to:\n\nMonthly Uptime Percentage\n\nCredit Request Process\n\nTo receive a Service Credit, an eligible customer must:\n\nSubmit a Support request at support.gitlab.com within thirty (30) days after the end of the affected month;\n\nInclude all relevant information about when the SaaS Service was unavailable; and\n\nProvide reasonable detail about the attempted access to Covered Experiences",
+    "chunk_index": 3,
+    "total_chunks": 5
+  },
+  {
+    "chunk_id": "9e93bd25b399_4",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/service-level-agreement",
+    "title": "Availability Measurement for GitLab SaaS Services",
+    "source": "handbook",
+    "headings": [
+      "Availability Measurement for GitLab SaaS Services",
+      "GitLab Service Level Agreement - Availability Definition",
+      "Service Availability Commitment",
+      "Covered Experiences",
+      "Downtime Minute Definition"
+    ],
+    "text": "eceive a Service Credit, an eligible customer must:\n\nSubmit a Support request at support.gitlab.com within thirty (30) days after the end of the affected month;\n\nInclude all relevant information about when the SaaS Service was unavailable; and\n\nProvide reasonable detail about the attempted access to Covered Experiences\n\nOnce received, GitLab will then verify the claim against its own internal monitoring data and, if validated, issue Service Credits against Customer’s next issued invoice. In no event shall an issued Service Credit result in a refund of Fees to Customer.\n\nRaise a request through support.GitLab.com to check if you are eligible for credits caused by downtime.",
+    "chunk_index": 4,
+    "total_chunks": 5
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "chunk_id": "c98ac8b850f7_0",
+    "url": "https://handbook.gitlab.com/handbook/support/managers/change-management",
+    "title": "Change Management in GitLab Support",
+    "source": "handbook",
+    "headings": [
+      "Change Management in GitLab Support",
+      "Decision Making and Change Management in the GitLab Support Leadership Team",
+      "Process changes",
+      "This process is not limited to the GitLab Support Leadership Team",
+      "Start with a Request for Comments (RFC)"
+    ],
+    "text": "Change Management in GitLab Support\n\nDecision Making and Change Management in the GitLab Support Leadership Team\n\nThe GitLab Support Team may very well be unique among the many teams within the\ncompany in that its multiple sub-teams each have the same charter. Making\ndecisions and managing change within this structure come with equally unique\nchallenges not faced by the other teams. Specifically, managers must determine\nthe appropriate scope - whether to act individually or in coordination with the\nother managers - when they want to make a decision or introduce a process\nchange. And the worldwide support management team must agree that the scoping\nis correct. We define here our most current processes for determining scope,\ngathering data and feedback, choosing a path forward, rolling out a change,\nmanaging adoption, and reviewing results for future improvements.\n\nWe’ll talk about two different types of changes:\n\nIndividual assignment and responsibilities changes\n\nThis process is not limited to the GitLab Support Leadership Team\n\nIf you’re looking to roll out a global change (see definition below), you might\nhave been directed to this process. Global changes are commonly but not\nexclusively handled by the GitLab Support Leadership Team. For that reason, this\nprocess is documented within the “Managers” handbook section.\n\nThis does not mean the process should only be followed by managers. If you’re\nhaving trouble with any part of it, reach out for guidance – either to your\nmanager or to SEs who followed the process before.\n\nExamples of SEs using the process:",
+    "chunk_index": 0,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c98ac8b850f7_1",
+    "url": "https://handbook.gitlab.com/handbook/support/managers/change-management",
+    "title": "Change Management in GitLab Support",
+    "source": "handbook",
+    "headings": [
+      "Change Management in GitLab Support",
+      "Decision Making and Change Management in the GitLab Support Leadership Team",
+      "Process changes",
+      "This process is not limited to the GitLab Support Leadership Team",
+      "Start with a Request for Comments (RFC)"
+    ],
+    "text": "hat reason, this\nprocess is documented within the “Managers” handbook section.\n\nThis does not mean the process should only be followed by managers. If you’re\nhaving trouble with any part of it, reach out for guidance – either to your\nmanager or to SEs who followed the process before.\n\nExamples of SEs using the process:\n\nSlack groups per region\n\nLimit PagerDuty Notifications in #support_self-managed to Triggered Events\n\nStart with a Request for Comments (RFC)\n\nAn RFC is a safe space for a lively discussion where all contributors bring\ntheir own context and knowledge to determine the pros and cons of potential\nsolutions.\n\nIn an RFC everyone contributes equally, regardless of their title .\n\nIf you have an idea (or have noticed a problem) but aren’t ready to propose specific changes yet, you can start\nwith the Request for Comments issue template. The template includes guidance on how to make your RFC.\n\nDetermining the Scope\n\nOne of the most important considerations when looking to make a change is what\nthe scope of the change will be.\n\nLocal Change or Global Change?\n\nWhen thinking about whether a change should be local or global, you might be\ntempted to focus on the size of the change (number of lines of code changed,\nnumber of lines of text in a doc that changed, etc.). But that’s actually a\ndifferent type of scope that isn’t relevant to this discussion.",
+    "chunk_index": 1,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c98ac8b850f7_2",
+    "url": "https://handbook.gitlab.com/handbook/support/managers/change-management",
+    "title": "Change Management in GitLab Support",
+    "source": "handbook",
+    "headings": [
+      "Change Management in GitLab Support",
+      "Decision Making and Change Management in the GitLab Support Leadership Team",
+      "Process changes",
+      "This process is not limited to the GitLab Support Leadership Team",
+      "Start with a Request for Comments (RFC)"
+    ],
+    "text": "Change or Global Change?\n\nWhen thinking about whether a change should be local or global, you might be\ntempted to focus on the size of the change (number of lines of code changed,\nnumber of lines of text in a doc that changed, etc.). But that’s actually a\ndifferent type of scope that isn’t relevant to this discussion.\n\nInstead, begin with the idea that for the sake of consistency and simplicity,\nyou should lean toward making your change globally unless it doesn’t even make\nsense for, or apply to, other regions. If you’re considering making the change\nlocally, be sure that you can answer “no” to all of these questions about\npotential impacts of making a local change:\n\nWill it create a meaningful inconsistency with the rest of the global team?\nExamples: Your local work products become incompatible with those of the other teams Terminologies or workflows diverge between your local team and the others,\ninhibiting collaboration Other teams can’t work in concert with yours because they don’t have\naccess to new tools and resources yours is using\n\nYour local work products become incompatible with those of the other teams\n\nTerminologies or workflows diverge between your local team and the others,\ninhibiting collaboration\n\nOther teams can’t work in concert with yours because they don’t have\naccess to new tools and resources yours is using",
+    "chunk_index": 2,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c98ac8b850f7_3",
+    "url": "https://handbook.gitlab.com/handbook/support/managers/change-management",
+    "title": "Change Management in GitLab Support",
+    "source": "handbook",
+    "headings": [
+      "Change Management in GitLab Support",
+      "Decision Making and Change Management in the GitLab Support Leadership Team",
+      "Process changes",
+      "This process is not limited to the GitLab Support Leadership Team",
+      "Start with a Request for Comments (RFC)"
+    ],
+    "text": "resources yours is using\n\nYour local work products become incompatible with those of the other teams\n\nTerminologies or workflows diverge between your local team and the others,\ninhibiting collaboration\n\nOther teams can’t work in concert with yours because they don’t have\naccess to new tools and resources yours is using\n\nWill customers notice the local change?\nIf so: Will customers be inconvenienced or even just annoyed by having to work\ndifferently in some way with your team than with the other teams? Will customers’ expectations of “normal” service continue to be met? Will customers like your change enough to be dissatisfied when other teams\nor regions don’t do the same thing?\n\nWill customers be inconvenienced or even just annoyed by having to work\ndifferently in some way with your team than with the other teams?\n\nWill customers’ expectations of “normal” service continue to be met?\n\nWill customers like your change enough to be dissatisfied when other teams\nor regions don’t do the same thing?\n\nWill it create different job descriptions or performance measures between\nyour team and the other regions?\n\nCommunicating a Change Proposal\n\nWhether you’re making a local change, based on the decision criteria above, or\nproposing a global one, it’s important to communicate your plans with the rest\nof the Support Leadership Team.\n\nCreating a Requested Change Issue and/or MRs",
+    "chunk_index": 3,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c98ac8b850f7_4",
+    "url": "https://handbook.gitlab.com/handbook/support/managers/change-management",
+    "title": "Change Management in GitLab Support",
+    "source": "handbook",
+    "headings": [
+      "Change Management in GitLab Support",
+      "Decision Making and Change Management in the GitLab Support Leadership Team",
+      "Process changes",
+      "This process is not limited to the GitLab Support Leadership Team",
+      "Start with a Request for Comments (RFC)"
+    ],
+    "text": "measures between\nyour team and the other regions?\n\nCommunicating a Change Proposal\n\nWhether you’re making a local change, based on the decision criteria above, or\nproposing a global one, it’s important to communicate your plans with the rest\nof the Support Leadership Team.\n\nCreating a Requested Change Issue and/or MRs\n\nThe first step toward making a change is to create a Requested Change issue in the support-team-meta project .\nUsing the linked template (Requested Change), it will ensure you supply the\nrequired information (DRI, problem statement, ways to measure success, etc.),\nhelping to speed the process along.\n\nThis issue is used for presenting the problem that you are working to solve, for hosting\na discussion around that topic, and for documenting the testing phase.\n\nAs soon as possible, create the documentation MR(s) and/or companion issues for Customer Support Operations to present the actual proposed changes.\n\nInclude at least the following in the MRs:\n\nThe decision and the reasoning behind it (such as data and test results\nthat led to the decision)\n\nSummarize the testing, both what tests were run and what the results were\n\nLink to the Message Plan Issue\n\nAdd the label ~“Manager Attention” to ensure that the support management team are informed about the proposed change\n\nAs an additional guardrail also add the group @gitlab-com/support/managers to the issue to ensure that the support management team are informed about the proposed change\n\nWe use the rollout issue template to get acknowledgement of awareness of a new workflow or process.",
+    "chunk_index": 4,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c98ac8b850f7_5",
+    "url": "https://handbook.gitlab.com/handbook/support/managers/change-management",
+    "title": "Change Management in GitLab Support",
+    "source": "handbook",
+    "headings": [
+      "Change Management in GitLab Support",
+      "Decision Making and Change Management in the GitLab Support Leadership Team",
+      "Process changes",
+      "This process is not limited to the GitLab Support Leadership Team",
+      "Start with a Request for Comments (RFC)"
+    ],
+    "text": "ment team are informed about the proposed change\n\nAs an additional guardrail also add the group @gitlab-com/support/managers to the issue to ensure that the support management team are informed about the proposed change\n\nWe use the rollout issue template to get acknowledgement of awareness of a new workflow or process.\n\nNOTE: If there’s any part of the proposed changes that cannot be presented through\na MR, place the information in the issue instead.\n\nCommunicating a Local Change Proposal\n\nInform the leadership team as an “inform” item in the agenda for the next leadership sync meeting .\nWhy?\n\nSomeone else might have a suggestion for you\n\nSomeone else might be interested in what you’re doing\n\nIt aligns well with our Transparency value\n\nCommunicating a Global Change Proposal\n\nEngage the leadership team in a conversation through your issue and through a full agenda\ntopic in the leadership sync meeting :\n\nDescribe the problem you’re working to solve\n\nLet the team know if you are the DRI, or are seeking a DRI\n\nLet the team know whether you’re proposing a solution based on compelling\nexisting data or you’re planning to conduct one or more tests (trials) to\ndetermine which solution to propose.\n\nAdd the label ~“Manager Attention” to ensure that the support management team are informed about the proposed change",
+    "chunk_index": 5,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c98ac8b850f7_6",
+    "url": "https://handbook.gitlab.com/handbook/support/managers/change-management",
+    "title": "Change Management in GitLab Support",
+    "source": "handbook",
+    "headings": [
+      "Change Management in GitLab Support",
+      "Decision Making and Change Management in the GitLab Support Leadership Team",
+      "Process changes",
+      "This process is not limited to the GitLab Support Leadership Team",
+      "Start with a Request for Comments (RFC)"
+    ],
+    "text": "re seeking a DRI\n\nLet the team know whether you’re proposing a solution based on compelling\nexisting data or you’re planning to conduct one or more tests (trials) to\ndetermine which solution to propose.\n\nAdd the label ~“Manager Attention” to ensure that the support management team are informed about the proposed change\n\nAs an additional guardrail also add the group @gitlab-com/support/managers to ensure that the support management team are informed about the proposed change If you will be testing, then it’s suggested that you: Present potential solutions and discuss which of them will be tried Discuss any likely impacts of the tests Gain general agreement that you can proceed with your tests If the tests will be large and long running, consider opening an issue for\neach test and link them all to your issue Otherwise, it’s suggested that you: present data both demonstrating the need for the change and supporting the\nsolution you’ve chosen propose your solution via a Merge Request (linked to your issue) and\ninvite feedback with a reasonable deadline\n\nIf you will be testing, then it’s suggested that you: Present potential solutions and discuss which of them will be tried Discuss any likely impacts of the tests Gain general agreement that you can proceed with your tests If the tests will be large and long running, consider opening an issue for\neach test and link them all to your issue\n\nPresent potential solutions and discuss which of them will be tried\n\nDiscuss any likely impacts of the tests\n\nGain general agreement that you can proceed with your tests",
+    "chunk_index": 6,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c98ac8b850f7_7",
+    "url": "https://handbook.gitlab.com/handbook/support/managers/change-management",
+    "title": "Change Management in GitLab Support",
+    "source": "handbook",
+    "headings": [
+      "Change Management in GitLab Support",
+      "Decision Making and Change Management in the GitLab Support Leadership Team",
+      "Process changes",
+      "This process is not limited to the GitLab Support Leadership Team",
+      "Start with a Request for Comments (RFC)"
+    ],
+    "text": "you can proceed with your tests If the tests will be large and long running, consider opening an issue for\neach test and link them all to your issue\n\nPresent potential solutions and discuss which of them will be tried\n\nDiscuss any likely impacts of the tests\n\nGain general agreement that you can proceed with your tests\n\nIf the tests will be large and long running, consider opening an issue for\neach test and link them all to your issue\n\nOtherwise, it’s suggested that you: present data both demonstrating the need for the change and supporting the\nsolution you’ve chosen propose your solution via a Merge Request (linked to your issue) and\ninvite feedback with a reasonable deadline\n\npresent data both demonstrating the need for the change and supporting the\nsolution you’ve chosen\n\npropose your solution via a Merge Request (linked to your issue) and\ninvite feedback with a reasonable deadline\n\nDescribe how you plan to measure the success of the change (not just the\ntests)\n\nConstructing a Valuable Test Plan\n\nWe make data driven decisions whenever possible. If your proposed change doesn’t\nhave any supporting data, you’ll run one or more localized trials. Be frugal if\nthere is a cost and always be sensitive to disrupting existing workflows:\n\nIf you are not confident or comfortable designing a test, work with other\nmanagers to flesh out ideas.\n\nKeep in mind that there’s a difference between the scope (local or global)\nof a change and the scope of a test. A global change most likely will not require a global test.\n\nRun the tests just long enough to get the data you need",
+    "chunk_index": 7,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c98ac8b850f7_8",
+    "url": "https://handbook.gitlab.com/handbook/support/managers/change-management",
+    "title": "Change Management in GitLab Support",
+    "source": "handbook",
+    "headings": [
+      "Change Management in GitLab Support",
+      "Decision Making and Change Management in the GitLab Support Leadership Team",
+      "Process changes",
+      "This process is not limited to the GitLab Support Leadership Team",
+      "Start with a Request for Comments (RFC)"
+    ],
+    "text": "ot confident or comfortable designing a test, work with other\nmanagers to flesh out ideas.\n\nKeep in mind that there’s a difference between the scope (local or global)\nof a change and the scope of a test. A global change most likely will not require a global test.\n\nRun the tests just long enough to get the data you need\n\nInvolve only as many people, teams and regions as you need to make the tests\nlegitimate\n\nIf a test in the production environment would be problematic, look for a way\nto run it in a sandbox instead\n\nIf running more than one trial: try to run them in parallel with each other to save time limit your testing to the two or three most likely potential solutions\n\ntry to run them in parallel with each other to save time\n\nlimit your testing to the two or three most likely potential solutions\n\nFor future iterations:\n\nDo we want to have standard timelines for certain steps in a rollout? Initial discussion length Days from rollout start to adoption complete\n\nDo we want to have standard timelines for certain steps in a rollout?\n\nInitial discussion length\n\nDays from rollout start to adoption complete\n\nDo we want to weigh the impact of changes to ensure that we aren’t changing too many complex things at once?\n\nDo we want to weigh the impact of changes to ensure that we aren’t changing too many complex things at once?\n\nRoles in Change Management\n\nDuring the rollout, use these terms and their provided descriptions to\ncommunicate clearly about the different roles people can play in the change\nprocess.",
+    "chunk_index": 8,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c98ac8b850f7_9",
+    "url": "https://handbook.gitlab.com/handbook/support/managers/change-management",
+    "title": "Change Management in GitLab Support",
+    "source": "handbook",
+    "headings": [
+      "Change Management in GitLab Support",
+      "Decision Making and Change Management in the GitLab Support Leadership Team",
+      "Process changes",
+      "This process is not limited to the GitLab Support Leadership Team",
+      "Start with a Request for Comments (RFC)"
+    ],
+    "text": "y complex things at once?\n\nDo we want to weigh the impact of changes to ensure that we aren’t changing too many complex things at once?\n\nRoles in Change Management\n\nDuring the rollout, use these terms and their provided descriptions to\ncommunicate clearly about the different roles people can play in the change\nprocess.\n\nPerson who will advocate for the change due to their strong interest in, and possible responsibility for, the success of the change. Most of the time champions are managers.\n\nPerson who uses the processes, documents and resources that are being changed.\n\nPerson who is not an actual user of the processes, documents and resources that are being changed, yet who will experience changes in the behaviors of the users. E.g. Support Engineers may notice managers responding differently to escalations, though they themselves do not need to do anything new.\n\nThe Process Change Rollout Plan\n\nWhen it’s time at last to make the change, create a Process Change Rollout Plan issue .\nThe process change rollout plan template contains instructions to guide you through filling in all the appropriate details. And the issue itself then describes your full action plan.\n\nIndividual assignment and responsibilities changes\n\nThese types of changes are almost always local and small. An example:\n\nChanging the workload balance of an SE to have them spend more time sharing\nknowledge and less time taking tickets",
+    "chunk_index": 9,
+    "total_chunks": 11
+  },
+  {
+    "chunk_id": "c98ac8b850f7_10",
+    "url": "https://handbook.gitlab.com/handbook/support/managers/change-management",
+    "title": "Change Management in GitLab Support",
+    "source": "handbook",
+    "headings": [
+      "Change Management in GitLab Support",
+      "Decision Making and Change Management in the GitLab Support Leadership Team",
+      "Process changes",
+      "This process is not limited to the GitLab Support Leadership Team",
+      "Start with a Request for Comments (RFC)"
+    ],
+    "text": "e appropriate details. And the issue itself then describes your full action plan.\n\nIndividual assignment and responsibilities changes\n\nThese types of changes are almost always local and small. An example:\n\nChanging the workload balance of an SE to have them spend more time sharing\nknowledge and less time taking tickets\n\nThe motivation for these changes could come from a need to manage individual\nperformance and development, balance resources, improve expertise distribution,\nor address other similar items.\n\nAlthough planning of such a change tends to occur outside of issues (for\nconfidentiality reasons), and to be conducted between managers and directors,\nif it will impact people other than those directly involved, consider taking\none or more of the following actions before making the change:\n\nExplain your plan and ask for concerns and questions in your region’s next\nmanagers’ sync.\n\nHost two separate cross-regional meetings, one with each of the regions\nother than your own, to explain your plan and ask for concerns and questions.",
+    "chunk_index": 10,
+    "total_chunks": 11
+  }
+]

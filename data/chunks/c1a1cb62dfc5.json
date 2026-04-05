@@ -1,0 +1,17 @@
+[
+  {
+    "chunk_id": "c1a1cb62dfc5_0",
+    "url": "https://handbook.gitlab.com/handbook/support/workflows/usgovernment_oncall_checklist",
+    "title": "Preparation for US Government On-Call Shift",
+    "source": "handbook",
+    "headings": [
+      "Preparation for US Government On-Call Shift",
+      "PagerDuty",
+      "Testing PagerDuty notifications",
+      "Dedicated for Government"
+    ],
+    "text": "Preparation for US Government On-Call Shift\n\nBefore you begin a US Government Support On-Call shift–especially your first, or after a change of device–be sure to check that your integrations and access are correct to receive, acknowledge, and work an emergency case.\n\nDuring the work week before your On-Call shift begins:\n\nLog in to PagerDuty . Review the Notification Rules inside your profile. Ensure that they are configured reasonably to reach you.\n\nLog in to the PagerDuty app on your phone\n\nTest Page yourself using the Manually Trigger an Incident instructions\n\nTesting PagerDuty notifications\n\nAsk another SE to manually trigger an incident in PagerDuty.\n\nLogin to gitlab.pagerduty.com and select + New Incident from the upper right corner. Then fill out the form as follows:\n\nTitle : Test Page for $you\n\nImpacted Service : Customer Support Operations\n\nNo other fields need to be filled out, therefore you may then click Create Incident\n\nDedicated for Government\n\nIf you are locked out of FedRAMP Okta , the unlock process can take some time.  Be sure to test this early in the week before your on-call shift starts\n\nLog in to FedRAMP Okta .\n\nFrom that Okta, log in to CompSecGov\n\nConnect to the AppGuard VPN.  If you’ve never set this up, find the instructions in the Support Materials project\n\nFind credentials for one of the OpenSearch or Grafana instances in 1Password and ensure you can connect.\n\nNote: When connected to the AppGuard VPN, CompSecGov is not reachable, without tweaking your /etc/hosts",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

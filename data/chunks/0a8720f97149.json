@@ -1,0 +1,162 @@
+[
+  {
+    "chunk_id": "0a8720f97149_0",
+    "url": "https://handbook.gitlab.com/handbook/company/culture/cross-culture-collaboration-guide",
+    "title": "Cross-Culture Collaboration Guide",
+    "source": "handbook",
+    "headings": [
+      "Cross-Culture Collaboration Guide",
+      "Goal",
+      "Individual Culture vs. Company Culture",
+      "Research",
+      "Cultural Dimensions"
+    ],
+    "text": "Cross-Culture Collaboration Guide\n\nAs an organization with 67+ countries and regions represented, it is ever-important for all of us to increase our cultural awareness, sensitivity, and understanding. This guide will help GitLab team members in effective and inclusive communication and cross-cultural collaboration globally; irrespective of culture or background.\n\nIndividual Culture vs. Company Culture\n\nAn important principle in any global organization is the distinction between our cultural background vs. the GitLab company culture. A critical aspect of our recruitment process is ensuring the people we hire are aligned with our company values .\n\nOur diverse backgrounds help us live out our Diversity, Inclusion & Belonging value, while alignment with our company values allow us to collaborate as a team . While maintaining respect for each team member’s individual culture, GitLab culture and values should be what unites us. For many team members, some company values and the digital and asynchronous way in which we work at GitLab may take some adjusting to during onboarding. We should support and encourage each other to assume positive intent and live out our values daily!",
+    "chunk_index": 0,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "0a8720f97149_1",
+    "url": "https://handbook.gitlab.com/handbook/company/culture/cross-culture-collaboration-guide",
+    "title": "Cross-Culture Collaboration Guide",
+    "source": "handbook",
+    "headings": [
+      "Cross-Culture Collaboration Guide",
+      "Goal",
+      "Individual Culture vs. Company Culture",
+      "Research",
+      "Cultural Dimensions"
+    ],
+    "text": "vidual culture, GitLab culture and values should be what unites us. For many team members, some company values and the digital and asynchronous way in which we work at GitLab may take some adjusting to during onboarding. We should support and encourage each other to assume positive intent and live out our values daily!\n\nThere has been much research done on how to understand the cultural dimensions of a country/region and the impact different dimensions have on communication and collaboration. In our table below, we have provided an overview from two researchers who have spent years dedicated to defining different cultural dimensions. One of the most well-known pioneer studies conducted on cross-cultural groups and organizations was by Geert Hofstede in his book Cultures and Organizations: Software of the Mind . A more modern study that was published in 2014 also exploring cross-cultural collaboration in the workplace was conducted by Erin Meyer in her book The Culture Map . GitLab based our cultural dimensions on the research from these two experts, and aligned our dimensions to our values tailored to our company to help foster understanding and communication.",
+    "chunk_index": 1,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "0a8720f97149_2",
+    "url": "https://handbook.gitlab.com/handbook/company/culture/cross-culture-collaboration-guide",
+    "title": "Cross-Culture Collaboration Guide",
+    "source": "handbook",
+    "headings": [
+      "Cross-Culture Collaboration Guide",
+      "Goal",
+      "Individual Culture vs. Company Culture",
+      "Research",
+      "Cultural Dimensions"
+    ],
+    "text": "hed in 2014 also exploring cross-cultural collaboration in the workplace was conducted by Erin Meyer in her book The Culture Map . GitLab based our cultural dimensions on the research from these two experts, and aligned our dimensions to our values tailored to our company to help foster understanding and communication.\n\nIf you are interested in learning more about the research that inspired GitLab, you can review Hofstede’s cultural dimensions in more detail in addition to his cultural dimension comparison tool to view how specific countries compare, or considering reading his book Cultures and Organizations: Software of the Mind . If you are interested in learning more about Erin Meyer’s cultural dimensions, you can view a summary in this article , or read her book The Culture Map .\n\nIt is important to note that while the dimensions listed below can help us understand general orientations and trends in several countries based on research, these dimensions are not absolute. Each person is unique and thus the dimensions are relative.\n\nKeep in mind that for all of the dimensions defined below, we need to be mindful of cultural relativity . What matters is not so much any given country’s tendency, but rather, their positioning in relationship to you. For example, the United Kingdom is one of the lowest context cultures. However, in comparison to the United States, which is the lowest context culture, the British could be interpreted as high context in their communication.\n\nCultural Dimensions Table",
+    "chunk_index": 2,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "0a8720f97149_3",
+    "url": "https://handbook.gitlab.com/handbook/company/culture/cross-culture-collaboration-guide",
+    "title": "Cross-Culture Collaboration Guide",
+    "source": "handbook",
+    "headings": [
+      "Cross-Culture Collaboration Guide",
+      "Goal",
+      "Individual Culture vs. Company Culture",
+      "Research",
+      "Cultural Dimensions"
+    ],
+    "text": "y’s tendency, but rather, their positioning in relationship to you. For example, the United Kingdom is one of the lowest context cultures. However, in comparison to the United States, which is the lowest context culture, the British could be interpreted as high context in their communication.\n\nCultural Dimensions Table\n\nNote that for the Values Alignment section in the table below, Diversity, Inclusion & Belonging is not explicitly listed. This is because becoming culturally aware and empathetic in our interactions in and of itself supports our Diversity, Inclusion & Belonging value. Thus, reviewing the table below and implementing awareness in your day-to-day interactions at GitLab demonstrates Diversity, Inclusion & Belonging.\n\nLeadership Expectation\n\nThis dimension refers to the difference between egalitarian and hierarchical leadership styles. Countries that  follow egalitarian models prefer “flat” organizational structures, making the distance between a manager and a team member low. Hierarchical cultures have a significant distance between manager and team member; status is very important and communication follows hierarchical flow.\n\nNavigating Disagreement",
+    "chunk_index": 3,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "0a8720f97149_4",
+    "url": "https://handbook.gitlab.com/handbook/company/culture/cross-culture-collaboration-guide",
+    "title": "Cross-Culture Collaboration Guide",
+    "source": "handbook",
+    "headings": [
+      "Cross-Culture Collaboration Guide",
+      "Goal",
+      "Individual Culture vs. Company Culture",
+      "Research",
+      "Cultural Dimensions"
+    ],
+    "text": "ountries that  follow egalitarian models prefer “flat” organizational structures, making the distance between a manager and a team member low. Hierarchical cultures have a significant distance between manager and team member; status is very important and communication follows hierarchical flow.\n\nNavigating Disagreement\n\nThe level of comfort and acceptance in regard to  or Engaging or Disengaging  in disagreement/debate varies drastically from culture to culture. Engaging cultures believe that healthy debate is positive for teams and appropriate, while Disengaging cultures believe that disagreement has a negative impact on team dynamic, disrupts harmony, and hurts the relationships overall. GitLab advocates for constructive passionate debate and encourages us to have “short toes” .\n\nCollaboration, Efficiency\n\nDirect vs. indirect feedback, specifically in regard to improvement areas, can make a big difference in the interpretation of messages we try to relay, or feedback we give. While we advocate for transparency and are public by default , it is important to be mindful that some cultures can be less receptive to direct and public feedback than others. In direct feedback cultures, feedback on improvement areas is provided in a straightforward manner bluntly and is not softened by other positive feedback. It is acceptable for feedback to be provided in public settings.  In indirect feedback cultures, feedback on improvement areas tends to be given subtly and softly and is generally “sandwiched” between positive feedback. Feedback is only given in private settings.",
+    "chunk_index": 4,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "0a8720f97149_5",
+    "url": "https://handbook.gitlab.com/handbook/company/culture/cross-culture-collaboration-guide",
+    "title": "Cross-Culture Collaboration Guide",
+    "source": "handbook",
+    "headings": [
+      "Cross-Culture Collaboration Guide",
+      "Goal",
+      "Individual Culture vs. Company Culture",
+      "Research",
+      "Cultural Dimensions"
+    ],
+    "text": "bluntly and is not softened by other positive feedback. It is acceptable for feedback to be provided in public settings.  In indirect feedback cultures, feedback on improvement areas tends to be given subtly and softly and is generally “sandwiched” between positive feedback. Feedback is only given in private settings.\n\nWhile GitLab advocates low-context communication (precision, simplicity, and clarity), it is important to be aware that many cultures are more accustomed to high-context communication (layered communication that is more “read between the lines”; messages are often implied versus directly expressed). We should be tolerant of all communication styles and ask for clarification when needed.\n\nTask-oriented cultures tend to focus on the task at hand with speed and efficiency to produce results as soon as possible. Relationship oriented cultures tend to focus not only on the task at hand but also in cultivating and developing relationships to increase collaboration and efficiency as a team.  This may be harder to recognize in an asynchronous environment where there is less face to face interaction to build these relationships.\n\nIteration, Collaboration",
+    "chunk_index": 5,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "0a8720f97149_6",
+    "url": "https://handbook.gitlab.com/handbook/company/culture/cross-culture-collaboration-guide",
+    "title": "Cross-Culture Collaboration Guide",
+    "source": "handbook",
+    "headings": [
+      "Cross-Culture Collaboration Guide",
+      "Goal",
+      "Individual Culture vs. Company Culture",
+      "Research",
+      "Cultural Dimensions"
+    ],
+    "text": "ultures tend to focus not only on the task at hand but also in cultivating and developing relationships to increase collaboration and efficiency as a team.  This may be harder to recognize in an asynchronous environment where there is less face to face interaction to build these relationships.\n\nIteration, Collaboration\n\nDifferent cultures abide by different concepts of time: linear time and flexible time. Characteristics of linear time include being punctual, following a set agenda, and starting and ending as scheduled. Flexible time cultures tend to put relationships before timeliness, are more flexible in their use of agendas, and will wait a few minutes for everyone to arrive. GitLab’s sense of time tends to be more linear than flexible, we define being respectful of others time as including an agenda, documenting the outcome, and starting promptly ( we don’t wait if people arrive after the schedule start time).\n\nPractices For Cultural Awareness\n\nWhile the table above outlines GitLab’s cultural dimensions, meaning, and values alignment, this section aims to provide a more practical “how-to” as a platform for applying the awareness the dimensions provide to every day interactions at GitLab. While the practices below can and should be implemented in all interactions, they become particularly important in cross-cultural communication.",
+    "chunk_index": 6,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "0a8720f97149_7",
+    "url": "https://handbook.gitlab.com/handbook/company/culture/cross-culture-collaboration-guide",
+    "title": "Cross-Culture Collaboration Guide",
+    "source": "handbook",
+    "headings": [
+      "Cross-Culture Collaboration Guide",
+      "Goal",
+      "Individual Culture vs. Company Culture",
+      "Research",
+      "Cultural Dimensions"
+    ],
+    "text": "d values alignment, this section aims to provide a more practical “how-to” as a platform for applying the awareness the dimensions provide to every day interactions at GitLab. While the practices below can and should be implemented in all interactions, they become particularly important in cross-cultural communication.\n\nIt is the responsibility of every GitLab team member to live out our values . As highlighted above, GitLab culture and values are what unite us; our values provide common ground irrespective of our backgrounds. We should remind each other and ourselves to stay values-centered and let our values guide our interactions!\n\nAssume Positive Intent\n\nAn operating principle of collaboration, assuming positive intent is also critical for effective cross-cultural communication. Not everyone has worked in global environments before, and as humans, we all make mistakes. If someone says something that rubs you the wrong way, assume positive intent, explain how you feel in a 1:1 setting, and ask for clarification to ensure you have the full picture. We should give each other the benefit of the doubt in interactions.\n\nA lot of people love to share about their cultures! When in doubt, ask. Asking questions results in learning, which helps make us all more culturally aware.",
+    "chunk_index": 7,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "0a8720f97149_8",
+    "url": "https://handbook.gitlab.com/handbook/company/culture/cross-culture-collaboration-guide",
+    "title": "Cross-Culture Collaboration Guide",
+    "source": "handbook",
+    "headings": [
+      "Cross-Culture Collaboration Guide",
+      "Goal",
+      "Individual Culture vs. Company Culture",
+      "Research",
+      "Cultural Dimensions"
+    ],
+    "text": "how you feel in a 1:1 setting, and ask for clarification to ensure you have the full picture. We should give each other the benefit of the doubt in interactions.\n\nA lot of people love to share about their cultures! When in doubt, ask. Asking questions results in learning, which helps make us all more culturally aware.\n\nRecognize that your beliefs are not absolute . There are 195 countries in the world, 4,200 different religions, and 7.5 billion people; each one of us has a unique set of customs and culture, even if our cultural backgrounds are similar. Awareness that different beliefs exist is a critical step in practicing effective cross-cultural communication.\n\nBe empathetic towards others, their reactions, and their culture. There is often more than meets the eye, and it is important to remember that something “normal” to one person may not be normal to the other.\n\nClearly set expectations around communication in order to establish and align on what works best for your team dynamic and the cultures within your team. Creating this awareness and alignment can help avoid misunderstandings and ensure cultural and personal backgrounds are respected.\n\nStories from Team Members\n\nDiscussing Cross-Cultural Communication\n\nListen to the panel discussion on cross-cultural communication below hosted on 2022-03-23 with GitLab team members.\n\nKey Session Takeaways\n\nIn remote spaces, intentionality is important to build trust on teams. Ideas on how to do this include adding a social question to team meetings or hosting a social event to share about people’s localities.",
+    "chunk_index": 8,
+    "total_chunks": 10
+  },
+  {
+    "chunk_id": "0a8720f97149_9",
+    "url": "https://handbook.gitlab.com/handbook/company/culture/cross-culture-collaboration-guide",
+    "title": "Cross-Culture Collaboration Guide",
+    "source": "handbook",
+    "headings": [
+      "Cross-Culture Collaboration Guide",
+      "Goal",
+      "Individual Culture vs. Company Culture",
+      "Research",
+      "Cultural Dimensions"
+    ],
+    "text": "sion on cross-cultural communication below hosted on 2022-03-23 with GitLab team members.\n\nKey Session Takeaways\n\nIn remote spaces, intentionality is important to build trust on teams. Ideas on how to do this include adding a social question to team meetings or hosting a social event to share about people’s localities.\n\nAssuming positive intent when communicating async can help us recognize and have compassion for other’s experiences.\n\nEveryone can be an ally and has a responsibility to check and fix their own biases when collaborating with others",
+    "chunk_index": 9,
+    "total_chunks": 10
+  }
+]

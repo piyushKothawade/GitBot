@@ -1,0 +1,30 @@
+[
+  {
+    "chunk_id": "154f65489847_0",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/dashboards",
+    "title": "Developer Experience Dashboards",
+    "source": "handbook",
+    "headings": [
+      "Developer Experience Dashboards",
+      "Dashboards",
+      "Contributing to the Dashboards"
+    ],
+    "text": "Developer Experience Dashboards\n\nIn pursuit of a resilient, efficient, and fortified platform, our Test Platform sub-department provides instrumental\nsupport through the creation and maintenance of an array of dashboards. These critical tools capture detailed test\nhealth across the environments, flag performance anomalies, and contribute to rigorous test infrastructure.\n\nIn pursuit of a resilient, efficient, and fortified platform, our Test Platform sub-department provides instrumental\nsupport through the creation and maintenance of an array of dashboards. These critical tools capture detailed test\nhealth across the environments, flag performance anomalies, and contribute to rigorous test infrastructure.\n\nComprehensive overview of test suite health and status.\n\nDevelopment Analytics\n\nQuarantined E2E Tests Dashboard\n\nShows age and number of Quarantined tests per stage\n\nList of tests sorted by their runtime.\n\nDevelopment Analytics\n\nList of tests sorted by their failure rate percentage.\n\nDevelopment Analytics\n\nInsights into the cost-effectiveness of testing processes.\n\nDevelopment Analytics\n\nTest Infra Availability (E2E Test)\n\nDashboard indicating the current availability of E2E test infrastructure.\n\nDevelopment Analytics\n\nDeveloper Contribution To E2E Tests\n\nTracking developer engagement and contributions to E2E tests.\n\nTest Governance Development Analytics\n\nGitLab Performance Tool test results from automated reference environment pipelines\n\nSelf-Managed Platform\n\nSelf-Managed Excellence\n\nReference Architectures",
+    "chunk_index": 0,
+    "total_chunks": 2
+  },
+  {
+    "chunk_id": "154f65489847_1",
+    "url": "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/dashboards",
+    "title": "Developer Experience Dashboards",
+    "source": "handbook",
+    "headings": [
+      "Developer Experience Dashboards",
+      "Dashboards",
+      "Contributing to the Dashboards"
+    ],
+    "text": "Development Analytics\n\nDeveloper Contribution To E2E Tests\n\nTracking developer engagement and contributions to E2E tests.\n\nTest Governance Development Analytics\n\nGitLab Performance Tool test results from automated reference environment pipelines\n\nSelf-Managed Platform\n\nSelf-Managed Excellence\n\nReference Architectures\n\nReference Architecture issues created and closed per request type\n\nSelf-Managed Platform\n\nGitLab Environment Toolkit\n\nGitLab Environment Toolkit merge requests and issues per type\n\nSelf-Managed Platform\n\nGitLab Performance Tool\n\nGitLab Performance Tool merge requests and issues per type\n\nSelf-Managed Platform\n\nDynamic tracking of Customer bugs\n\nBug prioritization based on burndown trends\n\nOperational Excellence\n\nTeam Operational Trends\n\nThis dashboard is designed to give us a deeper understanding of Test Platform sub-department’s operational effectiveness over time\n\nDevelopment Analytics\n\nTest Platform On-Call Metrics\n\nDashboard indicating on-call engagement\n\nDevelopment Analytics\n\nContributing to the Dashboards\n\nIf you have any questions or suggestions about the dashboard, please contact the respective DRI or submit an issue in\nour tracking system .",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+]

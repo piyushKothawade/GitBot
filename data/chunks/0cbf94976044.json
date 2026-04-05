@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "0cbf94976044_0",
+    "url": "https://handbook.gitlab.com/handbook/company/working-groups/fedramp-execution",
+    "title": "FedRAMP Execution Working Group",
+    "source": "handbook",
+    "headings": [
+      "FedRAMP Execution Working Group",
+      "Attributes",
+      "Exit Criteria",
+      "Roles and Responsibilities",
+      "Direction"
+    ],
+    "text": "FedRAMP Execution Working Group\n\n#wg_fedramp (only accessible from within the company)\n\nWorking Group Agenda (only accessible from within the company)\n\nMain Project Epic (only accessible from within the company)\n\nGitLab’s FedRAMP Authorization Program\n\nInternal Handbook Page\n\nGitLab achieves FedRAMP Moderate Authorization (Authority to Operate - ATO) for a new SaaS offering.\n\nRoles and Responsibilities\n\nDir, Product Management\n\nSaaS Platforms Product Leadership\n\nPubSec PM / Product DRI\n\nSaaS Platforms Infrastructure Leadership\n\nSr. Sec. Program Manager\n\nSecurity Program Manager\n\nDir. Threat Management\n\nVulnerability Remediation DRI\n\nEM US Public Sector Services\n\nSr. Dir. Security Assurance\n\nGitLab is pursuing FedRAMP authorization at the Moderate Impact Level .\nWe will evaluate demand for High once we attain Moderate.\n\nFurther details of the FedRAMP plan, including anticipated or actual dates, cannot be shared publicly at this time.\nTeam members can view details in the internal handbook . This public handbook page contains information about the FedRAMP Authorization process as it pertains to GitLab.",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]

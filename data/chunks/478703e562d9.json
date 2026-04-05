@@ -1,0 +1,58 @@
+[
+  {
+    "chunk_id": "478703e562d9_0",
+    "url": "https://handbook.gitlab.com/handbook/support/knowledge-base/docs-vs-kb",
+    "title": "Docs vs. Knowledge Articles",
+    "source": "handbook",
+    "headings": [
+      "Docs vs. Knowledge Articles",
+      "Knowledge articles vs Documentation at GitLab",
+      "Create a knowledge article when"
+    ],
+    "text": "Docs vs. Knowledge Articles\n\nThis section is provided to give you more details about docs and knowledge articles.\n\nKnowledge articles vs Documentation at GitLab\n\nUnderstanding when to create a knowledge article versus updating documentation can be tricky sometimes!  Our goal is to help you understand the difference between Docs and Knowledge articles, and how they differ, but also how they can work together.  Use your best judgement! Think of it this way… When in doubt create a knowledge article. Capture the knowledge. It can always be adjusted.\n\nKnowledge Articles are for problem solving and troubleshooting! These are for specific issues that our customers have.  Knowledge articles are reactive , created from support tickets that provide immediate solutions to the customer issue.\nThe audience is for customers that are having issues,  support engineers that are resolving tickets and anyone searching for fixes to specific error messages or problems.\n\nDocumentation is for learning and implementing.  Documentation helps users learn GitLab features from the start. Docs are proactive , and strategic content that explains how things should work.   The audience is more for new users learning GitLab, Administrators, developing features and some capabilities. Use Guidance.\n\nCreate a knowledge article when\n\nSomething works in most environments but fails in specific configurations\n\nSomething works in most environments but fails in specific configurations\n\nInvolves third party integrations or tools\n\nInvolves third party integrations or tools\n\nHas uniqueness to an issue",
+    "chunk_index": 0,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "478703e562d9_1",
+    "url": "https://handbook.gitlab.com/handbook/support/knowledge-base/docs-vs-kb",
+    "title": "Docs vs. Knowledge Articles",
+    "source": "handbook",
+    "headings": [
+      "Docs vs. Knowledge Articles",
+      "Knowledge articles vs Documentation at GitLab",
+      "Create a knowledge article when"
+    ],
+    "text": "lities. Use Guidance.\n\nCreate a knowledge article when\n\nSomething works in most environments but fails in specific configurations\n\nSomething works in most environments but fails in specific configurations\n\nInvolves third party integrations or tools\n\nInvolves third party integrations or tools\n\nHas uniqueness to an issue\n\nHas uniqueness to an issue\n\nCan assist with troubleshooting (steps and diagnostics)\n\nCan assist with troubleshooting (steps and diagnostics)\n\nTemporary fixes available and you need to lets customers know\n\nTemporary fixes available and you need to lets customers know\n\nHave alternative methods for customers to try\n\nHave alternative methods for customers to try\n\nRecovery procedures from error states\n\nRecovery procedures from error states\n\nQuick fixes (they may be workarounds that have proven to work)\n\nQuick fixes (they may be workarounds that have proven to work)\n\nHave multiple causes for the same symptom\n\nHave multiple causes for the same symptom\n\nMigration or Upgrade specific information\n\nMigration or Upgrade specific information\n\nKnown issues Example GitLab Knowledge Articles : “Pipeline fails with ‘Docker daemon not running’ error in GitLab 15.x with Docker-in-Docker” “Resolving 502 errors when pushing large files to GitLab with HAProxy” “Workaround for Runner registration failing with certificate errors on self-signed installations” “Fixing broken MR diffs after restoring from backup”\n\nExample GitLab Knowledge Articles :\n\n“Pipeline fails with ‘Docker daemon not running’ error in GitLab 15.x with Docker-in-Docker”",
+    "chunk_index": 1,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "478703e562d9_2",
+    "url": "https://handbook.gitlab.com/handbook/support/knowledge-base/docs-vs-kb",
+    "title": "Docs vs. Knowledge Articles",
+    "source": "handbook",
+    "headings": [
+      "Docs vs. Knowledge Articles",
+      "Knowledge articles vs Documentation at GitLab",
+      "Create a knowledge article when"
+    ],
+    "text": "ng large files to GitLab with HAProxy” “Workaround for Runner registration failing with certificate errors on self-signed installations” “Fixing broken MR diffs after restoring from backup”\n\nExample GitLab Knowledge Articles :\n\n“Pipeline fails with ‘Docker daemon not running’ error in GitLab 15.x with Docker-in-Docker”\n\n“Resolving 502 errors when pushing large files to GitLab with HAProxy”\n\n“Workaround for Runner registration failing with certificate errors on self-signed installations”\n\n“Fixing broken MR diffs after restoring from backup”\n\nUpdate or Create Documentation when\n\nHow features are designed to work\n\nHow features are designed to work\n\nBest Practices , Recommendations\n\nBest Practices , Recommendations\n\nStandard implementation\n\nStandard implementation\n\nStep by Step implementation guides\n\nStep by Step implementation guides\n\nCompliance and Security information\n\nCompliance and Security information\n\nArchitecture decisions\n\nArchitecture decisions\n\nCapability descriptions Example GitLab Documentation : “Configuring GitLab Runner with Docker executor” “GitLab CI/CD pipeline configuration reference” “Setting up SAML SSO for GitLab” “GitLab backup and restore procedures”\n\nCapability descriptions\n\nExample GitLab Documentation :\n\n“Configuring GitLab Runner with Docker executor”\n\n“GitLab CI/CD pipeline configuration reference”\n\n“Setting up SAML SSO for GitLab”\n\n“GitLab backup and restore procedures”",
+    "chunk_index": 2,
+    "total_chunks": 4
+  },
+  {
+    "chunk_id": "478703e562d9_3",
+    "url": "https://handbook.gitlab.com/handbook/support/knowledge-base/docs-vs-kb",
+    "title": "Docs vs. Knowledge Articles",
+    "source": "handbook",
+    "headings": [
+      "Docs vs. Knowledge Articles",
+      "Knowledge articles vs Documentation at GitLab",
+      "Create a knowledge article when"
+    ],
+    "text": "uration reference” “Setting up SAML SSO for GitLab” “GitLab backup and restore procedures”\n\nCapability descriptions\n\nExample GitLab Documentation :\n\n“Configuring GitLab Runner with Docker executor”\n\n“GitLab CI/CD pipeline configuration reference”\n\n“Setting up SAML SSO for GitLab”\n\n“GitLab backup and restore procedures”\n\nStart with a knowledge article for immediate customer issues. Even if its a “Draft” article only, capture it! Capture it in the customer Context. It can always be reviewed.\nPromote to documentation if it becomes standard guidance\nLink between both resources! If you create a knowledge article, link it to the doc for further reference. The 2 work hand in hand!\nIterate as understanding evolves. Knowledge is always evolving and updating.",
+    "chunk_index": 3,
+    "total_chunks": 4
+  }
+]

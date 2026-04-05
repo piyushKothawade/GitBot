@@ -1,0 +1,13 @@
+{
+  "url": "https://handbook.gitlab.com/handbook/security/corporate/end-user-services/laptop-management/laptop-security/networks",
+  "title": "Laptop Wireless Networks",
+  "content": "Laptop Wireless Networks\n\nIt is safe to connect to the wireless network at your home or a friend or family member’s house.\n\nVendor Docs - Wi-Fi: Connecting to WiFi Networks\n\nVendor Docs - Wi-Fi: Status Symbols\n\nThere are security implications involved in the use of “smart home devices” such as Amazon Echo or Google Home. In rare instances these devices can record conversations you might not have intended them to record. Many smart home devices will provide a visual and/or auditory indicator to let you know they’re activated; for many such devices, when they’re activated, they’re recording you and save a transcript of what you say while it’s active.\n\nIf a smart home device is activated while you’re verbalizing sensitive information, wait for it to turn off or manually turn it off. If you think a smart device may have been activated while verbalizing sensitive information, most smart home devices allow you to delete transcripts and recordings.\n\nPlease use your best judgement about the placement of these devices and whether or not to deactivate the microphone during sensitive discussions related to GitLab.\n\nThe safest wireless network when traveling outside of your house is using the hotspot on your phone if possible.\n\nWhen connecting to a wireless network at a coffee shop or co-working space or hotel, you should use NordLayer VPN to establish a secure connection to avoid local network traffic interception.\n\nSecurity Best Practice: When traveling in public spaces (ex. airports, airplanes, trains, etc.), it is a security best practice to disable Wi-Fi on your laptop until you need to use it. Even if you are not connected to a wireless network, your wireless chip is still scanning for networks “on the wire” and may try to connect to a familiar or known network.\n\nSystem Guide - NordLayer VPN\n\nVendor Docs - Wi-Fi: Using iPhone or iPad as Hotspot\n\nLegacy Handbook Page: Personal VPN\n\nRefer to the network isolation guide for setting up a dedicated WiFi so that your work laptop is isolated from other personal devices in your home network, including smart home devices and home media servers .",
+  "source": "handbook",
+  "headings": [
+    "Laptop Wireless Networks",
+    "Overview",
+    "Smart Home",
+    "Traveling",
+    "Separate Network"
+  ]
+}

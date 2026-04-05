@@ -1,0 +1,16 @@
+[
+  {
+    "chunk_id": "b6babcd7e7f1_0",
+    "url": "https://handbook.gitlab.com/handbook/support/license-and-renewals/workflows/communicating_lnr_workflow_changes",
+    "title": "Communicating Licensing & Renewals Workflow Changes",
+    "source": "handbook",
+    "headings": [
+      "Communicating Licensing & Renewals Workflow Changes",
+      "Notifications",
+      "Internal Stakeholders"
+    ],
+    "text": "Communicating Licensing & Renewals Workflow Changes\n\nWhen modifications are being made to any Licensing and Renewals workflows, consider the following:\n\nWill this change impact teams outside of Support?\n\nWhat is the urgency of this update?\n\nRegional DRIs to mention at the L&R sync session\n\nAdd the announcement to Support Week-In-Review (SWIR)\n\nSchedule posts in #support_licensing-subscription Slack channel\nin each region to notify changes the week of deployment (at least 72 hours prior)\n\nSchedule a general reminder on the day of deployment in #support_team-chat and #support_licensing-subscription\n\nInternal Stakeholders\n\nIf this change will have an impact on how Field Team members collaborate with L&R\nSupport Team members, follow the steps outlined in the Field Communications Playbook to announce the change to the Field Team. Generally, a workflow-related update will qualify as a Tier 2 update .\n\nL&R team members generally work with Sales and CSMs in the following Slack channels, so you might also\nconsider posting an update to these channels:\n\n#support_to_sales_escalation",
+    "chunk_index": 0,
+    "total_chunks": 1
+  }
+]
